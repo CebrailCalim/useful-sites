@@ -55,10 +55,33 @@ def check(rec):
     return out
 
 
+def write_verified(links, bad_by_url):
+    """Kayit bazinda son dogrulama tarihini tazeler.
+
+    Site her satirda 'son dogrulama' gosteriyor; bu dosya onun kaynagi.
+    Sorunlu olanlar 'engel' olarak isaretlenir, tarihleri yine guncellenir."""
+    path = os.path.join(ROOT, 'data', 'verified.json')
+    ver = {}
+    if os.path.exists(path):
+        ver = json.load(io.open(path, encoding='utf-8'))
+    today = datetime.date.today().isoformat()
+    for l in links:
+        k = re.sub(r'^https?://(www\.)?', '', l['url'].strip().lower()).rstrip('/')
+        b = bad_by_url.get(l['url'])
+        if b is None:
+            ver[k] = {'d': today, 's': 'ok'}
+        elif b['status'] in SOFT:
+            ver[k] = {'d': today, 's': 'engel'}
+        # gercekten olu olanin tarihini tazelemiyoruz: eski tarih uyari degeri tasiyor
+    json.dump(ver, io.open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print('verified.json guncellendi:', len(ver))
+
+
 def main():
     links = load_links()
     with cf.ThreadPoolExecutor(max_workers=16) as ex:
         results = [r for r in ex.map(check, links) if r]
+    write_verified(links, {r['url']: r for r in results})
 
     dead = [r for r in results if r['status'] == 404 or r['status'] == 410 or r['status'] == 0]
     soft = [r for r in results if r not in dead]

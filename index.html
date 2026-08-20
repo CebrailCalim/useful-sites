@@ -40,7 +40,7 @@ html{-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 body{
   margin:0;background:var(--bg);color:var(--fg);
-  font:16px/1.6 var(--sans);
+  font:17px/1.62 var(--sans);
   font-feature-settings:"kern" 1;
   -webkit-font-smoothing:antialiased;
   padding:0 24px 96px;
@@ -48,13 +48,13 @@ body{
 ::selection{background:var(--accent-soft);color:var(--fg)}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:1px}
-.wrap{max-width:1240px;margin:0 auto}
+.wrap{max-width:1280px;margin:0 auto}
 
 /* ---------------------------------------------------------------- başlık */
 header{padding:48px 0 22px;border-bottom:1px solid var(--rule)}
 .masthead{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap}
-h1{font-size:26px;font-weight:600;margin:0;letter-spacing:-.022em;line-height:1.25}
-.sub{color:var(--dim);font-size:15.5px;line-height:1.7;margin:12px 0 0;max-width:66ch}
+h1{font-size:28px;font-weight:600;margin:0;letter-spacing:-.022em;line-height:1.25}
+.sub{color:var(--dim);font-size:16.5px;line-height:1.7;margin:12px 0 0;max-width:66ch}
 .hdr-actions{margin-left:auto;display:flex;gap:7px;align-items:center;padding-top:3px}
 .btn{
   font:12.5px/1 var(--mono);color:var(--dim);background:none;
@@ -68,7 +68,7 @@ h1{font-size:26px;font-weight:600;margin:0;letter-spacing:-.022em;line-height:1.
 .tools{padding:18px 0 12px;border-bottom:1px solid var(--rule2)}
 .searchrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 #q{
-  flex:1;min-width:220px;font:16px/1 var(--sans);color:var(--fg);background:var(--bg);
+  flex:1;min-width:220px;font:17px/1 var(--sans);color:var(--fg);background:var(--bg);
   border:1px solid var(--rule);border-radius:3px;padding:11px 13px;
   transition:border-color .12s var(--step),box-shadow .12s var(--step);
 }
@@ -99,7 +99,7 @@ nav li{border-bottom:1px solid var(--rule2)}
 nav li:last-child{border-bottom:0}
 nav a{
   display:flex;justify-content:space-between;gap:10px;align-items:baseline;
-  padding:7px 0;color:var(--dim);text-decoration:none;font-size:14px;line-height:1.45;
+  padding:7px 0;color:var(--dim);text-decoration:none;font-size:15px;line-height:1.45;
   transition:color .12s var(--step),padding-left .14s var(--step);
 }
 nav a:hover{color:var(--fg);padding-left:4px}
@@ -111,13 +111,13 @@ nav .n{font:11.5px/1.4 var(--mono);color:var(--faint);font-variant-numeric:tabul
 /* ---------------------------------------------------------------- liste */
 section{margin:0 0 46px;scroll-margin-top:24px}
 h2{
-  font:12.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.1em;
+  font:13px/1 var(--mono);text-transform:uppercase;letter-spacing:.1em;
   color:var(--faint);font-weight:400;margin:0 0 4px;padding-bottom:11px;
   border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:12px;
 }
 h2 .n{font-variant-numeric:tabular-nums}
 /* satır başına iki bağlantı */
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 44px}
 .item{
   padding:15px 0 15px 14px;border-bottom:1px solid var(--rule2);
   border-left:2px solid transparent;margin-left:-16px;min-width:0;
@@ -126,13 +126,13 @@ h2 .n{font-variant-numeric:tabular-nums}
 .item:hover{border-left-color:var(--accent)}
 .item-h{display:flex;gap:9px;align-items:baseline;flex-wrap:wrap}
 .item a.name{
-  font-weight:600;text-decoration:none;font-size:16px;letter-spacing:-.011em;
+  font-weight:600;text-decoration:none;font-size:17px;letter-spacing:-.011em;
   transition:color .12s var(--step);
 }
 .item a.name:hover{color:var(--accent)}
-.host{font:12px/1 var(--mono);color:var(--faint);overflow:hidden;text-overflow:ellipsis}
-.desc{margin:7px 0 0;color:var(--dim);font-size:14.5px;line-height:1.68}
-.itags{margin:9px 0 0;font:12px/1.6 var(--mono);color:var(--faint)}
+.host{font:12.5px/1 var(--mono);color:var(--faint);overflow:hidden;text-overflow:ellipsis}
+.desc{margin:7px 0 0;color:var(--dim);font-size:15.5px;line-height:1.7}
+.itags{margin:9px 0 0;font:12.5px/1.6 var(--mono);color:var(--faint)}
 .itags span{cursor:pointer;transition:color .12s var(--step)}
 .itags span:hover{color:var(--accent)}
 .age{font:11.5px/1 var(--mono);color:var(--faint);margin-left:auto;white-space:nowrap}
@@ -144,6 +144,22 @@ h2 .n{font-variant-numeric:tabular-nums}
 .item.pick:hover{border-left-color:var(--accent)}
 .pickbtn{border-color:var(--accent-soft)}
 .pickbtn .dot{font-size:8px}
+
+/* kategori giriş metni */
+.intro{
+  color:var(--dim);font-size:15px;line-height:1.72;margin:14px 0 6px;
+  max-width:80ch;padding-left:14px;border-left:2px solid var(--rule);
+}
+/* ilgili kayıtlar */
+.rel{margin:7px 0 0;font:12.5px/1.6 var(--mono);color:var(--faint)}
+.rel b{font-weight:400;color:var(--faint)}
+.rel a{color:var(--dim);text-decoration:none;cursor:pointer}
+.rel a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+/* kaynak ve doğrulama rozetleri */
+.badge{font:11.5px/1 var(--mono);color:var(--faint);white-space:nowrap}
+.badge.ext{color:var(--accent);opacity:.8}
+.srcbar{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;align-items:center}
+.srcbar .lbl{font:12px/1 var(--mono);color:var(--faint);margin-right:2px}
 mark{background:var(--mark);color:inherit;padding:0 2px;border-radius:2px}
 
 /* ---------------------------------------------------------------- sayfalama */
@@ -159,7 +175,7 @@ mark{background:var(--mark);color:inherit;padding:0 2px;border-radius:2px}
 .pg:disabled{opacity:.32;cursor:default}
 .pgpos{font:12px/1 var(--mono);color:var(--faint);margin-left:8px}
 
-.empty{padding:64px 0;color:var(--dim);font-size:15.5px}
+.empty{padding:64px 0;color:var(--dim);font-size:16px}
 .empty code{font:14px var(--mono);color:var(--accent)}
 
 #top{
@@ -172,7 +188,7 @@ mark{background:var(--mark);color:inherit;padding:0 2px;border-radius:2px}
 
 footer{
   margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);
-  color:var(--faint);font-size:13.5px;line-height:1.85;max-width:74ch;
+  color:var(--faint);font-size:14px;line-height:1.85;max-width:74ch;
 }
 footer kbd{font:12px var(--mono);border:1px solid var(--rule);border-radius:3px;padding:2px 5px;color:var(--dim)}
 footer a{color:var(--dim)}
@@ -220,6 +236,7 @@ footer a{color:var(--dim)}
     <span class="count" id="count"></span>
   </div>
   <div class="tags" id="tagbar"></div>
+  <div class="srcbar" id="srcbar"></div>
 </div>
 
 <div class="cols">
@@ -255,6 +272,10 @@ var T = {
     back:"← tüm kategoriler",
     rand:"rastgele", lang:"EN",
     picks:"başlangıç noktaları",
+    by:"ekleyen:",
+    rel:"ilgili:",
+    verified:function(d){ return "son doğrulama " + d },
+    verwarn:"(bot engeli — elle bakılmalı)",
     pickTip:"Bu alana ilk girenin gitmesi gereken yer",
     page:function(a,b){return a+" / "+b+" sayfa"},
     prev:"önceki", next:"sonraki",
@@ -276,6 +297,10 @@ var T = {
     back:"← all categories",
     rand:"random", lang:"TR",
     picks:"start here",
+    by:"added by:",
+    rel:"related:",
+    verified:function(d){ return "last verified " + d },
+    verwarn:"(bot-blocked — needs a manual look)",
     pickTip:"Where to go first in this area",
     page:function(a,b){return "page "+a+" / "+b},
     prev:"prev", next:"next",
@@ -291,7 +316,7 @@ var T = {
 
 var data  = window.LINKS || [];
 var theme = localStorage.getItem("theme");
-var lang, q, activeTags, activeCat, sortBy, pages, onlyPicks;
+var lang, q, activeTags, activeCat, sortBy, pages, onlyPicks, activeSrc;
 
 var $ = function(s){return document.querySelector(s)};
 var esc = function(s){return String(s).replace(/[&<>"]/g,function(c){
@@ -320,6 +345,12 @@ var CATS = (function(){
 
 var TAGCOUNT = {};
 data.forEach(function(d){ (d.tags||[]).forEach(function(t){ TAGCOUNT[t]=(TAGCOUNT[t]||0)+1 }) });
+var SRCMAP = window.SOURCES || {};
+var SRCCOUNT = {};
+data.forEach(function(d){ SRCCOUNT[d.src] = (SRCCOUNT[d.src]||0) + 1 });
+var INTROS = window.INTROS || {};
+var NAMEIDX = {};
+data.forEach(function(d){ NAMEIDX[d.name] = d });
 var PICKCOUNT = data.filter(function(d){ return d.pick }).length;
 var ALLTAGS = Object.keys(TAGCOUNT).sort(function(a,b){
   return TAGCOUNT[b]-TAGCOUNT[a] || a.localeCompare(b,"tr");
@@ -333,6 +364,8 @@ function readURL(){
   sortBy     = p.get("sort") || "cat";
   activeTags = (p.get("tag") || "").split(",").filter(Boolean);
   onlyPicks  = p.get("pick") === "1";
+  activeSrc  = p.get("src") || null;
+  if(activeSrc && !SRCMAP[activeSrc]) activeSrc = null;
   lang       = p.get("lang") || localStorage.getItem("lang") || "tr";
   if(!T[lang]) lang = "tr";
   if(!T.tr.sorts[sortBy]) sortBy = "cat";
@@ -349,6 +382,7 @@ function writeURL(push){
   if(activeCat) p.set("cat", activeCat);
   if(activeTags.length) p.set("tag", activeTags.join(","));
   if(onlyPicks) p.set("pick", "1");
+  if(activeSrc) p.set("src", activeSrc);
   if(sortBy !== "cat") p.set("sort", sortBy);
   if(lang !== "tr") p.set("lang", lang);
   var pg = pages[activeCat && sortBy === "cat" ? activeCat : "_"];
@@ -360,6 +394,7 @@ function writeURL(push){
 /* ------------------------------------------------------------ filtre & sıra */
 function matches(d){
   if(onlyPicks && !d.pick) return false;
+  if(activeSrc && d.src !== activeSrc) return false;
   if(activeCat && d.cat !== activeCat) return false;
   for(var i=0;i<activeTags.length;i++){
     if((d.tags||[]).indexOf(activeTags[i]) < 0) return false;
@@ -396,17 +431,32 @@ function descOf(d){
   return (lang === "en" && window.LINKS_EN && window.LINKS_EN[d._i]) || d.tr;
 }
 function yearOf(d){ return new Date(d.added * 1000).getFullYear() }
+function srcLabel(d){
+  var s = SRCMAP[d.src];
+  return s ? s[lang === "tr" ? "label_tr" : "label_en"] : d.src;
+}
+function srcNote(d){
+  var s = SRCMAP[d.src], n = s ? s[lang === "tr" ? "note_tr" : "note_en"] : "";
+  if(d.ver) n += (n ? " · " : "") + T[lang].verified(d.ver) + (d.verw ? " " + T[lang].verwarn : "");
+  return n;
+}
 
 function itemHTML(d, showYear){
   return '<article class="item'+(d.pick?' pick':'')+'"><div class="item-h">'+
     (d.pick ? '<span class="dot" title="'+esc(T[lang].pickTip)+'">◆</span>' : '')+
     '<a class="name" href="'+esc(d.url)+'" target="_blank" rel="noopener noreferrer">'+hl(d.name)+'</a>'+
     '<span class="host">'+esc(d._h)+'</span>'+
+    '<span class="badge'+(d.src!=="kedi"?' ext':'')+'" title="'+esc(srcNote(d))+'">'+
+      esc(srcLabel(d))+'</span>'+
     (showYear ? '<span class="age">'+yearOf(d)+'</span>' : '')+
     '</div><p class="desc">'+hl(descOf(d))+'</p>'+
     ((d.tags||[]).length
       ? '<p class="itags">'+d.tags.map(function(t){
           return '<span data-tag="'+esc(t)+'">'+esc(t)+'</span>' }).join(" · ")+'</p>'
+      : '')+
+    ((d.rel||[]).length
+      ? '<p class="rel"><b>'+esc(T[lang].rel)+'</b> '+d.rel.map(function(n){
+          return '<a data-rel="'+esc(n)+'">'+esc(n)+'</a>' }).join(" · ")+'</p>'
       : '')+'</article>';
 }
 
@@ -426,12 +476,18 @@ function pagerHTML(key, page, total, L){
   return out.join("");
 }
 
-function block(key, label, items, L, showYear){
+function introHTML(cat){
+  var t = INTROS[cat];
+  return t ? '<p class="intro">'+esc(t[lang === "tr" ? 0 : 1])+'</p>' : "";
+}
+
+function block(key, label, items, L, showYear, cat){
   var total = Math.max(1, Math.ceil(items.length / PER_PAGE));
   var page  = Math.min(Math.max(pages[key]||1, 1), total);
   pages[key] = page;
   return '<section id="c-'+key+'"><h2><span>'+esc(label)+'</span>'+
-         '<span class="n">'+items.length+'</span></h2><div class="grid">'+
+         '<span class="n">'+items.length+'</span></h2>'+
+         (cat ? introHTML(cat) : "")+'<div class="grid">'+
          items.slice((page-1)*PER_PAGE, page*PER_PAGE)
               .map(function(d){ return itemHTML(d, showYear) }).join("")+
          '</div>'+pagerHTML(key, page, total, L)+'</section>';
@@ -464,6 +520,15 @@ function render(){
            '">'+esc(c[lang])+'<span class="n">'+n+'</span></a></li>';
   }).join("");
 
+  $("#srcbar").innerHTML = '<span class="lbl">'+esc(L.by)+'</span>' +
+    Object.keys(SRCMAP).map(function(k){
+      if(!SRCCOUNT[k]) return "";
+      var sm = SRCMAP[k];
+      return '<button class="tag" type="button" data-src="'+esc(k)+'" aria-pressed="'+
+             (activeSrc===k)+'" title="'+esc(sm[lang==="tr"?"note_tr":"note_en"])+'"><b>'+
+             esc(sm[lang==="tr"?"label_tr":"label_en"])+'</b> '+SRCCOUNT[k]+'</button>';
+    }).join("");
+
   $("#tagbar").innerHTML =
     '<button class="tag pickbtn" type="button" id="pickbtn" aria-pressed="'+onlyPicks+'">'+
     '<span class="dot">◆</span> <b>'+esc(L.picks)+'</b> '+PICKCOUNT+'</button>' +
@@ -480,18 +545,18 @@ function render(){
   if(sortBy === "cat"){
     $("#list").innerHTML = CATS.map(function(c){
       var items = shown.filter(function(d){ return d.cat === c.key });
-      return items.length ? block(c.key, c[lang], items, L, false) : "";
+      return items.length ? block(c.key, c[lang], items, L, false, c.key) : "";
     }).join("");
   } else {
     var label = activeCat
       ? CATS.filter(function(c){ return c.key === activeCat })[0][lang]
       : L.all;
-    $("#list").innerHTML = block("_", label, sorted(shown), L, sortBy === "new");
+    $("#list").innerHTML = block("_", label, sorted(shown), L, sortBy === "new", activeCat);
   }
 }
 
 function update(push){ writeURL(push); render(); }
-function clearAll(){ q=""; activeTags=[]; activeCat=null; onlyPicks=false; pages={}; update(true) }
+function clearAll(){ q=""; activeTags=[]; activeCat=null; onlyPicks=false; activeSrc=null; pages={}; update(true) }
 
 /* ------------------------------------------------------------ olaylar */
 var typeTimer;
@@ -516,6 +581,22 @@ document.addEventListener("click", function(e){
     return;
   }
   if(e.target.closest("#pickbtn")){ onlyPicks = !onlyPicks; pages = {}; update(true); return }
+  var sb = e.target.closest("[data-src]");
+  if(sb){
+    var sk = sb.dataset.src;
+    activeSrc = (activeSrc === sk) ? null : sk;
+    pages = {}; update(true); return;
+  }
+  var rl = e.target.closest("[data-rel]");
+  if(rl){
+    e.preventDefault();
+    var target = NAMEIDX[rl.dataset.rel];
+    if(target){
+      q = target.name; activeTags = []; activeCat = null; onlyPicks = false; activeSrc = null;
+      pages = {}; update(true); scrollTop();
+    }
+    return;
+  }
   var tg = e.target.closest("[data-tag]");
   if(tg){
     var t = tg.dataset.tag, i = activeTags.indexOf(t);

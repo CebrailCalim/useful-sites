@@ -1,12 +1,12 @@
 # Teknoloji Bağlantıları / Technology Links
 
-Yazılım, yapay zeka, güvenlik, donanım ve bilim üzerine elle derlenmiş **598
+Yazılım, yapay zeka, güvenlik, donanım ve bilim üzerine derlenmiş **717
 bağlantılık** bir dizin. Her kayıtta bağlantının **ne yaptığı** ve
 **benzerlerinden nerede ayrıldığı** yazılı. Türkçe ve İngilizce.
 
-A hand-curated directory of 598 links on software, AI, security, hardware and
-science. Every entry states what the thing does and where it parts ways with
-its neighbours. Turkish and English.
+A directory of 717 links on software, AI, security, hardware and science.
+Every entry states what the thing does and where it parts ways with its
+neighbours. Turkish and English.
 
 ---
 
@@ -23,7 +23,12 @@ before you click.
 ## Özellikler / Features
 
 - Anlık arama — isim, açıklama, etiket ve alan adında, Türkçe karakter duyarsız
-- 62 kanonik etiket ve 20 kategoriyle birleştirilebilir filtre
+- 63 kanonik etiket ve 20 kategoriyle birleştirilebilir filtre
+- **Kaynak ayrımı** — kendi arşivinden gelen kayıtlar ile dış listelerden
+  alınanlar ayrı işaretli ve ayrı süzülebiliyor
+- **Kategori giriş metinleri** — her başlıkta neye bakılacağını anlatan iki cümle
+- **İlgili kayıtlar** — her satırda etiket örtüşmesine göre üç komşu bağlantı
+- **Kayıt bazında son doğrulama tarihi** (rozetin üstüne gelince)
 - Sıralama: kategori · A→Z · önce yeni eklenen
 - **Başlangıç noktaları** — kategori başına 2-3 kayıt işaretli, tek düğmeyle süzülüyor
 - **Durum URL'de** — filtrelediğin görünüm paylaşılabilir, tarayıcı geri tuşu çalışır
@@ -122,8 +127,23 @@ gerekmez:
 | `tags.py` | 357 serbest etiketi 63 kanonik etikete indiren sözlük |
 | `picks.py` | Kategori başına başlangıç noktası olarak işaretlenen kayıtlar |
 | `ci_github.py` | GitHub depolarının arşiv / bayatlık denetimi |
+| `sources.py` | Kayıt kökenleri (kendi arşivi / dış liste) |
+| `intros.py` | Kategori giriş metinleri |
+| `verified.json` | Kayıt bazında son doğrulama tarihi — CI her hafta tazeliyor |
 | `build.py` | Hepsini birleştirip `links.js` ve `links.en.js` üretir |
 | `ci_check.py` | GitHub Actions için bağlantı taraması ve rapor |
+
+## Kayıt kökenleri / Provenance
+
+Dizindeki her kaydın nereden geldiği işaretli, çünkü hepsi aynı titizlikte değil:
+
+| Kaynak | Adet | Ne demek |
+|---|---|---|
+| **Kedi** | 612 | Derleyenin kendi yer imi arşivi; tek tek gözden geçirilmiş, açıklamalar projenin kendi belgelerine bakılarak yazılmış |
+| **Dış liste** | 105 | [Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) derlemesinden alındı; 702 bağlantıdan canlı, tekrarsız ve kapsama giren ~105'i seçildi |
+
+Dış listeden alınanların açıklamaları da elle yazıldı ama karşılaştırmalı yargı
+daha az; okuyucunun bu ayrımı görebilmesi için rozet ve süzgeç var.
 
 ## Lisans / License
 

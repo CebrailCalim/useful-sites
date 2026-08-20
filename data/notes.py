@@ -36,16 +36,18 @@ CATS = [
 NOTES = {}
 
 
-def add(url, name, tags, tr, en, cat=None):
+def add(url, name, tags, tr, en, cat=None, src='kedi'):
     k = re.sub(r'^https?://', '', url.strip().lower())
     k = re.sub(r'^www\.', '', k).rstrip('/')
-    NOTES[k] = {'name': name, 'tags': tags, 'tr': tr, 'en': en, 'cat': cat}
+    NOTES[k] = {'name': name, 'tags': tags, 'tr': tr, 'en': en,
+                'cat': cat, 'src': src, 'url': url}
 
 
 PARTS = [
     'part_ai_model', 'part_ai_infra', 'part_ai_tools',
     'part_dev', 'part_ops', 'part_infra', 'part_sec',
     'part_hw', 'part_misc', 'part_extra',
+    'part_yeni', 'part_ext1', 'part_ext2',
 ]
 
 import importlib  # noqa: E402
