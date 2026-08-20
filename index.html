@@ -4,127 +4,189 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Teknoloji Bağlantıları</title>
-<meta name="description" content="Yazılım, yapay zeka, güvenlik ve donanım üzerine elle derlenmiş bağlantı dizini. Her bağlantının ne işe yaradığı ve benzerlerinden farkı yazılı.">
+<meta name="description" content="Yazılım, yapay zeka, güvenlik ve donanım üzerine elle derlenmiş bağlantı dizini. Her kayıtta ne işe yaradığı ve benzerlerinden farkı yazılı.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>▤</text></svg>">
 <style>
+/* ---------------------------------------------------------------- jeton */
 :root{
-  --bg:#fbfaf8; --fg:#1c1b19; --dim:#6b6862; --faint:#918d85;
-  --rule:#e3e0d9; --rule2:#efece6;
-  --accent:#8c3a1c; --accent-bg:#f6ece7;
-  --mark:#fbe9a8;
+  --bg:#fcfbf9;      --panel:#f5f2ec;
+  --fg:#191817;      --dim:#57544e;      --faint:#8b8780;
+  --rule:#e4e0d8;    --rule2:#efebe3;
+  --accent:#a8451f;  --accent-soft:#f6ece6;
+  --mark:#fbe6a0;
   --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
   --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --step:cubic-bezier(.2,.6,.3,1);
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#14151a; --fg:#dedcd6; --dim:#928e86; --faint:#6d6a64;
-    --rule:#282a31; --rule2:#1f2127;
-    --accent:#d98a63; --accent-bg:#241d19;
-    --mark:#4a3d12;
+    --bg:#1a1c20;    --panel:#22252a;
+    --fg:#e2e0da;    --dim:#a3a09a;      --faint:#75726c;
+    --rule:#2c3037;  --rule2:#24272c;
+    --accent:#e78b62; --accent-soft:#2a211c;
+    --mark:#5c4a15;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#14151a; --fg:#dedcd6; --dim:#928e86; --faint:#6d6a64;
-  --rule:#282a31; --rule2:#1f2127;
-  --accent:#d98a63; --accent-bg:#241d19;
-  --mark:#4a3d12;
+  --bg:#1a1c20;    --panel:#22252a;
+  --fg:#e2e0da;    --dim:#a3a09a;      --faint:#75726c;
+  --rule:#2c3037;  --rule2:#24272c;
+  --accent:#e78b62; --accent-soft:#2a211c;
+  --mark:#5c4a15;
 }
+
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body{
-  margin:0; background:var(--bg); color:var(--fg);
-  font:15px/1.5 var(--sans);
-  padding:0 20px 80px;
+  margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.6 var(--sans);
+  font-feature-settings:"kern" 1;
+  -webkit-font-smoothing:antialiased;
+  padding:0 24px 96px;
 }
+::selection{background:var(--accent-soft);color:var(--fg)}
 a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:1px}
+.wrap{max-width:1180px;margin:0 auto}
 
-/* ---------- başlık ---------- */
-header{padding:36px 0 18px;border-bottom:1px solid var(--rule)}
-.masthead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-h1{font-size:20px;font-weight:600;margin:0;letter-spacing:-.01em}
-.sub{color:var(--dim);font-size:13.5px;margin:8px 0 0;max-width:62ch}
-.hdr-actions{margin-left:auto;display:flex;gap:6px;align-items:center}
+/* ---------------------------------------------------------------- başlık */
+header{padding:48px 0 22px;border-bottom:1px solid var(--rule)}
+.masthead{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap}
+h1{
+  font-size:26px;font-weight:600;margin:0;
+  letter-spacing:-.022em;line-height:1.25;
+}
+.sub{color:var(--dim);font-size:15.5px;line-height:1.7;margin:12px 0 0;max-width:66ch}
+.hdr-actions{margin-left:auto;display:flex;gap:7px;align-items:center;padding-top:3px}
 .btn{
-  font:12px/1 var(--mono);color:var(--dim);background:none;
-  border:1px solid var(--rule);padding:6px 9px;cursor:pointer;border-radius:2px;
+  font:12.5px/1 var(--mono);color:var(--dim);background:none;
+  border:1px solid var(--rule);padding:8px 11px;cursor:pointer;border-radius:3px;
+  transition:color .12s var(--step),border-color .12s var(--step),background .12s var(--step);
 }
-.btn:hover{color:var(--fg);border-color:var(--faint)}
-.btn[aria-pressed="true"]{color:var(--accent);border-color:var(--accent)}
+.btn:hover{color:var(--fg);border-color:var(--faint);background:var(--panel)}
+.btn:active{transform:translateY(.5px)}
 
-/* ---------- arama ---------- */
-.tools{padding:16px 0 10px;position:sticky;top:0;background:var(--bg);z-index:20;
-  border-bottom:1px solid var(--rule2)}
-.searchrow{display:flex;gap:8px;align-items:center}
+/* ---------------------------------------------------------------- arama */
+.tools{padding:18px 0 12px;border-bottom:1px solid var(--rule2)}
+.searchrow{display:flex;gap:10px;align-items:center}
 #q{
-  flex:1;font:15px/1 var(--sans);color:var(--fg);background:var(--bg);
-  border:1px solid var(--rule);border-radius:2px;padding:9px 11px;
+  flex:1;font:16px/1 var(--sans);color:var(--fg);background:var(--bg);
+  border:1px solid var(--rule);border-radius:3px;padding:11px 13px;
+  transition:border-color .12s var(--step),box-shadow .12s var(--step);
 }
-#q:focus{outline:none;border-color:var(--accent)}
+#q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
 #q::placeholder{color:var(--faint)}
-.count{font:12px/1 var(--mono);color:var(--faint);white-space:nowrap}
-.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.count{font:12.5px/1 var(--mono);color:var(--faint);white-space:nowrap;font-variant-numeric:tabular-nums}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 .tag{
-  font:11.5px/1 var(--mono);color:var(--dim);background:none;
-  border:1px solid var(--rule);padding:4px 7px;border-radius:2px;cursor:pointer;
+  font:12.5px/1 var(--mono);color:var(--faint);background:none;
+  border:1px solid var(--rule);padding:5px 9px;cursor:pointer;border-radius:3px;
+  transition:color .12s var(--step),border-color .12s var(--step),background .12s var(--step);
 }
-.tag:hover{border-color:var(--faint);color:var(--fg)}
-.tag b{font-weight:500}
-.tag{color:var(--faint)}
-.tag b{color:var(--dim)}
+.tag b{font-weight:500;color:var(--dim);transition:color .12s var(--step)}
+.tag:hover{border-color:var(--faint);background:var(--panel)}
+.tag:hover b{color:var(--fg)}
+.tag[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
 .tag[aria-pressed="true"] b{color:var(--accent)}
-.tag[aria-pressed="true"]{background:var(--accent-bg);border-color:var(--accent);color:var(--accent)}
+.tagmore{
+  font:12.5px/1 var(--mono);color:var(--faint);background:none;
+  border:1px dashed var(--rule);padding:5px 9px;cursor:pointer;border-radius:3px;
+}
+.tagmore:hover{color:var(--fg);border-color:var(--faint)}
 
-/* ---------- düzen ---------- */
-.cols{display:grid;grid-template-columns:190px 1fr;gap:38px;margin-top:22px}
-nav{position:sticky;top:104px;align-self:start;max-height:calc(100vh - 130px);overflow:auto}
+/* ---------------------------------------------------------------- düzen */
+.cols{display:grid;grid-template-columns:212px 1fr;gap:48px;margin-top:30px;align-items:start}
 nav ol{list-style:none;margin:0;padding:0}
+nav li{border-bottom:1px solid var(--rule2)}
+nav li:last-child{border-bottom:0}
 nav a{
-  display:flex;justify-content:space-between;gap:8px;
-  padding:4px 0;color:var(--dim);text-decoration:none;font-size:13px;
+  display:flex;justify-content:space-between;gap:10px;align-items:baseline;
+  padding:7px 0;color:var(--dim);text-decoration:none;font-size:14px;line-height:1.45;
+  transition:color .12s var(--step),padding-left .14s var(--step);
 }
-nav a:hover{color:var(--fg)}
-nav a.on{color:var(--accent)}
-nav .n{font:11px/1.4 var(--mono);color:var(--faint)}
+nav a:hover{color:var(--fg);padding-left:4px}
+nav a.on{color:var(--accent);font-weight:600}
+nav .n{font:11.5px/1.4 var(--mono);color:var(--faint);font-variant-numeric:tabular-nums}
+.navback{display:none;width:100%;margin:0 0 14px;text-align:left}
+.navback.show{display:block}
 
-/* ---------- liste ---------- */
-section{margin:0 0 34px;scroll-margin-top:112px}
+/* ---------------------------------------------------------------- liste */
+section{margin:0 0 46px;scroll-margin-top:24px}
 h2{
-  font:12px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;
-  color:var(--faint);font-weight:400;margin:0 0 2px;
-  padding-bottom:8px;border-bottom:1px solid var(--rule);
+  font:12.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.1em;
+  color:var(--faint);font-weight:400;margin:0 0 4px;padding-bottom:11px;
+  border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:12px;
 }
-.item{padding:11px 0;border-bottom:1px solid var(--rule2)}
-.item-h{display:flex;gap:9px;align-items:baseline;flex-wrap:wrap}
-.item a.name{font-weight:600;text-decoration:none;font-size:15px}
-.item a.name:hover{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
-.host{font:11.5px/1 var(--mono);color:var(--faint)}
-.meta{font:11px/1 var(--mono);color:var(--faint);margin-left:auto;white-space:nowrap}
-.desc{margin:4px 0 0;color:var(--dim);font-size:13.5px;max-width:78ch}
-.itags{margin:5px 0 0;font:11px/1.4 var(--mono);color:var(--faint)}
-.itags span{cursor:pointer}
+h2 .n{font-variant-numeric:tabular-nums}
+.item{
+  padding:15px 0 15px 14px;border-bottom:1px solid var(--rule2);
+  border-left:2px solid transparent;margin-left:-16px;
+  transition:border-color .14s var(--step);
+}
+.item:hover{border-left-color:var(--accent)}
+.item-h{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.item a.name{
+  font-weight:600;text-decoration:none;font-size:16.5px;letter-spacing:-.011em;
+  transition:color .12s var(--step);
+}
+.item a.name:hover{color:var(--accent)}
+.host{font:12.5px/1 var(--mono);color:var(--faint)}
+.desc{margin:7px 0 0;color:var(--dim);font-size:15px;line-height:1.72;max-width:76ch}
+.itags{margin:9px 0 0;font:12px/1.6 var(--mono);color:var(--faint)}
+.itags span{cursor:pointer;transition:color .12s var(--step)}
 .itags span:hover{color:var(--accent)}
-mark{background:var(--mark);color:inherit;padding:0 1px}
+mark{background:var(--mark);color:inherit;padding:0 2px;border-radius:2px}
 
-.empty{padding:50px 0;color:var(--dim);font-size:14px}
-.empty code{font:13px var(--mono);color:var(--accent)}
+/* ---------------------------------------------------------------- sayfalama */
+.pager{display:flex;gap:6px;align-items:center;padding:20px 0 0;flex-wrap:wrap}
+.pg{
+  font:12.5px/1 var(--mono);color:var(--dim);background:none;border:1px solid var(--rule);
+  padding:7px 10px;cursor:pointer;border-radius:3px;min-width:32px;
+  font-variant-numeric:tabular-nums;
+  transition:color .12s var(--step),border-color .12s var(--step),background .12s var(--step);
+}
+.pg:hover:not(:disabled){border-color:var(--faint);color:var(--fg);background:var(--panel)}
+.pg[aria-current="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.pg:disabled{opacity:.32;cursor:default}
+.pgpos{font:12px/1 var(--mono);color:var(--faint);margin-left:8px}
 
-footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--rule);
-  color:var(--faint);font-size:12.5px;line-height:1.7}
-footer a{color:var(--dim)}
+.empty{padding:64px 0;color:var(--dim);font-size:15.5px}
+.empty code{font:14px var(--mono);color:var(--accent)}
 
-@media (max-width:760px){
-  body{padding:0 15px 60px}
+/* ---------------------------------------------------------------- yukarı */
+#top{
+  position:fixed;right:24px;bottom:24px;z-index:30;
+  opacity:0;pointer-events:none;transform:translateY(6px);
+  transition:opacity .18s var(--step),transform .18s var(--step);
+  background:var(--bg);
+}
+#top.show{opacity:1;pointer-events:auto;transform:none}
+
+footer{
+  margin-top:64px;padding-top:22px;border-top:1px solid var(--rule);
+  color:var(--faint);font-size:13.5px;line-height:1.85;max-width:74ch;
+}
+footer kbd{
+  font:12px var(--mono);border:1px solid var(--rule);border-radius:3px;
+  padding:2px 5px;color:var(--dim);
+}
+
+@media (max-width:820px){
+  body{padding:0 17px 72px}
+  header{padding:34px 0 18px}
+  h1{font-size:23px}
   .cols{grid-template-columns:1fr;gap:0}
-  nav{position:static;max-height:none;margin-bottom:26px;
-    padding-bottom:14px;border-bottom:1px solid var(--rule)}
-  nav ol{display:flex;flex-wrap:wrap;gap:4px 12px}
-  nav a{padding:3px 0}
-  .meta{margin-left:0}
+  nav{margin-bottom:30px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+  nav ol{display:flex;flex-wrap:wrap;gap:0 18px}
+  nav li{border-bottom:0}
+  nav a{padding:4px 0}
+  nav a:hover{padding-left:0}
   .searchrow{flex-wrap:wrap}
   #q{flex:1 1 100%}
-  .count{width:100%;margin-top:6px}
-  .desc{font-size:13px}
+  .count{width:100%;margin-top:8px}
+  .item{margin-left:0;padding-left:12px}
+  #top{right:16px;bottom:16px}
 }
 </style>
 </head>
@@ -133,13 +195,17 @@ footer a{color:var(--dim)}
 
 <header>
   <div class="masthead">
-    <h1 id="t-title">Teknoloji Bağlantıları</h1>
+    <div>
+      <h1 id="t-title">Teknoloji Bağlantıları</h1>
+      <p class="sub" id="t-sub"></p>
+    </div>
     <div class="hdr-actions">
+      <button class="btn" id="rand" type="button"></button>
+      <button class="btn" id="dl" type="button">JSON</button>
       <button class="btn" id="lang" type="button">EN</button>
       <button class="btn" id="theme" type="button" title="Tema">◐</button>
     </div>
   </div>
-  <p class="sub" id="t-sub"></p>
 </header>
 
 <div class="tools">
@@ -151,92 +217,101 @@ footer a{color:var(--dim)}
 </div>
 
 <div class="cols">
-  <nav><ol id="nav"></ol></nav>
+  <nav>
+    <button class="btn navback" id="back" type="button"></button>
+    <ol id="nav"></ol>
+  </nav>
   <main id="list"></main>
 </div>
 
 <footer id="foot"></footer>
-
 </div>
+
+<button class="btn" id="top" type="button" title="Yukarı">↑</button>
+
 <script src="links.js"></script>
 <script>
 (function(){
 "use strict";
 
+var PER_PAGE = 20;
+var CHECKED  = "20.08.2026";
+
 var T = {
   tr:{
     title:"Teknoloji Bağlantıları",
-    sub:"Yazılım, yapay zeka, güvenlik ve donanım üzerine elle derlenmiş bir dizin. Her bağlantının ne işe yaradığı ve benzerlerinden nerede ayrıldığı yazılı.",
+    sub:"Yazılım, yapay zeka, güvenlik ve donanım üzerine elle derlenmiş bir dizin. Her kayıtta bağlantının ne yaptığı ve komşularından nerede ayrıldığı yazılı.",
     ph:"Ara — isim, açıklama, etiket, alan adı",
     count:function(n,t){return n+" / "+t+" bağlantı"},
     empty:"Eşleşen bağlantı yok.",
     clear:"filtreleri temizle",
-    all:"Hepsi",
+    back:"← tüm kategoriler",
+    rand:"rastgele",
     lang:"EN",
-    foot:'Bağlantılar elle derlendi ve son olarak <b>20.08.2026</b> tarihinde kontrol edildi. '+
-         'Hatalı ya da ölü bir bağlantı görürsen bildir. '+
-         'Açıklamalar sitelerin kendi tanımlarına bakılarak yazıldı; öznel karşılaştırmalar derleyene aittir.',
-    kb:"<kbd>/</kbd> ara · <kbd>Esc</kbd> temizle"
+    more:function(n){return "+"+n+" etiket"},
+    less:"etiketleri kısalt",
+    page:function(a,b){return a+" / "+b+" sayfa"},
+    prev:"önceki", next:"sonraki",
+    foot:'Bağlantılar elle derlendi, son kontrol <b>'+CHECKED+'</b>. Hatalı ya da ölü bir kayıt görürsen bildir. '+
+         'Açıklamalar projelerin kendi belgelerine bakılarak yazıldı; karşılaştırmalı yargılar derleyene ait.',
+    kb:'<kbd>/</kbd> ara · <kbd>r</kbd> rastgele · <kbd>Esc</kbd> temizle'
   },
   en:{
     title:"Technology Links",
-    sub:"A hand-curated directory on software, AI, security and hardware. Every entry says what the thing is for and where it differs from its neighbours.",
+    sub:"A hand-curated directory covering software, AI, security and hardware. Every entry states what the thing does and where it parts ways with its neighbours.",
     ph:"Search — name, description, tag, domain",
     count:function(n,t){return n+" / "+t+" links"},
     empty:"No matching links.",
     clear:"clear filters",
-    all:"All",
+    back:"← all categories",
+    rand:"random",
     lang:"TR",
-    foot:'Links were curated by hand and last checked on <b>20.08.2026</b>. '+
-         'Tell me if you spot a broken or wrong entry. '+
-         "Descriptions are based on each site's own wording; the comparative judgements are the curator's.",
-    kb:"<kbd>/</kbd> search · <kbd>Esc</kbd> clear"
+    more:function(n){return "+"+n+" tags"},
+    less:"fewer tags",
+    page:function(a,b){return "page "+a+" / "+b},
+    prev:"prev", next:"next",
+    foot:'Curated by hand, last checked <b>'+CHECKED+'</b>. Tell me if you spot a broken or wrong entry. '+
+         "Descriptions are written from each project's own documentation; comparative judgements are the curator's.",
+    kb:'<kbd>/</kbd> search · <kbd>r</kbd> random · <kbd>Esc</kbd> clear'
   }
 };
 
-var CHECKED = "20.08.2026";
-var data = window.LINKS || [];
-var lang = localStorage.getItem("lang") || "tr";
+var data  = window.LINKS || [];
+var lang  = localStorage.getItem("lang")  || "tr";
 var theme = localStorage.getItem("theme");
-var q = "", activeTags = [], activeCat = null;
+var q = "", activeTags = [], activeCat = null, allTagsOpen = false;
+var pages = {};
 
 var $ = function(s){return document.querySelector(s)};
 var esc = function(s){return String(s).replace(/[&<>"]/g,function(c){
   return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
 
-function host(u){
-  try{ return new URL(u).hostname.replace(/^www\./,""); }catch(e){ return ""; }
-}
+function host(u){ try{ return new URL(u).hostname.replace(/^www\./,"") }catch(e){ return "" } }
 function fold(s){
   return s.toLowerCase()
     .replace(/[ıİ]/g,"i").replace(/[şŞ]/g,"s").replace(/[ğĞ]/g,"g")
     .replace(/[üÜ]/g,"u").replace(/[öÖ]/g,"o").replace(/[çÇ]/g,"c");
 }
 
-/* --- arama dizini --- */
 data.forEach(function(d){
   d._h = host(d.url);
-  d._s = fold([d.name, d.tr, d.en, (d.tags||[]).join(" "), d._h, d.cat_tr, d.cat_en].join(" "));
+  d._s = fold([d.name,d.tr,d.en,(d.tags||[]).join(" "),d._h,d.cat_tr,d.cat_en].join(" "));
 });
 
-function cats(){
+var CATS = (function(){
   var seen = [], out = [];
   data.forEach(function(d){
-    var k = d.cat;
-    if(seen.indexOf(k) < 0){ seen.push(k); out.push({key:k, tr:d.cat_tr, en:d.cat_en}); }
+    if(seen.indexOf(d.cat) < 0){ seen.push(d.cat); out.push({key:d.cat, tr:d.cat_tr, en:d.cat_en}); }
   });
   return out;
-}
-var CATS = cats();
+})();
 
 var TAGCOUNT = {};
 data.forEach(function(d){ (d.tags||[]).forEach(function(t){ TAGCOUNT[t]=(TAGCOUNT[t]||0)+1 }) });
-
-/* Filtre çubuğunda yalnızca sık geçen etiketler durur; kalan ~200 etiket
-   aramadan erişilebilir olduğu için çubuğu şişirmenin anlamı yok. */
-var TAGS = Object.keys(TAGCOUNT)
-  .filter(function(t){ return TAGCOUNT[t] >= 9 })
-  .sort(function(a,b){ return TAGCOUNT[b]-TAGCOUNT[a] || a.localeCompare(b) });
+var ALLTAGS = Object.keys(TAGCOUNT).sort(function(a,b){
+  return TAGCOUNT[b]-TAGCOUNT[a] || a.localeCompare(b,"tr");
+});
+var TOPTAGS = ALLTAGS.filter(function(t){ return TAGCOUNT[t] >= 8 });
 
 function matches(d){
   if(activeCat && d.cat !== activeCat) return false;
@@ -254,100 +329,169 @@ function hl(text){
   var terms = fold(q).split(/\s+/).filter(Boolean).sort(function(a,b){return b.length-a.length});
   var src = esc(text), f = fold(src), out = "", i = 0;
   while(i < src.length){
-    var hit = -1, len = 0;
+    var len = 0;
     for(var t=0;t<terms.length;t++){
-      if(f.startsWith(terms[t], i)){ hit = i; len = terms[t].length; break; }
+      if(terms[t] && f.startsWith(terms[t], i)){ len = terms[t].length; break; }
     }
-    if(hit === i){ out += "<mark>" + src.substr(i,len) + "</mark>"; i += len; }
+    if(len){ out += "<mark>"+src.substr(i,len)+"</mark>"; i += len; }
     else { out += src[i]; i++; }
   }
   return out;
+}
+
+function itemHTML(d){
+  return '<article class="item"><div class="item-h">'+
+    '<a class="name" href="'+esc(d.url)+'" target="_blank" rel="noopener noreferrer">'+hl(d.name)+'</a>'+
+    '<span class="host">'+esc(d._h)+'</span></div>'+
+    '<p class="desc">'+hl(d[lang]||d.tr||"")+'</p>'+
+    ((d.tags||[]).length
+      ? '<p class="itags">'+d.tags.map(function(t){
+          return '<span data-tag="'+esc(t)+'">'+esc(t)+'</span>' }).join(" · ")+'</p>'
+      : '')+
+    '</article>';
+}
+
+function pagerHTML(cat, page, total, L){
+  if(total <= 1) return "";
+  var out = ['<div class="pager">'];
+  out.push('<button class="pg" data-pg="'+cat+':'+(page-1)+'"'+(page<=1?' disabled':'')+'>‹ '+L.prev+'</button>');
+  var from = Math.max(1, page-2), to = Math.min(total, from+4);
+  from = Math.max(1, Math.min(from, to-4));
+  if(from > 1) out.push('<button class="pg" data-pg="'+cat+':1">1</button>'+(from>2?'<span class="pgpos">…</span>':''));
+  for(var i=from;i<=to;i++){
+    out.push('<button class="pg" data-pg="'+cat+':'+i+'"'+(i===page?' aria-current="true"':'')+'>'+i+'</button>');
+  }
+  if(to < total) out.push((to<total-1?'<span class="pgpos">…</span>':'')+'<button class="pg" data-pg="'+cat+':'+total+'">'+total+'</button>');
+  out.push('<button class="pg" data-pg="'+cat+':'+(page+1)+'"'+(page>=total?' disabled':'')+'>'+L.next+' ›</button>');
+  out.push('<span class="pgpos">'+L.page(page,total)+'</span></div>');
+  return out.join("");
 }
 
 function render(){
   var L = T[lang];
   document.documentElement.lang = lang;
   $("#t-title").textContent = L.title;
-  $("#t-sub").textContent = L.sub;
-  $("#q").placeholder = L.ph;
-  $("#lang").textContent = L.lang;
-  $("#foot").innerHTML = L.foot.replace("20.08.2026", CHECKED) + "<br>" + L.kb;
+  $("#t-sub").textContent   = L.sub;
+  $("#q").placeholder       = L.ph;
+  $("#lang").textContent    = L.lang;
+  $("#rand").textContent    = L.rand;
+  $("#back").textContent    = L.back;
+  $("#foot").innerHTML      = L.foot + "<br>" + L.kb;
+  $("#back").classList.toggle("show", !!activeCat);
 
   var shown = data.filter(matches);
   $("#count").textContent = L.count(shown.length, data.length);
 
-  /* kenar çubuğu */
-  var nav = CATS.map(function(c){
+  $("#nav").innerHTML = CATS.map(function(c){
     var n = shown.filter(function(d){ return d.cat === c.key }).length;
     if(!n && activeCat !== c.key) return "";
-    return '<li><a href="#c-'+c.key+'" data-cat="'+c.key+'" class="'+
-           (activeCat===c.key?"on":"")+'">'+esc(c[lang])+'<span class="n">'+n+'</span></a></li>';
+    return '<li><a href="#c-'+c.key+'" data-cat="'+c.key+'" class="'+(activeCat===c.key?"on":"")+
+           '">'+esc(c[lang])+'<span class="n">'+n+'</span></a></li>';
   }).join("");
-  $("#nav").innerHTML = nav;
 
-  /* etiketler */
-  var shownTags = TAGS.slice();
-  activeTags.forEach(function(t){ if(shownTags.indexOf(t)<0) shownTags.push(t) });
-  $("#tagbar").innerHTML = shownTags.map(function(t){
+  var list = allTagsOpen ? ALLTAGS.slice() : TOPTAGS.slice();
+  activeTags.forEach(function(t){ if(list.indexOf(t)<0) list.push(t) });
+  var bar = list.map(function(t){
     return '<button class="tag" type="button" data-tag="'+esc(t)+'" aria-pressed="'+
-           (activeTags.indexOf(t)>=0)+'"><b>'+esc(t)+'</b> '+(TAGCOUNT[t]||0)+'</button>';
-  }).join("");
+           (activeTags.indexOf(t)>=0)+'"><b>'+esc(t)+'</b> '+TAGCOUNT[t]+'</button>';
+  });
+  if(ALLTAGS.length > TOPTAGS.length){
+    bar.push('<button class="tagmore" id="tagtoggle" type="button">'+
+      (allTagsOpen ? L.less : L.more(ALLTAGS.length-TOPTAGS.length))+'</button>');
+  }
+  $("#tagbar").innerHTML = bar.join("");
 
-  /* liste */
   if(!shown.length){
-    $("#list").innerHTML = '<p class="empty">'+L.empty+
-      ' <a href="#" id="clr"><code>'+L.clear+'</code></a></p>';
+    $("#list").innerHTML = '<p class="empty">'+L.empty+' <a href="#" id="clr"><code>'+L.clear+'</code></a></p>';
     return;
   }
+
   var out = [];
   CATS.forEach(function(c){
     var items = shown.filter(function(d){ return d.cat === c.key });
     if(!items.length) return;
-    out.push('<section id="c-'+c.key+'"><h2>'+esc(c[lang])+' <span class="n">('+items.length+')</span></h2>');
-    items.forEach(function(d){
-      out.push('<article class="item"><div class="item-h">'+
-        '<a class="name" href="'+esc(d.url)+'" rel="noopener">'+hl(d.name)+'</a>'+
-        '<span class="host">'+esc(d._h)+'</span>'+
-        (d.stars ? '<span class="meta">★ '+d.stars+'</span>' : '')+
-        '</div>'+
-        '<p class="desc">'+hl(d[lang] || d.tr || "")+'</p>'+
-        ((d.tags||[]).length ? '<p class="itags">'+
-          d.tags.map(function(t){return '<span data-tag="'+esc(t)+'">'+esc(t)+'</span>'}).join(" · ")+
-          '</p>' : '')+
-        '</article>');
-    });
+    var total = Math.ceil(items.length / PER_PAGE);
+    var page  = Math.min(Math.max(pages[c.key]||1, 1), total);
+    pages[c.key] = page;
+    out.push('<section id="c-'+c.key+'"><h2><span>'+esc(c[lang])+'</span>'+
+             '<span class="n">'+items.length+'</span></h2>');
+    items.slice((page-1)*PER_PAGE, page*PER_PAGE).forEach(function(d){ out.push(itemHTML(d)) });
+    out.push(pagerHTML(c.key, page, total, L));
     out.push('</section>');
   });
   $("#list").innerHTML = out.join("");
 }
 
-/* --- olaylar --- */
-$("#q").addEventListener("input", function(e){ q = e.target.value.trim(); render(); });
+function resetPages(){ pages = {}; }
+function clearAll(){
+  q=""; $("#q").value=""; activeTags=[]; activeCat=null; allTagsOpen=false; resetPages(); render();
+}
+
+/* ---------------------------------------------------------------- olaylar */
+$("#q").addEventListener("input", function(e){ q = e.target.value.trim(); resetPages(); render(); });
 
 document.addEventListener("click", function(e){
+  var pg = e.target.closest("[data-pg]");
+  if(pg){
+    var parts = pg.dataset.pg.split(":");
+    pages[parts[0]] = parseInt(parts[1],10);
+    render();
+    var sec = document.getElementById("c-"+parts[0]);
+    if(sec) sec.scrollIntoView({block:"start"});
+    return;
+  }
+  if(e.target.closest("#tagtoggle")){ allTagsOpen = !allTagsOpen; render(); return; }
+
   var tg = e.target.closest("[data-tag]");
   if(tg){
     var t = tg.dataset.tag, i = activeTags.indexOf(t);
     if(i >= 0) activeTags.splice(i,1); else activeTags.push(t);
-    render(); return;
+    resetPages(); render(); return;
   }
-  var cl = e.target.closest("#clr");
-  if(cl){ e.preventDefault(); q=""; $("#q").value=""; activeTags=[]; activeCat=null; render(); return; }
+  if(e.target.closest("#clr")){ e.preventDefault(); clearAll(); return; }
+
   var nv = e.target.closest("[data-cat]");
   if(nv){
     e.preventDefault();
     var c = nv.dataset.cat;
     activeCat = (activeCat === c) ? null : c;
-    render();
-    if(activeCat) window.scrollTo({top:0,behavior:"instant"});
+    resetPages(); render();
+    window.scrollTo({top:0});
     return;
   }
 });
 
+$("#back").addEventListener("click", function(){
+  activeCat = null; resetPages(); render(); window.scrollTo({top:0});
+});
+
+function randomLink(){
+  var pool = data.filter(matches);
+  if(!pool.length) pool = data;
+  var d = pool[Math.floor(Math.random()*pool.length)];
+  window.open(d.url, "_blank", "noopener");
+}
+$("#rand").addEventListener("click", randomLink);
+
+$("#dl").addEventListener("click", function(){
+  var rows = data.filter(matches).map(function(d){
+    return {name:d.name, url:d.url, category:d[lang==="tr"?"cat_tr":"cat_en"],
+            tags:d.tags, description:d[lang]||d.tr};
+  });
+  var blob = new Blob([JSON.stringify({
+    source:"Teknoloji Bağlantıları", checked:CHECKED, lang:lang,
+    count:rows.length, links:rows
+  }, null, 2)], {type:"application/json"});
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "baglantilar-" + (activeCat||"tumu") + ".json";
+  document.body.appendChild(a); a.click();
+  setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 0);
+});
+
 $("#lang").addEventListener("click", function(){
   lang = (lang === "tr") ? "en" : "tr";
-  localStorage.setItem("lang", lang);
-  render();
+  localStorage.setItem("lang", lang); render();
 });
 
 function applyTheme(){
@@ -356,16 +500,33 @@ function applyTheme(){
 }
 $("#theme").addEventListener("click", function(){
   var dark = matchMedia("(prefers-color-scheme:dark)").matches;
-  var cur = theme || (dark ? "dark" : "light");
-  theme = (cur === "dark") ? "light" : "dark";
-  localStorage.setItem("theme", theme);
-  applyTheme();
+  theme = ((theme || (dark?"dark":"light")) === "dark") ? "light" : "dark";
+  localStorage.setItem("theme", theme); applyTheme();
 });
 applyTheme();
 
+/* yukarı çık — başlık görüş alanından çıkınca beliriyor */
+var topBtn = $("#top"), ticking = false;
+function syncTop(){
+  var h = document.querySelector("header");
+  topBtn.classList.toggle("show", h.getBoundingClientRect().bottom < 0);
+}
+addEventListener("scroll", function(){
+  if(ticking) return;
+  ticking = true;
+  requestAnimationFrame(function(){ syncTop(); ticking = false; });
+}, {passive:true});
+if("IntersectionObserver" in window){
+  new IntersectionObserver(syncTop, {rootMargin:"0px"}).observe(document.querySelector("header"));
+}
+topBtn.addEventListener("click", function(){ window.scrollTo({top:0}) });
+window.__syncTop = syncTop;          /* test kancası */
+
 document.addEventListener("keydown", function(e){
-  if(e.key === "/" && document.activeElement !== $("#q")){ e.preventDefault(); $("#q").focus(); }
-  if(e.key === "Escape"){ q=""; $("#q").value=""; activeTags=[]; activeCat=null; render(); $("#q").blur(); }
+  var typing = /^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName);
+  if(e.key === "/" && !typing){ e.preventDefault(); $("#q").focus(); }
+  if(e.key === "r" && !typing && !e.ctrlKey && !e.metaKey && !e.altKey){ randomLink(); }
+  if(e.key === "Escape"){ clearAll(); $("#q").blur(); }
 });
 
 render();

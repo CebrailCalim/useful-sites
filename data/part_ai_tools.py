@@ -6,331 +6,531 @@ C = 'yz_arac'
 
 def load(add):
     # ---------------------------------------------------------- kod asistanları
-    add('https://github.com/features/copilot', 'GitHub Copilot', ['freemium', 'kod'],
-        'Editör içi kod tamamlama ve sohbet. Rakiplerinden farkı GitHub ve kurumsal politika yönetimiyle iç içe olması.',
-        'In-editor code completion and chat; its distinction is being wired into GitHub and enterprise policy management.', C)
-    add('https://cursor.com/', 'Cursor', ['freemium', 'kod', 'editör'],
-        'YZ etrafında yeniden kurulmuş VS Code çatalı. Eklentiden farkı, proje genelinde çok dosyalı düzenlemeyi ana akış hâline getirmesi.',
-        'A VS Code fork rebuilt around AI. Unlike a plugin it makes multi-file, project-wide editing the main flow.', C)
-    add('https://windsurf.com/', 'Windsurf', ['freemium', 'kod', 'editör'],
-        'Agent öncelikli YZ editörü; Cursor’a en yakın alternatif, farkı uzun otonom görevleri kendi başına yürütmeye daha çok yaslanması.',
-        'Agent-first AI editor and the closest alternative to Cursor, leaning harder on running long autonomous tasks by itself.', C)
-    add('https://www.continue.dev/', 'Continue', ['açık kaynak', 'kod', 'eklenti'],
-        'VS Code ve JetBrains için açık kaynak YZ eklentisi. Kapalı editörlerden farkı, hangi modeli kullanacağını tamamen senin seçmen.',
-        'Open-source AI plugin for VS Code and JetBrains; unlike closed editors you choose exactly which model backs it.', C)
-    add('https://aider.chat/', 'Aider', ['açık kaynak', 'kod', 'cli'],
-        'Terminalde çalışan eşli programlama aracı; değişiklikleri doğrudan git commit’i olarak yazması onu editör eklentilerinden ayırır.',
-        'Terminal pair-programmer whose distinguishing habit is writing changes straight into git commits.', C)
-    add('https://cline.bot/', 'Cline', ['açık kaynak', 'kod', 'eklenti'],
-        'VS Code içinde dosya oluşturup komut çalıştırabilen otonom kodlama agent’ı; her adım için onay istemesiyle kontrolü sende bırakır.',
-        'Autonomous coding agent inside VS Code that creates files and runs commands, asking approval at each step to keep you in control.', C)
-    add('https://roocode.com/', 'Roo Code', ['açık kaynak', 'kod', 'eklenti'],
-        'Cline’dan türeyen kodlama agent’ı; mimar, kodcu, hata ayıklayıcı gibi kip ayrımı sunmasıyla ayrışıyor.',
-        'A coding agent forked from Cline, distinguished by separate modes such as architect, coder and debugger.', C)
-    add('https://www.tabbyml.com/', 'Tabby', ['açık kaynak', 'kod', 'kendi sunucunda'],
-        'Kendi sunucunda çalışan kod tamamlama; Copilot’tan farkı kodun hiçbir zaman dışarı çıkmaması.',
-        'Self-hosted code completion; unlike Copilot your code never leaves your infrastructure.', C)
-    add('https://www.all-hands.dev/', 'OpenHands', ['açık kaynak', 'kod', 'agent'],
-        'Tarayıcı ve terminal kullanabilen otonom yazılım geliştirme agent’ı; tamamlamadan çok uçtan uca görev bitirmeye odaklı.',
-        'Autonomous software-development agent that can use a browser and terminal, aimed at finishing tasks end to end rather than completing lines.', C)
-    add('https://www.blackbox.ai/', 'Blackbox AI', ['freemium', 'kod'],
-        'Kod arama ve üretme asistanı; kod parçası aramayı sohbetle birleştirmesi başlıca özelliği.',
-        'Code search and generation assistant whose main trait is merging snippet search with chat.', C)
-    add('https://codegeex.cn/', 'CodeGeeX', ['ücretsiz', 'kod', 'çok dilli'],
-        'Çok dilli açık kod modeli ve eklentisi; Çince arayüz ve yerel model desteğiyle bölgesel bir alternatif.',
-        'Multilingual open code model and plugin — a regional alternative with Chinese-language UI and local model support.', C)
-    add('https://replit.com/', 'Replit', ['freemium', 'kod', 'tarayıcıda'],
-        'Tarayıcıda çalışan geliştirme ortamı; kurulum yapmadan kod yazıp yayına almayı tek yerde toplaması ayırt edici yanı.',
-        'Browser-based development environment; writing and deploying code with zero local setup is what sets it apart.', C)
-    add('https://pieces.app/', 'Pieces for Developers', ['freemium', 'kod', 'not'],
-        'Kod parçalarını bağlamıyla saklayan geliştirici hafızası; not uygulamalarından farkı, ne yaptığın üzerinden geçmişi hatırlaması.',
-        'A developer memory that stores snippets with their context; unlike note apps it recalls history based on what you were doing.', C)
-    add('https://v0.app/', 'v0', ['freemium', 'ui', 'üretim'],
-        'Metinden React arayüzü üreten Vercel aracı; tam uygulama yerine bileşen düzeyinde çıktı vermesiyle ayrışıyor.',
-        'Vercel’s text-to-React UI generator, distinguished by producing component-level output rather than whole apps.', C)
-    add('https://bolt.new/', 'Bolt.new', ['freemium', 'ui', 'üretim'],
-        'Tarayıcıda çalışan tam yığın uygulama üreticisi; kodu tarayıcı içinde çalıştırıp anında önizlemesi ayırt edici yanı.',
-        'Full-stack app generator in the browser; running the code inside the browser for instant preview is its distinguishing trait.', C)
-    add('https://lovable.dev/', 'Lovable', ['freemium', 'ui', 'üretim'],
-        'Sohbetle tam uygulama üreten araç; v0’dan farkı veritabanı ve yayına almayı da üstlenmesi.',
-        'Chat-to-full-app builder; unlike v0 it also takes on the database and deployment.', C)
-    add('https://stitch.withgoogle.com/', 'Stitch (Google)', ['ücretsiz', 'ui', 'tasarım'],
-        'Metin veya çizimden arayüz tasarımı üreten Google aracı; çıktıyı doğrudan tasarım dosyası olarak vermesi ayırt edici.',
-        'Google’s text- or sketch-to-UI design tool, distinguished by handing back editable design files.', C)
-    add('https://github.com/resumax', 'ResuMax', ['açık kaynak', 'github', 'kariyer'],
-        'Özgeçmiş hazırlama ve iyileştirme aracı; genel yazım asistanlarından farkı, ilana göre uyarlamaya odaklanması.',
-        'A résumé builder and optimiser; unlike general writing assistants it focuses on tailoring to a specific posting.', C)
+    add('https://github.com/features/copilot', 'GitHub Copilot', ['saas', 'freemium', 'kod', 'eklenti'],
+        'Editör içi tamamlama ve sohbet; kurumsal planda kodun modele gönderilip gönderilmeyeceği '
+        'politika olarak yönetilebiliyor. Bu yönetişim tarafı rakiplerinde zayıf.',
+        'In-editor completion and chat, with enterprise policy control over whether code is sent to the model at all. '
+        'That governance side is where rivals are thin.', C)
+    add('https://cursor.com/', 'Cursor', ['masaüstü', 'freemium', 'kod', 'editör'],
+        'VS Code çatalı; kod tabanını indeksleyip çok dosyalı düzenlemeyi ana akış hâline getiriyor. '
+        'Eklentiden farkı, değişikliği diff olarak önerip onayını beklemesi.',
+        'A VS Code fork that indexes your codebase and makes multi-file editing the primary flow. '
+        'Unlike a plugin it proposes changes as diffs and waits for approval.', C)
+    add('https://windsurf.com/', 'Windsurf', ['masaüstü', 'freemium', 'kod', 'agent'],
+        'Cursor’ın en yakın rakibi; Cascade kipi uzun görevleri kendi başına yürütüp gerektiğinde '
+        'terminal komutu çalıştırıyor. Otonomi daha yüksek, denetim daha az.',
+        'Cursor’s closest rival; its Cascade mode carries long tasks alone and runs terminal commands when needed. '
+        'More autonomy, less oversight.', C)
+    add('https://www.continue.dev/', 'Continue', ['açık-kaynak', 'eklenti', 'kod', 'apache-2'],
+        'VS Code ve JetBrains eklentisi; hangi modelin tamamlama, hangisinin sohbet yapacağını '
+        'ayrı ayrı seçiyorsun. Yerel model bağlayıp kodu dışarı hiç göndermemek mümkün.',
+        'A VS Code and JetBrains plugin where you pick which model does completion and which does chat, separately. '
+        'You can point it at a local model and never send code out.', C)
+    add('https://aider.chat/', 'Aider', ['açık-kaynak', 'cli', 'kod', 'git'],
+        'Terminalde çalışıyor ve her değişikliği ayrı bir git commit’i olarak yazıyor. '
+        'Beğenmediğin adımı `git revert` ile geri almak, editör tabanlı asistanlarda olmayan bir güvenlik ağı.',
+        'Runs in the terminal and writes each change as its own git commit. Reverting a step you dislike with '
+        '`git revert` is a safety net editor-based assistants do not offer.', C)
+    add('https://cline.bot/', 'Cline', ['açık-kaynak', 'eklenti', 'kod', 'agent'],
+        'VS Code içinde dosya oluşturup komut çalıştırabiliyor ama her eylem için ayrı onay istiyor. '
+        'Yavaşlatan bu adım, aynı zamanda otonom agent’larda kaybettiğin denetimi geri veriyor.',
+        'Creates files and runs commands inside VS Code, asking approval for each action. '
+        'That slowing step is also what returns the oversight autonomous agents take away.', C)
+    add('https://roocode.com/', 'Roo Code', ['açık-kaynak', 'eklenti', 'kod', 'agent'],
+        'Cline’dan çatallanmış; mimar, kodcu ve hata ayıklayıcı kipleri ayrı sistem istemi ve '
+        'ayrı model kullanabiliyor. Planlamaya güçlü, kodlamaya ucuz model koymak mümkün.',
+        'Forked from Cline, with architect, coder and debugger modes carrying separate system prompts and models. '
+        'You can put a strong model on planning and a cheap one on coding.', C)
+    add('https://www.tabbyml.com/', 'Tabby', ['açık-kaynak', 'self-hosted', 'kod', 'rust'],
+        'Kendi sunucunda çalışan tamamlama motoru; Rust ile yazılmış, tek GPU’da barınıyor. '
+        'Kodun kurum dışına çıkmaması gereken durumlarda Copilot’un yerine geçen seçenek.',
+        'A self-hosted completion engine written in Rust that fits on one GPU. '
+        'The Copilot substitute when code must not leave the building.', C)
+    add('https://www.all-hands.dev/', 'OpenHands', ['açık-kaynak', 'agent', 'kod', 'docker'],
+        'Tarayıcı ve terminal kullanabilen otonom geliştirme agent’ı; izole bir Docker kapsayıcısında çalışıyor. '
+        'Satır tamamlamak değil, bir konuyu (issue) baştan sona kapatmak için tasarlanmış.',
+        'An autonomous development agent with browser and terminal access, running in an isolated Docker container. '
+        'Built to close an issue end to end, not to complete a line.', C)
+    add('https://www.blackbox.ai/', 'Blackbox AI', ['saas', 'freemium', 'kod', 'arama'],
+        'Kod parçası aramayı sohbetle birleştiriyor; depo ve dokümanlarda arayıp bulduğunu bağlam olarak kullanıyor.',
+        'Merges snippet search with chat, searching repositories and docs and using the hits as context.', C)
+    add('https://codegeex.cn/', 'CodeGeeX', ['ücretsiz', 'kod', 'eklenti', 'çok-dilli'],
+        'Açık kod modeli ve eklentisi; Çince arayüz ve bölgesel altyapı sunuyor. '
+        'Batı servislerine erişimin sınırlı olduğu yerlerde çalışan bir alternatif.',
+        'An open code model and plugin with a Chinese interface and regional infrastructure — '
+        'a working alternative where access to Western services is limited.', C)
+    add('https://replit.com/', 'Replit', ['saas', 'freemium', 'tarayıcı-içi', 'ide'],
+        'Tarayıcıda tam bir geliştirme ortamı: düzenleme, çalıştırma ve yayına alma aynı sekmede. '
+        'Kurulum yükü sıfır olduğu için öğretim ortamlarında yaygın.',
+        'A complete development environment in the browser — edit, run and deploy in one tab. '
+        'Zero setup is why it is common in teaching.', C)
+    add('https://pieces.app/', 'Pieces for Developers', ['masaüstü', 'freemium', 'not', 'bellek'],
+        'Kod parçalarını kaynağı ve o an ne yaptığınla birlikte saklıyor; sonra “geçen hafta şu hatayı '
+        'çözerken kullandığım şey” diye arayabiliyorsun. Yerelde çalışan bir model kullanma seçeneği var.',
+        'Stores snippets with their source and what you were doing at the time, so you can later search for '
+        '“the thing I used while fixing that bug last week”. It can run on a local model.', C)
+    add('https://v0.app/', 'v0', ['saas', 'freemium', 'ui', 'react'],
+        'Metinden React bileşeni üretiyor; çıktı shadcn/ui ve Tailwind kullanıyor, yani '
+        'mevcut bir projeye kopyalanabilir kod çıkıyor. Tam uygulama değil, parça üretiyor.',
+        'Generates React components from text, using shadcn/ui and Tailwind so the output is copy-ready into '
+        'an existing project. It produces pieces, not whole applications.', C)
+    add('https://bolt.new/', 'Bolt.new', ['saas', 'freemium', 'ui', 'webcontainer'],
+        'Node.js’i WebContainer ile tarayıcıda çalıştırıyor; üretilen tam yığın uygulama sunucuya '
+        'gitmeden anında önizleniyor. Hata çıkarsa aynı yerde düzeltiliyor.',
+        'Runs Node.js in the browser via WebContainers, so the generated full-stack app previews instantly '
+        'without a server round trip, and errors are fixed in place.', C)
+    add('https://lovable.dev/', 'Lovable', ['saas', 'freemium', 'ui', 'tam-yığın'],
+        'Sohbetle uygulama kurup Supabase bağlantısı ve dağıtımı da üstleniyor. '
+        'v0 bileşen verirken bu çalışan ve veritabanı bağlı bir ürün hedefliyor.',
+        'Builds an app from chat and takes on the Supabase wiring and deployment too. '
+        'Where v0 hands you a component, this aims at a running, database-backed product.', C)
+    add('https://stitch.withgoogle.com/', 'Stitch', ['saas', 'ücretsiz', 'ui', 'tasarım'],
+        'Metin ya da kaba çizimden arayüz tasarımı üretip düzenlenebilir tasarım dosyası veriyor. '
+        'Kod üreten araçların aksine çıktısı tasarımcının devralabileceği biçimde.',
+        'Turns text or a rough sketch into UI and hands back an editable design file — unlike the code generators, '
+        'output a designer can take over.', C)
+    add('https://github.com/resumax', 'ResuMax', ['açık-kaynak', 'github', 'kariyer'],
+        'Özgeçmişi hedef ilana göre uyarlayan araç; ATS taramasından geçecek biçimlendirmeye dikkat ediyor. '
+        'Genel yazım asistanlarının atladığı nokta bu eşleştirme.',
+        'Tailors a résumé to a specific posting and watches the formatting that ATS parsers need. '
+        'That matching step is what general writing assistants miss.', C)
 
     # ---------------------------------------------------------- görsel üretim
-    add('https://firefly.adobe.com/', 'Adobe Firefly', ['freemium', 'görsel'],
-        'Adobe’un görsel üretim modeli; ticari kullanım için lisanslı veriyle eğitilmiş olması kurumsal işlerde başlıca tercih sebebi.',
-        'Adobe’s image generator; being trained on licensed data for commercial use is the main reason it is picked for client work.', C)
-    add('https://leonardo.ai/', 'Leonardo AI', ['freemium', 'görsel'],
-        'Oyun ve konsept sanatına eğilimli görsel üretici; kendi stil modellerini eğitip tekrar kullanabilmesiyle ayrışıyor.',
-        'Image generator leaning towards game and concept art, distinguished by training and reusing your own style models.', C)
-    add('https://ideogram.ai/', 'Ideogram', ['freemium', 'görsel', 'tipografi'],
-        'Görsel içinde okunaklı metin üretebilmesiyle öne çıkan model; afiş ve logo denemelerinde diğerlerinden belirgin şekilde iyi.',
-        'Known for rendering legible text inside images — markedly better than rivals for posters and logo experiments.', C)
-    add('https://designer.microsoft.com/', 'Microsoft Designer', ['ücretsiz', 'görsel', 'şablon'],
-        'Şablon tabanlı hızlı grafik tasarım; saf üreticilerden farkı, çıktıyı düzenlenebilir bir tasarım olarak vermesi.',
-        'Template-based quick graphic design; unlike pure generators it hands back an editable layout.', C)
-    add('https://www.bing.com/images/create', 'Bing Image Creator', ['ücretsiz', 'görsel'],
-        'Ücretsiz görsel üretim; hesap dışında bir engeli olmaması onu en düşük sürtünmeli seçeneklerden biri yapıyor.',
-        'Free image generation with no barrier beyond an account, making it one of the lowest-friction options.', C)
-    add('https://www.craiyon.com/', 'Craiyon', ['ücretsiz', 'görsel'],
-        'Kayıt istemeden çalışan basit görsel üretici; kalite düşük ama hızlı deneme için engelsiz.',
-        'A simple generator that works without signup — lower quality, but frictionless for quick tries.', C)
-    add('https://playground.com/', 'Playground AI', ['freemium', 'görsel', 'düzenleme'],
-        'Üretim ve düzenlemeyi tuval üzerinde birleştiren araç; parça parça düzeltmeye elverişli.',
-        'Combines generation and editing on a canvas, which suits piecemeal correction.', C)
-    add('https://piclumen.com/', 'PicLumen', ['ücretsiz', 'görsel', 'karakter'],
-        'Karakter ve ürün görselleri üzerine yoğunlaşan üretici; ücretsiz katmanının cömertliğiyle biliniyor.',
-        'Generator focused on character and product imagery, known for a generous free tier.', C)
-    add('https://github.com/AUTOMATIC1111/stable-diffusion-webui', 'Stable Diffusion WebUI', ['açık kaynak', 'github', 'yerel', 'görsel'],
-        'Yerel görsel üretimin en yaygın arayüzü; eklenti ekosisteminin genişliği başlıca avantajı.',
-        'The most widely used interface for local image generation; the breadth of its extension ecosystem is the main draw.', C)
-    add('https://www.comfy.org/', 'ComfyUI', ['açık kaynak', 'yerel', 'görsel'],
-        'Düğüm tabanlı görsel üretim arayüzü; WebUI’nin form yaklaşımından farkı, akışın her adımını görünür ve tekrar edilebilir kılması.',
-        'Node-based image generation UI; unlike WebUI’s form approach it makes every step of the pipeline visible and reproducible.', C)
-    add('https://github.com/lllyasviel/Fooocus', 'Fooocus', ['açık kaynak', 'github', 'yerel', 'görsel'],
-        'Ayar yükünü gizleyen basitleştirilmiş Stable Diffusion arayüzü; ComfyUI’nin karşı kutbu, hiçbir şey ayarlamadan iyi sonuç hedefler.',
-        'A simplified Stable Diffusion UI that hides the knobs — the opposite pole from ComfyUI, aiming for good output with zero tuning.', C)
-    add('https://www.invoke.com/', 'InvokeAI', ['açık kaynak', 'yerel', 'görsel'],
-        'Profesyonel iş akışına yönelik yerel görsel üretim paketi; tuval üzerinde bölgesel düzenlemeye güçlü destek verir.',
-        'Local generation suite aimed at professional workflows, with strong support for regional editing on a canvas.', C)
-    add('https://github.com/Acly/krita-ai-diffusion', 'Krita AI Diffusion', ['açık kaynak', 'github', 'görsel'],
-        'Krita çizim programına görsel üretimi gömen eklenti; ayrı araç yerine mevcut çizim akışının içinde çalışması ayırt edici.',
-        'Plugin embedding generation into the Krita painting app — it works inside your existing drawing flow rather than as a separate tool.', C)
-    add('https://www.recraft.ai/projects', 'Recraft', ['freemium', 'görsel', 'vektör'],
-        'Vektör çıktı üretebilen tasarım odaklı model; logo ve ikon işlerinde raster üreticilerden belirgin şekilde kullanışlı.',
-        'Design-focused model that can output vectors — markedly more useful than raster generators for logos and icons.', C)
-    add('https://www.remove.bg/', 'remove.bg', ['freemium', 'görsel', 'araç'],
-        'Tek işe odaklı arka plan silme servisi; genel düzenleyicilerden farkı, tek tıkla ve toplu çalışabilmesi.',
-        'A single-purpose background remover; unlike general editors it works in one click and in batches.', C)
-    add('https://clipdrop.co/', 'Clipdrop', ['freemium', 'görsel', 'araç'],
-        'Nesne silme, ışık düzeltme, büyütme gibi küçük görsel araçların toplandığı set; her biri için ayrı uygulama aramaya alternatif.',
-        'A bundle of small image utilities — object removal, relighting, upscaling — instead of hunting a separate app for each.', C)
-    add('https://app.gptzero.me/home', 'GPTZero', ['freemium', 'tespit'],
-        'Metnin yapay zeka tarafından yazılıp yazılmadığını tahmin eden araç; sonuçlarının kesin olmadığını kendisi de belirtiyor.',
-        'Estimates whether text was AI-written; it states itself that the verdict is probabilistic, not proof.', C)
+    add('https://firefly.adobe.com/', 'Adobe Firefly', ['saas', 'freemium', 'difüzyon', 'ticari'],
+        'Adobe Stock ve süresi dolmuş telifli eserlerle eğitildiği için ticari kullanımda hukuki risk düşük. '
+        'Müşteri işinde tercih edilmesinin sebebi görsel kalitesi değil, bu lisans netliği.',
+        'Trained on Adobe Stock and public-domain work, so commercial legal risk is low. '
+        'It gets picked for client work because of that licence clarity, not image quality.', C)
+    add('https://leonardo.ai/', 'Leonardo AI', ['saas', 'freemium', 'difüzyon', 'oyun'],
+        'Kendi görsellerinle stil modeli eğitip tekrar kullanabiliyorsun; oyun varlığı üretiminde '
+        'tutarlı görünüm gerektiğinde bu belirleyici oluyor.',
+        'You can train a style model on your own images and reuse it, which becomes decisive when game assets '
+        'need a consistent look.', C)
+    add('https://ideogram.ai/', 'Ideogram', ['saas', 'freemium', 'difüzyon', 'tipografi'],
+        'Görsel içinde okunaklı metin üretebilen ender modellerden. Afiş, logo ve ambalaj denemelerinde '
+        'diğer difüzyon modellerinin bozduğu harfleri düzgün çıkarıyor.',
+        'One of the few models that renders legible text inside an image, getting letters right on posters, '
+        'logos and packaging where other diffusion models mangle them.', C)
+    add('https://designer.microsoft.com/', 'Microsoft Designer', ['saas', 'ücretsiz', 'tasarım', 'şablon'],
+        'Üretilen görseli katmanlı ve düzenlenebilir bir tasarım olarak veriyor; '
+        'saf üreticilerde elde ettiğin düz raster dosyanın aksine üzerinde çalışmaya devam edebiliyorsun.',
+        'Returns the generated image as a layered, editable layout, so unlike the flat raster you get from pure '
+        'generators you can keep working on it.', C)
+    add('https://www.bing.com/images/create', 'Bing Image Creator', ['ücretsiz', 'difüzyon'],
+        'DALL·E tabanlı, Microsoft hesabı dışında engel yok. '
+        'Kalite üst sınıf değil ama sürtünmesi en düşük seçeneklerden.',
+        'DALL·E-based with no barrier beyond a Microsoft account. Not top-tier quality, but among the lowest-friction options.', C)
+    add('https://www.craiyon.com/', 'Craiyon', ['ücretsiz', 'difüzyon'],
+        'Kayıt istemeden çalışıyor. Çıktı kalitesi güncel modellerin belirgin gerisinde; '
+        'hızlı ve engelsiz denemeden başka bir iddiası yok.',
+        'Works without signup. Output quality sits well behind current models; it claims nothing beyond '
+        'fast, frictionless experimentation.', C)
+    add('https://playground.com/', 'Playground AI', ['saas', 'freemium', 'difüzyon', 'düzenleme'],
+        'Üretim ve düzenlemeyi aynı tuvalde birleştiriyor; bölge seçip yalnızca orayı yeniden üretmek '
+        '(inpainting) akışın parçası. Parça parça düzeltmeye elverişli.',
+        'Combines generation and editing on one canvas, with region-selective regeneration (inpainting) built into '
+        'the flow — which suits piecemeal correction.', C)
+    add('https://piclumen.com/', 'PicLumen', ['ücretsiz', 'difüzyon', 'karakter'],
+        'Karakter ve ürün görsellerine yoğunlaşmış; ücretsiz katmanı günlük kullanıma yetecek kadar cömert.',
+        'Focused on character and product imagery, with a free tier generous enough for daily use.', C)
+    add('https://github.com/AUTOMATIC1111/stable-diffusion-webui', 'Stable Diffusion WebUI', ['açık-kaynak', 'github', 'yerel-model', 'difüzyon'],
+        'Yerel görsel üretimin en yaygın arayüzü; eklenti ekosistemi (ControlNet, LoRA yükleyiciler) '
+        'çok geniş. Depo artık aktif geliştirilmiyor ama kurulu tabanı hâlâ en büyüğü.',
+        'The most widespread interface for local generation, with a huge extension ecosystem (ControlNet, LoRA loaders). '
+        'The repo is no longer actively developed, but the installed base is still the largest.', C)
+    add('https://www.comfy.org/', 'ComfyUI', ['açık-kaynak', 'yerel-model', 'difüzyon', 'düğüm'],
+        'Üretim hattını düğüm grafiği olarak kuruyorsun: model yükleme, örnekleme, VAE çözme ayrı düğümler. '
+        'Kurulumu zahmetli ama akış JSON olarak paylaşılıp birebir tekrar edilebiliyor.',
+        'You build the pipeline as a node graph — model loading, sampling, VAE decode as separate nodes. '
+        'Harder to set up, but a workflow exports as JSON and reproduces exactly.', C)
+    add('https://github.com/lllyasviel/Fooocus', 'Fooocus', ['açık-kaynak', 'github', 'yerel-model', 'difüzyon'],
+        'ComfyUI’nin karşı kutbu: örnekleyici, adım sayısı, CFG gibi ayarları gizleyip iyi varsayılanlarla '
+        'çalışıyor. Midjourney benzeri bir deneyimi yerelde vermeyi hedefliyor.',
+        'The opposite pole from ComfyUI — it hides sampler, steps and CFG behind good defaults, '
+        'aiming to deliver a Midjourney-like experience locally.', C)
+    add('https://www.invoke.com/', 'InvokeAI', ['açık-kaynak', 'yerel-model', 'difüzyon', 'tuval'],
+        'Sonsuz tuval üzerinde bölgesel üretim ve düzenleme; profesyonel iş akışı ve ekip kullanımı '
+        'düşünülerek yapılmış. Ticari bir sürümü de var.',
+        'Regional generation and editing on an infinite canvas, built with professional workflows and team use '
+        'in mind. A commercial edition exists alongside.', C)
+    add('https://github.com/Acly/krita-ai-diffusion', 'Krita AI Diffusion', ['açık-kaynak', 'github', 'eklenti', 'difüzyon'],
+        'Krita’nın katman ve maske sistemini doğrudan difüzyona bağlıyor; seçim yapıp o bölgeyi üretiyorsun. '
+        'Ayrı bir araca geçmeden mevcut çizim akışının içinde kalıyorsun.',
+        'Wires Krita’s layers and masks straight into diffusion — select a region and generate into it. '
+        'You stay inside your existing painting flow instead of switching tools.', C)
+    add('https://www.recraft.ai/projects', 'Recraft', ['saas', 'freemium', 'vektör', 'tasarım'],
+        'SVG çıktı üretebiliyor. Logo, ikon ve illüstrasyon işlerinde raster üreticilerden temel farkı bu: '
+        'sonucu ölçekleyip düzenleyebiliyorsun.',
+        'Can output SVG. For logos, icons and illustration that is the fundamental split from raster generators — '
+        'the result scales and stays editable.', C)
+    add('https://www.remove.bg/', 'remove.bg', ['saas', 'freemium', 'görsel', 'api'],
+        'Tek işe odaklı arka plan silme; API ve toplu işlem sunduğu için hattın içine gömülebiliyor. '
+        'Saç ve şeffaf yüzey kenarlarında genel araçlardan iyi.',
+        'Single-purpose background removal with an API and batch mode, so it drops into a pipeline. '
+        'Better than general tools on hair and transparent edges.', C)
+    add('https://clipdrop.co/', 'Clipdrop', ['saas', 'freemium', 'görsel', 'araç-seti'],
+        'Nesne silme, yeniden ışıklandırma, büyütme ve arka plan değiştirmeyi tek yerde topluyor. '
+        'Her biri için ayrı servis aramak yerine bir hesapla dolaşabiliyorsun.',
+        'Bundles object removal, relighting, upscaling and background replacement in one place, '
+        'so one account covers what would otherwise be several services.', C)
+    add('https://app.gptzero.me/home', 'GPTZero', ['saas', 'freemium', 'tespit'],
+        'Metnin yapay zeka üretimi olma olasılığını tahmin ediyor. Sonuç olasılıksal — '
+        'kendi belgeleri de yanlış pozitif oranını kabul ediyor, delil olarak kullanılmamalı.',
+        'Estimates the probability that a text was AI-generated. The result is probabilistic and its own docs '
+        'acknowledge false positives — it should not be treated as proof.', C)
 
     # ---------------------------------------------------------- 3B & mekân
-    add('https://www.meshy.ai/tr/?noRedirect=true', 'Meshy', ['freemium', '3b'],
-        'Metin veya görselden 3B model üreten araç; çıktıya otomatik doku giydirmesi oyun varlıkları için zaman kazandırıyor.',
-        'Text- or image-to-3D generator whose automatic texturing saves real time on game assets.', C)
-    add('https://www.tripo3d.ai/', 'Tripo AI', ['freemium', '3b'],
-        'Tek görselden 3B model üretimi; hız ve topoloji temizliği iddiasıyla Meshy’ye doğrudan rakip.',
-        'Single-image to 3D generation, competing directly with Meshy on speed and cleaner topology.', C)
-    add('https://spline.design/', 'Spline', ['freemium', '3b', 'web'],
-        'Tarayıcıda 3B tasarım ve web’e gömme aracı; Blender gibi genel amaçlı değil, web sahnesi üretmeye odaklı.',
-        'Browser-based 3D design that embeds into web pages — not general-purpose like Blender, but focused on web scenes.', C)
-    add('https://github.com/gd3kr/BlenderGPT', 'BlenderGPT', ['açık kaynak', 'github', '3b'],
-        'Blender işlemlerini doğal dille yaptıran eklenti; model üretmez, mevcut araçları senin yerine kullanır.',
-        'Plugin driving Blender operations from natural language — it does not generate models, it operates the existing tools for you.', C)
-    add('https://github.com/carson-katri/dream-textures', 'Dream Textures', ['açık kaynak', 'github', '3b', 'doku'],
-        'Blender içinde doku ve yüzey üreten eklenti; dışarıda üretip içeri aktarma adımını ortadan kaldırır.',
-        'Blender add-on generating textures in place, removing the generate-elsewhere-then-import step.', C)
-    add('https://huggingface.co/stabilityai/stable-fast-3d', 'Stable Fast 3D', ['açık ağırlık', '3b', 'model'],
-        'Tek görselden saniyeler içinde 3B varlık üreten açık model; hızı kaliteye tercih eden akışlar için.',
-        'Open model producing a 3D asset from one image in seconds — for pipelines that trade quality for speed.', C)
-    add('https://github.com/openai/shap-e', 'Shap-E', ['açık kaynak', 'github', '3b', 'araştırma'],
-        'OpenAI’ın metinden 3B üretim modeli; ürün değil araştırma çıktısı, üretim kalitesi beklenmemeli.',
-        'OpenAI’s text-to-3D model — a research release rather than a product, so do not expect production quality.', C)
-    add('https://github.com/openai/point-e', 'Point-E', ['açık kaynak', 'github', '3b', 'araştırma'],
-        'Nokta bulutu üreten daha eski OpenAI modeli; Shap-E’den hızlı ama çıktı çok daha kaba.',
-        'An earlier OpenAI model producing point clouds — faster than Shap-E but far coarser output.', C)
-    add('https://github.com/TencentARC/InstantMesh', 'InstantMesh', ['açık kaynak', 'github', '3b'],
-        'Tek görselden kullanılabilir mesh üreten açık model; nokta bulutu değil doğrudan yüzey vermesiyle ayrışıyor.',
-        'Open model turning one image into a usable mesh — it returns surfaces directly rather than a point cloud.', C)
-    add('https://planner5d.com/', 'Planner 5D', ['freemium', 'mimari'],
-        'Tarayıcıda iç mekân planlama; profesyonel CAD yerine hızlı kat planı ve görselleştirmeye odaklı.',
-        'Browser interior planning focused on quick floor plans and renders rather than professional CAD.', C)
-    add('https://www.homestyler.com/', 'Homestyler', ['freemium', 'mimari'],
-        'Mobilya kataloğu üzerinden iç mekân tasarımı; gerçek ürünlerle çalışması Planner 5D’den ayıran yanı.',
-        'Interior design driven by a furniture catalogue; working with real products is what separates it from Planner 5D.', C)
-    add('https://www.blueprint.am/', 'Blueprint.am', ['donanım', 'tasarım'],
-        'Donanım tasarımına yapay zeka desteği getiren araç; yazılım odaklı asistanların değmediği bir alanı hedefliyor.',
-        'Brings AI assistance to hardware design — a niche the software-focused assistants do not touch.', C)
+    add('https://www.meshy.ai/tr/?noRedirect=true', 'Meshy', ['saas', 'freemium', 'text-to-3d'],
+        'Metin ya da görselden 3B model üretip PBR dokusunu da kendisi giydiriyor. '
+        'Oyun varlığı hattında en çok vakit yiyen adımın doku olması bunu değerli kılıyor.',
+        'Generates a 3D model from text or an image and applies PBR textures itself. '
+        'Texturing being the slowest step in an asset pipeline is what makes that matter.', C)
+    add('https://www.tripo3d.ai/', 'Tripo AI', ['saas', 'freemium', 'text-to-3d'],
+        'Meshy’nin doğrudan rakibi; üretim süresi daha kısa ve çıkan topoloji genelde daha temiz, '
+        'yani sonradan elle düzeltme yükü az.',
+        'A direct rival to Meshy with shorter generation times and generally cleaner topology, '
+        'which means less manual cleanup afterwards.', C)
+    add('https://spline.design/', 'Spline', ['saas', 'freemium', '3b', 'web'],
+        'Tarayıcıda 3B sahne tasarlayıp doğrudan web sayfasına gömüyorsun. '
+        'Blender gibi genel amaçlı değil; çıktısı baştan web için optimize edilmiş.',
+        'Design a 3D scene in the browser and embed it straight into a page. Not general-purpose like Blender — '
+        'the output is optimised for the web from the start.', C)
+    add('https://github.com/gd3kr/BlenderGPT', 'BlenderGPT', ['açık-kaynak', 'github', 'blender', 'eklenti'],
+        'Doğal dil komutunu Blender Python API çağrısına çeviriyor. Model üretmiyor; '
+        'Blender’ın kendi araçlarını senin yerine kullanıyor, yani sonuç tekrar edilebilir kalıyor.',
+        'Translates a natural-language instruction into Blender Python API calls. It does not generate models — '
+        'it operates Blender’s own tools for you, so the result stays reproducible.', C)
+    add('https://github.com/carson-katri/dream-textures', 'Dream Textures', ['açık-kaynak', 'github', 'blender', 'doku'],
+        'Blender içinde doku ve HDRI üretiyor; kesintisiz (seamless) döşeme ve projeksiyonla '
+        'doğrudan mesh üzerine boyama yapabiliyor. Dışarıda üretip içeri aktarma adımı kalkıyor.',
+        'Generates textures and HDRIs inside Blender, with seamless tiling and projection painting straight onto '
+        'a mesh — removing the generate-elsewhere-then-import step.', C)
+    add('https://huggingface.co/stabilityai/stable-fast-3d', 'Stable Fast 3D', ['açık-ağırlık', 'text-to-3d', 'model'],
+        'Tek görselden yarım saniyede UV açılmış ve dokulu mesh çıkarıyor. '
+        'Kalite üst düzey değil ama toplu varlık üretiminde hız farkı belirleyici.',
+        'Produces a UV-unwrapped, textured mesh from one image in about half a second. Quality is not top-tier, '
+        'but at batch scale the speed difference decides.', C)
+    add('https://github.com/openai/shap-e', 'Shap-E', ['açık-kaynak', 'github', 'text-to-3d', 'araştırma'],
+        'Metinden doğrudan örtük 3B temsil üreten OpenAI modeli. Araştırma sürümü — '
+        'çıktısı üretim kalitesinde değil, tarihsel ve akademik değeri var.',
+        'An OpenAI model producing implicit 3D representations from text. A research release: the output is not '
+        'production quality, and its value is historical and academic.', C)
+    add('https://github.com/openai/point-e', 'Point-E', ['açık-kaynak', 'github', 'text-to-3d', 'araştırma'],
+        'Shap-E’den önceki nesil; nokta bulutu üretiyor, mesh’e dönüştürmek ayrı bir adım. '
+        'Hızlı ama sonuç kaba, bugün pratik bir kullanımı kalmadı.',
+        'The generation before Shap-E, producing point clouds that need a separate meshing step. '
+        'Fast but coarse, with little practical use left today.', C)
+    add('https://github.com/TencentARC/InstantMesh', 'InstantMesh', ['açık-kaynak', 'github', 'text-to-3d'],
+        'Tek görselden çok görünüşlü difüzyonla ara görüntüler üretip bunlardan mesh çıkarıyor. '
+        'Nokta bulutu değil doğrudan kullanılabilir yüzey vermesi, hattın kalan adımlarını kısaltıyor.',
+        'Generates intermediate views from one image via multi-view diffusion, then reconstructs a mesh. '
+        'Returning usable surfaces rather than a point cloud shortens the rest of the pipeline.', C)
+    add('https://planner5d.com/', 'Planner 5D', ['saas', 'freemium', 'mimari', 'iç-mekan'],
+        'Kat planı çizip anında 3B görselleştirme alıyorsun. CAD hassasiyeti yok; '
+        'ölçülü teknik çizim değil, hızlı sunum görseli için.',
+        'Draw a floor plan and get an instant 3D render. No CAD precision — it is for a fast presentation image, '
+        'not a dimensioned technical drawing.', C)
+    add('https://www.homestyler.com/', 'Homestyler', ['saas', 'freemium', 'iç-mekan', 'katalog'],
+        'Gerçek mobilya markalarının kataloğu üzerinden tasarım yapıyorsun, yani çıkan sahnedeki '
+        'her parçanın satın alınabilir bir karşılığı var.',
+        'You design from catalogues of real furniture brands, so every item in the scene has a purchasable counterpart.', C)
+    add('https://www.blueprint.am/', 'Blueprint.am', ['saas', 'donanım', 'eda'],
+        'Donanım ve devre tasarımına yapay zeka desteği getiriyor. '
+        'Yazılım asistanlarının yoğunlaştığı alanın dışında kalan, seyrek işlenmiş bir konu.',
+        'Brings AI assistance to hardware and circuit design — a thinly covered area outside where software '
+        'assistants have crowded in.', C)
 
     # ---------------------------------------------------------- video & ses
-    add('https://www.capcut.com/', 'CapCut', ['freemium', 'video'],
-        'Otomatik altyazı ve şablon ağırlıklı video düzenleyici; kısa video akışında profesyonel paketlere göre çok daha hızlı.',
-        'Video editor built on auto-captioning and templates — far faster than professional suites for short-form work.', C)
-    add('https://pika.art/', 'Pika', ['freemium', 'video'],
-        'Metin ve görselden kısa video üreten model; hareket efektlerini seçilebilir hâle getirmesiyle ayrışıyor.',
-        'Text- and image-to-short-video model, distinguished by exposing motion effects as selectable options.', C)
-    add('https://lumalabs.ai/', 'Luma AI', ['freemium', 'video', '3b'],
-        'Video üretimi ve gerçek nesne taramasını (NeRF) birlikte sunuyor; saf video modellerinden farkı bu ikinci ayağı.',
-        'Combines video generation with real-object capture (NeRF) — that second leg is what separates it from pure video models.', C)
-    add('https://github.com/jamiepine/voicebox', 'Voicebox', ['açık kaynak', 'github', 'ses'],
-        'Açık kaynak ses stüdyosu: klonlama, dikte ve üretim bir arada; bulut servislerine kendi makinende alternatif.',
-        'Open-source voice studio combining cloning, dictation and generation — a local alternative to cloud services.', C)
-    add('https://github.com/openai/whisper', 'Whisper', ['açık kaynak', 'github', 'ses', 'yerel'],
-        'OpenAI’ın açık konuşma tanıma modeli; bulut servislerinden farkı, ses kaydının makineden hiç çıkmaması.',
-        'OpenAI’s open speech-recognition model; unlike cloud services the recording never leaves your machine.', C)
-    add('https://otter.ai/', 'Otter.ai', ['freemium', 'ses', 'toplantı'],
-        'Toplantıyı canlı yazıya döken asistan; kayıt sonrası değil toplantı sırasında çalışması ayırt edici yanı.',
-        'Meeting transcription assistant that works during the meeting rather than after the recording.', C)
-    add('https://fireflies.ai/', 'Fireflies.ai', ['freemium', 'ses', 'toplantı'],
-        'Toplantı özeti ve aksiyon maddesi çıkaran asistan; ham döküm yerine karar ve görev listesi üretmeye odaklı.',
-        'Meeting assistant producing summaries and action items, focused on decisions and tasks rather than a raw transcript.', C)
-    add('https://krisp.ai/', 'Krisp', ['freemium', 'ses'],
-        'Gerçek zamanlı gürültü engelleme; uygulama bağımsız çalışıp mikrofon düzeyinde araya girmesi ayırt edici.',
-        'Real-time noise cancellation that works app-independently by intercepting at the microphone level.', C)
-    add('https://auphonic.com/', 'Auphonic', ['freemium', 'ses', 'podcast'],
-        'Ses kaydını otomatik seviyeleyip temizleyen son işlem servisi; canlı değil, yayın öncesi kalite düzeltme için.',
-        'Post-production service that levels and cleans recordings — not live, but for pre-publish quality correction.', C)
+    add('https://www.capcut.com/', 'CapCut', ['masaüstü', 'freemium', 'video', 'altyazı'],
+        'Otomatik altyazı, konuşmacı takibi ve dikey format şablonları. '
+        'Kısa video akışında Premiere gibi paketlerden kat kat hızlı; renk ve ses tarafında ise sığ.',
+        'Auto-captioning, speaker tracking and vertical-format templates. Far faster than Premiere for short-form, '
+        'and correspondingly shallow on colour and audio.', C)
+    add('https://pika.art/', 'Pika', ['saas', 'freemium', 'video', 'difüzyon'],
+        'Metin ve görselden kısa video üretiyor; kamera hareketi ve efektleri parametre olarak seçiliyor. '
+        'İstemle rastgele sonuç beklemek yerine hareketi yönlendirebiliyorsun.',
+        'Generates short video from text and images, with camera motion and effects exposed as parameters — '
+        'you steer the motion instead of hoping the prompt lands.', C)
+    add('https://lumalabs.ai/', 'Luma AI', ['saas', 'freemium', 'video', 'nerf'],
+        'Video üretiminin yanında telefonla çektiğin nesneyi NeRF/Gaussian splatting ile 3B’ye çeviriyor. '
+        'Bu ikinci ayak onu saf video modellerinden ayırıyor.',
+        'Alongside video generation it turns an object you filmed on a phone into 3D via NeRF/Gaussian splatting. '
+        'That second leg is what separates it from pure video models.', C)
+    add('https://github.com/jamiepine/voicebox', 'Voicebox', ['açık-kaynak', 'github', 'ses', 'tts'],
+        'Ses klonlama, dikte ve üretimi tek açık kaynak stüdyoda topluyor. '
+        'Ses örneğinin bulut servisine yüklenmemesi, klonlamada gerçek bir gizlilik farkı.',
+        'Bundles voice cloning, dictation and generation into one open-source studio. Keeping the voice sample '
+        'off a cloud service is a real privacy difference for cloning.', C)
+    add('https://github.com/openai/whisper', 'Whisper', ['açık-kaynak', 'github', 'stt', 'yerel-model'],
+        'Konuşma tanımanın açık standardı; 90+ dili destekliyor, Türkçede de kullanılabilir doğrulukta. '
+        'Yerelde çalıştığı için kayıt makineden hiç çıkmıyor.',
+        'The open standard for speech recognition, covering 90+ languages at usable accuracy in Turkish too. '
+        'It runs locally, so the recording never leaves the machine.', C)
+    add('https://otter.ai/', 'Otter.ai', ['saas', 'freemium', 'stt', 'toplantı'],
+        'Toplantıya katılıp canlı yazıya döküyor ve konuşmacıları ayırıyor. '
+        'Kayıt sonrası yükleme yapan araçlardan farkı, toplantı sürerken not almanı bırakabilmen.',
+        'Joins a meeting, transcribes live and separates speakers. Unlike upload-after-the-fact tools '
+        'it lets you stop taking notes while the meeting is still running.', C)
+    add('https://fireflies.ai/', 'Fireflies.ai', ['saas', 'freemium', 'toplantı', 'özet'],
+        'Ham döküm yerine karar, aksiyon maddesi ve soru listesi çıkarıyor; CRM’e yazabiliyor. '
+        'Otter dökümde, bu çıkarımda yoğunlaşmış.',
+        'Extracts decisions, action items and questions rather than a raw transcript, and can write into a CRM. '
+        'Otter concentrates on transcription; this on extraction.', C)
+    add('https://krisp.ai/', 'Krisp', ['masaüstü', 'freemium', 'ses'],
+        'Sanal mikrofon aygıtı olarak kurulup gürültüyü kaynakta kesiyor — Zoom, Teams, kayıt yazılımı '
+        'fark etmeksizin hepsinde çalışıyor. Uygulama bazlı çözümlerin sınırı burada aşılıyor.',
+        'Installs as a virtual microphone device and kills noise at the source, so it works across Zoom, Teams '
+        'and any recorder alike — past the limit of per-app solutions.', C)
+    add('https://auphonic.com/', 'Auphonic', ['saas', 'freemium', 'ses', 'podcast'],
+        'Seviye eşitleme, gürültü azaltma ve yayın normlarına (LUFS) göre ses yüksekliği ayarı yapıyor. '
+        'Canlı değil son işlem aracı; podcast yayımlamadan önceki son adım.',
+        'Levels, denoises and normalises loudness to broadcast targets (LUFS). A post-production tool, not a live one — '
+        'the last step before a podcast ships.', C)
 
     # ---------------------------------------------------------- araştırma & doküman
-    add('https://elicit.com/', 'Elicit', ['freemium', 'araştırma', 'akademik'],
-        'Akademik makale tarayıp bulguları tabloya döken asistan; arama motorlarından farkı, çalışmaların sonuçlarını karşılaştırılabilir kılması.',
-        'Screens academic papers and extracts findings into a table; unlike search engines it makes results comparable.', C)
-    add('https://consensus.app/', 'Consensus', ['freemium', 'araştırma', 'akademik'],
-        'Bilimsel soruya literatürdeki uzlaşıyı özetleyen arama; tek makale bulmaktan çok “alan ne diyor” sorusuna yanıt verir.',
-        'Search that summarises scientific consensus on a question — it answers “what does the field say” rather than finding one paper.', C)
-    add('https://www.researchrabbit.ai/', 'ResearchRabbit', ['ücretsiz', 'araştırma', 'akademik'],
-        'Makaleler arası atıf ağını görselleştiren keşif aracı; anahtar kelime aramasının kaçırdığı komşu çalışmaları bulmak için.',
-        'Visualises citation networks between papers, surfacing neighbouring work that keyword search misses.', C)
-    add('https://scispace.com/', 'SciSpace', ['freemium', 'araştırma', 'akademik'],
-        'Makaleyi paragraf paragraf açıklayan asistan; alan dışından okuyanlar için terimleri yerinde çözmesiyle ayrışıyor.',
-        'Explains a paper paragraph by paragraph, resolving jargon in place for readers from outside the field.', C)
-    add('https://www.explainpaper.com/', 'Explainpaper', ['freemium', 'araştırma'],
-        'Makalede seçtiğin kısmı sadeleştiren araç; tüm belgeyi özetlemek yerine takıldığın yeri açması ayırt edici.',
-        'Simplifies whichever passage you highlight — it opens up the part you got stuck on rather than summarising the whole document.', C)
-    add('https://www.scholarcy.com/', 'Scholarcy', ['freemium', 'araştırma'],
-        'Makaleyi yapılandırılmış özet kartlarına indirgeyen araç; tarama aşamasında hangi çalışmayı okuyacağına karar vermek için.',
-        'Reduces a paper to structured summary cards — for deciding, during triage, which study is worth reading.', C)
-    add('https://askyourpdf.com/', 'AskYourPDF', ['freemium', 'pdf'],
-        'PDF ile sohbet; birden çok belgeyi tek kütüphanede toplayıp hepsine birden soru sorabilmesi ayırt edici.',
-        'Chat with PDFs; collecting many documents into one library and querying them together is what sets it apart.', C)
-    add('https://www.chatpdf.com/', 'ChatPDF', ['freemium', 'pdf'],
-        'Tek PDF’e soru sormanın en hızlı yolu; kayıt gerektirmeden yükleyip sormaya izin vermesiyle sürtünmesi düşük.',
-        'The fastest way to question a single PDF, with low friction because you can upload and ask without signing up.', C)
-    add('https://www.humata.ai/', 'Humata', ['freemium', 'pdf'],
-        'Uzun teknik belgeleri karşılaştırmalı okumaya odaklı asistan; cevaba kaynak sayfa bağlantısı vermesi güven veriyor.',
-        'Assistant for comparative reading of long technical documents, citing the source page for each answer.', C)
-    add('https://pdf.ai/', 'PDF.ai', ['freemium', 'pdf'],
-        'PDF sohbeti; tarayıcı eklentisiyle web’deki PDF’lerde de çalışabilmesi ayırt edici yanı.',
-        'PDF chat whose distinguishing feature is a browser extension that also works on PDFs found on the web.', C)
-    add('https://lightpdf.com/', 'LightPDF', ['freemium', 'pdf', 'araç'],
-        'Dönüştürme, sıkıştırma, düzenleme gibi klasik PDF araçlarına YZ sohbeti eklenmiş set; tek işlevli rakiplerinden daha geniş.',
-        'Classic PDF utilities — convert, compress, edit — with AI chat added, broader than the single-purpose rivals.', C)
+    add('https://elicit.com/', 'Elicit', ['saas', 'freemium', 'akademik', 'tarama'],
+        'Yüzlerce makaleyi tarayıp örneklem büyüklüğü, yöntem ve bulgu gibi alanları tabloya çıkarıyor. '
+        'Sistematik derleme yaparken en çok vakit yiyen adım tam olarak bu ayıklama.',
+        'Screens hundreds of papers and extracts fields like sample size, method and finding into a table — '
+        'precisely the screening step that eats the most time in a systematic review.', C)
+    add('https://consensus.app/', 'Consensus', ['saas', 'freemium', 'akademik'],
+        'Bir soruya literatürün ne yönde eğildiğini özetliyor ve destekleyen/çelişen çalışma oranını gösteriyor. '
+        'Tek makale bulmakla alanın genel eğilimini görmek farklı işler.',
+        'Summarises which way the literature leans on a question and shows the ratio of supporting to contradicting '
+        'studies. Finding one paper and seeing the field’s tendency are different jobs.', C)
+    add('https://www.researchrabbit.ai/', 'ResearchRabbit', ['ücretsiz', 'akademik', 'graf'],
+        'Bir makaleden başlayıp atıf ve ortak yazar ağını görsel olarak genişletiyorsun. '
+        'Anahtar kelimeyi bilmediğin için kaçırdığın komşu çalışmalar böyle çıkıyor.',
+        'Start from one paper and expand the citation and co-author network visually. '
+        'This is how you surface adjacent work you missed because you did not know its keyword.', C)
+    add('https://scispace.com/', 'SciSpace', ['saas', 'freemium', 'akademik'],
+        'Makaleyi paragraf paragraf açıklıyor, seçtiğin denklemi ya da terimi yerinde çözüyor. '
+        'Alan dışından okuyan biri için kritik olan, özet değil bu satır içi açıklama.',
+        'Explains a paper paragraph by paragraph, unpacking a chosen equation or term in place. '
+        'For a reader from outside the field, that inline explanation matters more than a summary.', C)
+    add('https://www.explainpaper.com/', 'Explainpaper', ['saas', 'freemium', 'akademik'],
+        'PDF’te işaretlediğin pasajı sadeleştiriyor. Tüm belgeyi özetlemiyor — '
+        'takıldığın tek yeri açması onu dar ama isabetli kılıyor.',
+        'Simplifies whichever passage you highlight in a PDF. It does not summarise the document; '
+        'opening up the one place you got stuck is what makes it narrow but accurate.', C)
+    add('https://www.scholarcy.com/', 'Scholarcy', ['saas', 'freemium', 'akademik', 'özet'],
+        'Makaleyi yapılandırılmış kartlara indiriyor: temel iddia, yöntem, kısıtlar, atıflar ayrı ayrı. '
+        'Hangi çalışmayı tam okuyacağına karar verdiğin ayıklama aşaması için.',
+        'Reduces a paper to structured cards — core claim, method, limitations, references, each separate. '
+        'For the triage stage where you decide what to read in full.', C)
+    add('https://askyourpdf.com/', 'AskYourPDF', ['saas', 'freemium', 'pdf', 'rag'],
+        'Birden çok belgeyi tek kütüphanede toplayıp hepsine birden soru sorabiliyorsun; '
+        'cevaplar sayfa numarasıyla geliyor. Tek dosyalık araçlardan ayrıldığı yer bu.',
+        'Collects many documents into one library you can query together, with page-cited answers. '
+        'That is where it parts from single-file tools.', C)
+    add('https://www.chatpdf.com/', 'ChatPDF', ['saas', 'freemium', 'pdf'],
+        'Kayıt olmadan dosya yükleyip soru sorabiliyorsun. Tek belgeye hızlı bakış için en düşük sürtünmeli yol; '
+        'kütüphane yönetimi ya da çoklu belge desteği yok.',
+        'Upload and ask without signing up — the lowest-friction path to interrogating a single document. '
+        'No library management or multi-document support.', C)
+    add('https://www.humata.ai/', 'Humata', ['saas', 'freemium', 'pdf', 'teknik'],
+        'Uzun teknik belgeleri karşılaştırmalı okumaya yönelik; her cevabın altında kaynak sayfa bağlantısı var, '
+        'yani iddiayı belgede doğrulayabiliyorsun.',
+        'Aimed at comparative reading of long technical documents, with a source-page link under each answer '
+        'so you can verify the claim in the document itself.', C)
+    add('https://pdf.ai/', 'PDF.ai', ['saas', 'freemium', 'pdf', 'eklenti'],
+        'Tarayıcı eklentisiyle web’de karşılaştığın PDF’lerde de çalışıyor — '
+        'indirip yükleme adımını atlamış oluyorsun.',
+        'A browser extension makes it work on PDFs you meet on the web, skipping the download-then-upload step.', C)
+    add('https://lightpdf.com/', 'LightPDF', ['saas', 'freemium', 'pdf', 'araç-seti'],
+        'Dönüştürme, sıkıştırma, imzalama ve OCR gibi klasik PDF işlerinin üzerine sohbet eklenmiş. '
+        'Tek işlevli rakiplerine göre geniş, her bir işlevde ise ortalama.',
+        'Classic PDF chores — convert, compress, sign, OCR — with chat layered on. Broader than the single-purpose '
+        'rivals and average at each individual job.', C)
 
     # ---------------------------------------------------------- yazım & sunum
-    add('https://www.grammarly.com/', 'Grammarly', ['freemium', 'yazım', 'ingilizce'],
-        'İngilizce yazım ve üslup denetleyicisi; her uygulamada çalışan eklentisiyle en yaygın seçenek.',
-        'English grammar and style checker; its everywhere-you-type extension makes it the most widespread option.', C)
-    add('https://languagetool.org/', 'LanguageTool', ['açık kaynak', 'yazım', 'çok dilli'],
-        'Açık kaynak dil bilgisi denetleyicisi; Grammarly’den farkı Türkçe dahil çok dili desteklemesi ve kendi sunucunda çalışabilmesi.',
-        'Open-source grammar checker; unlike Grammarly it supports many languages including Turkish and can be self-hosted.', C)
-    add('https://www.deepl.com/write', 'DeepL Write', ['freemium', 'yazım'],
-        'Metni yeniden yazarak akıcılaştıran araç; hata düzeltmekten çok üslup iyileştirmeye odaklı olmasıyla Grammarly’den ayrılıyor.',
-        'Rewrites text for fluency; it differs from Grammarly by targeting style improvement rather than error correction.', C)
-    add('https://quillbot.com/', 'QuillBot', ['freemium', 'yazım'],
-        'Başka sözcüklerle ifade etme (paraphrase) aracı; ton ve uzunluk seçenekleriyle aynı cümlenin farklı sürümlerini üretir.',
-        'A paraphrasing tool producing alternative versions of the same sentence with tone and length controls.', C)
-    add('https://gamma.app/', 'Gamma', ['freemium', 'sunum'],
-        'Metinden sunum ve doküman üreten araç; slayt yerine kaydırılabilir sayfa modeli kullanması ayırt edici yanı.',
-        'Generates presentations and documents from text; using a scrollable page model instead of slides is what sets it apart.', C)
-    add('https://www.napkin.ai/', 'Napkin AI', ['freemium', 'görselleştirme'],
-        'Düz metni diyagram ve şemaya çeviren araç; sunum üreticilerinden farkı, tek bir fikri görselleştirmeye odaklanması.',
-        'Turns plain text into diagrams; unlike deck generators it focuses on visualising one idea at a time.', C)
-    add('https://www.canva.com/', 'Canva', ['freemium', 'tasarım'],
-        'Şablon tabanlı genel tasarım aracı; tasarım bilgisi olmadan kabul edilebilir çıktı almanın en yaygın yolu.',
-        'Template-based general design tool — the most common way to get acceptable output without design skills.', C)
-    add('https://pitch.com/', 'Pitch', ['freemium', 'sunum', 'ekip'],
-        'Ekip odaklı sunum aracı; eşzamanlı düzenleme ve marka şablonlarıyla PowerPoint’e web tabanlı alternatif.',
-        'Team-oriented presentation tool — a web alternative to PowerPoint with live co-editing and brand templates.', C)
-    add('https://www.slidesai.io/', 'SlidesAI', ['freemium', 'sunum'],
-        'Google Slides içine gömülen sunum üreticisi; ayrı platforma geçmeden mevcut dosyanda çalışması ayırt edici.',
-        'Deck generator embedded in Google Slides, working inside your existing file rather than a separate platform.', C)
+    add('https://www.grammarly.com/', 'Grammarly', ['saas', 'freemium', 'yazım', 'ingilizce'],
+        'Yazdığın her yere giren eklentisiyle İngilizce dil bilgisi ve üslup denetimi. '
+        'Türkçe desteklemiyor; yalnızca İngilizce yazarken anlamlı.',
+        'English grammar and style checking through an extension that follows you everywhere you type. '
+        'No Turkish support — it only makes sense when you write in English.', C)
+    add('https://languagetool.org/', 'LanguageTool', ['açık-kaynak', 'yazım', 'çok-dilli', 'self-hosted'],
+        '30’dan fazla dili, Türkçe dahil, kural tabanlı olarak denetliyor ve kendi sunucunda çalıştırılabiliyor. '
+        'Metnin bir şirkete gitmemesi gerektiği durumlarda tek gerçek seçenek.',
+        'Rule-based checking for 30+ languages including Turkish, and it can be self-hosted — '
+        'the only real option when the text must not go to a company.', C)
+    add('https://www.deepl.com/write', 'DeepL Write', ['saas', 'freemium', 'yazım'],
+        'Hatayı işaretlemek yerine cümleyi yeniden kuruyor ve ton seçenekleri sunuyor. '
+        'Grammarly düzeltiyor, bu yeniden yazıyor — ikisi farklı iş.',
+        'Rewrites the sentence and offers tone variants instead of flagging errors. '
+        'Grammarly corrects, this rewrites — two different jobs.', C)
+    add('https://quillbot.com/', 'QuillBot', ['saas', 'freemium', 'yazım'],
+        'Aynı cümlenin farklı ifade edilişlerini üretiyor; uzunluk ve resmiyet ayarlanabiliyor. '
+        'Akademik yazımda intihal riskini artırabileceği için dikkatli kullanılması gereken bir araç.',
+        'Produces alternative phrasings of the same sentence with adjustable length and formality. '
+        'In academic writing it can raise plagiarism risk, so it needs careful use.', C)
+    add('https://gamma.app/', 'Gamma', ['saas', 'freemium', 'sunum'],
+        'Slayt yerine kaydırılabilir sayfa üretiyor; içerik uzadıkça düzen kendini ayarlıyor, '
+        'kutuya sığdırma derdi kalkıyor. Çıktı PowerPoint ve PDF olarak alınabiliyor.',
+        'Produces scrollable pages rather than slides, with the layout adapting as content grows so you stop '
+        'fighting to fit a box. Exports to PowerPoint and PDF.', C)
+    add('https://www.napkin.ai/', 'Napkin AI', ['saas', 'freemium', 'diyagram'],
+        'Düz metinden akış şeması, zaman çizelgesi ve karşılaştırma görseli üretiyor; '
+        'çıktı düzenlenebilir vektör. Sunum üretmiyor, tek bir fikri görselleştiriyor.',
+        'Turns plain prose into flow charts, timelines and comparison graphics as editable vectors. '
+        'It does not build decks; it visualises one idea.', C)
+    add('https://www.canva.com/', 'Canva', ['saas', 'freemium', 'tasarım', 'şablon'],
+        'Şablon kütüphanesi ve marka kiti sayesinde tasarım bilgisi olmadan tutarlı çıktı alınıyor. '
+        'Sınırı da bu: şablonların dışına çıkıldığında araç direniyor.',
+        'A template library and brand kit produce consistent output without design skill. '
+        'That is also the ceiling — the tool resists once you step outside the templates.', C)
+    add('https://pitch.com/', 'Pitch', ['saas', 'freemium', 'sunum', 'ekip'],
+        'Eşzamanlı düzenleme, yorum ve marka şablonları; sunum bir ekip belgesi gibi çalışıyor. '
+        'Analitik özelliği, gönderdiğin sunumun hangi slaytta bırakıldığını gösteriyor.',
+        'Live co-editing, comments and brand templates make a deck behave like a team document. '
+        'Its analytics show which slide a recipient stopped on.', C)
+    add('https://www.slidesai.io/', 'SlidesAI', ['eklenti', 'freemium', 'sunum'],
+        'Google Slides eklentisi olarak çalışıyor; mevcut dosyandan çıkmadan metinden slayt üretiyor. '
+        'Ayrı platforma taşınma ve sonra dışa aktarma adımı yok.',
+        'Runs as a Google Slides add-on, generating slides from text without leaving your existing file — '
+        'no migration to another platform and no export step back.', C)
 
     # ---------------------------------------------------------- veri bilimi & AutoML
-    add('https://julius.ai/', 'Julius AI', ['freemium', 'veri', 'analiz'],
-        'Veri dosyasını yükleyip sohbetle analiz eden araç; kod yazmadan grafik ve istatistik üretmeye odaklı.',
-        'Upload a data file and analyse it by chatting — aimed at charts and statistics without writing code.', C)
-    add('https://www.knime.com/', 'KNIME', ['ücretsiz', 'veri', 'görsel'],
-        'Düğüm tabanlı görsel veri analizi platformu; kod yazmadan tekrarlanabilir hat kurmak isteyenler için.',
-        'Node-based visual analytics platform for building reproducible pipelines without writing code.', C)
-    add('https://orangedatamining.com/', 'Orange', ['açık kaynak', 'veri', 'eğitim'],
-        'Görsel programlamayla veri madenciliği; KNIME’a göre daha hafif ve öğretim amaçlı kullanıma daha uygun.',
-        'Visual-programming data mining — lighter than KNIME and better suited to teaching.', C)
-    add('https://ml.cms.waikato.ac.nz/weka/', 'Weka', ['açık kaynak', 'veri', 'akademik'],
-        'Klasik makine öğrenmesi algoritmalarının akademik araç kutusu; modern kütüphanelerden eski ama algoritma karşılaştırmak için hâlâ düzenli.',
-        'Academic toolbox of classical ML algorithms — dated next to modern libraries but still tidy for comparing algorithms.', C)
-    add('https://auto.gluon.ai/', 'AutoGluon', ['açık kaynak', 'automl', 'python'],
-        'Birkaç satırla güçlü model üreten AutoML kütüphanesi; topluluk (ensemble) kurmayı otomatikleştirmesiyle ayrışıyor.',
-        'AutoML library producing strong models in a few lines, distinguished by automating ensemble construction.', C)
-    add('https://h2o.ai/', 'H2O.ai', ['freemium', 'automl'],
-        'Kurumsal AutoML platformu; ölçekli veri ve model açıklanabilirliği tarafında kütüphane çözümlerinden ileri.',
-        'Enterprise AutoML platform, ahead of library-only solutions on large data and model explainability.', C)
-    add('https://pycaret.org/', 'PyCaret', ['açık kaynak', 'automl', 'python'],
-        'Düşük kodlu makine öğrenmesi kütüphanesi; deneme aşamasında onlarca modeli tek satırla karşılaştırmak için.',
-        'Low-code ML library for comparing dozens of models in a single line during experimentation.', C)
-    add('https://mljar.com/automl/', 'MLJAR AutoML', ['açık kaynak', 'automl'],
-        'Otomatik model seçimi yapıp sonucu okunabilir rapor olarak sunan kütüphane; açıklama üretmesi ayırt edici yanı.',
-        'AutoML that also produces a readable report — generating explanations is what distinguishes it.', C)
-    add('https://colab.research.google.com/', 'Google Colab', ['ücretsiz', 'not defteri', 'gpu'],
-        'Tarayıcıda çalışan Python not defteri; ücretsiz GPU erişimi onu deneme ve öğretim için standart hâline getirdi.',
-        'Browser-based Python notebook whose free GPU access made it the standard for experiments and teaching.', C)
-    add('https://www.kaggle.com/code', 'Kaggle Notebooks', ['ücretsiz', 'not defteri', 'veri'],
-        'Veri kümeleriyle aynı yerde duran not defterleri; Colab’dan farkı, başkalarının çözümlerini okuyabilmen.',
-        'Notebooks sitting next to the datasets; unlike Colab you can read other people’s solutions.', C)
+    add('https://julius.ai/', 'Julius AI', ['saas', 'freemium', 'veri', 'analiz'],
+        'CSV veya Excel yükleyip sohbetle analiz ediyorsun; arka planda Python çalıştırıp grafik üretiyor '
+        've kullandığı kodu gösteriyor. Sonucu doğrulayabilmen bu şeffaflığa bağlı.',
+        'Upload a CSV or Excel and analyse by chatting; it runs Python behind the scenes, produces charts and '
+        'shows the code it used — which is what makes the result verifiable.', C)
+    add('https://www.knime.com/', 'KNIME', ['ücretsiz', 'veri', 'düğüm', 'etl'],
+        'Düğüm tabanlı görsel analiz; hattın tamamı kaydedilip tekrar çalıştırılabiliyor. '
+        'Kod yazmadan tekrarlanabilirlik isteyen kurumsal veri ekiplerinde yaygın.',
+        'Node-based visual analytics where the whole pipeline is saved and re-runnable. '
+        'Common in enterprise data teams that need reproducibility without writing code.', C)
+    add('https://orangedatamining.com/', 'Orange', ['açık-kaynak', 'python', 'veri', 'eğitim'],
+        'Görsel programlamayla veri madenciliği; widget’lar scikit-learn’i sarmalıyor. '
+        'KNIME’dan hafif ve görselleştirme tarafı güçlü, bu yüzden derslerde tercih ediliyor.',
+        'Visual-programming data mining whose widgets wrap scikit-learn. Lighter than KNIME with stronger '
+        'visualisation, which is why it shows up in teaching.', C)
+    add('https://ml.cms.waikato.ac.nz/weka/', 'Weka', ['açık-kaynak', 'java', 'veri', 'akademik'],
+        'Klasik makine öğrenmesi algoritmalarının Java araç kutusu; alanın en eski açık projelerinden. '
+        'Modern kütüphanelerin gerisinde ama algoritmaları yan yana kıyaslamak için hâlâ düzenli.',
+        'A Java toolbox of classical ML algorithms and one of the field’s oldest open projects. '
+        'Behind modern libraries, yet still tidy for comparing algorithms side by side.', C)
+    add('https://auto.gluon.ai/', 'AutoGluon', ['açık-kaynak', 'python', 'automl', 'apache-2'],
+        'Üç satırla tablo verisinde güçlü bir taban çizgisi kuruyor; birden çok modeli eğitip '
+        'yığınlayarak (stacking) birleştiriyor. Kaggle taban çizgisi olarak sık kullanılıyor.',
+        'Three lines gives a strong baseline on tabular data, training several models and combining them by '
+        'stacking. Frequently used as a Kaggle baseline.', C)
+    add('https://h2o.ai/', 'H2O.ai', ['freemium', 'automl', 'java', 'kurumsal'],
+        'Dağıtık AutoML platformu; model açıklanabilirliği ve üretime çıkarma araçları kütüphane '
+        'çözümlerinden ileride. Büyük veri kümelerinde bellek dışına taşabiliyor.',
+        'A distributed AutoML platform whose explainability and productionisation tooling is ahead of library-only '
+        'solutions, and which can spill out of memory on large datasets.', C)
+    add('https://pycaret.org/', 'PyCaret', ['açık-kaynak', 'python', 'automl', 'düşük-kod'],
+        '`compare_models()` tek satırda onlarca algoritmayı çapraz doğrulamayla kıyaslayıp tabloya döküyor. '
+        'Keşif aşamasında hangi model ailesinin işe yaradığını hızla eliyor.',
+        '`compare_models()` cross-validates dozens of algorithms in one line and tabulates the result, '
+        'quickly narrowing which model family is worth pursuing.', C)
+    add('https://mljar.com/automl/', 'MLJAR AutoML', ['açık-kaynak', 'python', 'automl', 'rapor'],
+        'Model seçiminin yanında Markdown rapor üretiyor: öğrenme eğrileri, önem grafikleri ve '
+        'karar açıklamaları dahil. Sonucu birine sunman gerekiyorsa bu fark yaratıyor.',
+        'Alongside model selection it emits a Markdown report with learning curves, importance plots and '
+        'decision explanations — which matters when you have to present the result to someone.', C)
+    add('https://colab.research.google.com/', 'Google Colab', ['ücretsiz', 'not-defteri', 'gpu', 'python'],
+        'Tarayıcıda Jupyter; ücretsiz katmanda T4 GPU veriyor. Oturum süresi sınırlı ve makine '
+        'kapanınca dosyalar gidiyor — uzun eğitimler için Drive’a bağlamak gerekiyor.',
+        'Jupyter in the browser with a free T4 GPU. Sessions are time-limited and files vanish when the machine '
+        'recycles, so long training runs need Drive mounted.', C)
+    add('https://www.kaggle.com/code', 'Kaggle Notebooks', ['ücretsiz', 'not-defteri', 'gpu', 'veri'],
+        'Veri kümeleriyle aynı platformda duran not defterleri; haftalık GPU kotası Colab’dan öngörülebilir. '
+        'Asıl değeri, başkalarının çözümlerini okuyabilmen.',
+        'Notebooks sitting on the same platform as the datasets, with a weekly GPU quota more predictable than Colab’s. '
+        'The real value is being able to read other people’s solutions.', C)
 
     # ---------------------------------------------------------- sağlık & yaşam bilimleri
     add('https://www.openevidence.com/', 'OpenEvidence', ['ücretsiz', 'tıp', 'akademik'],
-        'Klinik sorulara kaynak göstererek yanıt veren tıbbi arama; genel botlardan farkı, yalnızca hakemli literatüre dayanması.',
-        'Medical search answering clinical questions with citations; unlike general chatbots it draws only on peer-reviewed literature.', C)
-    add('https://deepmind.google/models/gemma/medgemma/', 'MedGemma', ['açık ağırlık', 'tıp', 'model'],
-        'Google’ın tıp alanına uyarlanmış açık modeli; klinik metin ve görüntü üzerinde araştırma amaçlı kullanım için.',
-        'Google’s medically adapted open model, intended for research use on clinical text and images.', C)
-    add('https://github.com/microsoft/BioGPT', 'BioGPT', ['açık kaynak', 'github', 'biyomedikal'],
-        'Biyomedikal literatürde eğitilmiş dil modeli; genel modellerin zorlandığı alan terminolojisinde daha isabetli.',
-        'Language model trained on biomedical literature, more accurate on domain terminology than general models.', C)
-    add('https://github.com/kbressem/medAlpaca', 'MedAlpaca', ['açık kaynak', 'github', 'tıp'],
-        'Tıbbi soru-cevap için ince ayarlanmış açık model; klinik kullanım için değil, araştırma ve sınav çalışması için.',
-        'Open model fine-tuned for medical Q&A — for research and exam practice, not clinical use.', C)
-    add('https://ada.com/', 'Ada Health', ['ücretsiz', 'sağlık'],
-        'Belirtilerden olası nedenleri daraltan değerlendirme uygulaması; arama motorunda semptom aramaya yapılandırılmış alternatif.',
-        'Symptom assessment app narrowing possible causes — a structured alternative to searching symptoms on the web.', C)
-    add('https://deepchem.io/', 'DeepChem', ['açık kaynak', 'kimya', 'python'],
-        'Kimya ve ilaç keşfi için makine öğrenmesi kütüphanesi; moleküler verinin hazırlanmasını da üstlenmesi ayırt edici.',
-        'ML library for chemistry and drug discovery, distinguished by also handling molecular data preparation.', C)
-    add('https://www.rdkit.org/', 'RDKit', ['açık kaynak', 'kimya'],
-        'Kemoinformatiğin standart açık kütüphanesi; moleküler işlemler için fiilî temel, üzerine kurulan araçların çoğu buna dayanır.',
-        'The standard open cheminformatics library — the de facto base most molecular tooling is built on.', C)
-    add('https://github.com/ur-whitelab/chemcrow-public', 'ChemCrow', ['açık kaynak', 'github', 'kimya', 'agent'],
-        'Kimya araçlarını kullanabilen LLM agent’ı; modelin kendi bilgisine değil, gerçek kimya kütüphanelerine başvurması ayırt edici.',
-        'An LLM agent that operates chemistry tools — it consults real chemistry libraries rather than the model’s own recall.', C)
-    add('https://alphafoldserver.com/', 'AlphaFold Server', ['ücretsiz', 'biyoloji'],
-        'Protein yapısı tahmini için DeepMind’ın web arayüzü; kurulum gerektirmemesi araştırmacılar için giriş engelini kaldırıyor.',
-        'DeepMind’s web interface for protein structure prediction; requiring no installation removes the barrier for researchers.', C)
-    add('https://github.com/sokrypton/ColabFold', 'ColabFold', ['açık kaynak', 'github', 'biyoloji'],
-        'AlphaFold’u Colab üzerinde hızlı çalıştıran uyarlama; kendi dizilerini toplu işlemek isteyenler için sunucudan esnek.',
-        'An adaptation running AlphaFold quickly on Colab — more flexible than the server for batch-processing your own sequences.', C)
+        'Klinik soruya yalnızca hakemli literatürden, atıf vererek cevap veriyor; '
+        'kayıtlı sağlık profesyonellerine açık. Genel botların tıpta güvenilmez olmasının sebebi kaynak denetimi eksikliği — burada var.',
+        'Answers clinical questions only from peer-reviewed literature, with citations, for verified health '
+        'professionals. General chatbots are unreliable in medicine because they lack that source control; this has it.', C)
+    add('https://deepmind.google/models/gemma/medgemma/', 'MedGemma', ['açık-ağırlık', 'tıp', 'model'],
+        'Gemma’nın tıbbi metin ve görüntüye uyarlanmış açık sürümü. Araştırma amaçlı — '
+        'klinik karar desteği olarak kullanılması için düzenleyici onayı yok.',
+        'An open Gemma variant adapted to medical text and imaging. Research use only — '
+        'it carries no regulatory clearance for clinical decision support.', C)
+    add('https://github.com/microsoft/BioGPT', 'BioGPT', ['açık-kaynak', 'github', 'biyomedikal', 'model'],
+        'PubMed özetleriyle eğitilmiş dil modeli; ilaç-hastalık ilişkisi çıkarımı gibi görevlerde '
+        'genel modellerden isabetli. Metin üretmekten çok bilgi çıkarımı için.',
+        'A language model trained on PubMed abstracts, more accurate than general models at tasks like '
+        'drug–disease relation extraction. Built for information extraction rather than generation.', C)
+    add('https://github.com/kbressem/medAlpaca', 'MedAlpaca', ['açık-kaynak', 'github', 'tıp', 'model'],
+        'Tıbbi soru-cevap için ince ayarlanmış açık model; USMLE tarzı sınav sorularıyla '
+        'değerlendirilmiş. Klinik kullanım için değil, araştırma ve sınav çalışması için.',
+        'An open model fine-tuned for medical Q&A and evaluated on USMLE-style questions. '
+        'For research and exam practice, not clinical use.', C)
+    add('https://ada.com/', 'Ada Health', ['saas', 'ücretsiz', 'sağlık'],
+        'Belirtileri yapılandırılmış soru akışıyla daraltıp olası nedenleri sıralıyor; '
+        'tıbbi cihaz olarak CE işaretli. Web’de belirti aramanın disiplinli hâli.',
+        'Narrows symptoms through a structured question flow and ranks possible causes; CE-marked as a medical device. '
+        'The disciplined form of searching symptoms online.', C)
+    add('https://deepchem.io/', 'DeepChem', ['açık-kaynak', 'python', 'kemoinformatik', 'mit'],
+        'İlaç keşfi için makine öğrenmesi; moleküler özellik hesaplama ve veri kümesi yükleyicileri dahil. '
+        'Kimyasal veriyi modele hazır hâle getiren sıkıcı kısmı da üstleniyor.',
+        'Machine learning for drug discovery, including molecular featurisation and dataset loaders — '
+        'it takes on the tedious part of getting chemical data model-ready.', C)
+    add('https://www.rdkit.org/', 'RDKit', ['açık-kaynak', 'python', 'c++', 'kemoinformatik'],
+        'Kemoinformatiğin temel açık kütüphanesi: SMILES ayrıştırma, alt yapı arama, parmak izi üretimi. '
+        'Alandaki araçların çoğu doğrudan bunun üzerine kurulu.',
+        'The foundational open cheminformatics library — SMILES parsing, substructure search, fingerprints. '
+        'Most tooling in the field is built directly on it.', C)
+    add('https://github.com/ur-whitelab/chemcrow-public', 'ChemCrow', ['açık-kaynak', 'github', 'agent', 'kimya'],
+        'Kimya araçlarını (RDKit, reaksiyon veritabanları, sentez planlayıcıları) kullanabilen LLM agent’ı. '
+        'Modelin kendi belleğine değil gerçek hesaplamalara başvurması, kimyada hata payını ciddi düşürüyor.',
+        'An LLM agent that operates chemistry tools — RDKit, reaction databases, synthesis planners. '
+        'Consulting real computation instead of the model’s recall sharply lowers error in chemistry.', C)
+    add('https://alphafoldserver.com/', 'AlphaFold Server', ['ücretsiz', 'biyoinformatik'],
+        'AlphaFold 3 ile protein, DNA ve ligand komplekslerinin yapısını tahmin ediyor; '
+        'kurulum ve GPU gerekmiyor. Günlük iş sayısı sınırlı ve ticari kullanım kısıtlı.',
+        'Predicts structures of protein, DNA and ligand complexes with AlphaFold 3, needing no install or GPU. '
+        'Daily job counts are capped and commercial use is restricted.', C)
+    add('https://github.com/sokrypton/ColabFold', 'ColabFold', ['açık-kaynak', 'github', 'biyoinformatik', 'colab'],
+        'MMseqs2 ile dizi hizalamayı hızlandırıp AlphaFold’u Colab’da çalıştırılabilir hâle getiriyor. '
+        'Sunucunun kotasına takılmadan kendi dizilerini toplu işlemek isteyenler için.',
+        'Speeds up sequence alignment with MMseqs2 to make AlphaFold runnable in Colab — '
+        'for batch-processing your own sequences without hitting the server’s quota.', C)
 
     # ---------------------------------------------------------- hukuk, iş & finans
-    add('https://legalesedecoder.com/', 'Legalese Decoder', ['freemium', 'hukuk'],
-        'Hukuki metni sade dile çeviren araç; genel özetleyicilerden farkı, madde yapısını koruyarak çevirmesi.',
-        'Translates legal text into plain language, preserving clause structure unlike general summarisers.', C)
+    add('https://legalesedecoder.com/', 'Legalese Decoder', ['saas', 'freemium', 'hukuk'],
+        'Sözleşme dilini sade Türkçeye/İngilizceye çevirirken madde yapısını koruyor, '
+        'yani hangi cümlenin hangi maddeden geldiği kayboluyor değil.',
+        'Translates contract language into plain prose while preserving clause structure, so you do not lose '
+        'which sentence came from which clause.', C)
     add('https://www.hubspot.com/campaign-assistant', 'HubSpot Campaign Assistant', ['ücretsiz', 'pazarlama'],
-        'Pazarlama metni üreten ücretsiz araç; HubSpot ekosistemine bağlanabilmesi kampanyaya taşımayı kolaylaştırıyor.',
-        'Free marketing-copy generator whose tie into HubSpot makes moving the output into a campaign easy.', C)
-    add('https://buffer.com/ai-assistant', 'Buffer AI Assistant', ['freemium', 'sosyal medya'],
-        'Sosyal medya gönderisi üretip yeniden paketleyen asistan; zamanlama aracının içinde olması ayrı araç ihtiyacını kaldırıyor.',
-        'Generates and repurposes social posts inside a scheduling tool, removing the need for a separate app.', C)
-    add('https://predis.ai/', 'Predis.ai', ['freemium', 'sosyal medya'],
-        'Metinle birlikte görsel ve video da üreten sosyal medya aracı; yalnız metin üretenlerden farkı bu.',
-        'Social media tool generating visuals and video alongside copy — the difference from text-only generators.', C)
-    add('https://simplified.com/', 'Simplified', ['freemium', 'pazarlama'],
-        'Tasarım, metin, video ve zamanlamayı tek uygulamada toplayan set; parça parça araç kullanmaya alternatif.',
-        'Bundles design, copy, video and scheduling in one app — an alternative to stitching separate tools.', C)
-    add('https://facebook.github.io/prophet/', 'Prophet', ['açık kaynak', 'finans', 'python'],
-        'Zaman serisi tahmini için kütüphane; tatil ve mevsimsellik etkilerini varsayılan olarak modellemesi ayırt edici yanı.',
-        'Time-series forecasting library whose distinguishing trait is modelling holidays and seasonality by default.', C)
-    add('https://github.com/AI4Finance-Foundation/FinGPT', 'FinGPT', ['açık kaynak', 'github', 'finans'],
-        'Finans alanına açık kaynak model ve veri hattı; kapalı finansal terminallere araştırma amaçlı alternatif.',
-        'Open-source models and data pipelines for finance — a research alternative to closed financial terminals.', C)
-    add('https://www.quantconnect.com/', 'QuantConnect', ['freemium', 'finans', 'algoritmik'],
-        'Algoritmik strateji yazıp geçmiş veriyle test etme platformu; veri ve altyapıyı hazır vermesiyle kendi kurulumundan hızlı.',
-        'Platform for writing and backtesting algorithmic strategies, faster than a home setup because data and infrastructure come ready.', C)
+        'E-posta, açılış sayfası ve reklam metnini kampanya hedefine göre üretiyor; '
+        'ücretsiz ve HubSpot hesabı şart değil.',
+        'Generates email, landing page and ad copy against a campaign goal, free and without requiring a HubSpot account.', C)
+    add('https://buffer.com/ai-assistant', 'Buffer AI Assistant', ['saas', 'freemium', 'sosyal-medya'],
+        'Zamanlama aracının içinde çalışıyor; bir gönderiyi farklı platformların ton ve uzunluğuna '
+        'göre yeniden paketliyor. Ayrı bir metin aracıyla gidip gelme adımı kalkıyor.',
+        'Lives inside the scheduling tool, repackaging one post for each platform’s tone and length — '
+        'removing the round trip to a separate copy tool.', C)
+    add('https://predis.ai/', 'Predis.ai', ['saas', 'freemium', 'sosyal-medya', 'video'],
+        'Metinle birlikte görsel ve kısa video da üretiyor; rakip için düşünülmüş şablonları var. '
+        'Yalnızca metin üreten araçlardan ayrıldığı yer bu.',
+        'Generates visuals and short video alongside copy, with competitor-oriented templates. '
+        'That is where it separates from text-only tools.', C)
+    add('https://simplified.com/', 'Simplified', ['saas', 'freemium', 'pazarlama', 'araç-seti'],
+        'Tasarım, metin, video düzenleme ve zamanlamayı tek uygulamada topluyor. '
+        'Her alanda uzman araçların gerisinde, ama araç sayısını azaltmak istiyorsan mantıklı bir denge.',
+        'Bundles design, copy, video editing and scheduling in one app. Behind the specialists at each task, '
+        'but a sensible trade if reducing tool count is the goal.', C)
+    add('https://facebook.github.io/prophet/', 'Prophet', ['açık-kaynak', 'python', 'r', 'zaman-serisi'],
+        'Zaman serisini eğilim, mevsimsellik ve tatil etkilerine ayırıyor; parametre ayarı yapmadan '
+        'makul sonuç veriyor. İstatistik bilgisi olmayan analistler için tasarlanmış.',
+        'Decomposes a time series into trend, seasonality and holiday effects and gives reasonable results without '
+        'tuning. Designed for analysts who are not statisticians.', C)
+    add('https://github.com/AI4Finance-Foundation/FinGPT', 'FinGPT', ['açık-kaynak', 'github', 'finans', 'llm'],
+        'Finansal metin için açık modeller ve veri hattı; duygu analizi ve haber sınıflandırma üzerine '
+        'ince ayarlı sürümler içeriyor. Bloomberg terminaline araştırma amaçlı açık alternatif.',
+        'Open models and data pipelines for financial text, including fine-tunes for sentiment and news classification. '
+        'An open research alternative to a Bloomberg terminal.', C)
+    add('https://www.quantconnect.com/', 'QuantConnect', ['saas', 'freemium', 'finans', 'backtest'],
+        'Strateji yazıp geçmiş veriyle test ediyorsun; hisse, opsiyon, futures ve kripto verisi hazır geliyor. '
+        'Kendi kurulumunda en pahalı kısım olan temiz veriyi platform sağlıyor.',
+        'Write a strategy and backtest it, with equity, options, futures and crypto data supplied. '
+        'The platform provides the clean data that is the costliest part of a home setup.', C)

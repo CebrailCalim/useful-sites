@@ -1,193 +1,307 @@
 # -*- coding: utf-8 -*-
-"""Veritabanı, DevOps & Altyapı, Ağ & Sistem, Veri Bilimi"""
+"""Veritabanı · DevOps & Altyapı · Ağ & Sistem Yönetimi · Veri Bilimi"""
 
 
 def load(add):
     # ============================================================ VERİTABANI
     V = 'veritabani'
-    add('https://www.mysqltutorial.org/', 'MySQL Tutorial', ['ücretsiz', 'sql'],
-        'MySQL’i baştan sona örneklerle anlatan öğretici; resmî dokümana göre çok daha okunur bir giriş.',
-        'A hands-on MySQL tutorial that is far more readable as an introduction than the official manual.', V)
+    add('https://www.mysqltutorial.org/', 'MySQL Tutorial', ['ücretsiz', 'sql', 'mysql'],
+        'Örnek veritabanı üzerinden MySQL’i baştan sona işliyor; JOIN türleri, alt sorgular ve '
+        'saklı yordamlar ayrı ayrı ele alınmış. Resmî kılavuzdan çok daha okunur bir giriş.',
+        'Works MySQL end to end over a sample database, treating join types, subqueries and stored procedures '
+        'separately. Far more readable as an introduction than the official manual.', V)
     add('https://neon.com/postgresql/tutorial', 'PostgreSQL Tutorial', ['ücretsiz', 'sql', 'postgres'],
-        'PostgreSQL’e örnek veri tabanı üzerinden giriş; her konuyu çalıştırılabilir sorguyla göstermesi ayırt edici.',
-        'An introduction to PostgreSQL over a sample database, showing each topic with a runnable query.', V)
+        'Her konuyu çalıştırılabilir sorguyla gösteren PostgreSQL öğreticisi. '
+        'Pencere fonksiyonları ve CTE bölümleri, çoğu SQL kursunun atladığı yerde derinleşiyor.',
+        'A PostgreSQL tutorial showing each topic with a runnable query, going deep on window functions and CTEs '
+        'where most SQL courses stop.', V)
     add('https://learn.mongodb.com/', 'MongoDB University', ['ücretsiz', 'nosql', 'kurs'],
-        'MongoDB’nin resmî ücretsiz kursları; ilişkisel modelden geçenler için veri modelleme dersi en kritik kısım.',
-        'MongoDB’s official free courses; the data modelling unit is the critical part for anyone arriving from relational.', V)
-    add('https://firebase.google.com/docs', 'Firebase', ['freemium', 'dokümantasyon', 'backend'],
-        'Google’ın sunucusuz arka uç servisi; veritabanı, kimlik doğrulama ve barındırmayı tek pakette vermesi hız kazandırıyor.',
-        'Google’s serverless backend bundling database, auth and hosting in one package, which buys development speed.', V)
+        'MongoDB’nin resmî ücretsiz kursları. Veri modelleme dersi kritik: ilişkisel alışkanlıkla '
+        'belge veritabanı tasarlamak, ortaya çıkan en yaygın performans sorunu.',
+        'MongoDB’s official free courses. The data modelling unit is the important one — designing a document store '
+        'with relational habits is the most common source of performance trouble.', V)
+    add('https://firebase.google.com/docs', 'Firebase', ['saas', 'freemium', 'backend', 'realtime'],
+        'Gerçek zamanlı veritabanı, kimlik doğrulama, depolama ve barındırma tek pakette. '
+        'Prototipi çok hızlandırıyor; sorgu esnekliği ve satıcı bağımlılığı ise sonradan sorun oluyor.',
+        'Realtime database, auth, storage and hosting in one package. It accelerates a prototype sharply, '
+        'while query flexibility and vendor lock-in become the later problem.', V)
     add('https://learn.couchbase.com/learn', 'Couchbase Learn', ['ücretsiz', 'nosql', 'kurs'],
-        'Couchbase’in resmî eğitim portalı; belge veritabanını SQL benzeri sorgu diliyle kullanması diğer NoSQL seçeneklerinden ayırıyor.',
-        'Couchbase’s official training; querying a document store with a SQL-like language is what separates it from other NoSQL options.', V)
-    add('https://www.reddit.com/r/SQL/comments/11qe99b/best_way_to_learn_sql/', 'SQL Nasıl Öğrenilir (r/SQL)', ['ücretsiz', 'topluluk', 'sql'],
-        'Deneyimli kullanıcıların SQL öğrenme yollarını tartıştığı başlık; pazarlama içermeyen kaynak önerileri için.',
-        'A thread where experienced users debate how to learn SQL — resource suggestions without marketing.', V)
-    add('https://www.youtube.com/watch?v=OT1RErkfLNQ', 'SQL Sıfırdan İleri Seviye', ['ücretsiz', 'video', 'sql'],
-        'Dört saatte temelden ileri seviyeye SQL; tek oturumda bütünü görmek isteyenler için.',
-        'SQL from basics to advanced in four hours — for seeing the whole picture in one sitting.', V)
-    add('https://www.youtube.com/watch?v=26ls5lNiijk', 'İlişkisel Veritabanı Tasarımı', ['ücretsiz', 'video'],
-        'Normalizasyon ve şema tasarımına odaklı tam kurs; sorgu yazmayı değil, tabloyu doğru kurmayı öğretir.',
-        'A full course on normalisation and schema design — it teaches getting the tables right, not writing queries.', V)
-    add('https://www.youtube.com/watch?v=pPqazMTzNOM', 'Veritabanları Derinlemesine', ['ücretsiz', 'video'],
-        'Veritabanı iç mekanizmalarını (indeks, işlem, kilit) anlatan kapsamlı kurs; ürün öğretici değil kavram dersi.',
-        'A comprehensive course on database internals — indexes, transactions, locks. Concepts rather than a product tutorial.', V)
+        'Belge veritabanını SQL benzeri bir sorgu diliyle (N1QL) kullanıyor. '
+        'İlişkisel dünyadan gelen ekipler için MongoDB’nin sorgu sözdiziminden daha az kırılma noktası.',
+        'Queries a document store with a SQL-like language (N1QL), which is a gentler break for teams arriving '
+        'from the relational world than MongoDB’s query syntax.', V)
+    add('https://www.reddit.com/r/SQL/comments/11qe99b/best_way_to_learn_sql/', 'SQL Nasıl Öğrenilir', ['ücretsiz', 'topluluk', 'sql'],
+        'Deneyimli kullanıcıların SQL öğrenme yollarını tartıştığı başlık. '
+        'Kurs satmayan insanların önerileri olduğu için ayıklama işini önden yapmış oluyor.',
+        'A thread where experienced users argue over how to learn SQL. Because nobody there is selling a course, '
+        'the filtering is already done.', V)
+    add('https://www.youtube.com/watch?v=OT1RErkfLNQ', 'SQL Sıfırdan İleri Seviye', ['video', 'ücretsiz', 'sql'],
+        'Dört saatte temelden ileri seviyeye SQL; tek oturumda bütünü görmek isteyenler için. '
+        'Pencere fonksiyonlarına kadar gidiyor, temel SELECT’te kalmıyor.',
+        'SQL from basics to advanced in four hours for anyone who wants the whole picture in one sitting. '
+        'It reaches window functions rather than stopping at basic SELECT.', V)
+    add('https://www.youtube.com/watch?v=26ls5lNiijk', 'İlişkisel Veritabanı Tasarımı', ['video', 'ücretsiz', 'modelleme'],
+        'Normalizasyon formlarını ve şema tasarımını işleyen tam kurs. '
+        'Sorgu yazmayı değil tabloyu doğru kurmayı öğretiyor — sonraki tüm sorunların kaynağı burası.',
+        'A full course on normal forms and schema design. It teaches getting the tables right rather than writing '
+        'queries — which is where every later problem originates.', V)
+    add('https://www.youtube.com/watch?v=pPqazMTzNOM', 'Veritabanları Derinlemesine', ['video', 'ücretsiz', 'iç-mekanizma'],
+        'İndeks yapıları, işlem yalıtım seviyeleri ve kilitlenme gibi iç mekanizmaları anlatan kurs. '
+        'Ürün öğreticisi değil; hangi veritabanını kullanırsan kullan geçerli.',
+        'A course on internals — index structures, transaction isolation levels, locking. Not a product tutorial; '
+        'it holds regardless of which database you use.', V)
 
     # ============================================================ DEVOPS & ALTYAPI
     O = 'devops'
     add('https://git-scm.com/book/tr/v2', 'Pro Git (Türkçe)', ['ücretsiz', 'türkçe', 'kitap', 'git'],
-        'Git’in resmî kitabının Türkçe çevirisi; komut ezberi yerine Git’in veri modelini anlatması ayırt edici yanı.',
-        'The Turkish translation of Git’s official book, distinguished by teaching Git’s data model rather than command recipes.', O)
-    add('https://gource.io/', 'Gource', ['açık kaynak', 'git', 'görselleştirme'],
-        'Depo geçmişini animasyonlu ağaç olarak gösteren araç; teknik analizden çok proje tarihini anlatmak için.',
-        'Renders repository history as an animated tree — more for telling a project’s story than technical analysis.', O)
-    add('https://nginx.org/en/docs/', 'nginx', ['açık kaynak', 'dokümantasyon', 'sunucu'],
-        'Yaygın web sunucusu ve ters vekilin resmî dokümanı; Apache’den farkı, olay güdümlü mimarisiyle yüksek eşzamanlılıkta daha az bellek kullanması.',
-        'Official docs for the widespread web server and reverse proxy; its event-driven architecture uses less memory than Apache under high concurrency.', O)
-    add('https://httpd.apache.org/docs/', 'Apache HTTP Server', ['açık kaynak', 'dokümantasyon', 'sunucu'],
-        'Klasik web sunucusunun resmî dokümanı; .htaccess ile dizin bazlı yapılandırma esnekliği hâlâ ayırt edici yanı.',
-        'Official docs for the classic web server; per-directory configuration via .htaccess remains its distinguishing flexibility.', O)
+        'Git’in resmî kitabının Türkçe çevirisi. İç mekanizma bölümü (nesne modeli, referanslar) '
+        'komut ezberlemekten kurtarıyor — Git’i asıl anlaşılır kılan kısım orası.',
+        'The Turkish translation of Git’s official book. The internals chapter — object model, refs — is what '
+        'frees you from memorising commands and actually makes Git make sense.', O)
+    add('https://gource.io/', 'Gource', ['açık-kaynak', 'git', 'görselleştirme'],
+        'Depo geçmişini büyüyen bir ağaç animasyonu olarak çiziyor; kimin nereye dokunduğu görünür oluyor. '
+        'Teknik analiz aracı değil, proje tarihini anlatmak için.',
+        'Renders repository history as a growing animated tree where you see who touched what. '
+        'Not an analysis tool — a way to narrate a project’s history.', O)
+    add('https://nginx.org/en/docs/', 'nginx', ['açık-kaynak', 'sunucu', 'reverse-proxy'],
+        'Olay güdümlü mimarisi sayesinde on binlerce eşzamanlı bağlantıyı düşük bellekle taşıyor. '
+        'Ters vekil ve yük dengeleyici olarak kullanımı, web sunucusu olmasından daha yaygın.',
+        'Its event-driven architecture carries tens of thousands of concurrent connections on little memory. '
+        'It is used as a reverse proxy and load balancer more often than as a web server.', O)
+    add('https://httpd.apache.org/docs/', 'Apache HTTP Server', ['açık-kaynak', 'sunucu', 'dokümantasyon'],
+        'Modül mimarisi ve .htaccess ile dizin bazlı yapılandırma esnekliği. '
+        'Paylaşımlı barındırmada hâlâ hâkim; nginx’e göre yüksek eşzamanlılıkta daha çok bellek yiyor.',
+        'A module architecture plus per-directory configuration through .htaccess. Still dominant in shared hosting, '
+        'and hungrier for memory than nginx under high concurrency.', O)
     add('https://www.litespeedtech.com/', 'LiteSpeed', ['ücretli', 'sunucu'],
-        'Apache uyumlu ama daha hızlı olduğu iddiasındaki ticari web sunucusu; paylaşımlı barındırmada yaygın.',
-        'A commercial web server claiming Apache compatibility with better performance; common in shared hosting.', O)
-    add('https://docs.litespeedtech.com/', 'LiteSpeed Dokümantasyonu', ['dokümantasyon', 'sunucu'],
-        'LiteSpeed yapılandırma referansı; önbellek eklentisi ayarları için birincil kaynak.',
-        'LiteSpeed configuration reference — the primary source for its cache plugin settings.', O)
-    add('https://kafka.apache.org/42/getting-started/introduction/', 'Apache Kafka', ['açık kaynak', 'dokümantasyon', 'kuyruk'],
-        'Yüksek hacimli olay akışı platformu; klasik mesaj kuyruklarından farkı, mesajları tüketildikten sonra da saklaması.',
-        'High-volume event streaming platform; unlike classic message queues it retains messages after consumption.', O)
-    add('https://www.rabbitmq.com/tutorials', 'RabbitMQ Öğreticileri', ['açık kaynak', 'dokümantasyon', 'kuyruk'],
-        'Mesaj kuyruğu desenlerini altı adımda öğreten resmî seri; Kafka’dan farkı, klasik iş kuyruğu senaryolarına odaklanması.',
-        'The official six-step series on message queue patterns; unlike Kafka it centres on classic task-queue scenarios.', O)
-    add('https://docs.celeryq.dev/en/stable/', 'Celery', ['açık kaynak', 'python', 'kuyruk'],
-        'Python’da arka plan görev kuyruğunun standardı; zamanlanmış ve gecikmeli işleri de üstlenmesi ayırt edici.',
-        'The standard background task queue in Python, also handling scheduled and delayed jobs.', O)
-    add('https://redis.io/docs/latest/', 'Redis Dokümantasyonu', ['dokümantasyon', 'önbellek'],
-        'Redis veri yapıları ve kalıcılık seçeneklerinin resmî referansı; hangi yapının ne zaman kullanılacağı burada anlatılıyor.',
-        'Official reference for Redis data structures and persistence — which structure to use when is documented here.', O)
-    add('https://grafana.com/', 'Grafana', ['açık kaynak', 'gözlem', 'panel'],
-        'Metrik ve günlük görselleştirme panosu; veri kaynağından bağımsız olması, izleme yığınında ortak arayüz olmasını sağlıyor.',
-        'Dashboarding for metrics and logs; being data-source agnostic is why it became the common front-end of monitoring stacks.', O)
-    add('https://sentry.io/welcome/', 'Sentry', ['freemium', 'gözlem', 'hata'],
-        'Uygulama hatalarını yığın izi ve bağlamıyla toplayan servis; günlük dosyası okumaya karşı gruplandırılmış hata görünümü sunar.',
-        'Collects application errors with stack traces and context, giving grouped error views instead of log-file reading.', O)
-    add('https://github.com/dokploy/dokploy', 'Dokploy', ['açık kaynak', 'github', 'kendi sunucunda'],
-        'Kendi sunucunda çalışan dağıtım platformu; Vercel/Heroku deneyimini kendi VPS’inde kurmayı hedefliyor.',
-        'A self-hosted deployment platform aiming to bring the Vercel/Heroku experience to your own VPS.', O)
-    add('https://vercel.com/', 'Vercel', ['freemium', 'barındırma'],
-        'Ön yüz odaklı dağıtım platformu; git iterek yayına alma ve önizleme ortamlarını standartlaştırmasıyla biliniyor.',
-        'Frontend-focused deployment platform, known for standardising git-push deploys and preview environments.', O)
+        'Apache yapılandırmasını olduğu gibi okuyabilen ticari sunucu; olay güdümlü çekirdeği '
+        'ile daha az kaynak tüketiyor. WordPress barındırmada önbellek eklentisiyle birlikte yaygın.',
+        'A commercial server that reads Apache configuration as-is while using an event-driven core and fewer '
+        'resources. Common in WordPress hosting alongside its cache plugin.', O)
+    add('https://docs.litespeedtech.com/', 'LiteSpeed Dokümantasyonu', ['dokümantasyon', 'sunucu', 'önbellek'],
+        'Yapılandırma referansı; LSCache kurallarının nasıl yazılacağı burada. '
+        'Önbellekleme ayarları performansın büyük kısmını belirliyor.',
+        'The configuration reference, including how LSCache rules are written — '
+        'cache settings account for most of the performance you get.', O)
+    add('https://kafka.apache.org/42/getting-started/introduction/', 'Apache Kafka', ['açık-kaynak', 'kuyruk', 'olay-akışı'],
+        'Mesajları tüketildikten sonra da saklıyor; tüketiciler kendi konumlarını (offset) taşıyıp '
+        'geçmişi yeniden okuyabiliyor. Klasik kuyruklardan asıl ayrımı bu kalıcılık.',
+        'Retains messages after consumption, with consumers carrying their own offsets so they can replay history. '
+        'That durability is the real split from classic queues.', O)
+    add('https://www.rabbitmq.com/tutorials', 'RabbitMQ Öğreticileri', ['açık-kaynak', 'kuyruk', 'amqp'],
+        'Altı adımda mesaj kuyruğu desenlerini öğreten resmî seri: iş kuyruğu, yayın-abone, '
+        'yönlendirme, RPC. Kafka olay akışına, bu görev dağıtımına odaklı.',
+        'The official six-step series on queue patterns — work queues, pub/sub, routing, RPC. '
+        'Kafka is for event streaming; this is for task distribution.', O)
+    add('https://docs.celeryq.dev/en/stable/', 'Celery', ['açık-kaynak', 'python', 'kuyruk'],
+        'Python’da arka plan görevlerinin standardı; Redis ya da RabbitMQ’yu aracı olarak kullanıyor. '
+        'Zamanlanmış görevler (beat) ve yeniden deneme mantığı da içinde.',
+        'The standard for background tasks in Python, using Redis or RabbitMQ as a broker, '
+        'with scheduled tasks (beat) and retry logic included.', O)
+    add('https://redis.io/docs/latest/', 'Redis Dokümantasyonu', ['dokümantasyon', 'önbellek', 'veri-yapısı'],
+        'Liste, küme, sıralı küme ve akış gibi veri yapılarının referansı. '
+        'Redis’i basit bir anahtar-değer deposu sanmak, elindeki aracın çoğunu kullanmamak demek.',
+        'The reference for its data structures — lists, sets, sorted sets, streams. Treating Redis as a plain '
+        'key-value store means leaving most of the tool unused.', O)
+    add('https://grafana.com/', 'Grafana', ['açık-kaynak', 'gözlemlenebilirlik', 'pano'],
+        'Prometheus, Loki, PostgreSQL ve onlarca kaynağı aynı panoda birleştiriyor. '
+        'Veri kaynağından bağımsız olması, izleme yığınının ortak yüzü hâline gelmesini sağladı.',
+        'Unifies Prometheus, Loki, PostgreSQL and dozens of sources on one dashboard. Being data-source agnostic '
+        'is how it became the shared face of monitoring stacks.', O)
+    add('https://sentry.io/welcome/', 'Sentry', ['freemium', 'açık-kaynak', 'hata-izleme'],
+        'Hataları yığın izi, kaynak haritası ve kullanıcı bağlamıyla topluyor ve benzerlerini grupluyor. '
+        'Günlük dosyası okumaya karşı, aynı hatanın kaç kullanıcıyı etkilediğini gösteriyor.',
+        'Collects errors with stack traces, source maps and user context, grouping duplicates. Against reading log '
+        'files, it tells you how many users a given error actually hit.', O)
+    add('https://github.com/dokploy/dokploy', 'Dokploy', ['açık-kaynak', 'github', 'self-hosted', 'docker'],
+        'Kendi VPS’inde Vercel benzeri dağıtım deneyimi kuruyor: git iterek yayına alma, '
+        'veritabanı sağlama ve otomatik TLS. Heroku’nun ücretsiz katmanı kapandıktan sonra doğan boşluğu dolduruyor.',
+        'Brings a Vercel-like deploy experience to your own VPS — git-push deploys, database provisioning, automatic TLS. '
+        'It fills the hole left when Heroku’s free tier closed.', O)
+    add('https://vercel.com/', 'Vercel', ['saas', 'freemium', 'barındırma', 'edge'],
+        'Ön yüz odaklı dağıtım; her PR için önizleme ortamı açması sektörde standart hâline geldi. '
+        'Next.js’in arkasındaki şirket, dolayısıyla o çatıda en iyi entegrasyon burada.',
+        'Frontend-focused deployment whose per-PR preview environments became an industry standard. '
+        'It is the company behind Next.js, so integration with that framework is tightest here.', O)
     add('https://aws.amazon.com/', 'Amazon Web Services', ['ücretli', 'bulut'],
-        'En geniş servis yelpazesine sahip bulut sağlayıcı; genişlik avantajı, karmaşıklık ve maliyet takibi ise dezavantajı.',
-        'The cloud provider with the widest service range; breadth is the advantage, complexity and cost tracking the downside.', O)
+        'Servis yelpazesi en geniş bulut. Genişlik avantaj ama maliyet takibi ayrı bir uzmanlık alanı; '
+        'veri çıkış (egress) ücretleri özellikle sürpriz yapıyor.',
+        'The cloud with the widest service range. The breadth is an advantage, while cost tracking is its own '
+        'discipline — egress charges in particular catch people out.', O)
     add('https://www.hetzner.com/', 'Hetzner', ['ücretli', 'sunucu', 'barındırma'],
-        'Almanya merkezli sunucu sağlayıcı; büyük bulutlara göre belirgin şekilde ucuz olması başlıca tercih sebebi.',
-        'German server provider whose markedly lower price than the big clouds is the main reason people choose it.', O)
-    add('https://avenacloud.com/', 'AvenaCloud', ['ücretli', 'sunucu'],
+        'Almanya ve Finlandiya’da fiziksel sunucu ve VPS; aynı çekirdek/RAM için büyük bulutların '
+        'birkaç katı ucuz. Yönetilen servis yok, işletim tamamen sana kalıyor.',
+        'Dedicated servers and VPS in Germany and Finland at a fraction of the big clouds’ price for the same '
+        'cores and RAM. No managed services — operations are entirely yours.', O)
+    add('https://avenacloud.com/', 'AvenaCloud', ['ücretli', 'sunucu', 'vps'],
         'VPS ve fiziksel sunucu sağlayıcı; küçük ölçekli projeler için bütçe odaklı bir seçenek.',
-        'VPS and dedicated server provider — a budget-oriented option for small-scale projects.', O)
-    add('https://alexhost.com/', 'AlexHost', ['ücretli', 'sunucu'],
-        'Moldova merkezli barındırma sağlayıcı; içerik politikası esnekliği ve yargı bölgesi farkıyla tercih ediliyor.',
-        'Moldova-based hosting provider, chosen for its content policy flexibility and different jurisdiction.', O)
-    add('https://njal.la/', 'Njalla', ['ücretli', 'gizlilik', 'alan adı'],
-        'Gizlilik odaklı alan adı ve sunucu sağlayıcı; alan adını senin adına kendi üstüne kaydetmesiyle ayrışıyor.',
-        'Privacy-focused domain and server provider, distinguished by registering the domain in its own name on your behalf.', O)
+        'A VPS and dedicated server provider positioned on budget for small-scale projects.', O)
+    add('https://alexhost.com/', 'AlexHost', ['ücretli', 'sunucu', 'yargı-bölgesi'],
+        'Moldova merkezli barındırma. Farklı bir yargı bölgesi ve gevşek içerik politikası '
+        'sunması sebebiyle tercih ediliyor; bu aynı zamanda komşuların kim olduğu sorusunu doğuruyor.',
+        'Moldova-based hosting chosen for a different jurisdiction and looser content policy — '
+        'which also raises the question of who your neighbours are.', O)
+    add('https://njal.la/', 'Njalla', ['ücretli', 'gizlilik', 'alan-adı'],
+        'Alan adını senin adına kendi üstüne kaydediyor, yani WHOIS kaydında sen görünmüyorsun. '
+        'Vekil gizlilik hizmetinden farkı, mülkiyetin hukuken onlarda olması — bu bir güven meselesi.',
+        'Registers the domain in its own name on your behalf, so you do not appear in WHOIS. Unlike a privacy proxy '
+        'the legal ownership sits with them, which makes it a question of trust.', O)
     add('https://www.guzel.net.tr/', 'Güzel Hosting', ['ücretli', 'türkçe', 'barındırma'],
-        'Türkiye merkezli barındırma ve alan adı sağlayıcı; yerel ödeme ve Türkçe destek isteyenler için.',
-        'Turkey-based hosting and domain provider, for those wanting local payment and Turkish-language support.', O)
-    add('https://github.com/m1k1o/neko', 'Neko', ['açık kaynak', 'github', 'kendi sunucunda'],
-        'Tarayıcıda paylaşılabilir sanal tarayıcı çalıştıran sunucu; birlikte izleme ve izole gezinme için kullanılıyor.',
-        'Runs a shareable virtual browser in a container, used for watch-together sessions and isolated browsing.', O)
+        'Türkiye merkezli barındırma ve alan adı; .tr uzantısı, yerel ödeme ve Türkçe destek sunuyor. '
+        'Sunucunun Türkiye’de olması gereken projeler için pratik.',
+        'Turkey-based hosting and domains with .tr registration, local payment and Turkish support — '
+        'practical when the server has to sit in Turkey.', O)
+    add('https://github.com/m1k1o/neko', 'Neko', ['açık-kaynak', 'github', 'docker', 'webrtc'],
+        'Kapsayıcı içinde tarayıcı çalıştırıp WebRTC ile paylaşıyor; birden çok kişi aynı oturumu '
+        'kontrol edebiliyor. Birlikte izleme ve izole gezinme için kullanılıyor.',
+        'Runs a browser in a container and shares it over WebRTC, with several people able to control one session. '
+        'Used for watch-together and for isolated browsing.', O)
 
     # ============================================================ AĞ & SİSTEM YÖNETİMİ
     A = 'ag'
     add('https://www.netacad.com/', 'Cisco Networking Academy', ['ücretsiz', 'ağ', 'kurs'],
-        'Cisco’nun resmî ağ eğitimi programı; sanal laboratuvarlarla teoriyi uygulamaya bağlaması ayırt edici yanı.',
-        'Cisco’s official networking curriculum, distinguished by tying theory to practice through virtual labs.', A)
+        'Cisco’nun resmî ağ müfredatı; CCNA’ya hazırlayan derslerin bir kısmı ücretsiz. '
+        'Packet Tracer laboratuvarlarıyla teoriyi topoloji kurarak sınıyorsun.',
+        'Cisco’s official networking curriculum, with part of the CCNA track free. '
+        'Packet Tracer labs let you test the theory by building topologies.', A)
     add('https://www.netacad.com/catalogs/learn/networking?language=tr-tr', 'NetAcad Ağ Kursları (Türkçe)', ['ücretsiz', 'türkçe', 'ağ'],
-        'Cisco ağ kurslarının Türkçe kataloğu; ücretsiz giriş seviyesi dersleri buradan seçilebiliyor.',
-        'The Turkish catalogue of Cisco networking courses, where the free entry-level classes can be picked.', A)
-    add('https://www.netacad.com/resources/lab-downloads?courseLang=en-US', 'Packet Tracer & Laboratuvarlar', ['ücretsiz', 'ağ', 'araç'],
-        'Cisco Packet Tracer ve laboratuvar dosyaları; donanım almadan ağ topolojisi kurup denemek için.',
-        'Cisco Packet Tracer and lab files — for building and testing network topologies without buying hardware.', A)
+        'Cisco ağ kurslarının Türkçe kataloğu; giriş seviyesi dersler ücretsiz ve rozet veriyor. '
+        'Türkçe teknik ağ eğitimi bulmak yerelde kolay değil.',
+        'The Turkish catalogue of Cisco networking courses, with free entry-level classes that award badges. '
+        'Turkish-language networking training is not easy to find locally.', A)
+    add('https://www.netacad.com/resources/lab-downloads?courseLang=en-US', 'Packet Tracer & Laboratuvarlar', ['ücretsiz', 'ağ', 'simülatör'],
+        'Cisco Packet Tracer indirmesi ve laboratuvar dosyaları. '
+        'Anahtar ve yönlendirici almadan VLAN, OSPF ve ACL yapılandırması denenebiliyor.',
+        'The Packet Tracer download plus lab files, letting you practise VLAN, OSPF and ACL configuration '
+        'without buying switches and routers.', A)
     add('https://www.firewall.cx/cisco/cisco-switches/cisco-switches-sg500-52p.html', 'Cisco SG500-52P Kurulumu', ['ücretsiz', 'ağ', 'rehber'],
-        'Belirli bir Cisco anahtar modelinin kurulum rehberi; resmî kılavuzdan farkı, adım adım ekran görüntüleriyle ilerlemesi.',
-        'A setup guide for a specific Cisco switch; unlike the official manual it walks through with screenshots.', A)
+        'Belirli bir anahtar modelinin ilk kurulumu, ekran görüntüleriyle adım adım. '
+        'Resmî kılavuzun atladığı pratik ayrıntılar burada.',
+        'First-time setup of one specific switch model, screenshot by screenshot — '
+        'with the practical details the official manual skips.', A)
     add('https://www.firewall.cx/downloads/cisco-product-datasheets-a-guides/cisco-sg500-series-switches.html', 'Cisco SG500 Serisi', ['ücretsiz', 'ağ', 'referans'],
-        'SG500 anahtar serisinin teknik veri sayfaları; model seçimi ve özellik karşılaştırması için.',
-        'Datasheets for the SG500 switch series, for model selection and feature comparison.', A)
-    add('https://www.wireshark.org/#download', 'Wireshark', ['açık kaynak', 'ağ', 'araç'],
-        'Ağ paketlerini yakalayıp çözümleyen standart araç; ağ sorunlarında tahmin yerine kanıt sağlar.',
-        'The standard packet capture and analysis tool — it replaces guessing with evidence in network problems.', A)
+        'SG500 serisinin teknik veri sayfaları; port sayısı, PoE bütçesi ve yığınlama desteği karşılaştırmalı. '
+        'İkinci el alırken model farklarını bilmek gerekiyor.',
+        'Datasheets for the SG500 series comparing port counts, PoE budgets and stacking support — '
+        'the model differences you need when buying second-hand.', A)
+    add('https://www.wireshark.org/#download', 'Wireshark', ['açık-kaynak', 'ağ', 'analiz'],
+        'Paket yakalama ve protokol çözümlemenin standardı; TLS anahtarı verirsen şifreli trafiği de açıyor. '
+        'Ağ sorunlarında “sanırım” yerine kanıt üretmenin tek yolu.',
+        'The standard for packet capture and protocol dissection, and it will decrypt TLS if you hand it the keys. '
+        'The only way to replace “I think” with evidence in a network problem.', A)
     add('https://labex.io/linuxjourney', 'Linux Journey', ['ücretsiz', 'linux', 'interaktif'],
-        'Linux’u küçük modüllerle öğreten ücretsiz kaynak; kapsamlı kitaplara karşı kısa ve sindirilebilir bölümler sunar.',
-        'A free resource teaching Linux in small modules — short, digestible units against comprehensive books.', A)
-    add('https://www.youtube.com/watch?v=zIdv2NDRExI', 'Linux Öğrenmenin En İyi Yolu', ['ücretsiz', 'video', 'linux'],
-        'Linux öğrenme stratejisini anlatan video; komut öğretmekten çok nasıl çalışılacağını tarif ediyor.',
-        'A video on strategy for learning Linux — it describes how to study rather than teaching commands.', A)
-    add('https://www.youtube.com/watch?v=fQbBPa0ADvs', 'Bilgisayar Ağları Temelleri', ['ücretsiz', 'video', 'ağ'],
-        'Ağ kavramlarının tam kurs formatında anlatımı; sertifika çalışmasından önce temel oturtmak için.',
-        'A full-course walk through networking concepts, useful for grounding before certification study.', A)
-    add('https://www.youtube.com/watch?v=xj_GjnD4uyI', '20 Dakikada Tüm Ağ Kavramları', ['ücretsiz', 'video', 'ağ'],
-        'Ağ terimlerini hızlıca tarayan özet video; öğrenmek için değil, hatırlamak ve boşluk bulmak için.',
-        'A rapid sweep of networking terms — not for learning, but for refreshing and spotting gaps.', A)
-    add('https://www.youtube.com/watch?v=HwUqCZFx6wk', 'DHCP (CompTIA A+)', ['ücretsiz', 'video', 'sertifika'],
-        'CompTIA A+ müfredatındaki DHCP konusunun kısa anlatımı; sınav kapsamına birebir eşlenmesi ayırt edici.',
-        'A short explanation of DHCP from the CompTIA A+ syllabus, mapped exactly to exam scope.', A)
-    add('https://www.youtube.com/watch?v=lAHqO9sDVy4', 'DNS Yapılandırma (CompTIA A+)', ['ücretsiz', 'video', 'sertifika'],
-        'A+ sınavı kapsamındaki DNS yapılandırma konusu; kısa ve sınav odaklı.',
-        'DNS configuration as covered by the A+ exam — short and exam-focused.', A)
-    add('https://www.youtube.com/watch?v=5kt4t2gzt9g', 'Windows 11 Tam Rehber', ['ücretsiz', 'video', 'windows'],
-        'Windows 11’in ayarlarını baştan sona gezen rehber; sistem yönetimi tarafında hızlı başvuru.',
-        'A guide walking the whole of Windows 11’s settings — a quick reference on the sysadmin side.', A)
-    add('https://servicedesk-simulator.com/', 'ServiceDesk Simulator', ['freemium', 'it destek', 'simülasyon'],
-        'Yardım masası biletleriyle çalışmayı simüle eden ortam; teorik IT destek eğitimlerine karşı gerçek vaka pratiği sunar.',
-        'Simulates working helpdesk tickets — real case practice against theoretical IT support courses.', A)
-    add('https://www.hirensbootcd.org/', "Hiren's BootCD PE", ['ücretsiz', 'araç', 'kurtarma'],
-        'Açılmayan sistemleri onarmak için kullanılan önyüklenebilir araç seti; disk, parola ve veri kurtarma araçlarını tek imajda toplar.',
-        'A bootable toolkit for repairing systems that will not start, bundling disk, password and data recovery tools in one image.', A)
-    add('https://www.disk-image.com/index.html', 'Active@ Disk Image', ['ücretli', 'araç', 'yedekleme'],
-        'Disk imajı alma ve geri yükleme yazılımı; dosya yedeklemesinden farkı, sistemin tamamını bire bir kopyalaması.',
-        'Disk imaging and restore software; unlike file backup it copies the entire system bit for bit.', A)
-    add('https://www.cozumpark.com/', 'ÇözümPark', ['ücretsiz', 'türkçe', 'topluluk'],
-        'Türkçe sistem yöneticiliği topluluğu ve makale arşivi; yerel senaryolar için nadir bulunan bir kaynak.',
-        'A Turkish sysadmin community and article archive — a rare resource for locally specific scenarios.', A)
-    add('https://www.nist.gov/cryptography', 'NIST Kriptografi', ['ücretsiz', 'standart', 'güvenlik'],
-        'Kriptografi standartlarının kaynağı; hangi algoritmanın hâlâ güvenli sayıldığını blog yorumlarına değil buraya bakarak öğrenirsin.',
-        'The source of cryptography standards — check here, not blog commentary, for which algorithms are still considered safe.', A)
-    add('https://www.youtube.com/watch?v=0pXicD2hqFU', 'LFSR ve Rastgele Sayı Üreteçleri', ['ücretsiz', 'video', 'kriptografi'],
-        'Doğrusal geri beslemeli kaydırma yazmaçlarının nasıl çalıştığını anlatan video; rastgelelik üretiminin donanım tarafına giriş.',
-        'A video on how linear feedback shift registers work — an introduction to the hardware side of randomness generation.', A)
+        'Linux’u küçük modüllere bölerek öğretiyor: dosya sistemi, izinler, süreçler, paket yönetimi. '
+        'Kapsamlı kitapların yıldırdığı yerde sindirilebilir parçalar sunuyor.',
+        'Teaches Linux in small modules — filesystem, permissions, processes, package management — '
+        'offering digestible pieces where comprehensive books overwhelm.', A)
+    add('https://www.youtube.com/watch?v=zIdv2NDRExI', 'Linux Öğrenmenin En İyi Yolu', ['video', 'ücretsiz', 'linux'],
+        'Komut öğretmiyor, nasıl çalışılacağını tarif ediyor: hangi dağıtım, hangi sırayla, '
+        'hangi projelerle. Yön bulmak için başlangıçta işe yarıyor.',
+        'Does not teach commands but describes how to study — which distribution, in what order, through which '
+        'projects. Useful for orientation at the start.', A)
+    add('https://www.youtube.com/watch?v=fQbBPa0ADvs', 'Bilgisayar Ağları Temelleri', ['video', 'ücretsiz', 'ağ'],
+        'OSI katmanlarından yönlendirmeye kadar ağ kavramlarını tam kurs formatında işliyor. '
+        'Sertifika çalışmasına başlamadan önce zemin kurmak için.',
+        'Works networking concepts from the OSI layers through routing in full-course format — '
+        'for laying the ground before certification study.', A)
+    add('https://www.youtube.com/watch?v=xj_GjnD4uyI', '20 Dakikada Tüm Ağ Kavramları', ['video', 'ücretsiz', 'ağ'],
+        'Ağ terimlerini hızla tarayan özet. Öğrenmek için değil; bildiğini sandığın yerlerdeki '
+        'boşlukları yirmi dakikada bulmak için.',
+        'A rapid sweep of networking terminology. Not for learning, but for finding in twenty minutes the gaps '
+        'in what you assumed you knew.', A)
+    add('https://www.youtube.com/watch?v=HwUqCZFx6wk', 'DHCP (CompTIA A+)', ['video', 'sertifika', 'ağ'],
+        'A+ müfredatındaki DHCP konusunun kısa anlatımı; kapsam sınav hedefine birebir oturuyor. '
+        'Fazlasını anlatmaması sınav çalışmasında avantaj.',
+        'A short treatment of DHCP as the A+ syllabus defines it, mapped exactly to the exam objective. '
+        'Not covering more is an advantage when revising.', A)
+    add('https://www.youtube.com/watch?v=lAHqO9sDVy4', 'DNS Yapılandırma (CompTIA A+)', ['video', 'sertifika', 'ağ'],
+        'A+ kapsamındaki DNS kayıt türleri ve yapılandırması. Kısa ve sınav odaklı.',
+        'DNS record types and configuration within the A+ scope — short and exam-focused.', A)
+    add('https://www.youtube.com/watch?v=5kt4t2gzt9g', 'Windows 11 Tam Rehber', ['video', 'ücretsiz', 'windows'],
+        'Windows 11 ayarlarını baştan sona gezen rehber; grup ilkesi ve kayıt defteri ayarlarına da giriyor. '
+        'Kullanıcı desteği tarafında hızlı başvuru.',
+        'A guide walking the whole of Windows 11’s settings, reaching into group policy and registry tweaks. '
+        'A quick reference on the user-support side.', A)
+    add('https://servicedesk-simulator.com/', 'ServiceDesk Simulator', ['saas', 'freemium', 'it-destek', 'simülasyon'],
+        'Gerçek yardım masası biletleriyle çalışmayı simüle ediyor: önceliklendirme, tırmandırma, '
+        'SLA takibi. IT destek eğitimlerinin teorik kaldığı yeri dolduruyor.',
+        'Simulates working a real helpdesk queue — prioritisation, escalation, SLA tracking. '
+        'It fills the practical gap that IT support courses leave theoretical.', A)
+    add('https://www.hirensbootcd.org/', "Hiren's BootCD PE", ['ücretsiz', 'kurtarma', 'windows'],
+        'Açılmayan sistemler için önyüklenebilir Windows PE ortamı; disk klonlama, parola sıfırlama '
+        've veri kurtarma araçları tek imajda. Sistem yöneticisinin cebinde taşıdığı USB.',
+        'A bootable Windows PE environment for systems that will not start, bundling disk cloning, password reset '
+        'and data recovery in one image. The USB stick a sysadmin carries.', A)
+    add('https://www.disk-image.com/index.html', 'Active@ Disk Image', ['ücretli', 'yedekleme', 'windows'],
+        'Sektör bazında disk imajı alıp geri yüklüyor; dosya yedeklemesinden farkı, işletim sistemi '
+        've önyükleme kaydı dahil her şeyi bire bir kopyalaması.',
+        'Takes and restores sector-level disk images. Unlike file backup it copies everything bit for bit, '
+        'operating system and boot record included.', A)
+    add('https://www.cozumpark.com/', 'ÇözümPark', ['ücretsiz', 'türkçe', 'topluluk', 'sysadmin'],
+        'Türkçe sistem yöneticiliği topluluğu ve makale arşivi; Active Directory, Exchange ve '
+        'sanallaştırma tarafında derinlik var. Yerel senaryolar için nadir bir kaynak.',
+        'A Turkish sysadmin community and article archive with real depth on Active Directory, Exchange and '
+        'virtualisation — a rare resource for locally specific scenarios.', A)
+    add('https://www.nist.gov/cryptography', 'NIST Kriptografi', ['ücretsiz', 'standart', 'kriptografi'],
+        'Kriptografi standartlarının kaynağı; hangi algoritmanın hâlâ onaylı olduğunu buradan öğrenirsin. '
+        'Kuantum sonrası algoritma seçimleri de burada yayımlandı.',
+        'The source of cryptographic standards, where you check which algorithms remain approved. '
+        'The post-quantum algorithm selections were published here too.', A)
+    add('https://www.youtube.com/watch?v=0pXicD2hqFU', 'LFSR ve Rastgele Sayı Üreteçleri', ['video', 'kriptografi', 'donanım'],
+        'Doğrusal geri beslemeli kaydırma yazmaçlarının nasıl çalıştığını devre düzeyinde anlatıyor. '
+        'Sözde rastgeleliğin donanımda nasıl üretildiğine iyi bir giriş.',
+        'Explains linear feedback shift registers at circuit level — a good introduction to how pseudo-randomness '
+        'is actually produced in hardware.', A)
 
     # ============================================================ VERİ BİLİMİ & ML
     D = 'veri'
-    add('https://www.kaggle.com/', 'Kaggle', ['ücretsiz', 'veri', 'yarışma'],
-        'Veri bilimi yarışmaları, veri kümeleri ve not defterleri; çözümlerin açıkça paylaşılması onu en iyi öğrenme kaynaklarından biri yapıyor.',
-        'Data science competitions, datasets and notebooks — open solution sharing makes it one of the best learning resources.', D)
+    add('https://www.kaggle.com/', 'Kaggle', ['ücretsiz', 'veri', 'yarışma', 'topluluk'],
+        'Yarışma, veri kümesi ve not defteri aynı platformda. Asıl değeri, kazanan çözümlerin '
+        'yarışma bitince açıkça paylaşılması — uygulamalı ML’in en iyi açık arşivi.',
+        'Competitions, datasets and notebooks on one platform. The real value is that winning solutions are '
+        'published once a contest closes, making it the best open archive of applied ML.', D)
     add('https://www.kaggle.com/competitions', 'Kaggle Yarışmaları', ['ücretsiz', 'veri', 'yarışma'],
-        'Aktif ve geçmiş yarışmalar; gerçek problem ve gerçek değerlendirme ölçütüyle çalışma imkânı.',
-        'Active and past competitions — a chance to work against real problems with real evaluation metrics.', D)
+        'Aktif ve geçmiş yarışmalar. Gerçek ölçütle değerlendirilmek, kendi projendeki '
+        '“iyi görünüyor” yanılsamasını kırıyor.',
+        'Active and past competitions. Being scored against a real metric breaks the “looks fine to me” illusion '
+        'of working on your own project.', D)
     add('https://www.kaggle.com/competitions/arc-prize-2026-paper-track', 'ARC Prize 2026', ['ücretsiz', 'araştırma', 'yarışma'],
-        'Soyut akıl yürütme üzerine yarışma; mevcut modellerin en çok zorlandığı görev tipini hedeflemesiyle ayrışıyor.',
-        'A competition on abstract reasoning, distinguished by targeting the task type current models struggle with most.', D)
+        'Soyut akıl yürütme üzerine yarışma; görevleri insanın kolay, modellerin zor bulduğu '
+        'biçimde tasarlanmış. Ölçekleme yerine yeni yaklaşım gerektiriyor.',
+        'A competition on abstract reasoning whose tasks are designed to be easy for humans and hard for models. '
+        'It rewards a new approach rather than more scale.', D)
     add('https://datasetsearch.research.google.com/', 'Google Dataset Search', ['ücretsiz', 'veri', 'arama'],
-        'Web’deki açık veri kümelerini arayan motor; tek bir depoya bağlı olmayıp dağınık kaynakları tarıyor.',
-        'A search engine for open datasets across the web, sweeping scattered sources rather than one repository.', D)
-    add('https://www.databricks.com/', 'Databricks', ['ücretli', 'veri', 'platform'],
-        'Büyük ölçekli veri ve ML platformu; veri gölü ile ambarı tek mimaride birleştirme iddiası temel ayrımı.',
-        'Large-scale data and ML platform whose core claim is unifying data lake and warehouse in one architecture.', D)
-    add('https://github.com/microsoft/Data-Science-For-Beginners/tree/main', 'Data Science for Beginners', ['ücretsiz', 'github', 'müfredat'],
-        'Microsoft’un 20 derslik veri bilimi müfredatı; her ders proje ve sınavla geldiği için kendi kendine çalışmaya uygun.',
-        'Microsoft’s 20-lesson data science curriculum; each lesson ships with a project and quiz, which suits self-study.', D)
-    add('https://github.com/mrdbourke/zero-to-mastery-ml', 'Zero to Mastery ML', ['ücretsiz', 'github', 'not defteri'],
-        'Uçtan uca makine öğrenmesi not defterleri; kavram anlatımı yerine çalışan hattı okutması ayırt edici.',
-        'End-to-end machine learning notebooks — it has you read a working pipeline rather than concept prose.', D)
-    add('https://github.com/rasbt/LLMs-from-scratch', 'LLMs from Scratch', ['ücretsiz', 'github', 'kitap'],
-        'Dil modelini PyTorch ile adım adım sıfırdan yazan kitap deposu; kütüphane çağırmak yerine iç mekanizmayı kurdurması ayırt edici.',
-        'Book repo building a language model from scratch in PyTorch — you construct the mechanism instead of calling a library.', D)
-    add('https://github.com/FareedKhan-dev/train-llm-from-scratch', 'Train LLM from Scratch', ['ücretsiz', 'github'],
-        'Veri indirmeden eğitime kadar LLM eğitim hattının tamamını gösteren depo; teorik anlatıma karşı çalışan kod.',
-        'A repo showing the full LLM training pipeline from data download to training — working code against theory.', D)
-    add('https://www.reddit.com/r/MachineLearningJobs/comments/1r5upkb/how_i_land_15_machine_learning_engineer_offers/', 'ML Mühendisi İş Bulma Deneyimi', ['ücretsiz', 'kariyer', 'topluluk'],
-        'Makine öğrenmesi mühendisliği iş arama sürecini birinci elden anlatan başlık; genel kariyer tavsiyelerine karşı somut deneyim.',
-        'A first-hand account of the ML engineering job hunt — concrete experience against generic career advice.', D)
+        'Web’e dağılmış açık veri kümelerini schema.org işaretlemesi üzerinden arıyor. '
+        'Tek bir depoya bağlı olmadığı için kurum arşivlerini de kapsıyor.',
+        'Searches open datasets scattered across the web via schema.org markup. Being tied to no single repository, '
+        'it reaches institutional archives too.', D)
+    add('https://www.databricks.com/', 'Databricks', ['saas', 'ücretli', 'veri', 'spark'],
+        'Spark üzerine kurulu veri ve ML platformu; Delta Lake ile veri gölüne işlem (ACID) garantisi getiriyor. '
+        '“Lakehouse” iddiasının teknik karşılığı bu.',
+        'A data and ML platform built on Spark, bringing ACID guarantees to the data lake through Delta Lake — '
+        'which is the technical substance behind the “lakehouse” claim.', D)
+    add('https://github.com/microsoft/Data-Science-For-Beginners/tree/main', 'Data Science for Beginners', ['github', 'müfredat', 'ücretsiz'],
+        '20 derslik müfredat; her ders ders öncesi/sonrası sınav ve bir projeyle geliyor. '
+        'Veri etiği ve görselleştirme bölümleri çoğu teknik kursta atlanan konular.',
+        'A 20-lesson curriculum where each unit ships with pre/post quizzes and a project. '
+        'Its data ethics and visualisation sections cover ground most technical courses skip.', D)
+    add('https://github.com/mrdbourke/zero-to-mastery-ml', 'Zero to Mastery ML', ['github', 'not-defteri', 'python'],
+        'Uçtan uca ML not defterleri; veri temizlemeden model değerlendirmeye kadar çalışan bir hat okutuyor. '
+        'Kavram anlatımı yerine gerçek kod üzerinden ilerliyor.',
+        'End-to-end ML notebooks walking a working pipeline from data cleaning to model evaluation, '
+        'progressing through real code rather than concept prose.', D)
+    add('https://github.com/rasbt/LLMs-from-scratch', 'LLMs from Scratch', ['github', 'kitap', 'pytorch'],
+        'Bir GPT’yi PyTorch ile sıfırdan yazdıran kitap deposu: tokenizer, dikkat mekanizması, '
+        'eğitim döngüsü ve ince ayar. Kütüphane çağırmak yerine mekanizmayı kurduruyor.',
+        'A book repo that has you write a GPT from scratch in PyTorch — tokeniser, attention, training loop, '
+        'fine-tuning. You build the mechanism instead of calling a library.', D)
+    add('https://github.com/FareedKhan-dev/train-llm-from-scratch', 'Train LLM from Scratch', ['github', 'pytorch', 'eğitim'],
+        'Veri indirmeden dağıtık eğitime kadar tüm hattı çalışan kodla gösteriyor. '
+        'Teorik anlatımların atladığı kısım genelde bu altyapı tarafı.',
+        'Shows the whole pipeline in working code, from data download to distributed training — '
+        'the infrastructure side theoretical write-ups usually skip.', D)
+    add('https://www.reddit.com/r/MachineLearningJobs/comments/1r5upkb/how_i_land_15_machine_learning_engineer_offers/', 'ML Mühendisliğinde İş Arama', ['ücretsiz', 'kariyer', 'topluluk'],
+        'Bir ML mühendisinin iş arama sürecini sayılarla anlattığı başlık: kaç başvuru, hangi aşamalar, '
+        'ne işe yaradı. Genel kariyer tavsiyelerine karşı birinci elden veri.',
+        'An ML engineer’s account of a job hunt with the numbers — applications sent, stages reached, what worked. '
+        'First-hand data against generic career advice.', D)

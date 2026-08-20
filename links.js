@@ -5,12 +5,12 @@ window.LINKS = [
   "name": "20 Programlama Projesi",
   "cat": "ogrenme",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "proje"
   ],
-  "tr": "Beceri geliştiren proje önerilerini gerekçesiyle anlatan video; liste okumaktan farkı, neden o projenin işe yaradığını açıklaması.",
-  "en": "A video walking through skill-building project ideas with reasoning — unlike a list, it explains why each project helps.",
+  "tr": "Proje önerilerini hangi beceriyi geliştirdiği gerekçesiyle anlatan video. Liste okumaktan farkı, neden o projeyi yapman gerektiğini söylemesi.",
+  "en": "A video presenting project ideas with the reasoning for which skill each builds — unlike a list, it tells you why the project is worth doing.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -19,12 +19,12 @@ window.LINKS = [
   "name": "21 Proje Fikri",
   "cat": "ogrenme",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "proje"
   ],
-  "tr": "Başlangıçtan ileri seviyeye proje fikirleri; zorluk sırasına göre ilerlemesiyle yol haritası gibi kullanılabiliyor.",
-  "en": "Project ideas from beginner to advanced, progressing by difficulty so it doubles as a roadmap.",
+  "tr": "Zorluk sırasına dizilmiş proje fikirleri; baştan sona takip edilirse yol haritası gibi çalışıyor.",
+  "en": "Project ideas arranged by difficulty; followed end to end it works like a roadmap.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -37,8 +37,8 @@ window.LINKS = [
    "türkçe",
    "okul"
   ],
-  "tr": "Öğretmensiz ve akran değerlendirmeli yazılım okulu; ücretsiz olması ve diploma şartı aramaması ayırt edici yanı.",
-  "en": "A tuition-free software school with no teachers and peer evaluation; requiring no prior diploma is what sets it apart.",
+  "tr": "Öğretmensiz, akran değerlendirmeli ve ücretsiz yazılım okulu; diploma ya da ön bilgi şartı yok. Giriş, “piscine” denen dört haftalık yoğun eleme sürecinden geçiyor.",
+  "en": "A tuition-free software school with no teachers and peer evaluation, requiring no diploma or prior knowledge. Entry runs through a four-week intensive selection called the piscine.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -47,12 +47,12 @@ window.LINKS = [
   "name": "Abdul Bari",
   "cat": "ogrenme",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "algoritma"
   ],
-  "tr": "Algoritma ve veri yapılarını tahtada adım adım anlatan kanal; görsel anlatımıyla ders kitabına iyi bir tamamlayıcı.",
-  "en": "Channel explaining algorithms and data structures step by step on a board — a good visual complement to textbooks.",
+  "tr": "Algoritmaları tahtada adım adım, karmaşıklık analiziyle birlikte işleyen kanal. Kod göstermek yerine mekanizmayı çizerek anlatması ders kitabına iyi bir eşlikçi.",
+  "en": "A channel working through algorithms on a board with complexity analysis. Drawing the mechanism rather than showing code makes it a good companion to a textbook.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -65,8 +65,8 @@ window.LINKS = [
    "sertifika",
    "bulut"
   ],
-  "tr": "AWS’in rol bazlı sertifika programı; bulut tarafında işverence en çok tanınan belgelerden.",
-  "en": "AWS’s role-based certification programme — among the most recognised credentials on the cloud side.",
+  "tr": "Rol bazlı sertifika programı (Solutions Architect, DevOps Engineer vb.). Bulut tarafında işveren tanınırlığı en yüksek belge ailesi; üç yılda bir yenileniyor.",
+  "en": "A role-based certification programme — Solutions Architect, DevOps Engineer and so on. The most employer-recognised credential family in cloud, renewable every three years.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -76,24 +76,25 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "freemium",
-   "bulut"
+   "bulut",
+   "aws"
   ],
-  "tr": "AWS’in resmî eğitim merkezi; 600+ ücretsiz kurs ve sınav hazırlığı bir arada.",
-  "en": "AWS’s official learning centre, combining 600+ free courses with exam preparation.",
+  "tr": "AWS’in resmî eğitim merkezi: 600+ ücretsiz kurs, sınav hazırlığı ve ücretli katmanda gerçek hesapta çalışan laboratuvarlar.",
+  "en": "AWS’s official learning centre — 600+ free courses, exam prep, and hands-on labs against real accounts in the paid tier.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
  {
   "url": "https://www.broadcom.com/support/education/software/certification",
-  "name": "Broadcom / Symantec Sertifikasyon",
+  "name": "Broadcom Sertifikasyon",
   "cat": "ogrenme",
   "tags": [
    "ücretli",
    "sertifika",
-   "güvenlik"
+   "kurumsal"
   ],
-  "tr": "Symantec güvenlik ürünleri üzerine uzmanlık sertifikaları; belirli bir ürün ailesine bağlı, genel güvenlik belgesi değil.",
-  "en": "Specialist certifications on Symantec security products — tied to a product family rather than general security knowledge.",
+  "tr": "Symantec ve VMware ürün ailelerine bağlı uzmanlık sınavları. Genel güvenlik ya da sanallaştırma bilgisi değil, belirli ürünün yapılandırılmasını ölçüyor.",
+  "en": "Product-bound specialist exams across the Symantec and VMware families — they measure configuration of a specific product, not general security or virtualisation knowledge.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -102,26 +103,26 @@ window.LINKS = [
   "name": "Build Your Own X",
   "cat": "ogrenme",
   "tags": [
-   "ücretsiz",
    "github",
-   "proje"
+   "proje",
+   "ücretsiz"
   ],
-  "tr": "Veritabanı, işletim sistemi, Git gibi araçları sıfırdan yazma rehberleri; öğretici izlemek yerine yeniden inşa ederek öğrenme yaklaşımı.",
-  "en": "Guides to writing databases, operating systems and Git from scratch — learning by rebuilding rather than following tutorials.",
+  "tr": "Veritabanı, Git, Docker, işletim sistemi ve derleyiciyi sıfırdan yazma rehberleri. Öğretici izlemekle bir şeyi yeniden inşa etmek arasındaki anlama farkı ciddi.",
+  "en": "Guides to writing a database, Git, Docker, an operating system or a compiler from scratch. The gap in understanding between following a tutorial and rebuilding the thing is substantial.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
  {
   "url": "https://claudecertificationguide.com/mock-exam",
-  "name": "Claude Sertifika Deneme Sınavı",
+  "name": "Claude Sertifika Denemesi",
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
    "sertifika",
-   "yapay zeka"
+   "yapay-zeka"
   ],
-  "tr": "Claude Certified Architect sınavı için ücretsiz deneme; gerçek sınavın soru sayısı ve süresini taklit ediyor.",
-  "en": "A free mock for the Claude Certified Architect exam, mirroring the real question count and timing.",
+  "tr": "Claude Certified Architect sınavı için ücretsiz deneme; 28 soruluk kısa ve 60 soruluk tam uzunlukta iki kip, gerçek sınavın süre ve geçme eşiğiyle.",
+  "en": "A free mock for the Claude Certified Architect exam in two modes — a 28-question short form and a full 60-question run — matching the real timing and pass threshold.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -130,38 +131,38 @@ window.LINKS = [
   "name": "Coding Interview University",
   "cat": "ogrenme",
   "tags": [
-   "ücretsiz",
    "github",
-   "mülakat"
+   "mülakat",
+   "müfredat"
   ],
-  "tr": "Yazılım mühendisliği mülakatına hazırlık için çalışma planı; konu listesinden farkı, işaretlenebilir bir ilerleme sistemi sunması.",
-  "en": "A study plan for software engineering interviews; unlike a topic list it gives you a checkable progress system.",
+  "tr": "Yazarın Amazon’a girerken tuttuğu çalışma planı; işaretlenebilir uzun bir kontrol listesi. Kapsamı geniş, o yüzden hepsini yapmak yerine eksiklerini bulmak için kullanılır.",
+  "en": "The study plan its author used to get into Amazon, as a long checkable list. The scope is wide, so it works better for finding your gaps than for completing end to end.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
  {
   "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo",
-  "name": "Computer Science (CrashCourse)",
+  "name": "Computer Science (Crash Course)",
   "cat": "ogrenme",
   "tags": [
-   "ücretsiz",
-   "video"
+   "video",
+   "ücretsiz"
   ],
-  "tr": "Bilgisayar biliminin temel kavramlarını kısa bölümlerle anlatan seri; derinlik değil bütünü görme amaçlı.",
-  "en": "A series covering CS fundamentals in short episodes — aimed at seeing the whole picture rather than depth.",
+  "tr": "Mantık kapılarından işletim sistemine, bilgisayar biliminin bütününü kısa bölümlerde tarayan seri. Derinlik değil, parçaların birbirine nasıl bağlandığını görmek için.",
+  "en": "A series sweeping the whole of computer science in short episodes, from logic gates to operating systems. Not for depth, but for seeing how the pieces connect.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
  {
   "url": "https://pll.harvard.edu/course/cs50-introduction-computer-science",
-  "name": "CS50 (Harvard)",
+  "name": "CS50",
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
    "üniversite"
   ],
-  "tr": "Bilgisayar bilimine giriş dersinin altın standardı; anlatım kalitesi ve ödev tasarımıyla çoğu ücretli kursun önünde.",
-  "en": "The gold standard intro to computer science; its lecture quality and problem-set design outclass most paid courses.",
+  "tr": "Bilgisayar bilimine girişin ölçüt kabul edilen dersi; C ile başlayıp Python ve SQL’e geçiyor. Problem setleri otomatik değerlendiriliyor, yani geri bildirim gerçek.",
+  "en": "The benchmark introduction to computer science, starting in C and moving to Python and SQL. Problem sets are auto-graded, so the feedback is real.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -170,13 +171,12 @@ window.LINKS = [
   "name": "Cybersecurity Projects",
   "cat": "ogrenme",
   "tags": [
-   "ücretsiz",
    "github",
    "proje",
    "güvenlik"
   ],
-  "tr": "Başlangıçtan ileri seviyeye 70 güvenlik projesi; teoriden çok yapılacak iş listesi sunması ayırt edici yanı.",
-  "en": "70 security projects from beginner to advanced — offering a to-build list rather than theory is what sets it apart.",
+  "tr": "Başlangıçtan ileriye 70 güvenlik projesi, her biri kaynak koduyla. Teori okumak yerine kendi araçlarını yazarak öğrenme yolu.",
+  "en": "Seventy security projects from beginner to advanced, each with source. Learning by writing your own tools rather than reading theory.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -186,10 +186,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretli",
-   "veri"
+   "veri",
+   "interaktif"
   ],
-  "tr": "Tarayıcı içinde alıştırmalı veri bilimi kursları; video izlemek yerine her adımda kod yazdırması ayırt edici.",
-  "en": "Data science courses with in-browser exercises — it makes you write code at each step rather than watch video.",
+  "tr": "Kısa video sonrası tarayıcı içinde kod yazdırıp anında değerlendiriyor. Öğretme biçimi etkili ama alıştırmalar dar kalıplı; gerçek projeye geçişte boşluk bırakıyor.",
+  "en": "Short video then in-browser coding with instant grading. The format works, though the exercises are narrow and leave a gap when you move to a real project.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -199,10 +200,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "freemium",
-   "kurs"
+   "kurs",
+   "üniversite"
   ],
-  "tr": "Üniversite kaynaklı çevrimiçi kurs platformu; içeriği izlemek genelde ücretsiz, sertifika ücretli.",
-  "en": "University-sourced online course platform — auditing is usually free, certificates are paid.",
+  "tr": "Üniversite kaynaklı kurs platformu. İçeriği izlemek çoğu derste ücretsiz; ödev değerlendirmesi ve sertifika ücretli katmanda kalıyor.",
+  "en": "A university-sourced course platform. Auditing is free for most courses; graded assignments and the certificate sit behind the paid tier.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -212,10 +214,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "yapay zeka"
+   "yapay-zeka",
+   "giriş"
   ],
-  "tr": "Programlama ve ileri matematik gerektirmeyen yapay zeka giriş kursu; teknik olmayanlar için tasarlanmış nadir kaynaklardan.",
-  "en": "An AI introduction requiring no programming or advanced maths — one of the rare courses genuinely designed for non-technical readers.",
+  "tr": "Helsinki Üniversitesi’nin yapay zeka giriş dersi; programlama ve ileri matematik istemiyor. Kavramları felsefi ve toplumsal boyutuyla birlikte veriyor, salt teknik değil.",
+  "en": "The University of Helsinki’s AI introduction, requiring no programming or advanced maths and covering the philosophical and social dimensions alongside the technical.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -224,12 +227,11 @@ window.LINKS = [
   "name": "Every Programmer Should Know",
   "cat": "ogrenme",
   "tags": [
-   "ücretsiz",
    "github",
-   "koleksiyon"
+   "awesome-liste"
   ],
-  "tr": "Her geliştiricinin bilmesi beklenen teknik konuların derlemesi; öğretmez, bilgi boşluklarını fark ettirir.",
-  "en": "A collection of technical topics every developer is expected to know — it does not teach, it reveals your gaps.",
+  "tr": "Dağıtık sistemlerden karakter kodlamasına, gecikme sayılarından güvenliğe uzanan konu derlemesi. Öğretmiyor; hangi konuyu hiç duymadığını fark ettiriyor.",
+  "en": "A compilation spanning distributed systems, character encoding, latency numbers and security. It does not teach — it shows you which topics you have never heard of.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -238,12 +240,12 @@ window.LINKS = [
   "name": "Free Programming Books",
   "cat": "ogrenme",
   "tags": [
-   "ücretsiz",
    "github",
-   "kitap"
+   "kitap",
+   "ücretsiz"
   ],
-  "tr": "Dile göre ayrılmış ücretsiz programlama kitapları listesi; alanın en büyük ve en aktif güncellenen derlemesi.",
-  "en": "Free programming books organised by language — the largest and most actively maintained collection of its kind.",
+  "tr": "Dile göre ayrılmış ücretsiz kitap listesi; alanın en büyük ve en aktif güncellenen derlemesi. Türkçe bölümü de var, çoğu benzer listede yok.",
+  "en": "A free-book list split by language and the largest actively maintained collection of its kind. It has a Turkish section, which most comparable lists lack.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -253,10 +255,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretli",
-   "sertifika"
+   "sertifika",
+   "git"
   ],
-  "tr": "GitHub’ın giriş seviyesi sertifikası; sürüm kontrolü ve iş akışı temellerini belgelemek için.",
-  "en": "GitHub’s entry-level certification, for evidencing version control and workflow fundamentals.",
+  "tr": "Sürüm kontrolü, işbirliği akışı ve GitHub yönetişimini kapsayan giriş seviyesi sınav. Kapsamı dar, o yüzden hazırlığı kısa.",
+  "en": "An entry-level exam covering version control, collaboration flow and GitHub governance. The scope is narrow, so preparation is short.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -266,11 +269,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "yapay zeka",
-   "türkçe"
+   "türkçe",
+   "yapay-zeka"
   ],
-  "tr": "Yapay zekayı iş akışında kullanmaya odaklı giriş programı; teknik değil, uygulamaya dönük.",
-  "en": "An introductory programme on using AI in daily work — applied rather than technical.",
+  "tr": "Yapay zekayı günlük işe katmayı anlatan giriş programı; kod yok, model matematiği yok. Teknik olmayan meslekler için tasarlanmış nadir kaynaklardan.",
+  "en": "An introduction to folding AI into everyday work — no code, no model mathematics. One of the rare resources actually designed for non-technical roles.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -283,8 +286,8 @@ window.LINKS = [
    "türkçe",
    "sertifika"
   ],
-  "tr": "Google’ın Türkçe dijital beceri kursları; pazarlama ve temel kodlama tarafında ücretsiz sertifika veriyor.",
-  "en": "Google’s Turkish-language digital skills courses, giving free certificates in marketing and basic coding.",
+  "tr": "Google’ın Türkçe dijital beceri kursları; dijital pazarlama sertifikası Avrupa’da tanınıyor. Türkçe içerik ve ücretsiz sertifika birleşimi yerelde ender.",
+  "en": "Google’s Turkish-language digital skills courses; the digital marketing certificate is recognised in Europe. Turkish content plus a free certificate is a rare pairing locally.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -294,10 +297,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "freemium",
-   "kurs"
+   "kurs",
+   "bulut"
   ],
-  "tr": "Google’ın eğitim ve sertifika platformu; bulut ve yapay zeka yollarını tek yerde toplar.",
-  "en": "Google’s training and certification platform, consolidating cloud and AI paths in one place.",
+  "tr": "Google’ın eğitim ve sertifika platformu; Cloud Skills Boost laboratuvarlarını da içine almış durumda. Ücretsiz yolların yanında kredi gerektiren uygulamalı laboratuvarlar var.",
+  "en": "Google’s training and certification platform, now folding in the Cloud Skills Boost labs. Free tracks sit alongside hands-on labs that cost credits.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -309,8 +313,8 @@ window.LINKS = [
    "freemium",
    "üniversite"
   ],
-  "tr": "Harvard’ın çevrimiçi ders kataloğu; ücretsiz derslerle sertifikalı programların bir arada listelendiği giriş noktası.",
-  "en": "Harvard’s online course catalogue — the entry point where free courses and certificate programmes are listed together.",
+  "tr": "Harvard’ın çevrimiçi ders kataloğu; ücretsiz izlenebilen derslerle ücretli sertifika programları aynı listede duruyor, hangisi olduğunu filtreden seçiyorsun.",
+  "en": "Harvard’s online catalogue, listing free-to-audit courses and paid certificate programmes together — you separate them with the filter.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -320,10 +324,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "kurs"
+   "kurs",
+   "sertifika"
   ],
-  "tr": "IBM’in ücretsiz beceri eğitimi programı; yapay zeka ve güvenlik tarafında rozet veren yolları var.",
-  "en": "IBM’s free skills programme, with badge-awarding paths in AI and security.",
+  "tr": "IBM’in ücretsiz beceri programı; yapay zeka, güvenlik ve veri yollarında dijital rozet veriyor. Öğrenci ve kariyer değiştirenlere yönelik kurgulanmış.",
+  "en": "IBM’s free skills programme awarding digital badges on AI, security and data tracks, shaped for students and career changers.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -336,8 +341,8 @@ window.LINKS = [
    "türkçe",
    "topluluk"
   ],
-  "tr": "Türkiye’de ücretsiz yazılım eğitimi veren sosyal girişim; bootcamp’lere erişim engelini kaldırmayı hedefliyor.",
-  "en": "A Turkish social enterprise offering free software training, aimed at removing the access barrier to bootcamps.",
+  "tr": "Türkiye’de ücretsiz yazılım eğitimi veren sosyal girişim; bootcamp’lerin ücret engelini kaldırmayı ve istihdama bağlamayı hedefliyor.",
+  "en": "A Turkish social enterprise offering free software training, aimed at removing the cost barrier of bootcamps and connecting graduates to jobs.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -350,8 +355,8 @@ window.LINKS = [
    "sertifika",
    "linux"
   ],
-  "tr": "Dağıtımdan bağımsız Linux sertifikasyonu; Red Hat gibi satıcıya bağlı belgelerden farkı bu tarafsızlığı.",
-  "en": "Distribution-neutral Linux certification — that neutrality is what separates it from vendor-tied credentials.",
+  "tr": "Dağıtımdan bağımsız Linux sertifikasyonu; Red Hat’in RHCSA’sı gibi tek satıcıya bağlı değil. Öğrenme materyalleri açık lisanslı ve ücretsiz indirilebiliyor.",
+  "en": "Distribution-neutral Linux certification, unlike vendor-bound credentials such as Red Hat’s RHCSA. Its learning material is openly licensed and downloadable.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -361,10 +366,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "dokümantasyon"
+   "dokümantasyon",
+   "azure"
   ],
-  "tr": "Microsoft teknolojileri için ücretsiz modüler eğitim; sertifika sınavlarına doğrudan eşlenmesi ayırt edici yanı.",
-  "en": "Free modular training for Microsoft technologies, distinguished by mapping directly onto certification exams.",
+  "tr": "Modüler ücretsiz eğitim; sandbox’ta gerçek Azure kaynağı açtırıp uygulatıyor. Modüller sertifika sınavı hedeflerine birebir eşlenmiş durumda.",
+  "en": "Free modular training that spins up real Azure resources in a sandbox for you to work in. Modules map one to one onto certification exam objectives.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -374,10 +380,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "üniversite"
+   "üniversite",
+   "ders-notu"
   ],
-  "tr": "MIT derslerinin ders notu, ödev ve sınavlarıyla birlikte açık arşivi; video kurslardan farkı, gerçek ders materyalinin tamamını vermesi.",
-  "en": "MIT’s open archive of course notes, assignments and exams — unlike video courses it gives the full real course material.",
+  "tr": "MIT derslerinin ders notu, ödev, sınav ve çözümleriyle birlikte açık arşivi. Video kursların vermediği şey burada: gerçek problem setleri ve cevap anahtarları.",
+  "en": "MIT’s open archive of lecture notes, assignments, exams and solutions. What video courses do not give you is here: real problem sets with answer keys.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -388,10 +395,10 @@ window.LINKS = [
   "tags": [
    "freemium",
    "mülakat",
-   "yol haritası"
+   "algoritma"
   ],
-  "tr": "Algoritma sorularını bağımlılık sırasına dizen harita; rastgele soru çözmeye karşı yapılandırılmış alternatif.",
-  "en": "A map ordering algorithm problems by dependency — the structured alternative to grinding random questions.",
+  "tr": "Algoritma sorularını konu bağımlılığına göre diziyor: iki işaretçiden kayan pencereye, oradan dinamik programlamaya. Rastgele soru çözmenin yapılandırılmış alternatifi.",
+  "en": "Orders algorithm problems by topic dependency — two pointers into sliding window into dynamic programming. The structured alternative to grinding random questions.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -401,10 +408,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretli",
-   "kitap"
+   "kitap",
+   "video"
   ],
-  "tr": "Teknik kitap ve video aboneliği; tek tek satın almaya karşı geniş kütüphaneye erişim modeli sunar.",
-  "en": "Subscription to technical books and video — access to a broad library instead of buying titles one by one.",
+  "tr": "Teknik kitap ve video aboneliği; erken erişim sürümleriyle henüz basılmamış kitapları okuyabiliyorsun. Tek tek satın almaya göre pahalı ama kapsam çok geniş.",
+  "en": "A subscription to technical books and video, including early-access editions of unpublished titles. Expensive against buying individually, but the catalogue is very wide.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -413,12 +421,12 @@ window.LINKS = [
   "name": "OSSU Computer Science",
   "cat": "ogrenme",
   "tags": [
-   "ücretsiz",
    "github",
-   "müfredat"
+   "müfredat",
+   "ücretsiz"
   ],
-  "tr": "Ücretsiz kaynaklardan derlenmiş eksiksiz bilgisayar bilimi lisans müfredatı; rastgele kurs listesi değil, üniversite programı sırasını izler.",
-  "en": "A complete CS degree curriculum assembled from free resources — it follows a university programme’s ordering, not a random course list.",
+  "tr": "Ücretsiz kaynaklardan kurulmuş tam bir lisans müfredatı: ön koşullar, çekirdek dersler ve ileri seçmeliler ayrı ayrı sıralı. Kurs listesi değil, gerçekten bir program.",
+  "en": "A full undergraduate curriculum assembled from free material, with prerequisites, core courses and advanced electives each in order. Not a course list — an actual programme.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -430,8 +438,8 @@ window.LINKS = [
    "ücretli",
    "üniversite"
   ],
-  "tr": "Oxford’un yarı zamanlı ve çevrimiçi sürekli eğitim programları; çoğu ücretli, akademik yönü ağır basıyor.",
-  "en": "Oxford’s part-time and online continuing education; mostly paid, with a strongly academic bent.",
+  "tr": "Oxford’un yarı zamanlı ve çevrimiçi sürekli eğitim programları. Ağırlıklı olarak ücretli ve akademik; teknik beceri kursundan çok üniversite dersi niteliğinde.",
+  "en": "Oxford’s part-time and online continuing education — mostly paid and academic, closer to university coursework than to skills training.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -441,10 +449,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "proje"
+   "proje",
+   "python"
   ],
-  "tr": "Seviyeye göre sıralanmış Python proje listesi; her biri kısa açıklama ve kaynak kodla birlikte.",
-  "en": "A level-ordered list of Python projects, each with a short description and source code.",
+  "tr": "Seviyeye göre gruplanmış Python proje listesi; her başlıkta kısa açıklama ve çalışan kod var. Ne yapacağını bilmediğin boş sayfa problemini çözüyor.",
+  "en": "A level-grouped list of Python projects, each with a short brief and working code — a fix for the blank-page problem of not knowing what to build.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -454,10 +463,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "yol haritası"
+   "yol-haritası",
+   "blockchain"
   ],
-  "tr": "Blockchain geliştiriciliği için sıralı öğrenme haritası; her düğümde önerilen kaynaklar bağlantılı.",
-  "en": "An ordered learning map for blockchain development, with suggested resources linked at each node.",
+  "tr": "Kriptografi temellerinden akıllı sözleşme ve Solidity’ye uzanan sıralı harita. Alanın gürültüsünde neyin gerçekten temel olduğunu ayırıyor.",
+  "en": "An ordered map running from cryptographic fundamentals to smart contracts and Solidity, separating what is actually foundational from the field’s noise.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -467,10 +477,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "yol haritası"
+   "yol-haritası",
+   "linux"
   ],
-  "tr": "Linux öğrenme yolunu adım adım şemalaştıran interaktif harita; kurs listesinden farkı, neyi hangi sırayla öğreneceğini göstermesi.",
-  "en": "An interactive map laying out the Linux learning path step by step; unlike a course list it shows what to learn in which order.",
+  "tr": "Dosya sisteminden süreç yönetimine, kabuk betiğinden sistemd’ye kadar konuları bağımlılık sırasına dizen etkileşimli harita. Her düğümde ücretsiz kaynak bağlantısı var.",
+  "en": "An interactive map ordering topics by dependency — filesystem, process management, shell scripting, systemd — with free resources linked at each node.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -480,10 +491,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "üniversite"
+   "üniversite",
+   "arşiv"
   ],
-  "tr": "Stanford mühendislik derslerinin ücretsiz arşivi; klasik yapay zeka ve sistem derslerinin kaynağı olarak değerli.",
-  "en": "Free archive of Stanford engineering courses, valuable as the source of the classic AI and systems lectures.",
+  "tr": "Stanford mühendislik derslerinin ücretsiz arşivi. Kayıtlar eski ama Andrew Ng’in makine öğrenmesi dersi gibi klasiklerin kaynağı burası.",
+  "en": "A free archive of Stanford engineering lectures. The recordings are dated, but this is the source of classics like Andrew Ng’s machine learning course.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -496,8 +508,8 @@ window.LINKS = [
    "türkçe",
    "matematik"
   ],
-  "tr": "Matematik ve temel konularda hızlı test üretme aracı; öğretmenler için hazırlık yükünü azaltıyor.",
-  "en": "Quick quiz generator for maths and basic subjects, cutting preparation time for teachers.",
+  "tr": "Matematik ve temel konularda hızlı test üretip sonuçları toplayan araç; reklamsız ve hesapsız çalışıyor. Öğretmenler için hazırlık yükünü belirgin azaltıyor.",
+  "en": "Generates quick quizzes in maths and basic subjects and collects results, ad-free and account-free. It cuts teachers’ preparation load noticeably.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -507,11 +519,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "web",
-   "müfredat"
+   "müfredat",
+   "frontend"
   ],
-  "tr": "Tam kapsamlı ücretsiz web geliştirme müfredatı; video ağırlıklı kurslardan farkı, projeyi kendin kurup dokümantasyon okumaya zorlaması.",
-  "en": "A complete free web development curriculum; unlike video-heavy courses it forces you to build and read documentation yourself.",
+  "tr": "Tam kapsamlı ücretsiz web geliştirme müfredatı. Video izletmiyor — resmî dokümanı okutup projeyi kendin kurdurtuyor, ki gerçek işe en yakın öğrenme biçimi bu.",
+  "en": "A complete free web development curriculum. It does not play you videos — it sends you to the official docs and makes you build, which is the closest thing to real work.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -521,10 +533,11 @@ window.LINKS = [
   "cat": "ogrenme",
   "tags": [
    "ücretsiz",
-   "oyun"
+   "oyun",
+   "3b"
   ],
-  "tr": "Unity’nin resmî oyun geliştirme eğitimleri; motorun kendi sürümüyle güncel kalması üçüncü taraf kurslara üstünlüğü.",
-  "en": "Unity’s official game development training; staying current with the engine’s own releases is its edge over third-party courses.",
+  "tr": "Unity’nin resmî eğitimleri; motorun sürümüyle birlikte güncelleniyor. Üçüncü taraf kurslarda en sık karşılaşılan sorun olan sürüm uyumsuzluğu burada yok.",
+  "en": "Unity’s official training, updated in step with the engine. The version drift that plagues third-party courses does not occur here.",
   "cat_tr": "Öğrenme & Yol Haritaları",
   "cat_en": "Learning & Roadmaps"
  },
@@ -537,8 +550,8 @@ window.LINKS = [
    "türkçe",
    "klavye"
   ],
-  "tr": "Türkçe klavye hız testi; günlük pratikle yazma hızını ölçmek için basit ve reklamsız denecek kadar sade.",
-  "en": "Turkish typing speed test — simple enough to use for daily practice measurement.",
+  "tr": "Türkçe kelime listesiyle yazma hızı testi; sonuçları kaydedip ilerlemeyi izleyebiliyorsun.",
+  "en": "A typing speed test on a Turkish word list, saving results so you can track progress.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -551,8 +564,8 @@ window.LINKS = [
    "alıştırma",
    "etkinlik"
   ],
-  "tr": "Her aralık ayında yayımlanan günlük bulmaca takvimi; topluluk aynı anda çözdüğü için tartışma ve çözüm karşılaştırması zengin.",
-  "en": "A daily puzzle calendar published each December; because the community solves in sync, discussion and solution comparison are rich.",
+  "tr": "Her aralık ayında günde bir bulmaca. Herkes aynı anda çözdüğü için tartışma ve çözüm karşılaştırması o hafta çok zengin oluyor; arşiv yıl boyu açık.",
+  "en": "One puzzle a day each December. Because everyone solves in sync the discussion that week is unusually rich; the archive stays open year round.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -562,10 +575,11 @@ window.LINKS = [
   "cat": "pratik",
   "tags": [
    "ücretli",
-   "mülakat"
+   "mülakat",
+   "video"
   ],
-  "tr": "Video çözümlü mülakat hazırlık platformu; ücretli olması karşılığında düzenli ve elenmiş bir soru seti sunar.",
-  "en": "Interview prep with video walkthroughs; in exchange for the price you get a curated, non-sprawling problem set.",
+  "tr": "Elenmiş bir soru seti ve her soru için video çözüm. Ücretli olmasının karşılığı, LeetCode’un binlerce sorusu içinde kaybolmadan sınırlı bir yolu bitirebilmen.",
+  "en": "A curated problem set with a video walkthrough for each. What the price buys is finishing a bounded path instead of getting lost among LeetCode’s thousands.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -575,10 +589,11 @@ window.LINKS = [
   "cat": "pratik",
   "tags": [
    "ücretsiz",
-   "interaktif"
+   "interaktif",
+   "tarayıcı-içi"
   ],
-  "tr": "15+ dilde tarayıcı içi etkileşimli dersler; kurulum gerektirmemesi başlangıç engelini düşürüyor.",
-  "en": "In-browser interactive lessons in 15+ languages; needing no setup lowers the barrier to starting.",
+  "tr": "15+ dilde tarayıcı içi dersler; ortam kurulumu gerektirmiyor. Kurulum aşamasında pes eden yeni başlayanlar için gerçek bir engel kaldırıyor.",
+  "en": "In-browser lessons across 15+ languages with no environment setup — removing the barrier that stops beginners at installation.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -588,10 +603,11 @@ window.LINKS = [
   "cat": "pratik",
   "tags": [
    "ücretsiz",
-   "alıştırma"
+   "alıştırma",
+   "oyunlaştırılmış"
   ],
-  "tr": "Dövüş sanatı derecelendirmesiyle oyunlaştırılmış kod alıştırmaları; çözüm sonrası başkalarının kodunu görmek öğreticiliğini artırıyor.",
-  "en": "Gamified coding practice with martial-arts ranks; seeing other people’s solutions after solving is where most of the learning happens.",
+  "tr": "Dövüş sanatı derecelendirmesiyle oyunlaştırılmış alıştırmalar. Asıl öğrenme çözümden sonra: aynı soruya başkalarının yazdığı çözümleri okuyorsun.",
+  "en": "Practice gamified with martial-arts ranks. The learning happens after you solve — you read what everyone else wrote for the same problem.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -601,11 +617,11 @@ window.LINKS = [
   "cat": "pratik",
   "tags": [
    "freemium",
-   "oyunlaştırılmış",
-   "başlangıç"
+   "başlangıç",
+   "oyunlaştırılmış"
   ],
-  "tr": "Rol yapma oyunu temalı kodlama öğrenme platformu; motivasyonu deneyim puanı ve harita ilerlemesiyle kurması ayırt edici.",
-  "en": "An RPG-themed learn-to-code platform, distinguished by driving motivation through XP and map progression.",
+  "tr": "Rol yapma oyunu temalı öğrenme; deneyim puanı ve harita ilerlemesiyle motivasyonu ayakta tutuyor. Tamamen yeni başlayanlar için tasarlanmış, ileri seviyeye çıkmıyor.",
+  "en": "RPG-themed learning that sustains motivation with XP and map progress. Built for complete beginners and it does not carry you to advanced.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -618,8 +634,8 @@ window.LINKS = [
    "görselleştirme",
    "algoritma"
   ],
-  "tr": "Georgia Tech’in veri yapıları dersi için hazırlanmış görselleştirme aracı; VisuAlgo’ya göre daha dar ama ders akışına uyumlu.",
-  "en": "Visualisation tool built for Georgia Tech’s data structures course — narrower than VisuAlgo but aligned to a syllabus.",
+  "tr": "Georgia Tech’in veri yapıları dersi için hazırlanmış görselleştirme aracı. VisuAlgo’dan dar kapsamlı ama bir müfredata birebir oturuyor.",
+  "en": "A visualisation tool built for Georgia Tech’s data structures course — narrower than VisuAlgo but aligned exactly to a syllabus.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -632,8 +648,8 @@ window.LINKS = [
    "sql",
    "mülakat"
   ],
-  "tr": "SQL ve veri bilimi mülakat soruları; genel algoritma platformlarının kapsamadığı bir boşluğu dolduruyor.",
-  "en": "SQL and data science interview questions, filling a gap the general algorithm platforms do not cover.",
+  "tr": "SQL ve veri bilimi mülakat soruları; tarayıcıda gerçek sorgu çalıştırıp doğruluyorsun. Genel algoritma platformlarının kapsamadığı bir boşluk.",
+  "en": "SQL and data science interview questions with real queries run and checked in the browser — a gap the general algorithm platforms leave open.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -645,8 +661,8 @@ window.LINKS = [
    "freemium",
    "alıştırma"
   ],
-  "tr": "Küçük ve hızlı kod bulmacaları; LeetCode’un aksine algoritma teorisi değil, dil pratiği hedefliyor.",
-  "en": "Small, fast coding puzzles; unlike LeetCode it targets language fluency rather than algorithm theory.",
+  "tr": "Küçük ve hızlı bulmacalar; algoritma teorisi değil dil akıcılığı hedefliyor. Yeni bir dile geçerken sözdizimini oturtmak için LeetCode’dan uygun.",
+  "en": "Small, fast puzzles targeting language fluency rather than algorithm theory — better than LeetCode for settling syntax when you move to a new language.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -655,12 +671,13 @@ window.LINKS = [
   "name": "Exercism",
   "cat": "pratik",
   "tags": [
+   "açık-kaynak",
    "ücretsiz",
-   "açık kaynak",
-   "alıştırma"
+   "alıştırma",
+   "mentor"
   ],
-  "tr": "70+ dilde alıştırma ve gönüllü mentor geri bildirimi; diğer platformlardan farkı, çözümüne insan yorumu alabilmen.",
-  "en": "Exercises in 70+ languages with volunteer mentor feedback — getting a human review of your solution is what sets it apart.",
+  "tr": "70’ten fazla dilde alıştırma; çözdüğün soruya gönüllü bir mentorun yorum yazması onu diğerlerinden ayırıyor. Testler yerelde çalışıyor, kendi editörünü kullanabiliyorsun.",
+  "en": "Exercises in 70+ languages, distinguished by a volunteer mentor reviewing what you submitted. Tests run locally, so you stay in your own editor.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -673,8 +690,8 @@ window.LINKS = [
    "git",
    "interaktif"
   ],
-  "tr": "Git komutlarını güvenli bir ortamda denetip geri bildirim veren alıştırma platformu.",
-  "en": "Practice platform for running Git commands in a safe environment with feedback.",
+  "tr": "Git komutlarını güvenli bir ortamda deneyip anında geri bildirim alıyorsun. Gerçek depoda hata yapma korkusu olmadan pratik.",
+  "en": "Run Git commands in a safe environment with immediate feedback — practice without the fear of breaking a real repository.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -684,10 +701,11 @@ window.LINKS = [
   "cat": "pratik",
   "tags": [
    "freemium",
-   "mülakat"
+   "mülakat",
+   "sınav"
   ],
-  "tr": "Alıştırma ve işe alım testlerini birleştiren platform; LeetCode’dan farkı, şirketlerin sınavı burada uygulaması.",
-  "en": "Combines practice with hiring assessments; unlike LeetCode, companies actually run their tests here.",
+  "tr": "Alıştırma ve işe alım sınavı aynı platformda; şirketler teknik testleri gerçekten burada uyguluyor. Yani sınav ortamını önceden tanımış oluyorsun.",
+  "en": "Practice and hiring assessments on one platform — companies genuinely run their technical tests here, so you get to know the exam environment in advance.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -699,8 +717,8 @@ window.LINKS = [
    "freemium",
    "mülakat"
   ],
-  "tr": "Mülakat sorularını çözümün düşünce adımlarıyla anlatan kaynak; cevabı vermek yerine nasıl vardığını göstermesi ayırt edici.",
-  "en": "Explains interview questions through the reasoning steps; showing how you get there rather than handing you the answer is its distinction.",
+  "tr": "Cevabı vermek yerine çözüme giden düşünce adımlarını açıyor; kaba kuvvetten optimale nasıl geçileceğini gösteriyor. Mülakatta beklenen tam olarak bu akıl yürütme.",
+  "en": "Opens up the reasoning steps rather than handing over the answer, showing how you move from brute force to optimal — which is exactly the reasoning an interview looks for.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -711,10 +729,11 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "devops",
-   "interaktif"
+   "k8s",
+   "lab"
   ],
-  "tr": "Tarayıcıda gerçek Linux ve Kubernetes ortamı veren senaryolar; simülasyon değil gerçek makine sunması ayırt edici.",
-  "en": "Scenarios giving you a real Linux and Kubernetes environment in the browser — real machines, not a simulation.",
+  "tr": "Tarayıcıda gerçek Linux ve Kubernetes makinesi açıyor; simülasyon değil. CKA ve CKS sınavlarına hazırlık senaryoları resmî sınav ortamına çok yakın.",
+  "en": "Spins up a real Linux or Kubernetes machine in the browser — not a simulation. Its CKA and CKS scenarios sit very close to the actual exam environment.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -727,8 +746,8 @@ window.LINKS = [
    "git",
    "interaktif"
   ],
-  "tr": "Git dallanmasını görsel ve etkileşimli öğreten alıştırma; komut ezberlemek yerine grafiği anlamayı sağlıyor.",
-  "en": "Teaches Git branching visually and interactively — you learn the graph instead of memorising commands.",
+  "tr": "Commit grafiğini canlı çizerek rebase, cherry-pick ve merge’ün ne yaptığını gösteriyor. Git’i komut ezberleyerek değil grafiği anlayarak öğrenmenin en kısa yolu.",
+  "en": "Draws the commit graph live to show what rebase, cherry-pick and merge actually do — the shortest path to learning Git by understanding the graph rather than memorising commands.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -741,8 +760,8 @@ window.LINKS = [
    "mülakat",
    "algoritma"
   ],
-  "tr": "Teknik mülakat sorularının fiilî standardı; şirket etiketli soru havuzu başlıca avantajı.",
-  "en": "The de facto standard for technical interview questions; its company-tagged problem pool is the main draw.",
+  "tr": "Teknik mülakat sorularının fiilî standardı; sorular şirket etiketiyle filtreleniyor. Tartışma bölümü çoğu zaman resmî çözümden öğreticidir.",
+  "en": "The de facto standard bank of interview questions, filterable by company tag. The discussion section is usually more instructive than the official solution.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -755,8 +774,8 @@ window.LINKS = [
    "türkçe",
    "klavye"
   ],
-  "tr": "Türkçe on parmak klavye eğitimi; F ve Q düzenlerini ayrı ayrı desteklemesi yerel bir avantaj.",
-  "en": "Turkish touch-typing course; supporting both F and Q layouts separately is a locally useful advantage.",
+  "tr": "F ve Q düzenlerini ayrı ayrı destekleyen Türkçe on parmak eğitimi. F klavye materyalinin ücretsiz bulunması yerelde ender.",
+  "en": "Turkish touch-typing training supporting F and Q layouts separately. Free material for the F layout is rare locally.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -769,8 +788,8 @@ window.LINKS = [
    "matematik",
    "algoritma"
   ],
-  "tr": "Matematik ağırlıklı programlama problemleri; mülakat sorularından farkı, çözümün algoritmadan çok sayı teorisine dayanması.",
-  "en": "Mathematics-heavy programming problems; unlike interview questions the solution rests on number theory more than algorithms.",
+  "tr": "Kaba kuvvetin yetmediği matematik problemleri; çözüm sayı teorisi ya da kombinatorik içgörü gerektiriyor. Mülakat sorularıyla karıştırılmamalı, farklı bir kas çalıştırıyor.",
+  "en": "Mathematical problems where brute force does not finish; solutions need number theory or combinatorial insight. Not to be confused with interview questions — it trains a different muscle.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -781,10 +800,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "görselleştirme",
-   "hata ayıklama"
+   "hata-ayıklama"
   ],
-  "tr": "Kodun bellekteki durumunu satır satır gösteren görselleştirici; referans ve kapsam hatalarını anlatmakta eşsiz.",
-  "en": "Visualises memory state line by line — unmatched for explaining reference and scope bugs.",
+  "tr": "Kodu satır satır çalıştırıp yığın çerçevelerini ve heap’teki nesneleri çiziyor. Referans, kapsam ve değişebilir varsayılan argüman hatalarını anlatmakta eşi yok.",
+  "en": "Steps through code drawing stack frames and heap objects. Nothing explains reference semantics, scope and mutable default arguments as clearly.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -797,8 +816,8 @@ window.LINKS = [
    "görselleştirme",
    "algoritma"
   ],
-  "tr": "Veri yapısı ve algoritmaları adım adım canlandıran görselleştirme; kodu okumadan mekanizmayı anlamak için.",
-  "en": "Step-by-step animation of data structures and algorithms — for understanding the mechanism without reading code.",
+  "tr": "Veri yapısı ve algoritmaları adım adım canlandırıyor; kendi girdini verip izleyebiliyorsun. AVL ağacı dönmesi gibi konuları kod okuyarak anlamak çok daha zor.",
+  "en": "Animates data structures and algorithms step by step against input you supply. Something like an AVL rotation is far harder to grasp by reading code.",
   "cat_tr": "Pratik & Alıştırma",
   "cat_en": "Practice & Challenges"
  },
@@ -811,8 +830,8 @@ window.LINKS = [
    "go",
    "interaktif"
   ],
-  "tr": "Go’nun resmî etkileşimli turu; her örneğin tarayıcıda çalıştırılabilmesiyle dilin standart giriş kapısı.",
-  "en": "Go’s official interactive tour — the standard entry point, with every example runnable in the browser.",
+  "tr": "Go’nun resmî turu; her örnek tarayıcıda çalıştırılıp değiştirilebiliyor. Goroutine ve kanalları anlatan son bölüm dilin asıl ayırt edici kısmı.",
+  "en": "Go’s official tour, with every example runnable and editable in the browser. The closing section on goroutines and channels is the language’s real differentiator.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -821,13 +840,12 @@ window.LINKS = [
   "name": "Awesome C",
   "cat": "diller",
   "tags": [
-   "ücretsiz",
    "github",
-   "koleksiyon",
+   "awesome-liste",
    "c"
   ],
-  "tr": "C kütüphane ve araçlarının derlenmiş listesi; dilin standart kütüphanesi dar olduğu için özellikle değerli.",
-  "en": "A curated list of C libraries and tools — especially valuable because the language’s standard library is thin.",
+  "tr": "C kütüphane, çatı ve araç listesi. Dilin standart kütüphanesi kasten dar olduğu için C’de “hangi kütüphane” sorusu diğer dillerden çok daha sık sorulur.",
+  "en": "A list of C libraries, frameworks and tools. Because the standard library is deliberately thin, “which library” comes up far more often in C than elsewhere.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -839,8 +857,8 @@ window.LINKS = [
    "ücretsiz",
    "c"
   ],
-  "tr": "C dilinin klasik baştan sona öğreticisi; kapsamlı ama üslubu eski, referans olarak daha kullanışlı.",
-  "en": "A classic end-to-end C tutorial — comprehensive but dated in style, more useful as a reference.",
+  "tr": "Baştan sona klasik C anlatımı. Kapsamlı ama üslubu ve örnekleri eski; sıralı okumaktan çok tek konu aramak için pratik.",
+  "en": "A classic front-to-back treatment of C. Comprehensive, but dated in style and examples — handier for looking one topic up than for reading through.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -849,12 +867,12 @@ window.LINKS = [
   "name": "C Yol Haritası",
   "cat": "diller",
   "tags": [
-   "ücretsiz",
    "github",
+   "yol-haritası",
    "c"
   ],
-  "tr": "C öğrenimini sıraya koyan kısa yol haritası; kapsamlı müfredat değil, konu sırası rehberi.",
-  "en": "A short roadmap ordering C topics — a sequence guide rather than a full curriculum.",
+  "tr": "C öğrenimini konu sırasına koyan kısa harita; işaretçi ve bellek yönetimini nereye yerleştireceğini gösteriyor.",
+  "en": "A short map ordering C topics, showing where pointers and memory management belong in the sequence.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -863,12 +881,11 @@ window.LINKS = [
   "name": "Canlı C++ Kodlama",
   "cat": "diller",
   "tags": [
-   "ücretsiz",
    "video",
    "c++"
   ],
-  "tr": "C++ öğrenme sürecini canlı kodlayarak gösteren video; cilalı ders yerine gerçek hata ayıklama süreci içeriyor.",
-  "en": "A live-coding video of learning C++ — real debugging rather than a polished lecture.",
+  "tr": "C++ öğrenme sürecinin canlı kaydı; derleyici hataları ve çıkmaz sokaklar kesilmemiş. Cilalı derslerin gizlediği gerçek süreci gösteriyor.",
+  "en": "An uncut recording of learning C++, compiler errors and dead ends included — the real process that polished lectures hide.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -879,10 +896,11 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "c++",
+   "c",
    "referans"
   ],
-  "tr": "C ve C++ standart kütüphanesinin fiilî referansı; öğreticilerden farkı, standardın kendisine sadık ve sürüm farklarını göstermesi.",
-  "en": "The de facto reference for the C and C++ standard library; unlike tutorials it tracks the standard itself and marks version differences.",
+  "tr": "C ve C++ standart kütüphanesinin fiilî referansı; her özellikte hangi standartta (C++11/17/20/23) geldiği işaretli. Öğretici siteler bu sürüm ayrımını genelde atlıyor.",
+  "en": "The de facto reference for the C and C++ standard library, marking which standard (C++11/17/20/23) each feature landed in — a distinction tutorial sites usually skip.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -895,8 +913,8 @@ window.LINKS = [
    "kitap",
    "javascript"
   ],
-  "tr": "JavaScript’in ücretsiz klasik kitabı; söz dizimi öğretmekten çok programlama düşüncesi kurmasıyla ayrışıyor.",
-  "en": "The free classic JavaScript book, distinguished by teaching programming thinking rather than just syntax.",
+  "tr": "Ücretsiz ve çevrimiçi klasik. Sözdizimi öğretmekten çok programlama düşüncesi kuruyor; alıştırmaları kitabın içinde çalıştırılabiliyor.",
+  "en": "A free online classic that builds programming thinking rather than teaching syntax, with exercises runnable inside the book itself.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -909,8 +927,8 @@ window.LINKS = [
    "fortran",
    "bilimsel"
   ],
-  "tr": "Fortran’ın modern topluluk sitesi; dilin hâlâ sayısal hesaplamada canlı olduğunu gösteren güncel araç ve kütüphaneler.",
-  "en": "Fortran’s modern community site, showing the current tooling that keeps the language alive in numerical computing.",
+  "tr": "Modern Fortran topluluğunun sitesi; fpm paket yöneticisi ve güncel derleyiciler burada. Dil sayısal hesaplama ve iklim modellemede hâlâ üretimde, tarihî merak değil.",
+  "en": "The modern Fortran community site, home to the fpm package manager and current compilers. The language is still in production in numerical computing and climate modelling — not a historical curiosity.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -923,8 +941,8 @@ window.LINKS = [
    "python",
    "sertifika"
   ],
-  "tr": "Ücretsiz Python müfredatı ve sertifikası; alıştırmaların tarayıcıda çalışması kurulum engelini kaldırıyor.",
-  "en": "Free Python curriculum and certificate; running exercises in the browser removes the setup barrier.",
+  "tr": "Ücretsiz müfredat ve sertifika; alıştırmalar tarayıcıda çalışıyor. Sertifika işveren nezdinde ağır basmıyor ama müfredat düzgün sıralanmış.",
+  "en": "A free curriculum and certificate with browser-based exercises. The certificate carries little weight with employers, but the curriculum is properly sequenced.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -936,8 +954,8 @@ window.LINKS = [
    "ücretsiz",
    "c"
   ],
-  "tr": "Konu başlıklarına bölünmüş C kaynağı; sırayla okumaktan çok tek bir konuyu aramak için elverişli.",
-  "en": "C material split by topic — better for looking one thing up than reading front to back.",
+  "tr": "Konu başlığına bölünmüş C kaynağı; arama sonucundan doğrudan ilgili sayfaya düşüyorsun. Örnek kodların bir kısmı eski derleyici davranışına dayanıyor, dikkatli okumak gerekiyor.",
+  "en": "C material split by topic so a search lands you straight on the relevant page. Some examples rely on old compiler behaviour, so read carefully.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -950,8 +968,8 @@ window.LINKS = [
    "go",
    "örnek"
   ],
-  "tr": "Go kavramlarını yorumlu örneklerle anlatan referans; tur bittikten sonra bakılacak ikinci kaynak.",
-  "en": "Go concepts explained through annotated examples — the second stop after finishing the tour.",
+  "tr": "Her kavramı yorumlu tek bir programla anlatıyor. Turu bitirdikten sonra “bunu Go’da nasıl yapıyordum” sorusunun cevabı burada.",
+  "en": "Explains each concept through one annotated program. After the tour, this is where “how do I do that in Go again” gets answered.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -960,11 +978,12 @@ window.LINKS = [
   "name": "HolyC",
   "cat": "diller",
   "tags": [
-   "açık kaynak",
-   "dil"
+   "açık-kaynak",
+   "dil",
+   "derleyici"
   ],
-  "tr": "TempleOS’un HolyC dilinin bağımsız derleyici ve dokümantasyonu; pratik değil, dil tasarımı meraklıları için.",
-  "en": "An independent compiler and docs for TempleOS’s HolyC — not practical, but of interest for language design.",
+  "tr": "TempleOS’un HolyC dili için bağımsız derleyici ve dokümantasyon. Pratik bir kullanımı yok; dil tasarımı ve bilgisayar tarihi merakı için duruyor.",
+  "en": "An independent compiler and documentation for TempleOS’s HolyC. No practical use — it stands for the language design and computing history interest.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -977,8 +996,8 @@ window.LINKS = [
    "c",
    "örnek"
   ],
-  "tr": "Çözülmüş C programları koleksiyonu; anlatım değil, örnek üzerinden öğrenmek isteyenler için.",
-  "en": "A collection of solved C programs — for learning from examples rather than exposition.",
+  "tr": "Çözülmüş C programları koleksiyonu; anlatım yok, doğrudan çalışan örnek var. Bir kalıbı hızla hatırlamak için elverişli.",
+  "en": "A collection of solved C programs — no exposition, just working examples. Handy for recalling a pattern quickly.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -987,12 +1006,12 @@ window.LINKS = [
   "name": "Indently",
   "cat": "diller",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "python"
   ],
-  "tr": "Kısa Python ipuçları yayımlayan kanal; uzun kurs yerine tek kavramı derinleştiren bölümler.",
-  "en": "A channel publishing short Python tips — single-concept episodes rather than long courses.",
+  "tr": "Tek bir Python kavramını derinleştiren kısa bölümler; uzun kurs formatına almayan konuları işliyor.",
+  "en": "Short episodes each deepening one Python concept, covering things a long-course format skips.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -1005,8 +1024,8 @@ window.LINKS = [
    "javascript",
    "alıştırma"
   ],
-  "tr": "Tarayıcıda çalıştırılabilir JavaScript alıştırmaları; okuma sonrası pratik için.",
-  "en": "Runnable JavaScript exercises in the browser, for practice after reading.",
+  "tr": "Tarayıcıda çalıştırılabilir JavaScript alıştırmaları; okuma sonrası pekiştirme için.",
+  "en": "Runnable JavaScript exercises in the browser, for consolidating after reading.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -1019,8 +1038,8 @@ window.LINKS = [
    "türkçe",
    "c"
   ],
-  "tr": "Türkçe C örnek programları; yerel kaynak kıtlığı olan bir alanda pratik derleme.",
-  "en": "Turkish C example programs — a practical collection in an area with few local resources.",
+  "tr": "Türkçe C örnek programları; ders ödevi düzeyindeki klasik alıştırmaları kapsıyor. Yerelde C kaynağı kıt olduğu için değerli.",
+  "en": "Turkish C example programs covering the classic coursework-level exercises — valuable because Turkish C material is thin on the ground.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -1033,8 +1052,8 @@ window.LINKS = [
    "c",
    "interaktif"
   ],
-  "tr": "Tarayıcıda çalıştırılabilir C öğreticisi; kurulum yapmadan dili denemek için en kısa yol.",
-  "en": "A C tutorial you can run in the browser — the shortest path to trying the language without installing anything.",
+  "tr": "Tarayıcıda derleyip çalıştırabildiğin C öğreticisi. Derleyici kurmadan dile bakmak isteyenler için giriş engelini kaldırıyor.",
+  "en": "A C tutorial you compile and run in the browser, removing the entry barrier for anyone who wants a look at the language before installing a toolchain.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -1043,12 +1062,12 @@ window.LINKS = [
   "name": "LLVM Başlangıç",
   "cat": "diller",
   "tags": [
-   "ücretsiz",
    "dokümantasyon",
-   "derleyici"
+   "derleyici",
+   "c++"
   ],
-  "tr": "LLVM derleyici altyapısına giriş; kendi dilini yazmak isteyenlerin başlangıç noktası.",
-  "en": "Introduction to the LLVM compiler infrastructure — the starting point for writing your own language.",
+  "tr": "LLVM altyapısına giriş ve Kaleidoscope öğreticisi — kendi dilini yazmanın klasik başlangıcı. Ara temsil (IR) kavramını somutlaştıran en iyi kaynaklardan.",
+  "en": "An introduction to the LLVM infrastructure plus the Kaleidoscope tutorial, the classic starting point for writing your own language and one of the best ways to make the IR concept concrete.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -1061,8 +1080,8 @@ window.LINKS = [
    "türkçe",
    "rust"
   ],
-  "tr": "Rust’ın resmî öğrenme sayfasının Türkçe hâli; dilin kendi kaynaklarına Türkçe giriş noktası.",
-  "en": "The Turkish version of Rust’s official learning page — a native-language entry into the official material.",
+  "tr": "Rust’ın resmî öğrenme sayfasının Türkçe hâli. Sahiplik (ownership) ve ödünç alma kavramlarına kendi dilinde girmek, dilin en dik yokuşunu biraz yumuşatıyor.",
+  "en": "The Turkish version of Rust’s official learning page. Meeting ownership and borrowing in your own language softens the language’s steepest climb a little.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -1075,23 +1094,22 @@ window.LINKS = [
    "türkçe",
    "python"
   ],
-  "tr": "Python sanal ortamlarını Türkçe anlatan giriş yazısı; kavramı ilk kez duyanlar için kısa ve yeterli.",
-  "en": "A Turkish introduction to Python virtual environments — short and sufficient for a first encounter.",
+  "tr": "Python sanal ortamlarını Türkçe anlatan kısa giriş; kavramı ilk kez duyanlar için yeterli. Modern araç zinciri artık uv tarafına kayıyor, onu da bilmekte fayda var.",
+  "en": "A short Turkish introduction to Python virtual environments, sufficient on first contact. The modern toolchain is shifting toward uv, which is worth knowing alongside.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
  {
   "url": "https://www.youtube.com/watch?v=yuVatFCOISc",
-  "name": "Sıfırdan C Programlama (Türkçe)",
+  "name": "Sıfırdan C Programlama",
   "cat": "diller",
   "tags": [
-   "ücretsiz",
-   "türkçe",
    "video",
+   "türkçe",
    "c"
   ],
-  "tr": "C dilini tek oturumda anlatan Türkçe video; hızlı giriş veya tekrar için.",
-  "en": "A Turkish video covering C in one sitting — for a fast introduction or a refresher.",
+  "tr": "C dilini tek oturumda anlatan Türkçe video; hızlı giriş ya da sınav öncesi tekrar için.",
+  "en": "A Turkish video covering C in a single sitting — for a fast introduction or pre-exam revision.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -1100,12 +1118,13 @@ window.LINKS = [
   "name": "uv",
   "cat": "diller",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "rust",
    "python",
    "araç"
   ],
-  "tr": "Rust ile yazılmış çok hızlı Python paket ve proje yöneticisi; pip, venv ve pip-tools’un yerini tek araçta topluyor.",
-  "en": "An extremely fast Python package and project manager written in Rust, replacing pip, venv and pip-tools with one tool.",
+  "tr": "Rust ile yazılmış paket ve proje yöneticisi; pip’ten onlarca kat hızlı. venv, pip, pip-tools ve pyenv’in işini tek ikili dosyada topluyor.",
+  "en": "A package and project manager written in Rust, tens of times faster than pip. It collapses venv, pip, pip-tools and pyenv into a single binary.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -1118,8 +1137,8 @@ window.LINKS = [
    "türkçe",
    "python"
   ],
-  "tr": "Python’un en kapsamlı Türkçe kaynağı; çeviri değil, sıfırdan Türkçe yazılmış olması ayırt edici yanı.",
-  "en": "The most comprehensive Turkish Python resource — written natively in Turkish rather than translated.",
+  "tr": "Python’un en kapsamlı Türkçe kaynağı ve çeviri değil; baştan Türkçe yazılmış olduğu için terimler zorlama durmuyor. Karakter kodlaması bölümü Türkçe metinle çalışanlar için özellikle değerli.",
+  "en": "The most comprehensive Turkish Python resource, written natively rather than translated, so the terminology does not feel forced. Its encoding chapter is especially valuable if you work with Turkish text.",
   "cat_tr": "Programlama Dilleri",
   "cat_en": "Programming Languages"
  },
@@ -1129,10 +1148,11 @@ window.LINKS = [
   "cat": "web",
   "tags": [
    "ücretsiz",
-   "dokümantasyon"
+   "dokümantasyon",
+   "typescript"
   ],
-  "tr": "Angular’ın resmî sitesi; React’in aksine yönlendirme, form ve HTTP’yi çatının içinde vermesi temel farkı.",
-  "en": "Angular’s official site; the core difference from React is that routing, forms and HTTP ship inside the framework.",
+  "tr": "Yönlendirme, form, HTTP ve bağımlılık enjeksiyonu çatının içinde geliyor. React’te bunları tek tek seçersin; burada karar verilmiş, karşılığında esneklik dar.",
+  "en": "Routing, forms, HTTP and dependency injection ship inside the framework. In React you pick each one; here the decisions are made for you, and flexibility narrows accordingly.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1145,8 +1165,8 @@ window.LINKS = [
    "tasarım",
    "mobil"
   ],
-  "tr": "App Store ekran görüntüsü tasarımlarının arşivi; uygulama mağaza sayfası hazırlarken dar ama isabetli bir kaynak.",
-  "en": "An archive of App Store screenshot designs — narrow but precisely useful when preparing a store listing.",
+  "tr": "App Store ekran görüntüsü tasarımları arşivi. Uygulama mağaza sayfası dönüşümü doğrudan bu görsellere bağlı olduğu için dar ama isabetli bir kaynak.",
+  "en": "An archive of App Store screenshot designs. Store-page conversion hangs directly on these images, which makes it a narrow but well-aimed resource.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1157,10 +1177,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "css",
-   "dokümantasyon"
+   "bileşen"
   ],
-  "tr": "Hazır bileşenli klasik CSS çatısı; tasarım kararı vermeden hızlı arayüz kurmak isteyenler için hâlâ en kısa yol.",
-  "en": "The classic component-based CSS framework — still the shortest path to a UI when you would rather not make design decisions.",
+  "tr": "Hazır bileşenler ve ızgara sistemi; tasarım kararı vermeden çalışan bir arayüz çıkarıyorsun. Bedeli, Bootstrap kullandığının uzaktan belli olması.",
+  "en": "Ready components and a grid system that get you a working interface without design decisions. The cost is that a Bootstrap site is recognisable from a distance.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1170,10 +1190,11 @@ window.LINKS = [
   "cat": "web",
   "tags": [
    "ücretsiz",
-   "css"
+   "css",
+   "arşiv"
   ],
-  "tr": "CSS teknikleri ve düzen çözümleri arşivi; belirli bir düzen problemini aradığında dokümandan daha hızlı sonuç verir.",
-  "en": "An archive of CSS techniques and layout solutions — faster than the spec when you are hunting a specific layout problem.",
+  "tr": "Yirmi yıllık CSS tekniği arşivi; Flexbox ve Grid rehberleri fiilî başvuru kaynağı hâline geldi. Belirli bir düzen problemi ararken spesifikasyondan hızlı sonuç veriyor.",
+  "en": "Two decades of CSS technique, whose Flexbox and Grid guides became the de facto references. Faster than the spec when you are hunting a specific layout problem.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1186,8 +1207,8 @@ window.LINKS = [
    "oyun",
    "css"
   ],
-  "tr": "Flexbox’ı oyunla öğreten alıştırma; Grid Garden’ın kardeşi, hizalama kavramlarını oturtmak için en hızlı yol.",
-  "en": "A game that teaches Flexbox — sibling to Grid Garden and the fastest way to internalise alignment concepts.",
+  "tr": "Kurbağaları hizalayarak Flexbox öğreten oyun; Grid Garden’ın kardeşi. justify-content ile align-items karışıklığını yirmi dakikada bitiriyor.",
+  "en": "The Flexbox sibling of Grid Garden, teaching alignment by positioning frogs. It settles the justify-content versus align-items confusion in twenty minutes.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1200,8 +1221,8 @@ window.LINKS = [
    "tasarım",
    "oyun"
   ],
-  "tr": "Oyun arayüzlerinin ekran bazında sınıflandırılmış arşivi; menü, envanter gibi ekran türüne göre aranabilmesi ayırt edici.",
-  "en": "A screen-by-screen archive of game interfaces, searchable by screen type such as menu or inventory.",
+  "tr": "Oyun arayüzlerini ekran türüne göre sınıflandırıyor: envanter, harita, ayarlar, yükleme ekranı. Bu kadar sistematik bir arayüz arşivi başka alanlarda yok.",
+  "en": "Classifies game interfaces by screen type — inventory, map, settings, loading. No other field has an interface archive this systematic.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1213,8 +1234,8 @@ window.LINKS = [
    "ücretsiz",
    "tipografi"
   ],
-  "tr": "Ücretsiz ve açık lisanslı yazı tipi kataloğu; lisans derdi olmadan kullanılabilmesi başlıca sebebi.",
-  "en": "Catalogue of free, openly licensed typefaces — usable without licensing friction, which is the main reason to reach for it.",
+  "tr": "Açık lisanslı yazı tipi kataloğu; dosyaları indirip kendi sunucundan servis edebiliyorsun. GDPR gerekçesiyle CDN’den çekmek Almanya’da dava konusu oldu, indirmek daha güvenli.",
+  "en": "A catalogue of openly licensed typefaces you can download and self-host. Loading them from the CDN has been litigated in Germany on GDPR grounds, so self-hosting is the safer route.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1223,11 +1244,12 @@ window.LINKS = [
   "name": "GrapesJS",
   "cat": "web",
   "tags": [
-   "açık kaynak",
-   "editör"
+   "açık-kaynak",
+   "editör",
+   "javascript"
   ],
-  "tr": "Kendi ürününe gömülebilen görsel sayfa düzenleyici; hazır site kurucularından farkı, sen kendi editörünü kurarsın.",
-  "en": "An embeddable visual page editor; unlike hosted site builders, you build your own editor with it.",
+  "tr": "Kendi ürününe gömdüğün görsel sayfa düzenleyici; bileşen ve stil yöneticisini sen tanımlıyorsun. Barındırılan site kurucularının aksine editörün sahibi sensin.",
+  "en": "A visual page editor you embed in your own product, defining the component and style managers yourself. Unlike hosted site builders, you own the editor.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1240,8 +1262,8 @@ window.LINKS = [
    "oyun",
    "css"
   ],
-  "tr": "CSS Grid’i oyunla öğreten alıştırma; doküman okumaya karşı, özelliği yazarak öğrenme yolu.",
-  "en": "A game that teaches CSS Grid — learning the property by typing it rather than reading the spec.",
+  "tr": "Havuç sulayarak CSS Grid öğreten 28 bölümlük oyun. grid-column ve grid-area gibi özellikler yazarak öğrenildiğinde akılda kalıyor.",
+  "en": "A 28-level game teaching CSS Grid by watering carrots. Properties like grid-column and grid-area stick when you type them rather than read them.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1253,8 +1275,8 @@ window.LINKS = [
    "ücretsiz",
    "referans"
   ],
-  "tr": "Tüm HTML etiket ve özniteliklerinin görsel örnekli referansı; MDN’den farkı, hızlı göz gezdirmeye göre tasarlanmış olması.",
-  "en": "A visual reference of every HTML element and attribute; unlike MDN it is designed for fast scanning.",
+  "tr": "Her HTML etiketi ve özniteliği görsel örnekle listelenmiş, tek sayfada göz gezdirilebiliyor. MDN’in derinliği yok ama “bu etiket ne yapıyordu” sorusuna daha hızlı cevap veriyor.",
+  "en": "Every HTML element and attribute with a visual example, scannable on one page. It lacks MDN’s depth but answers “what did this tag do again” faster.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1263,12 +1285,12 @@ window.LINKS = [
   "name": "htmx",
   "cat": "web",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "javascript",
-   "dokümantasyon"
+   "hypermedia"
   ],
-  "tr": "HTML özniteliğiyle sunucudan parça güncelleyen kütüphane; SPA çatılarına karşı, JavaScript yazmadan etkileşim kurma yaklaşımı.",
-  "en": "Library that swaps server-rendered fragments via HTML attributes — the anti-SPA approach to interactivity without writing JavaScript.",
+  "tr": "HTML özniteliğiyle istek atıp dönen HTML parçasını sayfaya yerleştiriyorsun; JSON ve istemci durumu yok. 14 kB, bağımlılığı yok — SPA karmaşıklığına gerek olmayan yerde makul bir çıkış.",
+  "en": "Attributes fire requests and swap the returned HTML fragment into the page — no JSON, no client state. 14 kB with no dependencies, and a sane exit where SPA complexity is not warranted.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1277,12 +1299,13 @@ window.LINKS = [
   "name": "Maps Tracker",
   "cat": "web",
   "tags": [
+   "saas",
    "ücretli",
    "seo",
    "yerel"
   ],
-  "tr": "Google Haritalar’da yerel sıralama takibi; genel SEO araçlarının zayıf kaldığı çok konumlu işletmeler için.",
-  "en": "Local rank tracking on Google Maps — aimed at multi-location businesses where general SEO tools are weak.",
+  "tr": "Google Haritalar sıralamasını konum ızgarası üzerinde ölçüyor; aynı sorgunun mahalleden mahalleye nasıl değiştiğini gösteriyor. Genel SEO araçlarının kör noktası tam olarak burası.",
+  "en": "Measures Google Maps ranking across a grid of locations, showing how the same query shifts block by block — precisely the blind spot of general SEO tools.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1295,8 +1318,8 @@ window.LINKS = [
    "referans",
    "dokümantasyon"
   ],
-  "tr": "Web platformunun fiilî referansı; blog yazılarından farkı, tarayıcı uyumluluk tablolarıyla birlikte gelmesi.",
-  "en": "The de facto reference for the web platform; unlike blog posts it ships with browser compatibility tables.",
+  "tr": "Web platformunun fiilî referansı. Her sayfada tarayıcı uyumluluk tablosu var — bir özelliği kullanmadan önce Safari’de çalışıp çalışmadığını burada görürsün.",
+  "en": "The de facto reference for the web platform. Every page carries a browser compatibility table, which is where you check whether a feature works in Safari before shipping it.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1309,8 +1332,8 @@ window.LINKS = [
    "dokümantasyon",
    "javascript"
   ],
-  "tr": "React’in yeniden yazılmış resmî öğreticisi; eski dokümandan farkı, kancaları (hooks) merkeze alması.",
-  "en": "React’s rewritten official tutorial; unlike the old docs it puts hooks at the centre.",
+  "tr": "Yeniden yazılmış resmî doküman; kancalar (hooks) merkezde, sınıf bileşenleri artık yok. “You Might Not Need an Effect” bölümü en sık yapılan hatayı doğrudan hedefliyor.",
+  "en": "The rewritten official docs, centred on hooks with class components gone. The “You Might Not Need an Effect” page targets the single most common mistake head on.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1323,8 +1346,8 @@ window.LINKS = [
    "türkçe",
    "seo"
   ],
-  "tr": "Teknik SEO kontrol listesi; Türkçe kaynaklar arasında derli toplu ve uygulanabilir olanlardan.",
-  "en": "A technical SEO checklist — one of the tidier, more actionable Turkish-language resources.",
+  "tr": "Teknik SEO kontrol listesi; başlık yapısı, şema işaretlemesi ve sayfa hızı maddeleri uygulanabilir. Türkçe kaynaklar arasında pazarlama söyleminden en uzak duranlardan.",
+  "en": "A technical SEO checklist covering heading structure, schema markup and page speed in actionable terms — one of the Turkish resources furthest from marketing talk.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1334,10 +1357,11 @@ window.LINKS = [
   "cat": "web",
   "tags": [
    "dokümantasyon",
-   "e-ticaret"
+   "e-ticaret",
+   "şablon"
   ],
-  "tr": "Shopify tema şablon dilinin referansı; mağaza teması geliştirenler için birincil kaynak.",
-  "en": "Reference for Shopify’s theme templating language — the primary source for store theme development.",
+  "tr": "Shopify tema şablon dilinin nesne, filtre ve etiket referansı. Mağaza teması geliştiriyorsan hangi verinin hangi şablonda erişilebilir olduğu buradan görülüyor.",
+  "en": "The object, filter and tag reference for Shopify’s theme language — where you find which data is reachable from which template when building a store theme.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1350,8 +1374,8 @@ window.LINKS = [
    "tasarım",
    "ilham"
   ],
-  "tr": "Öne çıkan web tasarımlarının derlendiği galeri; bütünsel tasarım dili örnekleri için.",
-  "en": "A gallery of standout web designs, useful for whole-site design language examples.",
+  "tr": "Bütünsel tasarım dili örnekleri için galeri; tipografi ve hareket kullanımı güçlü siteler derleniyor.",
+  "en": "A gallery for whole-site design language, collecting sites with strong typography and motion.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1364,8 +1388,8 @@ window.LINKS = [
    "css",
    "dokümantasyon"
   ],
-  "tr": "Yardımcı sınıf temelli CSS çatısı; Bootstrap’tan farkı hazır bileşen değil, kendi bileşenini kurmak için yapı taşı vermesi.",
-  "en": "Utility-first CSS framework; unlike Bootstrap it gives you building blocks to compose components rather than ready-made ones.",
+  "tr": "Yardımcı sınıflarla stil yazıyorsun; derleme adımı kullanılmayan sınıfları atıyor, CSS dosyası büyümüyor. Bootstrap hazır bileşen verir, bu yapı taşı verir.",
+  "en": "You style with utility classes and the build step drops unused ones, so the CSS file stops growing. Bootstrap hands you components; this hands you building blocks.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1375,10 +1399,11 @@ window.LINKS = [
   "cat": "web",
   "tags": [
    "ücretsiz",
-   "javascript"
+   "javascript",
+   "öğretici"
   ],
-  "tr": "JavaScript’i temelden ileri seviyeye sıralı anlatan kaynak; MDN referans, bu ise öğretici olduğu için birbirini tamamlar.",
-  "en": "A sequential JavaScript course from basics to advanced; MDN is a reference, this is a tutorial, so they complement each other.",
+  "tr": "Dili temelden ileriye sıralı işliyor; prototip zinciri, olay döngüsü ve Promise gibi zor konuları atlamıyor. MDN referanstır, bu öğreticidir — ikisi birbirini tamamlar.",
+  "en": "Works the language front to back without skipping the hard parts: prototype chain, event loop, promises. MDN is the reference and this is the tutorial; they complement each other.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1391,8 +1416,8 @@ window.LINKS = [
    "tasarım",
    "ilham"
   ],
-  "tr": "Bölüm bazlı web tasarımı örnekleri (hero, fiyatlandırma, CTA); tüm siteyi değil tek bir bölümü çözmek için.",
-  "en": "Web design examples organised by section (hero, pricing, CTA) — for solving one section rather than a whole site.",
+  "tr": "Bölüm bazlı tasarım örnekleri: hero, fiyatlandırma, SSS, footer ayrı ayrı. Tüm siteyi taramak yerine tek bir bölümü çözmek için filtreleyebiliyorsun.",
+  "en": "Design examples organised by section — hero, pricing, FAQ, footer — filterable so you solve one section instead of scanning whole sites.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1402,10 +1427,11 @@ window.LINKS = [
   "cat": "web",
   "tags": [
    "ücretsiz",
-   "araç"
+   "araç",
+   "standart"
   ],
-  "tr": "HTML’i standarda göre denetleyen resmî doğrulayıcı; tarayıcının sessizce düzelttiği hataları görünür kılar.",
-  "en": "The official validator checking HTML against the standard, surfacing errors browsers silently correct.",
+  "tr": "HTML’i spesifikasyona göre denetliyor; tarayıcının sessizce toparladığı kapatılmamış etiket ve geçersiz iç içe geçmeleri ortaya çıkarıyor. Erişilebilirlik sorunlarının bir kısmı buradan çıkar.",
+  "en": "Checks HTML against the spec, surfacing unclosed tags and invalid nesting that browsers quietly repair. A share of accessibility problems begins right there.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1414,12 +1440,12 @@ window.LINKS = [
   "name": "Web Dev for Beginners",
   "cat": "web",
   "tags": [
-   "ücretsiz",
    "github",
-   "müfredat"
+   "müfredat",
+   "ücretsiz"
   ],
-  "tr": "Microsoft’un 24 derslik web geliştirme müfredatı; her ders öncesi ve sonrası sınavla ilerlemeyi ölçmesi ayırt edici.",
-  "en": "Microsoft’s 24-lesson web development curriculum, distinguished by pre- and post-lesson quizzes that measure progress.",
+  "tr": "24 derslik müfredat; her ders öncesi ve sonrası sınav, sonunda proje var. Kendi kendine çalışırken ilerlemeyi ölçebilmek için bu yapı işe yarıyor.",
+  "en": "A 24-lesson curriculum with a quiz before and after each lesson and a project at the end. That structure is what lets you measure progress when studying alone.",
   "cat_tr": "Web & Frontend",
   "cat_en": "Web & Frontend"
  },
@@ -1428,12 +1454,12 @@ window.LINKS = [
   "name": "API Tasarımı ve Mimarisi",
   "cat": "backend",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "api"
   ],
-  "tr": "Backend mühendisliğine bir saatlik giriş; API tasarım kararlarını gerekçeleriyle anlatıyor.",
-  "en": "A one-hour introduction to backend engineering, covering API design decisions with their reasoning.",
+  "tr": "Bir saatlik backend giriş anlatımı; kaynak adlandırma, sürümleme ve hata biçimi kararlarını gerekçeleriyle işliyor.",
+  "en": "An hour-long backend introduction working through resource naming, versioning and error-format decisions with their reasoning.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1442,12 +1468,13 @@ window.LINKS = [
   "name": "Django",
   "cat": "backend",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "python",
-   "dokümantasyon"
+   "orm",
+   "batteries-included"
   ],
-  "tr": "Yönetim paneli, ORM ve kimlik doğrulamayı hazır getiren Python çatısı; hız kazandırır, esneklikten bir miktar götürür.",
-  "en": "Python framework shipping an admin panel, ORM and auth out of the box — it buys speed at some cost in flexibility.",
+  "tr": "ORM, göç sistemi, yönetim paneli ve kimlik doğrulama kutudan çıkıyor. İlk haftayı kazandırıyor; Django’nun kalıbı dışına çıkmak istediğinde direnç gösteriyor.",
+  "en": "ORM, migrations, admin panel and authentication out of the box. It buys you the first week, and pushes back when you want to step outside its shape.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1456,12 +1483,12 @@ window.LINKS = [
   "name": "Express",
   "cat": "backend",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "javascript",
-   "dokümantasyon"
+   "node"
   ],
-  "tr": "Node.js’in en yaygın minimal web çatısı; ara katman (middleware) modelini standartlaştırdığı için ekosistemin ortak zemini.",
-  "en": "Node.js’s most widespread minimal web framework — its middleware model became the ecosystem’s common ground.",
+  "tr": "Node.js’in minimal çatısı; ara katman (middleware) modelini standartlaştırdığı için ekosistemin ortak dili hâline geldi. Yıllardır neredeyse hiç değişmemesi hem güç hem zayıflık.",
+  "en": "Node’s minimal framework, whose middleware model became the ecosystem’s shared vocabulary. That it has barely changed in years is both its strength and its weakness.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1470,12 +1497,13 @@ window.LINKS = [
   "name": "FastAPI",
   "cat": "backend",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "python",
-   "dokümantasyon"
+   "async",
+   "openapi"
   ],
-  "tr": "Tip ipuçlarından otomatik doğrulama ve API dokümanı üreten Python çatısı; Flask’tan temel farkı bu otomatizm.",
-  "en": "Python framework deriving validation and API docs from type hints — that automation is the core difference from Flask.",
+  "tr": "Tip ipuçlarından hem doğrulama hem OpenAPI şeması üretiyor; `/docs` adresinde çalışan bir test arayüzü kendiliğinden geliyor. Asenkron desteği ASGI üzerinden yerleşik.",
+  "en": "Derives both validation and an OpenAPI schema from type hints, and a working test UI appears at `/docs` by itself. Async support is native through ASGI.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1484,12 +1512,12 @@ window.LINKS = [
   "name": "FastAPI ile 15 Dakikada REST API",
   "cat": "backend",
   "tags": [
-   "ücretsiz",
    "video",
-   "python"
+   "python",
+   "api"
   ],
-  "tr": "FastAPI ile sıfırdan REST API kuran kısa video; dokümana dalmadan önce bütünü görmek için.",
-  "en": "A short video building a REST API from scratch with FastAPI — for seeing the whole shape before diving into the docs.",
+  "tr": "Yönlendirme, Pydantic modeli ve otomatik doküman üretimini uçtan uca gösteren kısa video. Dokümana dalmadan önce çatının şeklini görmek için.",
+  "en": "A short video showing routing, Pydantic models and automatic doc generation end to end — for seeing the framework’s shape before opening the docs.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1498,12 +1526,12 @@ window.LINKS = [
   "name": "Flask",
   "cat": "backend",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "python",
-   "dokümantasyon"
+   "mikro-çatı"
   ],
-  "tr": "Minimal Python web çatısı; Django’nun aksine ne kullanacağına sen karar verirsin, çekirdek kasten küçük tutulmuştur.",
-  "en": "Minimal Python web framework; unlike Django you choose the pieces, because the core is deliberately small.",
+  "tr": "Çekirdek kasten küçük: yönlendirme ve şablon var, ORM ve kimlik doğrulama yok. Ne kullanacağına sen karar veriyorsun, bu da her projede yeniden karar vermek anlamına geliyor.",
+  "en": "A deliberately small core — routing and templating, no ORM or auth. You choose the pieces, which also means choosing them again on every project.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1512,12 +1540,12 @@ window.LINKS = [
   "name": "GraphQL",
   "cat": "backend",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "api",
-   "dokümantasyon"
+   "şema"
   ],
-  "tr": "İstemcinin istediği alanı seçtiği sorgu dili; REST’ten farkı, fazla veri çekme sorununu şema düzeyinde çözmesi.",
-  "en": "A query language where the client picks the fields; unlike REST it solves over-fetching at the schema level.",
+  "tr": "İstemci hangi alanları istediğini kendi belirtiyor; fazla veri çekme ve az veri çekme sorunu şema düzeyinde çözülüyor. Bedeli önbellekleme ve hız sınırlamanın REST’ten zor olması.",
+  "en": "The client declares which fields it wants, so over- and under-fetching are solved at the schema level. The cost is that caching and rate limiting get harder than in REST.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1527,11 +1555,11 @@ window.LINKS = [
   "cat": "backend",
   "tags": [
    "ücretsiz",
-   "sistem tasarımı",
+   "sistem-tasarımı",
    "arşiv"
   ],
-  "tr": "Büyük ölçekli sistem mimarilerinin uzun süredir tutulan arşivi; sektörün ölçeklenme tarihini görmek için değerli.",
-  "en": "A long-running archive of large-scale system architectures — valuable for seeing how scaling practice evolved.",
+  "tr": "On beş yılı aşkın mimari yazısı arşivi. Eski yazılar teknoloji olarak eskimiş olsa da ölçekleme baskısının nasıl karşılandığını görmek için hâlâ okunuyor.",
+  "en": "An archive of architecture write-ups spanning fifteen-plus years. The old posts are dated in technology but still read for how scaling pressure was actually met.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1540,12 +1568,12 @@ window.LINKS = [
   "name": "Kıdemli Mühendis Gibi API Tasarımı",
   "cat": "backend",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "api"
   ],
-  "tr": "REST, GraphQL, kimlik doğrulama ve güvenliği tek videoda karşılaştıran anlatım.",
-  "en": "A single video comparing REST, GraphQL, authentication and security.",
+  "tr": "REST ile GraphQL’i, kimlik doğrulama ve güvenlik kararlarını tek videoda karşılaştırıyor. Hangisinin ne zaman doğru olduğu sorusuna cevap veriyor.",
+  "en": "Compares REST against GraphQL alongside authentication and security decisions in one video, answering when each is the right call.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1558,8 +1586,8 @@ window.LINKS = [
    "php",
    "video"
   ],
-  "tr": "Laravel ekosisteminin ana video eğitim kaynağı; resmî dokümanın anlatmadığı pratik desenler için.",
-  "en": "The main video training source for the Laravel ecosystem, covering practical patterns the docs leave out.",
+  "tr": "Laravel ekosisteminin ana video kaynağı; resmî dokümanın anlatmadığı mimari kararları işliyor. Ekosistem eğitimini tek bir sitenin taşıması alışılmadık bir durum.",
+  "en": "The main video resource for the Laravel ecosystem, covering the architectural decisions the docs leave out. One site carrying an ecosystem’s training is unusual.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1568,12 +1596,12 @@ window.LINKS = [
   "name": "Laravel",
   "cat": "backend",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "php",
-   "dokümantasyon"
+   "orm"
   ],
-  "tr": "PHP’nin en yaygın modern çatısı; kuyruğa alma, zamanlama ve test araçlarını çekirdekte sunması ayırt edici yanı.",
-  "en": "PHP’s most widespread modern framework, distinguished by shipping queues, scheduling and testing in the core.",
+  "tr": "Kuyruk, zamanlayıcı, olay yayını ve test araçları çekirdekte. PHP’nin “eski dil” imajının aksine burada kurulan geliştirici deneyimi çoğu modern çatının üstünde.",
+  "en": "Queues, scheduler, broadcasting and testing tools live in the core. Against PHP’s dated reputation, the developer experience here is ahead of most modern frameworks.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1586,8 +1614,8 @@ window.LINKS = [
    "dokümantasyon",
    "javascript"
   ],
-  "tr": "Node.js’in resmî öğrenme bölümü; çatı öğretmeden önce çalışma zamanının kendisini anlatması değerli.",
-  "en": "Node.js’s official learning section — valuable because it explains the runtime itself before any framework.",
+  "tr": "Çatı öğretmeden önce çalışma zamanının kendisini anlatıyor: olay döngüsü, akışlar, işçi iş parçacıkları. Express öğrenip Node bilmemek yaygın bir boşluk.",
+  "en": "Explains the runtime itself before any framework — event loop, streams, worker threads. Learning Express without knowing Node is a common gap.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1596,12 +1624,11 @@ window.LINKS = [
   "name": "Otel Rezervasyon Sistemi Tasarımı",
   "cat": "backend",
   "tags": [
-   "ücretsiz",
    "video",
-   "sistem tasarımı"
+   "sistem-tasarımı"
   ],
-  "tr": "Uçtan uca sistem tasarımı vaka çalışması; mülakat formatında düşünme sürecini gösteriyor.",
-  "en": "An end-to-end system design case study, showing the thinking process in interview format.",
+  "tr": "Uçtan uca vaka çalışması; eşzamanlı rezervasyon çakışması ve envanter kilitleme gibi gerçek problemleri mülakat formatında çözüyor.",
+  "en": "An end-to-end case study solving real problems — concurrent booking conflicts, inventory locking — in interview format.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1612,10 +1639,11 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "türkçe",
-   "php"
+   "php",
+   "referans"
   ],
-  "tr": "PHP’nin resmî Türkçe kılavuzu; fonksiyon referansı için birincil kaynak.",
-  "en": "PHP’s official Turkish manual — the primary source for function reference.",
+  "tr": "Fonksiyon referansı için birincil kaynak. Sayfa altındaki kullanıcı yorumları bazen dokümanın kendisinden faydalı, bazen on yıllık kötü tavsiye — tarihe bakmak gerekiyor.",
+  "en": "The primary function reference. The user notes below each page are sometimes more useful than the doc and sometimes decade-old bad advice — check the dates.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1628,8 +1656,8 @@ window.LINKS = [
    "php",
    "rehber"
   ],
-  "tr": "Güncel PHP pratiklerini derleyen rehber; internetteki eski ve güvensiz PHP örneklerine karşı düzeltici bir kaynak.",
-  "en": "A guide to current PHP practice — a corrective to the outdated, insecure PHP examples scattered across the web.",
+  "tr": "Güncel PHP pratiklerini derliyor: Composer, PSR standartları, hazırlanmış sorgular. İnternette dolaşan `mysql_*` fonksiyonlu eski örneklere karşı düzeltici bir metin.",
+  "en": "Collects current PHP practice — Composer, PSR standards, prepared statements. A corrective to the old `mysql_*` examples still circulating online.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1638,13 +1666,12 @@ window.LINKS = [
   "name": "Public API Lists",
   "cat": "backend",
   "tags": [
-   "ücretsiz",
    "github",
-   "koleksiyon",
+   "awesome-liste",
    "api"
   ],
-  "tr": "Public APIs listesinin sürdürülen bir çatalı; kimlik doğrulama ve CORS bilgisini tabloda göstermesi pratik.",
-  "en": "A maintained fork of the Public APIs list, practical for showing auth and CORS support in the table.",
+  "tr": "Public APIs’in sürdürülen çatalı. Asıl depo bir dönem bakımsız kaldığında ortaya çıktı; bazı girdileri daha güncel.",
+  "en": "A maintained fork of Public APIs, born while the original went untended. Some of its entries are fresher.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1653,13 +1680,12 @@ window.LINKS = [
   "name": "Public APIs",
   "cat": "backend",
   "tags": [
-   "ücretsiz",
    "github",
-   "koleksiyon",
+   "awesome-liste",
    "api"
   ],
-  "tr": "Herkese açık ücretsiz API’lerin kategorili listesi; proje fikri ararken veya prototipe veri lazım olduğunda ilk durak.",
-  "en": "A categorised list of free public APIs — the first stop when hunting a project idea or data for a prototype.",
+  "tr": "Kategorili ücretsiz API listesi; kimlik doğrulama türü, HTTPS ve CORS desteği tabloda işaretli. Prototipe veri lazım olduğunda ilk durak.",
+  "en": "A categorised list of free APIs with auth type, HTTPS and CORS support marked in the table. First stop when a prototype needs data.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1669,10 +1695,11 @@ window.LINKS = [
   "cat": "backend",
   "tags": [
    "freemium",
-   "tasarım deseni"
+   "tasarım-deseni",
+   "refactoring"
   ],
-  "tr": "Tasarım desenleri ve yeniden düzenleme tekniklerini görselle anlatan kaynak; kitaplardan farkı, her deseni birden çok dilde kodla göstermesi.",
-  "en": "Design patterns and refactoring techniques explained visually; unlike the books it shows each pattern in several languages.",
+  "tr": "Her tasarım desenini şema, gerçekçi örnek ve kod olarak veriyor — üstelik altı ayrı dilde. Gang of Four kitabının okunması güç metnine karşı erişilebilir bir karşılık.",
+  "en": "Presents each design pattern as a diagram, a realistic scenario and code — in six languages. An accessible counterpart to the Gang of Four book’s difficult prose.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1681,12 +1708,11 @@ window.LINKS = [
   "name": "Sistem Tasarımı Anlatımı",
   "cat": "backend",
   "tags": [
-   "ücretsiz",
    "video",
-   "sistem tasarımı"
+   "sistem-tasarımı"
   ],
-  "tr": "API, veritabanı, önbellek, CDN ve yük dengeleme kavramlarını tek videoda toplayan giriş.",
-  "en": "An introduction gathering APIs, databases, caching, CDNs and load balancing into one video.",
+  "tr": "API, veritabanı, önbellek, CDN ve yük dengeleyiciyi tek anlatımda birleştiren giriş. Parçaların birbirine nasıl bağlandığını görmek için.",
+  "en": "An introduction gathering APIs, databases, caching, CDNs and load balancers into one narrative — for seeing how the pieces connect.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1695,12 +1721,13 @@ window.LINKS = [
   "name": "Stripe",
   "cat": "backend",
   "tags": [
+   "saas",
    "ücretli",
    "ödeme",
    "api"
   ],
-  "tr": "Ödeme altyapısı; geliştirici dokümantasyonunun kalitesi sektörde referans kabul edilir.",
-  "en": "Payment infrastructure whose developer documentation is treated as an industry reference point.",
+  "tr": "Ödeme altyapısı. Dokümantasyonu sektörde ölçüt kabul ediliyor — test kartları, webhook yeniden deneme mantığı ve idempotency anahtarları örneklerle anlatılmış.",
+  "en": "Payment infrastructure whose documentation is treated as an industry benchmark — test cards, webhook retry logic and idempotency keys all worked through with examples.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1710,10 +1737,11 @@ window.LINKS = [
   "cat": "backend",
   "tags": [
    "ücretsiz",
-   "sistem tasarımı"
+   "sistem-tasarımı",
+   "vaka"
   ],
-  "tr": "Gerçek şirket mimarilerini vaka çalışması olarak inceleyen kaynak; teorik anlatımlara karşı somut örnek sunar.",
-  "en": "Case studies of real company architectures — concrete examples against the usual theoretical write-ups.",
+  "tr": "Gerçek şirketlerin mimarisini vaka çalışması olarak çözümlüyor; sayısal büyüklükler ve yapılan takasları veriyor. Soyut anlatımlardan bu somutluk ayırıyor.",
+  "en": "Breaks down real company architectures as case studies with actual numbers and the trade-offs taken. That concreteness is what separates it from abstract write-ups.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1722,12 +1750,12 @@ window.LINKS = [
   "name": "System Design Primer",
   "cat": "backend",
   "tags": [
-   "ücretsiz",
    "github",
-   "sistem tasarımı"
+   "sistem-tasarımı",
+   "mülakat"
   ],
-  "tr": "Sistem tasarımı mülakatlarının en yaygın çalışma kaynağı; kavramları örnek mimarilerle birlikte vermesi ayırt edici.",
-  "en": "The most common study resource for system design interviews, pairing concepts with worked example architectures.",
+  "tr": "Ölçekleme kavramlarını (önbellek, parçalama, kuyruk, CAP) örnek mimarilerle birlikte veriyor. Alanın en çok yıldızlanan kaynağı; mülakat dışında da mimari sözlüğü olarak işe yarıyor.",
+  "en": "Pairs scaling concepts — caching, sharding, queues, CAP — with worked architectures. The field’s most-starred resource, and useful as an architecture vocabulary beyond interviews.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1737,10 +1765,11 @@ window.LINKS = [
   "cat": "backend",
   "tags": [
    "ücretsiz",
+   "php",
    "dokümantasyon"
   ],
-  "tr": "WordPress eklenti ve tema geliştirme referansı; kanca (hook) sistemini anlamak için birincil kaynak.",
-  "en": "Reference for WordPress plugin and theme development — the primary source for understanding the hook system.",
+  "tr": "Eklenti ve tema geliştirme referansı. Kanca (hook) sistemi WordPress’in tamamını açıklayan tek kavram; onu anlamadan hiçbir şey yerine oturmuyor.",
+  "en": "The plugin and theme development reference. The hook system is the one concept that explains all of WordPress, and nothing falls into place until you have it.",
   "cat_tr": "Backend, API & Sistem Tasarımı",
   "cat_en": "Backend, API & System Design"
  },
@@ -1749,11 +1778,12 @@ window.LINKS = [
   "name": "Electron",
   "cat": "mobil",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "javascript",
    "masaüstü"
   ],
-  "tr": "Web teknolojileriyle masaüstü uygulaması üreten çatı; kolaylık karşılığında yüksek bellek kullanımıyla eleştiriliyor.",
-  "en": "Framework building desktop apps with web technology — criticised for high memory use in exchange for the convenience.",
+  "tr": "Chromium ve Node.js’i paketleyip web teknolojisiyle masaüstü uygulaması çıkarıyor. VS Code ve Slack bununla yazıldı; bellek tüketimi de bu yüzden sürekli eleştiriliyor.",
+  "en": "Bundles Chromium and Node.js to ship desktop apps built with web technology. VS Code and Slack were built this way — and its memory footprint is criticised for the same reason.",
   "cat_tr": "Mobil & Masaüstü",
   "cat_en": "Mobile & Desktop"
  },
@@ -1763,10 +1793,11 @@ window.LINKS = [
   "cat": "mobil",
   "tags": [
    "dokümantasyon",
-   "masaüstü"
+   "masaüstü",
+   "güvenlik"
   ],
-  "tr": "Electron’un ana süreç ve işleyici süreç ayrımını anlatan resmî referans; güvenlik ayarları için birincil kaynak.",
-  "en": "Official reference explaining Electron’s main and renderer process split — the primary source for its security settings.",
+  "tr": "Ana süreç ile işleyici süreç ayrımı ve bunlar arası iletişim (IPC) referansı. contextIsolation ve nodeIntegration ayarları güvenlik açısından kritik; varsayılanları değiştirme.",
+  "en": "Reference for the main/renderer process split and the IPC between them. The contextIsolation and nodeIntegration settings are security-critical — leave the defaults alone.",
   "cat_tr": "Mobil & Masaüstü",
   "cat_en": "Mobile & Desktop"
  },
@@ -1775,12 +1806,12 @@ window.LINKS = [
   "name": "Expo",
   "cat": "mobil",
   "tags": [
-   "açık kaynak",
-   "dokümantasyon",
+   "açık-kaynak",
+   "react-native",
    "mobil"
   ],
-  "tr": "React Native geliştirmeyi yerel derleme zincirinden kurtaran araç seti; kurulum yükünü kaldırması başlıca avantajı.",
-  "en": "Toolchain freeing React Native development from native build setup — removing that burden is its main advantage.",
+  "tr": "React Native’i Xcode ve Android Studio kurmadan geliştirilebilir kılıyor; EAS ile derleme bulutta yapılıyor. Yerel modül eklemek eskisi kadar sorun değil artık.",
+  "en": "Makes React Native developable without installing Xcode or Android Studio, with EAS building in the cloud. Adding native modules is no longer the obstacle it once was.",
   "cat_tr": "Mobil & Masaüstü",
   "cat_en": "Mobile & Desktop"
  },
@@ -1789,12 +1820,13 @@ window.LINKS = [
   "name": "Flutter",
   "cat": "mobil",
   "tags": [
-   "açık kaynak",
-   "dokümantasyon",
-   "mobil"
+   "açık-kaynak",
+   "dart",
+   "mobil",
+   "masaüstü"
   ],
-  "tr": "Tek kod tabanından mobil, web ve masaüstü üreten çatı; React Native’den farkı, platform bileşenlerini kullanmak yerine kendi çizim motorunu kullanması.",
-  "en": "Framework producing mobile, web and desktop from one codebase; unlike React Native it draws its own widgets instead of using platform components.",
+  "tr": "Skia/Impeller ile her pikseli kendisi çiziyor; platform bileşeni kullanmıyor. Bu yüzden iOS ve Android’de birebir aynı görünüyor — istediğin buysa güç, değilse sorun.",
+  "en": "Draws every pixel itself through Skia/Impeller rather than using platform widgets, so iOS and Android look identical. A strength if that is what you want, a problem if it is not.",
   "cat_tr": "Mobil & Masaüstü",
   "cat_en": "Mobile & Desktop"
  },
@@ -1803,12 +1835,13 @@ window.LINKS = [
   "name": "Rive (Flutter)",
   "cat": "mobil",
   "tags": [
+   "saas",
    "freemium",
    "animasyon",
    "mobil"
   ],
-  "tr": "Etkileşimli vektör animasyonlarını uygulamaya gömme aracı; Lottie’den farkı, animasyonun duruma göre tepki verebilmesi.",
-  "en": "Embeds interactive vector animation into apps; unlike Lottie the animation can react to state.",
+  "tr": "Vektör animasyonu uygulamaya gömüyor; Lottie’den farkı, animasyonun durum makinesi taşıyıp kullanıcı etkileşimine tepki verebilmesi. Dosya boyutu da belirgin küçük.",
+  "en": "Embeds vector animation into an app. Unlike Lottie the animation carries a state machine and reacts to user interaction, and the file size is markedly smaller.",
   "cat_tr": "Mobil & Masaüstü",
   "cat_en": "Mobile & Desktop"
  },
@@ -1821,8 +1854,8 @@ window.LINKS = [
    "nosql",
    "kurs"
   ],
-  "tr": "Couchbase’in resmî eğitim portalı; belge veritabanını SQL benzeri sorgu diliyle kullanması diğer NoSQL seçeneklerinden ayırıyor.",
-  "en": "Couchbase’s official training; querying a document store with a SQL-like language is what separates it from other NoSQL options.",
+  "tr": "Belge veritabanını SQL benzeri bir sorgu diliyle (N1QL) kullanıyor. İlişkisel dünyadan gelen ekipler için MongoDB’nin sorgu sözdiziminden daha az kırılma noktası.",
+  "en": "Queries a document store with a SQL-like language (N1QL), which is a gentler break for teams arriving from the relational world than MongoDB’s query syntax.",
   "cat_tr": "Veritabanı",
   "cat_en": "Databases"
  },
@@ -1831,12 +1864,13 @@ window.LINKS = [
   "name": "Firebase",
   "cat": "veritabani",
   "tags": [
+   "saas",
    "freemium",
-   "dokümantasyon",
-   "backend"
+   "backend",
+   "realtime"
   ],
-  "tr": "Google’ın sunucusuz arka uç servisi; veritabanı, kimlik doğrulama ve barındırmayı tek pakette vermesi hız kazandırıyor.",
-  "en": "Google’s serverless backend bundling database, auth and hosting in one package, which buys development speed.",
+  "tr": "Gerçek zamanlı veritabanı, kimlik doğrulama, depolama ve barındırma tek pakette. Prototipi çok hızlandırıyor; sorgu esnekliği ve satıcı bağımlılığı ise sonradan sorun oluyor.",
+  "en": "Realtime database, auth, storage and hosting in one package. It accelerates a prototype sharply, while query flexibility and vendor lock-in become the later problem.",
   "cat_tr": "Veritabanı",
   "cat_en": "Databases"
  },
@@ -1845,11 +1879,12 @@ window.LINKS = [
   "name": "İlişkisel Veritabanı Tasarımı",
   "cat": "veritabani",
   "tags": [
+   "video",
    "ücretsiz",
-   "video"
+   "modelleme"
   ],
-  "tr": "Normalizasyon ve şema tasarımına odaklı tam kurs; sorgu yazmayı değil, tabloyu doğru kurmayı öğretir.",
-  "en": "A full course on normalisation and schema design — it teaches getting the tables right, not writing queries.",
+  "tr": "Normalizasyon formlarını ve şema tasarımını işleyen tam kurs. Sorgu yazmayı değil tabloyu doğru kurmayı öğretiyor — sonraki tüm sorunların kaynağı burası.",
+  "en": "A full course on normal forms and schema design. It teaches getting the tables right rather than writing queries — which is where every later problem originates.",
   "cat_tr": "Veritabanı",
   "cat_en": "Databases"
  },
@@ -1862,8 +1897,8 @@ window.LINKS = [
    "nosql",
    "kurs"
   ],
-  "tr": "MongoDB’nin resmî ücretsiz kursları; ilişkisel modelden geçenler için veri modelleme dersi en kritik kısım.",
-  "en": "MongoDB’s official free courses; the data modelling unit is the critical part for anyone arriving from relational.",
+  "tr": "MongoDB’nin resmî ücretsiz kursları. Veri modelleme dersi kritik: ilişkisel alışkanlıkla belge veritabanı tasarlamak, ortaya çıkan en yaygın performans sorunu.",
+  "en": "MongoDB’s official free courses. The data modelling unit is the important one — designing a document store with relational habits is the most common source of performance trouble.",
   "cat_tr": "Veritabanı",
   "cat_en": "Databases"
  },
@@ -1873,10 +1908,11 @@ window.LINKS = [
   "cat": "veritabani",
   "tags": [
    "ücretsiz",
-   "sql"
+   "sql",
+   "mysql"
   ],
-  "tr": "MySQL’i baştan sona örneklerle anlatan öğretici; resmî dokümana göre çok daha okunur bir giriş.",
-  "en": "A hands-on MySQL tutorial that is far more readable as an introduction than the official manual.",
+  "tr": "Örnek veritabanı üzerinden MySQL’i baştan sona işliyor; JOIN türleri, alt sorgular ve saklı yordamlar ayrı ayrı ele alınmış. Resmî kılavuzdan çok daha okunur bir giriş.",
+  "en": "Works MySQL end to end over a sample database, treating join types, subqueries and stored procedures separately. Far more readable as an introduction than the official manual.",
   "cat_tr": "Veritabanı",
   "cat_en": "Databases"
  },
@@ -1889,22 +1925,22 @@ window.LINKS = [
    "sql",
    "postgres"
   ],
-  "tr": "PostgreSQL’e örnek veri tabanı üzerinden giriş; her konuyu çalıştırılabilir sorguyla göstermesi ayırt edici.",
-  "en": "An introduction to PostgreSQL over a sample database, showing each topic with a runnable query.",
+  "tr": "Her konuyu çalıştırılabilir sorguyla gösteren PostgreSQL öğreticisi. Pencere fonksiyonları ve CTE bölümleri, çoğu SQL kursunun atladığı yerde derinleşiyor.",
+  "en": "A PostgreSQL tutorial showing each topic with a runnable query, going deep on window functions and CTEs where most SQL courses stop.",
   "cat_tr": "Veritabanı",
   "cat_en": "Databases"
  },
  {
   "url": "https://www.reddit.com/r/SQL/comments/11qe99b/best_way_to_learn_sql/",
-  "name": "SQL Nasıl Öğrenilir (r/SQL)",
+  "name": "SQL Nasıl Öğrenilir",
   "cat": "veritabani",
   "tags": [
    "ücretsiz",
    "topluluk",
    "sql"
   ],
-  "tr": "Deneyimli kullanıcıların SQL öğrenme yollarını tartıştığı başlık; pazarlama içermeyen kaynak önerileri için.",
-  "en": "A thread where experienced users debate how to learn SQL — resource suggestions without marketing.",
+  "tr": "Deneyimli kullanıcıların SQL öğrenme yollarını tartıştığı başlık. Kurs satmayan insanların önerileri olduğu için ayıklama işini önden yapmış oluyor.",
+  "en": "A thread where experienced users argue over how to learn SQL. Because nobody there is selling a course, the filtering is already done.",
   "cat_tr": "Veritabanı",
   "cat_en": "Databases"
  },
@@ -1913,12 +1949,12 @@ window.LINKS = [
   "name": "SQL Sıfırdan İleri Seviye",
   "cat": "veritabani",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "sql"
   ],
-  "tr": "Dört saatte temelden ileri seviyeye SQL; tek oturumda bütünü görmek isteyenler için.",
-  "en": "SQL from basics to advanced in four hours — for seeing the whole picture in one sitting.",
+  "tr": "Dört saatte temelden ileri seviyeye SQL; tek oturumda bütünü görmek isteyenler için. Pencere fonksiyonlarına kadar gidiyor, temel SELECT’te kalmıyor.",
+  "en": "SQL from basics to advanced in four hours for anyone who wants the whole picture in one sitting. It reaches window functions rather than stopping at basic SELECT.",
   "cat_tr": "Veritabanı",
   "cat_en": "Databases"
  },
@@ -1927,11 +1963,12 @@ window.LINKS = [
   "name": "Veritabanları Derinlemesine",
   "cat": "veritabani",
   "tags": [
+   "video",
    "ücretsiz",
-   "video"
+   "iç-mekanizma"
   ],
-  "tr": "Veritabanı iç mekanizmalarını (indeks, işlem, kilit) anlatan kapsamlı kurs; ürün öğretici değil kavram dersi.",
-  "en": "A comprehensive course on database internals — indexes, transactions, locks. Concepts rather than a product tutorial.",
+  "tr": "İndeks yapıları, işlem yalıtım seviyeleri ve kilitlenme gibi iç mekanizmaları anlatan kurs. Ürün öğreticisi değil; hangi veritabanını kullanırsan kullan geçerli.",
+  "en": "A course on internals — index structures, transaction isolation levels, locking. Not a product tutorial; it holds regardless of which database you use.",
   "cat_tr": "Veritabanı",
   "cat_en": "Databases"
  },
@@ -1941,10 +1978,11 @@ window.LINKS = [
   "cat": "devops",
   "tags": [
    "ücretli",
-   "sunucu"
+   "sunucu",
+   "yargı-bölgesi"
   ],
-  "tr": "Moldova merkezli barındırma sağlayıcı; içerik politikası esnekliği ve yargı bölgesi farkıyla tercih ediliyor.",
-  "en": "Moldova-based hosting provider, chosen for its content policy flexibility and different jurisdiction.",
+  "tr": "Moldova merkezli barındırma. Farklı bir yargı bölgesi ve gevşek içerik politikası sunması sebebiyle tercih ediliyor; bu aynı zamanda komşuların kim olduğu sorusunu doğuruyor.",
+  "en": "Moldova-based hosting chosen for a different jurisdiction and looser content policy — which also raises the question of who your neighbours are.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -1956,8 +1994,8 @@ window.LINKS = [
    "ücretli",
    "bulut"
   ],
-  "tr": "En geniş servis yelpazesine sahip bulut sağlayıcı; genişlik avantajı, karmaşıklık ve maliyet takibi ise dezavantajı.",
-  "en": "The cloud provider with the widest service range; breadth is the advantage, complexity and cost tracking the downside.",
+  "tr": "Servis yelpazesi en geniş bulut. Genişlik avantaj ama maliyet takibi ayrı bir uzmanlık alanı; veri çıkış (egress) ücretleri özellikle sürpriz yapıyor.",
+  "en": "The cloud with the widest service range. The breadth is an advantage, while cost tracking is its own discipline — egress charges in particular catch people out.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -1966,12 +2004,12 @@ window.LINKS = [
   "name": "Apache HTTP Server",
   "cat": "devops",
   "tags": [
-   "açık kaynak",
-   "dokümantasyon",
-   "sunucu"
+   "açık-kaynak",
+   "sunucu",
+   "dokümantasyon"
   ],
-  "tr": "Klasik web sunucusunun resmî dokümanı; .htaccess ile dizin bazlı yapılandırma esnekliği hâlâ ayırt edici yanı.",
-  "en": "Official docs for the classic web server; per-directory configuration via .htaccess remains its distinguishing flexibility.",
+  "tr": "Modül mimarisi ve .htaccess ile dizin bazlı yapılandırma esnekliği. Paylaşımlı barındırmada hâlâ hâkim; nginx’e göre yüksek eşzamanlılıkta daha çok bellek yiyor.",
+  "en": "A module architecture plus per-directory configuration through .htaccess. Still dominant in shared hosting, and hungrier for memory than nginx under high concurrency.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -1980,12 +2018,12 @@ window.LINKS = [
   "name": "Apache Kafka",
   "cat": "devops",
   "tags": [
-   "açık kaynak",
-   "dokümantasyon",
-   "kuyruk"
+   "açık-kaynak",
+   "kuyruk",
+   "olay-akışı"
   ],
-  "tr": "Yüksek hacimli olay akışı platformu; klasik mesaj kuyruklarından farkı, mesajları tüketildikten sonra da saklaması.",
-  "en": "High-volume event streaming platform; unlike classic message queues it retains messages after consumption.",
+  "tr": "Mesajları tüketildikten sonra da saklıyor; tüketiciler kendi konumlarını (offset) taşıyıp geçmişi yeniden okuyabiliyor. Klasik kuyruklardan asıl ayrımı bu kalıcılık.",
+  "en": "Retains messages after consumption, with consumers carrying their own offsets so they can replay history. That durability is the real split from classic queues.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -1995,10 +2033,11 @@ window.LINKS = [
   "cat": "devops",
   "tags": [
    "ücretli",
-   "sunucu"
+   "sunucu",
+   "vps"
   ],
   "tr": "VPS ve fiziksel sunucu sağlayıcı; küçük ölçekli projeler için bütçe odaklı bir seçenek.",
-  "en": "VPS and dedicated server provider — a budget-oriented option for small-scale projects.",
+  "en": "A VPS and dedicated server provider positioned on budget for small-scale projects.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2007,12 +2046,12 @@ window.LINKS = [
   "name": "Celery",
   "cat": "devops",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "python",
    "kuyruk"
   ],
-  "tr": "Python’da arka plan görev kuyruğunun standardı; zamanlanmış ve gecikmeli işleri de üstlenmesi ayırt edici.",
-  "en": "The standard background task queue in Python, also handling scheduled and delayed jobs.",
+  "tr": "Python’da arka plan görevlerinin standardı; Redis ya da RabbitMQ’yu aracı olarak kullanıyor. Zamanlanmış görevler (beat) ve yeniden deneme mantığı da içinde.",
+  "en": "The standard for background tasks in Python, using Redis or RabbitMQ as a broker, with scheduled tasks (beat) and retry logic included.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2021,12 +2060,13 @@ window.LINKS = [
   "name": "Dokploy",
   "cat": "devops",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "kendi sunucunda"
+   "self-hosted",
+   "docker"
   ],
-  "tr": "Kendi sunucunda çalışan dağıtım platformu; Vercel/Heroku deneyimini kendi VPS’inde kurmayı hedefliyor.",
-  "en": "A self-hosted deployment platform aiming to bring the Vercel/Heroku experience to your own VPS.",
+  "tr": "Kendi VPS’inde Vercel benzeri dağıtım deneyimi kuruyor: git iterek yayına alma, veritabanı sağlama ve otomatik TLS. Heroku’nun ücretsiz katmanı kapandıktan sonra doğan boşluğu dolduruyor.",
+  "en": "Brings a Vercel-like deploy experience to your own VPS — git-push deploys, database provisioning, automatic TLS. It fills the hole left when Heroku’s free tier closed.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2035,12 +2075,12 @@ window.LINKS = [
   "name": "Gource",
   "cat": "devops",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "git",
    "görselleştirme"
   ],
-  "tr": "Depo geçmişini animasyonlu ağaç olarak gösteren araç; teknik analizden çok proje tarihini anlatmak için.",
-  "en": "Renders repository history as an animated tree — more for telling a project’s story than technical analysis.",
+  "tr": "Depo geçmişini büyüyen bir ağaç animasyonu olarak çiziyor; kimin nereye dokunduğu görünür oluyor. Teknik analiz aracı değil, proje tarihini anlatmak için.",
+  "en": "Renders repository history as a growing animated tree where you see who touched what. Not an analysis tool — a way to narrate a project’s history.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2049,12 +2089,12 @@ window.LINKS = [
   "name": "Grafana",
   "cat": "devops",
   "tags": [
-   "açık kaynak",
-   "gözlem",
-   "panel"
+   "açık-kaynak",
+   "gözlemlenebilirlik",
+   "pano"
   ],
-  "tr": "Metrik ve günlük görselleştirme panosu; veri kaynağından bağımsız olması, izleme yığınında ortak arayüz olmasını sağlıyor.",
-  "en": "Dashboarding for metrics and logs; being data-source agnostic is why it became the common front-end of monitoring stacks.",
+  "tr": "Prometheus, Loki, PostgreSQL ve onlarca kaynağı aynı panoda birleştiriyor. Veri kaynağından bağımsız olması, izleme yığınının ortak yüzü hâline gelmesini sağladı.",
+  "en": "Unifies Prometheus, Loki, PostgreSQL and dozens of sources on one dashboard. Being data-source agnostic is how it became the shared face of monitoring stacks.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2067,8 +2107,8 @@ window.LINKS = [
    "türkçe",
    "barındırma"
   ],
-  "tr": "Türkiye merkezli barındırma ve alan adı sağlayıcı; yerel ödeme ve Türkçe destek isteyenler için.",
-  "en": "Turkey-based hosting and domain provider, for those wanting local payment and Turkish-language support.",
+  "tr": "Türkiye merkezli barındırma ve alan adı; .tr uzantısı, yerel ödeme ve Türkçe destek sunuyor. Sunucunun Türkiye’de olması gereken projeler için pratik.",
+  "en": "Turkey-based hosting and domains with .tr registration, local payment and Turkish support — practical when the server has to sit in Turkey.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2081,8 +2121,8 @@ window.LINKS = [
    "sunucu",
    "barındırma"
   ],
-  "tr": "Almanya merkezli sunucu sağlayıcı; büyük bulutlara göre belirgin şekilde ucuz olması başlıca tercih sebebi.",
-  "en": "German server provider whose markedly lower price than the big clouds is the main reason people choose it.",
+  "tr": "Almanya ve Finlandiya’da fiziksel sunucu ve VPS; aynı çekirdek/RAM için büyük bulutların birkaç katı ucuz. Yönetilen servis yok, işletim tamamen sana kalıyor.",
+  "en": "Dedicated servers and VPS in Germany and Finland at a fraction of the big clouds’ price for the same cores and RAM. No managed services — operations are entirely yours.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2094,8 +2134,8 @@ window.LINKS = [
    "ücretli",
    "sunucu"
   ],
-  "tr": "Apache uyumlu ama daha hızlı olduğu iddiasındaki ticari web sunucusu; paylaşımlı barındırmada yaygın.",
-  "en": "A commercial web server claiming Apache compatibility with better performance; common in shared hosting.",
+  "tr": "Apache yapılandırmasını olduğu gibi okuyabilen ticari sunucu; olay güdümlü çekirdeği ile daha az kaynak tüketiyor. WordPress barındırmada önbellek eklentisiyle birlikte yaygın.",
+  "en": "A commercial server that reads Apache configuration as-is while using an event-driven core and fewer resources. Common in WordPress hosting alongside its cache plugin.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2105,10 +2145,11 @@ window.LINKS = [
   "cat": "devops",
   "tags": [
    "dokümantasyon",
-   "sunucu"
+   "sunucu",
+   "önbellek"
   ],
-  "tr": "LiteSpeed yapılandırma referansı; önbellek eklentisi ayarları için birincil kaynak.",
-  "en": "LiteSpeed configuration reference — the primary source for its cache plugin settings.",
+  "tr": "Yapılandırma referansı; LSCache kurallarının nasıl yazılacağı burada. Önbellekleme ayarları performansın büyük kısmını belirliyor.",
+  "en": "The configuration reference, including how LSCache rules are written — cache settings account for most of the performance you get.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2117,12 +2158,13 @@ window.LINKS = [
   "name": "Neko",
   "cat": "devops",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "kendi sunucunda"
+   "docker",
+   "webrtc"
   ],
-  "tr": "Tarayıcıda paylaşılabilir sanal tarayıcı çalıştıran sunucu; birlikte izleme ve izole gezinme için kullanılıyor.",
-  "en": "Runs a shareable virtual browser in a container, used for watch-together sessions and isolated browsing.",
+  "tr": "Kapsayıcı içinde tarayıcı çalıştırıp WebRTC ile paylaşıyor; birden çok kişi aynı oturumu kontrol edebiliyor. Birlikte izleme ve izole gezinme için kullanılıyor.",
+  "en": "Runs a browser in a container and shares it over WebRTC, with several people able to control one session. Used for watch-together and for isolated browsing.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2131,12 +2173,12 @@ window.LINKS = [
   "name": "nginx",
   "cat": "devops",
   "tags": [
-   "açık kaynak",
-   "dokümantasyon",
-   "sunucu"
+   "açık-kaynak",
+   "sunucu",
+   "reverse-proxy"
   ],
-  "tr": "Yaygın web sunucusu ve ters vekilin resmî dokümanı; Apache’den farkı, olay güdümlü mimarisiyle yüksek eşzamanlılıkta daha az bellek kullanması.",
-  "en": "Official docs for the widespread web server and reverse proxy; its event-driven architecture uses less memory than Apache under high concurrency.",
+  "tr": "Olay güdümlü mimarisi sayesinde on binlerce eşzamanlı bağlantıyı düşük bellekle taşıyor. Ters vekil ve yük dengeleyici olarak kullanımı, web sunucusu olmasından daha yaygın.",
+  "en": "Its event-driven architecture carries tens of thousands of concurrent connections on little memory. It is used as a reverse proxy and load balancer more often than as a web server.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2147,10 +2189,10 @@ window.LINKS = [
   "tags": [
    "ücretli",
    "gizlilik",
-   "alan adı"
+   "alan-adı"
   ],
-  "tr": "Gizlilik odaklı alan adı ve sunucu sağlayıcı; alan adını senin adına kendi üstüne kaydetmesiyle ayrışıyor.",
-  "en": "Privacy-focused domain and server provider, distinguished by registering the domain in its own name on your behalf.",
+  "tr": "Alan adını senin adına kendi üstüne kaydediyor, yani WHOIS kaydında sen görünmüyorsun. Vekil gizlilik hizmetinden farkı, mülkiyetin hukuken onlarda olması — bu bir güven meselesi.",
+  "en": "Registers the domain in its own name on your behalf, so you do not appear in WHOIS. Unlike a privacy proxy the legal ownership sits with them, which makes it a question of trust.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2164,8 +2206,8 @@ window.LINKS = [
    "kitap",
    "git"
   ],
-  "tr": "Git’in resmî kitabının Türkçe çevirisi; komut ezberi yerine Git’in veri modelini anlatması ayırt edici yanı.",
-  "en": "The Turkish translation of Git’s official book, distinguished by teaching Git’s data model rather than command recipes.",
+  "tr": "Git’in resmî kitabının Türkçe çevirisi. İç mekanizma bölümü (nesne modeli, referanslar) komut ezberlemekten kurtarıyor — Git’i asıl anlaşılır kılan kısım orası.",
+  "en": "The Turkish translation of Git’s official book. The internals chapter — object model, refs — is what frees you from memorising commands and actually makes Git make sense.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2174,12 +2216,12 @@ window.LINKS = [
   "name": "RabbitMQ Öğreticileri",
   "cat": "devops",
   "tags": [
-   "açık kaynak",
-   "dokümantasyon",
-   "kuyruk"
+   "açık-kaynak",
+   "kuyruk",
+   "amqp"
   ],
-  "tr": "Mesaj kuyruğu desenlerini altı adımda öğreten resmî seri; Kafka’dan farkı, klasik iş kuyruğu senaryolarına odaklanması.",
-  "en": "The official six-step series on message queue patterns; unlike Kafka it centres on classic task-queue scenarios.",
+  "tr": "Altı adımda mesaj kuyruğu desenlerini öğreten resmî seri: iş kuyruğu, yayın-abone, yönlendirme, RPC. Kafka olay akışına, bu görev dağıtımına odaklı.",
+  "en": "The official six-step series on queue patterns — work queues, pub/sub, routing, RPC. Kafka is for event streaming; this is for task distribution.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2189,10 +2231,11 @@ window.LINKS = [
   "cat": "devops",
   "tags": [
    "dokümantasyon",
-   "önbellek"
+   "önbellek",
+   "veri-yapısı"
   ],
-  "tr": "Redis veri yapıları ve kalıcılık seçeneklerinin resmî referansı; hangi yapının ne zaman kullanılacağı burada anlatılıyor.",
-  "en": "Official reference for Redis data structures and persistence — which structure to use when is documented here.",
+  "tr": "Liste, küme, sıralı küme ve akış gibi veri yapılarının referansı. Redis’i basit bir anahtar-değer deposu sanmak, elindeki aracın çoğunu kullanmamak demek.",
+  "en": "The reference for its data structures — lists, sets, sorted sets, streams. Treating Redis as a plain key-value store means leaving most of the tool unused.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2202,11 +2245,11 @@ window.LINKS = [
   "cat": "devops",
   "tags": [
    "freemium",
-   "gözlem",
-   "hata"
+   "açık-kaynak",
+   "hata-izleme"
   ],
-  "tr": "Uygulama hatalarını yığın izi ve bağlamıyla toplayan servis; günlük dosyası okumaya karşı gruplandırılmış hata görünümü sunar.",
-  "en": "Collects application errors with stack traces and context, giving grouped error views instead of log-file reading.",
+  "tr": "Hataları yığın izi, kaynak haritası ve kullanıcı bağlamıyla topluyor ve benzerlerini grupluyor. Günlük dosyası okumaya karşı, aynı hatanın kaç kullanıcıyı etkilediğini gösteriyor.",
+  "en": "Collects errors with stack traces, source maps and user context, grouping duplicates. Against reading log files, it tells you how many users a given error actually hit.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2215,11 +2258,13 @@ window.LINKS = [
   "name": "Vercel",
   "cat": "devops",
   "tags": [
+   "saas",
    "freemium",
-   "barındırma"
+   "barındırma",
+   "edge"
   ],
-  "tr": "Ön yüz odaklı dağıtım platformu; git iterek yayına alma ve önizleme ortamlarını standartlaştırmasıyla biliniyor.",
-  "en": "Frontend-focused deployment platform, known for standardising git-push deploys and preview environments.",
+  "tr": "Ön yüz odaklı dağıtım; her PR için önizleme ortamı açması sektörde standart hâline geldi. Next.js’in arkasındaki şirket, dolayısıyla o çatıda en iyi entegrasyon burada.",
+  "en": "Frontend-focused deployment whose per-PR preview environments became an industry standard. It is the company behind Next.js, so integration with that framework is tightest here.",
   "cat_tr": "DevOps & Altyapı",
   "cat_en": "DevOps & Infrastructure"
  },
@@ -2228,12 +2273,12 @@ window.LINKS = [
   "name": "20 Dakikada Tüm Ağ Kavramları",
   "cat": "ag",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "ağ"
   ],
-  "tr": "Ağ terimlerini hızlıca tarayan özet video; öğrenmek için değil, hatırlamak ve boşluk bulmak için.",
-  "en": "A rapid sweep of networking terms — not for learning, but for refreshing and spotting gaps.",
+  "tr": "Ağ terimlerini hızla tarayan özet. Öğrenmek için değil; bildiğini sandığın yerlerdeki boşlukları yirmi dakikada bulmak için.",
+  "en": "A rapid sweep of networking terminology. Not for learning, but for finding in twenty minutes the gaps in what you assumed you knew.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2243,11 +2288,11 @@ window.LINKS = [
   "cat": "ag",
   "tags": [
    "ücretli",
-   "araç",
-   "yedekleme"
+   "yedekleme",
+   "windows"
   ],
-  "tr": "Disk imajı alma ve geri yükleme yazılımı; dosya yedeklemesinden farkı, sistemin tamamını bire bir kopyalaması.",
-  "en": "Disk imaging and restore software; unlike file backup it copies the entire system bit for bit.",
+  "tr": "Sektör bazında disk imajı alıp geri yüklüyor; dosya yedeklemesinden farkı, işletim sistemi ve önyükleme kaydı dahil her şeyi bire bir kopyalaması.",
+  "en": "Takes and restores sector-level disk images. Unlike file backup it copies everything bit for bit, operating system and boot record included.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2256,12 +2301,12 @@ window.LINKS = [
   "name": "Bilgisayar Ağları Temelleri",
   "cat": "ag",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "ağ"
   ],
-  "tr": "Ağ kavramlarının tam kurs formatında anlatımı; sertifika çalışmasından önce temel oturtmak için.",
-  "en": "A full-course walk through networking concepts, useful for grounding before certification study.",
+  "tr": "OSI katmanlarından yönlendirmeye kadar ağ kavramlarını tam kurs formatında işliyor. Sertifika çalışmasına başlamadan önce zemin kurmak için.",
+  "en": "Works networking concepts from the OSI layers through routing in full-course format — for laying the ground before certification study.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2274,8 +2319,8 @@ window.LINKS = [
    "ağ",
    "kurs"
   ],
-  "tr": "Cisco’nun resmî ağ eğitimi programı; sanal laboratuvarlarla teoriyi uygulamaya bağlaması ayırt edici yanı.",
-  "en": "Cisco’s official networking curriculum, distinguished by tying theory to practice through virtual labs.",
+  "tr": "Cisco’nun resmî ağ müfredatı; CCNA’ya hazırlayan derslerin bir kısmı ücretsiz. Packet Tracer laboratuvarlarıyla teoriyi topoloji kurarak sınıyorsun.",
+  "en": "Cisco’s official networking curriculum, with part of the CCNA track free. Packet Tracer labs let you test the theory by building topologies.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2288,8 +2333,8 @@ window.LINKS = [
    "ağ",
    "referans"
   ],
-  "tr": "SG500 anahtar serisinin teknik veri sayfaları; model seçimi ve özellik karşılaştırması için.",
-  "en": "Datasheets for the SG500 switch series, for model selection and feature comparison.",
+  "tr": "SG500 serisinin teknik veri sayfaları; port sayısı, PoE bütçesi ve yığınlama desteği karşılaştırmalı. İkinci el alırken model farklarını bilmek gerekiyor.",
+  "en": "Datasheets for the SG500 series comparing port counts, PoE budgets and stacking support — the model differences you need when buying second-hand.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2302,8 +2347,8 @@ window.LINKS = [
    "ağ",
    "rehber"
   ],
-  "tr": "Belirli bir Cisco anahtar modelinin kurulum rehberi; resmî kılavuzdan farkı, adım adım ekran görüntüleriyle ilerlemesi.",
-  "en": "A setup guide for a specific Cisco switch; unlike the official manual it walks through with screenshots.",
+  "tr": "Belirli bir anahtar modelinin ilk kurulumu, ekran görüntüleriyle adım adım. Resmî kılavuzun atladığı pratik ayrıntılar burada.",
+  "en": "First-time setup of one specific switch model, screenshot by screenshot — with the practical details the official manual skips.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2312,12 +2357,12 @@ window.LINKS = [
   "name": "DHCP (CompTIA A+)",
   "cat": "ag",
   "tags": [
-   "ücretsiz",
    "video",
-   "sertifika"
+   "sertifika",
+   "ağ"
   ],
-  "tr": "CompTIA A+ müfredatındaki DHCP konusunun kısa anlatımı; sınav kapsamına birebir eşlenmesi ayırt edici.",
-  "en": "A short explanation of DHCP from the CompTIA A+ syllabus, mapped exactly to exam scope.",
+  "tr": "A+ müfredatındaki DHCP konusunun kısa anlatımı; kapsam sınav hedefine birebir oturuyor. Fazlasını anlatmaması sınav çalışmasında avantaj.",
+  "en": "A short treatment of DHCP as the A+ syllabus defines it, mapped exactly to the exam objective. Not covering more is an advantage when revising.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2326,12 +2371,12 @@ window.LINKS = [
   "name": "DNS Yapılandırma (CompTIA A+)",
   "cat": "ag",
   "tags": [
-   "ücretsiz",
    "video",
-   "sertifika"
+   "sertifika",
+   "ağ"
   ],
-  "tr": "A+ sınavı kapsamındaki DNS yapılandırma konusu; kısa ve sınav odaklı.",
-  "en": "DNS configuration as covered by the A+ exam — short and exam-focused.",
+  "tr": "A+ kapsamındaki DNS kayıt türleri ve yapılandırması. Kısa ve sınav odaklı.",
+  "en": "DNS record types and configuration within the A+ scope — short and exam-focused.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2341,11 +2386,11 @@ window.LINKS = [
   "cat": "ag",
   "tags": [
    "ücretsiz",
-   "araç",
-   "kurtarma"
+   "kurtarma",
+   "windows"
   ],
-  "tr": "Açılmayan sistemleri onarmak için kullanılan önyüklenebilir araç seti; disk, parola ve veri kurtarma araçlarını tek imajda toplar.",
-  "en": "A bootable toolkit for repairing systems that will not start, bundling disk, password and data recovery tools in one image.",
+  "tr": "Açılmayan sistemler için önyüklenebilir Windows PE ortamı; disk klonlama, parola sıfırlama ve veri kurtarma araçları tek imajda. Sistem yöneticisinin cebinde taşıdığı USB.",
+  "en": "A bootable Windows PE environment for systems that will not start, bundling disk cloning, password reset and data recovery in one image. The USB stick a sysadmin carries.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2354,12 +2399,12 @@ window.LINKS = [
   "name": "LFSR ve Rastgele Sayı Üreteçleri",
   "cat": "ag",
   "tags": [
-   "ücretsiz",
    "video",
-   "kriptografi"
+   "kriptografi",
+   "donanım"
   ],
-  "tr": "Doğrusal geri beslemeli kaydırma yazmaçlarının nasıl çalıştığını anlatan video; rastgelelik üretiminin donanım tarafına giriş.",
-  "en": "A video on how linear feedback shift registers work — an introduction to the hardware side of randomness generation.",
+  "tr": "Doğrusal geri beslemeli kaydırma yazmaçlarının nasıl çalıştığını devre düzeyinde anlatıyor. Sözde rastgeleliğin donanımda nasıl üretildiğine iyi bir giriş.",
+  "en": "Explains linear feedback shift registers at circuit level — a good introduction to how pseudo-randomness is actually produced in hardware.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2372,8 +2417,8 @@ window.LINKS = [
    "linux",
    "interaktif"
   ],
-  "tr": "Linux’u küçük modüllerle öğreten ücretsiz kaynak; kapsamlı kitaplara karşı kısa ve sindirilebilir bölümler sunar.",
-  "en": "A free resource teaching Linux in small modules — short, digestible units against comprehensive books.",
+  "tr": "Linux’u küçük modüllere bölerek öğretiyor: dosya sistemi, izinler, süreçler, paket yönetimi. Kapsamlı kitapların yıldırdığı yerde sindirilebilir parçalar sunuyor.",
+  "en": "Teaches Linux in small modules — filesystem, permissions, processes, package management — offering digestible pieces where comprehensive books overwhelm.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2382,12 +2427,12 @@ window.LINKS = [
   "name": "Linux Öğrenmenin En İyi Yolu",
   "cat": "ag",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "linux"
   ],
-  "tr": "Linux öğrenme stratejisini anlatan video; komut öğretmekten çok nasıl çalışılacağını tarif ediyor.",
-  "en": "A video on strategy for learning Linux — it describes how to study rather than teaching commands.",
+  "tr": "Komut öğretmiyor, nasıl çalışılacağını tarif ediyor: hangi dağıtım, hangi sırayla, hangi projelerle. Yön bulmak için başlangıçta işe yarıyor.",
+  "en": "Does not teach commands but describes how to study — which distribution, in what order, through which projects. Useful for orientation at the start.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2400,8 +2445,8 @@ window.LINKS = [
    "türkçe",
    "ağ"
   ],
-  "tr": "Cisco ağ kurslarının Türkçe kataloğu; ücretsiz giriş seviyesi dersleri buradan seçilebiliyor.",
-  "en": "The Turkish catalogue of Cisco networking courses, where the free entry-level classes can be picked.",
+  "tr": "Cisco ağ kurslarının Türkçe kataloğu; giriş seviyesi dersler ücretsiz ve rozet veriyor. Türkçe teknik ağ eğitimi bulmak yerelde kolay değil.",
+  "en": "The Turkish catalogue of Cisco networking courses, with free entry-level classes that award badges. Turkish-language networking training is not easy to find locally.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2412,10 +2457,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "standart",
-   "güvenlik"
+   "kriptografi"
   ],
-  "tr": "Kriptografi standartlarının kaynağı; hangi algoritmanın hâlâ güvenli sayıldığını blog yorumlarına değil buraya bakarak öğrenirsin.",
-  "en": "The source of cryptography standards — check here, not blog commentary, for which algorithms are still considered safe.",
+  "tr": "Kriptografi standartlarının kaynağı; hangi algoritmanın hâlâ onaylı olduğunu buradan öğrenirsin. Kuantum sonrası algoritma seçimleri de burada yayımlandı.",
+  "en": "The source of cryptographic standards, where you check which algorithms remain approved. The post-quantum algorithm selections were published here too.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2426,10 +2471,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "ağ",
-   "araç"
+   "simülatör"
   ],
-  "tr": "Cisco Packet Tracer ve laboratuvar dosyaları; donanım almadan ağ topolojisi kurup denemek için.",
-  "en": "Cisco Packet Tracer and lab files — for building and testing network topologies without buying hardware.",
+  "tr": "Cisco Packet Tracer indirmesi ve laboratuvar dosyaları. Anahtar ve yönlendirici almadan VLAN, OSPF ve ACL yapılandırması denenebiliyor.",
+  "en": "The Packet Tracer download plus lab files, letting you practise VLAN, OSPF and ACL configuration without buying switches and routers.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2438,12 +2483,13 @@ window.LINKS = [
   "name": "ServiceDesk Simulator",
   "cat": "ag",
   "tags": [
+   "saas",
    "freemium",
-   "it destek",
+   "it-destek",
    "simülasyon"
   ],
-  "tr": "Yardım masası biletleriyle çalışmayı simüle eden ortam; teorik IT destek eğitimlerine karşı gerçek vaka pratiği sunar.",
-  "en": "Simulates working helpdesk tickets — real case practice against theoretical IT support courses.",
+  "tr": "Gerçek yardım masası biletleriyle çalışmayı simüle ediyor: önceliklendirme, tırmandırma, SLA takibi. IT destek eğitimlerinin teorik kaldığı yeri dolduruyor.",
+  "en": "Simulates working a real helpdesk queue — prioritisation, escalation, SLA tracking. It fills the practical gap that IT support courses leave theoretical.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2452,12 +2498,12 @@ window.LINKS = [
   "name": "Windows 11 Tam Rehber",
   "cat": "ag",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "windows"
   ],
-  "tr": "Windows 11’in ayarlarını baştan sona gezen rehber; sistem yönetimi tarafında hızlı başvuru.",
-  "en": "A guide walking the whole of Windows 11’s settings — a quick reference on the sysadmin side.",
+  "tr": "Windows 11 ayarlarını baştan sona gezen rehber; grup ilkesi ve kayıt defteri ayarlarına da giriyor. Kullanıcı desteği tarafında hızlı başvuru.",
+  "en": "A guide walking the whole of Windows 11’s settings, reaching into group policy and registry tweaks. A quick reference on the user-support side.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2466,12 +2512,12 @@ window.LINKS = [
   "name": "Wireshark",
   "cat": "ag",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "ağ",
-   "araç"
+   "analiz"
   ],
-  "tr": "Ağ paketlerini yakalayıp çözümleyen standart araç; ağ sorunlarında tahmin yerine kanıt sağlar.",
-  "en": "The standard packet capture and analysis tool — it replaces guessing with evidence in network problems.",
+  "tr": "Paket yakalama ve protokol çözümlemenin standardı; TLS anahtarı verirsen şifreli trafiği de açıyor. Ağ sorunlarında “sanırım” yerine kanıt üretmenin tek yolu.",
+  "en": "The standard for packet capture and protocol dissection, and it will decrypt TLS if you hand it the keys. The only way to replace “I think” with evidence in a network problem.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2482,10 +2528,11 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "türkçe",
-   "topluluk"
+   "topluluk",
+   "sysadmin"
   ],
-  "tr": "Türkçe sistem yöneticiliği topluluğu ve makale arşivi; yerel senaryolar için nadir bulunan bir kaynak.",
-  "en": "A Turkish sysadmin community and article archive — a rare resource for locally specific scenarios.",
+  "tr": "Türkçe sistem yöneticiliği topluluğu ve makale arşivi; Active Directory, Exchange ve sanallaştırma tarafında derinlik var. Yerel senaryolar için nadir bir kaynak.",
+  "en": "A Turkish sysadmin community and article archive with real depth on Active Directory, Exchange and virtualisation — a rare resource for locally specific scenarios.",
   "cat_tr": "Ağ & Sistem Yönetimi",
   "cat_en": "Networking & Sysadmin"
  },
@@ -2495,10 +2542,11 @@ window.LINKS = [
   "cat": "guvenlik",
   "tags": [
    "ücretli",
-   "gizlilik"
+   "gizlilik",
+   "sms"
   ],
-  "tr": "SMS doğrulaması için geçici numara servisi; kişisel numaranı vermeden hesap açmak için kullanılıyor.",
-  "en": "Temporary number service for SMS verification, used to sign up without giving out your own number.",
+  "tr": "SMS doğrulaması için geçici numara kiralama. Kendi numaranı vermeden hesap açmayı sağlıyor; kalıcı hesaplarda kurtarma sorunu doğurabileceği için dikkatli kullanılmalı.",
+  "en": "Rents temporary numbers for SMS verification so you can sign up without your own. Use carefully on accounts you intend to keep — recovery becomes a problem.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2507,12 +2555,12 @@ window.LINKS = [
   "name": "90 Days of Cyber Security",
   "cat": "guvenlik",
   "tags": [
-   "ücretsiz",
    "github",
-   "müfredat"
+   "müfredat",
+   "ücretsiz"
   ],
-  "tr": "Doksan günlük güvenlik çalışma planı; dağınık kaynak listelerine karşı takvimli bir program sunar.",
-  "en": "A 90-day security study plan — a dated schedule against the usual scattered resource lists.",
+  "tr": "Doksan güne bölünmüş çalışma planı: ağ temelleri, Linux, Python, ardından saldırı ve savunma. Dağınık kaynak listelerine karşı takvimli bir program.",
+  "en": "A study plan split across ninety days — networking, Linux, Python, then offence and defence. A dated schedule against the usual scattered resource list.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2521,12 +2569,12 @@ window.LINKS = [
   "name": "Awesome Asset Discovery",
   "cat": "guvenlik",
   "tags": [
-   "ücretsiz",
    "github",
-   "koleksiyon"
+   "awesome-liste",
+   "keşif"
   ],
-  "tr": "Varlık keşfi araç ve yöntemlerinin listesi; sızma testinin ilk aşaması için toplu başvuru.",
-  "en": "A list of asset discovery tools and methods — a single reference for the first phase of a penetration test.",
+  "tr": "Varlık keşfi araç ve yöntemleri listesi: alt alan adı numaralandırma, sertifika şeffaflığı, ASN sorgulama. Sızma testinin ilk ve en belirleyici aşaması.",
+  "en": "A list of asset discovery tools and methods — subdomain enumeration, certificate transparency, ASN lookups. The first and most decisive phase of a penetration test.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2535,12 +2583,12 @@ window.LINKS = [
   "name": "Awesome ML for Cybersecurity",
   "cat": "guvenlik",
   "tags": [
-   "ücretsiz",
    "github",
-   "koleksiyon"
+   "awesome-liste",
+   "ml"
   ],
-  "tr": "Güvenlikte makine öğrenmesi kaynakları listesi; veri kümeleri ve makaleleri bir arada vermesi ayırt edici.",
-  "en": "A list of machine learning resources for security, distinguished by gathering datasets and papers together.",
+  "tr": "Güvenlikte makine öğrenmesi kaynakları; veri kümeleri ve akademik makaleleri bir arada veriyor. Bu alanda en zor bulunan şey etiketli veri, listede o kısım güçlü.",
+  "en": "Machine learning resources for security, gathering datasets and academic papers together. Labelled data is the hardest thing to find in this field, and that part of the list is strong.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2549,12 +2597,13 @@ window.LINKS = [
   "name": "Bitwarden",
   "cat": "guvenlik",
   "tags": [
+   "açık-kaynak",
    "freemium",
-   "açık kaynak",
-   "gizlilik"
+   "gizlilik",
+   "self-hosted"
   ],
-  "tr": "Açık kaynak parola yöneticisi; rakiplerinden farkı, kodunun denetlenebilir olması ve kendi sunucunda çalıştırılabilmesi.",
-  "en": "Open-source password manager; unlike rivals its code is auditable and it can be self-hosted.",
+  "tr": "Kaynak kodu açık ve bağımsız denetimden geçmiş parola yöneticisi. Ücretsiz katmanda sınırsız parola var; istersen Vaultwarden ile kendi sunucunda çalıştırılıyor.",
+  "en": "A password manager with open source and independent audits behind it. The free tier holds unlimited passwords, and Vaultwarden lets you self-host the whole thing.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2565,10 +2614,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "kriptografi",
-   "bulmaca"
+   "steganografi"
   ],
-  "tr": "Ünlü internet bulmacasının adım adım çözümü; steganografi ve klasik şifrelerin bir arada kullanımına örnek.",
-  "en": "A step-by-step solution of the famous internet puzzle — an example of steganography and classical ciphers combined.",
+  "tr": "İnternetin en bilinen bulmacasının adım adım çözümü; steganografi, kitap şifresi ve Tor gizli servisleri bir arada kullanılıyor. Tekniklerin nasıl zincirlendiğine iyi bir örnek.",
+  "en": "A step-by-step solution of the internet’s best-known puzzle, chaining steganography, book ciphers and Tor hidden services — a good example of how techniques link together.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2578,11 +2627,11 @@ window.LINKS = [
   "cat": "guvenlik",
   "tags": [
    "freemium",
-   "güvenlik",
-   "sınav"
+   "lab",
+   "sertifika"
   ],
-  "tr": "Güvenlik sertifikalarına yönelik pratik laboratuvar ve sınav ortamı; teorik soru bankalarına karşı uygulamalı hazırlık.",
-  "en": "Practical labs and exam environment for security certifications — hands-on prep against theory-only question banks.",
+  "tr": "Güvenlik sertifikalarına yönelik uygulamalı laboratuvar ve deneme sınavları. Soru bankası ezberlemeye karşı, aracı gerçekten çalıştırarak hazırlanma yolu.",
+  "en": "Hands-on labs and mock exams for security certifications — preparation by actually running the tools rather than memorising a question bank.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2592,11 +2641,11 @@ window.LINKS = [
   "cat": "guvenlik",
   "tags": [
    "ücretsiz",
-   "güvenlik",
-   "not"
+   "not",
+   "referans"
   ],
-  "tr": "Güvenlik konularının derli toplu not arşivi; sınav ve laboratuvar sırasında hızlı başvuru için.",
-  "en": "A tidy note archive of security topics, for quick reference during labs and exams.",
+  "tr": "Güvenlik konularının derli toplu not arşivi; laboratuvar sırasında komut ve yöntem hatırlamak için hızlı başvuru.",
+  "en": "A tidy note archive of security topics, for recalling a command or method mid-lab.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2605,27 +2654,13 @@ window.LINKS = [
   "name": "GhidraMCP",
   "cat": "guvenlik",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "tersine mühendislik",
-   "mcp"
+   "mcp",
+   "tersine-mühendislik"
   ],
-  "tr": "Ghidra tersine mühendislik aracını yapay zeka asistanına bağlayan MCP sunucusu; ikili çözümlemede asistan kullanmayı mümkün kılıyor.",
-  "en": "MCP server connecting the Ghidra reverse-engineering tool to an AI assistant, enabling assistant-driven binary analysis.",
-  "cat_tr": "Güvenlik & Gizlilik",
-  "cat_en": "Security & Privacy"
- },
- {
-  "url": "https://www.youtube.com/watch?v=p3vaaD9pn9I",
-  "name": "Güvenlik Uygulaması",
-  "cat": "guvenlik",
-  "tags": [
-   "ücretsiz",
-   "video",
-   "güvenlik"
-  ],
-  "tr": "Uygulamalı güvenlik anlatımı; teorik dersin ardından tekniği çalışırken görmek için.",
-  "en": "A hands-on security walkthrough, for seeing a technique in action after the theory.",
+  "tr": "Ghidra’yı MCP üzerinden bir asistana açıyor; sökülmüş kodu okuma ve fonksiyon adlandırma gibi yorucu adımları devredebiliyorsun. İkili çözümlemede yeni bir iş akışı.",
+  "en": "Exposes Ghidra to an assistant over MCP, letting you delegate the tedious parts — reading disassembly, naming functions. A genuinely new workflow in binary analysis.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2635,11 +2670,11 @@ window.LINKS = [
   "cat": "guvenlik",
   "tags": [
    "freemium",
-   "güvenlik",
-   "interaktif"
+   "lab",
+   "sızma-testi"
   ],
-  "tr": "Gerçekçi sızma testi laboratuvarları; ipucu vermemesiyle TryHackMe’den ayrılır, araştırma yükünü sana bırakır.",
-  "en": "Realistic penetration testing labs; it withholds hints, unlike TryHackMe, leaving the research to you.",
+  "tr": "Gerçekçi makineler; ipucu vermiyor, keşif ve araştırma yükü tamamen sende. OSCP hazırlığında sık kullanılmasının sebebi bu zorluk seviyesi.",
+  "en": "Realistic machines with no hints — reconnaissance and research are entirely on you. That difficulty is why it turns up so often in OSCP preparation.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2649,11 +2684,11 @@ window.LINKS = [
   "cat": "guvenlik",
   "tags": [
    "ücretsiz",
-   "güvenlik",
-   "ödül"
+   "ödül-programı",
+   "sızma-testi"
   ],
-  "tr": "Hata ödül programı platformu; laboratuvarların aksine gerçek sistemlerde yasal olarak test yapma imkânı verir.",
-  "en": "Bug bounty platform — unlike labs it lets you legally test real production systems.",
+  "tr": "Hata ödül platformu; şirketlerin kapsam tanımladığı gerçek sistemlerde yasal olarak test yapıyorsun. Yayımlanan raporlar (hacktivity) laboratuvarlardan daha öğretici bir arşiv.",
+  "en": "A bug bounty platform where you legally test real systems within a company-defined scope. The published reports (hacktivity) form an archive more instructive than any lab.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2662,12 +2697,12 @@ window.LINKS = [
   "name": "Illicit Services Enum",
   "cat": "guvenlik",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "güvenlik"
+   "keşif"
   ],
-  "tr": "Servis numaralandırma betiği; keşif aşamasını otomatikleştiren dar kapsamlı bir araç.",
-  "en": "A service enumeration script — a narrow tool automating the reconnaissance phase.",
+  "tr": "Servis numaralandırma betiği; keşif aşamasında elle çalıştırılan komut dizisini otomatikleştiriyor.",
+  "en": "A service enumeration script automating the command sequence you would otherwise run by hand during reconnaissance.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2678,10 +2713,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "türkçe",
-   "rehber"
+   "pgp"
   ],
-  "tr": "Tarayıcıdan PGP ile e-posta şifrelemenin Türkçe adım adım anlatımı; kavramı en somut hâliyle gösteriyor.",
-  "en": "A step-by-step Turkish walkthrough of PGP email encryption in the browser — the concept at its most concrete.",
+  "tr": "Tarayıcı eklentisiyle PGP kullanmayı adım adım anlatan Türkçe rehber. Anahtar üretme ve paylaşma kısmı, kavramın en somut hâliyle görüldüğü yer.",
+  "en": "A step-by-step Turkish walkthrough of using PGP through a browser extension. The key generation and exchange section is where the concept becomes concrete.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2690,12 +2725,12 @@ window.LINKS = [
   "name": "ML for Cyber Security",
   "cat": "guvenlik",
   "tags": [
-   "ücretsiz",
    "github",
-   "koleksiyon"
+   "awesome-liste",
+   "ml"
   ],
-  "tr": "Güvenlik alanında ML çalışmalarının bir başka derlemesi; araç ve kurs tarafı daha ağır basıyor.",
-  "en": "Another compilation of ML work in security, leaning more towards tools and courses.",
+  "tr": "Aynı alanda ikinci bir derleme; araç, kurs ve konuşma tarafı daha ağır basıyor.",
+  "en": "A second compilation in the same field, weighted more towards tools, courses and conference talks.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2704,12 +2739,12 @@ window.LINKS = [
   "name": "Monitör Mod Wi-Fi Kartı",
   "cat": "guvenlik",
   "tags": [
-   "ücretsiz",
    "türkçe",
-   "donanım"
+   "donanım",
+   "kablosuz"
   ],
-  "tr": "Monitör modu destekleyen Wi-Fi kartı seçimi üzerine Türkçe tartışma; kablosuz güvenlik testine başlarken donanım sorusunu çözer.",
-  "en": "A Turkish discussion on picking a monitor-mode Wi-Fi adapter — it answers the hardware question before wireless testing.",
+  "tr": "Monitör modu ve paket enjeksiyonu destekleyen Wi-Fi yonga setleri üzerine Türkçe tartışma. Kablosuz güvenlik testine başlamadan çözülmesi gereken donanım sorusu bu.",
+  "en": "A Turkish discussion of Wi-Fi chipsets supporting monitor mode and packet injection — the hardware question that has to be settled before any wireless testing.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2722,8 +2757,8 @@ window.LINKS = [
    "osint",
    "dizin"
   ],
-  "tr": "Açık kaynak istihbarat araçlarını ağaç yapısında toplayan dizin; ne aradığına göre araca inmen için tasarlanmış.",
-  "en": "A tree-structured directory of open-source intelligence tools, designed so you descend to a tool by what you are looking for.",
+  "tr": "Açık kaynak istihbarat araçlarını ağaç yapısında topluyor: e-posta, kullanıcı adı, alan adı, görüntü. Ne aradığından başlayıp araca iniyorsun, ters yönde değil.",
+  "en": "A tree of open-source intelligence tools organised by target — email, username, domain, image. You start from what you are looking for and descend to the tool, not the other way round.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2733,11 +2768,11 @@ window.LINKS = [
   "cat": "guvenlik",
   "tags": [
    "ücretsiz",
-   "güvenlik",
-   "ctf"
+   "ctf",
+   "linux"
   ],
-  "tr": "SSH üzerinden oynanan klasik güvenlik savaş oyunları; kayıt ve arayüz olmadan doğrudan kabuğa düşürmesi ayırt edici.",
-  "en": "Classic security wargames played over SSH — dropping you straight into a shell with no signup or UI is its distinction.",
+  "tr": "SSH ile bağlanıp seviye seviye ilerlediğin klasik savaş oyunları. Bandit serisi Linux komut satırını öğretmenin en sert ama en kalıcı yolu.",
+  "en": "Classic wargames you play by SSH, advancing level by level. The Bandit series is the harshest and most durable way to learn the Linux command line.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2750,8 +2785,8 @@ window.LINKS = [
    "gizlilik",
    "ödeme"
   ],
-  "tr": "Tek kullanımlık sanal kart üreten servis; abonelik iptallerini kart tarafında kesebilmesi pratik avantajı.",
-  "en": "Generates single-use virtual cards; being able to kill a subscription at the card level is its practical advantage.",
+  "tr": "Tek kullanımlık ve harcama limitli sanal kart üretiyor. Aboneliği iptal edemediğinde kartı kapatmak, satıcıyla uğraşmaktan hızlı bir çıkış. Yalnızca ABD.",
+  "en": "Issues single-use virtual cards with spend limits. Killing the card is a faster exit than arguing with a merchant you cannot unsubscribe from. US only.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2763,8 +2798,8 @@ window.LINKS = [
    "ücretsiz",
    "gizlilik"
   ],
-  "tr": "Okunduktan sonra kendini silen not gönderme aracı; hesap gerektirmemesi tek seferlik sır paylaşımını kolaylaştırıyor.",
-  "en": "Sends notes that self-destruct after reading; needing no account makes one-off secret sharing easy.",
+  "tr": "Okunduktan sonra kendini silen not; hesap gerektirmiyor. Tek seferlik bir parolayı sohbet geçmişinde bırakmadan iletmek için pratik.",
+  "en": "A note that destroys itself after reading, with no account required — practical for handing over a one-time password without leaving it in a chat log.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2773,12 +2808,13 @@ window.LINKS = [
   "name": "Robin",
   "cat": "guvenlik",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "osint"
+   "osint",
+   "llm"
   ],
-  "tr": "Karanlık ağ araştırması için yapay zeka destekli OSINT aracı; elle arama yapmaya karşı otomatik tarama sunar.",
-  "en": "AI-assisted OSINT tool for dark web research, offering automated sweeps instead of manual searching.",
+  "tr": "Karanlık ağ araştırmasında sorguyu genişletip sonuçları özetleyen yapay zeka destekli araç. Elle arama yapmanın zaman aldığı bir alanda tarama adımını otomatikleştiriyor.",
+  "en": "An AI-assisted tool that expands queries and summarises results in dark web research, automating the sweep in an area where manual searching is slow.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2787,12 +2823,12 @@ window.LINKS = [
   "name": "Siber Güvenlik Anlatımı",
   "cat": "guvenlik",
   "tags": [
-   "ücretsiz",
    "video",
-   "güvenlik"
+   "ücretsiz",
+   "giriş"
   ],
-  "tr": "Güvenlik kavramlarına video giriş; okumadan önce alanın haritasını görmek için.",
-  "en": "A video introduction to security concepts, for mapping the field before reading.",
+  "tr": "Güvenlik kavramlarına video giriş; alanın hangi dallara ayrıldığını görmek için.",
+  "en": "A video introduction to security concepts, useful for seeing how the field branches.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2805,8 +2841,8 @@ window.LINKS = [
    "türkçe",
    "resmî"
   ],
-  "tr": "Türkiye’nin resmî siber güvenlik kurumu; ulusal uyarılar ve mevzuat için birincil kaynak.",
-  "en": "Turkey’s official cyber security authority — the primary source for national advisories and regulation.",
+  "tr": "Türkiye’nin siber güvenlik otoritesi; ulusal uyarılar, mevzuat ve kritik altyapı rehberleri buradan yayımlanıyor.",
+  "en": "Turkey’s cyber security authority, publishing national advisories, regulation and critical-infrastructure guidance.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2815,12 +2851,12 @@ window.LINKS = [
   "name": "Siber Güvenlik SSS",
   "cat": "guvenlik",
   "tags": [
-   "ücretsiz",
+   "github",
    "türkçe",
-   "github"
+   "kariyer"
   ],
-  "tr": "Türkçe siber güvenlik sıkça sorulan sorular derlemesi; alana giriş yapanların kariyer sorularını da kapsaması ayırt edici.",
-  "en": "A Turkish cyber security FAQ, distinguished by also covering the career questions newcomers actually ask.",
+  "tr": "Türkçe siber güvenlik sıkça sorulan sorular derlemesi; teknik konular kadar “nereden başlanır, hangi sertifika” gibi kariyer sorularını da kapsıyor.",
+  "en": "A Turkish cyber security FAQ covering career questions — where to start, which certification — as much as technical ones.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2831,10 +2867,10 @@ window.LINKS = [
   "tags": [
    "ücretli",
    "gizlilik",
-   "mobil"
+   "esim"
   ],
-  "tr": "Kimlik istemeyen eSIM veri hattı; kripto ile ödenebilmesi ve isim istememesi ayırt edici yanı.",
-  "en": "An eSIM data plan requiring no identity; paying with crypto and giving no name is what sets it apart.",
+  "tr": "Kimlik istemeyen eSIM veri hattı; kripto ile ödeniyor, isim ya da belge sorulmuyor. Seyahatte telefon numarasını kimliğine bağlamadan veri almanın yolu.",
+  "en": "An eSIM data plan requiring no identity — paid in crypto, no name or document. A way to get data abroad without tying a number to your identity.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2847,8 +2883,8 @@ window.LINKS = [
    "osint",
    "koleksiyon"
   ],
-  "tr": "Kategorilere ayrılmış geniş OSINT bağlantı panosu; framework’e göre daha güncel tutulan bir alternatif.",
-  "en": "A broad categorised OSINT link board — a more frequently updated alternative to the framework.",
+  "tr": "Kategorilere ayrılmış geniş OSINT bağlantı panosu; framework’e göre daha sık güncelleniyor, ölü araç oranı düşük.",
+  "en": "A broad categorised OSINT link board, updated more frequently than the framework so fewer of its tools are dead.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2858,11 +2894,24 @@ window.LINKS = [
   "cat": "guvenlik",
   "tags": [
    "freemium",
-   "güvenlik",
-   "interaktif"
+   "lab",
+   "sızma-testi"
   ],
-  "tr": "Rehberli güvenlik laboratuvarları; Hack The Box’tan farkı, elinden tutup adım adım ilerletmesi — yeni başlayan için daha uygun.",
-  "en": "Guided security labs; unlike Hack The Box it walks you through step by step, which suits beginners better.",
+  "tr": "Rehberli laboratuvarlar; her odada hangi aracı neden kullandığın anlatılıyor. Hack The Box’a göre elinden tutuyor, o yüzden ilk sızma testi deneyimi için daha uygun.",
+  "en": "Guided labs that explain which tool you are using and why in each room. It holds your hand more than Hack The Box, which makes it the better first exposure to penetration testing.",
+  "cat_tr": "Güvenlik & Gizlilik",
+  "cat_en": "Security & Privacy"
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=p3vaaD9pn9I",
+  "name": "Uygulamalı Güvenlik",
+  "cat": "guvenlik",
+  "tags": [
+   "video",
+   "ücretsiz"
+  ],
+  "tr": "Bir tekniği çalışırken gösteren uygulamalı anlatım; teorik dersin ardından izlenmeli.",
+  "en": "A hands-on walkthrough showing a technique in operation — best watched after the theory.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2875,8 +2924,8 @@ window.LINKS = [
    "kriptografi",
    "vaka"
   ],
-  "tr": "Elli yıl çözülemeyen şifrenin nasıl kırıldığının teknik anlatımı; kriptanaliz sürecinin gerçek bir örneği.",
-  "en": "A technical account of how a cipher unsolved for fifty years was broken — a real worked example of cryptanalysis.",
+  "tr": "Elli bir yıl çözülemeyen homofonik yerine koyma şifresinin nasıl kırıldığının teknik anlatımı. Hipotez kurma ve eleme sürecinin gerçek bir örneği.",
+  "en": "A technical account of how a homophonic substitution cipher unsolved for fifty-one years was broken — a real worked example of hypothesis and elimination.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2886,10 +2935,10 @@ window.LINKS = [
   "cat": "guvenlik",
   "tags": [
    "ücretsiz",
-   "referans"
+   "kriptografi"
   ],
-  "tr": "Hâlâ çözülememiş tarihî şifrelerin kategorisi; her biri açık bir problem olarak duruyor.",
-  "en": "The category of still-unbroken historical ciphers, each standing as an open problem.",
+  "tr": "Hâlâ kırılamamış şifrelerin kategorisi; Voynich el yazması ve Beale şifreleri dahil. Her biri açık bir problem olarak duruyor.",
+  "en": "The category of ciphers still unbroken, the Voynich manuscript and Beale ciphers among them. Each stands as an open problem.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2899,11 +2948,11 @@ window.LINKS = [
   "cat": "guvenlik",
   "tags": [
    "ücretsiz",
-   "referans",
-   "kriptografi"
+   "kriptografi",
+   "referans"
   ],
-  "tr": "Tarihte çözülmüş ve çözülmemiş şifreli metinlerin listesi; kriptanaliz pratiği için gerçek malzeme.",
-  "en": "A list of solved and unsolved historical ciphertexts — real material for cryptanalysis practice.",
+  "tr": "Tarihte çözülmüş ve çözülememiş şifreli metinlerin listesi. Kriptanaliz pratiği için sentetik alıştırma yerine gerçek malzeme.",
+  "en": "A list of solved and unsolved historical ciphertexts — real material for cryptanalysis practice instead of synthetic exercises.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2916,8 +2965,8 @@ window.LINKS = [
    "türkçe",
    "gizlilik"
   ],
-  "tr": "Dijital güvenlik ve mahremiyetin Türkçe rehberi; ürün tanıtımı değil, tehdit modeline göre yöntem anlatması ayırt edici.",
-  "en": "A Turkish guide to digital security and privacy, distinguished by teaching method by threat model rather than promoting products.",
+  "tr": "Dijital güvenliğin Türkçe rehberi; ürün tanıtmıyor, tehdit modeline göre yöntem anlatıyor. “Kimden korunuyorsun” sorusuyla başlaması onu araç listelerinden ayırıyor.",
+  "en": "A Turkish guide to digital security that recommends method by threat model rather than promoting products. Starting from “who are you protecting against” is what separates it from tool lists.",
   "cat_tr": "Güvenlik & Gizlilik",
   "cat_en": "Security & Privacy"
  },
@@ -2930,8 +2979,8 @@ window.LINKS = [
    "araştırma",
    "yarışma"
   ],
-  "tr": "Soyut akıl yürütme üzerine yarışma; mevcut modellerin en çok zorlandığı görev tipini hedeflemesiyle ayrışıyor.",
-  "en": "A competition on abstract reasoning, distinguished by targeting the task type current models struggle with most.",
+  "tr": "Soyut akıl yürütme üzerine yarışma; görevleri insanın kolay, modellerin zor bulduğu biçimde tasarlanmış. Ölçekleme yerine yeni yaklaşım gerektiriyor.",
+  "en": "A competition on abstract reasoning whose tasks are designed to be easy for humans and hard for models. It rewards a new approach rather than more scale.",
   "cat_tr": "Veri Bilimi & Makine Öğrenmesi",
   "cat_en": "Data Science & ML"
  },
@@ -2940,12 +2989,12 @@ window.LINKS = [
   "name": "Data Science for Beginners",
   "cat": "veri",
   "tags": [
-   "ücretsiz",
    "github",
-   "müfredat"
+   "müfredat",
+   "ücretsiz"
   ],
-  "tr": "Microsoft’un 20 derslik veri bilimi müfredatı; her ders proje ve sınavla geldiği için kendi kendine çalışmaya uygun.",
-  "en": "Microsoft’s 20-lesson data science curriculum; each lesson ships with a project and quiz, which suits self-study.",
+  "tr": "20 derslik müfredat; her ders ders öncesi/sonrası sınav ve bir projeyle geliyor. Veri etiği ve görselleştirme bölümleri çoğu teknik kursta atlanan konular.",
+  "en": "A 20-lesson curriculum where each unit ships with pre/post quizzes and a project. Its data ethics and visualisation sections cover ground most technical courses skip.",
   "cat_tr": "Veri Bilimi & Makine Öğrenmesi",
   "cat_en": "Data Science & ML"
  },
@@ -2954,12 +3003,13 @@ window.LINKS = [
   "name": "Databricks",
   "cat": "veri",
   "tags": [
+   "saas",
    "ücretli",
    "veri",
-   "platform"
+   "spark"
   ],
-  "tr": "Büyük ölçekli veri ve ML platformu; veri gölü ile ambarı tek mimaride birleştirme iddiası temel ayrımı.",
-  "en": "Large-scale data and ML platform whose core claim is unifying data lake and warehouse in one architecture.",
+  "tr": "Spark üzerine kurulu veri ve ML platformu; Delta Lake ile veri gölüne işlem (ACID) garantisi getiriyor. “Lakehouse” iddiasının teknik karşılığı bu.",
+  "en": "A data and ML platform built on Spark, bringing ACID guarantees to the data lake through Delta Lake — which is the technical substance behind the “lakehouse” claim.",
   "cat_tr": "Veri Bilimi & Makine Öğrenmesi",
   "cat_en": "Data Science & ML"
  },
@@ -2972,8 +3022,8 @@ window.LINKS = [
    "veri",
    "arama"
   ],
-  "tr": "Web’deki açık veri kümelerini arayan motor; tek bir depoya bağlı olmayıp dağınık kaynakları tarıyor.",
-  "en": "A search engine for open datasets across the web, sweeping scattered sources rather than one repository.",
+  "tr": "Web’e dağılmış açık veri kümelerini schema.org işaretlemesi üzerinden arıyor. Tek bir depoya bağlı olmadığı için kurum arşivlerini de kapsıyor.",
+  "en": "Searches open datasets scattered across the web via schema.org markup. Being tied to no single repository, it reaches institutional archives too.",
   "cat_tr": "Veri Bilimi & Makine Öğrenmesi",
   "cat_en": "Data Science & ML"
  },
@@ -2984,10 +3034,11 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "veri",
-   "yarışma"
+   "yarışma",
+   "topluluk"
   ],
-  "tr": "Veri bilimi yarışmaları, veri kümeleri ve not defterleri; çözümlerin açıkça paylaşılması onu en iyi öğrenme kaynaklarından biri yapıyor.",
-  "en": "Data science competitions, datasets and notebooks — open solution sharing makes it one of the best learning resources.",
+  "tr": "Yarışma, veri kümesi ve not defteri aynı platformda. Asıl değeri, kazanan çözümlerin yarışma bitince açıkça paylaşılması — uygulamalı ML’in en iyi açık arşivi.",
+  "en": "Competitions, datasets and notebooks on one platform. The real value is that winning solutions are published once a contest closes, making it the best open archive of applied ML.",
   "cat_tr": "Veri Bilimi & Makine Öğrenmesi",
   "cat_en": "Data Science & ML"
  },
@@ -3000,8 +3051,8 @@ window.LINKS = [
    "veri",
    "yarışma"
   ],
-  "tr": "Aktif ve geçmiş yarışmalar; gerçek problem ve gerçek değerlendirme ölçütüyle çalışma imkânı.",
-  "en": "Active and past competitions — a chance to work against real problems with real evaluation metrics.",
+  "tr": "Aktif ve geçmiş yarışmalar. Gerçek ölçütle değerlendirilmek, kendi projendeki “iyi görünüyor” yanılsamasını kırıyor.",
+  "en": "Active and past competitions. Being scored against a real metric breaks the “looks fine to me” illusion of working on your own project.",
   "cat_tr": "Veri Bilimi & Makine Öğrenmesi",
   "cat_en": "Data Science & ML"
  },
@@ -3010,26 +3061,26 @@ window.LINKS = [
   "name": "LLMs from Scratch",
   "cat": "veri",
   "tags": [
-   "ücretsiz",
    "github",
-   "kitap"
+   "kitap",
+   "pytorch"
   ],
-  "tr": "Dil modelini PyTorch ile adım adım sıfırdan yazan kitap deposu; kütüphane çağırmak yerine iç mekanizmayı kurdurması ayırt edici.",
-  "en": "Book repo building a language model from scratch in PyTorch — you construct the mechanism instead of calling a library.",
+  "tr": "Bir GPT’yi PyTorch ile sıfırdan yazdıran kitap deposu: tokenizer, dikkat mekanizması, eğitim döngüsü ve ince ayar. Kütüphane çağırmak yerine mekanizmayı kurduruyor.",
+  "en": "A book repo that has you write a GPT from scratch in PyTorch — tokeniser, attention, training loop, fine-tuning. You build the mechanism instead of calling a library.",
   "cat_tr": "Veri Bilimi & Makine Öğrenmesi",
   "cat_en": "Data Science & ML"
  },
  {
   "url": "https://www.reddit.com/r/MachineLearningJobs/comments/1r5upkb/how_i_land_15_machine_learning_engineer_offers/",
-  "name": "ML Mühendisi İş Bulma Deneyimi",
+  "name": "ML Mühendisliğinde İş Arama",
   "cat": "veri",
   "tags": [
    "ücretsiz",
    "kariyer",
    "topluluk"
   ],
-  "tr": "Makine öğrenmesi mühendisliği iş arama sürecini birinci elden anlatan başlık; genel kariyer tavsiyelerine karşı somut deneyim.",
-  "en": "A first-hand account of the ML engineering job hunt — concrete experience against generic career advice.",
+  "tr": "Bir ML mühendisinin iş arama sürecini sayılarla anlattığı başlık: kaç başvuru, hangi aşamalar, ne işe yaradı. Genel kariyer tavsiyelerine karşı birinci elden veri.",
+  "en": "An ML engineer’s account of a job hunt with the numbers — applications sent, stages reached, what worked. First-hand data against generic career advice.",
   "cat_tr": "Veri Bilimi & Makine Öğrenmesi",
   "cat_en": "Data Science & ML"
  },
@@ -3038,11 +3089,12 @@ window.LINKS = [
   "name": "Train LLM from Scratch",
   "cat": "veri",
   "tags": [
-   "ücretsiz",
-   "github"
+   "github",
+   "pytorch",
+   "eğitim"
   ],
-  "tr": "Veri indirmeden eğitime kadar LLM eğitim hattının tamamını gösteren depo; teorik anlatıma karşı çalışan kod.",
-  "en": "A repo showing the full LLM training pipeline from data download to training — working code against theory.",
+  "tr": "Veri indirmeden dağıtık eğitime kadar tüm hattı çalışan kodla gösteriyor. Teorik anlatımların atladığı kısım genelde bu altyapı tarafı.",
+  "en": "Shows the whole pipeline in working code, from data download to distributed training — the infrastructure side theoretical write-ups usually skip.",
   "cat_tr": "Veri Bilimi & Makine Öğrenmesi",
   "cat_en": "Data Science & ML"
  },
@@ -3051,12 +3103,12 @@ window.LINKS = [
   "name": "Zero to Mastery ML",
   "cat": "veri",
   "tags": [
-   "ücretsiz",
    "github",
-   "not defteri"
+   "not-defteri",
+   "python"
   ],
-  "tr": "Uçtan uca makine öğrenmesi not defterleri; kavram anlatımı yerine çalışan hattı okutması ayırt edici.",
-  "en": "End-to-end machine learning notebooks — it has you read a working pipeline rather than concept prose.",
+  "tr": "Uçtan uca ML not defterleri; veri temizlemeden model değerlendirmeye kadar çalışan bir hat okutuyor. Kavram anlatımı yerine gerçek kod üzerinden ilerliyor.",
+  "en": "End-to-end ML notebooks walking a working pipeline from data cleaning to model evaluation, progressing through real code rather than concept prose.",
   "cat_tr": "Veri Bilimi & Makine Öğrenmesi",
   "cat_en": "Data Science & ML"
  },
@@ -3065,11 +3117,12 @@ window.LINKS = [
   "name": "Anthropic Claude",
   "cat": "yz_model",
   "tags": [
+   "api",
    "ücretli",
-   "api"
+   "llm"
   ],
-  "tr": "Claude model ailesinin giriş sayfası; sürümler, bağlam limitleri ve fiyatlandırma buradan takip edilir.",
-  "en": "Entry point for the Claude model family — versions, context limits and pricing.",
+  "tr": "Model sürümleri, bağlam limitleri ve jeton fiyatları. Prompt caching ve batch API gibi maliyet düşüren özelliklerin karşılaştırması burada duruyor.",
+  "en": "Model versions, context limits and token pricing, with the cost-reducing features — prompt caching, the batch API — laid out side by side.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3079,10 +3132,11 @@ window.LINKS = [
   "cat": "yz_model",
   "tags": [
    "ücretsiz",
-   "referans"
+   "referans",
+   "değerlendirme"
   ],
-  "tr": "Yapay zekanın hangi uygulamaları yeniden üretebildiğini test edip puanlayan liste. Pazarlama vaadi yerine denenmiş sonuç sunması ayırt edici yanı.",
-  "en": "A scoreboard testing which apps AI can actually rebuild. Publishing tested verdicts rather than marketing claims is what distinguishes it.",
+  "tr": "Bin küsur uygulamayı “yapay zeka bunu yeniden üretebilir mi” diye test edip sonucu yayımlayan tablo. Kullanılan istemi de veriyor, yani sonucu kendin doğrulayabiliyorsun.",
+  "en": "A table testing whether AI can rebuild a thousand-odd apps, with the verdict published. It hands you the exact prompt used, so the result is reproducible.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3091,11 +3145,13 @@ window.LINKS = [
   "name": "ChatGPT",
   "cat": "yz_model",
   "tags": [
+   "saas",
    "freemium",
+   "llm",
    "asistan"
   ],
-  "tr": "OpenAI’ın sohbet arayüzü. Görsel üretim, kod çalıştırma ve özel GPT’lerin aynı pencerede toplanması onu en geniş “her işi tek yerde” seçeneği yapıyor.",
-  "en": "OpenAI’s chat front-end. Image generation, code execution and custom GPTs in one window make it the broadest do-everything-in-one-place option.",
+  "tr": "Kod çalıştırma (sandbox Python), görsel üretim, dosya yükleme ve özel GPT’ler tek pencerede. Geniş olması pahasına her bir yeteneği kendi alanının en iyisi değil.",
+  "en": "Sandboxed Python execution, image generation, file upload and custom GPTs in one window. The breadth costs it depth — no single capability is best-in-class.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3104,11 +3160,13 @@ window.LINKS = [
   "name": "Claude",
   "cat": "yz_model",
   "tags": [
+   "saas",
    "freemium",
+   "llm",
    "asistan"
   ],
-  "tr": "Anthropic’in asistanı. Uzun belge okuma ve kod düzenlemede güçlü; Projects ile bağlam dosyaları sohbetler arasında kalıcı kalır.",
-  "en": "Anthropic’s assistant. Strong at long-document reading and code editing; Projects keeps context files persistent across chats.",
+  "tr": "200K jetonluk bağlam penceresi uzun belge ve kod tabanı okumayı taşıyor. Projects, dosyaları sohbetler arası kalıcı bağlam olarak tutuyor; Artifacts çıktıyı ayrı bir panelde çalıştırıyor.",
+  "en": "A 200K-token context window carries long documents and whole codebases. Projects keeps files as persistent context across chats; Artifacts runs output in a side panel.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3117,11 +3175,13 @@ window.LINKS = [
   "name": "Cohere",
   "cat": "yz_model",
   "tags": [
+   "api",
    "ücretli",
-   "api"
+   "rerank",
+   "embedding"
   ],
-  "tr": "Kurumsal odaklı sağlayıcı; RAG hatlarında özellikle arama ve yeniden sıralama (rerank) modelleriyle tercih ediliyor.",
-  "en": "Enterprise-oriented provider; its retrieval and rerank models are why it shows up in RAG pipelines.",
+  "tr": "Sohbet yarışına girmek yerine arama tarafına yerleşmiş: Rerank modeli, vektör aramanın döndürdüğü adayları yeniden sıralayarak RAG isabetini gözle görülür artırıyor.",
+  "en": "Rather than compete on chat, it sits on the retrieval side: its Rerank model reorders candidates returned by vector search and visibly lifts RAG precision.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3130,12 +3190,12 @@ window.LINKS = [
   "name": "DeepSeek",
   "cat": "yz_model",
   "tags": [
-   "ücretsiz",
-   "açık ağırlık",
-   "model"
+   "açık-ağırlık",
+   "llm",
+   "akıl-yürütme"
   ],
-  "tr": "Çin merkezli açık ağırlıklı model ailesi. Akıl yürütme başarımını çok daha düşük eğitim ve kullanım maliyetiyle sunmasıyla dikkat çekti.",
-  "en": "Chinese open-weight model family that drew attention by matching reasoning performance at a fraction of the training and inference cost.",
+  "tr": "V3 ve R1 ağırlıkları indirilebilir durumda. Karışım-uzman (MoE) mimarisi sayesinde toplam parametre büyük ama her jetonda yalnızca bir kısmı etkin — akıl yürütme başarımını çok daha düşük çıkarım maliyetiyle veriyor.",
+  "en": "V3 and R1 weights are downloadable. A mixture-of-experts architecture keeps total parameters high while activating only a slice per token, which is how it delivers reasoning performance at far lower inference cost.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3144,12 +3204,12 @@ window.LINKS = [
   "name": "Google AI for Developers",
   "cat": "yz_model",
   "tags": [
-   "dokümantasyon",
    "api",
-   "google"
+   "dokümantasyon",
+   "llm"
   ],
-  "tr": "Gemini API ve açık Gemma modellerinin geliştirici kapısı; ücretsiz kotayla başlamak için en kısa yol.",
-  "en": "Developer gateway for the Gemini API and open Gemma models, with a free tier to start on.",
+  "tr": "Gemini API ve açık ağırlıklı Gemma ailesinin geliştirici kapısı. Ücretsiz kotası gerçek bir prototip taşıyacak kadar geniş, kredi kartı istemiyor.",
+  "en": "Developer gateway for the Gemini API and the open-weight Gemma family. The free tier is wide enough to carry a real prototype and asks for no card.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3158,12 +3218,13 @@ window.LINKS = [
   "name": "Google AI Studio",
   "cat": "yz_model",
   "tags": [
+   "tarayıcı-içi",
    "ücretsiz",
    "api",
-   "oyun alanı"
+   "test"
   ],
-  "tr": "Gemini modellerini tarayıcıda deneyip API anahtarı almak için oyun alanı. Cömert ücretsiz kotası prototip için elverişli kılıyor.",
-  "en": "Browser playground for trying Gemini models and getting API keys; its generous free tier suits prototyping.",
+  "tr": "İstem denemek, sistem talimatı ayarlamak ve sıcaklık gibi parametreleri kurcalamak için tarayıcı arayüzü. Denediğin çağrıyı doğrudan kod olarak dışa aktarıyor.",
+  "en": "A browser surface for testing prompts, setting system instructions and fiddling with temperature. It exports whatever call you just tried as ready code.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3172,11 +3233,13 @@ window.LINKS = [
   "name": "Google Gemini",
   "cat": "yz_model",
   "tags": [
+   "saas",
    "freemium",
+   "llm",
    "asistan"
   ],
-  "tr": "Google’ın asistanı. Arama, Drive ve YouTube bağlantısı sayesinde zaten Google hesabındaki içerikle çalışırken avantajlı.",
-  "en": "Google’s assistant. Its hooks into Search, Drive and YouTube give it the edge when working with content already in your Google account.",
+  "tr": "Gmail, Drive ve YouTube’a doğrudan bağlanıp hesabındaki içeriği kaynak alabiliyor. Bu entegrasyon onu Google ekosisteminde tutuyorsan avantajlı, tutmuyorsan sıradan kılıyor.",
+  "en": "Connects straight into Gmail, Drive and YouTube to use your own content as source. That integration is decisive if you live in Google’s ecosystem and irrelevant if you do not.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3186,11 +3249,11 @@ window.LINKS = [
   "cat": "yz_model",
   "tags": [
    "ücretsiz",
-   "model",
-   "dizin"
+   "model-arşivi",
+   "lisans"
   ],
-  "tr": "Açık modelleri lisans ve kaynak kaydıyla birlikte karşılaştırmak için alternatif arayüz; indirilen dosyaların SHA-256 özetini yayımlaması ayırt edici yanı.",
-  "en": "Alternative browser for open models with licence and provenance side by side; publishing SHA-256 hashes for downloads is what sets it apart.",
+  "tr": "Açık modelleri lisans ve kaynak kaydıyla yan yana koyan alternatif tarayıcı. İndirilen dosyalar için SHA-256 özeti yayımlıyor, yani bütünlüğü doğrulayabiliyorsun.",
+  "en": "An alternative browser placing open models side by side with licence and provenance. It publishes SHA-256 hashes for downloads, so integrity is verifiable.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3200,11 +3263,12 @@ window.LINKS = [
   "cat": "yz_model",
   "tags": [
    "ücretsiz",
-   "model",
+   "model-arşivi",
+   "veri-kümesi",
    "topluluk"
   ],
-  "tr": "Açık model, veri kümesi ve demo deposu. Tek sağlayıcıya bağlı olmayan, alan bağımsız en büyük model arşivi.",
-  "en": "Repository of open models, datasets and demos — the largest vendor-neutral model archive there is.",
+  "tr": "Model, veri kümesi ve Spaces demolarının merkezî deposu. Her model kartında lisans, eğitim verisi ve değerlendirme sonuçları duruyor — indirmeden önce bakılacak yer orası.",
+  "en": "The central repository for models, datasets and Spaces demos. Each model card carries licence, training data and eval results — read that before you download.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3213,12 +3277,13 @@ window.LINKS = [
   "name": "Kimi Claw",
   "cat": "yz_model",
   "tags": [
+   "saas",
    "freemium",
-   "asistan",
+   "agent",
    "bellek"
   ],
-  "tr": "OpenClaw üzerine kurulu, uzun vadeli belleği ve zamanlanmış görevleri olan sürekli çalışan asistan.",
-  "en": "An always-on assistant built on OpenClaw, with long-term memory and scheduled, proactive tasks.",
+  "tr": "OpenClaw üzerine kurulu barındırılmış sürüm: kalıcı bellek, zamanlanmış görevler ve sen istemeden tetiklenen işler ekliyor. Kendi sunucunu işletmek istemeyenler için.",
+  "en": "A hosted layer on OpenClaw adding persistent memory, scheduled tasks and jobs that fire without being asked. For people who do not want to operate their own server.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3227,12 +3292,12 @@ window.LINKS = [
   "name": "Kimi K2.7 Code",
   "cat": "yz_model",
   "tags": [
-   "açık ağırlık",
-   "model",
-   "kod"
+   "açık-ağırlık",
+   "kod",
+   "model"
   ],
-  "tr": "Moonshot AI’ın kod odaklı açık ağırlıklı modeli; yerel kod asistanı kurmak isteyenler için kapalı API’lere alternatif.",
-  "en": "Moonshot AI’s code-focused open-weight model — an alternative to closed APIs if you want a local coding assistant.",
+  "tr": "Moonshot AI’ın kod odaklı açık ağırlıklı modeli. Yerel kod asistanı kurmak isteyip kapalı API’ye bağlanmak istemeyenler için gerçek bir seçenek.",
+  "en": "Moonshot AI’s code-focused open-weight model — a genuine option if you want a local coding assistant without wiring yourself to a closed API.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3241,12 +3306,13 @@ window.LINKS = [
   "name": "LM Studio",
   "cat": "yz_model",
   "tags": [
+   "masaüstü",
    "ücretsiz",
-   "yerel",
-   "masaüstü"
+   "yerel-model",
+   "gguf"
   ],
-  "tr": "Yerel model çalıştırmak için masaüstü uygulaması. Ollama’dan farkı, model arama ve sohbetin hazır grafik arayüzle gelmesi.",
-  "en": "Desktop app for running models locally; unlike Ollama, model discovery and chat ship as a ready-made GUI.",
+  "tr": "GGUF modelleri aramak, indirmek ve nicemleme seviyesi seçmek için masaüstü arayüz. Hangi nicemlemenin RAM’ine sığacağını önden gösteriyor — Ollama’da bunu kendin hesaplarsın.",
+  "en": "A desktop app for finding GGUF models, downloading them and picking a quantisation level. It tells you upfront which quant fits your RAM; with Ollama you work that out yourself.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3255,12 +3321,12 @@ window.LINKS = [
   "name": "LocateAnything-3B",
   "cat": "yz_model",
   "tags": [
-   "açık ağırlık",
-   "model",
-   "görü"
+   "açık-ağırlık",
+   "görü",
+   "model"
   ],
-  "tr": "NVIDIA’nın görsel konumlandırma modeli; metinle tarif edilen nesneyi görüntüde işaretlemeye odaklı.",
-  "en": "NVIDIA’s visual grounding model, focused on locating an object in an image from a text description.",
+  "tr": "Metinle tarif edilen nesneyi görüntüde sınırlayıcı kutuyla işaretleyen görsel konumlandırma modeli. Sınıflandırmadan farkı, önceden tanımlı etiket listesine bağlı olmaması.",
+  "en": "A visual grounding model that boxes an object in an image from a text description. Unlike classification it is not tied to a predefined label set.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3269,11 +3335,12 @@ window.LINKS = [
   "name": "Meta Llama",
   "cat": "yz_model",
   "tags": [
-   "açık ağırlık",
-   "model"
+   "açık-ağırlık",
+   "llm",
+   "yerel-model"
   ],
-  "tr": "Meta’nın açık ağırlıklı model ailesi. Kapalı API’lerden farkı, ağırlıkları indirip kendi donanımında çalıştırabilmen.",
-  "en": "Meta’s open-weight model family. Unlike closed APIs you can download the weights and run them yourself.",
+  "tr": "Ağırlıklar indirilebilir ve kendi donanımında çalışır. Lisans tam OSI uyumlu değil — büyük ölçekli ticari kullanımda aylık aktif kullanıcı eşiği var, okumadan geçme.",
+  "en": "Weights are downloadable and run on your own hardware. The licence is not fully OSI-compliant: there is a monthly-active-user threshold for large commercial use — read it before shipping.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3282,11 +3349,13 @@ window.LINKS = [
   "name": "Microsoft Copilot",
   "cat": "yz_model",
   "tags": [
+   "saas",
    "ücretsiz",
+   "llm",
    "asistan"
   ],
-  "tr": "Microsoft’un asistanı. Windows ve Office içine gömülü olduğu için belge veya tablo üzerinde ayrı siteye gitmeden çalışabiliyorsun.",
-  "en": "Microsoft’s assistant. Embedded in Windows and Office, so you can work on a document or sheet without leaving for another site.",
+  "tr": "Word, Excel ve Windows kabuğuna gömülü çalışıyor — belgeyi bir siteye kopyalamadan üzerinde işlem yapıyor. Model erişimi OpenAI’ınkiyle aynı, fark dağıtım noktasında.",
+  "en": "Runs embedded in Word, Excel and the Windows shell, so you operate on a document without copying it to a website. The underlying models are OpenAI’s; the difference is the delivery point.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3295,11 +3364,12 @@ window.LINKS = [
   "name": "Mistral AI",
   "cat": "yz_model",
   "tags": [
-   "freemium",
-   "model"
+   "açık-ağırlık",
+   "llm",
+   "freemium"
   ],
-  "tr": "Avrupa merkezli model sağlayıcı. Küçük ve hızlı açık modelleriyle sınırlı donanımda çalıştırma senaryolarında öne çıkıyor.",
-  "en": "European model provider whose small, fast open models stand out when hardware is limited.",
+  "tr": "Avrupa merkezli sağlayıcı. Küçük modelleri (7B ve altı) Apache-2.0 ile yayımlıyor; tek tüketici GPU’suna sığmaları sınırlı donanımda ayrı bir avantaj.",
+  "en": "Europe-based provider that ships its small models (7B and below) under Apache-2.0. They fit on a single consumer GPU, which matters when hardware is the constraint.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3308,11 +3378,13 @@ window.LINKS = [
   "name": "NotebookLM",
   "cat": "yz_model",
   "tags": [
+   "saas",
    "ücretsiz",
+   "rag",
    "araştırma"
   ],
-  "tr": "Yalnızca senin yüklediğin belgelerden cevap veren not defteri. Kaynak dışına çıkmadığı için genel botlara göre uydurma riski belirgin şekilde düşük.",
-  "en": "A notebook that answers only from the documents you upload. Because it will not step outside your sources, hallucination risk drops sharply.",
+  "tr": "Yüklediğin PDF, doküman ve bağlantılarla sınırlı bir bağlam kuruyor; kaynak dışına çıkmayı reddediyor. Bu kısıt uydurma oranını düşürüyor, karşılığında genel bilgi soramıyorsun.",
+  "en": "Builds a context limited to the PDFs, docs and links you upload, and refuses to answer outside them. The constraint cuts hallucination; the price is that you cannot ask it general questions.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3321,13 +3393,13 @@ window.LINKS = [
   "name": "Ollama",
   "cat": "yz_model",
   "tags": [
-   "ücretsiz",
-   "açık kaynak",
-   "yerel",
-   "cli"
+   "açık-kaynak",
+   "cli",
+   "yerel-model",
+   "llama.cpp"
   ],
-  "tr": "Yerel model çalıştırıcı. Tek komutla model indirip çalıştırır; LM Studio’dan farkı arayüz yerine terminal ve API odaklı olması.",
-  "en": "Local model runner — one command pulls and runs a model. Unlike LM Studio it is terminal- and API-first.",
+  "tr": "llama.cpp üzerine kurulu, tek komutla model indirip çalıştıran araç. OpenAI uyumlu bir yerel API açıyor, yani mevcut istemci kodun değişmeden çalışıyor.",
+  "en": "Built on llama.cpp; one command pulls and runs a model. It exposes an OpenAI-compatible local endpoint, so existing client code runs unchanged.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3336,11 +3408,13 @@ window.LINKS = [
   "name": "Open WebUI",
   "cat": "yz_model",
   "tags": [
-   "açık kaynak",
-   "kendi sunucunda"
+   "açık-kaynak",
+   "self-hosted",
+   "docker",
+   "web-ui"
   ],
-  "tr": "Yerel modellere ChatGPT benzeri web arayüzü. Genelde Ollama üstüne kurulur; çok kullanıcı ve sohbet geçmişi ekler.",
-  "en": "A ChatGPT-like web UI for local models, usually layered on Ollama, adding multi-user support and chat history.",
+  "tr": "Ollama veya herhangi bir OpenAI uyumlu uç noktanın önüne geçen web arayüzü. Çok kullanıcı, rol yönetimi ve RAG için belge yükleme getiriyor; genelde Docker ile kuruluyor.",
+  "en": "A web front-end for Ollama or any OpenAI-compatible endpoint, adding multi-user accounts, role management and document upload for RAG. Usually deployed with Docker.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3352,8 +3426,8 @@ window.LINKS = [
    "dokümantasyon",
    "api"
   ],
-  "tr": "OpenAI API’sinin resmî referansı ve rehberleri; uç noktalar ve parametreler için birincil kaynak.",
-  "en": "Official OpenAI API reference and guides — the primary source for endpoints and parameters.",
+  "tr": "Chat Completions, Responses ve Realtime uç noktalarının parametre referansı. Fonksiyon çağırma şeması ve akış (streaming) davranışı için birincil kaynak.",
+  "en": "Parameter reference for the Chat Completions, Responses and Realtime endpoints. The primary source for function-calling schemas and streaming behaviour.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3362,11 +3436,12 @@ window.LINKS = [
   "name": "OpenAI Platform",
   "cat": "yz_model",
   "tags": [
+   "api",
    "ücretli",
-   "api"
+   "llm"
   ],
-  "tr": "GPT modellerinin API konsolu; anahtar, kota ve fiyat yönetimi burada yapılır.",
-  "en": "API console for GPT models — keys, quota and billing live here.",
+  "tr": "API anahtarı, kullanım limitleri ve fatura yönetimi. Kuruluş bazlı kota ayarları ve model kullanım grafikleri de burada.",
+  "en": "API keys, rate limits and billing. Organisation-level quota settings and usage graphs live here too.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3375,12 +3450,13 @@ window.LINKS = [
   "name": "OpenClaw",
   "cat": "yz_model",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "self-hosted",
    "asistan",
-   "kendi sunucunda"
+   "agent"
   ],
-  "tr": "Kendi makinende çalışan açık kaynak kişisel asistan; bulut asistanlarından farkı, hâlihazırda kullandığın sohbet uygulamaları üzerinden çalışması.",
-  "en": "Open-source personal assistant that runs on your own machine and works through the chat apps you already use, unlike cloud assistants.",
+  "tr": "Kendi makinende çalışan kişisel asistan. Arayüzü yok — WhatsApp, Telegram gibi zaten kullandığın sohbet uygulamalarına bağlanıyor, veriler cihazından çıkmıyor.",
+  "en": "A personal assistant that runs on your own machine. It has no UI of its own; it hooks into chat apps you already use, and data never leaves the device.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3389,11 +3465,13 @@ window.LINKS = [
   "name": "Perplexity",
   "cat": "yz_model",
   "tags": [
+   "saas",
    "freemium",
-   "arama"
+   "arama",
+   "rag"
   ],
-  "tr": "Kaynak gösteren yapay zeka arama motoru. Sohbet botlarından farkı, her iddianın altına atıf koyup doğrulamayı mümkün kılması.",
-  "en": "An AI answer engine that cites. Unlike chatbots it puts a source under each claim, so the answer is actually checkable.",
+  "tr": "Sorguyu web aramasına çevirip dönen sayfaları modele okutuyor, sonra her cümleye kaynak numarası iliştiriyor. Yani bir RAG hattı; modelin belleğine değil o anki arama sonuçlarına dayanıyor.",
+  "en": "Turns your query into a web search, feeds the retrieved pages to a model, then footnotes each sentence. It is a RAG pipeline: answers rest on live search results, not the model’s memory.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3402,26 +3480,27 @@ window.LINKS = [
   "name": "Phind",
   "cat": "yz_model",
   "tags": [
+   "saas",
    "freemium",
-   "geliştirici",
-   "arama"
+   "arama",
+   "kod"
   ],
-  "tr": "Geliştiriciye göre ayarlanmış arama asistanı. Genel arama motorlarından farkı, cevabı doğrudan kod parçası ve kaynak bağlantısıyla vermesi.",
-  "en": "A search assistant tuned for developers, answering with code snippets and source links rather than a page of results.",
+  "tr": "Geliştirici sorularına doğrudan kod bloğu ve kaynak bağlantısıyla cevap veriyor. Stack Overflow gezmeye alternatif; alan dışı sorularda genel asistanların gerisinde kalıyor.",
+  "en": "Answers developer questions with a code block and source links rather than a page of results. A substitute for trawling Stack Overflow; it falls behind general assistants outside that domain.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
  {
   "url": "https://huggingface.co/baidu/Unlimited-OCR",
-  "name": "Unlimited-OCR (Baidu)",
+  "name": "Unlimited-OCR",
   "cat": "yz_model",
   "tags": [
-   "açık ağırlık",
-   "model",
-   "ocr"
+   "açık-ağırlık",
+   "ocr",
+   "model"
   ],
-  "tr": "Baidu’nun açık OCR modeli; uzun ve karmaşık düzenli belgelerde sayfa sınırı olmadan metin çıkarmaya odaklı.",
-  "en": "Baidu’s open OCR model, aimed at extracting text from long, complex-layout documents without page limits.",
+  "tr": "Baidu’nun OCR modeli; sayfa sınırı olmadan uzun ve çok sütunlu belgelerden metin çıkarıyor. Tablo ve düzen korumada klasik Tesseract hattından belirgin şekilde iyi.",
+  "en": "Baidu’s OCR model, extracting text from long multi-column documents with no page ceiling. Markedly better than a classic Tesseract pipeline at preserving tables and layout.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3430,11 +3509,13 @@ window.LINKS = [
   "name": "vLLM",
   "cat": "yz_model",
   "tags": [
-   "açık kaynak",
-   "sunum"
+   "açık-kaynak",
+   "python",
+   "sunum",
+   "gpu"
   ],
-  "tr": "Yüksek verimli LLM sunum motoru. Kişisel kullanım için değil; çok isteği paralel karşılayan üretim servisleri için.",
-  "en": "High-throughput LLM serving engine — not for personal use, but for production endpoints handling many concurrent requests.",
+  "tr": "PagedAttention ile KV önbelleğini sayfalayarak GPU belleğini verimli kullanıyor; sürekli yığınlama (continuous batching) sayesinde eşzamanlı istek verimi Ollama’nın kat kat üstünde.",
+  "en": "PagedAttention pages the KV cache to use GPU memory efficiently, and continuous batching pushes concurrent-request throughput far past what Ollama manages.",
   "cat_tr": "YZ · Modeller & Asistanlar",
   "cat_en": "AI · Models & Assistants"
  },
@@ -3443,12 +3524,13 @@ window.LINKS = [
   "name": "Agent Development Kit (ADK)",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "agent",
    "google"
   ],
-  "tr": "Google’ın agent geliştirme kiti; değerlendirme ve dağıtım araçlarının kutudan çıkması onu ayırıyor.",
-  "en": "Google’s agent development kit; built-in evaluation and deployment tooling is what sets it apart.",
+  "tr": "Google’ın agent kiti; değerlendirme koşumu ve Cloud Run’a dağıtım komutları kutudan çıkıyor. Agent2Agent protokolüyle farklı çatılardaki agent’ları konuşturabiliyor.",
+  "en": "Google’s agent kit, shipping an evaluation harness and Cloud Run deployment commands out of the box. The Agent2Agent protocol lets agents from different frameworks talk.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3458,10 +3540,11 @@ window.LINKS = [
   "cat": "yz_altyapi",
   "tags": [
    "video",
-   "ücretsiz"
+   "ücretsiz",
+   "agent"
   ],
-  "tr": "Agent geliştirme üzerine video dersi dizisi; okumak yerine izleyerek başlamak isteyenler için.",
-  "en": "A video course series on agent development, for those who would rather watch than read.",
+  "tr": "Agent kurmayı adım adım gösteren video serisi; okumak yerine izleyerek başlamak isteyenler için.",
+  "en": "A video series building agents step by step, for people who would rather watch than read.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3470,12 +3553,13 @@ window.LINKS = [
   "name": "Agno",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "agent",
-   "python"
+   "performans"
   ],
-  "tr": "Hafif ve hızlı agent kütüphanesi. LangChain’e göre çok daha ince bir katman sunar; bellek ve araç desteği çekirdeğe gömülüdür.",
-  "en": "Lightweight, fast agent library — a far thinner layer than LangChain, with memory and tools built into the core.",
+  "tr": "Bellek, araç ve bilgi tabanı desteği çekirdeğe gömülü; ek soyutlama katmanı yok. Agent örnekleme süresi mikrosaniye mertebesinde olduğu için çok agent’lı senaryolarda hafif kalıyor.",
+  "en": "Memory, tools and knowledge base are built into the core with no extra abstraction layer. Agent instantiation lands in the microsecond range, which keeps it light in many-agent scenarios.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3484,12 +3568,13 @@ window.LINKS = [
   "name": "AirLLM",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "yerel"
+   "yerel-model",
+   "bellek"
   ],
-  "tr": "70B modeli 4 GB GPU ile çalıştırmayı sağlayan katman katman çıkarım tekniği; nicemlemeden farklı bir bellek stratejisi.",
-  "en": "Layer-by-layer inference that runs a 70B model on a 4 GB GPU — a different memory strategy from quantisation.",
+  "tr": "70B modeli 4 GB GPU’da çalıştırıyor: katmanları tek tek yükleyip işledikten sonra bellekten atıyor. Nicemlemeden farkı, ağırlıkların hassasiyetini düşürmemesi — bedeli ise yavaşlık.",
+  "en": "Runs a 70B model on a 4 GB GPU by loading one layer at a time and discarding it after use. Unlike quantisation it does not reduce weight precision; the cost is speed.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3498,10 +3583,11 @@ window.LINKS = [
   "name": "AMI Labs",
   "cat": "yz_altyapi",
   "tags": [
-   "araştırma"
+   "araştırma",
+   "dünya-modeli"
   ],
-  "tr": "Dünya modeli tabanlı yapay zeka geliştiren araştırma şirketi; dil modeli yerine fiziksel dünyayı modellemeye odaklı.",
-  "en": "Research company building world-model-based AI, focused on modelling the physical world rather than language.",
+  "tr": "Dil yerine fiziksel dünyayı modelleyen sistemler üzerine çalışan araştırma şirketi; robotik ve endüstriyel denetim tarafına bakıyor.",
+  "en": "A research company building systems that model the physical world rather than language, aimed at robotics and industrial control.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3510,11 +3596,13 @@ window.LINKS = [
   "name": "Apache Airflow",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "orkestrasyon"
+   "açık-kaynak",
+   "python",
+   "orkestrasyon",
+   "etl"
   ],
-  "tr": "Veri hattı zamanlayıcısının fiilî standardı; zamanlanmış toplu işlerde güçlü, olay güdümlü akışlarda hantal.",
-  "en": "The de facto standard scheduler for data pipelines — strong for scheduled batch work, clumsy for event-driven flows.",
+  "tr": "DAG’ları Python’da tanımlayıp zamanlıyorsun. Toplu veri hattında fiilî standart; olay güdümlü ve düşük gecikmeli işlerde hantal kalıyor.",
+  "en": "You define DAGs in Python and schedule them. The de facto standard for batch data pipelines, and clumsy for event-driven, low-latency work.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3523,11 +3611,13 @@ window.LINKS = [
   "name": "Arize Phoenix",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "gözlem"
+   "açık-kaynak",
+   "python",
+   "tracing",
+   "not-defteri"
   ],
-  "tr": "Yerelde çalışan izleme ve değerlendirme aracı; not defteri içinde hızlı hata ayıklama için elverişli.",
-  "en": "Locally running tracing and evaluation tool, handy for quick debugging inside a notebook.",
+  "tr": "Not defterinin içinde çalışıp izleri yerelde gösteriyor. Gömme uzayını görselleştirip alma hatasının nereden geldiğini kümelenmeye bakarak buldurabiliyor.",
+  "en": "Runs inside a notebook and renders traces locally. It can visualise the embedding space so you find the source of a retrieval failure by looking at clustering.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3536,11 +3626,13 @@ window.LINKS = [
   "name": "Atlas Vector Search",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "ücretli",
-   "vektör"
+   "vektör-db",
+   "nosql"
   ],
-  "tr": "MongoDB belgelerinin yanında vektör araması; veri zaten Mongo’daysa ayrı senkronizasyon derdini ortadan kaldırır.",
-  "en": "Vector search next to your MongoDB documents, removing a sync step if the data already lives there.",
+  "tr": "Vektör indeksi belgelerin yanında duruyor, ayrı bir depoya kopyalama ve senkron tutma derdi kalkıyor. Yalnızca Atlas’ta, kendi kurduğun MongoDB’de yok.",
+  "en": "The vector index sits beside your documents, removing the copy-and-sync burden of a separate store. Atlas only — it is not in a self-managed MongoDB.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3549,12 +3641,12 @@ window.LINKS = [
   "name": "Awesome Claude Skills",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
    "github",
-   "koleksiyon"
+   "awesome-liste",
+   "agent"
   ],
-  "tr": "Claude yetenekleri için derlenmiş liste; tek tek arama yapmadan neyin mevcut olduğunu görmek için.",
-  "en": "A curated list of Claude skills — a way to see what exists without searching one by one.",
+  "tr": "Claude yeteneklerinin derlenmiş listesi. Neyin zaten yazıldığını görüp aynı şeyi ikinci kez yazmamak için bakılacak yer.",
+  "en": "A curated list of Claude skills — the place to check what already exists before writing the same thing twice.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3563,12 +3655,13 @@ window.LINKS = [
   "name": "AWS Bedrock Agents",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "ücretli",
    "agent",
    "aws"
   ],
-  "tr": "AWS’in yönetilen agent servisi; kendi çatını işletmek yerine altyapıyı AWS’e bırakmak isteyenler için.",
-  "en": "AWS’s managed agent service — for teams who would rather hand the infrastructure to AWS than run their own framework.",
+  "tr": "Agent tanımı, araç şeması ve bilgi tabanı AWS konsolundan yapılandırılıyor; çalışma zamanını AWS işletiyor. Kendi çatını işletmemenin bedeli, akışın AWS’in belirlediği kalıba sığması.",
+  "en": "Agent definition, tool schema and knowledge base are configured in the console; AWS runs the runtime. The price of not operating your own framework is fitting the flow into AWS’s shape.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3577,12 +3670,13 @@ window.LINKS = [
   "name": "AWS Bedrock Guardrails",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "ücretli",
-   "güvenlik",
+   "guardrail",
    "aws"
   ],
-  "tr": "Bedrock üzerindeki modellere içerik ve konu filtresi ekleyen yönetilen katman.",
-  "en": "Managed content and topic filtering for models running on Bedrock.",
+  "tr": "İçerik filtresi, yasaklı konu listesi ve kişisel veri maskeleme; Bedrock dışındaki modellere de bağımsız API olarak uygulanabiliyor.",
+  "en": "Content filters, denied-topic lists and PII redaction — and it can be applied as a standalone API to models outside Bedrock too.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3591,12 +3685,13 @@ window.LINKS = [
   "name": "AWS Strands Agents",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "agent",
    "aws"
   ],
-  "tr": "AWS’in model güdümlü agent SDK’sı. Akışı elle kurmak yerine modele araç listesi verip planı ona bırakma yaklaşımını benimser.",
-  "en": "AWS’s model-driven agent SDK: instead of hand-wiring flow you hand the model a tool list and let it plan.",
+  "tr": "Akışı elle kurmuyorsun: modele araç listesini veriyorsun, planlamayı o yapıyor. Az kod isteyen bir yaklaşım, karşılığında hata ayıklarken kararın nereden geldiğini izlemek zorlaşıyor.",
+  "en": "You do not wire the flow — you hand the model a tool list and it plans. Less code to write, at the cost of harder debugging when you need to trace where a decision came from.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3605,12 +3700,13 @@ window.LINKS = [
   "name": "Azure AI Content Safety",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "ücretli",
-   "güvenlik",
+   "guardrail",
    "azure"
   ],
-  "tr": "Metin ve görselde zararlı içerik sınıflandıran Azure servisi; kendi sınıflandırıcını eğitmeye alternatif.",
-  "en": "Azure service classifying harmful content in text and images — an alternative to training your own classifier.",
+  "tr": "Metin ve görseli dört zarar kategorisinde önem derecesiyle puanlayan sınıflandırıcı. Eşikleri kendin ayarlıyorsun; kendi moderasyon modelini eğitmeye alternatif.",
+  "en": "A classifier scoring text and images across four harm categories with severity levels. You set the thresholds yourself — an alternative to training your own moderation model.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3619,12 +3715,13 @@ window.LINKS = [
   "name": "Azure AI Foundry",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "ücretli",
-   "agent",
-   "azure"
+   "azure",
+   "platform"
   ],
-  "tr": "Azure’un uçtan uca YZ uygulama platformu: model kataloğu, agent servisi ve değerlendirme tek çatı altında.",
-  "en": "Azure’s end-to-end AI application platform: model catalogue, agent service and evaluation under one roof.",
+  "tr": "Model kataloğu, agent servisi, değerlendirme ve içerik filtresi tek portalda. Uyumluluk ve bölge denetimi gerektiren kurumsal dağıtımlar için toplanmış bir yığın.",
+  "en": "Model catalogue, agent service, evaluation and content filtering in one portal — a stack assembled for enterprise deployments that need compliance and region control.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3637,22 +3734,22 @@ window.LINKS = [
    "api",
    "azure"
   ],
-  "tr": "OpenAI modellerinin Azure üzerinden, kurumsal uyumluluk ve bölge denetimiyle sunulan hâli.",
-  "en": "OpenAI models delivered through Azure with enterprise compliance and region control.",
+  "tr": "OpenAI modelleri, Azure’un bölge seçimi ve özel ağ desteğiyle. Model sürümleri OpenAI’dan geriden geliyor; uyumluluk kazancının bedeli bu gecikme.",
+  "en": "OpenAI models with Azure’s region selection and private networking. Model versions lag OpenAI’s own releases — that lag is the price of the compliance gain.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
  {
   "url": "https://huggingface.co/BAAI",
-  "name": "BGE Modelleri (BAAI)",
+  "name": "BGE Modelleri",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-ağırlık",
    "embedding",
    "model"
   ],
-  "tr": "Açık gömme modellerinin en çok kullanılan ailesi; ücretli API’lere yakın başarımı ücretsiz sunduğu için yaygın.",
-  "en": "The most used family of open embedding models — close to paid-API quality at no cost.",
+  "tr": "Açık gömme modellerinin en yaygın ailesi. MTEB sıralamasında ücretli API’lere yakın duruyor ve çoğu sürüm MIT lisanslı, yani ticari kullanımda engel yok.",
+  "en": "The most widely used family of open embedding models. It sits close to paid APIs on the MTEB leaderboard and most releases are MIT, so commercial use is unblocked.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3661,12 +3758,13 @@ window.LINKS = [
   "name": "BitNet",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "araştırma"
+   "araştırma",
+   "nicemleme"
   ],
-  "tr": "Microsoft’un 1-bit LLM çıkarım çatısı; ağırlıkları uç noktaya kadar sıkıştırarak CPU üzerinde çalıştırmayı hedefler.",
-  "en": "Microsoft’s 1-bit LLM inference framework, compressing weights to the extreme to run models on CPU.",
+  "tr": "Ağırlıkları 1.58 bite (üç değere) indiren çıkarım çatısı. Çarpma işlemleri toplamaya dönüştüğü için CPU üzerinde kabul edilebilir hızda çalışıyor.",
+  "en": "An inference framework reducing weights to 1.58 bits (three values). Multiplications collapse into additions, which is why it runs at acceptable speed on CPU.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3675,12 +3773,13 @@ window.LINKS = [
   "name": "Call Center AI",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
+   "ses",
    "örnek"
   ],
-  "tr": "API çağrısıyla telefon araması yapan agent örneği; sesli agent mimarisi için çalışan bir referans uygulama.",
-  "en": "An agent that places phone calls from an API call — a working reference implementation for voice-agent architecture.",
+  "tr": "API çağrısıyla telefon araması başlatan agent örneği; konuşma tanıma, model ve sentez zincirini uçtan uca gösteriyor. Sesli agent mimarisi için çalışan bir referans.",
+  "en": "An agent that places phone calls from an API call, showing the speech-recognition → model → synthesis chain end to end. A working reference for voice-agent architecture.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3689,12 +3788,13 @@ window.LINKS = [
   "name": "CAMEL-AI",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "agent",
-   "araştırma"
+   "açık-kaynak",
+   "python",
+   "araştırma",
+   "çoklu-agent"
   ],
-  "tr": "Çok agent’lı toplum simülasyonuna odaklı araştırma çatısı; ürün geliştirmekten çok agent davranışı incelemek için elverişli.",
-  "en": "Research framework for multi-agent society simulation — better for studying agent behaviour than shipping products.",
+  "tr": "Rol oynayan agent’ların birbirini yönlendirdiği toplum simülasyonu üzerine araştırma çatısı. Ölçekli deney ve sentetik veri üretimi için elverişli, ürün altyapısı olarak değil.",
+  "en": "A research framework for societies of role-playing agents steering each other. Suited to scaled experiments and synthetic data generation, not to production plumbing.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3703,12 +3803,13 @@ window.LINKS = [
   "name": "Chroma",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "vektör",
-   "python"
+   "açık-kaynak",
+   "python",
+   "vektör-db",
+   "gömülü"
   ],
-  "tr": "Gömülü çalışan, kurulumu neredeyse sıfır vektör veritabanı; prototip ve yerel geliştirmede en hızlı başlangıç.",
-  "en": "Embedded vector database with near-zero setup — the fastest start for prototypes and local development.",
+  "tr": "Uygulamanın içine gömülü çalışıyor, sunucu süreci yok — `pip install` sonrası kullanmaya başlıyorsun. Prototip için en hızlısı, üretim ölçeğinde başkasına devretmen gerekiyor.",
+  "en": "Runs embedded in your application with no server process — usable straight after `pip install`. Fastest for a prototype; at production scale you will hand off to something else.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3717,12 +3818,12 @@ window.LINKS = [
   "name": "Claude Code Best Practice",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
    "github",
-   "rehber"
+   "rehber",
+   "agent"
   ],
-  "tr": "Kod asistanıyla çalışma pratiklerini derleyen depo; tek bir aracın dokümanından çok saha notu niteliğinde.",
-  "en": "A repo collecting practices for working with a coding agent — field notes rather than official docs.",
+  "tr": "Kod asistanıyla çalışırken işe yarayan ve yaramayan yaklaşımları derleyen depo. Resmî doküman değil, saha notu niteliğinde.",
+  "en": "A repo collecting what does and does not work when pairing with a coding agent — field notes rather than official docs.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3731,11 +3832,13 @@ window.LINKS = [
   "name": "Cohere Embed",
   "cat": "yz_altyapi",
   "tags": [
+   "api",
    "ücretli",
-   "embedding"
+   "embedding",
+   "çok-dilli"
   ],
-  "tr": "Çok dilli gömme modeli; 100+ dili tek uzayda temsil etmesi Türkçe dahil diller arası aramada avantaj sağlıyor.",
-  "en": "Multilingual embedding model; representing 100+ languages in one space is its edge for cross-language search.",
+  "tr": "100’den fazla dili tek vektör uzayında temsil ediyor; Türkçe sorguyla İngilizce belge bulmak mümkün. Sorgu ve belge için ayrı giriş tipi almasi eşleşme kalitesini artırıyor.",
+  "en": "Represents 100+ languages in one vector space, so a Turkish query can retrieve an English document. Taking separate input types for query and document lifts match quality.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3744,12 +3847,13 @@ window.LINKS = [
   "name": "Composio",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "freemium",
    "agent",
-   "entegrasyon"
+   "oauth"
   ],
-  "tr": "Agent’lara hazır araç ve yetkilendirme sağlayan katman; her SaaS için ayrı OAuth akışı yazma yükünü ortadan kaldırır.",
-  "en": "Layer giving agents ready-made tools and delegated auth, removing the need to write an OAuth flow per SaaS.",
+  "tr": "Bin küsur uygulama için hazır araç tanımı ve devredilmiş OAuth akışı sağlıyor. Her SaaS için kimlik doğrulama yazmak yerine yetkilendirmeyi ona devrediyorsun.",
+  "en": "Ships ready tool definitions and delegated OAuth for a thousand-odd apps. Instead of writing auth per SaaS, you hand the authorisation off to it.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3758,12 +3862,13 @@ window.LINKS = [
   "name": "CrewAI",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "agent",
-   "python"
+   "çoklu-agent"
   ],
-  "tr": "Rol tabanlı çoklu agent çatısı. Çekirdek fikri, agent’lara “araştırmacı, yazar” gibi roller verip iş bölümü kurmak.",
-  "en": "Role-based multi-agent framework whose core idea is assigning roles like “researcher, writer” and letting them divide the work.",
+  "tr": "Her agent’a rol, hedef ve arka plan veriyorsun; görevler sıralı ya da hiyerarşik olarak dağıtılıyor. Kavramsal olarak sade ama akış üzerinde LangGraph kadar ince denetim vermiyor.",
+  "en": "You give each agent a role, goal and backstory; tasks are dispatched sequentially or hierarchically. Conceptually simple, but it gives less fine control over flow than LangGraph.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3772,12 +3877,13 @@ window.LINKS = [
   "name": "DSPy",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "rag",
+   "açık-kaynak",
+   "python",
+   "optimizasyon",
    "araştırma"
   ],
-  "tr": "İstem yazmak yerine istemleri programlayıp optimize eden çatı; elle prompt ayarlamayı bir derleyiciye devretme fikri üzerine kurulu.",
-  "en": "Framework that programs and optimises prompts instead of writing them — built on handing prompt-tuning to a compiler.",
+  "tr": "İstem metni yazmıyorsun; giriş-çıkış imzası tanımlıyor, örnek veri veriyorsun, optimizer istemleri ve few-shot örneklerini kendisi üretiyor. Prompt ayarını derleyiciye devreden bir yaklaşım.",
+  "en": "You do not write prompt text — you declare input/output signatures and supply examples, and an optimiser generates the prompts and few-shot demonstrations. Prompt tuning handed to a compiler.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3787,10 +3893,11 @@ window.LINKS = [
   "cat": "yz_altyapi",
   "tags": [
    "freemium",
-   "arama"
+   "arama",
+   "hibrit"
   ],
-  "tr": "Metin arama motoru; artık vektör aramayı da destekliyor, anahtar kelime ve anlamsal aramayı birlikte isteyenler için uygun.",
-  "en": "Text search engine that now also does vector search — a fit when you want keyword and semantic retrieval together.",
+  "tr": "BM25 anahtar kelime aramasıyla vektör aramasını tek sorguda birleştirip (hibrit arama) sonuçları RRF ile harmanlayabiliyor. Saf vektör veritabanlarının eksiği tam olarak bu ilk yarı.",
+  "en": "Combines BM25 keyword search with vector search in a single query and fuses the results with RRF. That keyword half is exactly what pure vector databases lack.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3799,12 +3906,13 @@ window.LINKS = [
   "name": "Everything Claude Code",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "agent"
+   "agent",
+   "yapılandırma"
   ],
-  "tr": "Kod asistanları için yetenek, kural ve bellek düzeni sunan kapsamlı yapılandırma seti.",
-  "en": "A comprehensive configuration set of skills, rules and memory layout for coding agents.",
+  "tr": "Kod asistanları için yetenek, kural, bellek düzeni ve güvenlik ayarlarını tek pakette toplayan yapılandırma seti. Sıfırdan kurmak yerine üzerine budayarak başlanacak türden.",
+  "en": "A configuration bundle of skills, rules, memory layout and security settings for coding agents. The kind of thing you start from and prune, rather than assemble from scratch.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3813,12 +3921,13 @@ window.LINKS = [
   "name": "FastMCP",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "mcp",
-   "python"
+   "sdk"
   ],
-  "tr": "Python’da MCP sunucusu yazmanın kısa yolu; ham SDK’ya göre çok daha az kalıp kod ister.",
-  "en": "The quick way to write an MCP server in Python — far less boilerplate than the raw SDK.",
+  "tr": "Dekoratörle fonksiyon işaretleyip MCP aracına çeviriyorsun; şema tip ipuçlarından üretiliyor. Ham SDK’da elle yazdığın kalıp kodun neredeyse tamamını siliyor.",
+  "en": "Decorate a function and it becomes an MCP tool, with the schema derived from type hints. It erases nearly all the boilerplate you would hand-write against the raw SDK.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3827,12 +3936,13 @@ window.LINKS = [
   "name": "Get Shit Done",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "agent"
+   "agent",
+   "spec-driven"
   ],
-  "tr": "Meta-istem ve şartname güdümlü geliştirme sistemi; “vibe coding”den planlı üretime geçmeyi hedefler.",
-  "en": "A meta-prompting and spec-driven development system aimed at moving from vibe coding to planned delivery.",
+  "tr": "Şartname güdümlü geliştirme sistemi: önce spec yazdırıyor, sonra ona karşı kod ürettiriyor. Amaç, üretilen kodun ne yapması gerektiğini yazılı bir referansa bağlamak.",
+  "en": "A spec-driven development system: it has the agent write a spec first and generate code against it, so what the code should do is anchored to a written reference.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3841,12 +3951,13 @@ window.LINKS = [
   "name": "GitHub MCP Server",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "github",
    "mcp",
-   "github"
+   "go"
   ],
-  "tr": "GitHub’ın resmî MCP sunucusu; depo, konu ve PR işlemlerini asistana araç olarak açar.",
-  "en": "GitHub’s official MCP server, exposing repo, issue and PR operations as assistant tools.",
+  "tr": "Depo, konu, PR ve Actions işlemlerini araç olarak açan resmî sunucu. İnce taneli izin kapsamı seçilebiliyor, yani asistana yalnızca okuma yetkisi verebilirsin.",
+  "en": "The official server exposing repo, issue, PR and Actions operations as tools. Permission scopes are fine-grained, so you can hand an assistant read-only access.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3855,13 +3966,13 @@ window.LINKS = [
   "name": "Graphify",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "rag",
-   "kod"
+   "kod",
+   "bilgi-grafiği"
   ],
-  "tr": "Kod tabanını dokümanları, şemaları ve PDF’leriyle birlikte sorgulanabilir bilgi grafiğine çeviren araç; kod asistanlarına bağlam vermek için.",
-  "en": "Turns a codebase — with its docs, schemas and PDFs — into a queryable knowledge graph to feed context to coding agents.",
+  "tr": "Kod tabanını AST çözümlemesiyle gezip dokümanları, SQL şemalarını ve PDF’leri de katarak sorgulanabilir bir grafiğe çeviriyor. Kod asistanına bağlam beslemek için tasarlanmış.",
+  "en": "Walks a codebase via AST analysis and folds in docs, SQL schemas and PDFs to build a queryable graph. Designed to feed context to a coding agent.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3870,12 +3981,13 @@ window.LINKS = [
   "name": "GraphRAG",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "rag",
-   "araştırma"
+   "bilgi-grafiği"
   ],
-  "tr": "Belgelerden bilgi grafiği çıkarıp öyle sorgulayan yaklaşım. Klasik parça-getir yönteminin cevaplayamadığı “bütüne dair” sorular için.",
-  "en": "Extracts a knowledge graph from documents and queries that — aimed at whole-corpus questions plain chunk retrieval cannot answer.",
+  "tr": "Belgelerden varlık ve ilişki çıkarıp bilgi grafiği kuruyor, sonra topluluk özetleri üretiyor. “Bu külliyatın ana temaları neler” gibi bütüne dair sorular parça-getir yöntemiyle cevaplanamıyor; bu onun için var.",
+  "en": "Extracts entities and relations into a knowledge graph, then builds community summaries. Corpus-wide questions like “what are the main themes here” cannot be answered by chunk retrieval; this exists for those.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3884,12 +3996,13 @@ window.LINKS = [
   "name": "Guardrails AI",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "güvenlik",
-   "python"
+   "açık-kaynak",
+   "python",
+   "guardrail",
+   "doğrulama"
   ],
-  "tr": "Model çıktısını şema ve kurallara göre doğrulayan kütüphane. NeMo diyaloğu denetler, bu ise çıktının biçim ve içeriğini.",
-  "en": "Library validating model output against schemas and rules. NeMo guards the dialogue; this guards the output’s shape and content.",
+  "tr": "Çıktıyı şema ve doğrulayıcı zincirine sokuyor; başarısız olursa yeniden deniyor ya da düzeltiyor. NeMo diyaloğu tutuyor, bu ise üretilen metnin biçim ve içeriğini.",
+  "en": "Runs output through a chain of schemas and validators, retrying or repairing on failure. NeMo holds the dialogue; this holds the shape and content of the generated text.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3898,12 +4011,13 @@ window.LINKS = [
   "name": "Haystack",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "rag",
-   "python"
+   "pipeline"
   ],
-  "tr": "Boru hattı merkezli RAG çatısı. Bileşenleri açıkça bağladığın için akışın nerede ne yaptığı LangChain’e göre daha görünür.",
-  "en": "Pipeline-centric RAG framework; because you wire components explicitly, the flow is more visible than in LangChain.",
+  "tr": "Bileşenleri açıkça birbirine bağlıyorsun; hattın hangi adımda ne yaptığı okunabilir kalıyor. Hata ayıklarken bu şeffaflık LangChain’in örtük akışına karşı gözle görülür bir kazanç.",
+  "en": "You wire components together explicitly, so what happens at each stage stays readable. When debugging, that transparency is a visible win over LangChain’s implicit flow.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3912,12 +4026,13 @@ window.LINKS = [
   "name": "Headroom",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "optimizasyon"
+   "optimizasyon",
+   "proxy"
   ],
-  "tr": "Araç çıktısı ve RAG parçalarını modele ulaşmadan sıkıştıran katman; aynı cevabı belirgin şekilde daha az jetonla almayı hedefler.",
-  "en": "Layer that compresses tool output and RAG chunks before they reach the model, aiming for the same answers at markedly fewer tokens.",
+  "tr": "Araç çıktısı, günlük ve RAG parçalarını modele ulaşmadan sıkıştırıyor. Kütüphane, vekil ya da MCP sunucusu olarak çalışabiliyor — JSON ağırlıklı yüklerde kazanç en yüksek.",
+  "en": "Compresses tool output, logs and RAG chunks before they reach the model. Runs as a library, a proxy or an MCP server; the gain is largest on JSON-heavy payloads.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3926,11 +4041,13 @@ window.LINKS = [
   "name": "Helicone",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "gözlem"
+   "açık-kaynak",
+   "proxy",
+   "tracing",
+   "maliyet"
   ],
-  "tr": "Tek satır vekil değişikliğiyle LLM isteklerini kaydeden gözlem katmanı; kod değişikliği gerektirmemesi ayırt edici yanı.",
-  "en": "Observability via a one-line proxy change — requiring no code changes is what distinguishes it.",
+  "tr": "Taban URL’yi değiştirmen yeterli; istekler üzerinden geçerken kaydediliyor. Kod değişikliği istememesi, mevcut bir projeye sonradan takmayı kolaylaştırıyor.",
+  "en": "Change the base URL and requests are logged as they pass through. Requiring no code change makes it easy to bolt onto a project after the fact.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3939,12 +4056,12 @@ window.LINKS = [
   "name": "Humanizer",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
    "yazım"
   ],
-  "tr": "Metinden yapay zeka yazımına özgü kalıpları temizleyen yetenek; üslup düzeltmesine odaklı dar bir araç.",
-  "en": "A skill that strips tell-tale AI writing patterns from text — a narrow tool focused purely on style.",
+  "tr": "Metinden yapay zeka yazımına özgü kalıpları (aşırı paralel yapı, gereksiz geçiş cümleleri, tekdüze ritim) temizleyen dar kapsamlı yetenek.",
+  "en": "A narrow skill stripping the tells of AI writing — over-parallel structure, filler transitions, uniform rhythm — from a text.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3953,11 +4070,12 @@ window.LINKS = [
   "name": "Kestra",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "orkestrasyon"
+   "açık-kaynak",
+   "orkestrasyon",
+   "yaml"
   ],
-  "tr": "YAML ile tanımlanan orkestrasyon motoru; akışı kodlamak yerine bildirimsel yazmak isteyen ekipler için.",
-  "en": "Orchestration defined in YAML — for teams who prefer declaring flows over coding them.",
+  "tr": "Akışlar YAML’de bildirimsel olarak tanımlanıyor; dil bağımsız olduğu için Python olmayan ekiplerde de çalışıyor. Sürüm kontrolüyle iyi geçiniyor.",
+  "en": "Flows are declared in YAML, and being language-agnostic it works for teams that are not on Python. It sits well in version control.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3966,11 +4084,13 @@ window.LINKS = [
   "name": "Lakera Guard",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "ücretli",
-   "güvenlik"
+   "guardrail",
+   "prompt-injection"
   ],
-  "tr": "İstem enjeksiyonu ve jailbreak tespitine odaklı ticari koruma katmanı; saldırı örüntülerini sürekli güncellenen veriyle yakalar.",
-  "en": "Commercial protection layer for prompt injection and jailbreak detection, backed by continuously updated attack data.",
+  "tr": "İstem enjeksiyonu ve jailbreak tespitine odaklı API. Saldırı örüntülerini Gandalf adlı oyunlaştırılmış deneyden toplanan gerçek veriyle besliyor.",
+  "en": "An API focused on prompt injection and jailbreak detection, fed by real attack data harvested from its gamified Gandalf experiment.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3979,12 +4099,13 @@ window.LINKS = [
   "name": "LangChain",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "çatı",
-   "python"
+   "mit"
   ],
-  "tr": "LLM uygulamaları için en yaygın çatı. Geniş entegrasyon kütüphanesi başlıca avantajı; kalın soyutlama katmanı ise en sık eleştirilen yanı.",
-  "en": "The most widely used framework for LLM apps. Its huge integration library is the upside; its thick abstraction layer is the most common complaint.",
+  "tr": "Model, vektör deposu ve araç sağlayıcıları ortak arayüz altında toplayan çatı. Entegrasyon sayısı en büyük kozu; soyutlama katmanının kalınlığı da en sık gelen şikâyet.",
+  "en": "Wraps model, vector store and tool providers behind common interfaces. The integration count is its strongest card; the thickness of the abstraction layer is the most frequent complaint.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -3994,10 +4115,11 @@ window.LINKS = [
   "cat": "yz_altyapi",
   "tags": [
    "dokümantasyon",
+   "öğretici",
    "agent"
   ],
-  "tr": "İlk agent’ı kurmayı anlatan resmî öğretici; çatının araç çağırma modelini kavramak için en kısa yol.",
-  "en": "Official tutorial for building your first agent — the shortest path to understanding the tool-calling model.",
+  "tr": "Araç tanımlama, model bağlama ve döngüyü kurma adımlarını sırayla gösteren resmî başlangıç. Araç çağırma protokolünün nasıl işlediğini görmek için en kısa yol.",
+  "en": "The official walkthrough of defining tools, binding a model and wiring the loop — the shortest way to see how the tool-calling protocol actually works.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4007,10 +4129,10 @@ window.LINKS = [
   "cat": "yz_altyapi",
   "tags": [
    "dokümantasyon",
-   "çatı"
+   "python"
   ],
-  "tr": "LangChain’in güncel resmî dokümanı; sadeleştirilmiş `create_agent` yaklaşımı burada anlatılıyor.",
-  "en": "LangChain’s current official docs, covering the simplified `create_agent` approach.",
+  "tr": "Güncel doküman, eski zincir kavramlarını bırakıp `create_agent` etrafında sadeleşmiş bir API anlatıyor. Eski öğreticilerdeki `LLMChain` örnekleri artık geçerli değil.",
+  "en": "The current docs drop the old chain vocabulary for a slimmer API built around `create_agent`. The `LLMChain` examples in older tutorials no longer apply.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4019,12 +4141,13 @@ window.LINKS = [
   "name": "Langfuse",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "gözlem",
-   "kendi sunucunda"
+   "açık-kaynak",
+   "self-hosted",
+   "tracing",
+   "mit"
   ],
-  "tr": "Açık kaynak LLM gözlemlenebilirliği; LangSmith’ten farkı kendi sunucunda çalıştırılabilmesi ve çatı bağımsız olması.",
-  "en": "Open-source LLM observability. Unlike LangSmith it can be self-hosted and is framework-agnostic.",
+  "tr": "Çatı bağımsız izleme ve değerlendirme; OpenTelemetry uyumlu. Kendi sunucunda çalıştırabildiğin için istem ve yanıt verisi dışarı çıkmıyor.",
+  "en": "Framework-agnostic tracing and evaluation, OpenTelemetry-compatible. Because you can self-host it, prompt and response data never leaves your infrastructure.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4033,11 +4156,13 @@ window.LINKS = [
   "name": "LangGraph",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "agent"
+   "açık-kaynak",
+   "python",
+   "agent",
+   "durum-makinesi"
   ],
-  "tr": "Agent akışını durum grafiği olarak kuran LangChain katmanı. Düz zincirlerden farkı döngü, dallanma ve insan onayı adımlarını taşıyabilmesi.",
-  "en": "LangChain layer modelling agent flow as a state graph. Unlike plain chains it supports loops, branching and human-approval steps.",
+  "tr": "Agent akışını düğüm ve kenarlardan oluşan bir durum grafiği olarak tanımlıyorsun. Döngü, koşullu dallanma ve akışı durdurup insan onayı bekleme (interrupt) buradan çıkıyor; düz zincirde bunlar yok.",
+  "en": "You define agent flow as a state graph of nodes and edges, which is where loops, conditional branching and pausing for human approval (interrupts) come from. A flat chain has none of that.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4049,8 +4174,8 @@ window.LINKS = [
    "dokümantasyon",
    "bellek"
   ],
-  "tr": "LangGraph’ta kısa ve uzun vadeli bellek desenlerini anlatan resmî kavram sayfası.",
-  "en": "Official concept page on short- and long-term memory patterns in LangGraph.",
+  "tr": "Kısa vadeli (thread içi durum) ve uzun vadeli (thread’ler arası store) belleğin ayrımını ve hangisinin ne zaman kullanılacağını anlatan kavram sayfası.",
+  "en": "The concept page separating short-term memory (in-thread state) from long-term (a cross-thread store), and when each applies.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4059,11 +4184,13 @@ window.LINKS = [
   "name": "LangSmith",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "freemium",
-   "gözlem"
+   "tracing",
+   "eval"
   ],
-  "tr": "LangChain ekibinin izleme ve değerlendirme aracı; zincirin her adımını ayrı ayrı görmek için tasarlanmış.",
-  "en": "Tracing and evaluation from the LangChain team, designed to show each step of a chain separately.",
+  "tr": "Her zincir adımının girdi, çıktı, gecikme ve jeton sayısını ayrı ayrı gösteriyor. LangChain’e bağlı değil ama en sıkı entegrasyonu orada.",
+  "en": "Shows input, output, latency and token count for every chain step separately. Not tied to LangChain, though that is where the integration is tightest.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4072,12 +4199,12 @@ window.LINKS = [
   "name": "last30days",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
    "araştırma"
   ],
-  "tr": "Bir konuda son 30 günün Reddit, X ve YouTube içeriğini tarayan agent yeteneği; eğitim verisi eskimesini kapatmaya yönelik.",
-  "en": "An agent skill sweeping the last 30 days of Reddit, X and YouTube on a topic — aimed at closing the training-cutoff gap.",
+  "tr": "Bir konuda son otuz günün Reddit, X ve YouTube içeriğini tarayan yetenek. Modelin eğitim kesim tarihiyle bugün arasındaki boşluğu kapatmak için.",
+  "en": "A skill sweeping the last thirty days of Reddit, X and YouTube on a topic — aimed at the gap between a model’s training cutoff and today.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4086,12 +4213,13 @@ window.LINKS = [
   "name": "Letta",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "bellek",
    "agent"
   ],
-  "tr": "MemGPT araştırmasından doğan, kendi belleğini yöneten agent altyapısı; bağlam penceresini işletim sistemi gibi sayfalar.",
-  "en": "Agent runtime born from the MemGPT research, paging its context window like an operating system.",
+  "tr": "MemGPT araştırmasının ürünleşmiş hâli. Bağlam penceresini işletim sistemi gibi yönetiyor: sıcak bilgiyi pencerede tutup gerisini harici depoya sayfalıyor.",
+  "en": "The productised form of the MemGPT research. It manages the context window like an operating system, keeping hot state in the window and paging the rest to external storage.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4100,11 +4228,13 @@ window.LINKS = [
   "name": "LlamaIndex",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "rag"
+   "açık-kaynak",
+   "python",
+   "rag",
+   "mit"
   ],
-  "tr": "Belge alma (retrieval) odaklı çatı. LangChain genel amaçlıyken bu, indeksleme ve sorgu hattını ince ayarlamak için tasarlanmış.",
-  "en": "Retrieval-first framework. Where LangChain is general-purpose, this is built for tuning the indexing and query pipeline.",
+  "tr": "Belge yükleme, parçalama, indeksleme ve sorgu aşamalarının her birini ayrı ayrı değiştirilebilir kılıyor. Genel amaçlı bir çatı değil; alma (retrieval) hattını ince ayarlamak isteyen için tasarlanmış.",
+  "en": "Makes each stage — loading, chunking, indexing, querying — independently swappable. Not a general-purpose framework: it is built for someone tuning a retrieval pipeline.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4114,10 +4244,11 @@ window.LINKS = [
   "cat": "yz_altyapi",
   "tags": [
    "dokümantasyon",
-   "agent"
+   "agent",
+   "async"
   ],
-  "tr": "LlamaIndex’in olay güdümlü agent akış motoru; graf yerine olay/adım modeli kullandığı için asenkron işlerde okuması kolay.",
-  "en": "LlamaIndex’s event-driven agent runtime; using events/steps instead of a graph reads more naturally for async work.",
+  "tr": "Adımların olay yayıp olay dinlediği asenkron bir çalışma zamanı. Graf kurmak yerine `@step` ile fonksiyon işaretliyorsun; paralel dallar doğal şekilde çıkıyor.",
+  "en": "An async runtime where steps emit and listen for events. Instead of building a graph you mark functions with `@step`, and parallel branches fall out naturally.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4126,11 +4257,12 @@ window.LINKS = [
   "name": "Make",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "freemium",
    "otomasyon"
   ],
-  "tr": "Görsel senaryo tabanlı otomasyon; Zapier’in doğrusal adım modeline karşılık dallanma ve döngüyü daha rahat kurar.",
-  "en": "Visual scenario-based automation, handling branching and loops more comfortably than Zapier’s linear steps.",
+  "tr": "Senaryolar dallanma, döngü ve hata işleme taşıyabiliyor; Zapier’in doğrusal adım modeline göre karmaşık akışlarda daha rahat. Öğrenme eğrisi de buna paralel olarak dik.",
+  "en": "Scenarios carry branching, loops and error handling, which makes complex flows easier than Zapier’s linear steps. The learning curve is correspondingly steeper.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4143,8 +4275,8 @@ window.LINKS = [
    "mcp",
    "dizin"
   ],
-  "tr": "Topluluk agent yetenek ve MCP sunucu pazarı; resmî kayıt defterine göre daha geniş ama daha az denetimli.",
-  "en": "Community marketplace of agent skills and MCP servers — broader than the official registry but less vetted.",
+  "tr": "Topluluk yetenek ve sunucu pazarı. Resmî kayıt defterinden geniş, buna karşılık denetimi zayıf — kurmadan önce kaynağa bakmak gerekir.",
+  "en": "A community marketplace of skills and servers. Broader than the official registry but weakly vetted — read the source before installing.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4157,8 +4289,8 @@ window.LINKS = [
    "mcp",
    "dizin"
   ],
-  "tr": "Resmî MCP sunucu dizini; dağınık GitHub listelerinden farkı merkezî ve makine tarafından okunabilir olması.",
-  "en": "The official MCP server registry — central and machine-readable, unlike scattered GitHub lists.",
+  "tr": "Resmî sunucu kayıt defteri; makine tarafından okunabilir olduğu için istemciler kurulumu otomatikleştirebiliyor. Dağınık GitHub listelerinin yerini almak üzere kuruldu.",
+  "en": "The official server registry. Being machine-readable lets clients automate installation — it exists to replace scattered GitHub lists.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4167,13 +4299,13 @@ window.LINKS = [
   "name": "MCP Sunucu Koleksiyonu",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "mcp",
+   "açık-kaynak",
    "github",
-   "koleksiyon"
+   "mcp",
+   "referans"
   ],
-  "tr": "Referans MCP sunucuları (dosya sistemi, PostgreSQL, Slack, Drive); kendi sunucunu yazmadan önce bakılacak ilk yer.",
-  "en": "Reference MCP servers (filesystem, PostgreSQL, Slack, Drive) — the first place to look before writing your own.",
+  "tr": "Dosya sistemi, PostgreSQL, Slack, Git ve fetch için referans uygulamalar. Kendi sunucunu yazmadan önce protokolün nasıl kullanıldığını buradan okumak en hızlısı.",
+  "en": "Reference implementations for filesystem, PostgreSQL, Slack, Git and fetch. Reading these is the fastest way to see the protocol in use before writing your own.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4182,25 +4314,28 @@ window.LINKS = [
   "name": "Mem0",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "freemium",
-   "bellek"
+   "bellek",
+   "agent"
   ],
-  "tr": "Agent ve asistanlar için yönetilen kullanıcı belleği; kişiye özel bağlamı oturumlar arasında taşır.",
-  "en": "Managed user memory for agents and assistants, carrying personal context across sessions.",
+  "tr": "Konuşmadan çıkarılan olguları saklıyor, çelişenleri güncelliyor, alakasızları eliyor. Ham geçmişi biriktirmek yerine neyin hatırlanmaya değer olduğuna karar veren bir katman.",
+  "en": "Stores facts extracted from conversation, updates contradictions and drops the irrelevant. A layer that decides what is worth remembering instead of accumulating raw history.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
  {
   "url": "https://github.com/mem0ai/mem0",
-  "name": "Mem0 (kaynak kod)",
+  "name": "Mem0 (kaynak)",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "bellek",
-   "github"
+   "açık-kaynak",
+   "github",
+   "python",
+   "bellek"
   ],
-  "tr": "Mem0’ın açık kaynak deposu; neyin hatırlanmaya değer olduğuna karar veren katmanı kendi altyapında çalıştırmak için.",
-  "en": "Mem0’s open-source repository — run the layer that decides what is worth remembering on your own infrastructure.",
+  "tr": "Mem0’ın kendi altyapında çalıştırılabilen sürümü. Embedchain projesi de bu depoda birleşti, yani eski Embedchain bağlantıları buraya çıkıyor.",
+  "en": "The self-hostable version of Mem0. The Embedchain project was merged into this repository, so older Embedchain links land here.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4210,10 +4345,11 @@ window.LINKS = [
   "cat": "yz_altyapi",
   "tags": [
    "dokümantasyon",
-   "agent"
+   "agent",
+   "azure"
   ],
-  "tr": "AutoGen ve Semantic Kernel’in birleştirildiği üretim odaklı Microsoft agent çatısı; Azure ile sıkı entegre.",
-  "en": "Microsoft’s production-oriented agent framework merging AutoGen and Semantic Kernel, tightly integrated with Azure.",
+  "tr": "AutoGen’in deney tarafıyla Semantic Kernel’in kurumsal tarafını tek çatıda birleştiren yeni hat. Azure kimlik doğrulama ve izleme altyapısına baştan bağlı geliyor.",
+  "en": "The new line merging AutoGen’s experimental side with Semantic Kernel’s enterprise side. It arrives pre-wired to Azure identity and monitoring.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4222,12 +4358,13 @@ window.LINKS = [
   "name": "Microsoft AutoGen",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "agent",
    "araştırma"
   ],
-  "tr": "Agent’ların birbiriyle konuşarak iş çözdüğü Microsoft çatısı; araştırma kökenli olduğu için deneysel desenlere daha açık.",
-  "en": "Microsoft framework where agents solve tasks by conversing with each other; research-rooted, so more open to experimental patterns.",
+  "tr": "Agent’lar bir grup sohbetinde konuşarak iş çözüyor; konuşma sırasını bir yönetici agent belirliyor. Araştırma kökenli, bu yüzden API’si sürümler arasında sertçe değişebiliyor.",
+  "en": "Agents solve tasks by talking in a group chat, with a manager agent deciding who speaks next. Research-rooted, so the API can shift sharply between versions.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4236,11 +4373,13 @@ window.LINKS = [
   "name": "Microsoft Presidio",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "gizlilik"
+   "açık-kaynak",
+   "python",
+   "gizlilik",
+   "pii"
   ],
-  "tr": "Metin ve görselden kişisel veri tespit edip maskeleyen araç; modele veri göndermeden önceki anonimleştirme adımı için.",
-  "en": "Detects and redacts personal data in text and images — the anonymisation step before data reaches a model.",
+  "tr": "Metin ve görselde kişisel veriyi (TC kimlik, IBAN, e-posta gibi) tanıyıp maskeliyor. Tanıyıcılar özelleştirilebilir; modele veri göndermeden önceki anonimleştirme adımı için.",
+  "en": "Detects and redacts personal data — national IDs, IBANs, emails — in text and images. Recognisers are customisable; it belongs in the anonymisation step before data reaches a model.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4249,12 +4388,13 @@ window.LINKS = [
   "name": "Milvus",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "vektör",
+   "açık-kaynak",
+   "vektör-db",
+   "k8s",
    "ölçek"
   ],
-  "tr": "Milyar ölçekli vektör aramaya odaklı dağıtık veritabanı; küçük projeler için fazla ağır kalır.",
-  "en": "Distributed database aimed at billion-scale vector search — overkill for small projects.",
+  "tr": "Depolama ve hesaplamayı ayıran dağıtık mimari; milyar ölçekli koleksiyonlar için tasarlanmış. Kubernetes gerektiriyor, küçük projelerde kurulum maliyeti kazancından büyük.",
+  "en": "A distributed architecture separating storage from compute, built for billion-scale collections. It wants Kubernetes; on a small project the setup cost exceeds the gain.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4263,12 +4403,13 @@ window.LINKS = [
   "name": "Model Context Protocol",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "mcp",
-   "standart"
+   "standart",
+   "json-rpc"
   ],
-  "tr": "Modelleri dış araç ve veriye bağlamak için açık protokol; her uygulamaya ayrı eklenti yazma sorununu tek standartla çözmeyi hedefler.",
-  "en": "Open protocol connecting models to external tools and data, aiming to replace per-app plugin work with one standard.",
+  "tr": "JSON-RPC üzerine kurulu, modellere araç ve veri kaynağı açmak için açık protokol. Sunucuyu bir kez yazıyorsun, MCP konuşan her istemci onu kullanabiliyor.",
+  "en": "An open protocol over JSON-RPC for exposing tools and data sources to models. Write the server once and any MCP-speaking client can use it.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4277,12 +4418,13 @@ window.LINKS = [
   "name": "n8n",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "self-hosted",
    "otomasyon",
-   "kendi sunucunda"
+   "docker"
   ],
-  "tr": "Kendi sunucunda çalıştırılabilen görsel iş akışı otomasyonu; Zapier’den farkı kaynağının açık ve kendi kurulumunda sınırsız olması.",
-  "en": "Visual workflow automation you can self-host; unlike Zapier the source is open and self-hosted runs are unmetered.",
+  "tr": "Görsel düğüm editörü; kendi sunucunda çalıştırdığında çalıştırma sayısı sınırsız. Düğüm içine JavaScript yazabiliyorsun, yani no-code duvarına toslamıyorsun.",
+  "en": "A visual node editor with unmetered executions when self-hosted. You can drop JavaScript into a node, so you do not hit the usual no-code wall.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4294,8 +4436,8 @@ window.LINKS = [
    "dokümantasyon",
    "otomasyon"
   ],
-  "tr": "n8n’in resmî dokümanı; düğüm referansı ve kendi sunucuna kurulum rehberleri.",
-  "en": "n8n’s official documentation — node reference and self-hosting guides.",
+  "tr": "Düğüm referansı, kendi sunucuna kurulum ve kimlik bilgisi yönetimi. Kuyruk kipiyle ölçekleme bölümü üretimde çalıştıracaklar için önemli.",
+  "en": "Node reference, self-hosting and credential management. The queue-mode scaling section matters for anyone running it in production.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4304,12 +4446,13 @@ window.LINKS = [
   "name": "NeMo Guardrails",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "güvenlik",
-   "github"
+   "açık-kaynak",
+   "github",
+   "guardrail",
+   "python"
   ],
-  "tr": "LLM konuşmasına kurallı korkuluk ekleyen NVIDIA araç seti; konu sapması ve yasak istekleri diyalog akışı düzeyinde engeller.",
-  "en": "NVIDIA toolkit adding rule-based rails to LLM conversations, blocking topic drift and disallowed requests at the dialogue level.",
+  "tr": "Colang adlı bir DSL ile izin verilen konuşma akışlarını tanımlıyorsun. Denetim çıktının içeriğinde değil diyaloğun gidişatında; konu sapmasını girişte kesiyor.",
+  "en": "You declare permitted conversation flows in a DSL called Colang. The control sits in the dialogue’s trajectory rather than the output text, cutting topic drift at the entrance.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4319,11 +4462,11 @@ window.LINKS = [
   "cat": "yz_altyapi",
   "tags": [
    "freemium",
-   "veritabanı",
-   "graf"
+   "graf-db",
+   "cypher"
   ],
-  "tr": "Graf veritabanı; ilişkilerin kendisi veri olduğunda (bilgi grafiği, GraphRAG) tablodan çok daha doğal bir model sunar.",
-  "en": "Graph database — when relationships themselves are the data, it models the problem far more naturally than tables.",
+  "tr": "İlişkiler tabloda yabancı anahtar değil, birinci sınıf veri. Cypher sorgu diliyle çok adımlı ilişki gezinmeleri, SQL’de yazılacak iç içe JOIN’lere göre hem kısa hem hızlı.",
+  "en": "Relationships are first-class data, not foreign keys. Multi-hop traversals in Cypher are both shorter and faster than the nested JOINs the same question needs in SQL.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4332,12 +4475,13 @@ window.LINKS = [
   "name": "Obsidian Mind",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "bellek"
+   "bellek",
+   "markdown"
   ],
-  "tr": "Kod asistanlarına kalıcı bellek veren, kendini düzenleyen Obsidian kasası; bellek servisine bağlanmak yerine düz dosyalarda tutar.",
-  "en": "A self-organising Obsidian vault giving coding agents persistent memory — plain files instead of a memory service.",
+  "tr": "Kod asistanının belleğini bir Obsidian kasasında düz Markdown olarak tutuyor. Bellek servisi çalıştırmıyorsun; not dosyalarını kendin okuyup düzeltebiliyorsun.",
+  "en": "Keeps a coding agent’s memory as plain Markdown in an Obsidian vault. No memory service to run, and you can read and correct the notes yourself.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4346,12 +4490,13 @@ window.LINKS = [
   "name": "OmniRoute",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "ağ geçidi"
+   "gateway",
+   "mit"
   ],
-  "tr": "Tek uç noktadan yüzlerce sağlayıcıya yönlendiren MIT lisanslı YZ ağ geçidi; sağlayıcıya bağımlılığı azaltmak için.",
-  "en": "MIT-licensed AI gateway routing one endpoint to hundreds of providers — aimed at reducing vendor lock-in.",
+  "tr": "Tek OpenAI uyumlu uç noktadan yüzlerce sağlayıcıya yönlendiriyor; birçoğu ücretsiz katmanlı. Sağlayıcı düşerse otomatik yedeğe geçmesi, tek bir API’ye bağımlılığı kırıyor.",
+  "en": "Routes one OpenAI-compatible endpoint to hundreds of providers, many with free tiers. Automatic failover when a provider drops is what breaks single-API dependence.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4360,12 +4505,13 @@ window.LINKS = [
   "name": "OpenAI Agents SDK",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "agent",
-   "python"
+   "sdk"
   ],
-  "tr": "OpenAI’ın resmî agent kütüphanesi. Kasten sade: agent, araç, devretme ve koruma bandı dışında kavram yok.",
-  "en": "OpenAI’s official agent library — deliberately minimal: agents, tools, handoffs and guardrails, and little else.",
+  "tr": "Dört kavramla yetiniyor: agent, araç, devretme (handoff) ve koruma bandı. İzleme (tracing) kutudan çıkıyor; öğrenme eğrisi çatıların en düşüğü.",
+  "en": "Settles for four concepts: agents, tools, handoffs and guardrails. Tracing ships built in, and the learning curve is the shallowest of the frameworks here.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4375,10 +4521,11 @@ window.LINKS = [
   "cat": "yz_altyapi",
   "tags": [
    "dokümantasyon",
-   "embedding"
+   "embedding",
+   "api"
   ],
-  "tr": "OpenAI gömme modellerinin resmî kılavuzu; boyut, fiyat ve kullanım örnekleri.",
-  "en": "Official guide to OpenAI embedding models — dimensions, pricing and usage examples.",
+  "tr": "text-embedding-3 ailesinin boyut, fiyat ve kullanım referansı. Matryoshka desteği sayesinde vektör boyutunu isteğe göre kısaltıp depolama maliyetini düşürebiliyorsun.",
+  "en": "Reference for the text-embedding-3 family — dimensions, pricing, usage. Matryoshka support lets you truncate vector dimensions on demand and cut storage cost.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4387,12 +4534,13 @@ window.LINKS = [
   "name": "OpenSpace",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "agent"
+   "agent",
+   "bağlam"
   ],
-  "tr": "Agent’lar için yetenek yönetim katmanı; hangi yeteneğin ne zaman yükleneceğine karar vererek maliyeti düşürmeyi amaçlar.",
-  "en": "A skill-management layer for agents, deciding which skill loads when in order to cut cost.",
+  "tr": "Hangi yeteneğin ne zaman yükleneceğine karar veren yönetim katmanı. Tüm yetenekleri bağlama doldurmak yerine seçici yükleyerek jeton maliyetini düşürüyor.",
+  "en": "A management layer deciding which skill loads when. Selective loading instead of stuffing every skill into context is where the token saving comes from.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4401,12 +4549,13 @@ window.LINKS = [
   "name": "pgvector",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "vektör",
-   "github"
+   "açık-kaynak",
+   "github",
+   "postgres",
+   "vektör-db"
   ],
-  "tr": "PostgreSQL’e vektör araması ekleyen eklenti; yeni bir sistem işletmek yerine mevcut veritabanında kalmak isteyenler için.",
-  "en": "Extension adding vector search to PostgreSQL — for teams who would rather stay in their existing database.",
+  "tr": "PostgreSQL’e vektör tipi ve HNSW/IVFFlat indeksleri ekleyen uzantı. Vektörü ilişkisel veriyle aynı işlemde (transaction) tutabilmek ayrı bir sistem işletmeye bedel.",
+  "en": "An extension adding a vector type plus HNSW and IVFFlat indexes to PostgreSQL. Keeping vectors in the same transaction as relational data is worth a lot against running a second system.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4415,11 +4564,12 @@ window.LINKS = [
   "name": "Pinecone",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "ücretli",
-   "vektör"
+   "vektör-db"
   ],
-  "tr": "Tam yönetilen vektör veritabanı; kendi kurulumunu yapmak istemeyenler için en az bakım gerektiren seçenek.",
-  "en": "Fully managed vector database — the lowest-maintenance option if you do not want to run your own.",
+  "tr": "Tam yönetilen vektör veritabanı; sunucusuz katmanında kapasite planlaması yapmıyorsun. İşletme yükü en düşük seçenek, buna karşılık verinin nerede durduğu üzerinde denetimin yok.",
+  "en": "A fully managed vector database whose serverless tier removes capacity planning. The lowest operational burden here, at the cost of control over where the data sits.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4428,12 +4578,13 @@ window.LINKS = [
   "name": "Pipedream",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "freemium",
    "otomasyon",
-   "geliştirici"
+   "kod"
   ],
-  "tr": "Adımlarına doğrudan kod yazılabilen otomasyon platformu; no-code araçların duvara tosladığı yerde devam etmeni sağlar.",
-  "en": "Automation platform whose steps can contain real code — it keeps going where no-code tools hit a wall.",
+  "tr": "Her adım Node.js ya da Python kodu olabiliyor ve npm/PyPI paketi çekebiliyor. Görsel otomasyonla gerçek kod arasındaki boşluğu kapatan seçenek.",
+  "en": "Any step can be Node.js or Python and can pull an npm or PyPI package. The option that closes the gap between visual automation and real code.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4442,12 +4593,12 @@ window.LINKS = [
   "name": "Ponytail",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
    "agent"
   ],
-  "tr": "Agent’ı gereksiz kod yazmaktan alıkoyan yetenek; “en iyi kod yazılmayan koddur” ilkesini davranışa çevirir.",
-  "en": "A skill that stops an agent writing unnecessary code, turning “the best code is the code you never wrote” into behaviour.",
+  "tr": "Agent’ı gereksiz soyutlama ve erken genelleme yapmaktan alıkoyan yetenek. Kod üretme eğilimini kısıtlayarak çıktının bakım maliyetini düşürmeyi hedefliyor.",
+  "en": "A skill that stops an agent inventing needless abstraction and premature generalisation, restraining its urge to produce code in order to lower maintenance cost.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4456,11 +4607,12 @@ window.LINKS = [
   "name": "PostgreSQL",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "sql",
    "veritabanı"
   ],
-  "tr": "Kurumsal düzeyde açık kaynak ilişkisel veritabanı; pgvector eklentisiyle ayrı bir vektör veritabanına gerek bırakmayabilir.",
-  "en": "Enterprise-grade open-source relational database; with pgvector it can remove the need for a separate vector DB.",
+  "tr": "JSONB, tam metin arama ve pgvector ile birlikte tek bir veritabanının üç ayrı sistemin işini görebildiği noktaya gelmiş durumda. Erken aşamada mimariyi ciddi ölçüde sadeleştiriyor.",
+  "en": "With JSONB, full-text search and pgvector it now does the work of three separate systems. Early on, that simplifies architecture considerably.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4469,11 +4621,12 @@ window.LINKS = [
   "name": "Power Automate",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "ücretli",
    "otomasyon"
   ],
-  "tr": "Microsoft 365 içindeki otomasyon aracı; kurumsal Office ve SharePoint akışlarında yerleşik olması sebebiyle tercih ediliyor.",
-  "en": "Automation inside Microsoft 365, chosen mainly because it is native to corporate Office and SharePoint flows.",
+  "tr": "SharePoint, Teams ve Dataverse bağlayıcıları yerleşik. Kurum zaten Microsoft 365’teyse lisans çoğu zaman ödenmiş oluyor — asıl tercih sebebi bu.",
+  "en": "SharePoint, Teams and Dataverse connectors are native. If the organisation is already on Microsoft 365 the licence is usually paid for — which is the real reason it gets chosen.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4482,12 +4635,12 @@ window.LINKS = [
   "name": "Prefect",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "orkestrasyon",
-   "python"
+   "açık-kaynak",
+   "python",
+   "orkestrasyon"
   ],
-  "tr": "Airflow’a Python öncelikli alternatif; akışı ayrı bir DSL yerine sıradan Python fonksiyonu olarak yazarsın.",
-  "en": "Python-first alternative to Airflow — you write flows as ordinary Python functions rather than a separate DSL.",
+  "tr": "Akış sıradan bir Python fonksiyonu; dekoratör ekleyip orkestrasyona dahil ediyorsun. Airflow’un ayrı DSL’ini öğrenmeden yerel kodu üretime taşımak daha kısa.",
+  "en": "A flow is an ordinary Python function you decorate into orchestration. Moving local code to production is shorter than learning Airflow’s separate DSL.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4496,11 +4649,13 @@ window.LINKS = [
   "name": "Prompt Security",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "ücretli",
-   "güvenlik"
+   "gizlilik",
+   "kurumsal"
   ],
-  "tr": "Kurumda çalışanların YZ kullanımını denetleyen katman; sızan veriyi ve gölge YZ kullanımını görünür kılar.",
-  "en": "Layer governing employee AI use inside an organisation, surfacing data leakage and shadow AI.",
+  "tr": "Çalışanların hangi YZ aracına ne veri gönderdiğini görünür kılıyor ve politikaya göre engelliyor. Gölge YZ kullanımını ölçmek isteyen kurumlar için.",
+  "en": "Surfaces which AI tools employees send what data to, and blocks by policy. Aimed at organisations that need to measure shadow AI use.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4509,12 +4664,13 @@ window.LINKS = [
   "name": "Promptfoo",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "değerlendirme",
-   "cli"
+   "açık-kaynak",
+   "cli",
+   "eval",
+   "ci"
   ],
-  "tr": "İstemleri ve modelleri yan yana test eden CLI aracı; sürüm değişince çıktının bozulup bozulmadığını CI’da yakalar.",
-  "en": "CLI tool for side-by-side prompt and model testing; catches output regressions in CI when a version changes.",
+  "tr": "İstem ve modelleri YAML’de tanımlanmış test kümesine karşı yan yana koşuyor. Model sürümü değiştiğinde çıktının bozulup bozulmadığını CI adımında yakalıyor.",
+  "en": "Runs prompts and models side by side against a test set declared in YAML. It catches output regressions in a CI step when a model version changes.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4523,12 +4679,13 @@ window.LINKS = [
   "name": "Protect AI",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "ücretli",
-   "güvenlik",
+   "tedarik-zinciri",
    "mlops"
   ],
-  "tr": "Model tedarik zinciri güvenliği; model dosyalarını ve ML hattını zararlı yük için tarar.",
-  "en": "ML supply-chain security — scans model files and pipelines for malicious payloads.",
+  "tr": "Model dosyalarını zararlı yük için tarıyor — pickle serileştirmesi keyfî kod çalıştırabildiği için indirilen bir checkpoint gerçek bir saldırı yüzeyi.",
+  "en": "Scans model files for malicious payloads. Because pickle deserialisation can execute arbitrary code, a downloaded checkpoint is a real attack surface.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4537,12 +4694,13 @@ window.LINKS = [
   "name": "Pydantic AI",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "agent",
-   "python"
+   "tip-güvenli"
   ],
-  "tr": "Tip güvenli agent çatısı. Farkı, model çıktısını Pydantic şemasıyla doğrulaması; serbest metin yerine yapısal veri garantisi verir.",
-  "en": "Type-safe agent framework whose distinction is validating model output against a Pydantic schema — structured data, not free text.",
+  "tr": "Model çıktısını Pydantic şemasına göre doğruluyor, uymazsa modele geri gönderip düzelttiriyor. Sonuçta serbest metin değil, tipi garanti edilmiş bir nesne alıyorsun.",
+  "en": "Validates model output against a Pydantic schema and sends it back for correction when it fails. What you get out is a type-guaranteed object, not free text.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4551,12 +4709,13 @@ window.LINKS = [
   "name": "Qdrant",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "vektör",
-   "rust"
+   "açık-kaynak",
+   "rust",
+   "vektör-db",
+   "apache-2"
   ],
-  "tr": "Rust ile yazılmış vektör veritabanı; zengin filtreleme ve düşük kaynak tüketimiyle küçük sunucularda öne çıkar.",
-  "en": "Vector database written in Rust; rich filtering and low resource use make it strong on small servers.",
+  "tr": "Rust ile yazılmış; yüklü meta veri filtrelemesini vektör aramasıyla birlikte yürütüyor. Bellek ayak izi düşük olduğu için küçük bir VPS’te ciddi koleksiyon taşıyabiliyor.",
+  "en": "Written in Rust, executing heavy metadata filtering alongside the vector search itself. Its low memory footprint lets a small VPS carry a serious collection.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4565,12 +4724,13 @@ window.LINKS = [
   "name": "Ragas",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "değerlendirme",
+   "açık-kaynak",
+   "python",
+   "eval",
    "rag"
   ],
-  "tr": "RAG hattı için standart değerlendirme ölçütleri kütüphanesi; göz kararı test etmeye karşı sayısal alternatif.",
-  "en": "Standard evaluation metrics for RAG pipelines — the numeric alternative to eyeballing outputs.",
+  "tr": "RAG hatları için ölçüt kütüphanesi; referans cevap olmadan da çalışabilen metrikleri var. Sentetik test kümesi üretip değerlendirmeyi CI’ya bağlayabiliyorsun.",
+  "en": "A metrics library for RAG pipelines, including metrics that work without reference answers. It can generate a synthetic test set so evaluation runs in CI.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4579,12 +4739,13 @@ window.LINKS = [
   "name": "RAGFlow",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "self-hosted",
    "rag",
-   "kendi sunucunda"
+   "docker"
   ],
-  "tr": "Derin belge anlama odaklı, kendi sunucunda çalışan RAG motoru; karmaşık PDF ve tablo ayrıştırmada kütüphane çözümlerinden güçlü.",
-  "en": "Self-hosted RAG engine focused on deep document understanding — stronger than library-only solutions on messy PDFs and tables.",
+  "tr": "Derin belge ayrıştırma üstüne kurulu: karmaşık PDF düzenlerini, tabloları ve şekilleri tanıyıp anlamlı parçalara ayırıyor. Kütüphane değil, Docker ile kurduğun tam bir servis.",
+  "en": "Built on deep document parsing: it recognises complex PDF layouts, tables and figures before chunking. Not a library but a full service you stand up with Docker.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4593,12 +4754,13 @@ window.LINKS = [
   "name": "Raven",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "agent"
+   "agent",
+   "bellek"
   ],
-  "tr": "Bellek öncelikli, kendini geliştiren agent koşum takımı; oturumlar arası öğrenmeyi merkeze alır.",
-  "en": "A memory-first, self-improving agent harness that puts cross-session learning at the centre.",
+  "tr": "Bellek öncelikli agent koşum takımı; oturumlar arası öğrenmeyi ve kendi yapılandırmasını iyileştirmeyi merkeze alıyor.",
+  "en": "A memory-first agent harness centred on cross-session learning and refining its own configuration.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4607,12 +4769,12 @@ window.LINKS = [
   "name": "Redis",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "veritabanı",
-   "önbellek"
+   "açık-kaynak",
+   "önbellek",
+   "veritabanı"
   ],
-  "tr": "Bellek içi veri deposu; YZ tarafında oturum durumu, önbellek ve hızlı vektör araması için kullanılıyor.",
-  "en": "In-memory data store used on the AI side for session state, caching and fast vector search.",
+  "tr": "Bellek içi veri yapısı deposu. YZ tarafında oturum durumu, hız sınırlama sayaçları ve yanıt önbelleği için kullanılıyor; vektör araması da modülle geliyor.",
+  "en": "An in-memory data structure store, used on the AI side for session state, rate-limit counters and response caching. Vector search arrives as a module.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4622,11 +4784,12 @@ window.LINKS = [
   "cat": "yz_altyapi",
   "tags": [
    "dokümantasyon",
-   "agent",
-   "dotnet"
+   "dotnet",
+   "python",
+   "agent"
   ],
-  "tr": "Microsoft’un .NET/Python agent SDK’sı; kurumsal .NET yığınında çalışanlar için Python ağırlıklı alternatiflerden daha uygun.",
-  "en": "Microsoft’s .NET/Python agent SDK — a better fit than Python-centric alternatives inside an enterprise .NET stack.",
+  "tr": "C#, Python ve Java için tek API sunan agent SDK’sı. Kurumsal .NET yığınında yaşıyorsan Python ağırlıklı alternatiflerden çok daha az sürtünme çıkarıyor.",
+  "en": "An agent SDK exposing one API across C#, Python and Java. If you live in an enterprise .NET stack it creates far less friction than the Python-centric alternatives.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4635,12 +4798,13 @@ window.LINKS = [
   "name": "Sentence Transformers",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "embedding",
-   "python"
+   "yerel-model"
   ],
-  "tr": "Yerel gömme üretmenin standart kütüphanesi; API’ye para vermeden ve veriyi dışarı çıkarmadan çalışır.",
-  "en": "The standard library for producing embeddings locally — no API bill and no data leaving your machine.",
+  "tr": "Gömme üretiminin standart Python kütüphanesi. Model yerelde çalışır, veri makineden çıkmaz, API faturası olmaz; karşılığında GPU ve bellek yönetimi sana kalır.",
+  "en": "The standard Python library for producing embeddings. Models run locally, data stays put and there is no API bill; in exchange GPU and memory management are yours.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4649,12 +4813,13 @@ window.LINKS = [
   "name": "Superpowers",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "agent"
+   "agent",
+   "metodoloji"
   ],
-  "tr": "Agent’lara metodoloji dayatan yetenek çatısı; serbest istem yerine adımlı bir geliştirme disiplini kurar.",
-  "en": "A skills framework that imposes a methodology on agents — a stepwise development discipline instead of free-form prompting.",
+  "tr": "Agent’a serbest istem yerine adımlı bir geliştirme disiplini dayatan yetenek çatısı. Planlama, uygulama ve doğrulama aşamalarını ayırıyor.",
+  "en": "A skills framework imposing a stepwise development discipline instead of free-form prompting, separating planning, implementation and verification.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4663,11 +4828,12 @@ window.LINKS = [
   "name": "Temporal",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "orkestrasyon"
+   "açık-kaynak",
+   "orkestrasyon",
+   "dayanıklı"
   ],
-  "tr": "Uzun süreli ve hataya dayanıklı iş akışı motoru; basit otomasyon araçlarından farkı, günlerce süren işlemi çökse bile kaldığı yerden sürdürmesi.",
-  "en": "Durable workflow engine; unlike simple automation tools it resumes multi-day processes from where they crashed.",
+  "tr": "İş akışı durumunu olay geçmişi olarak kaydediyor; süreç çökerse aynı noktadan devam ediyor. Günlerce süren ve yeniden başlatılamayan işlemler için tasarlanmış.",
+  "en": "Records workflow state as an event history, so a crashed process resumes at the same point. Built for multi-day operations that cannot simply be restarted.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4676,11 +4842,13 @@ window.LINKS = [
   "name": "TruLens",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "değerlendirme"
+   "açık-kaynak",
+   "python",
+   "eval",
+   "rag"
   ],
-  "tr": "RAG çıktılarını sadakat ve alaka ölçütleriyle puanlayan kütüphane; “doğru mu” sorusunu ölçülebilir hâle getirir.",
-  "en": "Library scoring RAG output on groundedness and relevance, turning “is it right?” into a number.",
+  "tr": "RAG üçlemesini ölçüyor: bağlam alaka düzeyi, cevabın bağlama sadakati, cevabın soruya uygunluğu. Bu üçü ayrı ölçüldüğü için hatanın alma tarafında mı üretim tarafında mı olduğu ayrışıyor.",
+  "en": "Measures the RAG triad — context relevance, groundedness, answer relevance. Measuring them separately is what tells you whether the failure sits in retrieval or generation.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4689,12 +4857,13 @@ window.LINKS = [
   "name": "Unstructured",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "rag",
-   "ayrıştırma"
+   "açık-kaynak",
+   "python",
+   "ayrıştırma",
+   "etl"
   ],
-  "tr": "PDF, Word ve e-posta gibi düzensiz belgeleri LLM’e verilebilir parçalara çeviren kütüphane; RAG hattının en sık kırılan ilk adımını üstlenir.",
-  "en": "Library turning messy PDFs, Word files and email into LLM-ready chunks — it owns the first and most fragile step of a RAG pipeline.",
+  "tr": "PDF, DOCX, HTML, e-posta ve sunumları ortak bir belge öğesi modeline indiriyor. RAG hatlarında en çok vakit yiyen ve en sık bozulan ilk adım burasıdır.",
+  "en": "Reduces PDF, DOCX, HTML, email and slides to a shared document-element model. This first step is where RAG pipelines lose the most time and break most often.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4705,10 +4874,10 @@ window.LINKS = [
   "tags": [
    "dokümantasyon",
    "embedding",
-   "google"
+   "gcp"
   ],
-  "tr": "Google Cloud tarafındaki gömme servisi; GCP içinde kalan veri hatları için doğal seçim.",
-  "en": "Google Cloud’s embedding service — the natural pick for pipelines that stay inside GCP.",
+  "tr": "GCP içindeki gömme servisi. Veriyi BigQuery’de tutuyorsan gömmeyi de aynı sınırlar içinde üretmek ağ maliyeti ve veri yerleşimi açısından anlamlı oluyor.",
+  "en": "The embedding service inside GCP. If your data sits in BigQuery, generating vectors within the same boundary makes sense for both egress cost and data residency.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4717,11 +4886,13 @@ window.LINKS = [
   "name": "Voyage AI",
   "cat": "yz_altyapi",
   "tags": [
+   "api",
    "ücretli",
-   "embedding"
+   "embedding",
+   "alan-özel"
   ],
-  "tr": "Alan odaklı gömme modelleri (hukuk, kod, finans); genel amaçlı modellere göre dar alanlarda daha isabetli sonuç hedefler.",
-  "en": "Domain-specific embedding models (legal, code, finance) aiming to beat general-purpose ones inside narrow domains.",
+  "tr": "Hukuk, kod ve finans için ayrı ayrı eğitilmiş gömme modelleri. Dar alanlarda genel amaçlı modelleri geçtiğini iddia ediyor; karşılaştırmayı kendi verinle yapmak gerekiyor.",
+  "en": "Embedding models trained separately for law, code and finance. It claims to beat general-purpose models inside those domains — a claim worth testing on your own data.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4730,12 +4901,13 @@ window.LINKS = [
   "name": "W&B Weave",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "freemium",
-   "gözlem",
+   "tracing",
    "mlops"
   ],
-  "tr": "Weights & Biases’ın LLM izleme ürünü; zaten W&B ile model eğitiyorsan izleri deney kayıtlarıyla aynı yerde tutar.",
-  "en": "Weights & Biases’ LLM tracing product, keeping traces alongside existing experiment tracking.",
+  "tr": "Weights & Biases’ın LLM tarafı. Zaten W&B ile eğitim izliyorsan, çıkarım izleri de aynı proje altında toplanıyor.",
+  "en": "The LLM side of Weights & Biases. If you already track training there, inference traces land under the same project.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4744,11 +4916,12 @@ window.LINKS = [
   "name": "Weaviate",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "vektör"
+   "açık-kaynak",
+   "vektör-db",
+   "graphql"
   ],
-  "tr": "Açık kaynak vektör veritabanı; gömme üretimini kendi modülleriyle yapabilmesi hat kurulumundaki adımları azaltır.",
-  "en": "Open-source vector database that can generate embeddings itself via modules, cutting pipeline steps.",
+  "tr": "Gömme üretimini modül olarak içinde barındırabiliyor, yani ayrı bir gömme adımı kurmadan ham metin yazabiliyorsun. Sorgu arayüzü GraphQL.",
+  "en": "Can host embedding generation as a module, so you write raw text without standing up a separate embedding step. Its query interface is GraphQL.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4757,11 +4930,12 @@ window.LINKS = [
   "name": "Zapier",
   "cat": "yz_altyapi",
   "tags": [
+   "saas",
    "freemium",
    "otomasyon"
   ],
-  "tr": "SaaS uygulamalarını birbirine bağlayan otomasyon servisi; en geniş entegrasyon kataloğuna sahip olması başlıca avantajı.",
-  "en": "Automation service wiring SaaS apps together; the widest integration catalogue is its main advantage.",
+  "tr": "En geniş entegrasyon kataloğu — bağlanmak istediğin niş SaaS büyük ihtimalle burada var. Fiyatlandırma görev başına, yani hacim arttıkça hızla pahalılaşıyor.",
+  "en": "The widest integration catalogue — the niche SaaS you want is probably already there. Pricing is per task, so it gets expensive quickly as volume grows.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4770,11 +4944,12 @@ window.LINKS = [
   "name": "Zep",
   "cat": "yz_altyapi",
   "tags": [
-   "açık kaynak",
-   "bellek"
+   "açık-kaynak",
+   "bellek",
+   "bilgi-grafiği"
   ],
-  "tr": "Zamana duyarlı bilgi grafiği tabanlı bellek; basit vektör belleğinden farkı, gerçeklerin ne zaman değiştiğini takip etmesi.",
-  "en": "Memory built on a temporal knowledge graph; unlike plain vector memory it tracks when facts changed.",
+  "tr": "Zamansal bilgi grafiği tutuyor: bir olgunun ne zaman doğru olduğunu ve ne zaman geçersizleştiğini kaydediyor. Düz vektör belleği bu ayrımı yapamıyor.",
+  "en": "Maintains a temporal knowledge graph, recording when a fact held and when it was invalidated. Flat vector memory cannot make that distinction.",
   "cat_tr": "YZ · Agent, RAG & Altyapı",
   "cat_en": "AI · Agents, RAG & Infra"
  },
@@ -4783,11 +4958,12 @@ window.LINKS = [
   "name": "Ada Health",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "ücretsiz",
    "sağlık"
   ],
-  "tr": "Belirtilerden olası nedenleri daraltan değerlendirme uygulaması; arama motorunda semptom aramaya yapılandırılmış alternatif.",
-  "en": "Symptom assessment app narrowing possible causes — a structured alternative to searching symptoms on the web.",
+  "tr": "Belirtileri yapılandırılmış soru akışıyla daraltıp olası nedenleri sıralıyor; tıbbi cihaz olarak CE işaretli. Web’de belirti aramanın disiplinli hâli.",
+  "en": "Narrows symptoms through a structured question flow and ranks possible causes; CE-marked as a medical device. The disciplined form of searching symptoms online.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4796,11 +4972,13 @@ window.LINKS = [
   "name": "Adobe Firefly",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "görsel"
+   "difüzyon",
+   "ticari"
   ],
-  "tr": "Adobe’un görsel üretim modeli; ticari kullanım için lisanslı veriyle eğitilmiş olması kurumsal işlerde başlıca tercih sebebi.",
-  "en": "Adobe’s image generator; being trained on licensed data for commercial use is the main reason it is picked for client work.",
+  "tr": "Adobe Stock ve süresi dolmuş telifli eserlerle eğitildiği için ticari kullanımda hukuki risk düşük. Müşteri işinde tercih edilmesinin sebebi görsel kalitesi değil, bu lisans netliği.",
+  "en": "Trained on Adobe Stock and public-domain work, so commercial legal risk is low. It gets picked for client work because of that licence clarity, not image quality.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4809,12 +4987,13 @@ window.LINKS = [
   "name": "Aider",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "cli",
    "kod",
-   "cli"
+   "git"
   ],
-  "tr": "Terminalde çalışan eşli programlama aracı; değişiklikleri doğrudan git commit’i olarak yazması onu editör eklentilerinden ayırır.",
-  "en": "Terminal pair-programmer whose distinguishing habit is writing changes straight into git commits.",
+  "tr": "Terminalde çalışıyor ve her değişikliği ayrı bir git commit’i olarak yazıyor. Beğenmediğin adımı `git revert` ile geri almak, editör tabanlı asistanlarda olmayan bir güvenlik ağı.",
+  "en": "Runs in the terminal and writes each change as its own git commit. Reverting a step you dislike with `git revert` is a safety net editor-based assistants do not offer.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4824,10 +5003,10 @@ window.LINKS = [
   "cat": "yz_arac",
   "tags": [
    "ücretsiz",
-   "biyoloji"
+   "biyoinformatik"
   ],
-  "tr": "Protein yapısı tahmini için DeepMind’ın web arayüzü; kurulum gerektirmemesi araştırmacılar için giriş engelini kaldırıyor.",
-  "en": "DeepMind’s web interface for protein structure prediction; requiring no installation removes the barrier for researchers.",
+  "tr": "AlphaFold 3 ile protein, DNA ve ligand komplekslerinin yapısını tahmin ediyor; kurulum ve GPU gerekmiyor. Günlük iş sayısı sınırlı ve ticari kullanım kısıtlı.",
+  "en": "Predicts structures of protein, DNA and ligand complexes with AlphaFold 3, needing no install or GPU. Daily job counts are capped and commercial use is restricted.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4836,11 +5015,13 @@ window.LINKS = [
   "name": "AskYourPDF",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "pdf"
+   "pdf",
+   "rag"
   ],
-  "tr": "PDF ile sohbet; birden çok belgeyi tek kütüphanede toplayıp hepsine birden soru sorabilmesi ayırt edici.",
-  "en": "Chat with PDFs; collecting many documents into one library and querying them together is what sets it apart.",
+  "tr": "Birden çok belgeyi tek kütüphanede toplayıp hepsine birden soru sorabiliyorsun; cevaplar sayfa numarasıyla geliyor. Tek dosyalık araçlardan ayrıldığı yer bu.",
+  "en": "Collects many documents into one library you can query together, with page-cited answers. That is where it parts from single-file tools.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4849,12 +5030,13 @@ window.LINKS = [
   "name": "Auphonic",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "ses",
    "podcast"
   ],
-  "tr": "Ses kaydını otomatik seviyeleyip temizleyen son işlem servisi; canlı değil, yayın öncesi kalite düzeltme için.",
-  "en": "Post-production service that levels and cleans recordings — not live, but for pre-publish quality correction.",
+  "tr": "Seviye eşitleme, gürültü azaltma ve yayın normlarına (LUFS) göre ses yüksekliği ayarı yapıyor. Canlı değil son işlem aracı; podcast yayımlamadan önceki son adım.",
+  "en": "Levels, denoises and normalises loudness to broadcast targets (LUFS). A post-production tool, not a live one — the last step before a podcast ships.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4863,12 +5045,13 @@ window.LINKS = [
   "name": "AutoGluon",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "automl",
-   "python"
+   "apache-2"
   ],
-  "tr": "Birkaç satırla güçlü model üreten AutoML kütüphanesi; topluluk (ensemble) kurmayı otomatikleştirmesiyle ayrışıyor.",
-  "en": "AutoML library producing strong models in a few lines, distinguished by automating ensemble construction.",
+  "tr": "Üç satırla tablo verisinde güçlü bir taban çizgisi kuruyor; birden çok modeli eğitip yığınlayarak (stacking) birleştiriyor. Kaggle taban çizgisi olarak sık kullanılıyor.",
+  "en": "Three lines gives a strong baseline on tabular data, training several models and combining them by stacking. Frequently used as a Kaggle baseline.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4878,10 +5061,10 @@ window.LINKS = [
   "cat": "yz_arac",
   "tags": [
    "ücretsiz",
-   "görsel"
+   "difüzyon"
   ],
-  "tr": "Ücretsiz görsel üretim; hesap dışında bir engeli olmaması onu en düşük sürtünmeli seçeneklerden biri yapıyor.",
-  "en": "Free image generation with no barrier beyond an account, making it one of the lowest-friction options.",
+  "tr": "DALL·E tabanlı, Microsoft hesabı dışında engel yok. Kalite üst sınıf değil ama sürtünmesi en düşük seçeneklerden.",
+  "en": "DALL·E-based with no barrier beyond a Microsoft account. Not top-tier quality, but among the lowest-friction options.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4890,12 +5073,13 @@ window.LINKS = [
   "name": "BioGPT",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "biyomedikal"
+   "biyomedikal",
+   "model"
   ],
-  "tr": "Biyomedikal literatürde eğitilmiş dil modeli; genel modellerin zorlandığı alan terminolojisinde daha isabetli.",
-  "en": "Language model trained on biomedical literature, more accurate on domain terminology than general models.",
+  "tr": "PubMed özetleriyle eğitilmiş dil modeli; ilaç-hastalık ilişkisi çıkarımı gibi görevlerde genel modellerden isabetli. Metin üretmekten çok bilgi çıkarımı için.",
+  "en": "A language model trained on PubMed abstracts, more accurate than general models at tasks like drug–disease relation extraction. Built for information extraction rather than generation.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4904,11 +5088,13 @@ window.LINKS = [
   "name": "Blackbox AI",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "kod"
+   "kod",
+   "arama"
   ],
-  "tr": "Kod arama ve üretme asistanı; kod parçası aramayı sohbetle birleştirmesi başlıca özelliği.",
-  "en": "Code search and generation assistant whose main trait is merging snippet search with chat.",
+  "tr": "Kod parçası aramayı sohbetle birleştiriyor; depo ve dokümanlarda arayıp bulduğunu bağlam olarak kullanıyor.",
+  "en": "Merges snippet search with chat, searching repositories and docs and using the hits as context.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4917,12 +5103,13 @@ window.LINKS = [
   "name": "BlenderGPT",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "3b"
+   "blender",
+   "eklenti"
   ],
-  "tr": "Blender işlemlerini doğal dille yaptıran eklenti; model üretmez, mevcut araçları senin yerine kullanır.",
-  "en": "Plugin driving Blender operations from natural language — it does not generate models, it operates the existing tools for you.",
+  "tr": "Doğal dil komutunu Blender Python API çağrısına çeviriyor. Model üretmiyor; Blender’ın kendi araçlarını senin yerine kullanıyor, yani sonuç tekrar edilebilir kalıyor.",
+  "en": "Translates a natural-language instruction into Blender Python API calls. It does not generate models — it operates Blender’s own tools for you, so the result stays reproducible.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4931,11 +5118,12 @@ window.LINKS = [
   "name": "Blueprint.am",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "donanım",
-   "tasarım"
+   "eda"
   ],
-  "tr": "Donanım tasarımına yapay zeka desteği getiren araç; yazılım odaklı asistanların değmediği bir alanı hedefliyor.",
-  "en": "Brings AI assistance to hardware design — a niche the software-focused assistants do not touch.",
+  "tr": "Donanım ve devre tasarımına yapay zeka desteği getiriyor. Yazılım asistanlarının yoğunlaştığı alanın dışında kalan, seyrek işlenmiş bir konu.",
+  "en": "Brings AI assistance to hardware and circuit design — a thinly covered area outside where software assistants have crowded in.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4944,12 +5132,13 @@ window.LINKS = [
   "name": "Bolt.new",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "ui",
-   "üretim"
+   "webcontainer"
   ],
-  "tr": "Tarayıcıda çalışan tam yığın uygulama üreticisi; kodu tarayıcı içinde çalıştırıp anında önizlemesi ayırt edici yanı.",
-  "en": "Full-stack app generator in the browser; running the code inside the browser for instant preview is its distinguishing trait.",
+  "tr": "Node.js’i WebContainer ile tarayıcıda çalıştırıyor; üretilen tam yığın uygulama sunucuya gitmeden anında önizleniyor. Hata çıkarsa aynı yerde düzeltiliyor.",
+  "en": "Runs Node.js in the browser via WebContainers, so the generated full-stack app previews instantly without a server round trip, and errors are fixed in place.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4958,11 +5147,12 @@ window.LINKS = [
   "name": "Buffer AI Assistant",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "sosyal medya"
+   "sosyal-medya"
   ],
-  "tr": "Sosyal medya gönderisi üretip yeniden paketleyen asistan; zamanlama aracının içinde olması ayrı araç ihtiyacını kaldırıyor.",
-  "en": "Generates and repurposes social posts inside a scheduling tool, removing the need for a separate app.",
+  "tr": "Zamanlama aracının içinde çalışıyor; bir gönderiyi farklı platformların ton ve uzunluğuna göre yeniden paketliyor. Ayrı bir metin aracıyla gidip gelme adımı kalkıyor.",
+  "en": "Lives inside the scheduling tool, repackaging one post for each platform’s tone and length — removing the round trip to a separate copy tool.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4971,11 +5161,13 @@ window.LINKS = [
   "name": "Canva",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "tasarım"
+   "tasarım",
+   "şablon"
   ],
-  "tr": "Şablon tabanlı genel tasarım aracı; tasarım bilgisi olmadan kabul edilebilir çıktı almanın en yaygın yolu.",
-  "en": "Template-based general design tool — the most common way to get acceptable output without design skills.",
+  "tr": "Şablon kütüphanesi ve marka kiti sayesinde tasarım bilgisi olmadan tutarlı çıktı alınıyor. Sınırı da bu: şablonların dışına çıkıldığında araç direniyor.",
+  "en": "A template library and brand kit produce consistent output without design skill. That is also the ceiling — the tool resists once you step outside the templates.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4984,11 +5176,13 @@ window.LINKS = [
   "name": "CapCut",
   "cat": "yz_arac",
   "tags": [
+   "masaüstü",
    "freemium",
-   "video"
+   "video",
+   "altyazı"
   ],
-  "tr": "Otomatik altyazı ve şablon ağırlıklı video düzenleyici; kısa video akışında profesyonel paketlere göre çok daha hızlı.",
-  "en": "Video editor built on auto-captioning and templates — far faster than professional suites for short-form work.",
+  "tr": "Otomatik altyazı, konuşmacı takibi ve dikey format şablonları. Kısa video akışında Premiere gibi paketlerden kat kat hızlı; renk ve ses tarafında ise sığ.",
+  "en": "Auto-captioning, speaker tracking and vertical-format templates. Far faster than Premiere for short-form, and correspondingly shallow on colour and audio.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -4997,11 +5191,12 @@ window.LINKS = [
   "name": "ChatPDF",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "pdf"
   ],
-  "tr": "Tek PDF’e soru sormanın en hızlı yolu; kayıt gerektirmeden yükleyip sormaya izin vermesiyle sürtünmesi düşük.",
-  "en": "The fastest way to question a single PDF, with low friction because you can upload and ask without signing up.",
+  "tr": "Kayıt olmadan dosya yükleyip soru sorabiliyorsun. Tek belgeye hızlı bakış için en düşük sürtünmeli yol; kütüphane yönetimi ya da çoklu belge desteği yok.",
+  "en": "Upload and ask without signing up — the lowest-friction path to interrogating a single document. No library management or multi-document support.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5010,13 +5205,13 @@ window.LINKS = [
   "name": "ChemCrow",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "kimya",
-   "agent"
+   "agent",
+   "kimya"
   ],
-  "tr": "Kimya araçlarını kullanabilen LLM agent’ı; modelin kendi bilgisine değil, gerçek kimya kütüphanelerine başvurması ayırt edici.",
-  "en": "An LLM agent that operates chemistry tools — it consults real chemistry libraries rather than the model’s own recall.",
+  "tr": "Kimya araçlarını (RDKit, reaksiyon veritabanları, sentez planlayıcıları) kullanabilen LLM agent’ı. Modelin kendi belleğine değil gerçek hesaplamalara başvurması, kimyada hata payını ciddi düşürüyor.",
+  "en": "An LLM agent that operates chemistry tools — RDKit, reaction databases, synthesis planners. Consulting real computation instead of the model’s recall sharply lowers error in chemistry.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5025,12 +5220,13 @@ window.LINKS = [
   "name": "Cline",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "eklenti",
    "kod",
-   "eklenti"
+   "agent"
   ],
-  "tr": "VS Code içinde dosya oluşturup komut çalıştırabilen otonom kodlama agent’ı; her adım için onay istemesiyle kontrolü sende bırakır.",
-  "en": "Autonomous coding agent inside VS Code that creates files and runs commands, asking approval at each step to keep you in control.",
+  "tr": "VS Code içinde dosya oluşturup komut çalıştırabiliyor ama her eylem için ayrı onay istiyor. Yavaşlatan bu adım, aynı zamanda otonom agent’larda kaybettiğin denetimi geri veriyor.",
+  "en": "Creates files and runs commands inside VS Code, asking approval for each action. That slowing step is also what returns the oversight autonomous agents take away.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5039,12 +5235,13 @@ window.LINKS = [
   "name": "Clipdrop",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "görsel",
-   "araç"
+   "araç-seti"
   ],
-  "tr": "Nesne silme, ışık düzeltme, büyütme gibi küçük görsel araçların toplandığı set; her biri için ayrı uygulama aramaya alternatif.",
-  "en": "A bundle of small image utilities — object removal, relighting, upscaling — instead of hunting a separate app for each.",
+  "tr": "Nesne silme, yeniden ışıklandırma, büyütme ve arka plan değiştirmeyi tek yerde topluyor. Her biri için ayrı servis aramak yerine bir hesapla dolaşabiliyorsun.",
+  "en": "Bundles object removal, relighting, upscaling and background replacement in one place, so one account covers what would otherwise be several services.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5055,10 +5252,11 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "kod",
-   "çok dilli"
+   "eklenti",
+   "çok-dilli"
   ],
-  "tr": "Çok dilli açık kod modeli ve eklentisi; Çince arayüz ve yerel model desteğiyle bölgesel bir alternatif.",
-  "en": "Multilingual open code model and plugin — a regional alternative with Chinese-language UI and local model support.",
+  "tr": "Açık kod modeli ve eklentisi; Çince arayüz ve bölgesel altyapı sunuyor. Batı servislerine erişimin sınırlı olduğu yerlerde çalışan bir alternatif.",
+  "en": "An open code model and plugin with a Chinese interface and regional infrastructure — a working alternative where access to Western services is limited.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5067,12 +5265,13 @@ window.LINKS = [
   "name": "ColabFold",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "biyoloji"
+   "biyoinformatik",
+   "colab"
   ],
-  "tr": "AlphaFold’u Colab üzerinde hızlı çalıştıran uyarlama; kendi dizilerini toplu işlemek isteyenler için sunucudan esnek.",
-  "en": "An adaptation running AlphaFold quickly on Colab — more flexible than the server for batch-processing your own sequences.",
+  "tr": "MMseqs2 ile dizi hizalamayı hızlandırıp AlphaFold’u Colab’da çalıştırılabilir hâle getiriyor. Sunucunun kotasına takılmadan kendi dizilerini toplu işlemek isteyenler için.",
+  "en": "Speeds up sequence alignment with MMseqs2 to make AlphaFold runnable in Colab — for batch-processing your own sequences without hitting the server’s quota.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5081,12 +5280,13 @@ window.LINKS = [
   "name": "ComfyUI",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
-   "yerel",
-   "görsel"
+   "açık-kaynak",
+   "yerel-model",
+   "difüzyon",
+   "düğüm"
   ],
-  "tr": "Düğüm tabanlı görsel üretim arayüzü; WebUI’nin form yaklaşımından farkı, akışın her adımını görünür ve tekrar edilebilir kılması.",
-  "en": "Node-based image generation UI; unlike WebUI’s form approach it makes every step of the pipeline visible and reproducible.",
+  "tr": "Üretim hattını düğüm grafiği olarak kuruyorsun: model yükleme, örnekleme, VAE çözme ayrı düğümler. Kurulumu zahmetli ama akış JSON olarak paylaşılıp birebir tekrar edilebiliyor.",
+  "en": "You build the pipeline as a node graph — model loading, sampling, VAE decode as separate nodes. Harder to set up, but a workflow exports as JSON and reproduces exactly.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5095,12 +5295,12 @@ window.LINKS = [
   "name": "Consensus",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "araştırma",
    "akademik"
   ],
-  "tr": "Bilimsel soruya literatürdeki uzlaşıyı özetleyen arama; tek makale bulmaktan çok “alan ne diyor” sorusuna yanıt verir.",
-  "en": "Search that summarises scientific consensus on a question — it answers “what does the field say” rather than finding one paper.",
+  "tr": "Bir soruya literatürün ne yönde eğildiğini özetliyor ve destekleyen/çelişen çalışma oranını gösteriyor. Tek makale bulmakla alanın genel eğilimini görmek farklı işler.",
+  "en": "Summarises which way the literature leans on a question and shows the ratio of supporting to contradicting studies. Finding one paper and seeing the field’s tendency are different jobs.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5109,12 +5309,13 @@ window.LINKS = [
   "name": "Continue",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "eklenti",
    "kod",
-   "eklenti"
+   "apache-2"
   ],
-  "tr": "VS Code ve JetBrains için açık kaynak YZ eklentisi. Kapalı editörlerden farkı, hangi modeli kullanacağını tamamen senin seçmen.",
-  "en": "Open-source AI plugin for VS Code and JetBrains; unlike closed editors you choose exactly which model backs it.",
+  "tr": "VS Code ve JetBrains eklentisi; hangi modelin tamamlama, hangisinin sohbet yapacağını ayrı ayrı seçiyorsun. Yerel model bağlayıp kodu dışarı hiç göndermemek mümkün.",
+  "en": "A VS Code and JetBrains plugin where you pick which model does completion and which does chat, separately. You can point it at a local model and never send code out.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5124,10 +5325,10 @@ window.LINKS = [
   "cat": "yz_arac",
   "tags": [
    "ücretsiz",
-   "görsel"
+   "difüzyon"
   ],
-  "tr": "Kayıt istemeden çalışan basit görsel üretici; kalite düşük ama hızlı deneme için engelsiz.",
-  "en": "A simple generator that works without signup — lower quality, but frictionless for quick tries.",
+  "tr": "Kayıt istemeden çalışıyor. Çıktı kalitesi güncel modellerin belirgin gerisinde; hızlı ve engelsiz denemeden başka bir iddiası yok.",
+  "en": "Works without signup. Output quality sits well behind current models; it claims nothing beyond fast, frictionless experimentation.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5136,12 +5337,13 @@ window.LINKS = [
   "name": "Cursor",
   "cat": "yz_arac",
   "tags": [
+   "masaüstü",
    "freemium",
    "kod",
    "editör"
   ],
-  "tr": "YZ etrafında yeniden kurulmuş VS Code çatalı. Eklentiden farkı, proje genelinde çok dosyalı düzenlemeyi ana akış hâline getirmesi.",
-  "en": "A VS Code fork rebuilt around AI. Unlike a plugin it makes multi-file, project-wide editing the main flow.",
+  "tr": "VS Code çatalı; kod tabanını indeksleyip çok dosyalı düzenlemeyi ana akış hâline getiriyor. Eklentiden farkı, değişikliği diff olarak önerip onayını beklemesi.",
+  "en": "A VS Code fork that indexes your codebase and makes multi-file editing the primary flow. Unlike a plugin it proposes changes as diffs and waits for approval.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5150,12 +5352,13 @@ window.LINKS = [
   "name": "DeepChem",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
-   "kimya",
-   "python"
+   "açık-kaynak",
+   "python",
+   "kemoinformatik",
+   "mit"
   ],
-  "tr": "Kimya ve ilaç keşfi için makine öğrenmesi kütüphanesi; moleküler verinin hazırlanmasını da üstlenmesi ayırt edici.",
-  "en": "ML library for chemistry and drug discovery, distinguished by also handling molecular data preparation.",
+  "tr": "İlaç keşfi için makine öğrenmesi; moleküler özellik hesaplama ve veri kümesi yükleyicileri dahil. Kimyasal veriyi modele hazır hâle getiren sıkıcı kısmı da üstleniyor.",
+  "en": "Machine learning for drug discovery, including molecular featurisation and dataset loaders — it takes on the tedious part of getting chemical data model-ready.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5164,11 +5367,12 @@ window.LINKS = [
   "name": "DeepL Write",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "yazım"
   ],
-  "tr": "Metni yeniden yazarak akıcılaştıran araç; hata düzeltmekten çok üslup iyileştirmeye odaklı olmasıyla Grammarly’den ayrılıyor.",
-  "en": "Rewrites text for fluency; it differs from Grammarly by targeting style improvement rather than error correction.",
+  "tr": "Hatayı işaretlemek yerine cümleyi yeniden kuruyor ve ton seçenekleri sunuyor. Grammarly düzeltiyor, bu yeniden yazıyor — ikisi farklı iş.",
+  "en": "Rewrites the sentence and offers tone variants instead of flagging errors. Grammarly corrects, this rewrites — two different jobs.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5177,13 +5381,13 @@ window.LINKS = [
   "name": "Dream Textures",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "3b",
+   "blender",
    "doku"
   ],
-  "tr": "Blender içinde doku ve yüzey üreten eklenti; dışarıda üretip içeri aktarma adımını ortadan kaldırır.",
-  "en": "Blender add-on generating textures in place, removing the generate-elsewhere-then-import step.",
+  "tr": "Blender içinde doku ve HDRI üretiyor; kesintisiz (seamless) döşeme ve projeksiyonla doğrudan mesh üzerine boyama yapabiliyor. Dışarıda üretip içeri aktarma adımı kalkıyor.",
+  "en": "Generates textures and HDRIs inside Blender, with seamless tiling and projection painting straight onto a mesh — removing the generate-elsewhere-then-import step.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5192,12 +5396,13 @@ window.LINKS = [
   "name": "Elicit",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "araştırma",
-   "akademik"
+   "akademik",
+   "tarama"
   ],
-  "tr": "Akademik makale tarayıp bulguları tabloya döken asistan; arama motorlarından farkı, çalışmaların sonuçlarını karşılaştırılabilir kılması.",
-  "en": "Screens academic papers and extracts findings into a table; unlike search engines it makes results comparable.",
+  "tr": "Yüzlerce makaleyi tarayıp örneklem büyüklüğü, yöntem ve bulgu gibi alanları tabloya çıkarıyor. Sistematik derleme yaparken en çok vakit yiyen adım tam olarak bu ayıklama.",
+  "en": "Screens hundreds of papers and extracts fields like sample size, method and finding into a table — precisely the screening step that eats the most time in a systematic review.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5206,11 +5411,12 @@ window.LINKS = [
   "name": "Explainpaper",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "araştırma"
+   "akademik"
   ],
-  "tr": "Makalede seçtiğin kısmı sadeleştiren araç; tüm belgeyi özetlemek yerine takıldığın yeri açması ayırt edici.",
-  "en": "Simplifies whichever passage you highlight — it opens up the part you got stuck on rather than summarising the whole document.",
+  "tr": "PDF’te işaretlediğin pasajı sadeleştiriyor. Tüm belgeyi özetlemiyor — takıldığın tek yeri açması onu dar ama isabetli kılıyor.",
+  "en": "Simplifies whichever passage you highlight in a PDF. It does not summarise the document; opening up the one place you got stuck is what makes it narrow but accurate.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5219,12 +5425,13 @@ window.LINKS = [
   "name": "FinGPT",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "finans"
+   "finans",
+   "llm"
   ],
-  "tr": "Finans alanına açık kaynak model ve veri hattı; kapalı finansal terminallere araştırma amaçlı alternatif.",
-  "en": "Open-source models and data pipelines for finance — a research alternative to closed financial terminals.",
+  "tr": "Finansal metin için açık modeller ve veri hattı; duygu analizi ve haber sınıflandırma üzerine ince ayarlı sürümler içeriyor. Bloomberg terminaline araştırma amaçlı açık alternatif.",
+  "en": "Open models and data pipelines for financial text, including fine-tunes for sentiment and news classification. An open research alternative to a Bloomberg terminal.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5233,12 +5440,13 @@ window.LINKS = [
   "name": "Fireflies.ai",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "ses",
-   "toplantı"
+   "toplantı",
+   "özet"
   ],
-  "tr": "Toplantı özeti ve aksiyon maddesi çıkaran asistan; ham döküm yerine karar ve görev listesi üretmeye odaklı.",
-  "en": "Meeting assistant producing summaries and action items, focused on decisions and tasks rather than a raw transcript.",
+  "tr": "Ham döküm yerine karar, aksiyon maddesi ve soru listesi çıkarıyor; CRM’e yazabiliyor. Otter dökümde, bu çıkarımda yoğunlaşmış.",
+  "en": "Extracts decisions, action items and questions rather than a raw transcript, and can write into a CRM. Otter concentrates on transcription; this on extraction.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5247,13 +5455,13 @@ window.LINKS = [
   "name": "Fooocus",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "yerel",
-   "görsel"
+   "yerel-model",
+   "difüzyon"
   ],
-  "tr": "Ayar yükünü gizleyen basitleştirilmiş Stable Diffusion arayüzü; ComfyUI’nin karşı kutbu, hiçbir şey ayarlamadan iyi sonuç hedefler.",
-  "en": "A simplified Stable Diffusion UI that hides the knobs — the opposite pole from ComfyUI, aiming for good output with zero tuning.",
+  "tr": "ComfyUI’nin karşı kutbu: örnekleyici, adım sayısı, CFG gibi ayarları gizleyip iyi varsayılanlarla çalışıyor. Midjourney benzeri bir deneyimi yerelde vermeyi hedefliyor.",
+  "en": "The opposite pole from ComfyUI — it hides sampler, steps and CFG behind good defaults, aiming to deliver a Midjourney-like experience locally.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5262,11 +5470,12 @@ window.LINKS = [
   "name": "Gamma",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "sunum"
   ],
-  "tr": "Metinden sunum ve doküman üreten araç; slayt yerine kaydırılabilir sayfa modeli kullanması ayırt edici yanı.",
-  "en": "Generates presentations and documents from text; using a scrollable page model instead of slides is what sets it apart.",
+  "tr": "Slayt yerine kaydırılabilir sayfa üretiyor; içerik uzadıkça düzen kendini ayarlıyor, kutuya sığdırma derdi kalkıyor. Çıktı PowerPoint ve PDF olarak alınabiliyor.",
+  "en": "Produces scrollable pages rather than slides, with the layout adapting as content grows so you stop fighting to fit a box. Exports to PowerPoint and PDF.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5275,11 +5484,13 @@ window.LINKS = [
   "name": "GitHub Copilot",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "kod"
+   "kod",
+   "eklenti"
   ],
-  "tr": "Editör içi kod tamamlama ve sohbet. Rakiplerinden farkı GitHub ve kurumsal politika yönetimiyle iç içe olması.",
-  "en": "In-editor code completion and chat; its distinction is being wired into GitHub and enterprise policy management.",
+  "tr": "Editör içi tamamlama ve sohbet; kurumsal planda kodun modele gönderilip gönderilmeyeceği politika olarak yönetilebiliyor. Bu yönetişim tarafı rakiplerinde zayıf.",
+  "en": "In-editor completion and chat, with enterprise policy control over whether code is sent to the model at all. That governance side is where rivals are thin.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5289,11 +5500,12 @@ window.LINKS = [
   "cat": "yz_arac",
   "tags": [
    "ücretsiz",
-   "not defteri",
-   "gpu"
+   "not-defteri",
+   "gpu",
+   "python"
   ],
-  "tr": "Tarayıcıda çalışan Python not defteri; ücretsiz GPU erişimi onu deneme ve öğretim için standart hâline getirdi.",
-  "en": "Browser-based Python notebook whose free GPU access made it the standard for experiments and teaching.",
+  "tr": "Tarayıcıda Jupyter; ücretsiz katmanda T4 GPU veriyor. Oturum süresi sınırlı ve makine kapanınca dosyalar gidiyor — uzun eğitimler için Drive’a bağlamak gerekiyor.",
+  "en": "Jupyter in the browser with a free T4 GPU. Sessions are time-limited and files vanish when the machine recycles, so long training runs need Drive mounted.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5302,11 +5514,12 @@ window.LINKS = [
   "name": "GPTZero",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "tespit"
   ],
-  "tr": "Metnin yapay zeka tarafından yazılıp yazılmadığını tahmin eden araç; sonuçlarının kesin olmadığını kendisi de belirtiyor.",
-  "en": "Estimates whether text was AI-written; it states itself that the verdict is probabilistic, not proof.",
+  "tr": "Metnin yapay zeka üretimi olma olasılığını tahmin ediyor. Sonuç olasılıksal — kendi belgeleri de yanlış pozitif oranını kabul ediyor, delil olarak kullanılmamalı.",
+  "en": "Estimates the probability that a text was AI-generated. The result is probabilistic and its own docs acknowledge false positives — it should not be treated as proof.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5315,12 +5528,13 @@ window.LINKS = [
   "name": "Grammarly",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "yazım",
    "ingilizce"
   ],
-  "tr": "İngilizce yazım ve üslup denetleyicisi; her uygulamada çalışan eklentisiyle en yaygın seçenek.",
-  "en": "English grammar and style checker; its everywhere-you-type extension makes it the most widespread option.",
+  "tr": "Yazdığın her yere giren eklentisiyle İngilizce dil bilgisi ve üslup denetimi. Türkçe desteklemiyor; yalnızca İngilizce yazarken anlamlı.",
+  "en": "English grammar and style checking through an extension that follows you everywhere you type. No Turkish support — it only makes sense when you write in English.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5330,10 +5544,12 @@ window.LINKS = [
   "cat": "yz_arac",
   "tags": [
    "freemium",
-   "automl"
+   "automl",
+   "java",
+   "kurumsal"
   ],
-  "tr": "Kurumsal AutoML platformu; ölçekli veri ve model açıklanabilirliği tarafında kütüphane çözümlerinden ileri.",
-  "en": "Enterprise AutoML platform, ahead of library-only solutions on large data and model explainability.",
+  "tr": "Dağıtık AutoML platformu; model açıklanabilirliği ve üretime çıkarma araçları kütüphane çözümlerinden ileride. Büyük veri kümelerinde bellek dışına taşabiliyor.",
+  "en": "A distributed AutoML platform whose explainability and productionisation tooling is ahead of library-only solutions, and which can spill out of memory on large datasets.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5342,11 +5558,13 @@ window.LINKS = [
   "name": "Homestyler",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "mimari"
+   "iç-mekan",
+   "katalog"
   ],
-  "tr": "Mobilya kataloğu üzerinden iç mekân tasarımı; gerçek ürünlerle çalışması Planner 5D’den ayıran yanı.",
-  "en": "Interior design driven by a furniture catalogue; working with real products is what separates it from Planner 5D.",
+  "tr": "Gerçek mobilya markalarının kataloğu üzerinden tasarım yapıyorsun, yani çıkan sahnedeki her parçanın satın alınabilir bir karşılığı var.",
+  "en": "You design from catalogues of real furniture brands, so every item in the scene has a purchasable counterpart.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5358,8 +5576,8 @@ window.LINKS = [
    "ücretsiz",
    "pazarlama"
   ],
-  "tr": "Pazarlama metni üreten ücretsiz araç; HubSpot ekosistemine bağlanabilmesi kampanyaya taşımayı kolaylaştırıyor.",
-  "en": "Free marketing-copy generator whose tie into HubSpot makes moving the output into a campaign easy.",
+  "tr": "E-posta, açılış sayfası ve reklam metnini kampanya hedefine göre üretiyor; ücretsiz ve HubSpot hesabı şart değil.",
+  "en": "Generates email, landing page and ad copy against a campaign goal, free and without requiring a HubSpot account.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5368,11 +5586,13 @@ window.LINKS = [
   "name": "Humata",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "pdf"
+   "pdf",
+   "teknik"
   ],
-  "tr": "Uzun teknik belgeleri karşılaştırmalı okumaya odaklı asistan; cevaba kaynak sayfa bağlantısı vermesi güven veriyor.",
-  "en": "Assistant for comparative reading of long technical documents, citing the source page for each answer.",
+  "tr": "Uzun teknik belgeleri karşılaştırmalı okumaya yönelik; her cevabın altında kaynak sayfa bağlantısı var, yani iddiayı belgede doğrulayabiliyorsun.",
+  "en": "Aimed at comparative reading of long technical documents, with a source-page link under each answer so you can verify the claim in the document itself.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5381,12 +5601,13 @@ window.LINKS = [
   "name": "Ideogram",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "görsel",
+   "difüzyon",
    "tipografi"
   ],
-  "tr": "Görsel içinde okunaklı metin üretebilmesiyle öne çıkan model; afiş ve logo denemelerinde diğerlerinden belirgin şekilde iyi.",
-  "en": "Known for rendering legible text inside images — markedly better than rivals for posters and logo experiments.",
+  "tr": "Görsel içinde okunaklı metin üretebilen ender modellerden. Afiş, logo ve ambalaj denemelerinde diğer difüzyon modellerinin bozduğu harfleri düzgün çıkarıyor.",
+  "en": "One of the few models that renders legible text inside an image, getting letters right on posters, logos and packaging where other diffusion models mangle them.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5395,12 +5616,12 @@ window.LINKS = [
   "name": "InstantMesh",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "3b"
+   "text-to-3d"
   ],
-  "tr": "Tek görselden kullanılabilir mesh üreten açık model; nokta bulutu değil doğrudan yüzey vermesiyle ayrışıyor.",
-  "en": "Open model turning one image into a usable mesh — it returns surfaces directly rather than a point cloud.",
+  "tr": "Tek görselden çok görünüşlü difüzyonla ara görüntüler üretip bunlardan mesh çıkarıyor. Nokta bulutu değil doğrudan kullanılabilir yüzey vermesi, hattın kalan adımlarını kısaltıyor.",
+  "en": "Generates intermediate views from one image via multi-view diffusion, then reconstructs a mesh. Returning usable surfaces rather than a point cloud shortens the rest of the pipeline.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5409,12 +5630,13 @@ window.LINKS = [
   "name": "InvokeAI",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
-   "yerel",
-   "görsel"
+   "açık-kaynak",
+   "yerel-model",
+   "difüzyon",
+   "tuval"
   ],
-  "tr": "Profesyonel iş akışına yönelik yerel görsel üretim paketi; tuval üzerinde bölgesel düzenlemeye güçlü destek verir.",
-  "en": "Local generation suite aimed at professional workflows, with strong support for regional editing on a canvas.",
+  "tr": "Sonsuz tuval üzerinde bölgesel üretim ve düzenleme; profesyonel iş akışı ve ekip kullanımı düşünülerek yapılmış. Ticari bir sürümü de var.",
+  "en": "Regional generation and editing on an infinite canvas, built with professional workflows and team use in mind. A commercial edition exists alongside.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5423,12 +5645,13 @@ window.LINKS = [
   "name": "Julius AI",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "veri",
    "analiz"
   ],
-  "tr": "Veri dosyasını yükleyip sohbetle analiz eden araç; kod yazmadan grafik ve istatistik üretmeye odaklı.",
-  "en": "Upload a data file and analyse it by chatting — aimed at charts and statistics without writing code.",
+  "tr": "CSV veya Excel yükleyip sohbetle analiz ediyorsun; arka planda Python çalıştırıp grafik üretiyor ve kullandığı kodu gösteriyor. Sonucu doğrulayabilmen bu şeffaflığa bağlı.",
+  "en": "Upload a CSV or Excel and analyse by chatting; it runs Python behind the scenes, produces charts and shows the code it used — which is what makes the result verifiable.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5438,11 +5661,12 @@ window.LINKS = [
   "cat": "yz_arac",
   "tags": [
    "ücretsiz",
-   "not defteri",
+   "not-defteri",
+   "gpu",
    "veri"
   ],
-  "tr": "Veri kümeleriyle aynı yerde duran not defterleri; Colab’dan farkı, başkalarının çözümlerini okuyabilmen.",
-  "en": "Notebooks sitting next to the datasets; unlike Colab you can read other people’s solutions.",
+  "tr": "Veri kümeleriyle aynı platformda duran not defterleri; haftalık GPU kotası Colab’dan öngörülebilir. Asıl değeri, başkalarının çözümlerini okuyabilmen.",
+  "en": "Notebooks sitting on the same platform as the datasets, with a weekly GPU quota more predictable than Colab’s. The real value is being able to read other people’s solutions.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5453,10 +5677,11 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "veri",
-   "görsel"
+   "düğüm",
+   "etl"
   ],
-  "tr": "Düğüm tabanlı görsel veri analizi platformu; kod yazmadan tekrarlanabilir hat kurmak isteyenler için.",
-  "en": "Node-based visual analytics platform for building reproducible pipelines without writing code.",
+  "tr": "Düğüm tabanlı görsel analiz; hattın tamamı kaydedilip tekrar çalıştırılabiliyor. Kod yazmadan tekrarlanabilirlik isteyen kurumsal veri ekiplerinde yaygın.",
+  "en": "Node-based visual analytics where the whole pipeline is saved and re-runnable. Common in enterprise data teams that need reproducibility without writing code.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5465,11 +5690,12 @@ window.LINKS = [
   "name": "Krisp",
   "cat": "yz_arac",
   "tags": [
+   "masaüstü",
    "freemium",
    "ses"
   ],
-  "tr": "Gerçek zamanlı gürültü engelleme; uygulama bağımsız çalışıp mikrofon düzeyinde araya girmesi ayırt edici.",
-  "en": "Real-time noise cancellation that works app-independently by intercepting at the microphone level.",
+  "tr": "Sanal mikrofon aygıtı olarak kurulup gürültüyü kaynakta kesiyor — Zoom, Teams, kayıt yazılımı fark etmeksizin hepsinde çalışıyor. Uygulama bazlı çözümlerin sınırı burada aşılıyor.",
+  "en": "Installs as a virtual microphone device and kills noise at the source, so it works across Zoom, Teams and any recorder alike — past the limit of per-app solutions.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5478,12 +5704,13 @@ window.LINKS = [
   "name": "Krita AI Diffusion",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "görsel"
+   "eklenti",
+   "difüzyon"
   ],
-  "tr": "Krita çizim programına görsel üretimi gömen eklenti; ayrı araç yerine mevcut çizim akışının içinde çalışması ayırt edici.",
-  "en": "Plugin embedding generation into the Krita painting app — it works inside your existing drawing flow rather than as a separate tool.",
+  "tr": "Krita’nın katman ve maske sistemini doğrudan difüzyona bağlıyor; seçim yapıp o bölgeyi üretiyorsun. Ayrı bir araca geçmeden mevcut çizim akışının içinde kalıyorsun.",
+  "en": "Wires Krita’s layers and masks straight into diffusion — select a region and generate into it. You stay inside your existing painting flow instead of switching tools.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5492,12 +5719,13 @@ window.LINKS = [
   "name": "LanguageTool",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "yazım",
-   "çok dilli"
+   "çok-dilli",
+   "self-hosted"
   ],
-  "tr": "Açık kaynak dil bilgisi denetleyicisi; Grammarly’den farkı Türkçe dahil çok dili desteklemesi ve kendi sunucunda çalışabilmesi.",
-  "en": "Open-source grammar checker; unlike Grammarly it supports many languages including Turkish and can be self-hosted.",
+  "tr": "30’dan fazla dili, Türkçe dahil, kural tabanlı olarak denetliyor ve kendi sunucunda çalıştırılabiliyor. Metnin bir şirkete gitmemesi gerektiği durumlarda tek gerçek seçenek.",
+  "en": "Rule-based checking for 30+ languages including Turkish, and it can be self-hosted — the only real option when the text must not go to a company.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5506,11 +5734,12 @@ window.LINKS = [
   "name": "Legalese Decoder",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "hukuk"
   ],
-  "tr": "Hukuki metni sade dile çeviren araç; genel özetleyicilerden farkı, madde yapısını koruyarak çevirmesi.",
-  "en": "Translates legal text into plain language, preserving clause structure unlike general summarisers.",
+  "tr": "Sözleşme dilini sade Türkçeye/İngilizceye çevirirken madde yapısını koruyor, yani hangi cümlenin hangi maddeden geldiği kayboluyor değil.",
+  "en": "Translates contract language into plain prose while preserving clause structure, so you do not lose which sentence came from which clause.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5519,11 +5748,13 @@ window.LINKS = [
   "name": "Leonardo AI",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "görsel"
+   "difüzyon",
+   "oyun"
   ],
-  "tr": "Oyun ve konsept sanatına eğilimli görsel üretici; kendi stil modellerini eğitip tekrar kullanabilmesiyle ayrışıyor.",
-  "en": "Image generator leaning towards game and concept art, distinguished by training and reusing your own style models.",
+  "tr": "Kendi görsellerinle stil modeli eğitip tekrar kullanabiliyorsun; oyun varlığı üretiminde tutarlı görünüm gerektiğinde bu belirleyici oluyor.",
+  "en": "You can train a style model on your own images and reuse it, which becomes decisive when game assets need a consistent look.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5532,12 +5763,13 @@ window.LINKS = [
   "name": "LightPDF",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "pdf",
-   "araç"
+   "araç-seti"
   ],
-  "tr": "Dönüştürme, sıkıştırma, düzenleme gibi klasik PDF araçlarına YZ sohbeti eklenmiş set; tek işlevli rakiplerinden daha geniş.",
-  "en": "Classic PDF utilities — convert, compress, edit — with AI chat added, broader than the single-purpose rivals.",
+  "tr": "Dönüştürme, sıkıştırma, imzalama ve OCR gibi klasik PDF işlerinin üzerine sohbet eklenmiş. Tek işlevli rakiplerine göre geniş, her bir işlevde ise ortalama.",
+  "en": "Classic PDF chores — convert, compress, sign, OCR — with chat layered on. Broader than the single-purpose rivals and average at each individual job.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5546,12 +5778,13 @@ window.LINKS = [
   "name": "Lovable",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "ui",
-   "üretim"
+   "tam-yığın"
   ],
-  "tr": "Sohbetle tam uygulama üreten araç; v0’dan farkı veritabanı ve yayına almayı da üstlenmesi.",
-  "en": "Chat-to-full-app builder; unlike v0 it also takes on the database and deployment.",
+  "tr": "Sohbetle uygulama kurup Supabase bağlantısı ve dağıtımı da üstleniyor. v0 bileşen verirken bu çalışan ve veritabanı bağlı bir ürün hedefliyor.",
+  "en": "Builds an app from chat and takes on the Supabase wiring and deployment too. Where v0 hands you a component, this aims at a running, database-backed product.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5560,12 +5793,13 @@ window.LINKS = [
   "name": "Luma AI",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "video",
-   "3b"
+   "nerf"
   ],
-  "tr": "Video üretimi ve gerçek nesne taramasını (NeRF) birlikte sunuyor; saf video modellerinden farkı bu ikinci ayağı.",
-  "en": "Combines video generation with real-object capture (NeRF) — that second leg is what separates it from pure video models.",
+  "tr": "Video üretiminin yanında telefonla çektiğin nesneyi NeRF/Gaussian splatting ile 3B’ye çeviriyor. Bu ikinci ayak onu saf video modellerinden ayırıyor.",
+  "en": "Alongside video generation it turns an object you filmed on a phone into 3D via NeRF/Gaussian splatting. That second leg is what separates it from pure video models.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5574,12 +5808,13 @@ window.LINKS = [
   "name": "MedAlpaca",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "tıp"
+   "tıp",
+   "model"
   ],
-  "tr": "Tıbbi soru-cevap için ince ayarlanmış açık model; klinik kullanım için değil, araştırma ve sınav çalışması için.",
-  "en": "Open model fine-tuned for medical Q&A — for research and exam practice, not clinical use.",
+  "tr": "Tıbbi soru-cevap için ince ayarlanmış açık model; USMLE tarzı sınav sorularıyla değerlendirilmiş. Klinik kullanım için değil, araştırma ve sınav çalışması için.",
+  "en": "An open model fine-tuned for medical Q&A and evaluated on USMLE-style questions. For research and exam practice, not clinical use.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5588,12 +5823,12 @@ window.LINKS = [
   "name": "MedGemma",
   "cat": "yz_arac",
   "tags": [
-   "açık ağırlık",
+   "açık-ağırlık",
    "tıp",
    "model"
   ],
-  "tr": "Google’ın tıp alanına uyarlanmış açık modeli; klinik metin ve görüntü üzerinde araştırma amaçlı kullanım için.",
-  "en": "Google’s medically adapted open model, intended for research use on clinical text and images.",
+  "tr": "Gemma’nın tıbbi metin ve görüntüye uyarlanmış açık sürümü. Araştırma amaçlı — klinik karar desteği olarak kullanılması için düzenleyici onayı yok.",
+  "en": "An open Gemma variant adapted to medical text and imaging. Research use only — it carries no regulatory clearance for clinical decision support.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5602,11 +5837,12 @@ window.LINKS = [
   "name": "Meshy",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "3b"
+   "text-to-3d"
   ],
-  "tr": "Metin veya görselden 3B model üreten araç; çıktıya otomatik doku giydirmesi oyun varlıkları için zaman kazandırıyor.",
-  "en": "Text- or image-to-3D generator whose automatic texturing saves real time on game assets.",
+  "tr": "Metin ya da görselden 3B model üretip PBR dokusunu da kendisi giydiriyor. Oyun varlığı hattında en çok vakit yiyen adımın doku olması bunu değerli kılıyor.",
+  "en": "Generates a 3D model from text or an image and applies PBR textures itself. Texturing being the slowest step in an asset pipeline is what makes that matter.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5615,12 +5851,13 @@ window.LINKS = [
   "name": "Microsoft Designer",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "ücretsiz",
-   "görsel",
+   "tasarım",
    "şablon"
   ],
-  "tr": "Şablon tabanlı hızlı grafik tasarım; saf üreticilerden farkı, çıktıyı düzenlenebilir bir tasarım olarak vermesi.",
-  "en": "Template-based quick graphic design; unlike pure generators it hands back an editable layout.",
+  "tr": "Üretilen görseli katmanlı ve düzenlenebilir bir tasarım olarak veriyor; saf üreticilerde elde ettiğin düz raster dosyanın aksine üzerinde çalışmaya devam edebiliyorsun.",
+  "en": "Returns the generated image as a layered, editable layout, so unlike the flat raster you get from pure generators you can keep working on it.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5629,11 +5866,13 @@ window.LINKS = [
   "name": "MLJAR AutoML",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
-   "automl"
+   "açık-kaynak",
+   "python",
+   "automl",
+   "rapor"
   ],
-  "tr": "Otomatik model seçimi yapıp sonucu okunabilir rapor olarak sunan kütüphane; açıklama üretmesi ayırt edici yanı.",
-  "en": "AutoML that also produces a readable report — generating explanations is what distinguishes it.",
+  "tr": "Model seçiminin yanında Markdown rapor üretiyor: öğrenme eğrileri, önem grafikleri ve karar açıklamaları dahil. Sonucu birine sunman gerekiyorsa bu fark yaratıyor.",
+  "en": "Alongside model selection it emits a Markdown report with learning curves, importance plots and decision explanations — which matters when you have to present the result to someone.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5642,11 +5881,12 @@ window.LINKS = [
   "name": "Napkin AI",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "görselleştirme"
+   "diyagram"
   ],
-  "tr": "Düz metni diyagram ve şemaya çeviren araç; sunum üreticilerinden farkı, tek bir fikri görselleştirmeye odaklanması.",
-  "en": "Turns plain text into diagrams; unlike deck generators it focuses on visualising one idea at a time.",
+  "tr": "Düz metinden akış şeması, zaman çizelgesi ve karşılaştırma görseli üretiyor; çıktı düzenlenebilir vektör. Sunum üretmiyor, tek bir fikri görselleştiriyor.",
+  "en": "Turns plain prose into flow charts, timelines and comparison graphics as editable vectors. It does not build decks; it visualises one idea.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5659,8 +5899,8 @@ window.LINKS = [
    "tıp",
    "akademik"
   ],
-  "tr": "Klinik sorulara kaynak göstererek yanıt veren tıbbi arama; genel botlardan farkı, yalnızca hakemli literatüre dayanması.",
-  "en": "Medical search answering clinical questions with citations; unlike general chatbots it draws only on peer-reviewed literature.",
+  "tr": "Klinik soruya yalnızca hakemli literatürden, atıf vererek cevap veriyor; kayıtlı sağlık profesyonellerine açık. Genel botların tıpta güvenilmez olmasının sebebi kaynak denetimi eksikliği — burada var.",
+  "en": "Answers clinical questions only from peer-reviewed literature, with citations, for verified health professionals. General chatbots are unreliable in medicine because they lack that source control; this has it.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5669,12 +5909,13 @@ window.LINKS = [
   "name": "OpenHands",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "agent",
    "kod",
-   "agent"
+   "docker"
   ],
-  "tr": "Tarayıcı ve terminal kullanabilen otonom yazılım geliştirme agent’ı; tamamlamadan çok uçtan uca görev bitirmeye odaklı.",
-  "en": "Autonomous software-development agent that can use a browser and terminal, aimed at finishing tasks end to end rather than completing lines.",
+  "tr": "Tarayıcı ve terminal kullanabilen otonom geliştirme agent’ı; izole bir Docker kapsayıcısında çalışıyor. Satır tamamlamak değil, bir konuyu (issue) baştan sona kapatmak için tasarlanmış.",
+  "en": "An autonomous development agent with browser and terminal access, running in an isolated Docker container. Built to close an issue end to end, not to complete a line.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5683,12 +5924,13 @@ window.LINKS = [
   "name": "Orange",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "veri",
    "eğitim"
   ],
-  "tr": "Görsel programlamayla veri madenciliği; KNIME’a göre daha hafif ve öğretim amaçlı kullanıma daha uygun.",
-  "en": "Visual-programming data mining — lighter than KNIME and better suited to teaching.",
+  "tr": "Görsel programlamayla veri madenciliği; widget’lar scikit-learn’i sarmalıyor. KNIME’dan hafif ve görselleştirme tarafı güçlü, bu yüzden derslerde tercih ediliyor.",
+  "en": "Visual-programming data mining whose widgets wrap scikit-learn. Lighter than KNIME with stronger visualisation, which is why it shows up in teaching.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5697,12 +5939,13 @@ window.LINKS = [
   "name": "Otter.ai",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "ses",
+   "stt",
    "toplantı"
   ],
-  "tr": "Toplantıyı canlı yazıya döken asistan; kayıt sonrası değil toplantı sırasında çalışması ayırt edici yanı.",
-  "en": "Meeting transcription assistant that works during the meeting rather than after the recording.",
+  "tr": "Toplantıya katılıp canlı yazıya döküyor ve konuşmacıları ayırıyor. Kayıt sonrası yükleme yapan araçlardan farkı, toplantı sürerken not almanı bırakabilmen.",
+  "en": "Joins a meeting, transcribes live and separates speakers. Unlike upload-after-the-fact tools it lets you stop taking notes while the meeting is still running.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5711,11 +5954,13 @@ window.LINKS = [
   "name": "PDF.ai",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "pdf"
+   "pdf",
+   "eklenti"
   ],
-  "tr": "PDF sohbeti; tarayıcı eklentisiyle web’deki PDF’lerde de çalışabilmesi ayırt edici yanı.",
-  "en": "PDF chat whose distinguishing feature is a browser extension that also works on PDFs found on the web.",
+  "tr": "Tarayıcı eklentisiyle web’de karşılaştığın PDF’lerde de çalışıyor — indirip yükleme adımını atlamış oluyorsun.",
+  "en": "A browser extension makes it work on PDFs you meet on the web, skipping the download-then-upload step.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5725,11 +5970,11 @@ window.LINKS = [
   "cat": "yz_arac",
   "tags": [
    "ücretsiz",
-   "görsel",
+   "difüzyon",
    "karakter"
   ],
-  "tr": "Karakter ve ürün görselleri üzerine yoğunlaşan üretici; ücretsiz katmanının cömertliğiyle biliniyor.",
-  "en": "Generator focused on character and product imagery, known for a generous free tier.",
+  "tr": "Karakter ve ürün görsellerine yoğunlaşmış; ücretsiz katmanı günlük kullanıma yetecek kadar cömert.",
+  "en": "Focused on character and product imagery, with a free tier generous enough for daily use.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5738,12 +5983,13 @@ window.LINKS = [
   "name": "Pieces for Developers",
   "cat": "yz_arac",
   "tags": [
+   "masaüstü",
    "freemium",
-   "kod",
-   "not"
+   "not",
+   "bellek"
   ],
-  "tr": "Kod parçalarını bağlamıyla saklayan geliştirici hafızası; not uygulamalarından farkı, ne yaptığın üzerinden geçmişi hatırlaması.",
-  "en": "A developer memory that stores snippets with their context; unlike note apps it recalls history based on what you were doing.",
+  "tr": "Kod parçalarını kaynağı ve o an ne yaptığınla birlikte saklıyor; sonra “geçen hafta şu hatayı çözerken kullandığım şey” diye arayabiliyorsun. Yerelde çalışan bir model kullanma seçeneği var.",
+  "en": "Stores snippets with their source and what you were doing at the time, so you can later search for “the thing I used while fixing that bug last week”. It can run on a local model.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5752,11 +5998,13 @@ window.LINKS = [
   "name": "Pika",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "video"
+   "video",
+   "difüzyon"
   ],
-  "tr": "Metin ve görselden kısa video üreten model; hareket efektlerini seçilebilir hâle getirmesiyle ayrışıyor.",
-  "en": "Text- and image-to-short-video model, distinguished by exposing motion effects as selectable options.",
+  "tr": "Metin ve görselden kısa video üretiyor; kamera hareketi ve efektleri parametre olarak seçiliyor. İstemle rastgele sonuç beklemek yerine hareketi yönlendirebiliyorsun.",
+  "en": "Generates short video from text and images, with camera motion and effects exposed as parameters — you steer the motion instead of hoping the prompt lands.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5765,12 +6013,13 @@ window.LINKS = [
   "name": "Pitch",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "sunum",
    "ekip"
   ],
-  "tr": "Ekip odaklı sunum aracı; eşzamanlı düzenleme ve marka şablonlarıyla PowerPoint’e web tabanlı alternatif.",
-  "en": "Team-oriented presentation tool — a web alternative to PowerPoint with live co-editing and brand templates.",
+  "tr": "Eşzamanlı düzenleme, yorum ve marka şablonları; sunum bir ekip belgesi gibi çalışıyor. Analitik özelliği, gönderdiğin sunumun hangi slaytta bırakıldığını gösteriyor.",
+  "en": "Live co-editing, comments and brand templates make a deck behave like a team document. Its analytics show which slide a recipient stopped on.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5779,11 +6028,13 @@ window.LINKS = [
   "name": "Planner 5D",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "mimari"
+   "mimari",
+   "iç-mekan"
   ],
-  "tr": "Tarayıcıda iç mekân planlama; profesyonel CAD yerine hızlı kat planı ve görselleştirmeye odaklı.",
-  "en": "Browser interior planning focused on quick floor plans and renders rather than professional CAD.",
+  "tr": "Kat planı çizip anında 3B görselleştirme alıyorsun. CAD hassasiyeti yok; ölçülü teknik çizim değil, hızlı sunum görseli için.",
+  "en": "Draw a floor plan and get an instant 3D render. No CAD precision — it is for a fast presentation image, not a dimensioned technical drawing.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5792,12 +6043,13 @@ window.LINKS = [
   "name": "Playground AI",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "görsel",
+   "difüzyon",
    "düzenleme"
   ],
-  "tr": "Üretim ve düzenlemeyi tuval üzerinde birleştiren araç; parça parça düzeltmeye elverişli.",
-  "en": "Combines generation and editing on a canvas, which suits piecemeal correction.",
+  "tr": "Üretim ve düzenlemeyi aynı tuvalde birleştiriyor; bölge seçip yalnızca orayı yeniden üretmek (inpainting) akışın parçası. Parça parça düzeltmeye elverişli.",
+  "en": "Combines generation and editing on one canvas, with region-selective regeneration (inpainting) built into the flow — which suits piecemeal correction.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5806,13 +6058,13 @@ window.LINKS = [
   "name": "Point-E",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "3b",
+   "text-to-3d",
    "araştırma"
   ],
-  "tr": "Nokta bulutu üreten daha eski OpenAI modeli; Shap-E’den hızlı ama çıktı çok daha kaba.",
-  "en": "An earlier OpenAI model producing point clouds — faster than Shap-E but far coarser output.",
+  "tr": "Shap-E’den önceki nesil; nokta bulutu üretiyor, mesh’e dönüştürmek ayrı bir adım. Hızlı ama sonuç kaba, bugün pratik bir kullanımı kalmadı.",
+  "en": "The generation before Shap-E, producing point clouds that need a separate meshing step. Fast but coarse, with little practical use left today.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5821,11 +6073,13 @@ window.LINKS = [
   "name": "Predis.ai",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "sosyal medya"
+   "sosyal-medya",
+   "video"
   ],
-  "tr": "Metinle birlikte görsel ve video da üreten sosyal medya aracı; yalnız metin üretenlerden farkı bu.",
-  "en": "Social media tool generating visuals and video alongside copy — the difference from text-only generators.",
+  "tr": "Metinle birlikte görsel ve kısa video da üretiyor; rakip için düşünülmüş şablonları var. Yalnızca metin üreten araçlardan ayrıldığı yer bu.",
+  "en": "Generates visuals and short video alongside copy, with competitor-oriented templates. That is where it separates from text-only tools.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5834,12 +6088,13 @@ window.LINKS = [
   "name": "Prophet",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
-   "finans",
-   "python"
+   "açık-kaynak",
+   "python",
+   "r",
+   "zaman-serisi"
   ],
-  "tr": "Zaman serisi tahmini için kütüphane; tatil ve mevsimsellik etkilerini varsayılan olarak modellemesi ayırt edici yanı.",
-  "en": "Time-series forecasting library whose distinguishing trait is modelling holidays and seasonality by default.",
+  "tr": "Zaman serisini eğilim, mevsimsellik ve tatil etkilerine ayırıyor; parametre ayarı yapmadan makul sonuç veriyor. İstatistik bilgisi olmayan analistler için tasarlanmış.",
+  "en": "Decomposes a time series into trend, seasonality and holiday effects and gives reasonable results without tuning. Designed for analysts who are not statisticians.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5848,12 +6103,13 @@ window.LINKS = [
   "name": "PyCaret",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "automl",
-   "python"
+   "düşük-kod"
   ],
-  "tr": "Düşük kodlu makine öğrenmesi kütüphanesi; deneme aşamasında onlarca modeli tek satırla karşılaştırmak için.",
-  "en": "Low-code ML library for comparing dozens of models in a single line during experimentation.",
+  "tr": "`compare_models()` tek satırda onlarca algoritmayı çapraz doğrulamayla kıyaslayıp tabloya döküyor. Keşif aşamasında hangi model ailesinin işe yaradığını hızla eliyor.",
+  "en": "`compare_models()` cross-validates dozens of algorithms in one line and tabulates the result, quickly narrowing which model family is worth pursuing.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5862,12 +6118,13 @@ window.LINKS = [
   "name": "QuantConnect",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "finans",
-   "algoritmik"
+   "backtest"
   ],
-  "tr": "Algoritmik strateji yazıp geçmiş veriyle test etme platformu; veri ve altyapıyı hazır vermesiyle kendi kurulumundan hızlı.",
-  "en": "Platform for writing and backtesting algorithmic strategies, faster than a home setup because data and infrastructure come ready.",
+  "tr": "Strateji yazıp geçmiş veriyle test ediyorsun; hisse, opsiyon, futures ve kripto verisi hazır geliyor. Kendi kurulumunda en pahalı kısım olan temiz veriyi platform sağlıyor.",
+  "en": "Write a strategy and backtest it, with equity, options, futures and crypto data supplied. The platform provides the clean data that is the costliest part of a home setup.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5876,11 +6133,12 @@ window.LINKS = [
   "name": "QuillBot",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "yazım"
   ],
-  "tr": "Başka sözcüklerle ifade etme (paraphrase) aracı; ton ve uzunluk seçenekleriyle aynı cümlenin farklı sürümlerini üretir.",
-  "en": "A paraphrasing tool producing alternative versions of the same sentence with tone and length controls.",
+  "tr": "Aynı cümlenin farklı ifade edilişlerini üretiyor; uzunluk ve resmiyet ayarlanabiliyor. Akademik yazımda intihal riskini artırabileceği için dikkatli kullanılması gereken bir araç.",
+  "en": "Produces alternative phrasings of the same sentence with adjustable length and formality. In academic writing it can raise plagiarism risk, so it needs careful use.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5889,11 +6147,13 @@ window.LINKS = [
   "name": "RDKit",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
-   "kimya"
+   "açık-kaynak",
+   "python",
+   "c++",
+   "kemoinformatik"
   ],
-  "tr": "Kemoinformatiğin standart açık kütüphanesi; moleküler işlemler için fiilî temel, üzerine kurulan araçların çoğu buna dayanır.",
-  "en": "The standard open cheminformatics library — the de facto base most molecular tooling is built on.",
+  "tr": "Kemoinformatiğin temel açık kütüphanesi: SMILES ayrıştırma, alt yapı arama, parmak izi üretimi. Alandaki araçların çoğu doğrudan bunun üzerine kurulu.",
+  "en": "The foundational open cheminformatics library — SMILES parsing, substructure search, fingerprints. Most tooling in the field is built directly on it.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5902,12 +6162,13 @@ window.LINKS = [
   "name": "Recraft",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "görsel",
-   "vektör"
+   "vektör",
+   "tasarım"
   ],
-  "tr": "Vektör çıktı üretebilen tasarım odaklı model; logo ve ikon işlerinde raster üreticilerden belirgin şekilde kullanışlı.",
-  "en": "Design-focused model that can output vectors — markedly more useful than raster generators for logos and icons.",
+  "tr": "SVG çıktı üretebiliyor. Logo, ikon ve illüstrasyon işlerinde raster üreticilerden temel farkı bu: sonucu ölçekleyip düzenleyebiliyorsun.",
+  "en": "Can output SVG. For logos, icons and illustration that is the fundamental split from raster generators — the result scales and stays editable.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5916,12 +6177,13 @@ window.LINKS = [
   "name": "remove.bg",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "görsel",
-   "araç"
+   "api"
   ],
-  "tr": "Tek işe odaklı arka plan silme servisi; genel düzenleyicilerden farkı, tek tıkla ve toplu çalışabilmesi.",
-  "en": "A single-purpose background remover; unlike general editors it works in one click and in batches.",
+  "tr": "Tek işe odaklı arka plan silme; API ve toplu işlem sunduğu için hattın içine gömülebiliyor. Saç ve şeffaf yüzey kenarlarında genel araçlardan iyi.",
+  "en": "Single-purpose background removal with an API and batch mode, so it drops into a pipeline. Better than general tools on hair and transparent edges.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5930,12 +6192,13 @@ window.LINKS = [
   "name": "Replit",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "kod",
-   "tarayıcıda"
+   "tarayıcı-içi",
+   "ide"
   ],
-  "tr": "Tarayıcıda çalışan geliştirme ortamı; kurulum yapmadan kod yazıp yayına almayı tek yerde toplaması ayırt edici yanı.",
-  "en": "Browser-based development environment; writing and deploying code with zero local setup is what sets it apart.",
+  "tr": "Tarayıcıda tam bir geliştirme ortamı: düzenleme, çalıştırma ve yayına alma aynı sekmede. Kurulum yükü sıfır olduğu için öğretim ortamlarında yaygın.",
+  "en": "A complete development environment in the browser — edit, run and deploy in one tab. Zero setup is why it is common in teaching.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5945,11 +6208,11 @@ window.LINKS = [
   "cat": "yz_arac",
   "tags": [
    "ücretsiz",
-   "araştırma",
-   "akademik"
+   "akademik",
+   "graf"
   ],
-  "tr": "Makaleler arası atıf ağını görselleştiren keşif aracı; anahtar kelime aramasının kaçırdığı komşu çalışmaları bulmak için.",
-  "en": "Visualises citation networks between papers, surfacing neighbouring work that keyword search misses.",
+  "tr": "Bir makaleden başlayıp atıf ve ortak yazar ağını görsel olarak genişletiyorsun. Anahtar kelimeyi bilmediğin için kaçırdığın komşu çalışmalar böyle çıkıyor.",
+  "en": "Start from one paper and expand the citation and co-author network visually. This is how you surface adjacent work you missed because you did not know its keyword.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5958,12 +6221,12 @@ window.LINKS = [
   "name": "ResuMax",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
    "kariyer"
   ],
-  "tr": "Özgeçmiş hazırlama ve iyileştirme aracı; genel yazım asistanlarından farkı, ilana göre uyarlamaya odaklanması.",
-  "en": "A résumé builder and optimiser; unlike general writing assistants it focuses on tailoring to a specific posting.",
+  "tr": "Özgeçmişi hedef ilana göre uyarlayan araç; ATS taramasından geçecek biçimlendirmeye dikkat ediyor. Genel yazım asistanlarının atladığı nokta bu eşleştirme.",
+  "en": "Tailors a résumé to a specific posting and watches the formatting that ATS parsers need. That matching step is what general writing assistants miss.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5972,12 +6235,13 @@ window.LINKS = [
   "name": "Roo Code",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "eklenti",
    "kod",
-   "eklenti"
+   "agent"
   ],
-  "tr": "Cline’dan türeyen kodlama agent’ı; mimar, kodcu, hata ayıklayıcı gibi kip ayrımı sunmasıyla ayrışıyor.",
-  "en": "A coding agent forked from Cline, distinguished by separate modes such as architect, coder and debugger.",
+  "tr": "Cline’dan çatallanmış; mimar, kodcu ve hata ayıklayıcı kipleri ayrı sistem istemi ve ayrı model kullanabiliyor. Planlamaya güçlü, kodlamaya ucuz model koymak mümkün.",
+  "en": "Forked from Cline, with architect, coder and debugger modes carrying separate system prompts and models. You can put a strong model on planning and a cheap one on coding.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5986,11 +6250,13 @@ window.LINKS = [
   "name": "Scholarcy",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "araştırma"
+   "akademik",
+   "özet"
   ],
-  "tr": "Makaleyi yapılandırılmış özet kartlarına indirgeyen araç; tarama aşamasında hangi çalışmayı okuyacağına karar vermek için.",
-  "en": "Reduces a paper to structured summary cards — for deciding, during triage, which study is worth reading.",
+  "tr": "Makaleyi yapılandırılmış kartlara indiriyor: temel iddia, yöntem, kısıtlar, atıflar ayrı ayrı. Hangi çalışmayı tam okuyacağına karar verdiğin ayıklama aşaması için.",
+  "en": "Reduces a paper to structured cards — core claim, method, limitations, references, each separate. For the triage stage where you decide what to read in full.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -5999,12 +6265,12 @@ window.LINKS = [
   "name": "SciSpace",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "araştırma",
    "akademik"
   ],
-  "tr": "Makaleyi paragraf paragraf açıklayan asistan; alan dışından okuyanlar için terimleri yerinde çözmesiyle ayrışıyor.",
-  "en": "Explains a paper paragraph by paragraph, resolving jargon in place for readers from outside the field.",
+  "tr": "Makaleyi paragraf paragraf açıklıyor, seçtiğin denklemi ya da terimi yerinde çözüyor. Alan dışından okuyan biri için kritik olan, özet değil bu satır içi açıklama.",
+  "en": "Explains a paper paragraph by paragraph, unpacking a chosen equation or term in place. For a reader from outside the field, that inline explanation matters more than a summary.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6013,13 +6279,13 @@ window.LINKS = [
   "name": "Shap-E",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "3b",
+   "text-to-3d",
    "araştırma"
   ],
-  "tr": "OpenAI’ın metinden 3B üretim modeli; ürün değil araştırma çıktısı, üretim kalitesi beklenmemeli.",
-  "en": "OpenAI’s text-to-3D model — a research release rather than a product, so do not expect production quality.",
+  "tr": "Metinden doğrudan örtük 3B temsil üreten OpenAI modeli. Araştırma sürümü — çıktısı üretim kalitesinde değil, tarihsel ve akademik değeri var.",
+  "en": "An OpenAI model producing implicit 3D representations from text. A research release: the output is not production quality, and its value is historical and academic.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6028,11 +6294,13 @@ window.LINKS = [
   "name": "Simplified",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "pazarlama"
+   "pazarlama",
+   "araç-seti"
   ],
-  "tr": "Tasarım, metin, video ve zamanlamayı tek uygulamada toplayan set; parça parça araç kullanmaya alternatif.",
-  "en": "Bundles design, copy, video and scheduling in one app — an alternative to stitching separate tools.",
+  "tr": "Tasarım, metin, video düzenleme ve zamanlamayı tek uygulamada topluyor. Her alanda uzman araçların gerisinde, ama araç sayısını azaltmak istiyorsan mantıklı bir denge.",
+  "en": "Bundles design, copy, video editing and scheduling in one app. Behind the specialists at each task, but a sensible trade if reducing tool count is the goal.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6041,11 +6309,12 @@ window.LINKS = [
   "name": "SlidesAI",
   "cat": "yz_arac",
   "tags": [
+   "eklenti",
    "freemium",
    "sunum"
   ],
-  "tr": "Google Slides içine gömülen sunum üreticisi; ayrı platforma geçmeden mevcut dosyanda çalışması ayırt edici.",
-  "en": "Deck generator embedded in Google Slides, working inside your existing file rather than a separate platform.",
+  "tr": "Google Slides eklentisi olarak çalışıyor; mevcut dosyandan çıkmadan metinden slayt üretiyor. Ayrı platforma taşınma ve sonra dışa aktarma adımı yok.",
+  "en": "Runs as a Google Slides add-on, generating slides from text without leaving your existing file — no migration to another platform and no export step back.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6054,12 +6323,13 @@ window.LINKS = [
   "name": "Spline",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "3b",
    "web"
   ],
-  "tr": "Tarayıcıda 3B tasarım ve web’e gömme aracı; Blender gibi genel amaçlı değil, web sahnesi üretmeye odaklı.",
-  "en": "Browser-based 3D design that embeds into web pages — not general-purpose like Blender, but focused on web scenes.",
+  "tr": "Tarayıcıda 3B sahne tasarlayıp doğrudan web sayfasına gömüyorsun. Blender gibi genel amaçlı değil; çıktısı baştan web için optimize edilmiş.",
+  "en": "Design a 3D scene in the browser and embed it straight into a page. Not general-purpose like Blender — the output is optimised for the web from the start.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6068,13 +6338,13 @@ window.LINKS = [
   "name": "Stable Diffusion WebUI",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "yerel",
-   "görsel"
+   "yerel-model",
+   "difüzyon"
   ],
-  "tr": "Yerel görsel üretimin en yaygın arayüzü; eklenti ekosisteminin genişliği başlıca avantajı.",
-  "en": "The most widely used interface for local image generation; the breadth of its extension ecosystem is the main draw.",
+  "tr": "Yerel görsel üretimin en yaygın arayüzü; eklenti ekosistemi (ControlNet, LoRA yükleyiciler) çok geniş. Depo artık aktif geliştirilmiyor ama kurulu tabanı hâlâ en büyüğü.",
+  "en": "The most widespread interface for local generation, with a huge extension ecosystem (ControlNet, LoRA loaders). The repo is no longer actively developed, but the installed base is still the largest.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6083,26 +6353,27 @@ window.LINKS = [
   "name": "Stable Fast 3D",
   "cat": "yz_arac",
   "tags": [
-   "açık ağırlık",
-   "3b",
+   "açık-ağırlık",
+   "text-to-3d",
    "model"
   ],
-  "tr": "Tek görselden saniyeler içinde 3B varlık üreten açık model; hızı kaliteye tercih eden akışlar için.",
-  "en": "Open model producing a 3D asset from one image in seconds — for pipelines that trade quality for speed.",
+  "tr": "Tek görselden yarım saniyede UV açılmış ve dokulu mesh çıkarıyor. Kalite üst düzey değil ama toplu varlık üretiminde hız farkı belirleyici.",
+  "en": "Produces a UV-unwrapped, textured mesh from one image in about half a second. Quality is not top-tier, but at batch scale the speed difference decides.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
  {
   "url": "https://stitch.withgoogle.com/",
-  "name": "Stitch (Google)",
+  "name": "Stitch",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "ücretsiz",
    "ui",
    "tasarım"
   ],
-  "tr": "Metin veya çizimden arayüz tasarımı üreten Google aracı; çıktıyı doğrudan tasarım dosyası olarak vermesi ayırt edici.",
-  "en": "Google’s text- or sketch-to-UI design tool, distinguished by handing back editable design files.",
+  "tr": "Metin ya da kaba çizimden arayüz tasarımı üretip düzenlenebilir tasarım dosyası veriyor. Kod üreten araçların aksine çıktısı tasarımcının devralabileceği biçimde.",
+  "en": "Turns text or a rough sketch into UI and hands back an editable design file — unlike the code generators, output a designer can take over.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6111,12 +6382,13 @@ window.LINKS = [
   "name": "Tabby",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "self-hosted",
    "kod",
-   "kendi sunucunda"
+   "rust"
   ],
-  "tr": "Kendi sunucunda çalışan kod tamamlama; Copilot’tan farkı kodun hiçbir zaman dışarı çıkmaması.",
-  "en": "Self-hosted code completion; unlike Copilot your code never leaves your infrastructure.",
+  "tr": "Kendi sunucunda çalışan tamamlama motoru; Rust ile yazılmış, tek GPU’da barınıyor. Kodun kurum dışına çıkmaması gereken durumlarda Copilot’un yerine geçen seçenek.",
+  "en": "A self-hosted completion engine written in Rust that fits on one GPU. The Copilot substitute when code must not leave the building.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6125,11 +6397,12 @@ window.LINKS = [
   "name": "Tripo AI",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
-   "3b"
+   "text-to-3d"
   ],
-  "tr": "Tek görselden 3B model üretimi; hız ve topoloji temizliği iddiasıyla Meshy’ye doğrudan rakip.",
-  "en": "Single-image to 3D generation, competing directly with Meshy on speed and cleaner topology.",
+  "tr": "Meshy’nin doğrudan rakibi; üretim süresi daha kısa ve çıkan topoloji genelde daha temiz, yani sonradan elle düzeltme yükü az.",
+  "en": "A direct rival to Meshy with shorter generation times and generally cleaner topology, which means less manual cleanup afterwards.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6138,12 +6411,13 @@ window.LINKS = [
   "name": "v0",
   "cat": "yz_arac",
   "tags": [
+   "saas",
    "freemium",
    "ui",
-   "üretim"
+   "react"
   ],
-  "tr": "Metinden React arayüzü üreten Vercel aracı; tam uygulama yerine bileşen düzeyinde çıktı vermesiyle ayrışıyor.",
-  "en": "Vercel’s text-to-React UI generator, distinguished by producing component-level output rather than whole apps.",
+  "tr": "Metinden React bileşeni üretiyor; çıktı shadcn/ui ve Tailwind kullanıyor, yani mevcut bir projeye kopyalanabilir kod çıkıyor. Tam uygulama değil, parça üretiyor.",
+  "en": "Generates React components from text, using shadcn/ui and Tailwind so the output is copy-ready into an existing project. It produces pieces, not whole applications.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6152,12 +6426,13 @@ window.LINKS = [
   "name": "Voicebox",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "ses"
+   "ses",
+   "tts"
   ],
-  "tr": "Açık kaynak ses stüdyosu: klonlama, dikte ve üretim bir arada; bulut servislerine kendi makinende alternatif.",
-  "en": "Open-source voice studio combining cloning, dictation and generation — a local alternative to cloud services.",
+  "tr": "Ses klonlama, dikte ve üretimi tek açık kaynak stüdyoda topluyor. Ses örneğinin bulut servisine yüklenmemesi, klonlamada gerçek bir gizlilik farkı.",
+  "en": "Bundles voice cloning, dictation and generation into one open-source studio. Keeping the voice sample off a cloud service is a real privacy difference for cloning.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6166,12 +6441,13 @@ window.LINKS = [
   "name": "Weka",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "java",
    "veri",
    "akademik"
   ],
-  "tr": "Klasik makine öğrenmesi algoritmalarının akademik araç kutusu; modern kütüphanelerden eski ama algoritma karşılaştırmak için hâlâ düzenli.",
-  "en": "Academic toolbox of classical ML algorithms — dated next to modern libraries but still tidy for comparing algorithms.",
+  "tr": "Klasik makine öğrenmesi algoritmalarının Java araç kutusu; alanın en eski açık projelerinden. Modern kütüphanelerin gerisinde ama algoritmaları yan yana kıyaslamak için hâlâ düzenli.",
+  "en": "A Java toolbox of classical ML algorithms and one of the field’s oldest open projects. Behind modern libraries, yet still tidy for comparing algorithms side by side.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6180,13 +6456,13 @@ window.LINKS = [
   "name": "Whisper",
   "cat": "yz_arac",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "ses",
-   "yerel"
+   "stt",
+   "yerel-model"
   ],
-  "tr": "OpenAI’ın açık konuşma tanıma modeli; bulut servislerinden farkı, ses kaydının makineden hiç çıkmaması.",
-  "en": "OpenAI’s open speech-recognition model; unlike cloud services the recording never leaves your machine.",
+  "tr": "Konuşma tanımanın açık standardı; 90+ dili destekliyor, Türkçede de kullanılabilir doğrulukta. Yerelde çalıştığı için kayıt makineden hiç çıkmıyor.",
+  "en": "The open standard for speech recognition, covering 90+ languages at usable accuracy in Turkish too. It runs locally, so the recording never leaves the machine.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6195,12 +6471,13 @@ window.LINKS = [
   "name": "Windsurf",
   "cat": "yz_arac",
   "tags": [
+   "masaüstü",
    "freemium",
    "kod",
-   "editör"
+   "agent"
   ],
-  "tr": "Agent öncelikli YZ editörü; Cursor’a en yakın alternatif, farkı uzun otonom görevleri kendi başına yürütmeye daha çok yaslanması.",
-  "en": "Agent-first AI editor and the closest alternative to Cursor, leaning harder on running long autonomous tasks by itself.",
+  "tr": "Cursor’ın en yakın rakibi; Cascade kipi uzun görevleri kendi başına yürütüp gerektiğinde terminal komutu çalıştırıyor. Otonomi daha yüksek, denetim daha az.",
+  "en": "Cursor’s closest rival; its Cascade mode carries long tasks alone and runs terminal commands when needed. More autonomy, less oversight.",
   "cat_tr": "YZ · Uygulama Araçları",
   "cat_en": "AI · Applied Tools"
  },
@@ -6213,8 +6490,8 @@ window.LINKS = [
    "gömülü",
    "sdk"
   ],
-  "tr": "Uç cihazlarda yapay zeka geliştirme kiti; endüstriyel donanım üzerinde model çalıştırmayı hedefliyor.",
-  "en": "An AI development kit for edge devices, aimed at running models on industrial hardware.",
+  "tr": "Endüstriyel uç donanımda model çalıştırmak için geliştirme kiti. Fabrika ortamı gibi sertifikalı donanım gerektiren yerlerde Raspberry Pi sınıfı kartlar yeterli olmuyor.",
+  "en": "A development kit for running models on industrial edge hardware — where certified equipment is required, a Raspberry Pi-class board does not qualify.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6223,12 +6500,12 @@ window.LINKS = [
   "name": "AK3918 Kamera Notları",
   "cat": "donanim",
   "tags": [
-   "ücretsiz",
    "github",
-   "gömülü"
+   "gömülü",
+   "donanım"
   ],
-  "tr": "Belirli bir kamera yongası için donanım bilgisi ve yazılım dökümlerinin toplandığı tartışma; bu modelle uğraşanlar için birincil kaynak.",
-  "en": "A thread collecting hardware notes and firmware dumps for one camera chipset — the primary source if you own that model.",
+  "tr": "Belirli bir kamera yongası için donanım bilgisi ve yazılım dökümlerinin biriktiği tartışma. Bu tür modeller için tek kaynak genelde böyle bir konu başlığı oluyor.",
+  "en": "A thread accumulating hardware notes and firmware dumps for one camera SoC. For models like this, a single issue thread is usually the only source there is.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6239,10 +6516,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "donanım",
-   "referans"
+   "soc"
   ],
-  "tr": "V821 yongasının teknik özet sayfası; kamera ve yapay zeka uygulamaları için yonga seçerken karşılaştırma noktası.",
-  "en": "A technical summary of the V821 SoC — a comparison point when picking a chip for camera and AI applications.",
+  "tr": "V821 yonga setinin teknik özeti; görüntü işleme hattı ve NPU yetenekleri dahil. Kamera veya uç yapay zeka projesinde yonga seçerken karşılaştırma noktası.",
+  "en": "A technical summary of the V821 SoC including its image pipeline and NPU capability — a comparison point when choosing silicon for a camera or edge AI project.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6251,12 +6528,12 @@ window.LINKS = [
   "name": "Anyka Kamera Firmware",
   "cat": "donanim",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "gömülü"
+   "firmware"
   ],
-  "tr": "Anyka yongalı kameralar için özel ürün yazılımı ve uygulamalar; OpenIPC’nin kapsamadığı bir yonga ailesini hedefliyor.",
-  "en": "Custom firmware and apps for Anyka-based cameras, targeting a chipset family OpenIPC does not cover.",
+  "tr": "Anyka yongalı kameralar için özel ürün yazılımı; OpenIPC’nin kapsamadığı bir aileyi hedefliyor. Ucuz Çin kameralarının çoğu bu yonga ailesini kullanıyor.",
+  "en": "Custom firmware for Anyka-based cameras, covering a family OpenIPC does not. Most cheap Chinese cameras use this chipset.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6265,12 +6542,13 @@ window.LINKS = [
   "name": "AvaotaF1",
   "cat": "donanim",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "sbc"
+   "sbc",
+   "risc-v"
   ],
-  "tr": "Madeni para boyutunda RISC-V Linux tek kart bilgisayar; bu ölçekte tam Linux çalıştırabilmesi ayırt edici yanı.",
-  "en": "A coin-sized RISC-V Linux single-board computer — running full Linux at that scale is what sets it apart.",
+  "tr": "Madeni para boyutunda RISC-V Linux kartı: 64 MB RAM, MIPI kamera, SPI ekran ve Wi-Fi. Bu ölçekte mikrodenetleyici değil tam Linux çalıştırabilmesi ayrıksı.",
+  "en": "A coin-sized RISC-V Linux board with 64 MB RAM, MIPI camera, SPI display and Wi-Fi. Running full Linux rather than a microcontroller at that scale is what makes it unusual.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6283,8 +6561,8 @@ window.LINKS = [
    "donanım",
    "inceleme"
   ],
-  "tr": "AvaotaF1 kartının teknik özelliklerini derleyen yazı; resmî depodan önce hızlı bir genel bakış.",
-  "en": "An article summarising the AvaotaF1 board’s specifications — a quick overview before the official repo.",
+  "tr": "Kartın teknik özelliklerini ve olası kullanım alanlarını derleyen yazı; resmî depoya dalmadan önce hızlı bir bakış.",
+  "en": "An article summarising the board’s specifications and likely uses — a quick look before diving into the repo.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6295,10 +6573,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "cad",
-   "yapay zeka"
+   "tarayıcı-içi"
   ],
-  "tr": "Metinden CAD modeli üreten tarayıcı tabanlı araç; çizim bilmeden parça oluşturmayı hedefliyor.",
-  "en": "Browser-based text-to-CAD tool aimed at producing parts without knowing how to draft.",
+  "tr": "Metinden CAD modeli üreten tarayıcı aracı; CAM tarafını da kapsıyor. Çizim bilmeden basit parça çıkarmayı hedefliyor, hassas mühendislik için değil.",
+  "en": "A browser tool generating CAD models from text, reaching into CAM as well. Aimed at simple parts without drafting skill, not at precision engineering.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6307,12 +6585,12 @@ window.LINKS = [
   "name": "Eclipse Ditto",
   "cat": "donanim",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "iot",
-   "çatı"
+   "dijital-ikiz"
   ],
-  "tr": "Nesnelerin interneti için dijital ikiz çatısı; cihazın durumunu, cihaz çevrimdışıyken bile sorgulanabilir kılması ayırt edici.",
-  "en": "A digital twin framework for IoT; keeping device state queryable even while the device is offline is its distinction.",
+  "tr": "Cihazın durumunu sunucuda bir “dijital ikiz” olarak tutuyor; cihaz uykudayken bile son bilinen durumu sorgulanabiliyor ve komut kuyruğa alınabiliyor.",
+  "en": "Keeps device state server-side as a digital twin, so the last known state stays queryable and commands queue up even while the device sleeps.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6325,8 +6603,8 @@ window.LINKS = [
    "cad",
    "model"
   ],
-  "tr": "Paylaşılan bir robotik platform CAD modeli; sıfırdan çizmek yerine mevcut tasarımdan yola çıkmak için.",
-  "en": "A shared robotic platform CAD model — a starting point instead of drawing from scratch.",
+  "tr": "Paylaşılmış paletli robot platformu modeli. Şasi geometrisini sıfırdan çizmek yerine çalışan bir tasarımdan başlamak için.",
+  "en": "A shared tracked robot platform model — a way to start from a working design instead of drawing chassis geometry from scratch.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6335,12 +6613,12 @@ window.LINKS = [
   "name": "Kontrol Sistemleri Dersleri",
   "cat": "donanim",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "kontrol"
   ],
-  "tr": "Kontrol teorisinin tam ders serisi; matematiksel temeli sıfırdan kuran akademik anlatım.",
-  "en": "A full lecture series on control theory, building the mathematical foundation from scratch.",
+  "tr": "Kontrol teorisinin tam ders serisi: transfer fonksiyonları, kararlılık ölçütleri, durum uzayı. Matematiksel temeli akademik sırayla kuruyor.",
+  "en": "A full lecture series on control theory — transfer functions, stability criteria, state space — building the mathematics in academic order.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6349,12 +6627,12 @@ window.LINKS = [
   "name": "Kontrol Sistemleri Uygulamada",
   "cat": "donanim",
   "tags": [
-   "ücretsiz",
    "video",
+   "ücretsiz",
    "kontrol"
   ],
-  "tr": "Kontrol teorisinin pratik karşılığını anlatan seri; ders serisinden farkı, denklemden çok mühendislik sezgisi vermesi.",
-  "en": "A series on what control theory looks like in practice; unlike the lecture course it builds intuition over equations.",
+  "tr": "Aynı teorinin mühendislik sezgisi tarafı: PID’i gerçekte nasıl ayarlarsın, gürültü ve doygunluk ne yapar. Ders serisiyle birlikte okunması gereken taraf.",
+  "en": "The engineering-intuition side of the same theory: how you actually tune a PID, what noise and saturation do to it. The half that belongs alongside the lecture course.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6363,12 +6641,13 @@ window.LINKS = [
   "name": "LiteEMF",
   "cat": "donanim",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "gömülü"
+   "gömülü",
+   "usb"
   ],
-  "tr": "Gömülü sistemler için kütüphane ve ürün yazılımı depoları; USB ve kablosuz giriş cihazı projeleri ağırlıkta.",
-  "en": "Repositories of embedded libraries and firmware, weighted towards USB and wireless input device projects.",
+  "tr": "Gömülü sistem kütüphaneleri ve ürün yazılımı depoları; USB HID ve kablosuz giriş cihazı projeleri ağırlıkta. Kumanda ve klavye protokolleri için referans.",
+  "en": "Embedded libraries and firmware repositories weighted towards USB HID and wireless input devices — a reference for controller and keyboard protocols.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6379,10 +6658,10 @@ window.LINKS = [
   "tags": [
    "ücretli",
    "parça",
-   "referans"
+   "cad"
   ],
-  "tr": "Endüstriyel parça kataloğu; her ürünün CAD modelini indirmeye izin vermesi onu tasarım aşamasında referans kaynağa çeviriyor.",
-  "en": "Industrial parts catalogue; letting you download a CAD model for nearly every item turns it into a design-time reference.",
+  "tr": "Endüstriyel parça kataloğu; neredeyse her ürünün CAD modelini indirebiliyorsun. Tasarımda gerçek bir cıvatanın ölçüsü lazım olduğunda referans kaynağa dönüşüyor.",
+  "en": "An industrial parts catalogue where nearly every item has a downloadable CAD model, which turns it into a reference whenever a design needs a real bolt’s dimensions.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6391,12 +6670,13 @@ window.LINKS = [
   "name": "Onshape",
   "cat": "donanim",
   "tags": [
+   "saas",
    "freemium",
    "cad",
-   "tarayıcıda"
+   "tarayıcı-içi"
   ],
-  "tr": "Tarayıcıda çalışan parametrik CAD; SolidWorks gibi masaüstü paketlerden farkı, sürüm geçmişini Git gibi tutması ve kurulum istememesi.",
-  "en": "Parametric CAD in the browser; unlike desktop suites it keeps version history like Git and needs no installation.",
+  "tr": "Parametrik CAD, tamamen tarayıcıda. Dosya değil veritabanı üzerinde çalışıyor, bu yüzden dallanma ve birleştirme Git gibi işliyor — SolidWorks’te olmayan bir şey.",
+  "en": "Parametric CAD entirely in the browser, working on a database rather than files, so branching and merging behave like Git — something SolidWorks does not offer.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6405,12 +6685,12 @@ window.LINKS = [
   "name": "OpenIPC",
   "cat": "donanim",
   "tags": [
-   "açık kaynak",
-   "gömülü",
+   "açık-kaynak",
+   "firmware",
    "kamera"
   ],
-  "tr": "IP kameralar için açık kaynak alternatif ürün yazılımı; üretici yazılımının bulut bağımlılığını ortadan kaldırıyor.",
-  "en": "Open-source alternative firmware for IP cameras, removing the vendor firmware’s cloud dependency.",
+  "tr": "IP kameralar için açık ürün yazılımı; üretici bulutunu devreden çıkarıp RTSP akışını doğrudan kendi ağına veriyor. Kamerayı internete açmadan kullanmanın yolu.",
+  "en": "Open firmware for IP cameras that removes the vendor cloud and exposes the RTSP stream directly on your own network — the way to run a camera without putting it on the internet.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6419,12 +6699,12 @@ window.LINKS = [
   "name": "OpenIPC Coupler",
   "cat": "donanim",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "gömülü"
+   "firmware"
   ],
-  "tr": "Kamera ürün yazılımları arasında sorunsuz geçiş sağlayan araç; deneme sırasında cihazı kurtarma imkânı verir.",
-  "en": "Tool for switching cleanly between camera firmwares, giving you a recovery path while experimenting.",
+  "tr": "Kamera ürün yazılımları arasında geçiş yapmayı ve orijinaline dönmeyi sağlıyor. Deneme yaparken elindeki tek kurtarma aracı bu olabiliyor.",
+  "en": "Moves between camera firmwares and back to stock — often the only recovery tool you have while experimenting.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6433,12 +6713,12 @@ window.LINKS = [
   "name": "OpenIPC Firmware",
   "cat": "donanim",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "gömülü"
+   "firmware"
   ],
-  "tr": "OpenIPC ürün yazılımının kaynak deposu; desteklenen yonga listesi ve derleme talimatları burada.",
-  "en": "The OpenIPC firmware source repository, holding the supported chip list and build instructions.",
+  "tr": "Desteklenen yonga listesi ve derleme talimatları. Kameranı almadan önce yongasının listede olup olmadığına bakmak gerekiyor.",
+  "en": "The supported chipset list and build instructions — check whether your camera’s SoC is on it before you buy.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6447,12 +6727,12 @@ window.LINKS = [
   "name": "OpenIPC Kurulum",
   "cat": "donanim",
   "tags": [
-   "ücretsiz",
    "github",
-   "rehber"
+   "rehber",
+   "firmware"
   ],
-  "tr": "Kameraya alternatif yazılım yükleme adımları; geri dönüş yolunu da anlatması cihazı tuğlalamamak için önemli.",
-  "en": "Steps for flashing alternative firmware onto a camera; it also documents the way back, which matters for not bricking the device.",
+  "tr": "Alternatif yazılım yükleme adımları ve — daha önemlisi — geri dönüş yolu. Seri konsol bağlantısı olmadan denemek cihazı tuğlalama riskini ciddi artırıyor.",
+  "en": "The flashing steps and, more importantly, the way back. Attempting this without a serial console raises the bricking risk considerably.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6461,12 +6741,13 @@ window.LINKS = [
   "name": "ORCAS",
   "cat": "donanim",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "robotik"
+   "robotik",
+   "gömülü"
   ],
-  "tr": "Uzaktan kumandalı airsoft taret sistemi; gömülü kontrol ve mekanik tasarımın bir arada göründüğü çalışan bir proje.",
-  "en": "A remote-controlled airsoft turret system — a working project where embedded control and mechanical design meet.",
+  "tr": "Uzaktan kumandalı airsoft taret sistemi; gömülü denetim, video akışı ve mekanik tasarım aynı projede birleşiyor. Bitmiş ürünlerin gizlediği entegrasyon sorunlarını görüyorsun.",
+  "en": "A remote-controlled airsoft turret where embedded control, video streaming and mechanical design meet in one project — showing the integration problems finished products hide.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6479,8 +6760,8 @@ window.LINKS = [
    "türkçe",
    "kamera"
   ],
-  "tr": "Video gözetim yazılımı; Türkçe arayüzüyle yerel kurulumlarda tercih edilebilir bir seçenek.",
-  "en": "Video surveillance software with a Turkish interface, a viable option for local deployments.",
+  "tr": "Türkçe arayüzlü video gözetim yazılımı; kamera yönetimi ve kayıt tarafını kapsıyor. Yerel kurulumlarda dil ve destek açısından pratik bir seçenek.",
+  "en": "Video surveillance software with a Turkish interface covering camera management and recording — a practical option locally for language and support reasons.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6489,12 +6770,12 @@ window.LINKS = [
   "name": "Taret Süspansiyon Günlüğü",
   "cat": "donanim",
   "tags": [
-   "ücretsiz",
    "video",
-   "robotik"
+   "robotik",
+   "diy"
   ],
-  "tr": "Ev yapımı taret projesinin geliştirme günlüğü; cilalı öğretici değil, deneme yanılma süreci.",
-  "en": "A build diary for a homemade turret project — trial and error rather than a polished tutorial.",
+  "tr": "Ev yapımı taret projesinin geliştirme günlüğü; başarısız denemeler kesilmemiş. Cilalı öğreticilerin aksine gerçek tasarım süreci böyle görünüyor.",
+  "en": "A build diary for a homemade turret with the failed attempts left in — what a real design process looks like, unlike a polished tutorial.",
   "cat_tr": "Donanım, CAD & Gömülü",
   "cat_en": "Hardware, CAD & Embedded"
  },
@@ -6506,8 +6787,8 @@ window.LINKS = [
    "ücretsiz",
    "referans"
   ],
-  "tr": "Horizon OS, Android XR ve diğer platformların karşılaştırması; hangi ekosisteme yatırım yapılacağına karar vermek için.",
-  "en": "A comparison of Horizon OS, Android XR and other platforms — for deciding which ecosystem to invest in.",
+  "tr": "Horizon OS, Android XR ve diğer platformların karşılaştırması. Hangi ekosisteme yatırım yapılacağı kararı donanım seçiminden önce geliyor.",
+  "en": "A comparison of Horizon OS, Android XR and the rest. Which ecosystem to invest in is a decision that precedes hardware selection.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6520,8 +6801,8 @@ window.LINKS = [
    "rehber",
    "diy"
   ],
-  "tr": "Adım adım akıllı gözlük yapım rehberi; hazır kit yerine parçadan başlayan bir hobi projesi.",
-  "en": "A step-by-step build guide — a hobby project starting from components rather than a kit.",
+  "tr": "Parçadan başlayan adım adım yapım rehberi; hazır kit kullanmıyor. Optik birleştirici ve güç yönetimi kısımları en zor bölümler.",
+  "en": "A step-by-step build starting from components rather than a kit. The optical combiner and power management sections are the hard parts.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6531,11 +6812,11 @@ window.LINKS = [
   "cat": "gozluk",
   "tags": [
    "ücretsiz",
-   "referans",
-   "donanım"
+   "donanım",
+   "referans"
   ],
-  "tr": "Gözlüklerde kullanılan işlemci ve NPU seçeneklerinin karşılaştırması; donanım tasarımına başlarken yonga seçimi için.",
-  "en": "A comparison of processors and NPUs used in glasses — for the chip selection step of a hardware design.",
+  "tr": "Gözlüklerde kullanılan işlemci ve NPU seçeneklerinin karşılaştırması; güç bütçesi ve ısı kısıtlarını da tartışıyor. Gözlükte asıl sınır işlem gücü değil ısı.",
+  "en": "A comparison of processors and NPUs used in glasses, weighing power budget and thermal limits — in a frame the real constraint is heat, not compute.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6544,11 +6825,11 @@ window.LINKS = [
   "name": "Alternatif HeyCyan Uygulaması",
   "cat": "gozluk",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github"
   ],
-  "tr": "Üreticinin uygulamasına açık kaynak alternatif; kapalı uygulamanın sınırladığı özellikleri açmayı hedefliyor.",
-  "en": "An open-source alternative to the vendor app, aimed at unlocking features the closed app restricts.",
+  "tr": "Üreticinin uygulamasına açık kaynak alternatif; kapalı uygulamanın kilitlediği özellikleri açmayı ve bulut bağımlılığını kaldırmayı hedefliyor.",
+  "en": "An open-source alternative to the vendor app, aimed at unlocking restricted features and removing the cloud dependency.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6557,12 +6838,11 @@ window.LINKS = [
   "name": "Awesome Even Realities G2",
   "cat": "gozluk",
   "tags": [
-   "ücretsiz",
    "github",
-   "koleksiyon"
+   "awesome-liste"
   ],
-  "tr": "G2 için topluluk kaynaklarının derlemesi; resmî dokümanın kapsamadığı araç ve ipuçlarını toplar.",
-  "en": "A community resource collection for the G2, gathering tools and tips the official docs leave out.",
+  "tr": "G2 için topluluk kaynakları derlemesi; resmî dokümanın kapsamadığı araçlar ve çözülmüş sorunlar burada birikiyor.",
+  "en": "A community resource collection for the G2, accumulating the tools and solved problems the official documentation does not cover.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6571,11 +6851,11 @@ window.LINKS = [
   "name": "Açık Kaynak Gözlük Yaptık",
   "cat": "gozluk",
   "tags": [
-   "ücretsiz",
-   "video"
+   "video",
+   "diy"
   ],
-  "tr": "Açık kaynak akıllı gözlük üretim sürecini anlatan video; nelerin zor olduğunu gerçekçi biçimde gösteriyor.",
-  "en": "A video on building open-source smart glasses, realistic about which parts are hard.",
+  "tr": "Açık kaynak gözlük üretim sürecini anlatan video; nelerin gerçekten zor olduğunu süslemeden gösteriyor. Projeye girişmeden önce izlenmeli.",
+  "en": "A video on building open-source glasses that is honest about which parts are genuinely hard. Worth watching before committing to the project.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6584,12 +6864,12 @@ window.LINKS = [
   "name": "Açık Kaynak Gözlük Yapımı",
   "cat": "gozluk",
   "tags": [
-   "ücretsiz",
    "github",
-   "rehber"
+   "rehber",
+   "diy"
   ],
-  "tr": "Gözlüğü sıfırdan üretmenin adım adım rehberi; parça listesi ve montaj sırasını içermesiyle projeyi tekrarlanabilir kılıyor.",
-  "en": "A step-by-step build guide with bill of materials and assembly order, which makes the project reproducible.",
+  "tr": "Malzeme listesi ve montaj sırasıyla adım adım yapım rehberi. Projeyi tekrar edilebilir kılan şey tam olarak bu ayrıntı düzeyi.",
+  "en": "A step-by-step build guide with a bill of materials and assembly order — exactly the level of detail that makes a project reproducible.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6599,11 +6879,11 @@ window.LINKS = [
   "cat": "gozluk",
   "tags": [
    "ücretli",
-   "açık kaynak",
+   "açık-kaynak",
    "ürün"
   ],
-  "tr": "Açık kaynak akıllı gözlük üreticisi; donanım şemalarını ve yazılımını yayımlaması sektörde ender.",
-  "en": "An open-source smart glasses maker — publishing both hardware schematics and software is rare in this sector.",
+  "tr": "Donanım şemasını ve yazılımını yayımlayan gözlük üreticisi. Bu sektörde hem ürün satıp hem tasarımı açan neredeyse tek şirket.",
+  "en": "A glasses maker that publishes both hardware schematics and software — close to the only company in the sector selling a product while opening the design.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6613,10 +6893,11 @@ window.LINKS = [
   "cat": "gozluk",
   "tags": [
    "ücretli",
-   "ürün"
+   "ürün",
+   "geliştirici"
   ],
-  "tr": "Brilliant Labs’ın yapay zeka gözlüğü; geliştiricinin kendi uygulamasını yükleyebilmesi üzerine kurulu.",
-  "en": "Brilliant Labs’ AI glasses, built around letting developers load their own applications.",
+  "tr": "Geliştiricinin kendi uygulamasını yükleyebildiği yapay zeka gözlüğü; kapalı ekosistemlerin aksine cihaz üzerinde çalıştırma yetkisi sende.",
+  "en": "AI glasses where a developer can load their own applications — unlike closed ecosystems, the right to run code on the device is yours.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6625,12 +6906,13 @@ window.LINKS = [
   "name": "Even G2 Protokolü",
   "cat": "gozluk",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "tersine mühendislik"
+   "tersine-mühendislik",
+   "ble"
   ],
-  "tr": "G2’nin iletişim protokolünü tersine mühendislikle çözen çalışma; resmî SDK’nın izin vermediği kullanımlar için gerekli.",
-  "en": "Reverse-engineering of the G2’s communication protocol — needed for uses the official SDK does not permit.",
+  "tr": "Cihazın BLE protokolünü tersine mühendislikle çözen çalışma. Resmî SDK’nın izin vermediği kullanımlar ancak buradan mümkün oluyor.",
+  "en": "Reverse-engineering of the device’s BLE protocol — the only route to uses the official SDK does not permit.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6640,10 +6922,11 @@ window.LINKS = [
   "cat": "gozluk",
   "tags": [
    "ücretsiz",
-   "geliştirici"
+   "geliştirici",
+   "sdk"
   ],
-  "tr": "Even Realities cihazları için geliştirici merkezi; resmî uygulama geliştirme kaynaklarının giriş noktası.",
-  "en": "Developer hub for Even Realities devices — the entry point for official app development resources.",
+  "tr": "Üreticinin geliştirici merkezi; uygulama geliştirme kaynakları ve API belgeleri burada.",
+  "en": "The vendor’s developer hub, holding app development resources and API documentation.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6652,11 +6935,12 @@ window.LINKS = [
   "name": "Even Realities (GitHub)",
   "cat": "gozluk",
   "tags": [
-   "açık kaynak",
-   "github"
+   "açık-kaynak",
+   "github",
+   "sdk"
   ],
-  "tr": "Üreticinin resmî açık kaynak depoları; SDK ve örnek uygulamalar için birincil kaynak.",
-  "en": "The manufacturer’s official open-source repositories — the primary source for the SDK and sample apps.",
+  "tr": "Üreticinin resmî depoları; SDK ve örnek uygulamalar için birincil kaynak. Donanım üreticisinin kod yayımlaması bu sektörde hâlâ istisna.",
+  "en": "The vendor’s official repositories and the primary source for the SDK and sample apps. A hardware maker publishing code is still the exception in this sector.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6666,10 +6950,11 @@ window.LINKS = [
   "cat": "gozluk",
   "tags": [
    "ücretli",
-   "ürün"
+   "ürün",
+   "ekran"
   ],
-  "tr": "Ekranlı günlük kullanım akıllı gözlüğü; kamera koymayıp yalnızca bilgi göstermeye odaklanmasıyla rakiplerinden ayrılıyor.",
-  "en": "Everyday smart glasses with a display, differing from rivals by omitting a camera and focusing purely on showing information.",
+  "tr": "Kamera koymayıp yalnızca ekran sunan günlük kullanım gözlüğü. Kamerasızlık teknik bir eksik değil bilinçli bir karar — sosyal kabul sorununu doğrudan çözüyor.",
+  "en": "Everyday glasses with a display and deliberately no camera. The omission is a decision rather than a shortfall — it addresses the social acceptance problem head on.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6681,8 +6966,8 @@ window.LINKS = [
    "ücretli",
    "ürün"
   ],
-  "tr": "G2 çerçeve ve numaralı cam seçenekleri; gözlük gerçekten günlük takılacaksa belirleyici olan kısım.",
-  "en": "G2 frame and prescription lens options — the part that decides whether the glasses are actually wearable daily.",
+  "tr": "Çerçeve ve numaralı cam seçenekleri. Gözlük gerçekten günlük takılacaksa teknolojiden çok bu kısım belirleyici oluyor.",
+  "en": "Frame and prescription lens options — the part that decides whether the glasses actually get worn daily, more than the technology does.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6691,12 +6976,12 @@ window.LINKS = [
   "name": "GitHub · ray-ban-meta",
   "cat": "gozluk",
   "tags": [
-   "ücretsiz",
    "github",
-   "dizin"
+   "dizin",
+   "tersine-mühendislik"
   ],
-  "tr": "Ray-Ban Meta gözlükleri üzerine topluluk projeleri; resmî SDK olmayan bir cihaz için gayriresmî çalışmaların toplandığı yer.",
-  "en": "Community projects around Ray-Ban Meta glasses — where unofficial work gathers for a device with no official SDK.",
+  "tr": "Ray-Ban Meta gözlükleri üzerine topluluk projeleri. Resmî SDK olmadığı için buradaki çalışmalar ağırlıkla protokol çözümlemesi ve gayriresmî köprüler.",
+  "en": "Community projects around Ray-Ban Meta glasses. With no official SDK, the work here is mostly protocol analysis and unofficial bridges.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6705,12 +6990,11 @@ window.LINKS = [
   "name": "GitHub · smart-glasses",
   "cat": "gozluk",
   "tags": [
-   "ücretsiz",
    "github",
    "dizin"
   ],
-  "tr": "Akıllı gözlük etiketli açık kaynak projelerin canlı listesi; derlenmiş listelerden farkı, kendiliğinden güncel kalması.",
-  "en": "A live list of open-source projects tagged smart-glasses; unlike curated lists it stays current by itself.",
+  "tr": "Etiketli açık kaynak projelerin canlı listesi; derlenmiş listelerin aksine kendiliğinden güncel kalıyor. Yeni çıkanları yakalamak için.",
+  "en": "A live list of tagged open-source projects that stays current by itself, unlike curated lists — the way to catch new arrivals.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6720,10 +7004,11 @@ window.LINKS = [
   "cat": "gozluk",
   "tags": [
    "ücretsiz",
-   "makale"
+   "makale",
+   "gpu"
   ],
-  "tr": "Üst seviye giyilebilirlerde yonga seçimini tartışan yazı; grafik ve güç dengesine odaklanması ayırt edici.",
-  "en": "An article on chipset selection for high-end wearables, distinguished by focusing on the graphics/power trade-off.",
+  "tr": "Üst seviye giyilebilirlerde grafik ve güç dengesini tartışan yazı. Ekranlı gözlükte GPU seçimi doğrudan pil ömrünü belirliyor.",
+  "en": "An article on the graphics-versus-power trade-off in high-end wearables. In display glasses, the GPU choice sets battery life directly.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6732,12 +7017,13 @@ window.LINKS = [
   "name": "HeyCyan SDK",
   "cat": "gozluk",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "sdk"
+   "sdk",
+   "ble"
   ],
-  "tr": "HeyCyan gözlükleri için platformlar arası SDK; fotoğraf, video ve ses kaydını uygulamadan denetlemeyi sağlıyor.",
-  "en": "Cross-platform SDK for HeyCyan glasses, giving app-level control over photo, video and audio capture.",
+  "tr": "HeyCyan gözlükleri için platformlar arası SDK; fotoğraf, video ve ses kaydını uygulama tarafından denetlemeyi sağlıyor.",
+  "en": "A cross-platform SDK for HeyCyan glasses giving application-level control over photo, video and audio capture.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6746,11 +7032,12 @@ window.LINKS = [
   "name": "HeyCyan Web Köprüsü",
   "cat": "gozluk",
   "tags": [
-   "açık kaynak",
-   "github"
+   "açık-kaynak",
+   "github",
+   "web-bluetooth"
   ],
-  "tr": "Gözlüğü web uygulamasına bağlayan köprü; yerel uygulama yazmadan tarayıcıdan denetim sağlıyor.",
-  "en": "A bridge connecting the glasses to a web app, allowing browser control without writing a native app.",
+  "tr": "Gözlüğü Web Bluetooth üzerinden tarayıcıya bağlıyor; yerel uygulama yazmadan cihazla konuşabiliyorsun. Prototip için hızlı bir yol.",
+  "en": "Connects the glasses to a browser over Web Bluetooth, so you can talk to the device without writing a native app — a fast route for prototyping.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6759,12 +7046,12 @@ window.LINKS = [
   "name": "HeyCyan Wi-Fi Aktarım Mimarisi",
   "cat": "gozluk",
   "tags": [
-   "ücretsiz",
    "github",
-   "teknik"
+   "teknik",
+   "mimari"
   ],
-  "tr": "Gözlükten telefona medya aktarımının nasıl çalıştığını anlatan teknik not; benzer cihaz geliştirenler için model.",
-  "en": "A technical note on how media transfer from glasses to phone works — a model for anyone building a similar device.",
+  "tr": "Gözlükten telefona medya aktarımının nasıl kurgulandığını anlatan teknik not: BLE ile denetim, Wi-Fi ile veri. Benzer cihaz tasarlayanlar için doğrudan uygulanabilir bir desen.",
+  "en": "A technical note on how media transfer from glasses to phone is structured — control over BLE, bulk data over Wi-Fi. A pattern directly applicable to similar devices.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6773,12 +7060,13 @@ window.LINKS = [
   "name": "Mentra Bluetooth SDK",
   "cat": "gozluk",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "sdk"
+   "ble",
+   "android"
   ],
-  "tr": "Android’den gözlüğe BLE ile bağlanmak için başlangıç kiti; protokolü sıfırdan çözmek yerine çalışan örnekle başlatıyor.",
-  "en": "A starter kit for connecting to glasses over BLE from Android, starting you from working code instead of reverse-engineering the protocol.",
+  "tr": "Android’den gözlüğe BLE ile bağlanmak için başlangıç kiti. GATT servisleri ve karakteristikleri tanımlı geldiği için protokolü kendin çözmüyorsun.",
+  "en": "A starter kit for connecting to glasses over BLE from Android. GATT services and characteristics arrive defined, so you do not reverse-engineer the protocol yourself.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6787,12 +7075,12 @@ window.LINKS = [
   "name": "MentraOS",
   "cat": "gozluk",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "işletim sistemi"
+   "işletim-sistemi"
   ],
-  "tr": "Akıllı gözlükler için açık kaynak işletim sistemi; farklı üreticilerin donanımını tek uygulama katmanında toplaması ayırt edici yanı.",
-  "en": "Open-source operating system for smart glasses, distinguished by unifying different vendors’ hardware under one app layer.",
+  "tr": "Akıllı gözlükler için açık işletim sistemi; farklı üreticilerin donanımını tek uygulama katmanında topluyor. Her gözlük için ayrı uygulama yazma sorununu hedefliyor.",
+  "en": "An open operating system for smart glasses unifying different vendors’ hardware under one app layer — aimed at the problem of writing a separate app per device.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6802,10 +7090,11 @@ window.LINKS = [
   "cat": "gozluk",
   "tags": [
    "ücretli",
-   "ürün"
+   "ürün",
+   "ekran"
   ],
-  "tr": "Ekranlı ve sinir bandı kontrollü Meta gözlüğü; kapalı bir ekosistem ama pazarın yönünü göstermesi bakımından referans.",
-  "en": "Meta’s display-equipped glasses with a neural wristband — a closed ecosystem, but a reference point for where the market is heading.",
+  "tr": "Ekranlı ve sinir bandıyla (EMG bileklik) kontrol edilen Meta gözlüğü. Kapalı bir ekosistem ama giriş yönteminin nereye evrildiğini göstermesi bakımından referans.",
+  "en": "Meta’s display glasses controlled by an EMG wristband. A closed ecosystem, but a reference point for where the input method is heading.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6814,12 +7103,13 @@ window.LINKS = [
   "name": "Omi",
   "cat": "gozluk",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "giyilebilir"
+   "giyilebilir",
+   "ses"
   ],
-  "tr": "Ekranı dinleyip konuşmaları takip eden giyilebilir yapay zeka cihazı; gözlükten farklı olarak görüntü değil bağlam yakalamaya odaklı.",
-  "en": "A wearable AI device that listens and tracks conversations — focused on capturing context rather than vision.",
+  "tr": "Konuşmaları dinleyip özetleyen giyilebilir cihaz; gözlükten farklı olarak görüntü değil bağlam yakalıyor. Sürekli dinleme fikrinin etik tarafı ayrı bir tartışma.",
+  "en": "A wearable that listens to conversations and summarises them, capturing context rather than vision. The ethics of always-on listening are a separate argument.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6828,12 +7118,13 @@ window.LINKS = [
   "name": "Open Source Smart Glasses",
   "cat": "gozluk",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "donanım"
+   "donanım",
+   "diy"
   ],
-  "tr": "Tüm gün takılabilir açık kaynak akıllı gözlük tasarımı; kapalı ürünlere karşı şeması ve yazılımı açık bir alternatif.",
-  "en": "An all-day wearable open-source smart glasses design — an alternative with open schematics and software.",
+  "tr": "Tüm gün takılabilir açık kaynak gözlük tasarımı; şema, PCB ve yazılım açık. Kapalı ürünlerin aksine ne topladığını ve nereye gönderdiğini görebiliyorsun.",
+  "en": "An all-day wearable open-source glasses design with schematics, PCB and software published — so unlike closed products you can see what it collects and where it sends it.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6842,12 +7133,13 @@ window.LINKS = [
   "name": "OpenGlass",
   "cat": "gozluk",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "donanım"
+   "donanım",
+   "diy"
   ],
-  "tr": "Herhangi bir gözlüğü yapay zeka destekli akıllı gözlüğe çeviren proje; sıfırdan üretim yerine mevcut çerçeveyi dönüştürmesi ayırt edici.",
-  "en": "Turns any pair of glasses into AI-powered smart glasses — converting an existing frame rather than manufacturing one.",
+  "tr": "Mevcut bir gözlüğe kamera ve kart takarak akıllı gözlüğe çeviriyor; yaklaşık 25 dolarlık parça listesi var. Sıfırdan üretim yerine dönüştürme yolu.",
+  "en": "Converts an existing pair of glasses by attaching a camera and board, on a parts list of roughly $25. Conversion rather than manufacture.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6860,8 +7152,8 @@ window.LINKS = [
    "pdf",
    "donanım"
   ],
-  "tr": "Gözlük gövdesine dokunmatik kontrol eklemenin uygulama notu; devre şeması düzeyinde somut bir referans.",
-  "en": "An application note on adding touch control to a glasses frame — a concrete reference at circuit-diagram level.",
+  "tr": "Gözlük sapına dokunmatik kontrol eklemenin uygulama notu; devre şeması ve kalibrasyon parametreleri dahil. Bu düzeyde somut belge nadiren açık oluyor.",
+  "en": "An application note on adding touch control to a glasses temple, with circuit diagram and calibration parameters. Documentation this concrete is rarely public.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6872,10 +7164,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "donanım",
-   "referans"
+   "soc"
   ],
-  "tr": "Piyasadaki gözlüklerin çoğunda bulunan Snapdragon platformunun resmî sayfası; referans tasarımlar için birincil kaynak.",
-  "en": "The official page for the Snapdragon platform found in most shipping glasses — the primary source for reference designs.",
+  "tr": "Piyasadaki gözlüklerin çoğunda bulunan Snapdragon AR platformunun resmî sayfası; referans tasarımlar ve güç tüketimi verileri burada.",
+  "en": "The official page for the Snapdragon AR platform found in most shipping glasses, holding the reference designs and power figures.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6885,10 +7177,11 @@ window.LINKS = [
   "cat": "gozluk",
   "tags": [
    "ücretsiz",
-   "donanım"
+   "donanım",
+   "soc"
   ],
-  "tr": "Düşük güçlü gözlük çözümleri sunan yonga üreticisi; Qualcomm’a göre daha basit ve ucuz cihazları hedefliyor.",
-  "en": "A chip vendor offering low-power glasses solutions, targeting simpler and cheaper devices than Qualcomm.",
+  "tr": "Düşük güçlü gözlük çözümleri sunan yonga üreticisi; Qualcomm’a göre daha basit ve ucuz cihazları hedefliyor. Bildirim gösteren gözlük için Snapdragon fazla geliyor.",
+  "en": "A vendor offering low-power glasses silicon aimed at simpler, cheaper devices than Qualcomm. For glasses that only show notifications, a Snapdragon is overkill.",
   "cat_tr": "Akıllı Gözlük & Giyilebilir",
   "cat_en": "Smart Glasses & Wearables"
  },
@@ -6898,10 +7191,11 @@ window.LINKS = [
   "cat": "kuantum",
   "tags": [
    "ücretsiz",
-   "dokümantasyon"
+   "dokümantasyon",
+   "donanım"
   ],
-  "tr": "Gerçek kuantum donanımına erişim veren platformun rehberleri; simülatörle sınırlı kalmayıp fiziksel cihazda çalıştırabilmesi ayırt edici.",
-  "en": "Guides for a platform giving access to real quantum hardware — running on a physical device, not just a simulator, is its distinction.",
+  "tr": "Gerçek kuantum işlemcilerine kuyrukla erişim veriyor; Qiskit ile devre yazıp gönderiyorsun. Simülatörde görünmeyen gürültü ve hata oranlarını ancak burada karşılaşıyorsun.",
+  "en": "Queued access to real quantum processors, with circuits written and submitted through Qiskit. The noise and error rates a simulator hides only show up here.",
   "cat_tr": "Kuantum Bilişim",
   "cat_en": "Quantum Computing"
  },
@@ -6914,8 +7208,8 @@ window.LINKS = [
    "türkçe",
    "kurs"
   ],
-  "tr": "Kuantum hesaplama eğitim kaynaklarının Türkçe derlemesi; alana giriş için sıralı bir başlangıç noktası.",
-  "en": "A Turkish compilation of quantum computing learning resources — an ordered entry point into the field.",
+  "tr": "Kuantum hesaplama eğitim kaynaklarının Türkçe derlemesi; alana sıralı bir giriş noktası.",
+  "en": "A Turkish compilation of quantum computing learning resources — an ordered way into the field.",
   "cat_tr": "Kuantum Bilişim",
   "cat_en": "Quantum Computing"
  },
@@ -6924,11 +7218,11 @@ window.LINKS = [
   "name": "LIQUi|>",
   "cat": "kuantum",
   "tags": [
-   "ücretsiz",
-   "araştırma"
+   "araştırma",
+   "arşiv"
   ],
-  "tr": "Microsoft’un erken dönem kuantum simülasyon platformu; artık tarihî değeri olan bir kaynak, güncel iş için Q# tercih edilmeli.",
-  "en": "Microsoft’s early quantum simulation platform — now of historical interest; use Q# for current work.",
+  "tr": "Microsoft’un erken dönem kuantum simülasyon platformu. Bugün yerini Q# aldı; alanın araç zincirinin nasıl geliştiğini görmek dışında pratik değeri kalmadı.",
+  "en": "Microsoft’s early quantum simulation platform, since superseded by Q#. Little practical value now beyond seeing how the field’s toolchain evolved.",
   "cat_tr": "Kuantum Bilişim",
   "cat_en": "Quantum Computing"
  },
@@ -6940,8 +7234,8 @@ window.LINKS = [
    "ücretsiz",
    "referans"
   ],
-  "tr": "Kuantum hesaplamanın aşamalarını ve beklenen zaman çizelgesini anlatan yol haritası; alanın nerede olduğunu tartmak için.",
-  "en": "A roadmap of quantum computing’s stages and expected timeline — useful for gauging where the field actually is.",
+  "tr": "Gürültülü ara ölçek (NISQ) aşamasından hata düzeltmeli mantıksal kübitlere uzanan aşamalar. Alanın hangi vaatlerinin bugün, hangilerinin on yıl sonrası olduğunu tartmak için.",
+  "en": "The stages from noisy intermediate-scale (NISQ) to error-corrected logical qubits — useful for weighing which of the field’s promises are now and which are a decade out.",
   "cat_tr": "Kuantum Bilişim",
   "cat_en": "Quantum Computing"
  },
@@ -6950,12 +7244,12 @@ window.LINKS = [
   "name": "Microsoft QDK",
   "cat": "kuantum",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "kuantum"
+   "derleyici"
   ],
-  "tr": "Q# dili ve kuantum geliştirme kitinin kaynak kodu; derleyici ve simülatörün nasıl çalıştığını görmek için.",
-  "en": "Source for the Q# language and Quantum Development Kit, for seeing how the compiler and simulator work.",
+  "tr": "Q# derleyicisi ve simülatörünün kaynak kodu. Kuantum devresinin nasıl derlenip simüle edildiğini görmek isteyenler için.",
+  "en": "Source for the Q# compiler and simulator — for anyone who wants to see how a quantum circuit is compiled and simulated.",
   "cat_tr": "Kuantum Bilişim",
   "cat_en": "Quantum Computing"
  },
@@ -6967,8 +7261,8 @@ window.LINKS = [
    "ücretsiz",
    "makale"
   ],
-  "tr": "Kuantum için ayrı bir programlama diline neden ihtiyaç duyulduğunu anlatan yazı; dile başlamadan önce gerekçeyi verir.",
-  "en": "An article on why quantum needs its own programming language — the rationale before you start the language.",
+  "tr": "Kuantum için neden ayrı bir dile ihtiyaç duyulduğunu anlatıyor: klonlanamama, ölçümün durumu bozması gibi kısıtlar klasik dil kalıplarına oturmuyor.",
+  "en": "Explains why quantum needs its own language — no-cloning and measurement collapsing state do not fit classical language idioms.",
   "cat_tr": "Kuantum Bilişim",
   "cat_en": "Quantum Computing"
  },
@@ -6980,8 +7274,8 @@ window.LINKS = [
    "dokümantasyon",
    "kurulum"
   ],
-  "tr": "Q# ve kuantum geliştirme kitinin kurulum rehberi; yerel simülatörle başlamanın en kısa yolu.",
-  "en": "Setup guide for Q# and the Quantum Development Kit — the shortest path to starting with a local simulator.",
+  "tr": "Q# ve QDK kurulumu; VS Code uzantısıyla yerel simülatörde devre çalıştırmanın en kısa yolu. Donanıma erişim gerekmeden başlanabiliyor.",
+  "en": "Installing Q# and the QDK, with the VS Code extension as the shortest path to running circuits on a local simulator — no hardware access needed to start.",
   "cat_tr": "Kuantum Bilişim",
   "cat_en": "Quantum Computing"
  },
@@ -6990,11 +7284,12 @@ window.LINKS = [
   "name": "TensorFlow Quantum",
   "cat": "kuantum",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
+   "python",
    "ml"
   ],
-  "tr": "Kuantum devrelerini makine öğrenmesi modellerine gömen kütüphane; hibrit klasik-kuantum modeller için.",
-  "en": "Library embedding quantum circuits into machine learning models, for hybrid classical-quantum architectures.",
+  "tr": "Parametreli kuantum devrelerini Keras katmanı gibi kullanıp klasik ağlarla birleştiriyor. Hibrit klasik-kuantum modellerin deneysel olarak araştırıldığı yer.",
+  "en": "Wraps parameterised quantum circuits as Keras-style layers to combine with classical networks — where hybrid classical-quantum models get explored experimentally.",
   "cat_tr": "Kuantum Bilişim",
   "cat_en": "Quantum Computing"
  },
@@ -7004,10 +7299,11 @@ window.LINKS = [
   "cat": "araclar",
   "tags": [
    "ücretsiz",
-   "dizin"
+   "dizin",
+   "topluluk"
   ],
-  "tr": "Bir yazılıma alternatif bulmanın standart yolu; kullanıcı oylarıyla sıralaması ve lisansa göre filtrelemesi ayırt edici.",
-  "en": "The standard way to find an alternative to a piece of software, ranked by user votes and filterable by licence.",
+  "tr": "Bir yazılıma alternatif bulmanın standart yolu; lisansa, platforma ve “açık kaynak olsun” filtresine göre daraltabiliyorsun. Sıralama kullanıcı oylarıyla.",
+  "en": "The standard way to find an alternative to a piece of software, narrowable by licence, platform and an open-source-only filter, ranked by user votes.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7016,25 +7312,12 @@ window.LINKS = [
   "name": "AppList",
   "cat": "araclar",
   "tags": [
-   "ücretsiz",
    "ios",
+   "ücretsiz",
    "minimalizm"
   ],
-  "tr": "iPhone için sade uygulama başlatıcı; simge ızgarasının dikkat dağıtıcılığına karşı metin listesi sunuyor.",
-  "en": "A minimal app launcher for iPhone, offering a text list against the distraction of an icon grid.",
-  "cat_tr": "Araçlar & Yardımcılar",
-  "cat_en": "Tools & Utilities"
- },
- {
-  "url": "https://www.youtube.com/watch?v=rbu7Zu5X1zI",
-  "name": "Araç Kullanımı (video)",
-  "cat": "araclar",
-  "tags": [
-   "ücretsiz",
-   "video"
-  ],
-  "tr": "Geliştirici araçları üzerine anlatım videosu; yazılı dokümana alternatif olarak izleyerek öğrenmek için.",
-  "en": "A walkthrough video on developer tooling, for those who would rather watch than read the docs.",
+  "tr": "iPhone için metin listesi biçiminde uygulama başlatıcı. Simge ızgarasının dikkat çekiciliğini kaldırıyor; dijital minimalizm tarafında bilinçli bir sürtünme.",
+  "en": "A text-list app launcher for iPhone, removing the pull of an icon grid — deliberate friction on the digital minimalism side.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7043,11 +7326,11 @@ window.LINKS = [
   "name": "Araç Serisi (oynatma listesi)",
   "cat": "araclar",
   "tags": [
-   "ücretsiz",
-   "video"
+   "video",
+   "ücretsiz"
   ],
-  "tr": "Araç ve iş akışı üzerine video serisi; tek videodan farkı, konuyu adım adım derinleştirmesi.",
-  "en": "A video series on tooling and workflow; unlike a single video it deepens the topic step by step.",
+  "tr": "Araç ve iş akışı üzerine çok bölümlü seri; tek videodan farkı konuyu adım adım derinleştirmesi.",
+  "en": "A multi-part series on tooling and workflow, deepening the subject step by step rather than in one pass.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7056,12 +7339,13 @@ window.LINKS = [
   "name": "AudioNotes",
   "cat": "araclar",
   "tags": [
+   "saas",
    "freemium",
-   "ses",
+   "stt",
    "not"
   ],
-  "tr": "Sesli notu yapılandırılmış metne çeviren uygulama; ham döküm yerine özet ve madde çıkarması ayırt edici.",
-  "en": "Turns voice notes into structured text, producing summaries and bullet points rather than a raw transcript.",
+  "tr": "Sesli notu ham döküm yerine yapılandırılmış metne çeviriyor: özet, madde listesi, yapılacaklar. Yürürken düşünüp sonra düzenlemek isteyenler için.",
+  "en": "Turns a voice note into structured text — summary, bullets, action items — rather than a raw transcript. For thinking aloud on the move and organising afterwards.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7074,8 +7358,8 @@ window.LINKS = [
    "görsel",
    "kod"
   ],
-  "tr": "Kod parçasından paylaşılabilir görsel üreten araç; ekran görüntüsünden farkı, tema ve satır numarasını denetleyebilmen.",
-  "en": "Turns a code snippet into a shareable image; unlike a screenshot you control theme and line numbers.",
+  "tr": "Kod parçasından paylaşılabilir görsel üretiyor; tema, pencere süsü ve satır numarası ayarlanabiliyor. Ekran görüntüsünden farkı, sonucun tekrar edilebilir ve okunaklı olması.",
+  "en": "Turns a snippet into a shareable image with theme, window chrome and line numbers under your control. Unlike a screenshot the result is reproducible and legible.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7084,12 +7368,12 @@ window.LINKS = [
   "name": "CodeBurn",
   "cat": "araclar",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "araç"
+   "analiz"
   ],
-  "tr": "Kod tabanı üzerinde çalışan analiz aracı; ölü kod ve gereksiz bağımlılıkları temizlemeye yönelik.",
-  "en": "Analysis tool for a codebase, aimed at clearing dead code and unnecessary dependencies.",
+  "tr": "Kod tabanındaki ölü kodu ve kullanılmayan bağımlılıkları çıkarıyor. Uzun süredir yaşayan projelerde ne kadar birikinti olduğunu görmek şaşırtıcı olabiliyor.",
+  "en": "Surfaces dead code and unused dependencies in a codebase. On a long-lived project the amount of accumulated debris can be surprising.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7098,12 +7382,13 @@ window.LINKS = [
   "name": "CodeScene",
   "cat": "araclar",
   "tags": [
+   "saas",
    "ücretli",
    "analiz",
-   "teknik borç"
+   "teknik-borç"
   ],
-  "tr": "Kod tabanını değişim geçmişiyle birlikte analiz eden araç; statik çözümleyicilerden farkı, en çok değişen ve en riskli dosyaları öne çıkarması.",
-  "en": "Analyses a codebase alongside its change history; unlike static analysers it surfaces the files that churn most and carry most risk.",
+  "tr": "Kodu değişim geçmişiyle birlikte analiz ediyor: en çok değişen, en karmaşık ve tek kişiye bağımlı dosyaları çıkarıyor. Statik çözümleyicilerin göremediği boyut zaman.",
+  "en": "Analyses code alongside its change history, surfacing the files that churn most, carry most complexity or depend on one person. The dimension static analysers miss is time.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7113,11 +7398,11 @@ window.LINKS = [
   "cat": "araclar",
   "tags": [
    "ücretsiz",
-   "google",
-   "kod"
+   "kod",
+   "dokümantasyon"
   ],
-  "tr": "Kod tabanları için otomatik üretilmiş dokümantasyon; depoya ilk bakışta yapıyı kavramak için.",
-  "en": "Automatically generated documentation for codebases, for grasping structure at first contact with a repo.",
+  "tr": "Kod tabanları için otomatik üretilmiş dokümantasyon; bir depoya ilk baktığında yapıyı ve giriş noktalarını çıkarmaya yarıyor.",
+  "en": "Automatically generated documentation for codebases, useful for extracting structure and entry points the first time you open a repository.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7126,12 +7411,12 @@ window.LINKS = [
   "name": "Compiler Explorer",
   "cat": "araclar",
   "tags": [
-   "ücretsiz",
-   "açık kaynak",
-   "derleyici"
+   "açık-kaynak",
+   "derleyici",
+   "assembly"
   ],
-  "tr": "Kaynak kodun ürettiği makine kodunu yan yana gösteren araç; optimizasyon tartışmalarını fikirden ölçüme taşır.",
-  "en": "Shows source code beside the machine code it produces, moving optimisation debates from opinion to evidence.",
+  "tr": "Kaynak kodun yanına ürettiği assembly’i koyuyor; optimizasyon seviyesini ve derleyici sürümünü değiştirip farkı anında görüyorsun. Performans tartışmalarını fikirden ölçüme taşıyor.",
+  "en": "Puts the generated assembly beside your source, with optimisation level and compiler version switchable so you see the difference immediately. It moves performance arguments from opinion to measurement.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7140,12 +7425,13 @@ window.LINKS = [
   "name": "Docker Android",
   "cat": "araclar",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "docker"
+   "docker",
+   "test"
   ],
-  "tr": "Kapsayıcı içinde Android çalıştıran imaj; test otomasyonunu fiziksel cihaz ve emülatör kurulumundan kurtarıyor.",
-  "en": "An image running Android inside a container, freeing test automation from physical devices and emulator setup.",
+  "tr": "Kapsayıcı içinde Android emülatörü çalıştırıyor; VNC ile ekranına bakabiliyorsun. CI hattında cihaz çiftliği kurmadan otomatik test çalıştırmak için.",
+  "en": "Runs an Android emulator in a container with VNC access to the screen — for running automated tests in CI without standing up a device farm.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7154,12 +7440,12 @@ window.LINKS = [
   "name": "draw.io",
   "cat": "araclar",
   "tags": [
-   "ücretsiz",
-   "açık kaynak",
-   "diyagram"
+   "açık-kaynak",
+   "diyagram",
+   "ücretsiz"
   ],
-  "tr": "Genel amaçlı diyagram aracı; Excalidraw’dan farkı, ağ ve UML gibi standart şekil kütüphaneleriyle gelmesi.",
-  "en": "General-purpose diagramming; unlike Excalidraw it ships standard shape libraries for network and UML work.",
+  "tr": "Ağ, UML ve AWS şekil kütüphaneleriyle gelen genel amaçlı diyagram aracı. Dosyayı yerel diske ya da kendi Drive’ına kaydediyor; sunucuya bir şey göndermiyor.",
+  "en": "General-purpose diagramming with network, UML and AWS shape libraries. It saves to local disk or your own Drive and sends nothing to a server.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7170,10 +7456,11 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "ide",
-   "c++"
+   "c++",
+   "windows"
   ],
-  "tr": "Hafif C/C++ geliştirme ortamı; modern IDE’lere göre eski ama düşük donanımda ve eğitim ortamlarında hâlâ kullanılıyor.",
-  "en": "A lightweight C/C++ IDE — dated next to modern ones, but still used on low-spec machines and in teaching.",
+  "tr": "Hafif C/C++ geliştirme ortamı. Modern IDE’lerin gerisinde ama düşük donanımda çalışıyor ve Türkiye’deki üniversite laboratuvarlarında hâlâ standart kurulum.",
+  "en": "A lightweight C/C++ IDE. Behind modern ones, yet it runs on weak hardware and remains the standard install in many Turkish university labs.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7182,12 +7469,12 @@ window.LINKS = [
   "name": "Excalidraw",
   "cat": "araclar",
   "tags": [
-   "ücretsiz",
-   "açık kaynak",
-   "diyagram"
+   "açık-kaynak",
+   "diyagram",
+   "tarayıcı-içi"
   ],
-  "tr": "El çizimi görünümlü beyaz tahta; kasıtlı olarak kaba görünmesi, taslak aşamasında tasarımın bitmiş sanılmasını engelliyor.",
-  "en": "A hand-drawn-style whiteboard; looking deliberately rough stops people mistaking a sketch for a finished design.",
+  "tr": "El çizimi görünümlü beyaz tahta. Kasıtlı olarak kaba durması bir üslup tercihi değil işlevsel: taslak aşamasındaki bir mimarinin bitmiş sanılmasını engelliyor.",
+  "en": "A hand-drawn-style whiteboard. Looking deliberately rough is functional rather than stylistic — it stops a draft architecture being mistaken for a finished one.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7196,11 +7483,12 @@ window.LINKS = [
   "name": "Feedly",
   "cat": "araclar",
   "tags": [
+   "saas",
    "freemium",
    "rss"
   ],
-  "tr": "RSS okuyucu; algoritmik akışların aksine ne okuyacağına kaynak düzeyinde sen karar verirsin.",
-  "en": "RSS reader — unlike algorithmic feeds you decide what you read at the source level.",
+  "tr": "RSS okuyucu. Algoritmik akışların aksine ne okuyacağına kaynak düzeyinde sen karar veriyorsun; okumadığın şey de kaybolmuyor.",
+  "en": "An RSS reader where you decide what you read at the source level, unlike algorithmic feeds — and nothing you have not read disappears.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7209,11 +7497,12 @@ window.LINKS = [
   "name": "Figma",
   "cat": "araclar",
   "tags": [
+   "saas",
    "freemium",
    "tasarım"
   ],
-  "tr": "Arayüz tasarımının fiilî standardı; eşzamanlı çok kişili düzenleme onu masaüstü araçların önüne geçirdi.",
-  "en": "The de facto standard for interface design; real-time multiplayer editing is what put it ahead of desktop tools.",
+  "tr": "Arayüz tasarımının fiilî standardı; eşzamanlı düzenleme masaüstü araçların sonunu getirdi. Dev Mode ile geliştiriciye ölçü ve token aktarımı yapıyor.",
+  "en": "The de facto standard for interface design, whose multiplayer editing ended the desktop tools. Dev Mode hands measurements and tokens to developers.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7222,12 +7511,25 @@ window.LINKS = [
   "name": "fli",
   "cat": "araclar",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
    "cli"
   ],
-  "tr": "Uçuş arama için komut satırı aracı; tarayıcı arayüzlerinin aksine sonuçları betiklenebilir hâle getiriyor.",
-  "en": "A command-line flight search tool, making results scriptable unlike browser interfaces.",
+  "tr": "Uçuş aramayı komut satırına taşıyor; sonuçlar betiklenebilir olduğu için fiyat takibini bir cron işine bağlayabiliyorsun.",
+  "en": "Brings flight search to the command line, and because results are scriptable you can hang price tracking off a cron job.",
+  "cat_tr": "Araçlar & Yardımcılar",
+  "cat_en": "Tools & Utilities"
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=rbu7Zu5X1zI",
+  "name": "Geliştirici Araçları (video)",
+  "cat": "araclar",
+  "tags": [
+   "video",
+   "ücretsiz"
+  ],
+  "tr": "Geliştirici araç zinciri üzerine anlatım; yazılı dokümana alternatif olarak izleyerek öğrenmek için.",
+  "en": "A walkthrough of developer tooling, for learning by watching rather than reading.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7240,8 +7542,8 @@ window.LINKS = [
    "github",
    "istatistik"
   ],
-  "tr": "GitHub depo ve kullanıcılarının yıldız sıralaması; bir alanda neyin baskın olduğunu hızlıca görmek için.",
-  "en": "Star rankings for GitHub repos and users — a fast way to see what dominates a field.",
+  "tr": "Depo ve kullanıcıların yıldız sıralaması; bir alanda neyin baskın olduğunu hızla gösteriyor. Yıldız kalite ölçüsü değil, görünürlük ölçüsü — o gözle okumak gerekiyor.",
+  "en": "Star rankings for repositories and users, quickly showing what dominates a field. Stars measure visibility rather than quality, and should be read that way.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7253,8 +7555,8 @@ window.LINKS = [
    "ücretsiz",
    "deneysel"
   ],
-  "tr": "Google’ın deneysel ürünlerinin vitrini; yayımlanmadan önce araçları denemek için.",
-  "en": "A showcase of Google’s experimental products, for trying tools before general release.",
+  "tr": "Google’ın henüz ürünleşmemiş denemelerinin vitrini. Buradaki çoğu şey kapanıyor, ama şirketin hangi yöne baktığını erken gösteriyor.",
+  "en": "A showcase of Google experiments that have not become products. Most of it gets shut down, but it shows early where the company is looking.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7263,12 +7565,12 @@ window.LINKS = [
   "name": "iLovePDF",
   "cat": "araclar",
   "tags": [
+   "saas",
    "freemium",
-   "pdf",
-   "araç"
+   "pdf"
   ],
-  "tr": "Birleştirme, bölme, sıkıştırma gibi PDF işlemleri; kurulum gerektirmemesi tek seferlik işler için avantaj.",
-  "en": "PDF merge, split and compress operations; needing no installation is the advantage for one-off jobs.",
+  "tr": "Birleştirme, bölme, sıkıştırma ve dönüştürme; kurulum istemiyor. Hassas belgeler için dikkat: dosya sunucuya yükleniyor, yerel araç daha uygun olabilir.",
+  "en": "Merge, split, compress and convert with no installation. Be careful with sensitive documents — the file is uploaded to a server, and a local tool may be the better call.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7277,11 +7579,12 @@ window.LINKS = [
   "name": "KeepNote",
   "cat": "araclar",
   "tags": [
-   "açık kaynak",
-   "not"
+   "açık-kaynak",
+   "not",
+   "masaüstü"
   ],
-  "tr": "Basit ve taşınabilir not defteri uygulaması; bulut hizmetlerine karşı dosyaların diskte kalmasını isteyenler için.",
-  "en": "A simple, portable note-taking app for people who want their files on disk rather than in a cloud service.",
+  "tr": "Basit ve taşınabilir not defteri; notları düz dosya olarak diskte tutuyor. Bulut not uygulamalarının kapanma riskine karşı sade bir sigorta.",
+  "en": "A simple, portable notebook keeping notes as plain files on disk — a modest hedge against cloud note apps shutting down.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7290,12 +7593,12 @@ window.LINKS = [
   "name": "MacroDroid",
   "cat": "araclar",
   "tags": [
-   "freemium",
    "android",
+   "freemium",
    "otomasyon"
   ],
-  "tr": "Android’de cihaz otomasyonu; Tasker’a göre çok daha erişilebilir bir arayüzle aynı işi yapmayı hedefliyor.",
-  "en": "Device automation on Android, aiming at Tasker’s capability through a far more approachable interface.",
+  "tr": "Android’de tetikleyici-eylem kuralları kuruyorsun: konuma girince Wi-Fi aç, şarj olurken sessize al. Tasker kadar güçlü değil ama arayüzü kat kat anlaşılır.",
+  "en": "Builds trigger-action rules on Android — Wi-Fi on when you reach a location, silent while charging. Less powerful than Tasker and vastly more comprehensible.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7308,8 +7611,8 @@ window.LINKS = [
    "diyagram",
    "metin"
   ],
-  "tr": "Metinden diyagram üreten editör; grafik araçlardan farkı, diyagramın sürüm kontrolüne girebilen düz metin olması.",
-  "en": "Text-to-diagram editor; unlike graphical tools the diagram is plain text that can live in version control.",
+  "tr": "Metinden diyagram üretiyor; sonuç düz metin olduğu için sürüm kontrolüne giriyor ve diff’i okunabiliyor. GitHub ve GitLab Mermaid’i doğrudan render ediyor.",
+  "en": "Generates diagrams from text, so the source lives in version control with a readable diff. GitHub and GitLab render Mermaid natively.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7318,12 +7621,12 @@ window.LINKS = [
   "name": "Moqups",
   "cat": "araclar",
   "tags": [
+   "saas",
    "freemium",
-   "tasarım",
-   "prototip"
+   "tel-kafes"
   ],
-  "tr": "Tarayıcıda tel kafes ve prototip aracı; Figma’ya göre daha hafif, hızlı taslak için yeterli.",
-  "en": "Browser wireframing and prototyping — lighter than Figma and sufficient for quick drafts.",
+  "tr": "Tarayıcıda tel kafes ve prototip; Figma’nın tasarım derinliği yok ama hızlı bir akış şeması ya da ekran taslağı için yeterli ve daha hafif.",
+  "en": "Browser wireframing and prototyping. It lacks Figma’s design depth but is lighter and sufficient for a quick flow or screen sketch.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7336,8 +7639,8 @@ window.LINKS = [
    "github",
    "istatistik"
   ],
-  "tr": "GitHub depolarının büyüme eğilimini gösteren araç; anlık yıldız sayısından farkı, ivmeyi göstermesi.",
-  "en": "Shows growth trends for GitHub repositories; unlike a raw star count it reveals momentum.",
+  "tr": "GitHub depolarının yıldız kazanma hızını gösteriyor. Toplam yıldız eski projeleri kayırır; ivmeye bakmak yeni çıkanı görmenin daha iyi yolu.",
+  "en": "Shows how fast GitHub repositories gain stars. Total stars favour old projects, so looking at momentum is the better way to see what is new.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7346,12 +7649,13 @@ window.LINKS = [
   "name": "OpenReel Video",
   "cat": "araclar",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
-   "video"
+   "video",
+   "tarayıcı-içi"
   ],
-  "tr": "Tarayıcıda çalışan açık kaynak video düzenleyici; kurulum gerektirmeyen ve verinin cihazda kaldığı bir alternatif.",
-  "en": "Open-source video editor running in the browser — an alternative with no install where the footage stays on device.",
+  "tr": "Tarayıcıda çalışan video düzenleyici; görüntü cihazdan çıkmıyor. Kurulum istemeyen ve bulut servisine yüklemeyen bir alternatif.",
+  "en": "A video editor running in the browser with the footage staying on device — an alternative that needs no installation and no upload to a cloud service.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7360,12 +7664,13 @@ window.LINKS = [
   "name": "Parse",
   "cat": "araclar",
   "tags": [
+   "saas",
    "freemium",
-   "veri",
-   "kazıma"
+   "kazıma",
+   "api"
   ],
-  "tr": "Herhangi bir web sayfasından API üreten araç; kazıyıcı kodu yazmadan yapılandırılmış veri almayı hedefliyor.",
-  "en": "Creates an API from any web page, aimed at getting structured data without writing a scraper.",
+  "tr": "Web sayfasından API üretiyor; seçicileri sen tanımlamıyorsun, sayfayı gösteriyorsun. API’si olmayan bir kaynaktan yapılandırılmış veri almanın kısa yolu.",
+  "en": "Turns a web page into an API without you writing selectors — you point at the page. A short route to structured data from a source with no API.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7375,11 +7680,11 @@ window.LINKS = [
   "cat": "araclar",
   "tags": [
    "ücretsiz",
-   "araç",
-   "regex"
+   "regex",
+   "araç"
   ],
-  "tr": "Düzenli ifade test ve açıklama aracı; ifadeyi parça parça açıklaması ve hata ayıklayıcısı ayırt edici yanı.",
-  "en": "Regex tester whose distinguishing features are the token-by-token explanation and the debugger.",
+  "tr": "İfadeyi jeton jeton açıklıyor ve hata ayıklayıcısıyla eşleşmenin nerede koptuğunu gösteriyor. PCRE, JavaScript ve Python lehçeleri arasında geçiş yapabiliyorsun.",
+  "en": "Explains an expression token by token and its debugger shows exactly where a match breaks down, with switching between the PCRE, JavaScript and Python flavours.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7392,8 +7697,8 @@ window.LINKS = [
    "arama",
    "görsel"
   ],
-  "tr": "Görsel benzerliğe göre arama motoru; anahtar kelime yerine estetik üzerinden keşif sunması ayırt edici.",
-  "en": "A search engine driven by visual similarity, offering discovery through aesthetics rather than keywords.",
+  "tr": "Anahtar kelimeyle değil görsel benzerlikle arıyor; bir görsel verip “buna benzeyenler” diyorsun. Estetik üzerinden keşif, metin araması için sözcük bulmayı gerektirmiyor.",
+  "en": "Searches by visual similarity rather than keywords — you hand it an image and ask for more like it. Discovery through aesthetics, with no need to find the word first.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7406,8 +7711,8 @@ window.LINKS = [
    "rehber",
    "arşiv"
   ],
-  "tr": "Bir web sitesini çevrimdışı arşivlemenin yöntemlerini karşılaştıran rehber; kaybolma riski olan kaynaklar için.",
-  "en": "A guide comparing methods for archiving a website offline — for resources at risk of disappearing.",
+  "tr": "Bir siteyi çevrimdışı arşivleme yöntemlerini karşılaştıran rehber (wget, HTTrack ve diğerleri). Kaybolma riski olan dokümantasyon için pratik bir hazırlık.",
+  "en": "A guide comparing methods for archiving a site offline — wget, HTTrack and the rest. Practical preparation for documentation at risk of vanishing.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7418,10 +7723,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "türkçe",
-   "yazılım"
+   "topluluk"
   ],
-  "tr": "Türkçe yazılım indirme ve tartışma arşivi; yerel kullanıcı deneyimlerinin bir arada bulunduğu bir kaynak.",
-  "en": "A Turkish software download and discussion archive, gathering local user experience in one place.",
+  "tr": "Türkçe yazılım arşivi ve tartışma alanı; yerel kullanıcı deneyimleri ve donanım uyumluluk notları bir arada.",
+  "en": "A Turkish software archive and discussion area, gathering local user experience and hardware compatibility notes.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7431,11 +7736,11 @@ window.LINKS = [
   "cat": "araclar",
   "tags": [
    "ücretsiz",
-   "araç",
-   "erişilebilirlik"
+   "erişilebilirlik",
+   "araç"
   ],
-  "tr": "Bir sayfayı yalnızca metne indirgeyen araç; reklam ve düzen gürültüsünü kaldırıp okunabilirlik ve erişilebilirlik testi sağlıyor.",
-  "en": "Reduces a page to text only, stripping ads and layout noise for readability and accessibility checks.",
+  "tr": "Sayfayı yalnızca metne indiriyor. Reklam ve düzen gürültüsünü kaldırmasının yanında, ekran okuyucunun sayfayı nasıl gördüğünü kabaca test etmeye de yarıyor.",
+  "en": "Strips a page to text only. Besides removing ads and layout noise, it roughly approximates what a screen reader sees.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7447,8 +7752,8 @@ window.LINKS = [
    "ücretsiz",
    "istatistik"
   ],
-  "tr": "Programlama dillerinin popülerlik endeksi; yöntemi tartışmalı ama uzun zaman serisi sunması sebebiyle eğilim izlemekte kullanılıyor.",
-  "en": "A popularity index of programming languages — its methodology is debated, but the long time series makes it useful for trends.",
+  "tr": "Programlama dili popülerlik endeksi. Yöntemi (arama motoru sonucu sayısı) haklı olarak eleştiriliyor; yine de yirmi yıllık tutarlı seri olduğu için eğilim okumada kullanılıyor.",
+  "en": "A programming language popularity index whose methodology — counting search engine results — is rightly criticised, yet which is read for trends because the series has been consistent for twenty years.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7458,10 +7763,11 @@ window.LINKS = [
   "cat": "araclar",
   "tags": [
    "ücretsiz",
-   "dönüştürücü"
+   "dönüştürücü",
+   "açık-kaynak"
   ],
-  "tr": "Biçimler arası dönüştürücü koleksiyonu (JSON→TypeScript, CSS→JS vb.); tek tek araç aramaya karşı toplu çözüm.",
-  "en": "A collection of format converters (JSON→TypeScript, CSS→JS and so on) — one place instead of hunting a tool per conversion.",
+  "tr": "Biçimler arası dönüştürücü koleksiyonu: JSON’dan TypeScript tipine, HTML’den JSX’e, SVG’den React bileşenine. Her biri için ayrı site aramaya son veriyor.",
+  "en": "A collection of format converters — JSON to TypeScript types, HTML to JSX, SVG to a React component. It ends hunting a separate site for each.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7474,8 +7780,8 @@ window.LINKS = [
    "github",
    "istatistik"
   ],
-  "tr": "Yükselen açık kaynak projeleri izleyen pano; olgunlaşmış listelerden farkı, yeni çıkanları öne alması.",
-  "en": "A dashboard tracking rising open-source projects, favouring new arrivals over established lists.",
+  "tr": "Yükselen açık kaynak projeleri izleyen pano; olgunlaşmış listelerin kaçırdığı yeni çıkanları öne alıyor.",
+  "en": "A dashboard tracking rising open-source projects, foregrounding the new arrivals established lists miss.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7484,12 +7790,12 @@ window.LINKS = [
   "name": "Udeler GUI",
   "cat": "araclar",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
    "araç"
   ],
-  "tr": "Satın alınan Udemy kurslarını çevrimdışı izlemek için indirici; erişimi olan içerik için arşivleme aracı.",
-  "en": "A downloader for offline viewing of purchased Udemy courses — an archiving tool for content you already have access to.",
+  "tr": "Satın aldığın Udemy kurslarını çevrimdışı izlemek için indiriyor. Erişimin olan içeriği arşivleme aracı; kurs erişimi kaldırıldığında elinde kalıyor.",
+  "en": "Downloads Udemy courses you own for offline viewing — an archiving tool for content you already have access to, which survives if that access is withdrawn.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7499,10 +7805,10 @@ window.LINKS = [
   "cat": "araclar",
   "tags": [
    "ücretsiz",
-   "veri görselleştirme"
+   "veri-görselleştirme"
   ],
-  "tr": "Ekonomi ve teknoloji verisini bilgi grafiklerine çeviren yayın; ham veri kaynağı değil, bağlam ve karşılaştırma sunar.",
-  "en": "A publication turning economic and technology data into infographics — context and comparison rather than raw data.",
+  "tr": "Ekonomi ve teknoloji verisini bilgi grafiğine çeviren yayın. Ham veri kaynağı değil; büyüklükleri karşılaştırılabilir kılması asıl katkısı.",
+  "en": "A publication turning economic and technology data into infographics. Not a raw data source — its contribution is making magnitudes comparable.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7515,8 +7821,8 @@ window.LINKS = [
    "video",
    "araç"
   ],
-  "tr": "Bir videodan belirli aralığı kesip indiren araç; tamamını indirip düzenlemeye karşı hızlı çözüm.",
-  "en": "Cuts and downloads a specific range from a video — quicker than downloading the whole thing and editing.",
+  "tr": "Videodan belirli bir aralığı kesip indiriyor. Tamamını indirip düzenlemeye göre hem hızlı hem disk dostu.",
+  "en": "Cuts and downloads a specific range from a video — faster and kinder to disk than downloading the whole thing and trimming.",
   "cat_tr": "Araçlar & Yardımcılar",
   "cat_en": "Tools & Utilities"
  },
@@ -7529,8 +7835,8 @@ window.LINKS = [
    "türkçe",
    "makale"
   ],
-  "tr": "Türkçe mühendislik blogundan teknik bir yazı; yerel dilde derinlikli teknik içeriğin az bulunduğu bir alanda örnek.",
-  "en": "A technical piece from a Turkish engineering blog — an example in an area short of in-depth local-language content.",
+  "tr": "Türkçe mühendislik blogundan teknik bir yazı. Yerel dilde derinlikli teknik içerik az bulunduğu için örnek olarak değerli.",
+  "en": "A technical piece from a Turkish engineering blog — valuable as an example, since in-depth technical writing in the language is scarce.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7543,8 +7849,8 @@ window.LINKS = [
    "türkçe",
    "sözlük"
   ],
-  "tr": "Bilişim terimlerinin resmî Türkçe karşılıkları; belge ve sunum yazarken terim tutarlılığı için.",
-  "en": "Official Turkish equivalents for computing terms — for keeping terminology consistent in documents and talks.",
+  "tr": "Bilişim terimlerinin resmî Türkçe karşılıkları. Belge, sunum ya da çeviri yaparken terim tutarlılığı için başvurulacak yer.",
+  "en": "Official Turkish equivalents for computing terms — the reference for keeping terminology consistent in documents, talks and translation.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7553,12 +7859,12 @@ window.LINKS = [
   "name": "DevDocs",
   "cat": "referans",
   "tags": [
-   "ücretsiz",
-   "açık kaynak",
-   "dokümantasyon"
+   "açık-kaynak",
+   "dokümantasyon",
+   "çevrimdışı"
   ],
-  "tr": "Onlarca teknolojinin dokümantasyonunu tek arayüzde toplayan araç; çevrimdışı çalışabilmesi ve tek tuşla arama sunması ayırt edici.",
-  "en": "Gathers documentation for dozens of technologies in one interface; offline support and single-key search are what set it apart.",
+  "tr": "Yüzlerce teknolojinin resmî dokümanını tek arayüzde topluyor; çevrimdışı indirilebiliyor ve anlık arama sunuyor. Sekme sekme doküman sitesi gezmenin sonu.",
+  "en": "Gathers official documentation for hundreds of technologies in one interface, downloadable for offline use with instant search. The end of tab-hopping between doc sites.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7571,8 +7877,8 @@ window.LINKS = [
    "türkçe",
    "format"
   ],
-  "tr": "Taranmış belgeler için PDF alternatifi biçimin tanıtımı; arşiv dosyalarıyla uğraşırken formatın ne olduğunu açıklar.",
-  "en": "An introduction to the scanned-document format that competes with PDF — useful when you meet one in an archive.",
+  "tr": "Taranmış belgeler için PDF’e alternatif biçim; aynı kalitede çok daha küçük dosya üretiyor. Eski arşivlerde sık karşına çıkar, ne olduğunu bilmek gerekir.",
+  "en": "A PDF alternative for scanned documents producing much smaller files at the same quality. You meet it often in older archives, so it is worth knowing what it is.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7581,12 +7887,12 @@ window.LINKS = [
   "name": "Exercism Problem Şartnameleri",
   "cat": "referans",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
    "alıştırma"
   ],
-  "tr": "Exercism alıştırmalarının dilden bağımsız tanımları; kendi alıştırma setini kurmak isteyenler için hazır malzeme.",
-  "en": "Language-independent definitions of Exercism’s exercises — ready material if you want to build your own practice set.",
+  "tr": "Exercism alıştırmalarının dilden bağımsız tanımları ve test verileri. Kendi dilinde alıştırma seti kurmak isteyenler için hazır malzeme.",
+  "en": "Language-independent definitions and test data for Exercism’s exercises — ready material if you want to build a practice set in your own language.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7596,10 +7902,10 @@ window.LINKS = [
   "cat": "referans",
   "tags": [
    "ücretsiz",
-   "koleksiyon"
+   "awesome-liste"
   ],
-  "tr": "Geliştiriciler için ücretsiz katman sunan servislerin listesi; yan proje kurarken maliyeti sıfıra yakın tutmak için.",
-  "en": "A list of services with free tiers for developers — for keeping a side project’s cost near zero.",
+  "tr": "Ücretsiz katmanı olan geliştirici servislerinin listesi: barındırma, CI, izleme, e-posta. Yan projenin maliyetini sıfıra yakın tutmanın haritası.",
+  "en": "A list of developer services with free tiers — hosting, CI, monitoring, email. A map for keeping a side project near zero cost.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7608,12 +7914,11 @@ window.LINKS = [
   "name": "free-for-dev (kaynak)",
   "cat": "referans",
   "tags": [
-   "ücretsiz",
    "github",
-   "koleksiyon"
+   "awesome-liste"
   ],
-  "tr": "Free for Developers listesinin kaynak deposu; katkı yapmak veya değişiklik geçmişini görmek için.",
-  "en": "The source repository behind the Free for Developers list, for contributing or reading its change history.",
+  "tr": "Free for Developers listesinin kaynak deposu; katkı göndermek ya da bir servisin ne zaman eklendiğine bakmak için.",
+  "en": "The source repository behind the Free for Developers list — for contributing or checking when a service was added.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7625,8 +7930,8 @@ window.LINKS = [
    "ücretsiz",
    "öğrenci"
   ],
-  "tr": "Öğrencilere ücretsiz geliştirici araç ve kredileri veren paket; tek tek başvurmaya karşı toplu erişim sağlıyor.",
-  "en": "A bundle of free developer tools and credits for students — bulk access instead of applying to each separately.",
+  "tr": "Öğrencilere ücretsiz araç ve bulut kredisi veren paket: alan adı, JetBrains lisansı, DigitalOcean kredisi ve fazlası. Doğrulama okul e-postasıyla yapılıyor.",
+  "en": "A bundle of free tools and cloud credit for students — a domain, JetBrains licences, DigitalOcean credit and more, verified with a school email.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7635,12 +7940,12 @@ window.LINKS = [
   "name": "GitNexus",
   "cat": "referans",
   "tags": [
-   "açık kaynak",
+   "açık-kaynak",
    "github",
    "araç"
   ],
-  "tr": "Depo içeriğini gezilebilir hâle getiren araç; büyük kod tabanına ilk kez bakarken yön bulmayı kolaylaştırıyor.",
-  "en": "Makes repository content navigable, easing orientation when you first face a large codebase.",
+  "tr": "Depo içeriğini gezilebilir hâle getiriyor; büyük bir kod tabanına ilk kez bakarken nereden başlanacağını göstermesi işe yarıyor.",
+  "en": "Makes repository content navigable, which helps when you face a large codebase for the first time and need somewhere to start.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7650,10 +7955,10 @@ window.LINKS = [
   "cat": "referans",
   "tags": [
    "ücretsiz",
-   "kopya kâğıdı"
+   "kopya-kâğıdı"
   ],
-  "tr": "Bir dili tek yorumlu kod dosyasıyla tanıtan derleme; başka dil bilenler için en hızlı geçiş yolu.",
-  "en": "Introduces a language through a single annotated code file — the fastest crossover route if you already know another language.",
+  "tr": "Bir dili tek yorumlu kod dosyasıyla tanıtıyor. Başka dil bilenler için en hızlı geçiş yolu: kavramları değil yalnızca sözdizimi farklarını okuyorsun.",
+  "en": "Introduces a language through a single annotated file. The fastest crossover if you already know another language — you read only the syntax differences, not the concepts.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7663,10 +7968,11 @@ window.LINKS = [
   "cat": "referans",
   "tags": [
    "ücretsiz",
-   "referans"
+   "referans",
+   "arşiv"
   ],
-  "tr": "Knuth’un okunabilir programlama yaklaşımının arşivi; kodu belgeyle iç içe yazma fikrinin kaynağı.",
-  "en": "The archive of Knuth’s literate programming approach — the source of the idea of writing code interwoven with prose.",
+  "tr": "Knuth’un kodu düzyazıyla iç içe yazma fikrinin arşivi. Jupyter not defterlerinin ve bugünkü “açıklanabilir kod” tartışmasının kökeni buraya çıkıyor.",
+  "en": "The archive of Knuth’s idea of writing code interwoven with prose — the root of Jupyter notebooks and today’s arguments about explainable code.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7675,12 +7981,12 @@ window.LINKS = [
   "name": "LuNiZz Depoları",
   "cat": "referans",
   "tags": [
-   "ücretsiz",
    "github",
-   "türkçe"
+   "türkçe",
+   "güvenlik"
   ],
-  "tr": "Türkçe güvenlik ve bilişim içerikleri üreten bir geliştiricinin depoları; yerel kaynak arayanlar için toplu giriş.",
-  "en": "The repositories of a developer producing Turkish security and IT content — a single entry point for local resources.",
+  "tr": "Türkçe güvenlik ve bilişim içerikleri üreten bir geliştiricinin depoları; yerel kaynak arayanlar için toplu bir giriş noktası.",
+  "en": "The repositories of a developer producing Turkish security and IT material — a single entry point for local resources.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7689,25 +7995,24 @@ window.LINKS = [
   "name": "Programcının Ziyaret Etmesi Gereken Siteler",
   "cat": "referans",
   "tags": [
-   "ücretsiz",
    "github",
-   "koleksiyon"
+   "awesome-liste"
   ],
-  "tr": "Geliştiriciler için genel amaçlı bağlantı derlemesi; konuya değil kullanıma göre gruplanması ayırt edici.",
-  "en": "A general-purpose link collection for developers, grouped by use rather than by topic.",
+  "tr": "Kullanım amacına göre gruplanmış geliştirici bağlantı derlemesi: alıştırma, haber, araç, kitap. Konu bazlı listelerden farklı bir kesit veriyor.",
+  "en": "A developer link collection grouped by purpose — practice, news, tools, books — which cuts the space differently from topic-based lists.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
  {
   "url": "https://en.wikipedia.org/wiki/Portal:Computer_programming",
-  "name": "Programlama Portalı (Vikipedi)",
+  "name": "Programlama Portalı",
   "cat": "referans",
   "tags": [
    "ücretsiz",
    "referans"
   ],
-  "tr": "Programlama konularının Vikipedi giriş kapısı; kavram haritası çıkarmak için tarafsız bir başlangıç.",
-  "en": "Wikipedia’s entry point for programming topics — a neutral start for mapping concepts.",
+  "tr": "Programlama konularının Vikipedi giriş kapısı; kavram haritası çıkarmak için satıcı etkisinden uzak bir başlangıç.",
+  "en": "Wikipedia’s entry point for programming topics — a vendor-neutral start for mapping the concept space.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7717,10 +8022,10 @@ window.LINKS = [
   "cat": "referans",
   "tags": [
    "ücretsiz",
-   "kopya kâğıdı"
+   "kopya-kâğıdı"
   ],
-  "tr": "Dil ve araçlar için tek sayfalık hızlı başvuru kâğıtları; tam dokümantasyona karşı sık kullanılanı öne çıkarır.",
-  "en": "One-page cheat sheets for languages and tools, surfacing the common cases instead of full documentation.",
+  "tr": "Dil ve araçlar için tek sayfalık başvuru kâğıtları; sık kullanılanı öne alıyor. Tam dokümantasyon aramanın hantal kaldığı durumlar için.",
+  "en": "One-page cheat sheets for languages and tools, surfacing the common cases — for when reaching into full documentation is too slow.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7732,8 +8037,8 @@ window.LINKS = [
    "ücretsiz",
    "bülten"
   ],
-  "tr": "Teknoloji ve ürün üzerine bülten; günlük haber akışına karşı seçilmiş ve yorumlanmış içerik sunar.",
-  "en": "A newsletter on technology and product — curated and interpreted content against the daily news feed.",
+  "tr": "Teknoloji ve ürün üzerine bülten; günlük haber akışına karşı seçilmiş ve yorumlanmış içerik.",
+  "en": "A newsletter on technology and product — curated, interpreted content against the daily feed.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7746,8 +8051,8 @@ window.LINKS = [
    "kitap",
    "simülasyon"
   ],
-  "tr": "Doğal sistemleri kodla simüle etmeyi anlatan ücretsiz kitap; matematiği görsel ve etkileşimli örneklerle vermesi ayırt edici.",
-  "en": "A free book on simulating natural systems in code, distinguished by delivering the maths through visual, interactive examples.",
+  "tr": "Doğal sistemleri (kuvvet, parçacık, sürü davranışı, hücresel otomat) kodla simüle etmeyi anlatan ücretsiz kitap. Matematiği etkileşimli örneklerle veriyor, formül yığını değil.",
+  "en": "A free book on simulating natural systems in code — forces, particles, flocking, cellular automata — delivering the maths through interactive examples rather than a pile of formulas.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7760,8 +8065,8 @@ window.LINKS = [
    "referans",
    "başlangıç"
   ],
-  "tr": "Web teknolojilerinin denenebilir örnekli referansı; MDN kadar kesin değil ama örnekleri tarayıcıda çalıştırabilmesiyle başlangıçta daha erişilebilir.",
-  "en": "A reference with runnable examples for web technologies — less rigorous than MDN, but more approachable for beginners.",
+  "tr": "Denenebilir örnekli web referansı. MDN kadar kesin değil ve zaman zaman güncelliğini yitiriyor, ama “Try it” düzenleyicisi başlangıçta gerçek bir avantaj.",
+  "en": "A web reference with runnable examples. Less rigorous than MDN and occasionally out of date, though the “Try it” editor is a genuine advantage early on.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7774,8 +8079,8 @@ window.LINKS = [
    "c",
    "referans"
   ],
-  "tr": "C standart kütüphane fonksiyonlarının örnekli referansı; hızlı kullanım örneği aradığında kılavuzdan pratik.",
-  "en": "An example-driven reference for C standard library functions — handier than the manual for a quick usage example.",
+  "tr": "C standart kütüphane fonksiyonlarının kısa ve örnekli referansı; hızlı kullanım örneği aradığında man sayfasından pratik.",
+  "en": "A short, example-driven reference for C standard library functions — handier than a man page when you just want a usage example.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7788,8 +8093,8 @@ window.LINKS = [
    "türkçe",
    "akademik"
   ],
-  "tr": "Türkçe bilgisayar mühendisliği ders notları ve terim açıklamaları arşivi; yerel kaynak kıtlığı olan konularda başvuru noktası.",
-  "en": "An archive of Turkish computer engineering lecture notes and term explanations — a reference point for topics with few local sources.",
+  "tr": "Türkçe bilgisayar mühendisliği ders notları ve terim açıklamaları arşivi. Veri yapıları ve algoritma konularında yerel kaynak kıtlığını kısmen kapatıyor.",
+  "en": "An archive of Turkish computer engineering lecture notes and term explanations, partly filling the local shortage on data structures and algorithms.",
   "cat_tr": "Referans & Koleksiyonlar",
   "cat_en": "Reference & Collections"
  },
@@ -7802,8 +8107,8 @@ window.LINKS = [
    "bilim",
    "kurum"
   ],
-  "tr": "Antarktika araştırma programının resmî portalı; kutup bilimi ve saha lojistiği üzerine birincil kaynak.",
-  "en": "The official portal of the Antarctic research programme — a primary source on polar science and field logistics.",
+  "tr": "Antarktika araştırma programının resmî portalı; saha lojistiği ve istasyon operasyonları üzerine belgeler var. Aşırı koşullarda çalışan sistemler için ilginç bir kaynak.",
+  "en": "The official portal of the Antarctic research programme, with material on field logistics and station operations — an interesting source on systems that work in extreme conditions.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7814,10 +8119,11 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "türkçe",
-   "veri"
+   "veri",
+   "akademik"
   ],
-  "tr": "TÜBİTAK’ın açık arşivi; yayınların yanında araştırma verisini de barındırması ayırt edici yanı.",
-  "en": "TÜBİTAK’s open archive, distinguished by hosting research data alongside publications.",
+  "tr": "TÜBİTAK’ın açık arşivi; yayının yanında araştırma verisini de barındırıyor. Veri paylaşımı Türkiye’de henüz yaygın değil, bu yüzden dikkate değer.",
+  "en": "TÜBİTAK’s open archive, hosting research data alongside publications. Data sharing is not yet common in Turkey, which makes it notable.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7830,8 +8136,8 @@ window.LINKS = [
    "türkçe",
    "bilim"
   ],
-  "tr": "Türkçe bilim ve felsefe yazıları üreten proje; popüler bilim ile akademik dil arasında bir yer tutuyor.",
-  "en": "A project publishing Turkish science and philosophy writing, sitting between popular science and academic register.",
+  "tr": "Türkçe bilim ve felsefe yazıları; popüler bilimin yüzeyselliği ile akademik dilin kapalılığı arasında bir yer tutuyor.",
+  "en": "Turkish science and philosophy writing that sits between the shallowness of popular science and the opacity of academic register.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7841,11 +8147,11 @@ window.LINKS = [
   "cat": "bilim",
   "tags": [
    "ücretsiz",
-   "akademik",
-   "ön baskı"
+   "ön-baskı",
+   "akademik"
   ],
-  "tr": "Fizik, matematik ve bilgisayar biliminin ön baskı arşivi; hakem sürecinden önce yayımlanması sayesinde alanın en güncel hâli burada.",
-  "en": "The preprint archive for physics, maths and computer science — publishing before peer review is why the field’s latest work appears here first.",
+  "tr": "Fizik, matematik ve bilgisayar biliminin ön baskı arşivi. Hakem sürecinden önce yayımlandığı için alanın en güncel hâli burada — ama denetimden geçmediğini akılda tutmak gerekiyor.",
+  "en": "The preprint archive for physics, maths and computer science. Publishing before peer review is why the field’s newest work appears here — and why it needs reading with that caveat.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7856,10 +8162,10 @@ window.LINKS = [
   "tags": [
    "freemium",
    "akademik",
-   "görselleştirme"
+   "graf"
   ],
-  "tr": "Bir makalenin etrafındaki literatür ağını haritalayan araç; kaynakça takibine karşı alanı görsel olarak keşfettirir.",
-  "en": "Maps the literature network around a paper, letting you explore a field visually instead of chasing bibliographies.",
+  "tr": "Bir makalenin etrafındaki literatürü benzerlik grafiği olarak çiziyor; öncüller ve türevler ayrı gösteriliyor. Yeni bir alana girerken haritayı hızlı çıkarıyor.",
+  "en": "Draws the literature around a paper as a similarity graph with prior and derivative work separated — a fast map when entering an unfamiliar field.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7872,8 +8178,8 @@ window.LINKS = [
    "harita",
    "arşiv"
   ],
-  "tr": "Yüksek çözünürlüklü tarihî harita arşivi; haritaları modern coğrafyaya bindirebilmesi ayırt edici yanı.",
-  "en": "A high-resolution historical map archive, distinguished by letting you overlay maps onto modern geography.",
+  "tr": "Yüksek çözünürlüklü tarihî harita arşivi; haritaları modern coğrafyaya bindirip karşılaştırabiliyorsun. Yer adı ve sınır değişimlerini izlemek için güçlü bir araç.",
+  "en": "A high-resolution historical map archive that lets you georeference maps onto modern geography — a strong tool for tracking place-name and border change.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7886,8 +8192,8 @@ window.LINKS = [
    "türkçe",
    "akademik"
   ],
-  "tr": "Türkiye akademik dergilerinin açık erişim platformu; Türkçe literatür taraması için birincil kaynak.",
-  "en": "Open-access platform for Turkish academic journals — the primary source for surveying Turkish-language literature.",
+  "tr": "Türkiye akademik dergilerinin açık erişim platformu; binin üzerinde dergi barındırıyor. Türkçe literatür taraması için birincil kaynak, başka yerde toplu bulunmuyor.",
+  "en": "The open-access platform for Turkish academic journals, hosting over a thousand titles — the primary source for Turkish literature, not aggregated anywhere else.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7900,8 +8206,8 @@ window.LINKS = [
    "türkçe",
    "arşiv"
   ],
-  "tr": "Türkiye’nin resmî arşiv kurumu; Osmanlı ve Cumhuriyet dönemi belgelerine erişim için birincil kapı.",
-  "en": "Turkey’s official archive institution — the primary gateway to Ottoman and Republican-era documents.",
+  "tr": "Türkiye’nin resmî arşiv kurumu; Osmanlı ve Cumhuriyet dönemi belgelerinin katalog ve dijital kopyalarına erişim kapısı.",
+  "en": "Turkey’s official archive institution and the gateway to catalogues and digital copies of Ottoman and Republican-era documents.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7911,11 +8217,11 @@ window.LINKS = [
   "cat": "bilim",
   "tags": [
    "ücretsiz",
-   "akademik",
-   "standart"
+   "standart",
+   "akademik"
   ],
-  "tr": "Akademik yayınların kalıcı tanımlayıcı sistemi; bağlantı çürümesine karşı atıfların uzun ömürlü kalmasını sağlar.",
-  "en": "The persistent identifier system for scholarly work, keeping citations durable against link rot.",
+  "tr": "Akademik yayınların kalıcı tanımlayıcı sistemi. Dergi sitesi taşınsa da DOI çalışmaya devam ediyor; atıflarda bağlantı çürümesine karşı tek sağlam çözüm.",
+  "en": "The persistent identifier system for scholarly work. A DOI keeps resolving when a journal site moves — the only solid answer to link rot in citations.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7928,8 +8234,8 @@ window.LINKS = [
    "türkçe",
    "felsefe"
   ],
-  "tr": "Zihin felsefesindeki ünlü düşünce deneylerinin Türkçe derlemesi; kavramları örnek üzerinden anlatması ayırt edici.",
-  "en": "A Turkish compilation of famous thought experiments in philosophy of mind, teaching concepts through examples.",
+  "tr": "Zihin felsefesindeki ünlü düşünce deneylerinin Türkçe derlemesi: Çin Odası, zombiler, Mary’nin odası. Yapay zeka tartışmalarının felsefi arka planı burada.",
+  "en": "A Turkish compilation of famous thought experiments in philosophy of mind — the Chinese Room, zombies, Mary’s room. The philosophical backdrop to current AI arguments.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7942,8 +8248,8 @@ window.LINKS = [
    "dilbilim",
    "referans"
   ],
-  "tr": "Dünya dillerinin standart kataloğu; konuşan sayısı ve canlılık durumunu sistematik vermesiyle referans kabul edilir.",
-  "en": "The standard catalogue of world languages, treated as a reference for its systematic speaker counts and vitality status.",
+  "tr": "Dünya dillerinin standart kataloğu; konuşan sayısı ve canlılık derecesi sistematik veriliyor. ISO 639-3 dil kodlarının kayıt otoritesi de bu.",
+  "en": "The standard catalogue of world languages with systematic speaker counts and vitality ratings. It is also the registration authority for ISO 639-3 language codes.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7956,8 +8262,8 @@ window.LINKS = [
    "türkçe",
    "sözlük"
   ],
-  "tr": "Türkçe sözcüklerin kökenini veren etimoloji sözlüğü; sözcüğün hangi dilden ne zaman geldiğini göstermesi ayırt edici.",
-  "en": "An etymological dictionary of Turkish, showing which language each word came from and when.",
+  "tr": "Türkçe sözcüklerin kökenini kaynak göstererek veren sözlük; hangi dilden ne zaman geçtiğini ve ilk kaydını gösteriyor. Nişanyan’ın çalışmasına dayanıyor.",
+  "en": "An etymological dictionary of Turkish citing its sources, showing which language each word came from, when, and its earliest attestation. Built on Nişanyan’s work.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7970,8 +8276,8 @@ window.LINKS = [
    "türkçe",
    "akademik"
   ],
-  "tr": "Türkiye’deki kurumsal akademik arşivleri tek noktadan aratan toplayıcı; üniversite üniversite gezmeye alternatif.",
-  "en": "A harvester searching Turkey’s institutional academic archives from one point, instead of visiting each university.",
+  "tr": "Türkiye’deki kurumsal akademik arşivleri tek noktadan aratan toplayıcı. Üniversite üniversite tez ve makale aramanın yerini alıyor.",
+  "en": "A harvester searching Turkey’s institutional academic archives from one place, replacing the university-by-university hunt for theses and articles.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7982,10 +8288,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "biyoloji",
-   "topluluk"
+   "vatandaş-bilimi"
   ],
-  "tr": "Doğa gözlemlerini paylaşıp tür tespiti yaptıran platform; kayıtların bilimsel veri olarak kullanılması ayırt edici yanı.",
-  "en": "A platform for sharing nature observations and getting species identified; its records feeding real scientific datasets is what sets it apart.",
+  "tr": "Doğa gözlemlerini paylaşıp tür tespiti yaptırıyorsun; topluluk doğruladığında kayıt araştırma kalitesinde sayılıp GBIF’e aktarılıyor. Hobinin gerçek veriye dönüştüğü nadir örnek.",
+  "en": "Share nature observations and get species identified; once the community confirms one, the record becomes research-grade and flows into GBIF. A rare case of a hobby producing real data.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -7998,8 +8304,8 @@ window.LINKS = [
    "türkçe",
    "arşiv"
   ],
-  "tr": "İstanbul Üniversitesi’nin tarihî gazete koleksiyonu; dönem araştırması için taranmış birincil kaynak.",
-  "en": "Istanbul University’s historical newspaper collection — scanned primary sources for period research.",
+  "tr": "İstanbul Üniversitesi’nin taranmış tarihî gazete koleksiyonu. Dönem araştırmasında birincil kaynak; ikincil literatürün atladığı ayrıntılar burada çıkıyor.",
+  "en": "Istanbul University’s scanned historical newspaper collection — primary sources for period research, where the details secondary literature skips turn up.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8009,11 +8315,11 @@ window.LINKS = [
   "cat": "bilim",
   "tags": [
    "ücretsiz",
-   "harita",
+   "graf",
    "öğrenme"
   ],
-  "tr": "Konuları ve aralarındaki bağlantıyı haritalayan öğrenme platformu; doğrusal müfredatın gizlediği komşulukları görünür kılar.",
-  "en": "A learning platform mapping topics and their connections, revealing the adjacencies a linear curriculum hides.",
+  "tr": "Konuları ve aralarındaki bağı haritalayan öğrenme platformu; doğrusal müfredatın gizlediği komşulukları görünür kılıyor.",
+  "en": "A learning platform mapping topics and their connections, making visible the adjacencies a linear curriculum hides.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8026,22 +8332,22 @@ window.LINKS = [
    "türkçe",
    "coğrafya"
   ],
-  "tr": "Türkiye ve çevresindeki yerleşim adlarının tarihsel envanteri; ad değişikliklerini kaynağıyla belgelemesi ayırt edici yanı.",
-  "en": "A historical inventory of settlement names in and around Turkey, documenting name changes with sources.",
+  "tr": "Türkiye ve çevresindeki yerleşim adlarının tarihsel envanteri; ad değişikliklerini tarih ve kaynağıyla belgeliyor. Başka hiçbir yerde bu sistematiklikte derlenmemiş.",
+  "en": "A historical inventory of settlement names in and around Turkey, documenting each change with date and source. Nothing else compiles this systematically.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
  {
   "url": "https://search.language-archives.org/?size=n_5_n",
-  "name": "Open Language Archives",
+  "name": "Open Language Archives (arama)",
   "cat": "bilim",
   "tags": [
    "ücretsiz",
    "dilbilim",
    "arşiv"
   ],
-  "tr": "Dil kaynaklarını tek noktadan arayan toplayıcı; özellikle belgelenmemiş diller üzerine materyal için.",
-  "en": "A harvester searching language resources from one point, especially for material on under-documented languages.",
+  "tr": "Dil kaynaklarını dağınık kurum arşivlerinden tek noktada aratıyor; özellikle belgelenmemiş ve tehlike altındaki diller için materyal bulmaya yarıyor.",
+  "en": "Searches language resources across scattered institutional archives from one place, particularly useful for material on under-documented and endangered languages.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8052,10 +8358,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "dilbilim",
-   "arşiv"
+   "standart"
   ],
-  "tr": "Dil kaynağı arşivlerini ortak standartla birleştiren topluluk; dağınık üniversite arşivlerini tek katalogda toplar.",
-  "en": "A community uniting language resource archives under a shared standard, gathering scattered university archives into one catalogue.",
+  "tr": "Dil kaynağı arşivlerini ortak meta veri standardında birleştiren topluluk. Dağınık üniversite koleksiyonlarının aranabilir hâle gelmesini sağlayan altyapı.",
+  "en": "A community uniting language resource archives under a shared metadata standard — the infrastructure that makes scattered university collections searchable.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8066,10 +8372,10 @@ window.LINKS = [
   "tags": [
    "ücretli",
    "akademik",
-   "yayın"
+   "dergi"
   ],
-  "tr": "Oxford University Press dergi platformu; büyük yayıncı arşivlerinden biri, çoğu içerik abonelik gerektiriyor.",
-  "en": "Oxford University Press’s journal platform — one of the major publisher archives, mostly subscription-gated.",
+  "tr": "Oxford University Press dergi platformu. Büyük yayıncı arşivlerinden biri; içeriğin çoğu abonelik arkasında, açık erişim makaleler ayrıca işaretli.",
+  "en": "Oxford University Press’s journal platform, one of the major publisher archives. Most content sits behind subscription, with open-access articles separately marked.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8082,8 +8388,8 @@ window.LINKS = [
    "akademik",
    "arama"
   ],
-  "tr": "Yapay zeka destekli akademik arama; Google Scholar’dan farkı, atıfların bağlamını ve etkisini çözümlemesi.",
-  "en": "AI-powered academic search; unlike Google Scholar it analyses the context and influence of citations.",
+  "tr": "Atıfların bağlamını çözümleyip “bu makale destekleniyor mu eleştiriliyor mu” sorusuna cevap veriyor. Google Scholar sayı verir, bu yönü söyler.",
+  "en": "Analyses citation context to answer whether a paper is being supported or criticised. Google Scholar gives you a count; this gives you a direction.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8096,8 +8402,8 @@ window.LINKS = [
    "referans",
    "standart"
   ],
-  "tr": "Ölçü birimi ön eklerinin resmî tablosu; birim dönüşümlerinde otoriter kaynak.",
-  "en": "The official table of unit prefixes — the authoritative source for unit conversions.",
+  "tr": "Ölçü birimi ön eklerinin resmî tablosu; ronna ve quetta gibi yeni eklenenler dahil. Birim dönüşümünde otoriter kaynak.",
+  "en": "The official table of unit prefixes, including recent additions like ronna and quetta — the authoritative reference for unit conversion.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8108,10 +8414,10 @@ window.LINKS = [
   "tags": [
    "ücretsiz",
    "havacılık",
-   "referans"
+   "güvenlik"
   ],
-  "tr": "Havacılık emniyeti bilgi tabanı; kaza analizleri ve insan faktörleri konusunda güvenlik mühendisliğine de örnek teşkil eder.",
-  "en": "An aviation safety knowledge base whose accident analyses and human-factors material double as safety engineering case studies.",
+  "tr": "Havacılık emniyeti bilgi tabanı; kaza analizleri, insan faktörleri ve emniyet yönetim sistemleri. Yüksek güvenilirlikli sistem tasarımı üzerine düşünen herkes için kullanılabilir bir arşiv.",
+  "en": "An aviation safety knowledge base of accident analyses, human factors and safety management systems — a usable archive for anyone thinking about high-reliability system design.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8121,10 +8427,11 @@ window.LINKS = [
   "cat": "bilim",
   "tags": [
    "ücretsiz",
-   "astronomi"
+   "astronomi",
+   "veri"
   ],
-  "tr": "Gökyüzü gözlem verilerini gezmek için görsel arayüz; teleskop görüntülerini konuma göre keşfetmeye yarıyor.",
-  "en": "A visual interface for exploring sky survey data, letting you browse telescope imagery by position.",
+  "tr": "Gökyüzü tarama verilerini konuma göre gezdiriyor; teleskop görüntülerini üst üste bindirip farklı dalga boylarında karşılaştırabiliyorsun.",
+  "en": "Browses sky survey data by position, letting you overlay telescope imagery and compare across wavelengths.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8133,12 +8440,12 @@ window.LINKS = [
   "name": "Stellarium Web",
   "cat": "bilim",
   "tags": [
-   "ücretsiz",
-   "açık kaynak",
-   "astronomi"
+   "açık-kaynak",
+   "astronomi",
+   "tarayıcı-içi"
   ],
-  "tr": "Tarayıcıda çalışan gökyüzü haritası; kurulum gerektirmeden bulunduğun konumun gerçek gökyüzünü gösteriyor.",
-  "en": "A sky map in the browser, showing the real sky for your location with no installation.",
+  "tr": "Bulunduğun konumun gerçek gökyüzünü tarayıcıda gösteriyor; zamanı ileri sarıp gezegen konumlarını görebiliyorsun. Kurulum gerektirmiyor.",
+  "en": "Shows the real sky for your location in the browser, with time you can wind forward to see planetary positions. No installation.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8149,10 +8456,11 @@ window.LINKS = [
   "tags": [
    "freemium",
    "türkçe",
-   "ocr"
+   "ocr",
+   "arşiv"
   ],
-  "tr": "Osmanlı Türkçesi matbu metinleri için el yazısı/metin tanıma modeli; genel OCR araçlarının okuyamadığı arşiv belgelerini çözer.",
-  "en": "A text-recognition model for printed Ottoman Turkish, handling archive documents general OCR tools cannot read.",
+  "tr": "Osmanlı Türkçesi matbu metinler için eğitilmiş metin tanıma modeli. Genel OCR araçları Arap harfli Türkçeyi okuyamıyor; arşiv araştırmasında bu boşluk kritik.",
+  "en": "A text-recognition model trained on printed Ottoman Turkish. General OCR cannot read Arabic-script Turkish, and that gap is critical in archive research.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8164,8 +8472,8 @@ window.LINKS = [
    "ücretsiz",
    "referans"
   ],
-  "tr": "Vikipedi’nin konu portallerinin dizini; rastgele arama yerine bir alana yapılandırılmış giriş sunar.",
-  "en": "An index of Wikipedia’s topic portals, offering a structured entry into a field instead of random search.",
+  "tr": "Vikipedi’nin konu portalleri dizini; rastgele arama yerine bir alana yapılandırılmış giriş. Yeni bir konuya haritasız girmemek için.",
+  "en": "An index of Wikipedia’s topic portals — a structured way into a field instead of random search, and a way not to enter a new subject without a map.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8174,12 +8482,12 @@ window.LINKS = [
   "name": "Wiki Graph",
   "cat": "bilim",
   "tags": [
-   "ücretsiz",
-   "açık kaynak",
-   "görselleştirme"
+   "açık-kaynak",
+   "görselleştirme",
+   "graf"
   ],
-  "tr": "Vikipedi maddelerinin bağlantı ağını graf olarak gezdiren araç; kavramlar arası ilişkiyi metin okumadan görmek için.",
-  "en": "Explores Wikipedia’s link network as a graph, showing relationships between concepts without reading the text.",
+  "tr": "Vikipedi maddelerinin bağlantı ağını graf olarak gezdiriyor. Kavramlar arası uzaklığı metin okumadan görmek, bir alanın yapısını hızlı çıkarıyor.",
+  "en": "Explores Wikipedia’s link network as a graph. Seeing conceptual distance without reading the text sketches a field’s structure quickly.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8192,8 +8500,8 @@ window.LINKS = [
    "medya",
    "arşiv"
   ],
-  "tr": "Serbestçe kullanılabilir görsel ve medya arşivi; lisans durumunun her dosyada açıkça belirtilmesi ayırt edici yanı.",
-  "en": "An archive of freely usable images and media, distinguished by stating the licence explicitly on every file.",
+  "tr": "Serbestçe kullanılabilir görsel ve medya arşivi; lisans her dosyada açıkça yazılı. Sunum ya da yayın için görsel ararken hukuki belirsizliği ortadan kaldırıyor.",
+  "en": "An archive of freely usable images and media with the licence stated explicitly on every file, which removes the legal ambiguity when sourcing visuals for a talk or publication.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  },
@@ -8203,10 +8511,11 @@ window.LINKS = [
   "cat": "bilim",
   "tags": [
    "freemium",
-   "hesaplama"
+   "hesaplama",
+   "matematik"
   ],
-  "tr": "Hesaplamalı bilgi motoru; arama motorlarından farkı, sonucu bulmak yerine adım adım hesaplaması.",
-  "en": "A computational knowledge engine; unlike search engines it computes the answer step by step rather than finding it.",
+  "tr": "Hesaplamalı bilgi motoru: integral alıyor, birim çeviriyor, veri karşılaştırıyor. Arama motoru cevabı bulur, bu hesaplar — ücretli katmanda adım adım çözümü de gösteriyor.",
+  "en": "A computational knowledge engine that integrates, converts units and compares data. A search engine finds the answer; this computes it, showing the working step by step in the paid tier.",
   "cat_tr": "Bilim & Akademik",
   "cat_en": "Science & Academia"
  }
