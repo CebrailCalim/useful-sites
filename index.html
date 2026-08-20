@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Teknoloji Bağlantıları</title>
+<title>Kullanışlı Siteler</title>
 <meta name="description" content="Yazılım, yapay zeka, güvenlik ve donanım üzerine elle derlenmiş bağlantı dizini. Her kayıtta ne işe yaradığı ve benzerlerinden farkı yazılı.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>▤</text></svg>">
 <style>
@@ -322,7 +322,7 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
 <header>
   <div class="masthead">
     <div>
-      <h1 id="t-title">Teknoloji Bağlantıları</h1>
+      <h1 id="t-title">Kullanışlı Siteler</h1>
       <p class="sub" id="t-sub"></p>
     </div>
     <div class="hdr-actions">
@@ -411,7 +411,7 @@ var REPO     = "https://github.com/CebrailCalim/useful-sites";
 
 var T = {
   tr:{
-    title:"Teknoloji Bağlantıları",
+    title:"Kullanışlı Siteler",
     sub:"Yazılım, yapay zeka, güvenlik ve donanım üzerine elle derlenmiş bir dizin. Her kayıtta bağlantının ne yaptığı ve komşularından nerede ayrıldığı yazılı.",
     ph:"Ara — İsim, Açıklama, Etiket, Alan Adı",
     count:function(n,t){return n+" / "+t+" Bağlantı"},
@@ -458,7 +458,7 @@ var T = {
     kb:'<kbd>/</kbd> Ara · <kbd>r</kbd> Rastgele · <kbd>Esc</kbd> Temizle'
   },
   en:{
-    title:"Technology Links",
+    title:"Useful Sites",
     sub:"A hand-curated directory covering software, AI, security and hardware. Every entry states what the thing does and where it parts ways with its neighbours.",
     ph:"Search — name, description, tag, domain",
     count:function(n,t){return n+" / "+t+" Links"},
@@ -706,6 +706,7 @@ function block(key, label, items, L, showYear, cat){
 function render(){
   var L = T[lang];
   document.documentElement.lang = lang;
+  document.title            = L.title;
   $("#t-title").textContent = L.title;
   $("#t-sub").textContent   = L.sub;
   $("#q").placeholder       = L.ph;
@@ -876,7 +877,7 @@ $("#dl").addEventListener("change", function(e){
   var base = "baglantilar-" + (activeCat || "tumu");
   if(kind === "json"){
     download(base + ".json", JSON.stringify({
-      source:"Teknoloji Bağlantıları", checked:CHECKED, lang:lang,
+      source:"Kullanışlı Siteler", checked:CHECKED, lang:lang,
       filter:{q:q||null, category:activeCat, tags:activeTags, source:activeSrc,
               picksOnly:onlyPicks, sort:sortBy},
       count:rows.length, links:rows
