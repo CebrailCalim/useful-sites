@@ -1,0 +1,4 @@
+data/*.json
+data/worklist.txt
+__pycache__/
+*.pyc
