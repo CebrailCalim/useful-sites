@@ -342,19 +342,6 @@ window.LINKS = [
   "cat_en": "Learning & Roadmaps"
  },
  {
-  "url": "https://learn-anything.xyz/c-libraries",
-  "name": "Learn Anything",
-  "cat": "ogrenme",
-  "tags": [
-   "ücretsiz",
-   "harita"
-  ],
-  "tr": "Konular arası bağlantıyı graf olarak gösteren öğrenme haritası; doğrusal müfredatlardan farkı komşu konuları görünür kılması.",
-  "en": "A learning map showing topics as a connected graph; unlike linear curricula it makes neighbouring subjects visible.",
-  "cat_tr": "Öğrenme & Yol Haritaları",
-  "cat_en": "Learning & Roadmaps"
- },
- {
   "url": "https://learning.lpi.org/en/",
   "name": "Linux Professional Institute",
   "cat": "ogrenme",
@@ -2448,20 +2435,6 @@ window.LINKS = [
  },
  {
   "url": "https://servicedesk-simulator.com/",
-  "name": "ServiceDesk Simulator",
-  "cat": "ag",
-  "tags": [
-   "freemium",
-   "it destek",
-   "simülasyon"
-  ],
-  "tr": "Yardım masası biletleriyle çalışmayı simüle eden ortam; teorik IT destek eğitimlerine karşı gerçek vaka pratiği sunar.",
-  "en": "Simulates working helpdesk tickets — real case practice against theoretical IT support courses.",
-  "cat_tr": "Ağ & Sistem Yönetimi",
-  "cat_en": "Networking & Sysadmin"
- },
- {
-  "url": "https://servicedesk-simulator.com/#ticket/INC0012871/ad",
   "name": "ServiceDesk Simulator",
   "cat": "ag",
   "tags": [

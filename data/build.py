@@ -61,11 +61,17 @@ def cat_of(path):
     return 'araclar'
 
 
+# ayni kaynagin ikinci URL bicimi - listede tekrar gostermeye gerek yok
+SKIP = {
+    'servicedesk-simulator.com/#ticket/inc0012871/ad',
+    'learn-anything.xyz/c-libraries',
+}
+
 out, missing = [], []
 seen = set()
 for m in meta:
     k = key(m['url'])
-    if k in seen:
+    if k in seen or k in SKIP:
         continue
     seen.add(k)
     n = NOTES.get(k)
