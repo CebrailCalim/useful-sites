@@ -29,7 +29,7 @@ CANON = [
     'güvenlik', 'osint', 'gizlilik', 'ağ', 'donanım', 'gömülü', 'cad',
     'veri-bilimi', 'akademik', 'kuantum',
     # --- bağlam
-    'türkçe', 'mülakat', 'sertifika',
+    'türkçe', 'mülakat', 'sertifika', 'arşivlenmiş',
 ]
 
 ALIAS = {

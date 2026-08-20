@@ -1,11 +1,15 @@
-name: Bağlantı kontrolü
+name: Bağlantı ve depo sağlığı
 
-# Dizinin tek gerçek düşmanı çürüme. Haftada bir tarayıp ölenleri
-# tek bir issue'da toplar; her hafta yeni issue açmak yerine aynısını günceller.
+# Dizinin tek gerçek düşmanı çürüme. İki ayrı çürüme biçimi var:
+#   1. Bağlantı ölür        -> ci_check.py yakalar
+#   2. Depo arşivlenir      -> ci_check.py yakalayamaz, sayfa 200 döner.
+#                              ci_github.py yakalar.
+# İkisinin raporu tek issue'da toplanıyor; her hafta yenisi açılmıyor,
+# aynı issue güncelleniyor.
 on:
   schedule:
     - cron: "17 4 * * 1"        # her pazartesi 04:17 UTC
-  workflow_dispatch:            # elle de tetiklenebilir
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,12 +25,16 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install requests
+      - run: pip install --quiet requests
 
       - name: Bağlantıları tara
         run: python data/ci_check.py
-        # rapor.md ve exit kodu üretir; ölü link varsa 1 döner ama
-        # continue-on-error ile iş akışı devam eder, issue yine açılır
+        continue-on-error: true      # ölü link bulunca 1 döner, akış devam etmeli
+
+      - name: GitHub depolarını denetle
+        run: python data/ci_github.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
 
       - name: Raporu issue olarak yaz
@@ -34,18 +42,31 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            if (!fs.existsSync('rapor.md')) {
-              core.info('rapor.md yok, ölü bağlantı bulunmamış olabilir');
-              return;
+            const parts = [];
+            for (const f of ['rapor.md', 'rapor-github.md']) {
+              if (fs.existsSync(f)) parts.push(fs.readFileSync(f, 'utf8'));
             }
-            const body = fs.readFileSync('rapor.md', 'utf8');
-            const title = 'Ölü bağlantı raporu';
-            const { owner, repo } = context.repo;
 
+            const { owner, repo } = context.repo;
             const existing = await github.rest.issues.listForRepo({
               owner, repo, state: 'open', labels: 'link-check'
             });
 
+            if (!parts.length) {
+              core.info('temiz — rapor üretilmedi');
+              if (existing.data.length) {
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: existing.data[0].number,
+                  body: 'Bu haftaki taramada sorun bulunmadı. Kapatıyorum.'
+                });
+                await github.rest.issues.update({
+                  owner, repo, issue_number: existing.data[0].number, state: 'closed'
+                });
+              }
+              return;
+            }
+
+            const body = parts.join('\n\n---\n\n');
             if (existing.data.length) {
               await github.rest.issues.update({
                 owner, repo, issue_number: existing.data[0].number, body
@@ -53,7 +74,8 @@ jobs:
               core.info(`#${existing.data[0].number} güncellendi`);
             } else {
               await github.rest.issues.create({
-                owner, repo, title, body, labels: ['link-check']
+                owner, repo, title: 'Bakım: ölü bağlantılar ve terk edilmiş depolar',
+                body, labels: ['link-check']
               });
               core.info('yeni issue açıldı');
             }

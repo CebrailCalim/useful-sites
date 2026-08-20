@@ -3,3 +3,4 @@ data/worklist.txt
 __pycache__/
 *.pyc
 rapor.md
+rapor-github.md

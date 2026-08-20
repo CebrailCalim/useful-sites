@@ -235,11 +235,13 @@ def load(add):
         'ne zaman eklendiğine bakmak için.',
         'The source repository behind the Free for Developers list — for contributing or checking when a service '
         'was added.', R)
-    add('https://github.com/sdmg15/Best-websites-a-programmer-should-visit', 'Programcının Ziyaret Etmesi Gereken Siteler', ['github', 'awesome-liste'],
-        'Kullanım amacına göre gruplanmış geliştirici bağlantı derlemesi: alıştırma, haber, '
-        'araç, kitap. Konu bazlı listelerden farklı bir kesit veriyor.',
-        'A developer link collection grouped by purpose — practice, news, tools, books — '
-        'which cuts the space differently from topic-based lists.', R)
+    add('https://github.com/sdmg15/Best-websites-a-programmer-should-visit', 'Programcının Ziyaret Etmesi Gereken Siteler', ['github', 'awesome-liste', 'arşivlenmiş'],
+        'Kullanım amacına göre gruplanmış geliştirici bağlantı derlemesi: alıştırma, haber, araç, kitap. '
+        '76 bin yıldıza rağmen 1 Kasım 2025’te arşivlendi — artık salt okunur, ölü bağlantılar temizlenmiyor. '
+        'Tarihsel bir kesit olarak değerli, güncel kaynak olarak değil.',
+        'A developer link collection grouped by purpose — practice, news, tools, books. '
+        'Despite 76k stars it was archived on 1 November 2025 and is now read-only, so dead links no longer get pruned. '
+        'Valuable as a snapshot, not as a current source.', R)
     add('https://github.com/exercism/problem-specifications', 'Exercism Problem Şartnameleri', ['açık-kaynak', 'github', 'alıştırma'],
         'Exercism alıştırmalarının dilden bağımsız tanımları ve test verileri. '
         'Kendi dilinde alıştırma seti kurmak isteyenler için hazır malzeme.',
