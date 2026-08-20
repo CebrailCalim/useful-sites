@@ -1,8 +1,10 @@
 # Useful Sites
 
+It was created by AI.
+
 https://cebrailcalim.github.io/useful-sites/
 
-A directory of 717 links on software, AI, security, hardware and science.
+A directory of links on software, AI, security, hardware and science.
 
 The links are not the point. The sentence under each one is.
 
