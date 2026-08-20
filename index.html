@@ -204,6 +204,63 @@ footer{
 footer kbd{font:12px var(--mono);border:1px solid var(--rule);border-radius:3px;padding:2px 5px;color:var(--dim)}
 footer a{color:var(--dim)}
 
+/* ---------------------------------------------------------------- gönderme */
+dialog#sub{
+  border:1px solid var(--rule);border-radius:4px;padding:0;
+  background:var(--bg);color:var(--fg);
+  width:min(660px,calc(100vw - 32px));max-height:calc(100vh - 48px);
+}
+dialog#sub::backdrop{background:rgba(0,0,0,.45)}
+.sub-h{display:flex;align-items:baseline;gap:12px;padding:20px 22px 0}
+.sub-h h2{margin:0;font-size:19px;font-weight:600;letter-spacing:-.012em}
+.sub-h .btn{margin-left:auto}
+.sub-tabs{display:flex;padding:14px 22px 0;border-bottom:1px solid var(--rule)}
+.sub-tabs button{
+  font:12.5px/1 var(--mono);color:var(--dim);background:none;border:0;
+  border-bottom:2px solid transparent;padding:10px 13px;cursor:pointer;
+  transition:color .12s var(--step),border-color .12s var(--step);
+}
+.sub-tabs button:hover{color:var(--fg)}
+.sub-tabs button[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.sub-body{padding:18px 22px 4px;overflow-y:auto;max-height:calc(100vh - 250px)}
+.fld{margin:0 0 14px}
+.fld label{
+  display:block;font:11.5px/1 var(--mono);color:var(--faint);
+  text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;
+}
+.fld input,.fld textarea,.fld select{
+  width:100%;font:15px/1.55 var(--sans);color:var(--fg);background:var(--bg);
+  border:1px solid var(--rule);border-radius:3px;padding:9px 11px;
+}
+.fld textarea{resize:vertical;min-height:62px}
+.fld input:focus,.fld textarea:focus,.fld select:focus{
+  outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.sub-note{font-size:13.5px;color:var(--dim);line-height:1.68;margin:0 0 16px}
+.sub-note b{color:var(--fg);font-weight:600}
+.sub-warn{color:var(--accent);font-size:13.5px;line-height:1.6;margin:8px 0 0;min-height:1px}
+.drop{
+  border:1px dashed var(--rule);border-radius:4px;padding:30px 18px;
+  text-align:center;color:var(--dim);font-size:14.5px;line-height:1.6;cursor:pointer;
+  transition:border-color .12s var(--step),background .12s var(--step),color .12s var(--step);
+}
+.drop:hover,.drop.over{border-color:var(--accent);background:var(--accent-soft);color:var(--fg)}
+.drop code{font:12.5px var(--mono);color:var(--faint)}
+.stat{
+  font:12.5px/1.7 var(--mono);color:var(--dim);margin:16px 0 0;
+  padding-top:12px;border-top:1px solid var(--rule);
+}
+.stat b{color:var(--accent);font-weight:500;font-variant-numeric:tabular-nums}
+.plist{margin:10px 0 0;max-height:210px;overflow-y:auto}
+.plist div{padding:8px 0;border-bottom:1px solid var(--rule);font-size:14.5px;line-height:1.45}
+.plist div:last-child{border-bottom:0}
+.plist span{display:block;font:11.5px var(--mono);color:var(--faint);word-break:break-all;margin-top:2px}
+.sub-f{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:16px 22px 20px}
+.sub-f .msg{font:12px/1.5 var(--mono);color:var(--faint);margin-left:auto;text-align:right}
+.btn.primary{color:var(--accent);border-color:var(--accent)}
+.btn.primary:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+.btn:disabled{opacity:.35;cursor:default}
+.btn:disabled:hover{color:var(--dim);border-color:var(--rule);background:none}
+
 @media (max-width:1080px){ .grid{grid-template-columns:1fr} }
 
 @media (max-width:900px){
@@ -242,6 +299,13 @@ footer a{color:var(--dim)}
   .badge,.age{font-size:11px}
   #top{right:14px;bottom:14px;padding:13px 15px}
   footer{font-size:13.5px}
+
+  dialog#sub{width:100vw;max-width:100vw;max-height:100vh;border-radius:0;border-width:1px 0 0}
+  .sub-h,.sub-tabs,.sub-body,.sub-f{padding-left:16px;padding-right:16px}
+  .sub-body{max-height:calc(100vh - 268px)}
+  .sub-tabs button{min-height:44px;flex:1}
+  .sub-f .btn{min-height:44px;flex:1 1 auto}
+  .sub-f .msg{flex:1 1 100%;margin-left:0;text-align:left}
 }
 
 @media (max-width:380px){
@@ -262,6 +326,7 @@ footer a{color:var(--dim)}
       <p class="sub" id="t-sub"></p>
     </div>
     <div class="hdr-actions">
+      <button class="btn" id="addbtn" type="button"></button>
       <button class="btn" id="rand" type="button"></button>
       <label class="sel"><span id="l-dl"></span>
         <select id="dl" aria-label="Dışa Aktar"></select></label>
@@ -292,6 +357,46 @@ footer a{color:var(--dim)}
 
 <footer id="foot"></footer>
 </div>
+
+<dialog id="sub">
+  <div class="sub-h">
+    <h2 id="s-title"></h2>
+    <button class="btn" id="s-close" type="button" aria-label="Kapat">✕</button>
+  </div>
+  <div class="sub-tabs" role="tablist">
+    <button type="button" id="s-t1" role="tab" aria-selected="true"></button>
+    <button type="button" id="s-t2" role="tab" aria-selected="false"></button>
+  </div>
+
+  <div class="sub-body">
+    <p class="sub-note" id="s-note"></p>
+
+    <div id="s-one">
+      <div class="fld"><label for="f-url">URL</label>
+        <input id="f-url" type="url" inputmode="url" placeholder="https://…"></div>
+      <div class="fld"><label for="f-name" id="l-name"></label>
+        <input id="f-name" type="text"></div>
+      <div class="fld"><label for="f-cat" id="l-cat"></label>
+        <select id="f-cat"></select></div>
+      <div class="fld"><label for="f-what" id="l-what"></label>
+        <textarea id="f-what"></textarea></div>
+      <div class="fld"><label for="f-diff" id="l-diff"></label>
+        <textarea id="f-diff"></textarea></div>
+      <p class="sub-warn" id="s-warn"></p>
+    </div>
+
+    <div id="s-bulk" hidden>
+      <div class="drop" id="s-drop" tabindex="0" role="button"></div>
+      <input id="s-file" type="file" accept=".html,.htm,.json,.csv,.txt" hidden>
+      <div id="s-res" hidden>
+        <p class="stat" id="s-stat"></p>
+        <div class="plist" id="s-plist"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-f" id="s-foot"></div>
+</dialog>
 
 <button class="btn" id="top" type="button" title="Yukarı">↑</button>
 
@@ -329,6 +434,27 @@ var T = {
          'Açıklamalar projelerin kendi belgelerine bakılarak yazıldı; karşılaştırmalı yargılar derleyene ait. '+
          'Ölü ya da hatalı bir kayıt görürsen <a href="'+REPO+'/issues/new/choose">bildir</a> — '+
          'yeni bağlantı önerileri de aynı yerden.',
+    add:"Bağlantı Gönder",
+    sTitle:"Bağlantı Gönder",
+    sTab1:"Tek Bağlantı", sTab2:"Dosyadan Toplu",
+    sNote:"Gönderdiğin şey <b>GitHub issue’su olarak açılır</b>, siteye kendiliğinden düşmez. "+
+          'Derleyen bakar, açıklamayı yazar, uygun bulursa bir sonraki derlemede girer.',
+    sNoteB:'Dosya <b>tarayıcında okunur</b>, hiçbir yere yüklenmez. '+
+           'Dizinde zaten olanlar ayıklanır, geriye yalnızca yeni olanlar kalır.',
+    lName:"İsim", lCat:"Kategori",
+    lWhat:"Ne İşe Yarıyor?", lDiff:"Benzerlerinden Farkı Ne?",
+    phWhat:"Bir iki cümle. Pazarlama metni değil, ne yaptığı.",
+    phDiff:"Aynı işi yapan başka bir şeye karşı neden bu? Bilmiyorsan “bilmiyorum” yaz.",
+    catAsk:"Emin Değilim",
+    dupWarn:function(n){ return "Bu bağlantı dizinde zaten var: " + n },
+    needUrl:"Önce bir URL yaz.",
+    drop:'Yer imi dosyanı buraya sürükle ya da <u>seçmek için tıkla</u><br><code>.html · .json · .csv</code>',
+    stat:function(a,b,c){ return "Okunan: "+a+" · Zaten Dizinde: "+b+" · Yeni: "+c },
+    noneNew:"Yeni bağlantı çıkmadı — hepsi dizinde zaten var.",
+    badFile:"Dosya okunamadı. Yer imi dışa aktarımı (.html), JSON ya da CSV bekleniyor.",
+    tooBig:function(n){ return n+" bağlantı issue adresine sığmaz. Dosyayı indir, issue'ya ekle." },
+    bIssue:"GitHub'da Aç", bCopy:"Kopyala", bJson:"JSON İndir", bCsv:"CSV İndir",
+    copied:"Kopyalandı",
     kb:'<kbd>/</kbd> Ara · <kbd>r</kbd> Rastgele · <kbd>Esc</kbd> Temizle'
   },
   en:{
@@ -355,6 +481,27 @@ var T = {
          "Descriptions are written from each project's own documentation; comparative judgements are the curator's. "+
          'Spotted a dead or wrong entry? <a href="'+REPO+'/issues/new/choose">Tell me</a> — '+
          'link suggestions go to the same place.',
+    add:"Submit a Link",
+    sTitle:"Submit a Link",
+    sTab1:"Single Link", sTab2:"Bulk From File",
+    sNote:'What you send <b>opens as a GitHub issue</b>; it does not appear on the site by itself. '+
+          'The curator reads it, writes the description, and it goes in on the next build if it fits.',
+    sNoteB:'The file is <b>read in your browser</b> and uploaded nowhere. '+
+           'Anything already in the directory is filtered out, leaving only what is new.',
+    lName:"Name", lCat:"Category",
+    lWhat:"What Does It Do?", lDiff:"How Does It Differ?",
+    phWhat:"A sentence or two. Not marketing copy — what it does.",
+    phDiff:"Why this over something else doing the same job? If you don't know, write so.",
+    catAsk:"Not Sure",
+    dupWarn:function(n){ return "Already in the directory: " + n },
+    needUrl:"Enter a URL first.",
+    drop:'Drop your bookmark file here, or <u>click to choose one</u><br><code>.html · .json · .csv</code>',
+    stat:function(a,b,c){ return "Read: "+a+" · Already Here: "+b+" · New: "+c },
+    noneNew:"Nothing new — every one of these is already in the directory.",
+    badFile:"Could not read the file. Expecting a bookmark export (.html), JSON or CSV.",
+    tooBig:function(n){ return n+" links will not fit in an issue URL. Download the file and attach it." },
+    bIssue:"Open On GitHub", bCopy:"Copy", bJson:"Download JSON", bCsv:"Download CSV",
+    copied:"Copied",
     kb:'<kbd>/</kbd> Search · <kbd>r</kbd> Random · <kbd>Esc</kbd> Clear'
   }
 };
@@ -576,6 +723,8 @@ function render(){
   $("#dl").innerHTML = '<option value="">'+esc(L.exportLbl)+'</option>'+
     '<option value="json">JSON</option><option value="csv">CSV</option>';
   $("#dl").value = "";
+
+  paintSub();
 
   $("#l-lang").textContent = lang.toUpperCase();
   $("#lang").innerHTML = '<option value="tr"'+(lang==="tr"?' selected':'')+'>TR</option>'+
@@ -802,11 +951,329 @@ topBtn.addEventListener("click", scrollTop);
 window.__syncTop = syncTop;
 
 document.addEventListener("keydown", function(e){
+  /* Diyalog acikken / ve r araya girmesin; Esc'yi <dialog> kendi yakaliyor. */
+  if(dlg.open) return;
   var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
   if(e.key === "/" && !typing){ e.preventDefault(); $("#q").focus() }
   if(e.key === "r" && !typing && !e.ctrlKey && !e.metaKey && !e.altKey){ randomLink() }
   if(e.key === "Escape"){ clearAll(); $("#q").blur() }
 });
+
+/* ------------------------------------------------------- bağlantı gönderme
+   Arka uç yok, olmayacak da. Gönderilen şey doğrudan GitHub issue'suna
+   gidiyor; dizinin verisi ancak build.py çalışıp push edilince değişiyor.
+   Yani buradan hiçbir şey siteye kendiliğinden düşmez, önce insan bakar.
+
+   Dosyalar da tarayıcıda okunuyor. Yer imi dışa aktarımın kişisel şeyler
+   içerebilir; hiçbiri bir yere yüklenmiyor, yükleyecek yer de yok. */
+
+var dlg = $("#sub"), subTab = "one", bulkNew = [], bulkStat = null;
+
+function nkey(u){
+  return String(u).trim().toLowerCase()
+    .replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/+$/, "");
+}
+function bare(k){ return k.replace(/[?#].*$/, "").replace(/\/+$/, "") }
+
+/* Dizide olanların indeksi. Hem tam hem sorgusuz biçimi tutuluyor:
+   aynı sayfa "?utm_source=…" ile gelirse ayrı kayıt sayılmasın. */
+var HAVE = {};
+data.forEach(function(d){
+  var k = nkey(d.url);
+  HAVE[k] = d.name;
+  if(!HAVE[bare(k)]) HAVE[bare(k)] = d.name;
+});
+function known(u){ var k = nkey(u); return HAVE[k] || HAVE[bare(k)] || null }
+
+function unent(t){ var e = document.createElement("textarea"); e.innerHTML = t; return e.value }
+
+/* Netscape yer imi dışa aktarımı — Chrome, Firefox, Edge, Safari hepsi bunu üretir. */
+function parseBM(txt){
+  var out = [], re = /<a\s[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, m;
+  while((m = re.exec(txt))){
+    if(!/^https?:/i.test(m[1])) continue;
+    out.push({ url: unent(m[1]), name: unent(m[2].replace(/<[^>]*>/g, "")).trim() });
+  }
+  return out;
+}
+
+function parseJS(txt){
+  var j = JSON.parse(txt);
+  var arr = Array.isArray(j) ? j : (j.links || j.items || j.data || j.bookmarks || []);
+  if(!Array.isArray(arr)) return [];
+  return arr.map(function(x){
+    if(typeof x === "string") return { url: x, name: "" };
+    if(!x || typeof x !== "object") return { url: "", name: "" };
+    return { url: x.url || x.href || x.link || x.uri || "",
+             name: x.name || x.title || x.label || "" };
+  }).filter(function(x){ return /^https?:/i.test(x.url) });
+}
+
+/* Ayraç başlık satırından anlaşılıyor: Türkçe Excel ';' yazıyor, geri kalanı ','. */
+function parseCSV(txt){
+  txt = txt.replace(/^﻿/, "");
+  var head = txt.split(/\r?\n/)[0] || "";
+  var sep = (head.split(";").length > head.split(",").length) ? ";" : ",";
+  var rows = [], row = [], cur = "", inq = false, i, c;
+  for(i = 0; i < txt.length; i++){
+    c = txt.charAt(i);
+    if(inq){
+      if(c === '"'){ if(txt.charAt(i+1) === '"'){ cur += '"'; i++ } else inq = false }
+      else cur += c;
+    }
+    else if(c === '"') inq = true;
+    else if(c === sep){ row.push(cur); cur = "" }
+    else if(c === "\n"){ row.push(cur); rows.push(row); row = []; cur = "" }
+    else if(c !== "\r") cur += c;
+  }
+  row.push(cur); rows.push(row);
+  rows = rows.filter(function(r){ return r.join("").trim() !== "" });
+  if(!rows.length) return [];
+
+  var hdr = rows[0].map(function(x){ return x.trim().toLowerCase() });
+  var ui = -1, ni = -1, k;
+  for(k = 0; k < hdr.length; k++){
+    if(ui < 0 && /url|link|adres|address|href/.test(hdr[k])) ui = k;
+    if(ni < 0 && /name|title|isim|baslik|başlık/.test(hdr[k])) ni = k;
+  }
+  var body = rows.slice(1);
+  if(ui < 0){                       /* başlık satırı yok — URL sütununu içerikten bul */
+    body = rows;
+    for(k = 0; k < rows[0].length; k++){
+      if(/^\s*https?:/i.test(rows[0][k] || "")){ ui = k; break }
+    }
+    if(ui < 0) return [];
+    ni = ui === 0 ? 1 : 0;
+  }
+  return body.map(function(r){
+    return { url: (r[ui] || "").trim(), name: ni >= 0 ? (r[ni] || "").trim() : "" };
+  }).filter(function(x){ return /^https?:/i.test(x.url) });
+}
+
+function issueURL(f){
+  var u = new URLSearchParams();
+  u.set("template", "yeni-baglanti.yml");
+  u.set("title", "[link] " + (f.name || host(f.url) || ""));
+  u.set("url", f.url);
+  u.set("name", f.name || "");
+  u.set("cat", f.cat || "Emin değilim");
+  u.set("what", f.what || "");
+  u.set("diff", f.diff || "");
+  return REPO + "/issues/new?" + u.toString();
+}
+
+function bulkURL(list){
+  var body = list.map(function(x){
+    return "- [ ] " + (x.name ? x.name + " — " : "") + x.url;
+  }).join("\n");
+  var u = new URLSearchParams();
+  u.set("title", "[toplu] " + list.length + " bağlantı önerisi");
+  u.set("labels", "yeni-bağlantı");
+  u.set("body", "Dizinde bulunmayan bağlantılar:\n\n" + body);
+  return REPO + "/issues/new?" + u.toString();
+}
+
+function readForm(){
+  return { url:  $("#f-url").value.trim(),
+           name: $("#f-name").value.trim(),
+           cat:  $("#f-cat").value,
+           what: $("#f-what").value.trim(),
+           diff: $("#f-diff").value.trim() };
+}
+function asText(f){
+  var L = T[lang];
+  return "- " + (f.name || "") + " — " + f.url + "\n" +
+         "  " + L.lCat  + ": " + f.cat + "\n" +
+         "  " + L.lWhat + " " + f.what + "\n" +
+         "  " + L.lDiff + " " + f.diff;
+}
+
+function copy(text, btn){
+  var old = btn.textContent;
+  var done = function(){
+    btn.textContent = T[lang].copied;
+    setTimeout(function(){ btn.textContent = old }, 1400);
+  };
+  var manual = function(){
+    var t = document.createElement("textarea");
+    t.value = text; t.setAttribute("readonly", "");
+    t.style.cssText = "position:fixed;top:-1000px";
+    document.body.appendChild(t); t.select();
+    try{ document.execCommand("copy"); done() }catch(e){}
+    t.remove();
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done, manual);
+  } else manual();
+}
+
+/* ------------------------------------------------------------ toplu dosya */
+function showBulk(items){
+  var L = T[lang], seen = {}, fresh = [], dup = 0;
+  items.forEach(function(x){
+    var k = bare(nkey(x.url));
+    if(!k || seen[k]) return;
+    seen[k] = 1;
+    if(known(x.url)) dup++; else fresh.push(x);
+  });
+  bulkNew  = fresh;
+  bulkStat = { read: items.length, dup: dup };
+
+  $("#s-res").hidden = false;
+  $("#s-stat").innerHTML = L.stat("<b>"+items.length+"</b>",
+                                  "<b>"+dup+"</b>", "<b>"+fresh.length+"</b>");
+  $("#s-plist").innerHTML = fresh.length
+    ? fresh.slice(0, 300).map(function(x){
+        return "<div>" + esc(x.name || host(x.url) || x.url) +
+               "<span>" + esc(x.url) + "</span></div>";
+      }).join("")
+    : '<div style="color:var(--dim);padding:12px 0">' + esc(L.noneNew) + "</div>";
+  paintFoot();
+}
+
+function takeFile(file){
+  if(!file) return;
+  var r = new FileReader();
+  r.onload = function(){
+    var txt = String(r.result || ""), items = [];
+    try{
+      if(/\.json$/i.test(file.name))     items = parseJS(txt);
+      else if(/\.csv$/i.test(file.name)) items = parseCSV(txt);
+      else                               items = parseBM(txt);
+    }catch(e){ items = [] }
+    /* Uzantı yalan söyleyebilir; boş çıktıysa diğer biçimleri de dene. */
+    if(!items.length){
+      try{ items = parseBM(txt) }catch(e){}
+      if(!items.length){ try{ items = parseJS(txt) }catch(e){} }
+      if(!items.length){ try{ items = parseCSV(txt) }catch(e){} }
+    }
+    if(!items.length){
+      $("#s-res").hidden = false;
+      $("#s-stat").textContent = T[lang].badFile;
+      $("#s-plist").innerHTML = "";
+      bulkNew = []; bulkStat = null; paintFoot();
+      return;
+    }
+    showBulk(items);
+  };
+  r.readAsText(file, "utf-8");
+}
+
+/* ------------------------------------------------------- altbilgi düğmeleri */
+function paintFoot(){
+  var L = T[lang], f = $("#s-foot");
+  if(subTab === "one"){
+    f.innerHTML = '<button class="btn primary" id="b-issue" type="button">'+esc(L.bIssue)+'</button>'+
+                  '<button class="btn" id="b-copy" type="button">'+esc(L.bCopy)+'</button>'+
+                  '<span class="msg"></span>';
+    $("#b-issue").addEventListener("click", function(){
+      var v = readForm();
+      if(!v.url){ $("#s-warn").textContent = L.needUrl; $("#f-url").focus(); return }
+      window.open(issueURL(v), "_blank", "noopener");
+    });
+    $("#b-copy").addEventListener("click", function(){
+      var v = readForm();
+      if(!v.url){ $("#s-warn").textContent = L.needUrl; $("#f-url").focus(); return }
+      copy(asText(v), this);
+    });
+    return;
+  }
+
+  var n = bulkNew.length;
+  var url = n ? bulkURL(bulkNew) : "";
+  var fits = n > 0 && url.length < 7000;
+  f.innerHTML = '<button class="btn primary" id="b-issue" type="button"'+(fits?"":" disabled")+'>'+
+                  esc(L.bIssue)+'</button>'+
+                '<button class="btn" id="b-json" type="button"'+(n?"":" disabled")+'>'+esc(L.bJson)+'</button>'+
+                '<button class="btn" id="b-csv" type="button"'+(n?"":" disabled")+'>'+esc(L.bCsv)+'</button>'+
+                '<span class="msg">'+(n && !fits ? esc(L.tooBig(n)) : "")+'</span>';
+  if(fits) $("#b-issue").addEventListener("click", function(){
+    window.open(url, "_blank", "noopener");
+  });
+  if(n){
+    $("#b-json").addEventListener("click", function(){
+      download("yeni-baglantilar.json", JSON.stringify(bulkNew, null, 2), "application/json");
+    });
+    $("#b-csv").addEventListener("click", function(){
+      var NL = String.fromCharCode(10), BOM = String.fromCharCode(0xFEFF);
+      var q2 = function(v){ return '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"' };
+      download("yeni-baglantilar.csv",
+        BOM + "name,url" + NL +
+        bulkNew.map(function(x){ return q2(x.name) + "," + q2(x.url) }).join(NL),
+        "text/csv;charset=utf-8");
+    });
+  }
+}
+
+function paintSub(){
+  var L = T[lang];
+  $("#addbtn").textContent  = L.add;
+  $("#s-title").textContent = L.sTitle;
+  $("#s-t1").textContent    = L.sTab1;
+  $("#s-t2").textContent    = L.sTab2;
+  $("#s-note").innerHTML    = subTab === "one" ? L.sNote : L.sNoteB;
+  $("#l-name").textContent  = L.lName;
+  $("#l-cat").textContent   = L.lCat;
+  $("#l-what").textContent  = L.lWhat;
+  $("#l-diff").textContent  = L.lDiff;
+  $("#f-what").placeholder  = L.phWhat;
+  $("#f-diff").placeholder  = L.phDiff;
+  $("#s-drop").innerHTML    = L.drop;
+
+  /* Değerler issue şablonundaki açılır listeyle birebir aynı olmak zorunda,
+     yoksa GitHub seçimi yok sayıyor. Ikisi de kategori adlarının Türkçesi. */
+  $("#f-cat").innerHTML = CATS.map(function(c){
+    return '<option value="'+esc(c.tr)+'">'+esc(lang === "tr" ? c.tr : c.en)+'</option>';
+  }).join("") + '<option value="Emin değilim">'+esc(L.catAsk)+'</option>';
+
+  if(bulkStat) $("#s-stat").innerHTML = L.stat("<b>"+bulkStat.read+"</b>",
+    "<b>"+bulkStat.dup+"</b>", "<b>"+bulkNew.length+"</b>");
+  paintFoot();
+}
+
+function setTab(t){
+  subTab = t;
+  $("#s-t1").setAttribute("aria-selected", t === "one");
+  $("#s-t2").setAttribute("aria-selected", t === "bulk");
+  $("#s-one").hidden  = t !== "one";
+  $("#s-bulk").hidden = t === "one";
+  $("#s-note").innerHTML = T[lang][t === "one" ? "sNote" : "sNoteB"];
+  paintFoot();
+}
+
+$("#addbtn").addEventListener("click", function(){ paintSub(); dlg.showModal() });
+$("#s-close").addEventListener("click", function(){ dlg.close() });
+$("#s-t1").addEventListener("click", function(){ setTab("one") });
+$("#s-t2").addEventListener("click", function(){ setTab("bulk") });
+
+/* Panelin dışına tıklayınca kapansın — <dialog> bunu kendiliğinden yapmıyor. */
+dlg.addEventListener("click", function(e){
+  if(e.target !== dlg) return;
+  var r = dlg.getBoundingClientRect();
+  if(e.clientX < r.left || e.clientX > r.right ||
+     e.clientY < r.top  || e.clientY > r.bottom) dlg.close();
+});
+
+$("#f-url").addEventListener("input", function(){
+  var hit = this.value.trim() ? known(this.value) : null;
+  $("#s-warn").textContent = hit ? T[lang].dupWarn(hit) : "";
+});
+
+$("#s-drop").addEventListener("click", function(){ $("#s-file").click() });
+$("#s-drop").addEventListener("keydown", function(e){
+  if(e.key === "Enter" || e.key === " "){ e.preventDefault(); $("#s-file").click() }
+});
+$("#s-file").addEventListener("change", function(){ takeFile(this.files[0]); this.value = "" });
+["dragenter","dragover"].forEach(function(ev){
+  $("#s-drop").addEventListener(ev, function(e){ e.preventDefault(); this.classList.add("over") });
+});
+["dragleave","drop"].forEach(function(ev){
+  $("#s-drop").addEventListener(ev, function(e){ e.preventDefault(); this.classList.remove("over") });
+});
+$("#s-drop").addEventListener("drop", function(e){
+  takeFile(e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]);
+});
+
 
 readURL();
 if(lang === "en") setLang("en"); else render();

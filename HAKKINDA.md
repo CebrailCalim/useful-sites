@@ -57,8 +57,15 @@ arşivlenmiş. Bağlantı taraması bunu göremez, depo denetimi görür.
 
 ## Katkı
 
-Eklenmesini istediğin bir kaynak varsa ya da hatalı bir kayıt gördüysen issue aç.
-Yeni bağlantı şablonunda "benzerlerinden farkı ne" diye bir alan var ve zorunlu.
+Sitedeki **Bağlantı Gönder** düğmesi iki şey yapıyor: tek bir bağlantıyı
+formla gönderiyor, ya da yer imi dışa aktarımını (`.html`, `.json`, `.csv`)
+okuyup dizinde zaten olanları ayıklıyor, geriye kalanı listeliyor. Dosya
+tarayıcıdan çıkmıyor — yüklenecek bir sunucu yok.
+
+Gönderilen şey issue olarak açılıyor, siteye kendiliğinden düşmüyor. Önce
+okunuyor, açıklaması yazılıyor, uygun bulunursa bir sonraki derlemeye giriyor.
+
+Yeni bağlantı şablonunda "benzerlerinden farkı ne" diye zorunlu bir alan var.
 Bilmiyorsan "bilmiyorum" yaz, araştırırım — ama boş bırakılırsa kayıt dizinin
 değerini taşımıyor demektir.
 
