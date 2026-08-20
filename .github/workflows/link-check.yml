@@ -1,0 +1,59 @@
+name: Bağlantı kontrolü
+
+# Dizinin tek gerçek düşmanı çürüme. Haftada bir tarayıp ölenleri
+# tek bir issue'da toplar; her hafta yeni issue açmak yerine aynısını günceller.
+on:
+  schedule:
+    - cron: "17 4 * * 1"        # her pazartesi 04:17 UTC
+  workflow_dispatch:            # elle de tetiklenebilir
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Bağlantıları tara
+        run: python data/ci_check.py
+        # rapor.md ve exit kodu üretir; ölü link varsa 1 döner ama
+        # continue-on-error ile iş akışı devam eder, issue yine açılır
+        continue-on-error: true
+
+      - name: Raporu issue olarak yaz
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            if (!fs.existsSync('rapor.md')) {
+              core.info('rapor.md yok, ölü bağlantı bulunmamış olabilir');
+              return;
+            }
+            const body = fs.readFileSync('rapor.md', 'utf8');
+            const title = 'Ölü bağlantı raporu';
+            const { owner, repo } = context.repo;
+
+            const existing = await github.rest.issues.listForRepo({
+              owner, repo, state: 'open', labels: 'link-check'
+            });
+
+            if (existing.data.length) {
+              await github.rest.issues.update({
+                owner, repo, issue_number: existing.data[0].number, body
+              });
+              core.info(`#${existing.data[0].number} güncellendi`);
+            } else {
+              await github.rest.issues.create({
+                owner, repo, title, body, labels: ['link-check']
+              });
+              core.info('yeni issue açıldı');
+            }

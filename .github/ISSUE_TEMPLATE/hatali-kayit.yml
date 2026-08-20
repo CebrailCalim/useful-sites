@@ -1,0 +1,36 @@
+name: Hatalı / ölü kayıt bildir
+description: Açılmayan bağlantı ya da yanlış açıklama / Report a broken link or wrong description
+title: "[hata] "
+labels: ["hata"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Hangi kayıt? / Which entry?
+      placeholder: URL ya da kaydın adı
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tur
+    attributes:
+      label: Sorun ne? / What is wrong?
+      options:
+        - Bağlantı açılmıyor (ölü)
+        - Adres değişmiş, yenisi var
+        - Açıklama yanlış ya da eskimiş
+        - Karşılaştırma isabetsiz
+        - Yanlış kategori ya da etiket
+        - Diğer
+    validations:
+      required: true
+
+  - type: textarea
+    id: detay
+    attributes:
+      label: Detay / Details
+      description: >
+        Açıklama hatalıysa doğrusunun ne olduğunu yazarsan çok işimi kolaylaştırır.
+        Adres değiştiyse yeni adresi ekle.
+    validations:
+      required: true
