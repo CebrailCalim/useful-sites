@@ -63,6 +63,15 @@ h1{font-size:28px;font-weight:600;margin:0;letter-spacing:-.022em;line-height:1.
 }
 .btn:hover{color:var(--fg);border-color:var(--faint);background:var(--panel)}
 .btn:active{transform:translateY(.5px)}
+/* açılır menü: düğmelerle aynı görünsün */
+.sel{position:relative;display:inline-flex;align-items:center;gap:6px;
+  font:12.5px/1 var(--mono);color:var(--dim);
+  border:1px solid var(--rule);padding:8px 11px;border-radius:3px;cursor:pointer;
+  transition:color .12s var(--step),border-color .12s var(--step),background .12s var(--step)}
+.sel:hover{color:var(--fg);border-color:var(--faint);background:var(--panel)}
+.sel::after{content:"▾";font-size:10px;color:var(--faint)}
+.sel select{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.sel:focus-within{outline:2px solid var(--accent);outline-offset:2px}
 
 /* ---------------------------------------------------------------- araçlar */
 .tools{padding:18px 0 12px;border-bottom:1px solid var(--rule2)}
@@ -104,6 +113,8 @@ nav a{
 }
 nav a:hover{color:var(--fg);padding-left:4px}
 nav a.on{color:var(--accent);font-weight:600}
+nav a.on::before{content:"▸ ";color:var(--accent)}
+nav a.empty{opacity:.42}
 nav .n{font:11.5px/1.4 var(--mono);color:var(--faint);font-variant-numeric:tabular-nums}
 .navback{display:none;width:100%;margin:0 0 14px;text-align:left}
 .navback.show{display:block}
@@ -132,7 +143,7 @@ h2 .n{font-variant-numeric:tabular-nums}
 .item a.name:hover{color:var(--accent)}
 .host{font:12.5px/1 var(--mono);color:var(--faint);overflow:hidden;text-overflow:ellipsis}
 .desc{margin:7px 0 0;color:var(--dim);font-size:15.5px;line-height:1.7}
-.itags{margin:9px 0 0;font:12.5px/1.6 var(--mono);color:var(--faint)}
+.itags{margin:9px 0 0;font:12.5px/1.7 var(--sans);color:var(--faint)}
 .itags span{cursor:pointer;transition:color .12s var(--step)}
 .itags span:hover{color:var(--accent)}
 .age{font:11.5px/1 var(--mono);color:var(--faint);margin-left:auto;white-space:nowrap}
@@ -194,20 +205,50 @@ footer kbd{font:12px var(--mono);border:1px solid var(--rule);border-radius:3px;
 footer a{color:var(--dim)}
 
 @media (max-width:1080px){ .grid{grid-template-columns:1fr} }
-@media (max-width:820px){
-  body{padding:0 17px 72px}
-  header{padding:34px 0 18px}
-  h1{font-size:23px}
+
+@media (max-width:900px){
   .cols{grid-template-columns:1fr;gap:0}
-  nav{margin-bottom:30px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
-  nav ol{display:flex;flex-wrap:wrap;gap:0 18px}
+  nav{margin-bottom:26px;padding-bottom:14px;border-bottom:1px solid var(--rule)}
+  nav ol{display:flex;flex-wrap:wrap;gap:0 16px}
   nav li{border-bottom:0}
-  nav a{padding:4px 0}
+  nav a{padding:6px 0}
   nav a:hover{padding-left:0}
-  #q{flex:1 1 100%}
+}
+
+@media (max-width:720px){
+  body{padding:0 16px 72px}
+  header{padding:28px 0 16px}
+  h1{font-size:23px}
+  .sub{font-size:15.5px}
+  .masthead{gap:14px}
+  .hdr-actions{margin-left:0;width:100%;padding-top:0;flex-wrap:wrap}
+  /* Dokunma hedefleri 44 px'in altına düşmesin (WCAG 2.2 hedef boyutu).
+     Yüksekliği dolgudan değil min-height'tan alıyoruz: yazı boyutu
+     değiştiğinde hedef küçülmesin. */
+  .btn,.sel,.tag,.pg,#sort{
+    min-height:44px;display:inline-flex;align-items:center;justify-content:center;
+  }
+  .btn,.sel{padding:0 14px;font-size:13px}
+  .tag{padding:0 12px;font-size:13px}
+  .pg{padding:0 14px;font-size:13px;min-width:44px}
+  #sort{flex:1 1 100%;padding:0 12px;font-size:13px}
+  #q{flex:1 1 100%;min-height:48px;padding:0 14px}
   .count{width:100%}
-  .item{margin-left:0;padding-left:12px}
-  #top{right:16px;bottom:16px}
+  .tags,.srcbar{gap:8px}
+  .item{margin-left:0;padding:14px 0 14px 12px}
+  .intro{font-size:14.5px;padding-left:12px}
+  .desc{font-size:15px}
+  .item-h{gap:7px}
+  .badge,.age{font-size:11px}
+  #top{right:14px;bottom:14px;padding:13px 15px}
+  footer{font-size:13.5px}
+}
+
+@media (max-width:380px){
+  body{padding:0 12px 64px}
+  h1{font-size:21px}
+  .hdr-actions{gap:5px}
+  .btn,.sel{padding:10px 10px;font-size:12px}
 }
 </style>
 </head>
@@ -222,8 +263,10 @@ footer a{color:var(--dim)}
     </div>
     <div class="hdr-actions">
       <button class="btn" id="rand" type="button"></button>
-      <button class="btn" id="dl" type="button">JSON</button>
-      <button class="btn" id="lang" type="button">EN</button>
+      <label class="sel"><span id="l-dl"></span>
+        <select id="dl" aria-label="Dışa Aktar"></select></label>
+      <label class="sel"><span id="l-lang"></span>
+        <select id="lang" aria-label="Dil"></select></label>
       <button class="btn" id="theme" type="button" title="Tema">◐</button>
     </div>
   </div>
@@ -265,52 +308,54 @@ var T = {
   tr:{
     title:"Teknoloji Bağlantıları",
     sub:"Yazılım, yapay zeka, güvenlik ve donanım üzerine elle derlenmiş bir dizin. Her kayıtta bağlantının ne yaptığı ve komşularından nerede ayrıldığı yazılı.",
-    ph:"Ara — isim, açıklama, etiket, alan adı",
-    count:function(n,t){return n+" / "+t+" bağlantı"},
-    empty:"Eşleşen bağlantı yok.",
-    clear:"filtreleri temizle",
-    back:"← tüm kategoriler",
-    rand:"rastgele", lang:"EN",
-    picks:"başlangıç noktaları",
-    by:"ekleyen:",
-    rel:"ilgili:",
-    verified:function(d){ return "son doğrulama " + d },
-    verwarn:"(bot engeli — elle bakılmalı)",
+    ph:"Ara — İsim, Açıklama, Etiket, Alan Adı",
+    count:function(n,t){return n+" / "+t+" Bağlantı"},
+    empty:"Eşleşen Bağlantı Yok",
+    clear:"Filtreleri Temizle",
+    back:"← Tüm Kategoriler",
+    rand:"Rastgele", lang:"EN",
+    picks:"Başlangıç Noktaları",
+    by:"Ekleyen",
+    exportLbl:"Dışa Aktar",
+    rel:"İlgili",
+    verified:function(d){ return "Son Doğrulama: " + d },
+    verwarn:"(Bot Engeli — Elle Bakılmalı)",
     pickTip:"Bu alana ilk girenin gitmesi gereken yer",
-    page:function(a,b){return a+" / "+b+" sayfa"},
-    prev:"önceki", next:"sonraki",
-    sorts:{cat:"kategoriye göre", az:"A → Z", "new":"önce yeni eklenen"},
-    all:"Tüm bağlantılar",
+    page:function(a,b){return a+" / "+b+" Sayfa"},
+    prev:"Önceki", next:"Sonraki",
+    sorts:{cat:"Kategoriye Göre", az:"A → Z", "new":"Önce Yeni Eklenen"},
+    all:"Tüm Bağlantılar",
     foot:'Bağlantılar elle derlendi, son kontrol <b>'+CHECKED+'</b>. '+
          'Açıklamalar projelerin kendi belgelerine bakılarak yazıldı; karşılaştırmalı yargılar derleyene ait. '+
          'Ölü ya da hatalı bir kayıt görürsen <a href="'+REPO+'/issues/new/choose">bildir</a> — '+
          'yeni bağlantı önerileri de aynı yerden.',
-    kb:'<kbd>/</kbd> ara · <kbd>r</kbd> rastgele · <kbd>Esc</kbd> temizle'
+    kb:'<kbd>/</kbd> Ara · <kbd>r</kbd> Rastgele · <kbd>Esc</kbd> Temizle'
   },
   en:{
     title:"Technology Links",
     sub:"A hand-curated directory covering software, AI, security and hardware. Every entry states what the thing does and where it parts ways with its neighbours.",
     ph:"Search — name, description, tag, domain",
-    count:function(n,t){return n+" / "+t+" links"},
-    empty:"No matching links.",
-    clear:"clear filters",
-    back:"← all categories",
-    rand:"random", lang:"TR",
-    picks:"start here",
-    by:"added by:",
-    rel:"related:",
-    verified:function(d){ return "last verified " + d },
-    verwarn:"(bot-blocked — needs a manual look)",
+    count:function(n,t){return n+" / "+t+" Links"},
+    empty:"No Matching Links",
+    clear:"Clear Filters",
+    back:"← All Categories",
+    rand:"Random", lang:"TR",
+    picks:"Start Here",
+    by:"Added By",
+    exportLbl:"Export",
+    rel:"Related",
+    verified:function(d){ return "Last Verified: " + d },
+    verwarn:"(Bot-Blocked — Needs A Manual Look)",
     pickTip:"Where to go first in this area",
-    page:function(a,b){return "page "+a+" / "+b},
-    prev:"prev", next:"next",
-    sorts:{cat:"by category", az:"A → Z", "new":"newest first"},
-    all:"All links",
+    page:function(a,b){return "Page "+a+" / "+b},
+    prev:"Prev", next:"Next"      ,
+    sorts:{cat:"By Category", az:"A → Z", "new":"Newest First"},
+    all:"All Links",
     foot:'Curated by hand, last checked <b>'+CHECKED+'</b>. '+
          "Descriptions are written from each project's own documentation; comparative judgements are the curator's. "+
          'Spotted a dead or wrong entry? <a href="'+REPO+'/issues/new/choose">Tell me</a> — '+
          'link suggestions go to the same place.',
-    kb:'<kbd>/</kbd> search · <kbd>r</kbd> random · <kbd>Esc</kbd> clear'
+    kb:'<kbd>/</kbd> Search · <kbd>r</kbd> Random · <kbd>Esc</kbd> Clear'
   }
 };
 
@@ -332,7 +377,11 @@ function fold(s){
 data.forEach(function(d,i){
   d._i = i;
   d._h = host(d.url);
-  d._s = fold([d.name,d.tr,(d.tags||[]).join(" "),d._h,d.cat_tr,d.cat_en].join(" "));
+  var lbl = (d.tags||[]).map(function(t){
+    var l = (window.TAGLABELS||{})[t];
+    return l ? l[0]+" "+l[1] : t;
+  }).join(" ");
+  d._s = fold([d.name,d.tr,(d.tags||[]).join(" "),lbl,d._h,d.cat_tr,d.cat_en].join(" "));
 });
 
 var CATS = (function(){
@@ -345,6 +394,11 @@ var CATS = (function(){
 
 var TAGCOUNT = {};
 data.forEach(function(d){ (d.tags||[]).forEach(function(t){ TAGCOUNT[t]=(TAGCOUNT[t]||0)+1 }) });
+var TAGLBL = window.TAGLABELS || {};
+function tagLabel(t){
+  var l = TAGLBL[t];
+  return l ? l[lang === "tr" ? 0 : 1] : t;
+}
 var SRCMAP = window.SOURCES || {};
 var SRCCOUNT = {};
 data.forEach(function(d){ SRCCOUNT[d.src] = (SRCCOUNT[d.src]||0) + 1 });
@@ -392,10 +446,12 @@ function writeURL(push){
 }
 
 /* ------------------------------------------------------------ filtre & sıra */
-function matches(d){
+function keep(d){ return matches(d, false) }
+
+function matches(d, ignoreCat){
   if(onlyPicks && !d.pick) return false;
   if(activeSrc && d.src !== activeSrc) return false;
-  if(activeCat && d.cat !== activeCat) return false;
+  if(!ignoreCat && activeCat && d.cat !== activeCat) return false;
   for(var i=0;i<activeTags.length;i++){
     if((d.tags||[]).indexOf(activeTags[i]) < 0) return false;
   }
@@ -430,7 +486,14 @@ function hl(text){
 function descOf(d){
   return (lang === "en" && window.LINKS_EN && window.LINKS_EN[d._i]) || d.tr;
 }
-function yearOf(d){ return new Date(d.added * 1000).getFullYear() }
+var AYLAR = {
+  tr:["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"],
+  en:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+};
+function whenOf(d){
+  var t = new Date(d.added * 1000);
+  return AYLAR[lang][t.getMonth()] + " " + t.getFullYear();
+}
 function srcLabel(d){
   var s = SRCMAP[d.src];
   return s ? s[lang === "tr" ? "label_tr" : "label_en"] : d.src;
@@ -448,11 +511,11 @@ function itemHTML(d, showYear){
     '<span class="host">'+esc(d._h)+'</span>'+
     '<span class="badge'+(d.src!=="kedi"?' ext':'')+'" title="'+esc(srcNote(d))+'">'+
       esc(srcLabel(d))+'</span>'+
-    (showYear ? '<span class="age">'+yearOf(d)+'</span>' : '')+
+    (showYear ? '<span class="age">'+whenOf(d)+'</span>' : '')+
     '</div><p class="desc">'+hl(descOf(d))+'</p>'+
     ((d.tags||[]).length
       ? '<p class="itags">'+d.tags.map(function(t){
-          return '<span data-tag="'+esc(t)+'">'+esc(t)+'</span>' }).join(" · ")+'</p>'
+          return '<span data-tag="'+esc(t)+'">'+esc(tagLabel(t))+'</span>' }).join(" · ")+'</p>'
       : '')+
     ((d.rel||[]).length
       ? '<p class="rel"><b>'+esc(T[lang].rel)+'</b> '+d.rel.map(function(n){
@@ -500,7 +563,6 @@ function render(){
   $("#t-sub").textContent   = L.sub;
   $("#q").placeholder       = L.ph;
   if($("#q").value !== q) $("#q").value = q;
-  $("#lang").textContent    = L.lang;
   $("#rand").textContent    = L.rand;
   $("#back").textContent    = L.back;
   $("#foot").innerHTML      = L.foot + "<br>" + L.kb;
@@ -510,13 +572,28 @@ function render(){
     return '<option value="'+k+'"'+(k===sortBy?' selected':'')+'>'+esc(L.sorts[k])+'</option>';
   }).join("");
 
-  var shown = data.filter(matches);
+  $("#l-dl").textContent = L.exportLbl;
+  $("#dl").innerHTML = '<option value="">'+esc(L.exportLbl)+'</option>'+
+    '<option value="json">JSON</option><option value="csv">CSV</option>';
+  $("#dl").value = "";
+
+  $("#l-lang").textContent = lang.toUpperCase();
+  $("#lang").innerHTML = '<option value="tr"'+(lang==="tr"?' selected':'')+'>TR</option>'+
+                         '<option value="en"'+(lang==="en"?' selected':'')+'>EN</option>';
+
+  var shown = data.filter(keep);
   $("#count").textContent = L.count(shown.length, data.length);
 
+  /* Kategori listesi hiçbir zaman kısalmıyor: bir kategori seçilince diğerleri
+     kaybolursa gezinme hissi bozuluyor. Seçili olan işaretleniyor, eşleşmesi
+     olmayanlar soluklaşıyor ama yerinde duruyor. */
+  var counts = {};
+  var poolNoCat = data.filter(function(d){ return matches(d, true) });
+  poolNoCat.forEach(function(d){ counts[d.cat] = (counts[d.cat]||0) + 1 });
   $("#nav").innerHTML = CATS.map(function(c){
-    var n = shown.filter(function(d){ return d.cat === c.key }).length;
-    if(!n && activeCat !== c.key) return "";
-    return '<li><a href="?cat='+c.key+'" data-cat="'+c.key+'" class="'+(activeCat===c.key?"on":"")+
+    var n = counts[c.key] || 0;
+    return '<li><a href="?cat='+c.key+'" data-cat="'+c.key+'" class="'+
+           (activeCat===c.key ? "on" : (n ? "" : "empty"))+
            '">'+esc(c[lang])+'<span class="n">'+n+'</span></a></li>';
   }).join("");
 
@@ -534,7 +611,7 @@ function render(){
     '<span class="dot">◆</span> <b>'+esc(L.picks)+'</b> '+PICKCOUNT+'</button>' +
     ALLTAGS.map(function(t){
     return '<button class="tag" type="button" data-tag="'+esc(t)+'" aria-pressed="'+
-           (activeTags.indexOf(t)>=0)+'"><b>'+esc(t)+'</b> '+TAGCOUNT[t]+'</button>';
+           (activeTags.indexOf(t)>=0)+'"><b>'+esc(tagLabel(t))+'</b> '+TAGCOUNT[t]+'</button>';
   }).join("");
 
   if(!shown.length){
@@ -621,28 +698,52 @@ $("#back").addEventListener("click", function(){
 });
 
 function randomLink(){
-  var pool = data.filter(matches);
+  var pool = data.filter(keep);
   if(!pool.length) pool = data;
   window.open(pool[Math.floor(Math.random()*pool.length)].url, "_blank", "noopener");
 }
 $("#rand").addEventListener("click", randomLink);
 
-$("#dl").addEventListener("click", function(){
-  var rows = sorted(data.filter(matches)).map(function(d){
-    return {name:d.name, url:d.url, category:d[lang === "tr" ? "cat_tr" : "cat_en"],
-            tags:d.tags, added:new Date(d.added*1000).toISOString().slice(0,10),
+function exportRows(){
+  return sorted(data.filter(keep)).map(function(d){
+    return {name:d.name, url:d.url,
+            category:d[lang === "tr" ? "cat_tr" : "cat_en"],
+            tags:(d.tags||[]).map(tagLabel),
+            source:srcLabel(d),
+            added:new Date(d.added*1000).toISOString().slice(0,7),
+            verified:d.ver || "",
             description:descOf(d)};
   });
-  var blob = new Blob([JSON.stringify({
-    source:"Teknoloji Bağlantıları", checked:CHECKED, lang:lang,
-    filter:{q:q||null, category:activeCat, tags:activeTags, sort:sortBy},
-    count:rows.length, links:rows
-  }, null, 2)], {type:"application/json"});
+}
+function download(name, text, mime){
   var a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = "baglantilar-" + (activeCat || "tumu") + ".json";
+  a.href = URL.createObjectURL(new Blob([text], {type:mime}));
+  a.download = name;
   document.body.appendChild(a); a.click();
   setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove() }, 0);
+}
+$("#dl").addEventListener("change", function(e){
+  var kind = e.target.value, rows = exportRows();
+  var base = "baglantilar-" + (activeCat || "tumu");
+  if(kind === "json"){
+    download(base + ".json", JSON.stringify({
+      source:"Teknoloji Bağlantıları", checked:CHECKED, lang:lang,
+      filter:{q:q||null, category:activeCat, tags:activeTags, source:activeSrc,
+              picksOnly:onlyPicks, sort:sortBy},
+      count:rows.length, links:rows
+    }, null, 2), "application/json");
+  } else if(kind === "csv"){
+    var cols = ["name","url","category","tags","source","added","verified","description"];
+    var esc2 = function(v){
+      v = Array.isArray(v) ? v.join("; ") : (v == null ? "" : String(v));
+      return '"' + v.replace(/"/g, '""') + '"';
+    };
+    var NL = String.fromCharCode(10), BOM = String.fromCharCode(0xFEFF);
+    var csv = BOM + cols.join(",") + NL +
+      rows.map(function(r){ return cols.map(function(c){ return esc2(r[c]) }).join(",") }).join(NL);
+    download(base + ".csv", csv, "text/csv;charset=utf-8");
+  }
+  e.target.value = "";
 });
 
 /* İngilizce açıklamalar ilk yüklemede gelmiyor; dil değişince çekiliyor. */
@@ -659,7 +760,7 @@ function setLang(next){
   }
   update(false);
 }
-$("#lang").addEventListener("click", function(){ setLang(lang === "tr" ? "en" : "tr") });
+$("#lang").addEventListener("change", function(e){ setLang(e.target.value) });
 
 function applyTheme(){
   if(theme) document.documentElement.setAttribute("data-theme", theme);

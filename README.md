@@ -54,15 +54,13 @@ takılırdı.)
 
 ## Yayınlama / Publishing
 
-```bash
-git remote add origin git@github.com:KULLANICI/REPO.git
-git push -u origin main
-```
+Adım adım anlatım: **[YAYINLAMA.md](YAYINLAMA.md)**
 
-Sonra **Settings → Pages → Source: main / root**. `.nojekyll` zaten var.
+Kısaca: depo aç → `git remote add origin …` → `index.html` içindeki `REPO`
+sabitini düzelt → `git push -u origin main` → Settings → Pages → main / root.
+Otomatik bakımın çalışması için Actions'a yazma izni vermek gerekiyor.
 
-Yayınladıktan sonra `index.html` içindeki `REPO` sabitini kendi depo adresinle
-değiştir — altbilgideki "bildir" bağlantısı oraya gidiyor.
+Dizinin neden ve nasıl derlendiği: **[HAKKINDA.md](HAKKINDA.md)**
 
 ## Bakım / Maintenance
 

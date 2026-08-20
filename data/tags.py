@@ -163,3 +163,78 @@ def normalise(tags):
         if c in CANON and c not in out:
             out.append(c)
     return out
+
+
+# ------------------------------------------------------------------ gorunen adlar
+# Etiketler veride kucuk harf ve tireli tutuluyor (URL ve filtre anahtari olarak
+# kararli kalsin diye). Arayuzde gosterilen bicim buradan geliyor: Turkcede
+# buyuk harf kurallari (i -> I degil, i -> I noktali) JS tarafinda guvenilir
+# calismadigi icin elle yaziliyor. Kisaltmalar da dogru buyukluge kavusuyor.
+LABELS = {
+    'ücretsiz':            ('Ücretsiz', 'Free'),
+    'freemium':            ('Freemium', 'Freemium'),
+    'ücretli':             ('Ücretli', 'Paid'),
+    'açık-kaynak':         ('Açık Kaynak', 'Open Source'),
+    'açık-ağırlık':        ('Açık Ağırlık', 'Open Weights'),
+    'dokümantasyon':       ('Dokümantasyon', 'Docs'),
+    'öğretici':            ('Öğretici', 'Tutorial'),
+    'video':               ('Video', 'Video'),
+    'kitap':               ('Kitap', 'Book'),
+    'kopya-kâğıdı':        ('Kopya Kâğıdı', 'Cheat Sheet'),
+    'awesome-liste':       ('Awesome Liste', 'Awesome List'),
+    'interaktif':          ('İnteraktif', 'Interactive'),
+    'müfredat':            ('Müfredat', 'Curriculum'),
+    'referans':            ('Referans', 'Reference'),
+    'self-hosted':         ('Kendi Sunucunda', 'Self-Hosted'),
+    'cli':                 ('CLI', 'CLI'),
+    'api':                 ('API', 'API'),
+    'sdk':                 ('SDK', 'SDK'),
+    'tarayıcı-içi':        ('Tarayıcıda', 'In Browser'),
+    'masaüstü':            ('Masaüstü', 'Desktop'),
+    'eklenti':             ('Eklenti', 'Plugin'),
+    'python':              ('Python', 'Python'),
+    'javascript':          ('JavaScript', 'JavaScript'),
+    'c-ailesi':            ('C Ailesi', 'C Family'),
+    'rust':                ('Rust', 'Rust'),
+    'go':                  ('Go', 'Go'),
+    'php':                 ('PHP', 'PHP'),
+    'github':              ('GitHub', 'GitHub'),
+    'docker':              ('Docker', 'Docker'),
+    'llm':                 ('LLM', 'LLM'),
+    'agent':               ('Agent', 'Agent'),
+    'rag':                 ('RAG', 'RAG'),
+    'embedding':           ('Embedding', 'Embedding'),
+    'vektör-db':           ('Vektör VT', 'Vector DB'),
+    'mcp':                 ('MCP', 'MCP'),
+    'guardrail':           ('Guardrail', 'Guardrail'),
+    'gözlemlenebilirlik':  ('Gözlemlenebilirlik', 'Observability'),
+    'görsel-üretim':       ('Görsel Üretim', 'Image Gen'),
+    '3b':                  ('3B', '3D'),
+    'ses':                 ('Ses', 'Audio'),
+    'otomasyon':           ('Otomasyon', 'Automation'),
+    'frontend':            ('Frontend', 'Frontend'),
+    'backend':             ('Backend', 'Backend'),
+    'veritabanı':          ('Veritabanı', 'Database'),
+    'devops':              ('DevOps', 'DevOps'),
+    'sistem-tasarımı':     ('Sistem Tasarımı', 'System Design'),
+    'algoritma':           ('Algoritma', 'Algorithms'),
+    'git':                 ('Git', 'Git'),
+    'sunucu':              ('Sunucu', 'Server'),
+    'güvenlik':            ('Güvenlik', 'Security'),
+    'osint':               ('OSINT', 'OSINT'),
+    'gizlilik':            ('Gizlilik', 'Privacy'),
+    'ağ':                  ('Ağ', 'Networking'),
+    'donanım':             ('Donanım', 'Hardware'),
+    'gömülü':              ('Gömülü', 'Embedded'),
+    'cad':                 ('CAD', 'CAD'),
+    'veri-bilimi':         ('Veri Bilimi', 'Data Science'),
+    'akademik':            ('Akademik', 'Academic'),
+    'kuantum':             ('Kuantum', 'Quantum'),
+    'türkçe':              ('Türkçe', 'Turkish'),
+    'mülakat':             ('Mülakat', 'Interview'),
+    'sertifika':           ('Sertifika', 'Certification'),
+    'arşivlenmiş':         ('Arşivlenmiş', 'Archived'),
+}
+
+_eksik = [t for t in CANON if t not in LABELS]
+assert not _eksik, 'gorunen adi olmayan etiket: %s' % _eksik

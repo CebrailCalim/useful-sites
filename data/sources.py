@@ -21,8 +21,8 @@ SOURCES = {
         'url': None,
     },
     'bwapsv': {
-        'label_tr': 'Dış liste',
-        'label_en': 'External list',
+        'label_tr': 'Dış Liste',
+        'label_en': 'External List',
         'note_tr': 'Best-websites-a-programmer-should-visit derlemesinden alındı',
         'note_en': 'Taken from the Best-websites-a-programmer-should-visit collection',
         'url': 'https://github.com/sdmg15/Best-websites-a-programmer-should-visit',
