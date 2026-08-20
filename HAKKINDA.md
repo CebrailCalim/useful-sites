@@ -65,4 +65,4 @@ değerini taşımıyor demektir.
 ---
 
 *Teknik ayrıntılar, derleme betikleri ve bağlantı ekleme yöntemi için
-[README.md](README.md).*
+[data/README.md](data/README.md).*

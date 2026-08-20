@@ -99,7 +99,7 @@ Topic eklemek GitHub aramasında görünürlüğü belirgin artırıyor.
 2. `python data/build.py` çalıştır
 3. `git add -A && git commit -m "..." && git push`
 
-Pages birkaç saniye içinde güncellenir. Ayrıntı için [README.md](README.md).
+Pages birkaç saniye içinde güncellenir. Ayrıntı için [data/README.md](data/README.md).
 
 **Not:** `data/meta.json` ve `data/ext_meta.json` depoya dâhil değil (`.gitignore`).
 Bunlar ham toplama çıktıları; `build.py` senin bilgisayarında çalışır, sunucuda
