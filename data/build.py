@@ -20,6 +20,7 @@ D = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, D)
 from notes import NOTES, CATS          # noqa: E402
 from tags import normalise             # noqa: E402
+from picks import PICKS               # noqa: E402
 
 BOOKMARKS = r'C:\Users\Cebrail\Documents\code\duzen\bookmarks_duzenli.html'
 meta = json.load(io.open(os.path.join(D, 'meta.json'), encoding='utf-8'))
@@ -99,6 +100,8 @@ for m in meta:
     ts = ADDED.get(k) or ADDED.get(re.split(r'[?#]', k)[0].rstrip('/'))
     if ts:
         rec['added'] = ts
+    if m['url'] in PICKS:
+        rec['pick'] = 1
     out.append(rec)
 
 FALLBACK = 1787000000          # derleme sirasinda eklenen YZ araclari
@@ -119,6 +122,8 @@ for r in out:
         'cat_tr': ct, 'cat_en': ce, 'tags': r['tags'],
         'tr': r['tr'], 'added': r['added'],
     })
+    if r.get('pick'):
+        core[-1]['pick'] = 1
     en.append(r['en'])
 
 J = dict(ensure_ascii=False, separators=(',', ':'))
@@ -133,6 +138,7 @@ print('etiket cesidi  :', len(tc))
 print('etiketsiz kayit:', sum(1 for r in out if not r['tags']))
 print('notu olmayan   :', len(missing))
 print('gercek tarihli :', sum(1 for r in out if r['added'] != FALLBACK))
+print('baslangic nok. :', sum(1 for r in out if r.get('pick')), '/', len(PICKS))
 if missing:
     io.open(os.path.join(D, 'missing.txt'), 'w', encoding='utf-8').write(
         '\n'.join('%s\t%s' % t for t in missing))

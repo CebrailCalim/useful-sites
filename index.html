@@ -136,6 +136,14 @@ h2 .n{font-variant-numeric:tabular-nums}
 .itags span{cursor:pointer;transition:color .12s var(--step)}
 .itags span:hover{color:var(--accent)}
 .age{font:11.5px/1 var(--mono);color:var(--faint);margin-left:auto;white-space:nowrap}
+
+/* başlangıç noktası işareti — kategori başına 2-3 kayıt */
+.dot{color:var(--accent);font-size:9px;line-height:1;position:relative;top:-1px}
+.item.pick a.name{color:var(--accent)}
+.item.pick{border-left-color:var(--accent-soft)}
+.item.pick:hover{border-left-color:var(--accent)}
+.pickbtn{border-color:var(--accent-soft)}
+.pickbtn .dot{font-size:8px}
 mark{background:var(--mark);color:inherit;padding:0 2px;border-radius:2px}
 
 /* ---------------------------------------------------------------- sayfalama */
@@ -246,10 +254,11 @@ var T = {
     clear:"filtreleri temizle",
     back:"← tüm kategoriler",
     rand:"rastgele", lang:"EN",
+    picks:"başlangıç noktaları",
+    pickTip:"Bu alana ilk girenin gitmesi gereken yer",
     page:function(a,b){return a+" / "+b+" sayfa"},
     prev:"önceki", next:"sonraki",
-    sorts:{cat:"kategoriye göre", az:"A → Z", "new":"önce yeni eklenen",
-           old:"önce eski eklenen", rnd:"karışık"},
+    sorts:{cat:"kategoriye göre", az:"A → Z", "new":"önce yeni eklenen"},
     all:"Tüm bağlantılar",
     foot:'Bağlantılar elle derlendi, son kontrol <b>'+CHECKED+'</b>. '+
          'Açıklamalar projelerin kendi belgelerine bakılarak yazıldı; karşılaştırmalı yargılar derleyene ait. '+
@@ -266,10 +275,11 @@ var T = {
     clear:"clear filters",
     back:"← all categories",
     rand:"random", lang:"TR",
+    picks:"start here",
+    pickTip:"Where to go first in this area",
     page:function(a,b){return "page "+a+" / "+b},
     prev:"prev", next:"next",
-    sorts:{cat:"by category", az:"A → Z", "new":"newest first",
-           old:"oldest first", rnd:"shuffled"},
+    sorts:{cat:"by category", az:"A → Z", "new":"newest first"},
     all:"All links",
     foot:'Curated by hand, last checked <b>'+CHECKED+'</b>. '+
          "Descriptions are written from each project's own documentation; comparative judgements are the curator's. "+
@@ -281,7 +291,7 @@ var T = {
 
 var data  = window.LINKS || [];
 var theme = localStorage.getItem("theme");
-var lang, q, activeTags, activeCat, sortBy, pages, seedRnd;
+var lang, q, activeTags, activeCat, sortBy, pages, onlyPicks;
 
 var $ = function(s){return document.querySelector(s)};
 var esc = function(s){return String(s).replace(/[&<>"]/g,function(c){
@@ -310,6 +320,7 @@ var CATS = (function(){
 
 var TAGCOUNT = {};
 data.forEach(function(d){ (d.tags||[]).forEach(function(t){ TAGCOUNT[t]=(TAGCOUNT[t]||0)+1 }) });
+var PICKCOUNT = data.filter(function(d){ return d.pick }).length;
 var ALLTAGS = Object.keys(TAGCOUNT).sort(function(a,b){
   return TAGCOUNT[b]-TAGCOUNT[a] || a.localeCompare(b,"tr");
 });
@@ -321,6 +332,7 @@ function readURL(){
   activeCat  = p.get("cat") || null;
   sortBy     = p.get("sort") || "cat";
   activeTags = (p.get("tag") || "").split(",").filter(Boolean);
+  onlyPicks  = p.get("pick") === "1";
   lang       = p.get("lang") || localStorage.getItem("lang") || "tr";
   if(!T[lang]) lang = "tr";
   if(!T.tr.sorts[sortBy]) sortBy = "cat";
@@ -336,6 +348,7 @@ function writeURL(push){
   if(q) p.set("q", q);
   if(activeCat) p.set("cat", activeCat);
   if(activeTags.length) p.set("tag", activeTags.join(","));
+  if(onlyPicks) p.set("pick", "1");
   if(sortBy !== "cat") p.set("sort", sortBy);
   if(lang !== "tr") p.set("lang", lang);
   var pg = pages[activeCat && sortBy === "cat" ? activeCat : "_"];
@@ -346,6 +359,7 @@ function writeURL(push){
 
 /* ------------------------------------------------------------ filtre & sıra */
 function matches(d){
+  if(onlyPicks && !d.pick) return false;
   if(activeCat && d.cat !== activeCat) return false;
   for(var i=0;i<activeTags.length;i++){
     if((d.tags||[]).indexOf(activeTags[i]) < 0) return false;
@@ -356,18 +370,10 @@ function matches(d){
   return true;
 }
 
-/* sabit tohumlu karıştırma — aynı oturumda sıra zıplamıyor */
-function shuffleKey(d){
-  var h = (seedRnd ^ (d._i * 2654435761)) >>> 0;
-  h ^= h >>> 15; h = (h * 2246822507) >>> 0; h ^= h >>> 13;
-  return h >>> 0;
-}
 function sorted(rows){
   var r = rows.slice();
   if(sortBy === "az")  r.sort(function(a,b){ return a.name.localeCompare(b.name,"tr") });
   if(sortBy === "new") r.sort(function(a,b){ return b.added - a.added || a.name.localeCompare(b.name,"tr") });
-  if(sortBy === "old") r.sort(function(a,b){ return a.added - b.added || a.name.localeCompare(b.name,"tr") });
-  if(sortBy === "rnd") r.sort(function(a,b){ return shuffleKey(a) - shuffleKey(b) });
   return r;
 }
 
@@ -392,7 +398,8 @@ function descOf(d){
 function yearOf(d){ return new Date(d.added * 1000).getFullYear() }
 
 function itemHTML(d, showYear){
-  return '<article class="item"><div class="item-h">'+
+  return '<article class="item'+(d.pick?' pick':'')+'"><div class="item-h">'+
+    (d.pick ? '<span class="dot" title="'+esc(T[lang].pickTip)+'">◆</span>' : '')+
     '<a class="name" href="'+esc(d.url)+'" target="_blank" rel="noopener noreferrer">'+hl(d.name)+'</a>'+
     '<span class="host">'+esc(d._h)+'</span>'+
     (showYear ? '<span class="age">'+yearOf(d)+'</span>' : '')+
@@ -457,7 +464,10 @@ function render(){
            '">'+esc(c[lang])+'<span class="n">'+n+'</span></a></li>';
   }).join("");
 
-  $("#tagbar").innerHTML = ALLTAGS.map(function(t){
+  $("#tagbar").innerHTML =
+    '<button class="tag pickbtn" type="button" id="pickbtn" aria-pressed="'+onlyPicks+'">'+
+    '<span class="dot">◆</span> <b>'+esc(L.picks)+'</b> '+PICKCOUNT+'</button>' +
+    ALLTAGS.map(function(t){
     return '<button class="tag" type="button" data-tag="'+esc(t)+'" aria-pressed="'+
            (activeTags.indexOf(t)>=0)+'"><b>'+esc(t)+'</b> '+TAGCOUNT[t]+'</button>';
   }).join("");
@@ -476,12 +486,12 @@ function render(){
     var label = activeCat
       ? CATS.filter(function(c){ return c.key === activeCat })[0][lang]
       : L.all;
-    $("#list").innerHTML = block("_", label, sorted(shown), L, sortBy === "new" || sortBy === "old");
+    $("#list").innerHTML = block("_", label, sorted(shown), L, sortBy === "new");
   }
 }
 
 function update(push){ writeURL(push); render(); }
-function clearAll(){ q=""; activeTags=[]; activeCat=null; pages={}; update(true) }
+function clearAll(){ q=""; activeTags=[]; activeCat=null; onlyPicks=false; pages={}; update(true) }
 
 /* ------------------------------------------------------------ olaylar */
 var typeTimer;
@@ -505,6 +515,7 @@ document.addEventListener("click", function(e){
     if(sec) sec.scrollIntoView({block:"start", behavior:"smooth"});
     return;
   }
+  if(e.target.closest("#pickbtn")){ onlyPicks = !onlyPicks; pages = {}; update(true); return }
   var tg = e.target.closest("[data-tag]");
   if(tg){
     var t = tg.dataset.tag, i = activeTags.indexOf(t);
@@ -615,7 +626,6 @@ document.addEventListener("keydown", function(e){
   if(e.key === "Escape"){ clearAll(); $("#q").blur() }
 });
 
-seedRnd = ((Date.now() / 60000) | 0) >>> 0;
 readURL();
 if(lang === "en") setLang("en"); else render();
 })();

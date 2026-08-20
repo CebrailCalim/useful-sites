@@ -24,7 +24,8 @@ before you click.
 
 - Anlık arama — isim, açıklama, etiket ve alan adında, Türkçe karakter duyarsız
 - 62 kanonik etiket ve 20 kategoriyle birleştirilebilir filtre
-- Sıralama: kategori · A→Z · önce yeni · önce eski · karışık
+- Sıralama: kategori · A→Z · önce yeni eklenen
+- **Başlangıç noktaları** — kategori başına 2-3 kayıt işaretli, tek düğmeyle süzülüyor
 - **Durum URL'de** — filtrelediğin görünüm paylaşılabilir, tarayıcı geri tuşu çalışır
 - Satır başına iki bağlantı, kategori başına 20'lik sayfalama
 - TR / EN — İngilizce açıklamalar ayrı dosyada, sadece gerekince yükleniyor
@@ -72,6 +73,12 @@ Rapor iki başlığa ayrılıyor:
 |---|---|
 | **Ölü** | 404/410 döndü ya da hiç yanıt vermedi — değiştir veya çıkar |
 | **Şüpheli** | 403/429/503 — muhtemelen bot engeli, tarayıcıda açılıyor olabilir |
+| **Arşivlenmiş** | GitHub deposu salt okunur — sayfa 200 döner ama bakım bitmiş |
+| **Bayat** | 2+ yıldır itme yok — terk edilmiş olabilir |
+
+Son iki satır ayrı bir denetim (`ci_github.py`). Bir kaynak 404 döndürmeden de
+ölebilir: 76 bin yıldızlı `Best-websites-a-programmer-should-visit` deposu
+1 Kasım 2025'te arşivlendi ve bağlantı taraması bunu göremez.
 
 Elle çalıştırmak için: `python data/ci_check.py`
 
@@ -92,9 +99,11 @@ add('https://ornek.com/', 'Örnek', ['açık-kaynak', 'python'],
     'araclar')
 ```
 
-Sonra `python data/build.py`. Etiketler `data/tags.py` içindeki 62 kanonik
+Sonra `python data/build.py`. Etiketler `data/tags.py` içindeki 63 kanonik
 etiketten seçilir; eşleşmeyen etiket `ALIAS` tablosuna eklenerek kanonik bir
 karşılığa bağlanır, bağlanmazsa düşer.
+
+Bir kaydı başlangıç noktası yapmak için URL'sini `data/picks.py` içine ekle.
 
 Hızlı bir düzeltme için doğrudan `links.js` de düzenlenebilir, ama bir sonraki
 derlemede kaybolur.
@@ -110,7 +119,9 @@ gerekmez:
 | `check.py` | Bağlantıların canlı olup olmadığını kontrol eder |
 | `fetchmeta.py` | Her sitenin başlık/açıklama meta verisini çeker (GitHub için API) |
 | `notes.py` + `part_*.py` | Küratör notları — asıl içerik burada |
-| `tags.py` | 357 serbest etiketi 62 kanonik etikete indiren sözlük |
+| `tags.py` | 357 serbest etiketi 63 kanonik etikete indiren sözlük |
+| `picks.py` | Kategori başına başlangıç noktası olarak işaretlenen kayıtlar |
+| `ci_github.py` | GitHub depolarının arşiv / bayatlık denetimi |
 | `build.py` | Hepsini birleştirip `links.js` ve `links.en.js` üretir |
 | `ci_check.py` | GitHub Actions için bağlantı taraması ve rapor |
 
