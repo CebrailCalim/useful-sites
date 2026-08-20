@@ -8,6 +8,8 @@ A directory of 717 links on software, AI, security, hardware and science.
 Every entry states what the thing does and where it parts ways with its
 neighbours. Turkish and English.
 
+**Yayında / Live:** https://cebrailcalim.github.io/useful-sites/
+
 ---
 
 ## Neden / Why

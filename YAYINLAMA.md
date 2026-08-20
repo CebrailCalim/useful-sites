@@ -1,141 +1,119 @@
 # GitHub'a Yükleme — Adım Adım
 
-Depo yerelde hazır ve commit'lenmiş durumda. Yapılacak tek şey onu GitHub'a
-göndermek ve Pages'i açmak. Aşağıdaki adımların hepsi bir defalık.
+Depo: **https://github.com/CebrailCalim/useful-sites**
+Yayın adresi (Pages açılınca): **https://cebrailcalim.github.io/useful-sites/**
+
+Hazırlık bitti. Aşağıda önce yapılmış olanlar, sonra kalanlar var.
 
 ---
 
-## 1. GitHub'da Boş Bir Depo Aç
+## Yapılmış olanlar
 
-[github.com/new](https://github.com/new) adresine git.
+| # | İş | Durum |
+|---|---|---|
+| 1 | GitHub'da boş depo açıldı | ✅ |
+| 2 | Dal adı `master` → `main` çevrildi | ✅ |
+| 3 | `origin` HTTPS adresine ayarlandı | ✅ |
+| 4 | `index.html` içindeki `REPO` sabiti gerçek adrese çevrildi | ✅ |
 
-| Alan | Ne yazmalı |
-|---|---|
-| Repository name | `teknoloji-baglantilari` (istediğin adı verebilirsin) |
-| Description | `Yazılım, yapay zeka ve güvenlik üzerine açıklamalı bağlantı dizini` |
-| Public / Private | **Public** — Pages'in ücretsiz çalışması için gerekli |
-| Add a README | **İşaretleme.** Bizde zaten var, çakışır |
-| .gitignore | **None** |
-| License | **None** — bizde `LICENSE` dosyası var |
-
-**Create repository**'ye bas. Açılan sayfadaki `git@github.com:...` adresini kopyala.
-
----
-
-## 2. Depo Adresini Ayarla
-
-`site` klasöründe terminal aç ve adresi kendi kullanıcı adınla değiştirerek çalıştır:
-
-```bash
-git remote add origin git@github.com:KULLANICI/teknoloji-baglantilari.git
-```
-
-SSH anahtarın yoksa HTTPS de olur:
-
-```bash
-git remote add origin https://github.com/KULLANICI/teknoloji-baglantilari.git
-```
-
-Doğru ayarlandığını gör:
-
-```bash
-git remote -v
-```
-
----
-
-## 3. Altbilgideki Depo Adresini Düzelt
-
-`index.html` içinde `REPO` diye bir sabit var, şu an yer tutucu:
-
-```js
-var REPO = "https://github.com/KULLANICI/teknoloji-baglantilari";
-```
-
-Altbilgideki "bildir" bağlantısı buraya gidiyor. Kendi adresinle değiştir,
-sonra commit'le:
-
-```bash
-git add index.html
-git commit -m "depo adresini ayarla"
-```
+**Neden HTTPS, neden SSH değil:** bilgisayarda `~/.ssh/id_ed25519.pub` anahtarı var
+ama GitHub hesabına tanıtılmamış — bağlanmayı denedim, `Permission denied (publickey)`
+döndü. SSH'yi sonra kurmak istersen anahtarı
+[github.com/settings/keys](https://github.com/settings/keys) sayfasına ekleyip
+adresi geri çevirebilirsin. Şimdilik gereksiz.
 
 ---
 
 ## 4. Gönder
 
+`site` klasöründe:
+
 ```bash
 git push -u origin main
 ```
 
-Dosyaların GitHub'da göründüğünü kontrol et.
+**İlk push'ta tarayıcı açılır** ve GitHub girişi ister (Git Credential Manager).
+Bir kez onaylarsın, sonraki push'larda sormaz.
+
+Bittiğinde depo sayfasını yenile, 62 dosyanın göründüğünü gör.
 
 ---
 
 ## 5. Pages'i Aç
 
-Deponun **Settings → Pages** sekmesine git:
+Settings → Pages:
 
 - **Source:** `Deploy from a branch`
 - **Branch:** `main`, klasör `/ (root)`
 - **Save**
 
-Bir iki dakika sonra site şurada yayında olur:
+İki dakika sonra site şurada yayında:
 
 ```
-https://KULLANICI.github.io/teknoloji-baglantilari/
+https://cebrailcalim.github.io/useful-sites/
 ```
 
-`.nojekyll` dosyası zaten var, Jekyll işlemesi atlanıyor.
+`.nojekyll` dosyası zaten depoda, Jekyll işlemesi atlanıyor.
 
 ---
 
 ## 6. Otomatik Bakımı Aç
 
-Depoda `.github/workflows/link-check.yml` var; her pazartesi bütün bağlantıları
-tarıyor. İlk çalışmadan önce iki ayar gerekiyor:
+`.github/workflows/link-check.yml` her pazartesi bütün bağlantıları tarıyor.
+İlk çalışmadan önce iki ayar gerekiyor.
 
-**a) Actions'a yazma izni**
+**a) Actions'a yazma izni — bunu atlama**
 
 Settings → Actions → General → **Workflow permissions** →
 `Read and write permissions` seç, kaydet.
 
-Bu izin `verified.json` dosyasını geri yazabilmesi için gerekli — site her
-kayıtta "son doğrulama" tarihi gösteriyor, o dosyadan geliyor.
+Bu izin olmadan tarama `data/verified.json` dosyasını geri yazamaz. O dosya
+sitedeki "son doğrulama" tarihlerini besliyor; izin verilmezse tarihler donar
+ve dizin taze görünmeyi bırakır.
 
 **b) Elle bir kez çalıştır**
 
 Actions sekmesi → `Bağlantı ve depo sağlığı` → **Run workflow**.
 
-İlk tarama 700+ bağlantıyı geziyor, birkaç dakika sürüyor. Bitince ölü bağlantı
-bulduysa bir issue açar. Sonraki haftalarda yeni issue açmaz, aynısını günceller.
+İlk tarama 700+ bağlantıyı geziyor, birkaç dakika sürer. Ölü bağlantı bulursa
+`link-check` etiketli bir issue açar. Sonraki haftalarda yeni issue açmaz,
+aynısını günceller — böylece issue listesi şişmez.
 
 ---
 
 ## 7. Depoyu Tanıtılabilir Hâle Getir
 
-Ana sayfada sağ üstteki **About** çarkına bas:
+Ana sayfada sağ üstteki **About** çarkı:
 
-- **Description:** yukarıdaki açıklamanın aynısı
-- **Website:** Pages adresini yapıştır
+- **Description:** `Yazılım, yapay zeka ve güvenlik üzerine açıklamalı bağlantı dizini`
+- **Website:** `https://cebrailcalim.github.io/useful-sites/`
 - **Topics:** `bookmarks`, `awesome-list`, `directory`, `turkish`, `developer-tools`
 
-Topic eklemek arama görünürlüğünü belirgin artırıyor.
+Topic eklemek GitHub aramasında görünürlüğü belirgin artırıyor.
 
 ---
 
-## Sonrasında
+## Sonrasında bağlantı eklemek
 
-Bağlantı eklemek için `data/part_*.py` içine not yaz, `python data/build.py`
-çalıştır, commit'le, push'la. Pages birkaç saniye içinde güncellenir.
+1. `data/part_*.py` içine notu yaz
+2. `python data/build.py` çalıştır
+3. `git add -A && git commit -m "..." && git push`
 
-Ayrıntı için [README.md](README.md).
+Pages birkaç saniye içinde güncellenir. Ayrıntı için [README.md](README.md).
+
+**Not:** `data/meta.json` ve `data/ext_meta.json` depoya dâhil değil (`.gitignore`).
+Bunlar ham toplama çıktıları; `build.py` senin bilgisayarında çalışır, sunucuda
+değil. Yayınlanan şey `links.js` — o takipte ve güncel.
+
+---
 
 ## Takılırsan
 
-| Sorun | Sebebi |
+| Sorun | Sebebi ve çözümü |
 |---|---|
-| Push'ta `Permission denied (publickey)` | SSH anahtarı yok. HTTPS adresini kullan |
-| Pages 404 veriyor | Branch/folder ayarı yanlış ya da henüz yayına alınmadı, 2 dk bekle |
-| Sayfa boş açılıyor | `links.js` push edilmemiş olabilir; `git status` ile kontrol et |
-| Workflow hata veriyor | Adım 6a'daki yazma izni verilmemiştir |
+| Push'ta tarayıcı açılıp kapanıyor, yine soruyor | Windows Kimlik Bilgileri Yöneticisi'nden `git:https://github.com` kaydını silip tekrar dene |
+| `Permission denied (publickey)` | Adres SSH'ye dönmüş. `git remote set-url origin https://github.com/CebrailCalim/useful-sites.git` |
+| Push reddedildi, `fetch first` diyor | Depoda README açılmış. `git pull --rebase origin main` sonra tekrar push |
+| Pages 404 veriyor | Branch/folder ayarı yanlış ya da henüz yayına alınmadı — 2 dk bekle |
+| Site açılıyor ama boş | `links.js` push edilmemiş. `git status` ile kontrol et |
+| Workflow kırmızı | Büyük ihtimalle adım 6a'daki yazma izni verilmemiş |
