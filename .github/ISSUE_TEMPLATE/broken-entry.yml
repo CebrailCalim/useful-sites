@@ -1,0 +1,36 @@
+name: Report a broken or wrong entry
+description: A link that no longer opens, or a description that is off
+title: "[fix] "
+labels: ["broken-entry"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Which entry?
+      placeholder: The URL, or the name it appears under
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong?
+      options:
+        - The link does not open (dead)
+        - The address moved, there is a new one
+        - The description is wrong or out of date
+        - The comparison is off the mark
+        - Wrong category or tags
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: Details
+      description: >
+        If the description is wrong, telling me what it should say helps a lot.
+        If the address moved, include the new one.
+    validations:
+      required: true

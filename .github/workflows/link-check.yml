@@ -1,18 +1,21 @@
-name: Bağlantı ve depo sağlığı
+name: Link and repository health
 
-# Dizinin tek gerçek düşmanı çürüme. İki ayrı çürüme biçimi var:
-#   1. Bağlantı ölür        -> ci_check.py yakalar
-#   2. Depo arşivlenir      -> ci_check.py yakalayamaz, sayfa 200 döner.
-#                              ci_github.py yakalar.
-# İkisinin raporu tek issue'da toplanıyor; her hafta yenisi açılmıyor,
-# aynı issue güncelleniyor.
+# The only real enemy of a link directory is rot, and it arrives two ways:
+#
+#   1. The link dies          -> ci_check.py catches it
+#   2. The repository is archived -> ci_check.py cannot: the page still
+#                                    returns 200. ci_github.py catches it.
+#
+# Both reports land in one issue, and later weeks update that same issue
+# instead of filing a new one.
+
 on:
   schedule:
-    - cron: "17 4 * * 1"        # her pazartesi 04:17 UTC
+    - cron: "17 4 * * 1"        # Mondays, 04:17 UTC
   workflow_dispatch:
 
 permissions:
-  contents: write      # verified.json'i geri yazabilmek icin
+  contents: write      # to write verified.json back
   issues: write
 
 jobs:
@@ -27,29 +30,31 @@ jobs:
 
       - run: pip install --quiet requests
 
-      - name: Bağlantıları tara
+      - name: Scan the links
         run: python data/ci_check.py
-        continue-on-error: true      # ölü link bulunca 1 döner, akış devam etmeli
+        continue-on-error: true      # exits 1 when it finds dead links
 
-      - name: GitHub depolarını denetle
+      - name: Audit the linked GitHub repositories
         run: python data/ci_github.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
 
-      - name: Doğrulama tarihlerini işle
+      # verified.json feeds the "last verified" date shown on every entry, and
+      # now also the dead marker. Without the commit below those dates freeze.
+      - name: Commit the verification dates
         run: |
           if git diff --quiet data/verified.json; then
-            echo "değişiklik yok"
+            echo "no change"
           else
             git config user.name  "link-check[bot]"
             git config user.email "link-check@users.noreply.github.com"
             git add data/verified.json
-            git commit -m "bakım: doğrulama tarihlerini tazele"
+            git commit -m "chore: refresh verification dates"
             git push
           fi
 
-      - name: Raporu issue olarak yaz
+      - name: Write the report as an issue
         uses: actions/github-script@v7
         with:
           script: |
@@ -65,11 +70,11 @@ jobs:
             });
 
             if (!parts.length) {
-              core.info('temiz — rapor üretilmedi');
+              core.info('clean - no report produced');
               if (existing.data.length) {
                 await github.rest.issues.createComment({
                   owner, repo, issue_number: existing.data[0].number,
-                  body: 'Bu haftaki taramada sorun bulunmadı. Kapatıyorum.'
+                  body: 'Nothing wrong in this week\'s scan. Closing.'
                 });
                 await github.rest.issues.update({
                   owner, repo, issue_number: existing.data[0].number, state: 'closed'
@@ -83,11 +88,12 @@ jobs:
               await github.rest.issues.update({
                 owner, repo, issue_number: existing.data[0].number, body
               });
-              core.info(`#${existing.data[0].number} güncellendi`);
+              core.info(`updated #${existing.data[0].number}`);
             } else {
               await github.rest.issues.create({
-                owner, repo, title: 'Bakım: ölü bağlantılar ve terk edilmiş depolar',
+                owner, repo,
+                title: 'Maintenance: dead links and abandoned repositories',
                 body, labels: ['link-check']
               });
-              core.info('yeni issue açıldı');
+              core.info('opened a new issue');
             }

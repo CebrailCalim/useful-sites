@@ -1,0 +1,93 @@
+name: Approved link to pull request
+
+# A submission sitting in an issue is worth nothing until someone transcribes
+# it into part_new.py, and transcription is exactly the step that gets put off.
+# Label the issue `approved` and this opens a pull request with the record
+# already written and links.js rebuilt.
+#
+# It opens a PR. It never merges one -- the description still needs a human
+# pass, and the generated one deliberately says so in a comment.
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  transcribe:
+    if: >
+      github.event.label.name == 'approved' &&
+      contains(github.event.issue.labels.*.name, 'new-link')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Read the issue into a record
+        id: parse
+        continue-on-error: true
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: python data/from_issue.py
+
+      - name: Report back if the issue could not be used
+        if: steps.parse.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const why = fs.existsSync('issue-error.txt')
+              ? fs.readFileSync('issue-error.txt', 'utf8')
+              : 'The issue could not be parsed.';
+            const { owner, repo } = context.repo;
+            const n = context.issue.number;
+            await github.rest.issues.createComment({
+              owner, repo, issue_number: n,
+              body: 'I could not turn this into a record automatically:\n\n> ' +
+                    why + '\n\nRemoving the `approved` label. Fix the issue ' +
+                    'above and add it again, or transcribe it by hand.'
+            });
+            await github.rest.issues.removeLabel({
+              owner, repo, issue_number: n, name: 'approved'
+            }).catch(() => {});
+            core.setFailed(why);
+
+      - name: Rebuild the site data
+        run: python data/build.py
+
+      - name: Open the pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          N: ${{ github.event.issue.number }}
+        run: |
+          BRANCH="link/issue-$N"
+          git config user.name  "link-bot[bot]"
+          git config user.email "link-bot@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add -A
+          git commit -m "add link from #$N"
+          git push -u origin "$BRANCH"
+          # PR govdesi depoda duruyor. Heredoc denendi ve olmadi: YAML
+          # girintisi yuzunden kapanis etiketi sutun 0'da olamiyor, bash de
+          # girintili EOF'u kabul etmiyor.
+          sed "s/ISSUENO/$N/g" .github/pr-body-link.md > /tmp/pr-body.md
+          gh pr create --title "Add link from #$N" --body-file /tmp/pr-body.md --head "$BRANCH"
+
+      - name: Point the issue at the pull request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            await github.rest.issues.createComment({
+              owner, repo, issue_number: context.issue.number,
+              body: 'Transcribed into a pull request. It needs a description ' +
+                    'pass before merging.'
+            });

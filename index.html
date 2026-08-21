@@ -1096,11 +1096,11 @@ function parseCSV(txt){
 
 function issueURL(f){
   var u = new URLSearchParams();
-  u.set("template", "yeni-baglanti.yml");
+  u.set("template", "new-link.yml");
   u.set("title", "[link] " + (f.name || host(f.url) || ""));
   u.set("url", f.url);
   u.set("name", f.name || "");
-  u.set("cat", f.cat || "Emin değilim");
+  u.set("cat", f.cat || "Not sure");
   u.set("what", f.what || "");
   u.set("diff", f.diff || "");
   return REPO + "/issues/new?" + u.toString();
@@ -1112,7 +1112,7 @@ function bulkURL(list){
   }).join("\n");
   var u = new URLSearchParams();
   u.set("title", "[toplu] " + list.length + " bağlantı önerisi");
-  u.set("labels", "yeni-bağlantı");
+  u.set("labels", "new-link");
   u.set("body", "Dizinde bulunmayan bağlantılar:\n\n" + body);
   return REPO + "/issues/new?" + u.toString();
 }
@@ -1264,11 +1264,12 @@ function paintSub(){
   $("#f-diff").placeholder  = L.phDiff;
   $("#s-drop").innerHTML    = L.drop;
 
-  /* Değerler issue şablonundaki açılır listeyle birebir aynı olmak zorunda,
-     yoksa GitHub seçimi yok sayıyor. Ikisi de kategori adlarının Türkçesi. */
+  /* Görünen ad dile göre değişiyor ama gönderilen değer hep İngilizce:
+     issue şablonundaki açılır listeyle birebir aynı olmak zorunda, yoksa
+     GitHub seçimi sessizce yok sayıyor. */
   $("#f-cat").innerHTML = CATS.map(function(c){
-    return '<option value="'+esc(c.tr)+'">'+esc(lang === "tr" ? c.tr : c.en)+'</option>';
-  }).join("") + '<option value="Emin değilim">'+esc(L.catAsk)+'</option>';
+    return '<option value="'+esc(c.en)+'">'+esc(lang === "tr" ? c.tr : c.en)+'</option>';
+  }).join("") + '<option value="Not sure">'+esc(L.catAsk)+'</option>';
 
   if(bulkStat) $("#s-stat").innerHTML = L.stat("<b>"+bulkStat.read+"</b>",
     "<b>"+bulkStat.dup+"</b>", "<b>"+bulkNew.length+"</b>");

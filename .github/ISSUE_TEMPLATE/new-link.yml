@@ -1,0 +1,100 @@
+name: Suggest a link
+description: Propose a resource for the directory
+title: "[link] "
+labels: ["new-link"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks. Every entry in this directory states **what the thing does** and
+        **where it parts ways with its neighbours**, so both of those fields are
+        required below.
+
+        Turkish is fine in any field — the directory is bilingual and the
+        description gets written in both languages either way.
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://…
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Short — the product's own name
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cat
+    attributes:
+      label: Category
+      options:
+        - Learning & Roadmaps
+        - Practice & Challenges
+        - Programming Languages
+        - Web & Frontend
+        - Backend, API & System Design
+        - Mobile & Desktop
+        - Databases
+        - DevOps & Infrastructure
+        - Networking & Sysadmin
+        - Security & Privacy
+        - Data Science & ML
+        - AI · Models & Assistants
+        - AI · Agents, RAG & Infra
+        - AI · Applied Tools
+        - Hardware, CAD & Embedded
+        - Smart Glasses & Wearables
+        - Quantum Computing
+        - Tools & Utilities
+        - Reference & Collections
+        - Science & Academia
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What does it do?
+      description: A sentence or two. Not marketing copy — what it does.
+      placeholder: |
+        Example: A Postgres extension adding a vector type and an HNSW index.
+    validations:
+      required: true
+
+  - type: textarea
+    id: diff
+    attributes:
+      label: How does it differ?
+      description: >
+        This field is the only real value the directory has. Why this over
+        something else doing the same job? If you don't know, write "I don't
+        know" rather than leaving it empty — I'll look into it.
+      placeholder: |
+        Example: You keep vectors in the same transaction as the relational
+        data instead of running a separate vector database.
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (optional)
+      description: Comma separated. Unknown tags get mapped to the canonical set or dropped.
+      placeholder: open-source, python, self-hosted
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The link currently resolves
+          required: true
+        - label: It is not a personal file or an account-gated dashboard
+          required: true

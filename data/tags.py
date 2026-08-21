@@ -238,3 +238,30 @@ LABELS = {
 
 _eksik = [t for t in CANON if t not in LABELS]
 assert not _eksik, 'gorunen adi olmayan etiket: %s' % _eksik
+
+# ------------------------------------------------------------- Ingilizce girisler
+# Baglanti onerme formu artik Ingilizce; gonderen "open-source" ya da "database"
+# yaziyor. Bunlar ALIAS'ta yoktu ve sessizce dusuyordu. Her kanonik etiketin
+# Ingilizce gorunen adi kendi anahtarina baglaniyor -- tablo elle yazilmiyor,
+# LABELS'tan tureiyor ki ikisi ayrisamasin.
+for _k, _v in LABELS.items():
+    _en = _v[1].lower().replace(' ', '-')
+    if _en not in ALIAS and _en not in CANON:
+        ALIAS[_en] = _k
+
+# Ayni seyin yaygin baska soylenisleri. setdefault ile: bu tablo mevcut bir
+# eslesmeyi asla ezmiyor. (Ilk denemede update() kullanildi ve 'kubernetes'in
+# zaten var olan 'docker' eslesmesini bozdu -- iki kayitta etiket degisti.)
+for _en, _tr in {
+    'oss': 'açık-kaynak', 'opensource': 'açık-kaynak', 'foss': 'açık-kaynak',
+    'db': 'veritabanı', 'databases': 'veritabanı',
+    'documentation': 'dokümantasyon', 'guide': 'öğretici', 'course': 'müfredat',
+    'learning': 'müfredat', 'roadmap': 'müfredat', 'infosec': 'güvenlik',
+    'appsec': 'güvenlik', 'ml': 'veri-bilimi', 'machine-learning': 'veri-bilimi',
+    'ai': 'llm', 'networking': 'ağ', 'sysadmin': 'ağ', 'js': 'javascript',
+    'py': 'python', 'golang': 'go', 'k8s': 'devops', 'kubernetes': 'devops',
+    'ci': 'devops', 'observability': 'gözlemlenebilirlik', 'no-cost': 'ücretsiz',
+    'free-tier': 'freemium', 'paid': 'ücretli', 'book': 'kitap',
+    'cheatsheet': 'kopya-kâğıdı', 'cheat-sheet': 'kopya-kâğıdı',
+}.items():
+    ALIAS.setdefault(_en, _tr)

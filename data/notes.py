@@ -47,7 +47,7 @@ PARTS = [
     'part_ai_model', 'part_ai_infra', 'part_ai_tools',
     'part_dev', 'part_ops', 'part_infra', 'part_sec',
     'part_hw', 'part_misc', 'part_extra',
-    'part_yeni', 'part_ext1', 'part_ext2',
+    'part_new', 'part_ext1', 'part_ext2',
 ]
 
 import importlib  # noqa: E402
