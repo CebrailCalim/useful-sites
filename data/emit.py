@@ -20,7 +20,7 @@ import io
 import os
 import datetime
 
-SITE = 'https://cebrailcalim.github.io/useful-sites'
+SITE = 'https://latifkedi.github.io/useful-sites'
 FEED_N = 40
 
 

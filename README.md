@@ -1,6 +1,6 @@
 # Useful Sites
 
-https://cebrailcalim.github.io/useful-sites/
+https://latifkedi.github.io/useful-sites/
 
 A directory of links on software, AI, security, hardware and science.
 

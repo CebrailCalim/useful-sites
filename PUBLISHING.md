@@ -1,7 +1,7 @@
 # Publishing and repository setup
 
-Repository: **https://github.com/CebrailCalim/useful-sites**
-Live: **https://cebrailcalim.github.io/useful-sites/**
+Repository: **https://github.com/latifkedi/useful-sites**
+Live: **https://latifkedi.github.io/useful-sites/**
 
 The site is already published. What follows is the setup that got it there,
 plus the settings that still need to be right for the automation to work.
@@ -55,7 +55,7 @@ making them up front means the filters work immediately:
 Settings sidebar → **About** gear:
 
 - **Description:** `An annotated directory of links on software, AI and security`
-- **Website:** `https://cebrailcalim.github.io/useful-sites/`
+- **Website:** `https://latifkedi.github.io/useful-sites/`
 - **Topics:** `bookmarks`, `awesome-list`, `directory`, `turkish`, `developer-tools`
 
 Topics measurably help discovery through GitHub search.
@@ -111,7 +111,7 @@ what is served always matches what was built.
 | Symptom | Cause and fix |
 |---|---|
 | Push opens a browser, closes, asks again | Delete the `git:https://github.com` entry from Windows Credential Manager and retry |
-| `Permission denied (publickey)` | The remote reverted to SSH. `git remote set-url origin https://github.com/CebrailCalim/useful-sites.git` |
+| `Permission denied (publickey)` | The remote reverted to SSH. `git remote set-url origin https://github.com/latifkedi/useful-sites.git` |
 | Push rejected, `fetch first` | The remote has commits you do not. `git pull --rebase origin main`, then push |
 | Pages returns 404 | Wrong branch/folder in the Pages settings, or the deploy has not finished — give it two minutes |
 | Site loads but is empty | `links.js` was not pushed. Check with `git status` |

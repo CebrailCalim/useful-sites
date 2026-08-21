@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Kullanışlı Siteler</title>
 <subtitle>Yazılım, yapay zeka, güvenlik ve bilim üzerine açıklamalı bağlantı dizini</subtitle>
-<link href="https://cebrailcalim.github.io/useful-sites/feed.xml" rel="self"/>
-<link href="https://cebrailcalim.github.io/useful-sites/"/>
-<id>https://cebrailcalim.github.io/useful-sites/</id>
+<link href="https://latifkedi.github.io/useful-sites/feed.xml" rel="self"/>
+<link href="https://latifkedi.github.io/useful-sites/"/>
+<id>https://latifkedi.github.io/useful-sites/</id>
 <updated>2026-08-21T20:53:20Z</updated>
 <entry>
   <title>Algorithm Visualizer</title>

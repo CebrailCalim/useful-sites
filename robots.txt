@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cebrailcalim.github.io/useful-sites/sitemap.xml
+Sitemap: https://latifkedi.github.io/useful-sites/sitemap.xml
