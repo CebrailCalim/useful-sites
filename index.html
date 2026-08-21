@@ -569,6 +569,20 @@ data.forEach(function(d,i){
   d._s = fold([d.name,d.tr,(d.tags||[]).join(" "),lbl,d._h,d.cat_tr,d.cat_en].join(" "));
 });
 
+/* Ingilizce aciklamalar ayri dosyada ve sonradan geliyor, dolayisiyla ilk
+   indeks yalnizca Turkce metni tasiyor. Bunu tazelemezsek Ingilizce moddaki
+   arama, ekranda okunan cumleyi bulamiyor: "mesh" yaziyorsun, aciklamada
+   geciyor, sonuc bos donuyor. */
+var enIndexed = false;
+function indexEN(){
+  if(enIndexed || !window.LINKS_EN) return;
+  enIndexed = true;
+  data.forEach(function(d){
+    var t = window.LINKS_EN[d._i];
+    if(t) d._s += " " + fold(t);
+  });
+}
+
 var CATS = (function(){
   var seen = [], out = [];
   data.forEach(function(d){
@@ -948,7 +962,7 @@ function setLang(next){
     enLoading = true;
     var s = document.createElement("script");
     s.src = "links.en.js";
-    s.onload = s.onerror = function(){ enLoading = false; render() };
+    s.onload = s.onerror = function(){ enLoading = false; indexEN(); render() };
     document.head.appendChild(s);
   }
   update(false);
