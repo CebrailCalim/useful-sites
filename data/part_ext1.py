@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
-"""Dis liste kaynakli kayitlar — ogrenme, pratik, diller, referans.
+"""Records from the external list - learning, practice, languages, reference.
 
-Kaynak: Best-websites-a-programmer-should-visit (arsivlenmis derleme).
-702 baglantidan canli, tekrarsiz ve dizinin kapsamina giren ~140 tanesi secildi;
-kisisel bloglar, olu ders sayfalari ve alan adi ele gecirilmis siteler elendi.
+Source: Best-websites-a-programmer-should-visit (an archived compilation).
+Of its 702 links, roughly 140 were taken: the ones still alive, not already
+here, and inside this directory's scope. Personal blogs, dead course pages
+and domains that had been taken over were dropped.
 
-Bu kayitlarin src degeri 'bwapsv' — arayuzde 'Dis liste' olarak isaretleniyor.
+These carry src='bwapsv' and show up in the interface as "External List".
 """
 
 SRC = 'bwapsv'
@@ -15,7 +16,7 @@ def load(add):
     def a(url, name, tags, tr, en, cat):
         add(url, name, tags, tr, en, cat, SRC)
 
-    # ============================================================ ÖĞRENME
+    # ============================================================ LEARNING
     O = 'ogrenme'
     a('https://roadmap.sh/', 'roadmap.sh', ['ücretsiz', 'müfredat'],
       'Bütün yol haritalarının kök sayfası; frontend’den DevOps’a, Python’dan siber güvenliğe '
@@ -77,7 +78,7 @@ def load(add):
       'A course platform for art and creative coding — sound synthesis, visual programming and machine '
       'learning applied to art.', O)
 
-    # ============================================================ PRATİK
+    # ============================================================ PRACTICE
     P = 'pratik'
     a('https://www.freecodecamp.com', 'freeCodeCamp', ['ücretsiz', 'interaktif', 'müfredat'],
       'Tarayıcı içinde alıştırmalı, uçtan uca ücretsiz müfredat; sertifikaları da ücretsiz. '
@@ -151,7 +152,7 @@ def load(add):
       'Teaches cryptography by breaking it, with each level exploiting a real weakness — '
       'the applied counterpart to a theory course.', P)
 
-    # ============================================================ DİLLER & DERLEYİCİ
+    # ============================================================ LANGUAGES & COMPILERS
     L = 'diller'
     a('http://craftinginterpreters.com/', 'Crafting Interpreters', ['ücretsiz', 'kitap', 'c-ailesi'],
       'Bir dili iki kez sıfırdan yazdıran ücretsiz kitap: önce Java ile ağaç yürüyen yorumlayıcı, '
@@ -208,7 +209,7 @@ def load(add):
       '“bunu neden böyle yapmalıyım” sorularının doğrudan cevabı.',
       'Stroustrup’s FAQ on C++ style and common mistakes — direct answers to “why should I do it this way”.', L)
 
-    # ============================================================ REFERANS & ÜSLUP
+    # ============================================================ REFERENCE & STYLE
     R = 'referans'
     a('https://google.github.io/styleguide/cppguide.html', 'Google C++ Üslup Kılavuzu', ['ücretsiz', 'c-ailesi', 'referans'],
       'Google’ın C++ kuralları; bazı maddeleri tartışmalı (istisna yasağı gibi) ama '

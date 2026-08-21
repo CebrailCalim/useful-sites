@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Araçlar & Yardımcılar · Bilim & Akademik
+"""Tools & Utilities - Science & Academia
 
-Not: kaynak yer imlerindeki tek tek Vikipedi makaleleri (kisisel okuma listesi)
-bilerek disarida birakildi; burada yalnizca baskasinin da kullanabilecegi
-kaynaklar var.
+Note: individual Wikipedia articles from the source bookmarks (a personal
+reading list) were left out on purpose. What is here is what someone else
+could also use.
 """
 
 
 def load(add):
-    # ============================================================ ARAÇLAR & YARDIMCILAR
+    # ============================================================ TOOLS & UTILITIES
     T = 'araclar'
     add('https://excalidraw.com/', 'Excalidraw', ['açık-kaynak', 'diyagram', 'tarayıcı-içi'],
         'El çizimi görünümlü beyaz tahta. Kasıtlı olarak kaba durması bir üslup tercihi değil işlevsel: '
@@ -175,7 +175,7 @@ def load(add):
     add('https://www.youtube.com/watch?v=uOPl7ZzuXf8&list=PLi2GhhsPL-RrapHA_Z8c1GG_qM3Nzdd0j&index=2', 'Araç Serisi (oynatma listesi)', ['video', 'ücretsiz'],
         'Araç ve iş akışı üzerine çok bölümlü seri; tek videodan farkı konuyu adım adım derinleştirmesi.',
         'A multi-part series on tooling and workflow, deepening the subject step by step rather than in one pass.', T)
-    # trend & istatistik
+    # trends & statistics
     add('https://www.tiobe.com/tiobe-index/', 'TIOBE Index', ['ücretsiz', 'istatistik'],
         'Programlama dili popülerlik endeksi. Yöntemi (arama motoru sonucu sayısı) haklı olarak eleştiriliyor; '
         'yine de yirmi yıllık tutarlı seri olduğu için eğilim okumada kullanılıyor.',
@@ -201,7 +201,7 @@ def load(add):
         'A publication turning economic and technology data into infographics. Not a raw data source — '
         'its contribution is making magnitudes comparable.', T)
 
-    # ============================================================ BİLİM & AKADEMİK
+    # ============================================================ SCIENCE & ACADEMIA
     B = 'bilim'
     add('https://arxiv.org/', 'arXiv', ['ücretsiz', 'ön-baskı', 'akademik'],
         'Fizik, matematik ve bilgisayar biliminin ön baskı arşivi. Hakem sürecinden önce yayımlandığı için '

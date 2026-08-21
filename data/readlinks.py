@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
-"""links.js icindeki kayit listesini okur.
+"""Reads the record list back out of links.js.
 
-Kendi basina bir dosya olmasinin sebebi bir hata: once bu is her betikte
-`src[src.index('['):src.rindex(';')]` diye yapiliyordu. links.js'e sonradan
-window.TAGLABELS eklendi, onun ilk `[` karakteri artik daha onde -- dilim
-bozuk JSON'a denk geldi ve iki CI betigi de sessizce cokmeye basladi.
-Workflow'da continue-on-error acik oldugu icin haftalarca yesil gorundu.
+This is its own module because of a bug. Every script used to do it with
+`src[src.index('['):src.rindex(';')]`. Then window.TAGLABELS was added to
+links.js, its first `[` now comes earlier in the file, and the slice landed
+on malformed JSON -- both CI scripts started failing silently. The workflow
+had continue-on-error set, so it stayed green for weeks while doing nothing.
 
-Buradaki okuyucu window.LINKS= isaretini aciktan ariyor ve parantez sayarak
-bitis yerini buluyor; links.js'e yeni bir degisken eklenmesi onu bozmuyor.
+This reader looks for the window.LINKS= marker explicitly and finds the end
+of the array by counting brackets. Adding another variable to links.js does
+not break it.
 """
 import io
 import json

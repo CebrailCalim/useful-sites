@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Web & Frontend · Backend, API & Sistem Tasarımı · Mobil & Masaüstü"""
+"""Web & Frontend - Backend, API & System Design - Mobile & Desktop"""
 
 
 def load(add):
@@ -114,7 +114,7 @@ def load(add):
         'Measures Google Maps ranking across a grid of locations, showing how the same query shifts block by block — '
         'precisely the blind spot of general SEO tools.', W)
 
-    # ============================================================ BACKEND & SİSTEM TASARIMI
+    # ============================================================ BACKEND & SYSTEM DESIGN
     B = 'backend'
     add('https://fastapi.tiangolo.com/', 'FastAPI', ['açık-kaynak', 'python', 'async', 'openapi'],
         'Tip ipuçlarından hem doğrulama hem OpenAPI şeması üretiyor; `/docs` adresinde çalışan bir '
@@ -226,7 +226,7 @@ def load(add):
         'An introduction gathering APIs, databases, caching, CDNs and load balancers into one narrative — '
         'for seeing how the pieces connect.', B)
 
-    # ============================================================ MOBİL & MASAÜSTÜ
+    # ============================================================ MOBILE & DESKTOP
     M = 'mobil'
     add('https://docs.flutter.dev/learn', 'Flutter', ['açık-kaynak', 'dart', 'mobil', 'masaüstü'],
         'Skia/Impeller ile her pikseli kendisi çiziyor; platform bileşeni kullanmıyor. '

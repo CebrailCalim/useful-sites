@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Öğrenme & Yol Haritaları · Pratik & Alıştırma · Programlama Dilleri"""
+"""Learning & Roadmaps - Practice & Challenges - Programming Languages"""
 
 
 def load(add):
-    # ============================================================ ÖĞRENME & YOL HARİTALARI
+    # ============================================================ LEARNING & ROADMAPS
     O = 'ogrenme'
     add('https://roadmap.sh/linux', 'roadmap.sh · Linux', ['ücretsiz', 'yol-haritası', 'linux'],
         'Dosya sisteminden süreç yönetimine, kabuk betiğinden sistemd’ye kadar konuları bağımlılık '
@@ -78,7 +78,7 @@ def load(add):
     add('https://www.youtube.com/watch?v=FCNg8KyMmGI&ab_channel=CodingwithLewis', '21 Proje Fikri', ['video', 'ücretsiz', 'proje'],
         'Zorluk sırasına dizilmiş proje fikirleri; baştan sona takip edilirse yol haritası gibi çalışıyor.',
         'Project ideas arranged by difficulty; followed end to end it works like a roadmap.', O)
-    # eğitim platformları
+    # course platforms
     add('https://ocw.mit.edu/', 'MIT OpenCourseWare', ['ücretsiz', 'üniversite', 'ders-notu'],
         'MIT derslerinin ders notu, ödev, sınav ve çözümleriyle birlikte açık arşivi. '
         'Video kursların vermediği şey burada: gerçek problem setleri ve cevap anahtarları.',
@@ -206,7 +206,7 @@ def load(add):
         'A free mock for the Claude Certified Architect exam in two modes — a 28-question short form and a '
         'full 60-question run — matching the real timing and pass threshold.', O)
 
-    # ============================================================ PRATİK & ALIŞTIRMA
+    # ============================================================ PRACTICE & CHALLENGES
     P = 'pratik'
     add('https://exercism.org/', 'Exercism', ['açık-kaynak', 'ücretsiz', 'alıştırma', 'mentor'],
         '70’ten fazla dilde alıştırma; çözdüğün soruya gönüllü bir mentorun yorum yazması '
@@ -307,7 +307,7 @@ def load(add):
         'Turkish touch-typing training supporting F and Q layouts separately. '
         'Free material for the F layout is rare locally.', P)
 
-    # ============================================================ PROGRAMLAMA DİLLERİ
+    # ============================================================ PROGRAMMING LANGUAGES
     L = 'diller'
     add('https://python.yazbel.com/', 'Yazbel Python Belgeleri', ['ücretsiz', 'türkçe', 'python'],
         'Python’un en kapsamlı Türkçe kaynağı ve çeviri değil; baştan Türkçe yazılmış olduğu için '

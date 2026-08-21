@@ -12,23 +12,23 @@ Haritada olmayan ham etiketler dusuruluyor.
 CANON = [
     # --- maliyet & lisans
     'ücretsiz', 'freemium', 'ücretli', 'açık-kaynak', 'açık-ağırlık',
-    # --- içerik türü
+    # --- content type
     'dokümantasyon', 'öğretici', 'video', 'kitap', 'kopya-kâğıdı',
     'awesome-liste', 'interaktif', 'müfredat', 'referans',
-    # --- dağıtım & arayüz
+    # --- distribution & interface
     'self-hosted', 'cli', 'api', 'sdk', 'tarayıcı-içi', 'masaüstü', 'eklenti',
     # --- dil & platform
     'python', 'javascript', 'c-ailesi', 'rust', 'go', 'php', 'github', 'docker',
     # --- yapay zeka
     'llm', 'agent', 'rag', 'embedding', 'vektör-db', 'mcp',
     'guardrail', 'gözlemlenebilirlik', 'görsel-üretim', '3b', 'ses', 'otomasyon',
-    # --- geliştirme alanları
+    # --- development areas
     'frontend', 'backend', 'veritabanı', 'devops', 'sistem-tasarımı',
     'algoritma', 'git', 'sunucu',
-    # --- diğer alanlar
+    # --- other areas
     'güvenlik', 'osint', 'gizlilik', 'ağ', 'donanım', 'gömülü', 'cad',
     'veri-bilimi', 'akademik', 'kuantum',
-    # --- bağlam
+    # --- context
     'türkçe', 'mülakat', 'sertifika', 'arşivlenmiş',
 ]
 
@@ -38,7 +38,7 @@ ALIAS = {
     'mit': 'açık-kaynak', 'apache-2': 'açık-kaynak', 'lisans': 'açık-kaynak',
     'model': 'açık-ağırlık', 'model-arşivi': 'açık-ağırlık',
 
-    # içerik türü
+    # content type
     'rehber': 'öğretici', 'ders-notu': 'öğretici', 'örnek': 'öğretici',
     'giriş': 'öğretici', 'kurulum': 'öğretici', 'vaka': 'öğretici',
     'makale': 'referans', 'bülten': 'referans', 'sözlük': 'referans',
@@ -56,7 +56,7 @@ ALIAS = {
     'başlangıç': 'öğretici', 'topluluk': 'awesome-liste', 'mentor': 'awesome-liste',
     'ödül-programı': 'güvenlik', 'yarışma': 'veri-bilimi', 'etkinlik': 'interaktif',
 
-    # dağıtım & arayüz
+    # distribution & interface
     'kendi sunucunda': 'self-hosted', 'yerel': 'self-hosted',
     'yerel-model': 'self-hosted', 'çevrimdışı': 'self-hosted',
     'web-ui': 'tarayıcı-içi', 'web': 'tarayıcı-içi', 'proxy': 'api',
@@ -96,7 +96,7 @@ ALIAS = {
     'olay-akışı': 'otomasyon', 'amqp': 'otomasyon', 'dijital-ikiz': 'gömülü',
     'entegrasyon': 'otomasyon', 'dünya-modeli': 'llm', 'araştırma': 'akademik',
 
-    # geliştirme
+    # development
     'css': 'frontend', 'ui': 'frontend', 'hypermedia': 'frontend',
     'bileşen': 'frontend', 'tel-kafes': 'frontend', 'seo': 'frontend',
     'e-ticaret': 'frontend', 'webcontainer': 'frontend', 'tam-yığın': 'frontend',
@@ -130,7 +130,7 @@ ALIAS = {
     'dönüştürücü': 'referans', 'regex': 'referans', 'kazıma': 'referans',
     'erişilebilirlik': 'frontend', 'arşivleme': 'referans',
 
-    # güvenlik
+    # security
     'sızma-testi': 'güvenlik', 'ctf': 'güvenlik', 'kriptografi': 'güvenlik',
     'steganografi': 'güvenlik', 'keşif': 'osint', 'tersine-mühendislik': 'güvenlik',
     'tedarik-zinciri': 'güvenlik', 'kurumsal': 'güvenlik', 'netsec': 'ağ',
@@ -166,10 +166,11 @@ def normalise(tags):
 
 
 # ------------------------------------------------------------------ gorunen adlar
-# Etiketler veride kucuk harf ve tireli tutuluyor (URL ve filtre anahtari olarak
-# kararli kalsin diye). Arayuzde gosterilen bicim buradan geliyor: Turkcede
-# buyuk harf kurallari (i -> I degil, i -> I noktali) JS tarafinda guvenilir
-# calismadigi icin elle yaziliyor. Kisaltmalar da dogru buyukluge kavusuyor.
+# Tags stay lowercase and hyphenated in the data, so they remain stable as
+# URL and filter keys. What the interface shows comes from here. The labels
+# are written by hand because Turkish capitalisation (i uppercases to a
+# dotted I, not I) is not reliable in JS, and because abbreviations need
+# their own casing: API, MCP, GitHub, PHP, DevOps.
 LABELS = {
     'ücretsiz':            ('Ücretsiz', 'Free'),
     'freemium':            ('Freemium', 'Freemium'),
@@ -240,18 +241,19 @@ _eksik = [t for t in CANON if t not in LABELS]
 assert not _eksik, 'gorunen adi olmayan etiket: %s' % _eksik
 
 # ------------------------------------------------------------- Ingilizce girisler
-# Baglanti onerme formu artik Ingilizce; gonderen "open-source" ya da "database"
-# yaziyor. Bunlar ALIAS'ta yoktu ve sessizce dusuyordu. Her kanonik etiketin
-# Ingilizce gorunen adi kendi anahtarina baglaniyor -- tablo elle yazilmiyor,
-# LABELS'tan tureiyor ki ikisi ayrisamasin.
+# The submission form is in English now, so people write "open-source" or
+# "database". Neither was in ALIAS and both were silently dropped. Each
+# canonical tag's English display label is bound to its own key -- derived
+# from LABELS rather than typed out, so the two cannot drift apart.
 for _k, _v in LABELS.items():
     _en = _v[1].lower().replace(' ', '-')
     if _en not in ALIAS and _en not in CANON:
         ALIAS[_en] = _k
 
-# Ayni seyin yaygin baska soylenisleri. setdefault ile: bu tablo mevcut bir
-# eslesmeyi asla ezmiyor. (Ilk denemede update() kullanildi ve 'kubernetes'in
-# zaten var olan 'docker' eslesmesini bozdu -- iki kayitta etiket degisti.)
+# Other common ways of saying the same thing. setdefault, so this table
+# never overwrites an existing mapping -- the first attempt used update()
+# and clobbered the existing 'k8s' -> 'docker' entry, which quietly changed
+# the tags on two records.
 for _en, _tr in {
     'oss': 'açık-kaynak', 'opensource': 'açık-kaynak', 'foss': 'açık-kaynak',
     'db': 'veritabanı', 'databases': 'veritabanı',

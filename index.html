@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>▤</text></svg>">
 <style>
-/* ---------------------------------------------------------------- jeton */
+/* ---------------------------------------------------------------- tokens */
 :root{
   --bg:#fcfbf9;      --panel:#f5f2ec;
   --fg:#191817;      --dim:#57544e;      --faint:#8b8780;
@@ -63,7 +63,7 @@ a{color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:1px}
 .wrap{max-width:1280px;margin:0 auto}
 
-/* ---------------------------------------------------------------- başlık */
+/* ---------------------------------------------------------------- masthead */
 header{padding:48px 0 22px;border-bottom:1px solid var(--rule)}
 .masthead{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap}
 h1{font-size:28px;font-weight:600;margin:0;letter-spacing:-.022em;line-height:1.25}
@@ -76,7 +76,7 @@ h1{font-size:28px;font-weight:600;margin:0;letter-spacing:-.022em;line-height:1.
 }
 .btn:hover{color:var(--fg);border-color:var(--faint);background:var(--panel)}
 .btn:active{transform:translateY(.5px)}
-/* açılır menü: düğmelerle aynı görünsün */
+/* dropdown: has to look identical to the buttons next to it */
 .sel{position:relative;display:inline-flex;align-items:center;gap:6px;
   font:12.5px/1 var(--mono);color:var(--dim);
   border:1px solid var(--rule);padding:8px 11px;border-radius:3px;cursor:pointer;
@@ -86,7 +86,7 @@ h1{font-size:28px;font-weight:600;margin:0;letter-spacing:-.022em;line-height:1.
 .sel select{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
 .sel:focus-within{outline:2px solid var(--accent);outline-offset:2px}
 
-/* ---------------------------------------------------------------- araçlar */
+/* ---------------------------------------------------------------- toolbar */
 .tools{padding:18px 0 12px;border-bottom:1px solid var(--rule2)}
 .searchrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 #q{
@@ -114,7 +114,7 @@ h1{font-size:28px;font-weight:600;margin:0;letter-spacing:-.022em;line-height:1.
 .tag[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
 .tag[aria-pressed="true"] b{color:var(--accent)}
 
-/* ---------------------------------------------------------------- düzen */
+/* ---------------------------------------------------------------- layout */
 .cols{display:grid;grid-template-columns:212px 1fr;gap:48px;margin-top:30px;align-items:start}
 nav ol{list-style:none;margin:0;padding:0}
 nav li{border-bottom:1px solid var(--rule2)}
@@ -140,7 +140,7 @@ h2{
   border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:12px;
 }
 h2 .n{font-variant-numeric:tabular-nums}
-/* satır başına iki bağlantı */
+/* two links per row */
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 44px}
 .item{
   padding:15px 0 15px 14px;border-bottom:1px solid var(--rule2);
@@ -161,7 +161,7 @@ h2 .n{font-variant-numeric:tabular-nums}
 .itags span:hover{color:var(--accent)}
 .age{font:11.5px/1 var(--mono);color:var(--faint);margin-left:auto;white-space:nowrap}
 
-/* başlangıç noktası işareti — kategori başına 2-3 kayıt */
+/* start-here marker: two or three entries per category */
 .dot{color:var(--accent);font-size:9px;line-height:1;position:relative;top:-1px}
 .item.pick a.name{color:var(--accent)}
 .item.pick{border-left-color:var(--accent-soft)}
@@ -169,17 +169,17 @@ h2 .n{font-variant-numeric:tabular-nums}
 .pickbtn{border-color:var(--accent-soft)}
 .pickbtn .dot{font-size:8px}
 
-/* kategori giriş metni */
+/* category introduction */
 .intro{
   color:var(--dim);font-size:15px;line-height:1.72;margin:14px 0 6px;
   max-width:80ch;padding-left:14px;border-left:2px solid var(--rule);
 }
-/* ilgili kayıtlar */
+/* related entries */
 .rel{margin:7px 0 0;font:12.5px/1.6 var(--mono);color:var(--faint)}
 .rel b{font-weight:400;color:var(--faint)}
 .rel a{color:var(--dim);text-decoration:none;cursor:pointer}
 .rel a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
-/* kaynak ve doğrulama rozetleri */
+/* source and verification badges */
 .badge{font:11.5px/1 var(--mono);color:var(--faint);white-space:nowrap}
 .badge.ext{color:var(--accent);opacity:.8}
 .badge.dead{color:#fff;background:var(--accent);border-color:var(--accent);opacity:1}
@@ -192,7 +192,7 @@ h2 .n{font-variant-numeric:tabular-nums}
 .srcbar .lbl{font:12px/1 var(--mono);color:var(--faint);margin-right:2px}
 mark{background:var(--mark);color:inherit;padding:0 2px;border-radius:2px}
 
-/* ---------------------------------------------------------------- sayfalama */
+/* ---------------------------------------------------------------- pagination */
 .pager{display:flex;gap:6px;align-items:center;padding:22px 0 0;flex-wrap:wrap}
 .pg{
   font:12.5px/1 var(--mono);color:var(--dim);background:none;border:1px solid var(--rule);
@@ -222,7 +222,7 @@ footer{
 }
 footer kbd{font:12px var(--mono);border:1px solid var(--rule);border-radius:3px;padding:2px 5px;color:var(--dim)}
 footer a{color:var(--dim)}
-/* Klavyeyle gezen biri her seferinde 63 etiketin arasindan gecmesin. */
+/* So keyboard users do not tab through 63 tags to reach the content. */
 .skip{
   position:absolute;left:-9999px;top:0;z-index:40;
   font:13px/1 var(--mono);color:var(--bg);background:var(--accent);
@@ -230,7 +230,7 @@ footer a{color:var(--dim)}
 }
 .skip:focus{left:0}
 
-/* ---------------------------------------------------------------- gönderme */
+/* ---------------------------------------------------------------- submit */
 dialog#sub{
   border:1px solid var(--rule);border-radius:4px;padding:0;
   background:var(--bg);color:var(--fg);
@@ -305,9 +305,9 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
   .sub{font-size:15.5px}
   .masthead{gap:14px}
   .hdr-actions{margin-left:0;width:100%;padding-top:0;flex-wrap:wrap}
-  /* Dokunma hedefleri 44 px'in altına düşmesin (WCAG 2.2 hedef boyutu).
-     Yüksekliği dolgudan değil min-height'tan alıyoruz: yazı boyutu
-     değiştiğinde hedef küçülmesin. */
+  /* Keep touch targets at 44px (WCAG 2.2 target size). The height comes
+     from min-height rather than padding, so a change in font size cannot
+     shrink the target. */
   .btn,.sel,.tag,.pg,#sort{
     min-height:44px;display:inline-flex;align-items:center;justify-content:center;
   }
@@ -437,8 +437,8 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
 var PER_PAGE = 20;
 var CHECKED  = "20.08.2026";
 var REPO     = "https://github.com/CebrailCalim/useful-sites";
-/* Baglanti dizinlerinin ortak kaderi curumek. Her kayda arsiv cikisi
-   koymak, site oldugunde kaydin butun degerini kaybetmesini onluyor. */
+/* Link directories share a fate: they rot. An archive link on every entry
+   means a record does not lose all of its value when the site goes. */
 var ARCHIVE  = "https://web.archive.org/web/2024/";
 
 var T = {
@@ -595,7 +595,7 @@ var ALLTAGS = Object.keys(TAGCOUNT).sort(function(a,b){
   return TAGCOUNT[b]-TAGCOUNT[a] || a.localeCompare(b,"tr");
 });
 
-/* ------------------------------------------------------------ URL durumu */
+/* ------------------------------------------------------------ URL state */
 function readURL(){
   var p = new URLSearchParams(location.search);
   q          = (p.get("q") || "").trim();
@@ -630,7 +630,7 @@ function writeURL(push){
   history[push ? "pushState" : "replaceState"]({}, "", location.pathname + (s ? "?"+s : ""));
 }
 
-/* ------------------------------------------------------------ filtre & sıra */
+/* ------------------------------------------------------------ filter & sort */
 function keep(d){ return matches(d, false) }
 
 function matches(d, ignoreCat){
@@ -777,9 +777,9 @@ function render(){
   var shown = data.filter(keep);
   $("#count").textContent = L.count(shown.length, data.length);
 
-  /* Kategori listesi hiçbir zaman kısalmıyor: bir kategori seçilince diğerleri
-     kaybolursa gezinme hissi bozuluyor. Seçili olan işaretleniyor, eşleşmesi
-     olmayanlar soluklaşıyor ama yerinde duruyor. */
+  /* The category list never shrinks. If the others vanish when one is
+     picked, you lose your bearings. The selected one is marked, the ones
+     with no matches fade, but everything stays where it was. */
   var counts = {};
   var poolNoCat = data.filter(function(d){ return matches(d, true) });
   poolNoCat.forEach(function(d){ counts[d.cat] = (counts[d.cat]||0) + 1 });
@@ -833,7 +833,7 @@ var typeTimer;
 $("#q").addEventListener("input", function(e){
   q = e.target.value.trim(); pages = {}; render();
   clearTimeout(typeTimer);
-  typeTimer = setTimeout(function(){ writeURL(false) }, 400);   /* geçmişi kirletme */
+  typeTimer = setTimeout(function(){ writeURL(false) }, 400);   /* do not pollute the history stack */
 });
 
 $("#sort").addEventListener("change", function(e){
@@ -939,7 +939,7 @@ $("#dl").addEventListener("change", function(e){
   e.target.value = "";
 });
 
-/* İngilizce açıklamalar ilk yüklemede gelmiyor; dil değişince çekiliyor. */
+/* English descriptions are not in the first load; fetched on switch. */
 var enLoading = false;
 function setLang(next){
   lang = next;
@@ -966,9 +966,9 @@ $("#theme").addEventListener("click", function(){
 });
 applyTheme();
 
-/* Yukarı çık — elle animasyon. Sayfa 50 000 px'i geçtiği için tarayıcının
-   kendi smooth davranışı ya çok uzun sürüyor ya anlık bitiyor; sabit 520 ms
-   her yükseklikte aynı hissi veriyor. */
+/* Back to top, animated by hand. The page runs past 50,000px, where the
+   browser's own smooth behaviour either crawls or finishes instantly; a
+   fixed 520ms feels the same at every height. */
 function scrollTop(){
   if(matchMedia("(prefers-reduced-motion:reduce)").matches){ scrollTo(0,0); return }
   var start = scrollY, t0 = performance.now(), dur = 520;
@@ -995,7 +995,7 @@ topBtn.addEventListener("click", scrollTop);
 window.__syncTop = syncTop;
 
 document.addEventListener("keydown", function(e){
-  /* Diyalog acikken / ve r araya girmesin; Esc'yi <dialog> kendi yakaliyor. */
+  /* While the dialog is open, / and r must not fire. <dialog> handles Esc. */
   if(dlg.open) return;
   var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
   if(e.key === "/" && !typing){ e.preventDefault(); $("#q").focus() }
@@ -1003,13 +1003,15 @@ document.addEventListener("keydown", function(e){
   if(e.key === "Escape"){ clearAll(); $("#q").blur() }
 });
 
-/* ------------------------------------------------------- bağlantı gönderme
-   Arka uç yok, olmayacak da. Gönderilen şey doğrudan GitHub issue'suna
-   gidiyor; dizinin verisi ancak build.py çalışıp push edilince değişiyor.
-   Yani buradan hiçbir şey siteye kendiliğinden düşmez, önce insan bakar.
+/* ------------------------------------------------------------ submissions
+   There is no backend and there will not be one. What gets submitted goes
+   straight into a GitHub issue; the directory's data only changes when
+   build.py runs and someone pushes. Nothing here can reach the site on its
+   own -- a person reads it first.
 
-   Dosyalar da tarayıcıda okunuyor. Yer imi dışa aktarımın kişisel şeyler
-   içerebilir; hiçbiri bir yere yüklenmiyor, yükleyecek yer de yok. */
+   Files are parsed in the browser too. A bookmark export can hold personal
+   things; none of it is uploaded anywhere, and there is nowhere to upload
+   it to. */
 
 var dlg = $("#sub"), subTab = "one", bulkNew = [], bulkStat = null;
 
@@ -1019,8 +1021,9 @@ function nkey(u){
 }
 function bare(k){ return k.replace(/[?#].*$/, "").replace(/\/+$/, "") }
 
-/* Dizide olanların indeksi. Hem tam hem sorgusuz biçimi tutuluyor:
-   aynı sayfa "?utm_source=…" ile gelirse ayrı kayıt sayılmasın. */
+/* Index of what is already here. Both the full and the query-stripped
+   form, so the same page arriving with "?utm_source=..." is not counted
+   as something new. */
 var HAVE = {};
 data.forEach(function(d){
   var k = nkey(d.url);
@@ -1031,7 +1034,7 @@ function known(u){ var k = nkey(u); return HAVE[k] || HAVE[bare(k)] || null }
 
 function unent(t){ var e = document.createElement("textarea"); e.innerHTML = t; return e.value }
 
-/* Netscape yer imi dışa aktarımı — Chrome, Firefox, Edge, Safari hepsi bunu üretir. */
+/* Netscape bookmark export: Chrome, Firefox, Edge and Safari all emit this. */
 function parseBM(txt){
   var out = [], re = /<a\s[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, m;
   while((m = re.exec(txt))){
@@ -1053,7 +1056,7 @@ function parseJS(txt){
   }).filter(function(x){ return /^https?:/i.test(x.url) });
 }
 
-/* Ayraç başlık satırından anlaşılıyor: Türkçe Excel ';' yazıyor, geri kalanı ','. */
+/* The separator comes from the header row: Turkish Excel writes ';'. */
 function parseCSV(txt){
   txt = txt.replace(/^﻿/, "");
   var head = txt.split(/\r?\n/)[0] || "";
@@ -1081,7 +1084,7 @@ function parseCSV(txt){
     if(ni < 0 && /name|title|isim|baslik|başlık/.test(hdr[k])) ni = k;
   }
   var body = rows.slice(1);
-  if(ui < 0){                       /* başlık satırı yok — URL sütununu içerikten bul */
+  if(ui < 0){                       /* no header row: find the URL column by looking at the values */
     body = rows;
     for(k = 0; k < rows[0].length; k++){
       if(/^\s*https?:/i.test(rows[0][k] || "")){ ui = k; break }
@@ -1185,7 +1188,7 @@ function takeFile(file){
       else if(/\.csv$/i.test(file.name)) items = parseCSV(txt);
       else                               items = parseBM(txt);
     }catch(e){ items = [] }
-    /* Uzantı yalan söyleyebilir; boş çıktıysa diğer biçimleri de dene. */
+    /* The extension can lie. If nothing came out, try the other parsers. */
     if(!items.length){
       try{ items = parseBM(txt) }catch(e){}
       if(!items.length){ try{ items = parseJS(txt) }catch(e){} }
@@ -1203,7 +1206,7 @@ function takeFile(file){
   r.readAsText(file, "utf-8");
 }
 
-/* ------------------------------------------------------- altbilgi düğmeleri */
+/* --------------------------------------------------------- footer buttons */
 function paintFoot(){
   var L = T[lang], f = $("#s-foot");
   if(subTab === "one"){
@@ -1264,9 +1267,9 @@ function paintSub(){
   $("#f-diff").placeholder  = L.phDiff;
   $("#s-drop").innerHTML    = L.drop;
 
-  /* Görünen ad dile göre değişiyor ama gönderilen değer hep İngilizce:
-     issue şablonundaki açılır listeyle birebir aynı olmak zorunda, yoksa
-     GitHub seçimi sessizce yok sayıyor. */
+  /* The label follows the language but the submitted value is always
+     English: it has to match the issue template's dropdown exactly, or
+     GitHub silently ignores the selection. */
   $("#f-cat").innerHTML = CATS.map(function(c){
     return '<option value="'+esc(c.en)+'">'+esc(lang === "tr" ? c.tr : c.en)+'</option>';
   }).join("") + '<option value="Not sure">'+esc(L.catAsk)+'</option>';
@@ -1280,8 +1283,8 @@ function setTab(t, focus){
   subTab = t;
   $("#s-t1").setAttribute("aria-selected", t === "one");
   $("#s-t2").setAttribute("aria-selected", t === "bulk");
-  /* role="tablist" ok tuslariyla gezilmeyi vaat ediyor; sadece secili sekme
-     Tab sirasinda kalir, digerine ok tuslariyla geciliyor. */
+  /* role="tablist" promises arrow-key navigation: only the selected tab
+     stays in the Tab order, the other is reached with the arrows. */
   $("#s-t1").tabIndex = t === "one"  ? 0 : -1;
   $("#s-t2").tabIndex = t === "bulk" ? 0 : -1;
   if(focus) $(t === "one" ? "#s-t1" : "#s-t2").focus();
@@ -1302,7 +1305,7 @@ $(".sub-tabs").addEventListener("keydown", function(e){
   }
 });
 
-/* Panelin dışına tıklayınca kapansın — <dialog> bunu kendiliğinden yapmıyor. */
+/* Close on a click outside the panel. <dialog> does not do this itself. */
 dlg.addEventListener("click", function(e){
   if(e.target !== dlg) return;
   var r = dlg.getBoundingClientRect();

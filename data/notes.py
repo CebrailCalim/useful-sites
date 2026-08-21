@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Kurator notlari kayit defteri.
+"""The registry of curator notes.
 
-Notlarin kendisi part_*.py dosyalarinda; her biri load(add) sunar.
-Anahtar = normalize edilmis URL (sema, www ve sondaki / atilmis).
+The notes themselves live in the part_*.py files; each exposes load(add).
+The key is a normalised URL (scheme, www and trailing slash removed).
 
-tr/en alanlarinda hedef: "bu ne ise yarar" + "benzerlerinden farki ne".
-Reklam cumlesi degil, secim yapmaya yarayan cumle.
+What the tr/en fields aim at: "what this is for" plus "where it parts ways
+with its neighbours". Not a marketing line -- a line that helps you choose.
 """
 import re
 
-# key, TR ad, EN ad
+# key, Turkish label, English label
 CATS = [
     ('ogrenme',    'Öğrenme & Yol Haritaları',      'Learning & Roadmaps'),
     ('pratik',     'Pratik & Alıştırma',            'Practice & Challenges'),

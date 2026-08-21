@@ -1,7 +1,5 @@
 # Useful Sites
 
-It was created by AI.
-
 https://cebrailcalim.github.io/useful-sites/
 
 A directory of links on software, AI, security, hardware and science.
@@ -14,15 +12,24 @@ with the tools that look like it. The second half is the one that matters. When
 five tools do the same job, what you need is not a feature list, it is the line
 where they diverge.
 
-All of this came out of a browser archive that had grown past two thousand
-bookmarks, most of them never opened twice. Sorting it meant opening each link
-and writing down what it actually was. That writing is the directory.
+## Who made which part
+
+The links are mine. They come out of my own browser archive, built up over
+years until it passed two thousand bookmarks — most of them never opened twice.
+
+The descriptions and the site itself were written by an AI working from that
+archive and from each project's own documentation. I went over the result, but
+I did not write seven hundred descriptions by hand and I am not going to say I
+did.
+
+That is worth knowing before you read the comparisons. "X is lighter than Y" is
+a judgement, and here it is a machine's judgement that a person looked over.
+Where one is wrong, open an issue and say so — that is the fastest way this
+gets better.
 
 Descriptions are in Turkish and English. Search, tags and filters work in both.
 
-The comparative claims are opinions. They were written after reading each
-project's own documentation, but they are still opinions. If you think one is
-wrong, open an issue and say so.
+How it was assembled and how it is kept from rotting: [ABOUT.md](ABOUT.md).
 
 ## License
 

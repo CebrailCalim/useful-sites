@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
-"""Tarayici botlarinin ve JS'siz ziyaretcinin gordugu statik ciktilar.
+"""The static output that crawlers and JavaScript-less visitors get.
 
-Site tamamen links.js'ten ciziliyor. Bunun bir bedeli var: Google'in gordugu
-<main> bos. 717 aciklamanin tek kelimesi dizine girmiyor -- bir baglanti
-dizini icin bu, var olmamakla ayni sey.
+The app draws itself entirely from links.js, and that has a cost: the
+<main> Google sees is empty. Not one word of 717 descriptions is indexed,
+which for a link directory is close to not existing.
 
-Burasi o acigi kapatiyor. Her kategori icin gercek metin tasiyan bir HTML
-sayfasi uretiliyor; uygulama yine tek sayfa gibi calisiyor, ama bot ve JS
-kapali ziyaretci okunabilir bir sey buluyor.
+This closes that gap. Every category gets an HTML page carrying the real
+text; the app still behaves as a single page, but a crawler or a visitor
+without JavaScript finds something readable.
 
-Uretilenler:
-  robots.txt      site haritasi isaretcisi
-  sitemap.xml     ana sayfa + kategori sayfalari
-  feed.xml        son eklenenler (Atom) -- dizini takip etmenin yolu
-  k/<kategori>.html
+Writes:
+  robots.txt      sitemap pointer
+  sitemap.xml     index + category pages
+  feed.xml        newest entries (Atom) -- how anyone follows the directory
+  k/<category>.html
 """
 import io
 import os
@@ -36,8 +36,8 @@ def _day(ts):
     return datetime.datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d')
 
 
-# Statik sayfalar uygulamanin kabugunu tasimiyor: tek isi okunabilir olmak.
-# Ayni jetonlar, ayni tipografi, JS yok.
+# The static pages carry none of the app shell; their only job is to be
+# readable. Same tokens, same typography, no JavaScript.
 STYLE = """:root{--bg:#fcfbf9;--fg:#191817;--dim:#57544e;--faint:#8b8780;
 --rule:#e4e0d8;--accent:#a8451f;--accent-soft:#f6ece6}
 @media (prefers-color-scheme:dark){:root{--bg:#1a1c20;--fg:#e2e0da;--dim:#a3a09a;
@@ -127,7 +127,7 @@ def _item(d, taglbl):
 
 
 def write_all(core, cats, intros, taglbl, out_dir):
-    """core: links.js'e yazilan kayit listesi. cats: [(key, tr, en)]."""
+    """core: the record list as written to links.js. cats: [(key, tr, en)]."""
     kdir = os.path.join(out_dir, 'k')
     if not os.path.isdir(kdir):
         os.makedirs(kdir)
@@ -183,7 +183,8 @@ def _robots(out_dir):
 
 
 def _feed(core, label, out_dir):
-    """Son eklenenler. Dizin buyudukce takip etmenin tek makul yolu bu."""
+    """Newest entries. As the directory grows this is the only sane way
+    for anyone to follow it."""
     rows = sorted(core, key=lambda d: -d.get('added', 0))[:FEED_N]
     now = _iso(int(datetime.datetime.utcnow().timestamp()))
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',

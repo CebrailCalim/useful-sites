@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Donanım, CAD & Gömülü · Akıllı Gözlük & Giyilebilir"""
+"""Hardware, CAD & Embedded - Smart Glasses & Wearables"""
 
 
 def load(add):
-    # ============================================================ DONANIM, CAD & GÖMÜLÜ
+    # ============================================================ HARDWARE, CAD & EMBEDDED
     H = 'donanim'
     add('https://www.onshape.com/en/', 'Onshape', ['saas', 'freemium', 'cad', 'tarayıcı-içi'],
         'Parametrik CAD, tamamen tarayıcıda. Dosya değil veritabanı üzerinde çalışıyor, '
@@ -45,7 +45,7 @@ def load(add):
         'Cilalı öğreticilerin aksine gerçek tasarım süreci böyle görünüyor.',
         'A build diary for a homemade turret with the failed attempts left in — '
         'what a real design process looks like, unlike a polished tutorial.', H)
-    # gömülü & IoT
+    # embedded & IoT
     add('https://openipc.org/', 'OpenIPC', ['açık-kaynak', 'firmware', 'kamera'],
         'IP kameralar için açık ürün yazılımı; üretici bulutunu devreden çıkarıp RTSP akışını '
         'doğrudan kendi ağına veriyor. Kamerayı internete açmadan kullanmanın yolu.',
@@ -110,7 +110,7 @@ def load(add):
         'Video surveillance software with a Turkish interface covering camera management and recording — '
         'a practical option locally for language and support reasons.', H)
 
-    # ============================================================ AKILLI GÖZLÜK & GİYİLEBİLİR
+    # ============================================================ SMART GLASSES & WEARABLES
     S = 'gozluk'
     add('https://github.com/Mentra-Community/MentraOS', 'MentraOS', ['açık-kaynak', 'github', 'işletim-sistemi'],
         'Akıllı gözlükler için açık işletim sistemi; farklı üreticilerin donanımını tek uygulama '
@@ -200,7 +200,7 @@ def load(add):
         'cihazla konuşabiliyorsun. Prototip için hızlı bir yol.',
         'Connects the glasses to a browser over Web Bluetooth, so you can talk to the device without writing '
         'a native app — a fast route for prototyping.', S)
-    # diğer ürünler
+    # other products
     add('https://brilliant.xyz/', 'Brilliant Labs', ['ücretli', 'açık-kaynak', 'ürün'],
         'Donanım şemasını ve yazılımını yayımlayan gözlük üreticisi. '
         'Bu sektörde hem ürün satıp hem tasarımı açan neredeyse tek şirket.',
@@ -226,7 +226,7 @@ def load(add):
         'süslemeden gösteriyor. Projeye girişmeden önce izlenmeli.',
         'A video on building open-source glasses that is honest about which parts are genuinely hard. '
         'Worth watching before committing to the project.', S)
-    # yonga & platform
+    # chips & platforms
     add('https://dymesty.com/blogs/articles/smart-glasses-processor-chip-guide', 'Akıllı Gözlük Yonga Rehberi', ['ücretsiz', 'donanım', 'referans'],
         'Gözlüklerde kullanılan işlemci ve NPU seçeneklerinin karşılaştırması; '
         'güç bütçesi ve ısı kısıtlarını da tartışıyor. Gözlükte asıl sınır işlem gücü değil ısı.',

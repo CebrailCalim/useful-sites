@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
-"""Kurator notlarini toplanan meta veriyle birlestirip site verisini uretir.
+"""Merges the curator notes with fetched metadata into the site data.
 
-Cikti:
-  ../links.js      cekirdek veri + Turkce aciklama  (ilk yuklemede gelen)
-  ../links.en.js   Ingilizce aciklamalar            (dil degistirilince yuklenir)
+Writes:
+  ../links.js      records + Turkish descriptions   (loaded first)
+  ../links.en.js   English descriptions             (on language switch)
+  plus feed.xml, sitemap.xml, robots.txt and the static pages under ../k/
 
-Ayirmanin sebebi: iki dilin aciklamalari toplam yukun buyuk kismi.
-Tek dil yuklemek ilk acilisi belirgin hafifletiyor.
+The two languages are split because the descriptions are most of the
+payload; shipping one language makes the first load noticeably lighter.
 """
 import json
 import io
@@ -31,23 +32,23 @@ def _load(name):
     return json.load(io.open(p, encoding='utf-8')) if os.path.exists(p) else []
 
 
-# Uc ayri meta kaynagi: ilk yer imi arsivi, dis liste, yeni disa aktarim.
-# NOTES'ta karsiligi olmayanlar zaten asagida eleniyor.
+# Three metadata sources: the original bookmark archive, the external
+# list, and a later export. Anything without a note is dropped below.
 meta = _load('meta.json') + _load('ext_meta.json')
 def _base(k):
     return re.split(r'[?#]', k)[0].rstrip('/')
 
 
-# Mevcut meta'daki URL'lerin hem tam hem sorgusuz bicimi.
-# Ikisini de tutmazsak 'site.com/' ile 'site.com/?utm=x' ayri kayit sayilir.
+# Both the full and the query-stripped form of every known URL. Without
+# both, 'site.com/' and 'site.com/?utm=x' count as two separate records.
 _have = set()
 for _m in meta:
     _k = re.sub(r'^https?://(www\.)?', '', _m['url'].lower()).rstrip('/')
     _have.add(_k)
     _have.add(_base(_k))
 
-# NOTES'ta olup hicbir meta dosyasinda olmayanlar (yeni eklenenler) icin
-# notun kendi URL'sinden sahte bir meta kaydi uret.
+# For notes that appear in no metadata file (newly added ones), synthesise
+# a metadata record out of the note's own URL.
 for _k, _n in sorted(NOTES.items()):
     if _n.get('url') and _k not in _have and _base(_k) not in _have:
         meta.append({'url': _n['url'], 'path': '', 'title': _n['name']})
@@ -61,11 +62,11 @@ def key(u):
     return u.rstrip('/')
 
 
-# ------------------------------------------------------------------ ekleme tarihleri
-# Yer imi dosyasindaki ADD_DATE alani, baglantinin ne zaman toplandigini veriyor.
-# Bir kez cikarilip added.json'a donduruldu. Sebep: derleme artik yerel bir
-# dosyaya bagli degil, CI'da da ayni ciktiyi uretiyor. Tazelemek icin
-# refresh_added() -- yer imi dosyasi elde oldugunda.
+# ------------------------------------------------------------------ added dates
+# The ADD_DATE field in the bookmark export says when a link was collected.
+# It was extracted once and frozen into added.json, so the build no longer
+# depends on a path on one particular machine and produces the same output
+# in CI. Use refresh_added() when the bookmark file is at hand.
 ADDED = {}
 _ap = os.path.join(D, 'added.json')
 if os.path.exists(_ap):
@@ -75,18 +76,18 @@ if os.path.exists(_ap):
 
 def refresh_added():
     if not os.path.exists(BOOKMARKS):
-        print('yer imi dosyasi bulunamadi, added.json oldugu gibi kaldi')
+        print('bookmark file not found; added.json left as is')
         return
     for ln in io.open(BOOKMARKS, encoding='utf-8'):
         m = re.search(r'<DT><A HREF="([^"]*)"[^>]*ADD_DATE="(\d+)"', ln.strip())
         if m:
             k = key(html.unescape(m.group(1)))
             ts = int(m.group(2))
-            if 946684800 < ts < 2200000000:        # 2000-2039 arasi makul
+            if 946684800 < ts < 2200000000:        # a sane 2000-2039 range
                 ADDED[k] = max(ADDED.get(k, 0), ts)
     json.dump(ADDED, io.open(_ap, 'w', encoding='utf-8'),
               ensure_ascii=False, indent=0, sort_keys=True)
-    print('added.json tazelendi:', len(ADDED))
+    print('added.json refreshed:', len(ADDED))
 
 PATHMAP = [
     ('Bilişim/Yol Haritaları', 'ogrenme'), ('Bilişim/Eğitim Platformları', 'ogrenme'),
@@ -117,13 +118,13 @@ def cat_of(path):
     return 'araclar'
 
 
-# ayni kaynagin ikinci URL bicimi - listede tekrar gostermeye gerek yok
+# A second URL form of the same source - no reason to list it twice.
 SKIP = {
     'servicedesk-simulator.com/#ticket/inc0012871/ad',
     'learn-anything.xyz/c-libraries',
 }
 
-# Kayit bazinda son dogrulama: ci_check.py her hafta verified.json'i tazeliyor.
+# Per-record verification: ci_check.py refreshes verified.json weekly.
 VERIFIED = {}
 _vp = os.path.join(D, 'verified.json')
 if os.path.exists(_vp):
@@ -157,12 +158,12 @@ for m in meta:
     if v:
         rec['ver'] = v['d']
         if v['s'] == 'engel':
-            rec['verw'] = 1          # bot engeli - elle dogrulanmali
+            rec['verw'] = 1          # bot-blocked - needs a manual look
         elif v['s'] == 'olu':
-            rec['dead'] = 1          # son taramada yanit yok - arsive yonlendir
+            rec['dead'] = 1          # no response last scan - point at archive
     out.append(rec)
 
-FALLBACK = 1787000000          # derleme sirasinda eklenen YZ araclari
+FALLBACK = 1787000000          # AI tools added while compiling the directory
 for r in out:
     r.setdefault('added', FALLBACK)
 
@@ -190,10 +191,10 @@ for r in out:
         core[-1]['pick'] = 1
     en.append(r['en'])
 
-# ------------------------------------------------------------------ ilgili kayitlar
-# Ayni kategoride, etiketleri en cok ortusen uc kayit. Amac "bunu begendiysen
-# suna bak" baglantisi kurmak; arastirmada dizinlerin bir eksigi de kategoriler
-# arasi tekrari gorunur kilmamasiydi.
+# ------------------------------------------------------------------ related
+# The three records in the same category with the most tag overlap. The
+# point is a "if this was useful, look at that" thread; directories tend
+# to leave neighbouring entries invisible to each other.
 by_cat = {}
 for i, r in enumerate(core):
     by_cat.setdefault(r['cat'], []).append(i)
@@ -224,22 +225,22 @@ io.open(os.path.join(D, '..', 'links.js'), 'w', encoding='utf-8').write(
 io.open(os.path.join(D, '..', 'links.en.js'), 'w', encoding='utf-8').write(
     '/* Otomatik uretildi - data/build.py */\nwindow.LINKS_EN=' + json.dumps(en, **J) + ';\n')
 
-# Bot ve JS'siz ziyaretci icin metin hali: kategori sayfalari, site haritasi,
-# robots ve Atom akisi. Uygulamanin kendisi degismiyor.
+# The text version, for crawlers and for visitors without JavaScript:
+# category pages, sitemap, robots and the Atom feed. The app is untouched.
 _pages = emit.write_all(core, CATS, INTROS, LABELS, os.path.join(D, '..'))
 
 tc = collections.Counter(t for r in out for t in r['tags'])
-print('kayit          :', len(out))
-print('etiket cesidi  :', len(tc))
-print('etiketsiz kayit:', sum(1 for r in out if not r['tags']))
-print('notu olmayan   :', len(missing))
-print('gercek tarihli :', sum(1 for r in out if r['added'] != FALLBACK))
-print('baslangic nok. :', sum(1 for r in out if r.get('pick')), '/', len(PICKS))
+print('records        :', len(out))
+print('distinct tags  :', len(tc))
+print('untagged       :', sum(1 for r in out if not r['tags']))
+print('without a note :', len(missing))
+print('real dates     :', sum(1 for r in out if r['added'] != FALLBACK))
+print('start-here     :', sum(1 for r in out if r.get('pick')), '/', len(PICKS))
 _sc = collections.Counter(r['src'] for r in out)
-print('kaynak         :', dict(_sc))
-print('dogrulanmis    :', sum(1 for r in core if r.get('ver')))
-print('ilgili baglanti:', sum(1 for r in core if r.get('rel')))
-print('statik sayfa   :', len(_pages), '+ sitemap, robots, feed')
+print('sources        :', dict(_sc))
+print('verified       :', sum(1 for r in core if r.get('ver')))
+print('with related   :', sum(1 for r in core if r.get('rel')))
+print('static pages   :', len(_pages), '+ sitemap, robots, feed')
 if missing:
     io.open(os.path.join(D, 'missing.txt'), 'w', encoding='utf-8').write(
         '\n'.join('%s\t%s' % t for t in missing))

@@ -1,15 +1,18 @@
 # -*- coding: utf-8 -*-
-"""Kayitlarin nereden geldigi.
+"""Where each record came from.
 
-Dizinde iki farkli kokene sahip kayit var ve bunlarin guvenilirligi ayni degil:
+The directory holds records of two different origins, and they are not
+equally reliable:
 
-  kedi  : Kendi yer imi arsivimden gelen, tek tek gozden gecirilmis kayitlar.
-          Aciklamalar projenin kendi belgelerine bakilarak yazildi.
-  dis   : Disaridaki derlemelerden alinan kayitlar. Kaynak liste ve o listenin
-          kendi notu belli; aciklama daha kisa, karsilastirmali yargi daha az.
+  kedi  : From the owner's own bookmark archive, gone through one by one.
+          Descriptions written against each project's own documentation.
+  dis   : Taken from an outside compilation. The source list and its own
+          note are known; descriptions are shorter and carry fewer
+          comparative judgements.
 
-Okuyucunun bu ayrimi gorebilmesi durustluk meselesi: 700 kaydin hepsi ayni
-titizlikte degil, oyleymis gibi gostermek dizini oldurur.
+Letting the reader see that difference is a matter of honesty. Not all 700
+records were held to the same standard, and pretending otherwise would kill
+the directory.
 """
 
 SOURCES = {

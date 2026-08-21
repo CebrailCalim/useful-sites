@@ -3,8 +3,8 @@
 
 Arastirmada dizinlerin en buyuk eksigi "kalite ayrimi yok" olarak cikti:
 598 kaydin hepsi esit gorununce yeni gelen nereden baslayacagini bilemiyor.
-Kategori basina 2-3 kayit, o alana ilk girenin gitmesi gereken yer olarak
-isaretlendi. Bunlar "en iyi" degil, "once buraya bak" demek.
+Two or three entries per category, marked as where someone new to the
+area should go first. Not "the best" -- "start here".
 """
 
 PICKS = {

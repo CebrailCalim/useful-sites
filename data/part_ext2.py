@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Dis liste kaynakli kayitlar — araclar, yapay zeka, sistem, mulakat.
+"""Records from the external list - tools, AI, systems, interviews.
 
-Kaynak: Best-websites-a-programmer-should-visit. Bkz. part_ext1.py.
+Source: Best-websites-a-programmer-should-visit. See part_ext1.py.
 """
 
 SRC = 'bwapsv'
@@ -11,7 +11,7 @@ def load(add):
     def a(url, name, tags, tr, en, cat):
         add(url, name, tags, tr, en, cat, SRC)
 
-    # ============================================================ ARAÇLAR
+    # ============================================================ TOOLS
     T = 'araclar'
     a('https://codepen.io', 'CodePen', ['freemium', 'tarayıcı-içi', 'frontend'],
       'HTML, CSS ve JavaScript’i tarayıcıda deneyip paylaştığın oyun alanı. '
@@ -138,7 +138,7 @@ def load(add):
       'A news board gathering Hacker News, Reddit, Lobsters and dozens more on one page — one glance '
       'instead of visiting each.', T)
 
-    # ============================================================ SİSTEM & KABUK
+    # ============================================================ SYSTEM & SHELL
     A = 'ag'
     a('http://tldp.org/LDP/abs/html/', 'Advanced Bash-Scripting Guide', ['ücretsiz', 'kitap'],
       'Bash betiklemenin en kapsamlı ücretsiz referansı; her konu çalıştırılabilir örnekle. '
@@ -169,7 +169,7 @@ def load(add):
       'An archive of user-submitted UNIX one-liners ranked by vote — where you check whether a shortcut '
       'exists for a task.', A)
 
-    # ============================================================ YAPAY ZEKA & VERİ
+    # ============================================================ AI & DATA
     V = 'veri'
     a('http://course.fast.ai', 'fast.ai', ['ücretsiz', 'müfredat', 'veri-bilimi'],
       'Derin öğrenmeyi tepeden aşağı öğreten kurs: önce çalışan model, sonra teori. '
@@ -212,7 +212,7 @@ def load(add):
       'A framework turning any video game into a reinforcement learning environment — working against '
       'real games rather than simulations is what makes it unusual.', V)
 
-    # ============================================================ MÜLAKAT
+    # ============================================================ INTERVIEWS
     P = 'pratik'
     a('http://bigocheatsheet.com/#', 'Big-O Cheat Sheet', ['ücretsiz', 'kopya-kâğıdı', 'algoritma', 'mülakat'],
       'Veri yapıları ve sıralama algoritmalarının zaman ve alan karmaşıklıklarını tek tabloda '
@@ -249,7 +249,7 @@ def load(add):
       'her biri testleriyle birlikte, okunabilir biçimde yazılmış.',
       'Java implementations of algorithms and data structures, each written readably and with tests.', P)
 
-    # ============================================================ AÇIK KAYNAK & DİĞER
+    # ============================================================ OPEN SOURCE & OTHER
     R = 'referans'
     a('https://sourceforge.net', 'SourceForge', ['ücretsiz', 'referans'],
       'Açık kaynak projelerin eski dağıtım platformu; GitHub öncesinin arşivi. '

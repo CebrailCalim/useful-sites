@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Kategori giris metinleri.
+"""Category introductions.
 
-Her kategorinin basinda bir iki cumle: bu alanda neye bakmali, hangi ayrim
-onemli. Amac dizini listeden rehbere cevirmek — okuyucu kategoriye girdiginde
-once neyin ne oldugunu, sonra kayitlari goruyor.
+A sentence or two at the head of each category: what to look for in this
+area, which distinction matters. The point is to turn a list into a guide
+-- the reader gets the lay of the land before the entries.
 """
 
 INTROS = {

@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
-"""Her link icin gercek sayfa metadata'sini ceker (baslik, aciklama).
+"""Fetches the real page metadata for each link (title, description).
 
-Amac: aciklamalari tahminle degil, sitenin kendi anlatimina bakarak yazmak.
-GitHub icin API'den repo aciklamasi + yildiz + dil alinir.
+The point is to write descriptions from what a project says about itself
+rather than from guesswork. For GitHub links the API supplies the repo
+description, star count and language.
 
-Not: regex'ler kasten "geri izlemesiz" tutuldu ([^"]* gibi), ilk surumde
-.*? kaliplari buyuk sayfalarda katastrofik geri izlemeye yol acti.
+Note: the patterns are deliberately non-backtracking ([^"]* and such). The
+first version used .*? and hit catastrophic backtracking on large pages --
+it burned 580 seconds of CPU before it was killed.
 """
 import json
 import io
@@ -36,7 +38,7 @@ GH_TOKENless_SKIP = ('topics', 'features', 'education', 'sponsors', 'orgs')
 
 
 def page_meta(body):
-    """meta etiketlerini tek gecisde topla."""
+    """Collect the meta tags in a single pass."""
     desc = ''
     for m in RE_META.finditer(body):
         attrs = {}

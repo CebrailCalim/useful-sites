@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""YZ · Agent, RAG & Altyapı"""
+"""AI - Agents, RAG & Infrastructure"""
 
 C = 'yz_altyapi'
 
 
 def load(add):
-    # ---------------------------------------------------------- çatılar
+    # ---------------------------------------------------------- frameworks
     add('https://www.langchain.com/', 'LangChain', ['açık-kaynak', 'python', 'çatı', 'mit'],
         'Model, vektör deposu ve araç sağlayıcıları ortak arayüz altında toplayan çatı. '
         'Entegrasyon sayısı en büyük kozu; soyutlama katmanının kalınlığı da en sık gelen şikâyet.',
@@ -208,7 +208,7 @@ def load(add):
         'Ships ready tool definitions and delegated OAuth for a thousand-odd apps. '
         'Instead of writing auth per SaaS, you hand the authorisation off to it.', C)
 
-    # ---------------------------------------------------------- güvenlik
+    # ---------------------------------------------------------- safety
     add('https://github.com/NVIDIA/NeMo-Guardrails', 'NeMo Guardrails', ['açık-kaynak', 'github', 'guardrail', 'python'],
         'Colang adlı bir DSL ile izin verilen konuşma akışlarını tanımlıyorsun. '
         'Denetim çıktının içeriğinde değil diyaloğun gidişatında; konu sapmasını girişte kesiyor.',
@@ -250,7 +250,7 @@ def load(add):
         'Content filters, denied-topic lists and PII redaction — and it can be applied as a standalone API '
         'to models outside Bedrock too.', C)
 
-    # ---------------------------------------------------------- gözlemlenebilirlik
+    # ---------------------------------------------------------- observability
     add('https://smith.langchain.com/', 'LangSmith', ['saas', 'freemium', 'tracing', 'eval'],
         'Her zincir adımının girdi, çıktı, gecikme ve jeton sayısını ayrı ayrı gösteriyor. '
         'LangChain’e bağlı değil ama en sıkı entegrasyonu orada.',
@@ -324,7 +324,7 @@ def load(add):
         'Keeps a coding agent’s memory as plain Markdown in an Obsidian vault. No memory service to run, '
         'and you can read and correct the notes yourself.', C)
 
-    # ---------------------------------------------------------- vektör & veri deposu
+    # ---------------------------------------------------------- vector & data stores
     add('https://www.pinecone.io/', 'Pinecone', ['saas', 'ücretli', 'vektör-db'],
         'Tam yönetilen vektör veritabanı; sunucusuz katmanında kapasite planlaması yapmıyorsun. '
         'İşletme yükü en düşük seçenek, buna karşılık verinin nerede durduğu üzerinde denetimin yok.',
@@ -433,7 +433,7 @@ def load(add):
         'Any step can be Node.js or Python and can pull an npm or PyPI package. '
         'The option that closes the gap between visual automation and real code.', C)
 
-    # ---------------------------------------------------------- agent araç & yetenek
+    # ---------------------------------------------------------- agent tools & skills
     add('https://github.com/affaan-m/everything-claude-code', 'Everything Claude Code', ['açık-kaynak', 'github', 'agent', 'yapılandırma'],
         'Kod asistanları için yetenek, kural, bellek düzeni ve güvenlik ayarlarını tek pakette toplayan '
         'yapılandırma seti. Sıfırdan kurmak yerine üzerine budayarak başlanacak türden.',

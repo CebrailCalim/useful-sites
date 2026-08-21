@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Ilk gecise girmeyen kalan kayitlar."""
+"""The records left over from the first pass."""
 
 
 def load(add):

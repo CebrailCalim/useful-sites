@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""YZ · Uygulama Araçları"""
+"""AI - Applied Tools"""
 
 C = 'yz_arac'
 
 
 def load(add):
-    # ---------------------------------------------------------- kod asistanları
+    # ---------------------------------------------------------- coding assistants
     add('https://github.com/features/copilot', 'GitHub Copilot', ['saas', 'freemium', 'kod', 'eklenti'],
         'Editör içi tamamlama ve sohbet; kurumsal planda kodun modele gönderilip gönderilmeyeceği '
         'politika olarak yönetilebiliyor. Bu yönetişim tarafı rakiplerinde zayıf.',
@@ -95,7 +95,7 @@ def load(add):
         'Tailors a résumé to a specific posting and watches the formatting that ATS parsers need. '
         'That matching step is what general writing assistants miss.', C)
 
-    # ---------------------------------------------------------- görsel üretim
+    # ---------------------------------------------------------- image generation
     add('https://firefly.adobe.com/', 'Adobe Firefly', ['saas', 'freemium', 'difüzyon', 'ticari'],
         'Adobe Stock ve süresi dolmuş telifli eserlerle eğitildiği için ticari kullanımda hukuki risk düşük. '
         'Müşteri işinde tercih edilmesinin sebebi görsel kalitesi değil, bu lisans netliği.',
@@ -179,7 +179,7 @@ def load(add):
         'Estimates the probability that a text was AI-generated. The result is probabilistic and its own docs '
         'acknowledge false positives — it should not be treated as proof.', C)
 
-    # ---------------------------------------------------------- 3B & mekân
+    # ---------------------------------------------------------- 3D & space
     add('https://www.meshy.ai/tr/?noRedirect=true', 'Meshy', ['saas', 'freemium', 'text-to-3d'],
         'Metin ya da görselden 3B model üretip PBR dokusunu da kendisi giydiriyor. '
         'Oyun varlığı hattında en çok vakit yiyen adımın doku olması bunu değerli kılıyor.',
@@ -240,7 +240,7 @@ def load(add):
         'Brings AI assistance to hardware and circuit design — a thinly covered area outside where software '
         'assistants have crowded in.', C)
 
-    # ---------------------------------------------------------- video & ses
+    # ---------------------------------------------------------- video & audio
     add('https://www.capcut.com/', 'CapCut', ['masaüstü', 'freemium', 'video', 'altyazı'],
         'Otomatik altyazı, konuşmacı takibi ve dikey format şablonları. '
         'Kısa video akışında Premiere gibi paketlerden kat kat hızlı; renk ve ses tarafında ise sığ.',
@@ -287,7 +287,7 @@ def load(add):
         'Levels, denoises and normalises loudness to broadcast targets (LUFS). A post-production tool, not a live one — '
         'the last step before a podcast ships.', C)
 
-    # ---------------------------------------------------------- araştırma & doküman
+    # ---------------------------------------------------------- research & documents
     add('https://elicit.com/', 'Elicit', ['saas', 'freemium', 'akademik', 'tarama'],
         'Yüzlerce makaleyi tarayıp örneklem büyüklüğü, yöntem ve bulgu gibi alanları tabloya çıkarıyor. '
         'Sistematik derleme yaparken en çok vakit yiyen adım tam olarak bu ayıklama.',
@@ -343,7 +343,7 @@ def load(add):
         'Classic PDF chores — convert, compress, sign, OCR — with chat layered on. Broader than the single-purpose '
         'rivals and average at each individual job.', C)
 
-    # ---------------------------------------------------------- yazım & sunum
+    # ---------------------------------------------------------- writing & presentation
     add('https://www.grammarly.com/', 'Grammarly', ['saas', 'freemium', 'yazım', 'ingilizce'],
         'Yazdığın her yere giren eklentisiyle İngilizce dil bilgisi ve üslup denetimi. '
         'Türkçe desteklemiyor; yalnızca İngilizce yazarken anlamlı.',
@@ -390,7 +390,7 @@ def load(add):
         'Runs as a Google Slides add-on, generating slides from text without leaving your existing file — '
         'no migration to another platform and no export step back.', C)
 
-    # ---------------------------------------------------------- veri bilimi & AutoML
+    # ---------------------------------------------------------- data science & AutoML
     add('https://julius.ai/', 'Julius AI', ['saas', 'freemium', 'veri', 'analiz'],
         'CSV veya Excel yükleyip sohbetle analiz ediyorsun; arka planda Python çalıştırıp grafik üretiyor '
         've kullandığı kodu gösteriyor. Sonucu doğrulayabilmen bu şeffaflığa bağlı.',
@@ -442,7 +442,7 @@ def load(add):
         'Notebooks sitting on the same platform as the datasets, with a weekly GPU quota more predictable than Colab’s. '
         'The real value is being able to read other people’s solutions.', C)
 
-    # ---------------------------------------------------------- sağlık & yaşam bilimleri
+    # ---------------------------------------------------------- health & life sciences
     add('https://www.openevidence.com/', 'OpenEvidence', ['ücretsiz', 'tıp', 'akademik'],
         'Klinik soruya yalnızca hakemli literatürden, atıf vererek cevap veriyor; '
         'kayıtlı sağlık profesyonellerine açık. Genel botların tıpta güvenilmez olmasının sebebi kaynak denetimi eksikliği — burada var.',
@@ -494,7 +494,7 @@ def load(add):
         'Speeds up sequence alignment with MMseqs2 to make AlphaFold runnable in Colab — '
         'for batch-processing your own sequences without hitting the server’s quota.', C)
 
-    # ---------------------------------------------------------- hukuk, iş & finans
+    # ---------------------------------------------------------- law, business & finance
     add('https://legalesedecoder.com/', 'Legalese Decoder', ['saas', 'freemium', 'hukuk'],
         'Sözleşme dilini sade Türkçeye/İngilizceye çevirirken madde yapısını koruyor, '
         'yani hangi cümlenin hangi maddeden geldiği kayboluyor değil.',

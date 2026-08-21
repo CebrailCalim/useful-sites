@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
-"""links.js icindeki baglantilari tarar, olenleri rapor.md olarak yazar.
+"""Scans the links in links.js and writes the failures to rapor.md.
 
-GitHub Actions icin. Yerelde de calisir:  python data/ci_check.py
+Meant for GitHub Actions; runs locally too:  python data/ci_check.py
 
-Bot engeli (403/429) ile gercek olum (404/410/DNS) ayri tutulur; ilki
-raporda "supheli" olarak isaretlenir cunku tarayicida acilir.
+Bot blocking (403/429) is kept apart from real death (404/410/DNS). The
+former is reported as "suspect", because those pages open fine in a
+browser and removing them would be a mistake.
 """
 import json
 import re
@@ -27,7 +28,7 @@ UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36')
 HEADERS = {'User-Agent': UA, 'Accept-Language': 'tr,en;q=0.9'}
 
-# Bu kodlar bot engeli demek, baglanti calisiyor olabilir.
+# These codes mean bot blocking; the link itself may be perfectly fine.
 SOFT = {401, 403, 405, 406, 429, 500, 503}
 
 
@@ -47,9 +48,9 @@ def check(rec):
                 r.close()
             out['status'] = r.status_code
             if r.status_code < 400:
-                return None                     # saglam
+                return None                     # fine
             if method == 'head' and r.status_code in SOFT:
-                continue                        # GET ile bir daha dene
+                continue                        # try again with GET
             return out
         except requests.exceptions.RequestException as e:
             out['status'] = 0
@@ -58,10 +59,11 @@ def check(rec):
 
 
 def write_verified(links, bad_by_url):
-    """Kayit bazinda son dogrulama tarihini tazeler.
+    """Refreshes the per-record verification date.
 
-    Site her satirda 'son dogrulama' gosteriyor; bu dosya onun kaynagi.
-    Sorunlu olanlar 'engel' olarak isaretlenir, tarihleri yine guncellenir."""
+    The site shows "last verified" on every entry and this file is where
+    that comes from. Blocked ones are marked "engel" but still dated.
+    """
     path = os.path.join(ROOT, 'data', 'verified.json')
     ver = {}
     if os.path.exists(path):
@@ -75,13 +77,13 @@ def write_verified(links, bad_by_url):
         elif b['status'] in SOFT:
             ver[k] = {'d': today, 's': 'engel'}
         else:
-            # Gercekten olu. Tarihi tazelemiyoruz -- eski tarih uyari degeri
-            # tasiyor -- ama durumu isaretliyoruz: site bu kayitta okuyucuyu
-            # uyarip arsive yonlendirebilsin. Issue'da kalan bir bilgi
-            # ziyaretciye ulasmiyor.
+            # Genuinely dead. The date is left alone -- a stale date carries
+            # its own warning -- but the status is recorded so the site can
+            # flag the entry and point at the archive. A finding that stays
+            # inside an issue never reaches the person reading the page.
             ver[k] = {'d': ver.get(k, {}).get('d', today), 's': 'olu'}
     json.dump(ver, io.open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    print('verified.json guncellendi:', len(ver))
+    print('verified.json updated:', len(ver))
 
 
 def main():
@@ -93,37 +95,37 @@ def main():
     dead = [r for r in results if r['status'] == 404 or r['status'] == 410 or r['status'] == 0]
     soft = [r for r in results if r not in dead]
 
-    print('taranan: %d | olu: %d | supheli: %d' % (len(links), len(dead), len(soft)))
+    print('scanned: %d | dead: %d | suspect: %d' % (len(links), len(dead), len(soft)))
 
     if not results:
-        # eski rapor varsa temizle ki issue "temiz" kalsin
+        # Clear any previous report so a clean week reads as clean.
         if os.path.exists(os.path.join(ROOT, 'rapor.md')):
             os.remove(os.path.join(ROOT, 'rapor.md'))
         return 0
 
     today = datetime.date.today().isoformat()
-    L = ['# Bağlantı kontrolü — %s' % today, '',
-         '`%d` bağlantı tarandı.' % len(links), '']
+    L = ['# Link check - %s' % today, '',
+         '`%d` links scanned.' % len(links), '']
 
     if dead:
-        L += ['## Ölü (%d)' % len(dead), '',
-              'Bunlar 404/410 döndü ya da hiç yanıt vermedi. Değiştirilmeli veya çıkarılmalı.', '',
-              '| Kayıt | Kategori | Durum | URL |', '|---|---|---|---|']
+        L += ['## Dead (%d)' % len(dead), '',
+              'These returned 404/410 or did not answer at all. Replace or remove.', '',
+              '| Entry | Category | Status | URL |', '|---|---|---|---|']
         for r in sorted(dead, key=lambda x: x['cat']):
             st = r.get('error') or r['status']
             L.append('| %s | %s | `%s` | %s |' % (r['name'], r['cat'], st, r['url']))
         L.append('')
 
     if soft:
-        L += ['## Şüpheli (%d)' % len(soft), '',
-              'Bot engeli olabilir (403/429/503) — tarayıcıda büyük ihtimalle açılıyor. '
-              'Elle doğrulanmalı.', '',
-              '| Kayıt | Kategori | Durum | URL |', '|---|---|---|---|']
+        L += ['## Suspect (%d)' % len(soft), '',
+              'Probably bot blocking (403/429/503) - these most likely open fine '
+              'in a browser. Worth a manual look.', '',
+              '| Entry | Category | Status | URL |', '|---|---|---|---|']
         for r in sorted(soft, key=lambda x: x['cat']):
             L.append('| %s | %s | `%s` | %s |' % (r['name'], r['cat'], r['status'], r['url']))
         L.append('')
 
-    L.append('<sub>`data/ci_check.py` tarafından otomatik üretildi.</sub>')
+    L.append('<sub>Generated by `data/ci_check.py`.</sub>')
     io.open(os.path.join(ROOT, 'rapor.md'), 'w', encoding='utf-8').write('\n'.join(L))
     return 1 if dead else 0
 

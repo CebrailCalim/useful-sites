@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Yeni yer imi disa aktarimindan gelen kayitlar (eklenti.html, 20.08.2026).
+"""Records from the later bookmark export, and from approved submissions.
 
-Onceki dosyada olmayan 16 baglantidan 14'u alindi. Cikarilan ikisi:
-Power BI oturum acma URL'si (ana kaydin tekrari) ve bir yetiskin site
-uyelik profili — herkese acik bir dizine girmez.
+The first batch came from an export dated 20 August 2026: of 16 links not
+already present, 14 were taken. The two dropped were a Power BI sign-in URL
+(a duplicate of the main entry) and an adult-site membership profile, which
+does not belong in a public directory.
 
-Hepsi kullanicinin kendi arsivinden geldigi icin src varsayilan: kedi.
+Everything here comes from the owner's own archive, so src defaults to
+'kedi'. Entries appended by data/from_issue.py land here too, each marked
+with the issue number it came from.
 """
 
 

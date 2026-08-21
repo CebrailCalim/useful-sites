@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Kalan linklerin canli olup olmadigini kontrol eder."""
+"""One-off liveness check over the remaining links."""
 import json
 import io
 import concurrent.futures as cf

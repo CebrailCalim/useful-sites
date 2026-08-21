@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""YZ · Modeller & Asistanlar"""
+"""AI - Models & Assistants"""
 
 C = 'yz_model'
 
 
 def load(add):
-    # --- sohbet asistanları
+    # --- chat assistants
     add('https://chatgpt.com/', 'ChatGPT', ['saas', 'freemium', 'llm', 'asistan'],
         'Kod çalıştırma (sandbox Python), görsel üretim, dosya yükleme ve özel GPT’ler tek pencerede. '
         'Geniş olması pahasına her bir yeteneği kendi alanının en iyisi değil.',
@@ -98,7 +98,7 @@ def load(add):
         'Rather than compete on chat, it sits on the retrieval side: its Rerank model reorders candidates '
         'returned by vector search and visibly lifts RAG precision.', C)
 
-    # --- yerel çalıştırma
+    # --- running locally
     add('https://ollama.com/', 'Ollama', ['açık-kaynak', 'cli', 'yerel-model', 'llama.cpp'],
         'llama.cpp üzerine kurulu, tek komutla model indirip çalıştıran araç. '
         'OpenAI uyumlu bir yerel API açıyor, yani mevcut istemci kodun değişmeden çalışıyor.',
@@ -120,7 +120,7 @@ def load(add):
         'PagedAttention pages the KV cache to use GPU memory efficiently, and continuous batching pushes '
         'concurrent-request throughput far past what Ollama manages.', C)
 
-    # --- model arşivi
+    # --- model archives
     add('https://huggingface.co/', 'Hugging Face', ['ücretsiz', 'model-arşivi', 'veri-kümesi', 'topluluk'],
         'Model, veri kümesi ve Spaces demolarının merkezî deposu. Her model kartında lisans, eğitim verisi '
         've değerlendirme sonuçları duruyor — indirmeden önce bakılacak yer orası.',

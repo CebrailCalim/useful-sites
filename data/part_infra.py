@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Veritabanı · DevOps & Altyapı · Ağ & Sistem Yönetimi · Veri Bilimi"""
+"""Databases - DevOps & Infrastructure - Networking & Sysadmin - Data Science"""
 
 
 def load(add):
-    # ============================================================ VERİTABANI
+    # ============================================================ DATABASES
     V = 'veritabani'
     add('https://www.mysqltutorial.org/', 'MySQL Tutorial', ['ücretsiz', 'sql', 'mysql'],
         'Örnek veritabanı üzerinden MySQL’i baştan sona işliyor; JOIN türleri, alt sorgular ve '
@@ -51,7 +51,7 @@ def load(add):
         'A course on internals — index structures, transaction isolation levels, locking. Not a product tutorial; '
         'it holds regardless of which database you use.', V)
 
-    # ============================================================ DEVOPS & ALTYAPI
+    # ============================================================ DEVOPS & INFRASTRUCTURE
     O = 'devops'
     add('https://git-scm.com/book/tr/v2', 'Pro Git (Türkçe)', ['ücretsiz', 'türkçe', 'kitap', 'git'],
         'Git’in resmî kitabının Türkçe çevirisi. İç mekanizma bölümü (nesne modeli, referanslar) '
@@ -157,7 +157,7 @@ def load(add):
         'Runs a browser in a container and shares it over WebRTC, with several people able to control one session. '
         'Used for watch-together and for isolated browsing.', O)
 
-    # ============================================================ AĞ & SİSTEM YÖNETİMİ
+    # ============================================================ NETWORKING & SYSADMIN
     A = 'ag'
     add('https://www.netacad.com/', 'Cisco Networking Academy', ['ücretsiz', 'ağ', 'kurs'],
         'Cisco’nun resmî ağ müfredatı; CCNA’ya hazırlayan derslerin bir kısmı ücretsiz. '
@@ -253,7 +253,7 @@ def load(add):
         'Explains linear feedback shift registers at circuit level — a good introduction to how pseudo-randomness '
         'is actually produced in hardware.', A)
 
-    # ============================================================ VERİ BİLİMİ & ML
+    # ============================================================ DATA SCIENCE & ML
     D = 'veri'
     add('https://www.kaggle.com/', 'Kaggle', ['ücretsiz', 'veri', 'yarışma', 'topluluk'],
         'Yarışma, veri kümesi ve not defteri aynı platformda. Asıl değeri, kazanan çözümlerin '

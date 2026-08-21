@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Dis listeden gelen adaylarin canli olup olmadigini tarar."""
+"""Liveness scan over the candidates coming from the external list."""
 import json, io, concurrent.futures as cf, requests, urllib3
 urllib3.disable_warnings()
 UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '

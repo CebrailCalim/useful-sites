@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
-"""GitHub depolarinin sagligini denetler: arsivlenmis mi, ne zaman dokunulmus.
+"""Audits the health of linked GitHub repositories: archived, or untouched.
 
-Bir depo 404 dondurmeden de olebilir: arsivlenir, salt okunur olur, yillarca
-guncellenmez. Baglanti kontrolu bunu yakalamaz — bu betik yakalar.
+A repository can die without ever returning 404 -- it gets archived, turns
+read-only, or simply goes years without a commit. A link check cannot see
+any of that. This script can.
 
-GitHub Actions icinde GITHUB_TOKEN ile calisir (5000 istek/saat).
-Yerelde token olmadan 60 istekte kotaya takilir; GH_TOKEN ver:
+Runs inside GitHub Actions with GITHUB_TOKEN (5000 requests/hour).
+Locally it hits the anonymous limit after 60; pass a token:
     GH_TOKEN=ghp_xxx python data/ci_github.py
 """
 import json
@@ -28,7 +29,7 @@ HEADERS = {'User-Agent': 'link-directory-health', 'Accept': 'application/vnd.git
 if TOKEN:
     HEADERS['Authorization'] = 'Bearer ' + TOKEN
 
-# Bu kadar suredir dokunulmamis depo "bayat" sayilir.
+# A repository untouched for this long counts as stale.
 STALE_DAYS = 730          # iki yil
 SKIP_OWNERS = {'topics', 'features', 'education', 'sponsors', 'orgs', 'collections'}
 

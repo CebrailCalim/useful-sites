@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Güvenlik & Gizlilik · Kuantum Bilişim · Referans & Koleksiyonlar"""
+"""Security & Privacy - Quantum Computing - Reference & Collections"""
 
 
 def load(add):
-    # ============================================================ GÜVENLİK & GİZLİLİK
+    # ============================================================ SECURITY & PRIVACY
     G = 'guvenlik'
     add('https://tryhackme.com/', 'TryHackMe', ['freemium', 'lab', 'sızma-testi'],
         'Rehberli laboratuvarlar; her odada hangi aracı neden kullandığın anlatılıyor. '
@@ -130,7 +130,7 @@ def load(add):
         'Anahtar üretme ve paylaşma kısmı, kavramın en somut hâliyle görüldüğü yer.',
         'A step-by-step Turkish walkthrough of using PGP through a browser extension. '
         'The key generation and exchange section is where the concept becomes concrete.', G)
-    # şifreleme & bulmaca
+    # cryptography & puzzles
     add('https://en.wikipedia.org/wiki/List_of_ciphertexts', 'Çözülmemiş Şifreli Metinler', ['ücretsiz', 'kriptografi', 'referans'],
         'Tarihte çözülmüş ve çözülememiş şifreli metinlerin listesi. '
         'Kriptanaliz pratiği için sentetik alıştırma yerine gerçek malzeme.',
@@ -152,7 +152,7 @@ def load(add):
         'A step-by-step solution of the internet’s best-known puzzle, chaining steganography, book ciphers and '
         'Tor hidden services — a good example of how techniques link together.', G)
 
-    # ============================================================ KUANTUM BİLİŞİM
+    # ============================================================ QUANTUM COMPUTING
     K = 'kuantum'
     add('https://quantum.cloud.ibm.com/docs/en/guides', 'IBM Quantum', ['ücretsiz', 'dokümantasyon', 'donanım'],
         'Gerçek kuantum işlemcilerine kuyrukla erişim veriyor; Qiskit ile devre yazıp gönderiyorsun. '
@@ -193,7 +193,7 @@ def load(add):
         'Wraps parameterised quantum circuits as Keras-style layers to combine with classical networks — '
         'where hybrid classical-quantum models get explored experimentally.', K)
 
-    # ============================================================ REFERANS & KOLEKSİYONLAR
+    # ============================================================ REFERENCE & COLLECTIONS
     R = 'referans'
     add('https://devdocs.io/', 'DevDocs', ['açık-kaynak', 'dokümantasyon', 'çevrimdışı'],
         'Yüzlerce teknolojinin resmî dokümanını tek arayüzde topluyor; çevrimdışı indirilebiliyor ve '

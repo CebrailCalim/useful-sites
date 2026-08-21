@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-"""Duzenli yer isaretlerinden teknoloji linklerini cikarir.
+"""Pulls the technology links out of the sorted bookmark file.
 
-Kullanici karari:
-  - YouTube videolari KALIR (etiketle gruplanir)
-  - Turkiye'ye ozel kurumlar KALIR
-  - GitHub derin linkleri (issue/blob/wiki) KALIR
-  - Google arama linkleri SILINIR
-  - Hesaba bagli panel URL'leri, sitenin koku ile DEGISTIRILIR
+The owner's calls on what stays:
+  - YouTube videos STAY (grouped by tag)
+  - Turkish institutions STAY
+  - Deep GitHub links (issue/blob/wiki) STAY
+  - Google search URLs GO
+  - Account-gated dashboard URLs are REPLACED by the site root
 """
 import re
 import html
@@ -41,7 +41,7 @@ for ln in lines:
 tech = [r for r in recs
         if r['path'].startswith('Bilişim') or r['path'].startswith('Bilim & Düşünce')]
 
-# --- hesaba bagli panel -> sitenin koku
+# --- account-gated dashboard -> site root
 REWRITE = [
     (r'^https://[a-z0-9-]+\.console\.aws\.amazon\.com/.*',  'https://aws.amazon.com/'),
     (r'^https://dashboard\.composio\.dev/.*',               'https://composio.dev/'),
@@ -51,20 +51,20 @@ REWRITE = [
     (r'^https://huggingbay\.xyz/.*',                        'https://huggingbay.xyz/'),
 ]
 
-# --- gercekten cikarilacaklar
+# --- the ones actually dropped
 DROP = [
-    # Google/site ici arama sorgulari - icerik degil sorgu
+    # Google and on-site search queries - a query, not content
     ('arama-sorgusu', r'google\.[a-z.]+/search|tineye\.com/search|'
                       r'star-history\.com/'),
-    # kisisel dosya paylasimi - baskasina hicbir sey ifade etmez
+    # personal file shares - meaningless to anyone else
     ('kisisel-dosya', r'drive\.google\.com|mega\.nz|disk\.yandex|\.notion\.site|'
                       r'seemless\.link'),
-    # hesaba bagli sosyal profil / grup
+    # account-gated social profile or group
     ('sosyal-profil', r'linkedin\.com/(groups|in/|feed|posts)|'
                       r'(^|//|\.)x\.com/|(^|//|\.)twitter\.com/|instagram\.com'),
-    # kisisel donanim / alisveris
+    # personal hardware and shopping
     ('urun-sayfasi',  r'support\.hp\.com|teknosa\.com|avantajbilisim|robocombo'),
-    # olu (tarama ile dogrulandi)
+    # dead (confirmed by scanning)
     ('olu',           r'templeos\.org|cslegasse/CS-Tech-Resource-Hub|'
                       r'nxp\.com/company/about-nxp/smarter-world-blog'),
 ]
@@ -88,7 +88,7 @@ for r in tech:
     else:
         kept.append(r)
 
-# rewrite sonrasi olusan tekrarlari temizle
+# clear the duplicates the rewrite creates
 seen, uniq = set(), []
 for r in kept:
     k = re.sub(r'/$', '', r['url'].lower())
