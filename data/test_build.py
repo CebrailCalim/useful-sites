@@ -31,6 +31,7 @@ from intros import INTROS               # noqa: E402
 from picks import PICKS                 # noqa: E402
 from sources import SOURCES             # noqa: E402
 from tags import CANON, LABELS          # noqa: E402
+from emit import SITE as EMIT_SITE      # noqa: E402
 
 MIN_RECORDS = 940
 MIN_CATEGORIES = 24
@@ -125,6 +126,20 @@ def main():
             check(False, 'static pages for category: ' + k)
     check(True, 'static pages present in both languages for %d categories'
           % len(kullanilan))
+
+    for h in (('k', 'index.html'), ('k', 'en', 'index.html')):
+        check(os.path.exists(os.path.join(ROOT, *h)),
+              'static hub page: ' + '/'.join(h))
+
+    # hreflang yalnizca simetrikse ise yariyor: A dili B'yi gosteriyorsa
+    # B de A'yi gostermeli, ve her sayfa kendini isaret etmeli.
+    for rel, other in (('k/kuantum.html', 'k/en/kuantum.html'),
+                       ('k/en/kuantum.html', 'k/kuantum.html')):
+        h = io.open(os.path.join(ROOT, *rel.split('/')), encoding='utf-8').read()
+        check('hreflang="tr"' in h and 'hreflang="en"' in h,
+              'both hreflang pairs on ' + rel)
+        check(('canonical" href="%s/%s"' % (EMIT_SITE, rel)) in h,
+              'self-canonical on ' + rel)
 
     ix = io.open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read()
     check('links.js?v=' in ix, 'links.js carries a cache stamp')

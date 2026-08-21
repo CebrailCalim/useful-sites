@@ -144,6 +144,57 @@ def _jsonld(title, canon, rows, L):
                len(rows), ','.join(ogeler)))
 
 
+HUB = """<!doctype html>
+<html lang="{lang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; \
+style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self'; \
+base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>{site_name}</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="{canon}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{site_name}">
+<meta property="og:title" content="{site_name}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{canon}">
+<meta property="og:image" content="{site}/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/atom+xml" title="{site_name}" href="{site}/feed.xml">
+<link rel="alternate" hreflang="tr" href="{site}/k/index.html">
+<link rel="alternate" hreflang="en" href="{site}/k/en/index.html">
+<link rel="alternate" hreflang="x-default" href="{site}/">
+<script type="application/ld+json">{jsonld}</script>
+<style>{style}
+.hub{{margin:26px 0 0}}
+.hub li{{list-style:none;margin:0 0 2px;padding:12px 0;border-bottom:1px solid var(--rule)}}
+.hub ul{{padding:0;margin:0}}
+.hub a{{font:600 18px/1.3 var(--serif);text-decoration:none}}
+.hub a:hover{{color:var(--accent)}}
+.hub .c{{font:12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--faint);margin-left:8px}}
+.hub p{{margin:5px 0 0;color:var(--dim);font-size:15px;line-height:1.6;max-width:70ch}}</style>
+</head>
+<body>
+<header>
+<a class="up" href="{site}/">{app_link}</a>
+<h1>{site_name}</h1>
+<p class="intro">{desc}</p>
+<span class="n">{total} {word_links} · {ncat} {word_cats}</span>
+</header>
+<main class="hub"><ul>
+{items}
+</ul></main>
+<footer>
+{foot}
+</footer>
+</body>
+</html>
+"""
+
+
 def _host(u):
     h = u.split('//', 1)[-1].split('/', 1)[0]
     return h[4:] if h.startswith('www.') else h
@@ -168,14 +219,26 @@ def _item(d, taglbl, desc, li):
 LANGS = {
     'tr': {
         'code': 'tr', 'li': 0, 'ci': 1, 'dir': '', 'fonts': '../fonts',
-        'name': 'Kullanışlı Siteler', 'links': 'bağlantı',
+        'name': 'Kullanışlı Siteler', 'links': 'bağlantı', 'cats': 'başlık',
+        'app_link': '← Aranabilir sürüme dön',
+        'hub_desc': ('Yazılım, yapay zeka, güvenlik ve bilim üzerine açıklamalı '
+                     'bağlantı dizini. Her kayıtta ne işe yaradığı ve '
+                     'benzerlerinden nerede ayrıldığı yazılı.'),
+        'hub_foot': ('Bu sayfa dizinin metin hâli. Arama, etiket süzgeci ve '
+                     'sıralama için aranabilir sürümü kullan.'),
         'foot': ('Bu sayfa dizinin {t} bölümünün metin hâli. Arama, etiket süzgeci '
                  've İngilizce açıklamalar için <a href="{s}/?cat={k}">dizine dön</a>. '
                  '<a href="{s}/k/en/{k}.html">In English</a>'),
     },
     'en': {
         'code': 'en', 'li': 1, 'ci': 2, 'dir': 'en/', 'fonts': '../../fonts',
-        'name': 'Useful Sites', 'links': 'links',
+        'name': 'Useful Sites', 'links': 'links', 'cats': 'headings',
+        'app_link': '← Back to the searchable version',
+        'hub_desc': ('An annotated directory of links on software, AI, security '
+                     'and science. Every entry states what the resource does and '
+                     'where it parts ways with its neighbours.'),
+        'hub_foot': ('The plain-text edition of the directory. For search, tag '
+                     'filtering and sorting, use the searchable version.'),
         'foot': ('The plain-text edition of the {t} section. For search, tag '
                  'filtering and Turkish descriptions, <a href="{s}/?cat={k}">go to '
                  'the directory</a>. <a href="{s}/k/{k}.html">Türkçe</a>'),
@@ -231,25 +294,96 @@ def write_all(core, cats, intros, taglbl, out_dir, en_desc):
             if lang == 'tr':
                 written.append(k)
 
+    _hubs(core, cats, intros, out_dir)
     _sitemap(written, out_dir)
     _robots(out_dir)
     _feed(core, dict((c[0], c[1]) for c in cats), out_dir)
     return written
 
 
+def _hubs(core, cats, intros, out_dir):
+    """Her iki dil icin statik kategori dizini.
+
+    index.html uygulamanin kendisi ve dili istemci tarafinda degistiriyor --
+    yani tarayici botu icin yalnizca Turkce bir sayfa. Ingilizce icerik k/en/
+    altinda zaten duruyordu ama ona acilan bir giris yoktu ve ana sayfada hic
+    hreflang yoktu. Bu iki sayfa o giris.
+    """
+    say = {}
+    for d in core:
+        say[d['cat']] = say.get(d['cat'], 0) + 1
+    order = [c[0] for c in cats]
+
+    for lang, L in sorted(LANGS.items()):
+        label = dict((c[0], c[L['ci']]) for c in cats)
+        satir = []
+        for k in order:
+            if not say.get(k):
+                continue
+            intro = (intros.get(k) or ('', ''))[L['li']]
+            satir.append(
+                '<li><a href="%s.html">%s</a><span class="c">%d</span>'
+                '<p>%s</p></li>'
+                % (esc(k), esc(label[k]), say[k], esc(intro)))
+        canon = '%s/k/%sindex.html' % (SITE, L['dir'])
+        io.open(os.path.join(out_dir, 'k', L['dir'].strip('/'), 'index.html')
+                if L['dir'] else os.path.join(out_dir, 'k', 'index.html'),
+                'w', encoding='utf-8', newline='\n').write(HUB.format(
+                    lang=L['code'], site_name=esc(L['name']), desc=esc(L['hub_desc']),
+                    canon=canon, site=SITE, style=STYLE.replace('__F__', L['fonts']),
+                    total=len(core), ncat=len(satir), word_links=esc(L['links']),
+                    word_cats=esc(L['cats']), app_link=esc(L['app_link']),
+                    items='\n'.join(satir), foot=esc(L['hub_foot']),
+                    jsonld=_hub_jsonld(L, canon, order, label, say)))
+
+
+def _hub_jsonld(L, canon, order, label, say):
+    ogeler = []
+    i = 0
+    for k in order:
+        if not say.get(k):
+            continue
+        i += 1
+        ogeler.append('{"@type":"ListItem","position":%d,"url":%s,"name":%s}'
+                      % (i, json.dumps('%s/k/%s%s.html' % (SITE, L['dir'], k)),
+                         json.dumps(label[k], ensure_ascii=False)))
+    return ('{"@context":"https://schema.org","@type":"CollectionPage",'
+            '"name":%s,"url":%s,"inLanguage":"%s",'
+            '"mainEntity":{"@type":"ItemList","numberOfItems":%d,'
+            '"itemListElement":[%s]}}'
+            % (json.dumps(L['name'], ensure_ascii=False),
+               json.dumps(canon), L['code'], i, ','.join(ogeler)))
+
+
 def _sitemap(keys, out_dir):
+    """Site haritasi, dil ciftlerini de bildiriyor.
+
+    hreflang zaten sayfalarin kendisinde var ve tek basina yeterli; burada
+    tekrar edilmesinin sebebi Google'in ikisini capraz dogrulamasi -- eksik
+    ya da asimetrik bir eslesme boylece daha erken goruluyor.
+    """
     today = datetime.date.today().isoformat()
-    urls = ([(SITE + '/', '1.0')]
-            + [('%s/k/%s.html' % (SITE, k), '0.7') for k in keys]
-            + [('%s/k/en/%s.html' % (SITE, k), '0.6') for k in keys])
-    body = '\n'.join(
-        '  <url><loc>%s</loc><lastmod>%s</lastmod><priority>%s</priority></url>'
-        % (esc(u), today, p) for u, p in urls)
+    ciftler = [('%s/k/%s.html' % (SITE, k), '%s/k/en/%s.html' % (SITE, k))
+               for k in keys]
+    ciftler.insert(0, ('%s/k/index.html' % SITE, '%s/k/en/index.html' % SITE))
+
+    satir = ['  <url><loc>%s</loc><lastmod>%s</lastmod><priority>1.0</priority>'
+             '</url>' % (esc(SITE + '/'), today)]
+    for tr, en in ciftler:
+        for u, p in ((tr, '0.8'), (en, '0.7')):
+            satir.append(
+                '  <url><loc>%s</loc><lastmod>%s</lastmod><priority>%s</priority>\n'
+                '    <xhtml:link rel="alternate" hreflang="tr" href="%s"/>\n'
+                '    <xhtml:link rel="alternate" hreflang="en" href="%s"/>\n'
+                '    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>\n'
+                '  </url>' % (esc(u), today, p, esc(tr), esc(en), esc(tr)))
+
     io.open(os.path.join(out_dir, 'sitemap.xml'), 'w',
             encoding='utf-8', newline='\n').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + body + '\n</urlset>\n')
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+        '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+        + '\n'.join(satir) + '\n</urlset>\n')
 
 
 def _robots(out_dir):
