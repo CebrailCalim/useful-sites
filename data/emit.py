@@ -186,7 +186,10 @@ def _feed(core, label, out_dir):
     """Newest entries. As the directory grows this is the only sane way
     for anyone to follow it."""
     rows = sorted(core, key=lambda d: -d.get('added', 0))[:FEED_N]
-    now = _iso(int(datetime.datetime.utcnow().timestamp()))
+    # <updated> comes from the newest entry, not from the clock. Using the
+    # clock made every build produce a feed.xml diff even when no link had
+    # changed, which buries real changes in noise.
+    now = _iso(rows[0].get('added', 0) if rows else 0)
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<feed xmlns="http://www.w3.org/2005/Atom">',
              '<title>Kullanışlı Siteler</title>',
