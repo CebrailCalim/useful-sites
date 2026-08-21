@@ -26,6 +26,11 @@
    iddiasiyla bagdasmazdi. Govde metni sistem yazi tipinde kaliyor -- ekranda
    okunakliligi zaten iyi ve indirilecek hicbir sey yok. */
 @font-face{
+  font-family:"Serif Fallback";
+  src:local("Georgia"),local("Times New Roman"),local("Iowan Old Style");
+  size-adjust:98.7%;ascent-override:105%;descent-override:34%;line-gap-override:0%;
+}
+@font-face{
   font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;
   src:url("fonts/serif-400.woff2") format("woff2");
 }
@@ -37,10 +42,10 @@
 /* ---------------------------------------------------------------- tokens */
 :root{
   --bg:#fcfbf9;      --panel:#f5f2ec;
-  --fg:#191817;      --dim:#57544e;      --faint:#8b8780;
+  --fg:#191817;      --dim:#57544e;      --faint:#77746d;
   --rule:#e4e0d8;    --rule2:#efebe3;
   --accent:#a8451f;  --accent-soft:#f6ece6;
-  --serif:"Source Serif 4",Iowan Old Style,Palatino,Georgia,"Times New Roman",serif;
+  --serif:"Source Serif 4","Serif Fallback",Georgia,"Times New Roman",serif;
   --mark:#fbe6a0;
   --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
   --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -49,7 +54,7 @@
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --bg:#1a1c20;    --panel:#22252a;
-    --fg:#e2e0da;    --dim:#a3a09a;      --faint:#75726c;
+    --fg:#e2e0da;    --dim:#a3a09a;      --faint:#86837c;
     --rule:#2c3037;  --rule2:#24272c;
     --accent:#e78b62; --accent-soft:#2a211c;
     --mark:#5c4a15;
@@ -57,7 +62,7 @@
 }
 :root[data-theme="dark"]{
   --bg:#1a1c20;    --panel:#22252a;
-  --fg:#e2e0da;    --dim:#a3a09a;      --faint:#75726c;
+  --fg:#e2e0da;    --dim:#a3a09a;      --faint:#86837c;
   --rule:#2c3037;  --rule2:#24272c;
   --accent:#e78b62; --accent-soft:#2a211c;
   --mark:#5c4a15;
@@ -127,6 +132,8 @@ h1{font:600 31px/1.2 var(--serif);margin:0;letter-spacing:-.014em}
 .tag:hover{border-color:var(--faint);background:var(--panel)}
 .tag:hover b{color:var(--fg)}
 .tag[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.tag.more{border-style:dashed;color:var(--dim)}
+.tag.more:hover{color:var(--accent);border-color:var(--accent)}
 .tag[aria-pressed="true"] b{color:var(--accent)}
 
 /* ---------------------------------------------------------------- layout */
@@ -142,13 +149,13 @@ nav a{
 nav a:hover{color:var(--fg);padding-left:4px}
 nav a.on{color:var(--accent);font-weight:600}
 nav a.on::before{content:"▸ ";color:var(--accent)}
-nav a.empty{opacity:.42}
+nav a.empty{opacity:.62}
 nav .n{font:11.5px/1.4 var(--mono);color:var(--faint);font-variant-numeric:tabular-nums}
 .navback{display:none;width:100%;margin:0 0 14px;text-align:left}
 .navback.show{display:block}
 
 /* ---------------------------------------------------------------- liste */
-section{margin:0 0 46px;scroll-margin-top:24px}
+section{margin:0 0 64px;scroll-margin-top:24px}
 h2{
   font:13px/1 var(--mono);text-transform:uppercase;letter-spacing:.1em;
   color:var(--faint);font-weight:400;margin:0 0 4px;padding-bottom:11px;
@@ -164,17 +171,26 @@ h2 .n{font-variant-numeric:tabular-nums}
 }
 .item:hover{border-left-color:var(--accent)}
 .item-h{display:flex;gap:9px;align-items:baseline;flex-wrap:wrap}
+.foot{
+  display:flex;gap:10px 16px;align-items:baseline;flex-wrap:wrap;
+  margin:10px 0 0;padding-top:9px;border-top:1px dotted var(--rule);
+}
+.foot .meta{
+  margin-left:auto;display:flex;gap:9px;align-items:baseline;flex-wrap:wrap;
+  font:11.5px/1.5 var(--mono);color:var(--faint);
+}
+.foot .sep{color:var(--rule)}
 .item a.name{
   font:600 18px/1.3 var(--serif);text-decoration:none;letter-spacing:-.004em;
   transition:color .12s var(--step);
 }
 .item a.name:hover{color:var(--accent)}
 .host{font:12.5px/1 var(--mono);color:var(--faint);overflow:hidden;text-overflow:ellipsis}
-.desc{margin:7px 0 0;color:var(--dim);font-size:15.5px;line-height:1.7}
-.itags{margin:9px 0 0;font:12.5px/1.7 var(--sans);color:var(--faint)}
+.desc{margin:6px 0 0;color:var(--dim);font-size:15.5px;line-height:1.7}
+.itags{margin:0;font:12.5px/1.5 var(--sans);color:var(--faint);min-width:0}
 .itags span{cursor:pointer;transition:color .12s var(--step)}
 .itags span:hover{color:var(--accent)}
-.age{font:11.5px/1 var(--mono);color:var(--faint);margin-left:auto;white-space:nowrap}
+.age{font:11.5px/1 var(--mono);color:var(--faint);white-space:nowrap}
 
 /* start-here marker: two or three entries per category */
 .dot{color:var(--accent);font-size:9px;line-height:1;position:relative;top:-1px}
@@ -190,7 +206,7 @@ h2 .n{font-variant-numeric:tabular-nums}
   max-width:80ch;padding-left:14px;border-left:2px solid var(--rule);
 }
 /* related entries */
-.rel{margin:7px 0 0;font:12.5px/1.6 var(--mono);color:var(--faint)}
+.rel{margin:8px 0 0;font:12.5px/1.6 var(--mono);color:var(--faint)}
 .rel b{font-weight:400;color:var(--faint)}
 .rel a{color:var(--dim);text-decoration:none;cursor:pointer}
 .rel a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
@@ -244,6 +260,14 @@ mark{background:var(--mark);color:inherit;padding:0 2px;border-radius:2px}
 .card:hover .ch{color:var(--accent)}
 .ch{font:600 17px/1.28 var(--serif);letter-spacing:-.004em;
   transition:color .12s var(--step);display:flex;gap:10px;align-items:baseline}
+/* Kategoriler esit buyuklukte degil (99 kayda karsi 11) ama kartlar esitti.
+   Baslik boyu uc kademe, altinda hacimle orantili ince bir cubuk: agirlik
+   izgarayi bozmadan okunuyor. */
+.card.lg .ch{font-size:19.5px}
+.card.md .ch{font-size:18px}
+.bar{height:2px;background:var(--rule);border-radius:1px;overflow:hidden;margin:1px 0 0}
+.bar i{display:block;height:100%;background:var(--accent);opacity:.5}
+.card:hover .bar i{opacity:.85}
 .ch .n{font:11.5px/1 var(--mono);color:var(--faint);font-variant-numeric:tabular-nums;
   margin-left:auto;flex:none}
 .cd{font-size:13.5px;line-height:1.55;color:var(--dim);margin:0}
@@ -382,9 +406,17 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
   .desc{font-size:15px}
   .item-h{gap:7px}
   .badge,.age{font-size:11px}
+  /* 24 kart mobilde cok uzun bir kaydirma oluyordu. Ornek satiri ve giris
+     cumlesi gidiyor, geriye ad ve sayi kaliyor -- gezinme icin yeterli. */
   .cards{grid-template-columns:1fr}
+  .card{min-height:0;padding:13px 15px;gap:5px;flex-direction:row;align-items:baseline}
+  .card .cs,.card .cd,.card .bar{display:none}
+  .card .ch{font-size:16.5px;flex:1}
+  .card.lg .ch,.card.md .ch{font-size:16.5px}
   .hpicks{grid-template-columns:1fr;gap:0}
   .lead{font-size:18px}
+  .foot{gap:6px 12px}
+  .foot .meta{margin-left:0;width:100%}
   #top{right:14px;bottom:14px;padding:13px 15px}
   footer{font-size:13.5px}
 
@@ -533,6 +565,7 @@ var T = {
       "</b> bağlantı, "+c+" başlık altında. Her kayıtta iki şey yazılı: ne işe yaradığı "+
       "ve benzerlerinden nerede ayrıldığı." },
     hStart:"Buradan Başla", hCats:"Başlıklar", hAll:"Tümünü tek listede gör →",
+    tagMore:function(n){ return "+ " + n + " Etiket Daha" }, tagLess:"− Etiketleri Kısalt",
     dead:"Ölü", deadTip:"Son taramada yanıt vermedi — arşivden bak",
     arch:"arşiv", archTip:"Sayfanın Wayback Machine'deki kopyası",
     add:"Bağlantı Gönder",
@@ -587,6 +620,7 @@ var T = {
       "under "+c+" headings. Every entry states two things: what it does and where it "+
       "parts ways with its neighbours." },
     hStart:"Start Here", hCats:"Headings", hAll:"See everything in one list →",
+    tagMore:function(n){ return "+ " + n + " More Tags" }, tagLess:"− Fewer Tags",
     dead:"Dead", deadTip:"No response in the last scan — try the archive",
     arch:"archive", archTip:"The page as kept by the Wayback Machine",
     add:"Submit a Link",
@@ -774,22 +808,29 @@ function srcNote(d){
 }
 
 function itemHTML(d, showYear){
+  var SEP = '<span class="sep">·</span>';
+  /* Kunye satiri: bakilan sey ad ve aciklama, bunlar dogrulama bilgisi.
+     Ayni satirda durunca hangisinin once okunacagi belirsiz kaliyordu. */
+  var meta = ['<span class="host">'+esc(d._h)+'</span>',
+              '<span class="badge'+(d.src!=="kedi"?' ext':'')+'" title="'+esc(srcNote(d))+'">'+
+                esc(srcLabel(d))+'</span>'];
+  if(showYear) meta.push('<span class="age">'+whenOf(d)+'</span>');
+  meta.push('<a class="arch" href="'+esc(ARCHIVE+d.url)+'" target="_blank" '+
+            'rel="noopener noreferrer" title="'+esc(T[lang].archTip)+'">'+esc(T[lang].arch)+'</a>');
+
   return '<article class="item'+(d.pick?' pick':'')+'"><div class="item-h">'+
     (d.pick ? '<span class="dot" title="'+esc(T[lang].pickTip)+'">◆</span>' : '')+
     '<a class="name" href="'+esc(d.url)+'" target="_blank" rel="noopener noreferrer">'+hl(d.name)+'</a>'+
-    '<span class="host">'+esc(d._h)+'</span>'+
-    '<span class="badge'+(d.src!=="kedi"?' ext':'')+'" title="'+esc(srcNote(d))+'">'+
-      esc(srcLabel(d))+'</span>'+
-    (showYear ? '<span class="age">'+whenOf(d)+'</span>' : '')+
     (d.dead ? '<span class="badge dead" title="'+esc(T[lang].deadTip)+'">'+
               esc(T[lang].dead)+'</span>' : '')+
-    '<a class="arch" href="'+esc(ARCHIVE+d.url)+'" target="_blank" '+
-      'rel="noopener noreferrer" title="'+esc(T[lang].archTip)+'">'+esc(T[lang].arch)+'</a>'+
     '</div><p class="desc">'+hl(descOf(d))+'</p>'+
-    ((d.tags||[]).length
-      ? '<p class="itags">'+d.tags.map(function(t){
-          return '<span data-tag="'+esc(t)+'">'+esc(tagLabel(t))+'</span>' }).join(" · ")+'</p>'
-      : '')+
+    '<div class="foot">'+
+      ((d.tags||[]).length
+        ? '<span class="itags">'+d.tags.map(function(t){
+            return '<span data-tag="'+esc(t)+'">'+esc(tagLabel(t))+'</span>' }).join(" "+SEP+" ")+'</span>'
+        : '<span class="itags"></span>')+
+      '<span class="meta">'+meta.join(SEP)+'</span>'+
+    '</div>'+
     ((d.rel||[]).length
       ? '<p class="rel"><b>'+esc(T[lang].rel)+'</b> '+d.rel.map(function(n){
           return '<a data-rel="'+esc(n)+'">'+esc(n)+'</a>' }).join(" · ")+'</p>'
@@ -818,6 +859,30 @@ function firstSentence(t){
   return m ? m[1] : (t || "").slice(0, 120);
 }
 
+/* Acilista 63 etiket dugmesi birden goruntuyu doldurup asil icerigi asagi
+   itiyordu. Ilk on bes gorunur, kalani katli; secili bir etiket kesimin
+   disinda kalsa bile her zaman gosteriliyor, yoksa aktif suzgec kayboluyor. */
+var TAG_HEAD = 15;
+var tagsOpen = false;
+
+function tagbarHTML(L){
+  var goster = ALLTAGS.slice(0, TAG_HEAD);
+  activeTags.forEach(function(t){
+    if(goster.indexOf(t) < 0 && ALLTAGS.indexOf(t) >= 0) goster.push(t);
+  });
+  var liste = tagsOpen ? ALLTAGS : goster;
+  var gizli = ALLTAGS.length - liste.length;
+
+  return liste.map(function(t){
+    return '<button class="tag" type="button" data-tag="'+esc(t)+'" aria-pressed="'+
+           (activeTags.indexOf(t)>=0)+'"><b>'+esc(tagLabel(t))+'</b> '+TAGCOUNT[t]+'</button>';
+  }).join("") +
+  (gizli > 0 || tagsOpen
+    ? '<button class="tag more" type="button" id="tagmore" aria-expanded="'+tagsOpen+'">'+
+      (tagsOpen ? esc(L.tagLess) : esc(L.tagMore(gizli)))+'</button>'
+    : "");
+}
+
 function homeHTML(L){
   var byCat = {};
   data.forEach(function(d){ (byCat[d.cat] = byCat[d.cat] || []).push(d) });
@@ -830,6 +895,9 @@ function homeHTML(L){
     if(seen[d.cat] || strip.length >= 6) return;
     seen[d.cat] = 1; strip.push(d);
   });
+
+  var enBuyuk = 1;
+  CATS.forEach(function(c){ enBuyuk = Math.max(enBuyuk, (byCat[c.key] || []).length) });
 
   var cards = CATS.map(function(c){
     var rows = byCat[c.key] || [];
@@ -845,8 +913,11 @@ function homeHTML(L){
       }
     }
     var ornek = sec.map(function(d){ return d.name }).join(" · ");
-    return '<a class="card" href="?cat='+esc(c.key)+'" data-cat="'+esc(c.key)+'">'+
+    var tier = rows.length >= 60 ? " lg" : (rows.length >= 34 ? " md" : "");
+    var pay = Math.round(rows.length / enBuyuk * 100);
+    return '<a class="card'+tier+'" href="?cat='+esc(c.key)+'" data-cat="'+esc(c.key)+'">'+
              '<span class="ch">'+esc(c[lang])+'<span class="n">'+rows.length+'</span></span>'+
+             '<span class="bar"><i style="width:'+pay+'%"></i></span>'+
              '<p class="cd">'+esc(firstSentence(intro))+'</p>'+
              '<span class="cs">'+esc(ornek)+'</span>'+
            '</a>';
@@ -942,10 +1013,7 @@ function render(){
   $("#tagbar").innerHTML =
     '<button class="tag pickbtn" type="button" id="pickbtn" aria-pressed="'+onlyPicks+'">'+
     '<span class="dot">◆</span> <b>'+esc(L.picks)+'</b> '+PICKCOUNT+'</button>' +
-    ALLTAGS.map(function(t){
-    return '<button class="tag" type="button" data-tag="'+esc(t)+'" aria-pressed="'+
-           (activeTags.indexOf(t)>=0)+'"><b>'+esc(tagLabel(t))+'</b> '+TAGCOUNT[t]+'</button>';
-  }).join("");
+    tagbarHTML(L);
 
   /* Giris gorunumu: hicbir suzgec yokken kayit degil kategori gosteriyoruz. */
   if(!activeCat && !q && !activeTags.length && !onlyPicks && !activeSrc && sortBy === "cat"){
@@ -998,6 +1066,7 @@ document.addEventListener("click", function(e){
   }
   var all = e.target.closest("[data-all]");
   if(all){ e.preventDefault(); sortBy = "az"; pages = {}; update(true); return }
+  if(e.target.closest("#tagmore")){ tagsOpen = !tagsOpen; render(); return }
   if(e.target.closest("#pickbtn")){ onlyPicks = !onlyPicks; pages = {}; update(true); return }
   var sb = e.target.closest("[data-src]");
   if(sb){

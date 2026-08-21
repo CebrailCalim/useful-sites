@@ -17,10 +17,18 @@
 <link rel="alternate" hreflang="tr" href="https://latifkedi.github.io/useful-sites/k/medya.html">
 <link rel="alternate" hreflang="en" href="https://latifkedi.github.io/useful-sites/k/en/medya.html">
 <link rel="alternate" hreflang="x-default" href="https://latifkedi.github.io/useful-sites/k/medya.html">
-<style>:root{--bg:#fcfbf9;--fg:#191817;--dim:#57544e;--faint:#8b8780;
---rule:#e4e0d8;--accent:#a8451f;--accent-soft:#f6ece6}
+<style>@font-face{
+font-family:"Serif Fallback";src:local("Georgia"),local("Times New Roman"),local("Iowan Old Style");
+size-adjust:98.7%;ascent-override:105%;descent-override:34%;line-gap-override:0%}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;
+src:url("../fonts/serif-400.woff2") format("woff2")}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:600;font-display:swap;
+src:url("../fonts/serif-600.woff2") format("woff2")}
+:root{--bg:#fcfbf9;--fg:#191817;--dim:#57544e;--faint:#77746d;
+--rule:#e4e0d8;--accent:#a8451f;--accent-soft:#f6ece6;
+--serif:"Source Serif 4","Serif Fallback",Georgia,"Times New Roman",serif}
 @media (prefers-color-scheme:dark){:root{--bg:#1a1c20;--fg:#e2e0da;--dim:#a3a09a;
---faint:#75726c;--rule:#33363c;--accent:#e78b62;--accent-soft:#2a211c}}
+--faint:#86837c;--rule:#33363c;--accent:#e78b62;--accent-soft:#2a211c}}
 *{box-sizing:border-box}
 body{margin:0 auto;padding:0 24px 72px;max-width:820px;background:var(--bg);color:var(--fg);
 font:17px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
@@ -29,12 +37,12 @@ header{padding:48px 0 20px;border-bottom:1px solid var(--rule)}
 .up{font:12.5px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--dim);
 text-decoration:none;letter-spacing:.04em}
 .up:hover{color:var(--accent)}
-h1{font-size:27px;letter-spacing:-.018em;margin:16px 0 0}
+h1{font:600 31px/1.2 var(--serif);letter-spacing:-.014em;margin:16px 0 0}
 .intro{color:var(--dim);font-size:16px;line-height:1.7;margin:12px 0 0;max-width:66ch}
 .n{font:12.5px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--faint);
 margin-top:10px;display:block}
-article{padding:16px 0 16px 14px;border-left:2px solid var(--rule);margin:22px 0 0}
-article h2{font-size:17px;font-weight:600;margin:0;display:inline}
+article{padding:16px 0 16px 14px;border-left:2px solid var(--rule);margin:26px 0 0}
+article h2{font:600 18px/1.3 var(--serif);letter-spacing:-.004em;margin:0;display:inline}
 article h2 a{text-decoration:none}
 article h2 a:hover{color:var(--accent)}
 .host{font:12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--faint);margin-left:8px}

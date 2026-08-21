@@ -39,10 +39,18 @@ def _day(ts):
 
 # The static pages carry none of the app shell; their only job is to be
 # readable. Same tokens, same typography, no JavaScript.
-STYLE = """:root{--bg:#fcfbf9;--fg:#191817;--dim:#57544e;--faint:#8b8780;
---rule:#e4e0d8;--accent:#a8451f;--accent-soft:#f6ece6}
+STYLE = """@font-face{
+font-family:"Serif Fallback";src:local("Georgia"),local("Times New Roman"),local("Iowan Old Style");
+size-adjust:98.7%;ascent-override:105%;descent-override:34%;line-gap-override:0%}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;
+src:url("__F__/serif-400.woff2") format("woff2")}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:600;font-display:swap;
+src:url("__F__/serif-600.woff2") format("woff2")}
+:root{--bg:#fcfbf9;--fg:#191817;--dim:#57544e;--faint:#77746d;
+--rule:#e4e0d8;--accent:#a8451f;--accent-soft:#f6ece6;
+--serif:"Source Serif 4","Serif Fallback",Georgia,"Times New Roman",serif}
 @media (prefers-color-scheme:dark){:root{--bg:#1a1c20;--fg:#e2e0da;--dim:#a3a09a;
---faint:#75726c;--rule:#33363c;--accent:#e78b62;--accent-soft:#2a211c}}
+--faint:#86837c;--rule:#33363c;--accent:#e78b62;--accent-soft:#2a211c}}
 *{box-sizing:border-box}
 body{margin:0 auto;padding:0 24px 72px;max-width:820px;background:var(--bg);color:var(--fg);
 font:17px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
@@ -51,12 +59,12 @@ header{padding:48px 0 20px;border-bottom:1px solid var(--rule)}
 .up{font:12.5px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--dim);
 text-decoration:none;letter-spacing:.04em}
 .up:hover{color:var(--accent)}
-h1{font-size:27px;letter-spacing:-.018em;margin:16px 0 0}
+h1{font:600 31px/1.2 var(--serif);letter-spacing:-.014em;margin:16px 0 0}
 .intro{color:var(--dim);font-size:16px;line-height:1.7;margin:12px 0 0;max-width:66ch}
 .n{font:12.5px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--faint);
 margin-top:10px;display:block}
-article{padding:16px 0 16px 14px;border-left:2px solid var(--rule);margin:22px 0 0}
-article h2{font-size:17px;font-weight:600;margin:0;display:inline}
+article{padding:16px 0 16px 14px;border-left:2px solid var(--rule);margin:26px 0 0}
+article h2{font:600 18px/1.3 var(--serif);letter-spacing:-.004em;margin:0;display:inline}
 article h2 a{text-decoration:none}
 article h2 a:hover{color:var(--accent)}
 .host{font:12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--faint);margin-left:8px}
@@ -133,14 +141,14 @@ def _item(d, taglbl, desc, li):
 # query used to land on a Turkish page; hreflang now pairs them up.
 LANGS = {
     'tr': {
-        'code': 'tr', 'li': 0, 'ci': 1, 'dir': '',
+        'code': 'tr', 'li': 0, 'ci': 1, 'dir': '', 'fonts': '../fonts',
         'name': 'Kullanışlı Siteler', 'links': 'bağlantı',
         'foot': ('Bu sayfa dizinin {t} bölümünün metin hâli. Arama, etiket süzgeci '
                  've İngilizce açıklamalar için <a href="{s}/?cat={k}">dizine dön</a>. '
                  '<a href="{s}/k/en/{k}.html">In English</a>'),
     },
     'en': {
-        'code': 'en', 'li': 1, 'ci': 2, 'dir': 'en/',
+        'code': 'en', 'li': 1, 'ci': 2, 'dir': 'en/', 'fonts': '../../fonts',
         'name': 'Useful Sites', 'links': 'links',
         'foot': ('The plain-text edition of the {t} section. For search, tag '
                  'filtering and Turkish descriptions, <a href="{s}/?cat={k}">go to '
@@ -186,7 +194,8 @@ def write_all(core, cats, intros, taglbl, out_dir, en_desc):
                     encoding='utf-8', newline='\n').write(PAGE.format(
                         lang=L['code'], site_name=esc(L['name']),
                         title=esc(label[k]), desc=esc(desc), canon=canon, site=SITE,
-                        home=SITE + '/', style=STYLE, intro=esc(intro),
+                        home=SITE + '/', intro=esc(intro),
+                        style=STYLE.replace('__F__', L['fonts']),
                         count=len(rows), word_links=esc(L['links']), key=esc(k),
                         alt_tr='%s/k/%s.html' % (SITE, k),
                         alt_en='%s/k/en/%s.html' % (SITE, k),
