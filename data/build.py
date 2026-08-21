@@ -211,17 +211,24 @@ by_cat = {}
 for i, r in enumerate(core):
     by_cat.setdefault(r['cat'], []).append(i)
 
+# Two shared tags is the bar for a good suggestion, but applying it flatly left
+# 85 records with no neighbours at all -- usually the ones carrying few tags,
+# which are exactly the ones a reader is least able to place. Those fall back to
+# a single shared tag rather than being left orphaned.
 for i, r in enumerate(core):
     ts = set(r['tags'])
     if not ts:
         continue
-    puan = []
-    for j in by_cat[r['cat']]:
-        if j == i:
-            continue
-        ort = len(ts & set(core[j]['tags']))
-        if ort >= 2:
-            puan.append((ort, -abs(j - i), j))
+    for esik in (2, 1):
+        puan = []
+        for j in by_cat[r['cat']]:
+            if j == i:
+                continue
+            ort = len(ts & set(core[j]['tags']))
+            if ort >= esik:
+                puan.append((ort, -abs(j - i), j))
+        if puan:
+            break
     puan.sort(reverse=True)
     rel = [core[j]['name'] for _, _, j in puan[:3]]
     if rel:
@@ -239,7 +246,7 @@ io.open(os.path.join(D, '..', 'links.en.js'), 'w', encoding='utf-8').write(
 
 # The text version, for crawlers and for visitors without JavaScript:
 # category pages, sitemap, robots and the Atom feed. The app is untouched.
-_pages = emit.write_all(core, CATS, INTROS, LABELS, os.path.join(D, '..'))
+_pages = emit.write_all(core, CATS, INTROS, LABELS, os.path.join(D, '..'), en)
 
 # ------------------------------------------------------------------ cache stamp
 # The address of links.js never changes, so after an update a browser can serve

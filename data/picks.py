@@ -85,6 +85,40 @@ PICKS = {
     'https://arxiv.org/',                                                            # arXiv
     'https://www.semanticscholar.org/',                                              # Semantic Scholar
     'https://www.connectedpapers.com/',                                              # Connected Papers
+    # --- yeni kategoriler ve son alimlar
+    # --- barindirma
+    'https://syncthing.net/',                                                        # Syncthing
+    'https://immich.app/',                                                           # Immich
+    'https://nextcloud.com/',                                                        # Nextcloud
+    # --- medya
+    'https://www.blender.org/',                                                      # Blender
+    'https://squoosh.app/',                                                          # Squoosh
+    'https://www.photopea.com/',                                                     # Photopea
+    # --- yz_uretim
+    'https://github.com/AUTOMATIC1111/stable-diffusion-webui',                       # Stable Diffusion WebUI
+    'https://www.comfy.org/',                                                        # ComfyUI
+    # --- yz_rag
+    'https://github.com/pgvector/pgvector',                                          # pgvector
+    'https://www.llamaindex.ai/',                                                    # LlamaIndex
+    # --- guvenlik
+    'https://haveibeenpwned.com/',                                                   # Have I Been Pwned
+    'https://mullvad.net/en',                                                        # Mullvad VPN
+    # --- ag
+    'https://tailscale.com/',                                                        # Tailscale
+    # --- web
+    'https://caniuse.com/',                                                          # Can I Use
+    # --- devops
+    'https://www.shellcheck.net/',                                                   # ShellCheck
+    # --- mobil
+    'https://godotengine.org/',                                                      # Godot
+    # --- donanim
+    'https://wokwi.com/',                                                            # Wokwi
+    'https://www.kicad.org/',                                                        # KiCad
+    # --- araclar
+    'https://it-tools.tech/',                                                        # IT Tools
+    # --- referans
+    'https://ohshitgit.com/',                                                        # Oh Shit, Git!?!
+    'https://teachyourselfcs.com/',                                                  # Teach Yourself CS
 }
 
 

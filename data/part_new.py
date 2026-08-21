@@ -88,3 +88,19 @@ def load(add):
         'PL/SQL hata ayıklama bir arada. Oracle ile çalışıyorsan fiilî standart araç.',
         'A free desktop client for Oracle databases combining querying, schema browsing and PL/SQL '
         'debugging — the de facto tool if you work with Oracle.', D)
+
+    # Kullanicinin onerisi uzerine incelendi ve eklendi.
+    add('https://get.foundation/sites.html', 'Foundation for Sites',
+        ['açık-kaynak', 'frontend', 'github'],
+        'Bootstrap’ın uzun süreli rakibi olan duyarlı arayüz çatısı; XY ızgarası, erişilebilirlik '
+        'odaklı bileşenler ve e-posta şablonları için ayrı bir sürümü var. Bootstrap’tan farkı '
+        'daha az görsel kanaat dayatması — bileşenler biçimlendirilmemiş gelir, tasarımı sen '
+        'kurarsın. Uyarı: son sürüm Eylül 2024, depoya son itme Ocak 2025; proje arşivlenmedi ama '
+        'iki yıldır durgun ve tanıtım sitesi hâlâ 2017 tarihli bir web semineri duyuruyor.',
+        'The long-running alternative to Bootstrap: a responsive front-end framework with an XY '
+        'grid, accessibility-minded components and a separate edition for HTML email. Against '
+        'Bootstrap it imposes fewer visual opinions — components arrive unstyled and you bring the '
+        'design. Caveat: the last release was September 2024 and the last push January 2025. The '
+        'project is not archived, but it has been dormant for two years and its marketing site '
+        'still advertises a webinar from 2017.',
+        'web')

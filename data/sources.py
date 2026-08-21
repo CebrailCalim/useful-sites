@@ -25,10 +25,10 @@ SOURCES = {
         'url': None,
     },
     'bwapsv': {
-        'label_tr': 'Dış Liste',
-        'label_en': 'External List',
-        'note_tr': 'Best-websites-a-programmer-should-visit derlemesinden geldi',
-        'note_en': 'Surfaced by the Best-websites-a-programmer-should-visit collection',
+        'label_tr': 'Programcı Siteleri',
+        'label_en': 'Programmer Sites',
+        'note_tr': 'Best-websites-a-programmer-should-visit derlemesinden geldi (depo Kasım 2025’te arşivlendi)',
+        'note_en': 'Surfaced by the Best-websites-a-programmer-should-visit collection (archived November 2025)',
         'url': 'https://github.com/sdmg15/Best-websites-a-programmer-should-visit',
     },
     'cdcruz': {
