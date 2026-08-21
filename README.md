@@ -8,7 +8,7 @@ Turkish and English.
 
 ## What an entry contains
 
-A bookmark reading `regex101.com` conveys nothing until the site is opened.
+A bookmark reading conveys nothing until the site is opened.
 Every entry here therefore states two things: what the resource does, and where
 it parts ways with the tools that resemble it.
 
