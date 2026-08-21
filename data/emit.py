@@ -18,6 +18,7 @@ Writes:
 """
 import io
 import os
+import json
 import datetime
 
 SITE = 'https://latifkedi.github.io/useful-sites'
@@ -97,6 +98,7 @@ PAGE = """<!doctype html>
 <link rel="alternate" hreflang="tr" href="{alt_tr}">
 <link rel="alternate" hreflang="en" href="{alt_en}">
 <link rel="alternate" hreflang="x-default" href="{alt_tr}">
+<script type="application/ld+json">{jsonld}</script>
 <style>{style}</style>
 </head>
 <body>
@@ -116,6 +118,28 @@ PAGE = """<!doctype html>
 </body>
 </html>
 """
+
+
+def _jsonld(title, canon, rows, L):
+    """ItemList: a crawler sees the list as a list rather than as prose.
+
+    The static pages already carry the text, but nothing told a machine what
+    the structure was -- this is what separates a section of a directory from
+    an arbitrary article.
+    """
+    ogeler = []
+    for i, (_, d) in enumerate(rows, 1):
+        ogeler.append(
+            '{"@type":"ListItem","position":%d,"url":%s,"name":%s}'
+            % (i, json.dumps(d['url'], ensure_ascii=False),
+               json.dumps(d['name'], ensure_ascii=False)))
+    return ('{"@context":"https://schema.org","@type":"ItemList",'
+            '"name":%s,"url":%s,"inLanguage":"%s","numberOfItems":%d,'
+            '"itemListOrder":"https://schema.org/ItemListOrderAscending",'
+            '"itemListElement":[%s]}'
+            % (json.dumps(title, ensure_ascii=False),
+               json.dumps(canon, ensure_ascii=False), L['code'],
+               len(rows), ','.join(ogeler)))
 
 
 def _host(u):
@@ -200,6 +224,7 @@ def write_all(core, cats, intros, taglbl, out_dir, en_desc):
                         alt_tr='%s/k/%s.html' % (SITE, k),
                         alt_en='%s/k/en/%s.html' % (SITE, k),
                         items='\n'.join(items), others=others,
+                        jsonld=_jsonld(label[k], canon, rows, L),
                         foot=L['foot'].format(t=esc(label[k]), s=SITE, k=esc(k))))
             if lang == 'tr':
                 written.append(k)

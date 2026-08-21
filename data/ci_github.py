@@ -34,13 +34,62 @@ STALE_DAYS = 730          # iki yil
 SKIP_OWNERS = {'topics', 'features', 'education', 'sponsors', 'orgs', 'collections'}
 
 
+# Registry pages carry their own last-published date and are worth auditing on
+# the same terms as a repository. None are linked today; the patterns are here
+# so the audit covers them the day one is added.
+REGISTRY = [
+    ('npm', r'npmjs\.com/package/(@?[^/?#]+)',
+     'https://registry.npmjs.org/%s', ('time', 'modified')),
+    ('pypi', r'pypi\.org/project/([^/?#]+)',
+     'https://pypi.org/pypi/%s/json', ('urls', 0, 'upload_time')),
+]
+
+# A project can go quiet on its own domain while its repository still tells the
+# truth -- Foundation for Sites is exactly that case: the site was reachable and
+# advertising a webinar from 2017, and only the repository showed the last
+# release was September 2024. Scanning only github.com URLs misses those, so
+# open-source entries hosted elsewhere get their homepage read once to find the
+# repository they point at.
+HOMEPAGE_LIMIT = 240          # bounded: this runs weekly
+
+
+def _find_repo(url):
+    """Reads a project homepage and returns the first github.com/owner/repo."""
+    try:
+        r = requests.get(url, headers={'User-Agent': HEADERS['User-Agent']},
+                         timeout=(6, 15), allow_redirects=True)
+    except requests.exceptions.RequestException:
+        return None
+    for m in re.finditer(r'https?://github\.com/([A-Za-z0-9._-]+)/([A-Za-z0-9._-]+)',
+                         r.text[:200000]):
+        owner, repo = m.group(1), m.group(2)
+        if owner.lower() in SKIP_OWNERS:
+            continue
+        if repo.lower().endswith(('.png', '.svg', '.jpg', '.css', '.js')):
+            continue
+        return owner, repo.rstrip('.')
+    return None
+
+
 def repos():
     rows = readlinks.read(ROOT)
-    out = []
+    out, dolayli = [], []
     for r in rows:
         m = re.match(r'https://github\.com/([^/]+)/([^/#?]+)', r['url'])
         if m and m.group(1).lower() not in SKIP_OWNERS:
             out.append((r['name'], r.get('cat_tr', ''), m.group(1), m.group(2), r['url']))
+        elif 'açık-kaynak' in (r.get('tags') or []):
+            dolayli.append(r)
+
+    dolayli = dolayli[:HOMEPAGE_LIMIT]
+    if dolayli:
+        print('proje sayfasindan depo aranan kayit: %d' % len(dolayli),
+              file=sys.stderr)
+        with cf.ThreadPoolExecutor(max_workers=8) as ex:
+            bulunan = list(ex.map(lambda r: (r, _find_repo(r['url'])), dolayli))
+        for r, hit in bulunan:
+            if hit:
+                out.append((r['name'], r.get('cat_tr', ''), hit[0], hit[1], r['url']))
     return out
 
 

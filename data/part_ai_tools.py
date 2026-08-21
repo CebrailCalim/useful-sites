@@ -148,7 +148,8 @@ def load(add):
         'çalışıyor. Midjourney benzeri bir deneyimi yerelde vermeyi hedefliyor.',
         'The opposite pole from ComfyUI — it hides sampler, steps and CFG behind good defaults, '
         'aiming to deliver a Midjourney-like experience locally.', C)
-    add('https://www.invoke.com/', 'InvokeAI', ['açık-kaynak', 'yerel-model', 'difüzyon', 'tuval'],
+    # invoke.com satisa cikarildi (Ag 2026); projenin gercek adresi depo.
+    add('https://github.com/invoke-ai/InvokeAI', 'InvokeAI', ['açık-kaynak', 'yerel-model', 'difüzyon', 'tuval'],
         'Sonsuz tuval üzerinde bölgesel üretim ve düzenleme; profesyonel iş akışı ve ekip kullanımı '
         'düşünülerek yapılmış. Ticari bir sürümü de var.',
         'Regional generation and editing on an infinite canvas, built with professional workflows and team use '

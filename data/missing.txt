@@ -1,5 +1,6 @@
 claude.ai/downloads	Claude
 gemini.google.com/app?hl=tr	Google Gemini
+invoke.com	InvokeAI
 claude.ai	Claude
 en.m.wikipedia.org/wiki/l%c3%a9vy_process	Lévy process - Wikipedia
 en.wikipedia.org/wiki/kobayashi_maru	Kobayashi Maru - Wikipedia
