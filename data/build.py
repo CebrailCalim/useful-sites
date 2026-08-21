@@ -24,6 +24,7 @@ from tags import normalise, LABELS    # noqa: E402
 from picks import PICKS               # noqa: E402
 from sources import SOURCES, DEFAULT  # noqa: E402
 from intros import INTROS             # noqa: E402
+from recat import BY_NAME            # noqa: E402
 import emit                           # noqa: E402
 
 BOOKMARKS = r'C:\Users\Cebrail\Documents\code\duzen\bookmarks_duzenli.html'
@@ -143,7 +144,8 @@ for m in meta:
     rec = {
         'url': m['url'],
         'name': n['name'],
-        'cat': n.get('cat') or cat_of(m['path']),
+        # BY_NAME wins: it is the reclassification pass, see data/recat.py
+        'cat': BY_NAME.get(n['name']) or n.get('cat') or cat_of(m['path']),
         'tags': normalise(n.get('tags', [])),
         'tr': n['tr'],
         'en': n['en'],
@@ -238,6 +240,24 @@ io.open(os.path.join(D, '..', 'links.en.js'), 'w', encoding='utf-8').write(
 # The text version, for crawlers and for visitors without JavaScript:
 # category pages, sitemap, robots and the Atom feed. The app is untouched.
 _pages = emit.write_all(core, CATS, INTROS, LABELS, os.path.join(D, '..'))
+
+# ------------------------------------------------------------------ cache stamp
+# The address of links.js never changes, so after an update a browser can serve
+# the old data file while index.html is fresh: new categories simply do not
+# appear, and nothing says why. Writing a digest of the content into the query
+# makes the address change whenever the content does.
+def _stamp():
+    import hashlib
+    ix = os.path.join(D, '..', 'index.html')
+    src = io.open(ix, encoding='utf-8').read()
+    for name in ('links.js', 'links.en.js'):
+        h = hashlib.sha1(io.open(os.path.join(D, '..', name), 'rb').read()).hexdigest()[:8]
+        pat = re.compile(r'(["\'])' + re.escape(name) + r'(?:\?v=[0-9a-f]+)?\1')
+        src = pat.sub(lambda m, n=name, d=h: m.group(1) + n + '?v=' + d + m.group(1), src)
+    io.open(ix, 'w', encoding='utf-8', newline='').write(src)
+
+
+_stamp()
 
 tc = collections.Counter(t for r in out for t in r['tags'])
 print('records        :', len(out))

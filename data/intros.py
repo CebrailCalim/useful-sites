@@ -146,4 +146,39 @@ INTROS = {
         'Preprint archives give you the newest work but it has not been refereed, and the two should not be '
         'conflated. Turkish academic material is scattered, so harvesters like DergiPark and Harman save '
         'real time against searching institution by institution.'),
+    'barindirma': (
+        'Öz-barındırma bir bedel takasıdır: aylık ücret yerine bakım yükü alıyorsun. Yedeğini kim alacak, '
+        'güncellemeyi kim geçecek sorusunun cevabı sensen mantıklı; değilse bulut hizmeti daha ucuza gelir. '
+        'Buradaki kayıtların çoğu Docker ile tek komutta kalkıyor, asıl iş kurulumda değil sürdürmekte.',
+        'Self-hosting is a trade: you swap a monthly fee for a maintenance burden. It makes sense when the '
+        'answer to "who takes the backups and applies the updates" is you; otherwise a hosted service is '
+        'cheaper. Most of these come up in one Docker command — the work is not the install, it is the '
+        'keeping.'),
+    'yz_rag': (
+        'Getirim (retrieval) tarafında asıl kararlar modelde değil hattın kendisinde: belgeyi nasıl '
+        'parçalıyorsun, hangi gömme modelini kullanıyorsun, sonuçları yeniden sıralıyor musun. Vektör '
+        'veritabanı seçimi çoğu projede en az önemli karar; küçük ölçekte pgvector işi görüyor, ayrı bir '
+        'sistem işletmenin maliyeti ancak belli bir hacimden sonra karşılığını veriyor.',
+        'On the retrieval side the decisions that matter are in the pipeline rather than the model: how you '
+        'chunk documents, which embedding model you pick, whether you rerank. Choosing a vector database is '
+        'usually the least consequential call — pgvector carries small projects, and running a separate '
+        'system only pays for itself past a certain volume.'),
+    'yz_uretim': (
+        'Üretken araçlarda fark artık çıktı kalitesinden çok denetimde: aynı modeli çalıştıran iki arayüzden '
+        'biri sana maske, katman ve tohum verirken diğeri tek bir metin kutusu veriyor. Ticari kullanım '
+        'düşünüyorsan eğitim verisinin kaynağına ve çıktı lisansına bakmak gerekiyor, bu araçlar arasında '
+        'ciddi farklılaşıyor.',
+        'With generative tools the difference is less about output quality than about control: two '
+        'interfaces running the same model, one handing you masks, layers and seeds, the other a single '
+        'text box. If commercial use is on the table, check the training data provenance and the output '
+        'licence — they vary sharply here.'),
+    'medya': (
+        'Bu alandaki araçların çoğu tek bir işi iyi yapıyor ve zincirlenmek üzere tasarlanmış. Tarayıcıda '
+        'çalışanlar dosyayı yüklemiyor, yerelde çalışanlar toplu işi kaldırıyor: bir görsel için ilki, yüz '
+        'görsel için ikincisi. Açık kaynak seçenekler burada ticari olanlarla fiilen başa baş, tek istisna '
+        'renk yönetimi gerektiren profesyonel iş akışları.',
+        'Most tools here do one thing well and are built to be chained. The browser-based ones never upload '
+        'your file; the local ones handle batches — the first for one image, the second for a hundred. Open '
+        'source is genuinely level with commercial software in this area, with colour-managed professional '
+        'workflows the one exception.'),
 }

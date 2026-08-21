@@ -20,12 +20,27 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>▤</text></svg>">
 <style>
+/* Basliklar ve kayit adlari icin Source Serif 4 (SIL OFL). Yalnizca
+   kullanilan karakterlere indirgendi ve tek agirliga sabitlendi: iki dosya
+   toplam 25 KB. Degisken surumun tamami 1.2 MB idi, bu sitenin hiz
+   iddiasiyla bagdasmazdi. Govde metni sistem yazi tipinde kaliyor -- ekranda
+   okunakliligi zaten iyi ve indirilecek hicbir sey yok. */
+@font-face{
+  font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;
+  src:url("fonts/serif-400.woff2") format("woff2");
+}
+@font-face{
+  font-family:"Source Serif 4";font-style:normal;font-weight:600;font-display:swap;
+  src:url("fonts/serif-600.woff2") format("woff2");
+}
+
 /* ---------------------------------------------------------------- tokens */
 :root{
   --bg:#fcfbf9;      --panel:#f5f2ec;
   --fg:#191817;      --dim:#57544e;      --faint:#8b8780;
   --rule:#e4e0d8;    --rule2:#efebe3;
   --accent:#a8451f;  --accent-soft:#f6ece6;
+  --serif:"Source Serif 4",Iowan Old Style,Palatino,Georgia,"Times New Roman",serif;
   --mark:#fbe6a0;
   --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
   --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -66,7 +81,7 @@ a{color:inherit}
 /* ---------------------------------------------------------------- masthead */
 header{padding:48px 0 22px;border-bottom:1px solid var(--rule)}
 .masthead{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap}
-h1{font-size:28px;font-weight:600;margin:0;letter-spacing:-.022em;line-height:1.25}
+h1{font:600 31px/1.2 var(--serif);margin:0;letter-spacing:-.014em}
 .sub{color:var(--dim);font-size:16.5px;line-height:1.7;margin:12px 0 0;max-width:66ch}
 .hdr-actions{margin-left:auto;display:flex;gap:7px;align-items:center;padding-top:3px}
 .btn{
@@ -150,7 +165,7 @@ h2 .n{font-variant-numeric:tabular-nums}
 .item:hover{border-left-color:var(--accent)}
 .item-h{display:flex;gap:9px;align-items:baseline;flex-wrap:wrap}
 .item a.name{
-  font-weight:600;text-decoration:none;font-size:17px;letter-spacing:-.011em;
+  font:600 18px/1.3 var(--serif);text-decoration:none;letter-spacing:-.004em;
   transition:color .12s var(--step);
 }
 .item a.name:hover{color:var(--accent)}
@@ -204,6 +219,46 @@ mark{background:var(--mark);color:inherit;padding:0 2px;border-radius:2px}
 .pg[aria-current="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
 .pg:disabled{opacity:.32;cursor:default}
 .pgpos{font:12px/1 var(--mono);color:var(--faint);margin-left:8px}
+
+/* ---------------------------------------------------------------- ana sayfa */
+/* Her sey tek sayfada dururken acilista 378 kayit ve 6.300 DOM dugumu
+   ciziliyordu; hem yavas hem de gezilecek bir sey birakmiyordu. Giris artik
+   kategori kartlari: 24 kart, kayit yok. Kayitlar kategoriye girilince
+   geliyor. */
+.home{padding:6px 0 0}
+.lead{
+  font:400 19.5px/1.62 var(--serif);color:var(--fg);max-width:60ch;
+  margin:0 0 30px;padding-bottom:26px;border-bottom:1px solid var(--rule);
+}
+.lead b{font-weight:600;color:var(--accent)}
+.hsec{font:13px/1 var(--mono);text-transform:uppercase;letter-spacing:.1em;
+  color:var(--faint);margin:0 0 16px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);border-radius:4px;overflow:hidden}
+.card{
+  background:var(--bg);padding:17px 18px 16px;text-decoration:none;color:inherit;
+  display:flex;flex-direction:column;gap:7px;min-height:112px;
+  transition:background .13s var(--step);
+}
+.card:hover{background:var(--panel)}
+.card:hover .ch{color:var(--accent)}
+.ch{font:600 17px/1.28 var(--serif);letter-spacing:-.004em;
+  transition:color .12s var(--step);display:flex;gap:10px;align-items:baseline}
+.ch .n{font:11.5px/1 var(--mono);color:var(--faint);font-variant-numeric:tabular-nums;
+  margin-left:auto;flex:none}
+.cd{font-size:13.5px;line-height:1.55;color:var(--dim);margin:0}
+.cs{font:11.5px/1.5 var(--mono);color:var(--faint);margin:auto 0 0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hpicks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 34px;
+  margin:0 0 38px}
+.hpick{padding:11px 0 11px 13px;border-left:2px solid var(--accent-soft);
+  border-bottom:1px solid var(--rule2);transition:border-color .13s var(--step)}
+.hpick:hover{border-left-color:var(--accent)}
+.hpick a{font:600 16px/1.3 var(--serif);text-decoration:none;color:var(--accent)}
+.hpick p{margin:5px 0 0;font-size:13.5px;line-height:1.55;color:var(--dim)}
+.hmore{display:block;margin:26px 0 0;font:12.5px/1 var(--mono);color:var(--dim);
+  text-decoration:none}
+.hmore:hover{color:var(--accent)}
 
 .empty{padding:64px 0;color:var(--dim);font-size:16px}
 .empty code{font:14px var(--mono);color:var(--accent)}
@@ -287,7 +342,11 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
 .btn:disabled{opacity:.35;cursor:default}
 .btn:disabled:hover{color:var(--dim);border-color:var(--rule);background:none}
 
-@media (max-width:1080px){ .grid{grid-template-columns:1fr} }
+@media (max-width:1080px){
+  .grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hpicks{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
 
 @media (max-width:900px){
   .cols{grid-template-columns:1fr;gap:0}
@@ -323,6 +382,9 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
   .desc{font-size:15px}
   .item-h{gap:7px}
   .badge,.age{font-size:11px}
+  .cards{grid-template-columns:1fr}
+  .hpicks{grid-template-columns:1fr;gap:0}
+  .lead{font-size:18px}
   #top{right:14px;bottom:14px;padding:13px 15px}
   footer{font-size:13.5px}
 
@@ -429,7 +491,7 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
 
 <button class="btn" id="top" type="button" title="Yukarı">↑</button>
 
-<script src="links.js"></script>
+<script src="links.js?v=b0b8e7d3"></script>
 <script>
 (function(){
 "use strict";
@@ -467,6 +529,10 @@ var T = {
          'Ölü ya da hatalı bir kayıt görürsen <a href="'+REPO+'/issues/new/choose">bildir</a> — '+
          'yeni bağlantı önerileri de aynı yerden.',
     skip:"İçeriğe Atla",
+    lead:function(n,c){ return "Yazılım, yapay zeka, güvenlik ve bilim üzerine <b>"+n+
+      "</b> bağlantı, "+c+" başlık altında. Her kayıtta iki şey yazılı: ne işe yaradığı "+
+      "ve benzerlerinden nerede ayrıldığı." },
+    hStart:"Buradan Başla", hCats:"Başlıklar", hAll:"Tümünü tek listede gör →",
     dead:"Ölü", deadTip:"Son taramada yanıt vermedi — arşivden bak",
     arch:"arşiv", archTip:"Sayfanın Wayback Machine'deki kopyası",
     add:"Bağlantı Gönder",
@@ -517,6 +583,10 @@ var T = {
          'Spotted a dead or wrong entry? <a href="'+REPO+'/issues/new/choose">Tell me</a> — '+
          'link suggestions go to the same place.',
     skip:"Skip To Content",
+    lead:function(n,c){ return "<b>"+n+"</b> links on software, AI, security and science, "+
+      "under "+c+" headings. Every entry states two things: what it does and where it "+
+      "parts ways with its neighbours." },
+    hStart:"Start Here", hCats:"Headings", hAll:"See everything in one list →",
     dead:"Dead", deadTip:"No response in the last scan — try the archive",
     arch:"archive", archTip:"The page as kept by the Wayback Machine",
     add:"Submit a Link",
@@ -742,6 +812,62 @@ function pagerHTML(key, page, total, L){
   return out.join("");
 }
 
+/* Kategori kartinda gosterilecek ilk cumle: giris metninin tamami cok uzun. */
+function firstSentence(t){
+  var m = /^(.{40,150}?[.!?])(\s|$)/.exec(t || "");
+  return m ? m[1] : (t || "").slice(0, 120);
+}
+
+function homeHTML(L){
+  var byCat = {};
+  data.forEach(function(d){ (byCat[d.cat] = byCat[d.cat] || []).push(d) });
+
+  var picks = data.filter(function(d){ return d.pick });
+  /* Gunun secimi degil, kategoriye gore dagitilmis sabit bir orneklem:
+     her acilista ayni sey gorunsun, sayfa tahmin edilebilir kalsin. */
+  var seen = {}, strip = [];
+  picks.forEach(function(d){
+    if(seen[d.cat] || strip.length >= 6) return;
+    seen[d.cat] = 1; strip.push(d);
+  });
+
+  var cards = CATS.map(function(c){
+    var rows = byCat[c.key] || [];
+    if(!rows.length) return "";
+    var intro = (INTROS[c.key] || ["",""])[lang === "tr" ? 0 : 1];
+    /* Alfabetik ilk uc kayit kotu ornek oluyor ("1000 Projects, 20 Proje...").
+       Once o kategorinin baslangic noktalari, yetmezse arasindan secilenler. */
+    var sec = rows.filter(function(d){ return d.pick }).slice(0, 3);
+    if(sec.length < 3){
+      var step = Math.max(1, Math.floor(rows.length / 4));
+      for(var i = 0; i < rows.length && sec.length < 3; i += step){
+        if(sec.indexOf(rows[i]) < 0) sec.push(rows[i]);
+      }
+    }
+    var ornek = sec.map(function(d){ return d.name }).join(" · ");
+    return '<a class="card" href="?cat='+esc(c.key)+'" data-cat="'+esc(c.key)+'">'+
+             '<span class="ch">'+esc(c[lang])+'<span class="n">'+rows.length+'</span></span>'+
+             '<p class="cd">'+esc(firstSentence(intro))+'</p>'+
+             '<span class="cs">'+esc(ornek)+'</span>'+
+           '</a>';
+  }).join("");
+
+  return '<div class="home">'+
+    '<p class="lead">'+L.lead(data.length, CATS.length)+'</p>'+
+    (strip.length
+      ? '<p class="hsec">'+esc(L.hStart)+'</p><div class="hpicks">'+
+        strip.map(function(d){
+          return '<div class="hpick"><a href="'+esc(d.url)+'" target="_blank" '+
+                 'rel="noopener noreferrer">'+esc(d.name)+'</a>'+
+                 '<p>'+esc(firstSentence(descOf(d)))+'</p></div>';
+        }).join("")+'</div>'
+      : "")+
+    '<p class="hsec">'+esc(L.hCats)+'</p>'+
+    '<div class="cards">'+cards+'</div>'+
+    '<a class="hmore" href="?sort=az" data-all="1">'+esc(L.hAll)+'</a>'+
+  '</div>';
+}
+
 function introHTML(cat){
   var t = INTROS[cat];
   return t ? '<p class="intro">'+esc(t[lang === "tr" ? 0 : 1])+'</p>' : "";
@@ -821,6 +947,12 @@ function render(){
            (activeTags.indexOf(t)>=0)+'"><b>'+esc(tagLabel(t))+'</b> '+TAGCOUNT[t]+'</button>';
   }).join("");
 
+  /* Giris gorunumu: hicbir suzgec yokken kayit degil kategori gosteriyoruz. */
+  if(!activeCat && !q && !activeTags.length && !onlyPicks && !activeSrc && sortBy === "cat"){
+    $("#list").innerHTML = homeHTML(L);
+    return;
+  }
+
   if(!shown.length){
     $("#list").innerHTML = '<p class="empty">'+L.empty+' <a href="#" id="clr"><code>'+L.clear+'</code></a></p>';
     return;
@@ -864,6 +996,8 @@ document.addEventListener("click", function(e){
     if(sec) sec.scrollIntoView({block:"start", behavior:"smooth"});
     return;
   }
+  var all = e.target.closest("[data-all]");
+  if(all){ e.preventDefault(); sortBy = "az"; pages = {}; update(true); return }
   if(e.target.closest("#pickbtn")){ onlyPicks = !onlyPicks; pages = {}; update(true); return }
   var sb = e.target.closest("[data-src]");
   if(sb){
@@ -961,7 +1095,7 @@ function setLang(next){
   if(lang === "en" && !window.LINKS_EN && !enLoading){
     enLoading = true;
     var s = document.createElement("script");
-    s.src = "links.en.js";
+    s.src = "links.en.js?v=7748826a";
     s.onload = s.onerror = function(){ enLoading = false; indexEN(); render() };
     document.head.appendChild(s);
   }
