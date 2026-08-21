@@ -43,6 +43,7 @@ overwrites it.
 | `from_issue.py` | Turns an approved GitHub issue into a record |
 | `ci_check.py` | Link scan and report, for GitHub Actions |
 | `ci_github.py` | Archive and staleness audit for linked GitHub repositories |
+| `make_og.py` | Regenerates `og.png`; the record count and address are baked into the pixels |
 | `extract.py` | Pulls technology links out of a browser bookmark file |
 | `check.py` | One-off liveness check |
 | `fetchmeta.py` | Fetches title/description metadata per site |

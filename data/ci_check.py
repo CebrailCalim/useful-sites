@@ -82,8 +82,22 @@ def write_verified(links, bad_by_url):
             # flag the entry and point at the archive. A finding that stays
             # inside an issue never reaches the person reading the page.
             ver[k] = {'d': ver.get(k, {}).get('d', today), 's': 'olu'}
+    # Entries removed from the directory leave their verification behind. The
+    # file had accumulated 251 such keys against 988 records -- a quarter of it
+    # describing links nobody can reach any more. Anything with no record is
+    # dropped on each run.
+    live = set()
+    for l in links:
+        k = re.sub(r'^https?://(www\.)?', '', l['url'].strip().lower()).rstrip('/')
+        live.add(k)
+        live.add(re.split(r'[?#]', k)[0].rstrip('/'))
+    stale = [k for k in ver if k not in live]
+    for k in stale:
+        del ver[k]
+
     json.dump(ver, io.open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    print('verified.json updated:', len(ver))
+    print('verified.json updated: %d kept, %d stale keys dropped'
+          % (len(ver), len(stale)))
 
 
 def main():
