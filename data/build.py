@@ -163,9 +163,19 @@ for m in meta:
             rec['dead'] = 1          # no response last scan - point at archive
     out.append(rec)
 
+# Records that never appeared in the bookmark archive have no ADD_DATE, so they
+# need a stand-in. One flat value would flatten "newest first" into noise, so
+# each intake gets the date it actually arrived.
 FALLBACK = 1787000000          # AI tools added while compiling the directory
+SRC_ADDED = {
+    'bwapsv': 1787000000,      # first external import
+    'cdcruz': 1787345600,      # 21 Aug 2026 intake
+    'awesome-uw': 1787345600,
+    'invesp': 1787345600,
+}
 for r in out:
-    r.setdefault('added', FALLBACK)
+    if 'added' not in r:
+        r['added'] = SRC_ADDED.get(r['src'], FALLBACK)
 
 order = [c[0] for c in CATS]
 out.sort(key=lambda r: (order.index(r['cat']) if r['cat'] in order else 99,

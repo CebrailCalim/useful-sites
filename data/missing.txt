@@ -36,7 +36,6 @@ codecademy.com
 codegym.cc	
 teamtreehouse.com	
 practice.geeksforgeeks.org	
-ohshitgit.com	
 theodinproject.com/home	
 udemy.com	
 scaler.com/topics	
@@ -79,7 +78,6 @@ jsoncrack.com
 pad.new	
 pullrequest.com	
 pythontutor.com/visualize.html	
-extendsclass.com	
 sourcegraph.com/search	
 yqnn.github.io/svg-path-editor	
 repl.it	
@@ -89,7 +87,6 @@ webhook.site
 kandi.openweaver.com	
 play.typeracer.com	
 typerush.com	
-it-tools.tech	
 tldp.org/howto/bash-prog-intro-howto.html	
 softcover.io/read/fc6c09de/unix_commands	
 airborn.io	
@@ -258,7 +255,6 @@ chiark.greenend.org.uk/~sgtatham/cdescent
 topcoder.com/community/data-science/data-science-tutorials	
 tutorialspoint.com	
 snapsvg.io	
-vim.rtorr.com	
 thume.ca/2017/06/17/tree-diffing	
 learnpython.org	
 learnshell.org	
@@ -315,7 +311,6 @@ oswd.org
 wiki.mozilla.org/security/automation/winter_of_security_2016	
 bitbucket.org	
 mediawiki.org/wiki/mediawiki	
-codetriage.com	
 issuehub.io	
 up-for-grabs.net	
 firsttimersonly.com	

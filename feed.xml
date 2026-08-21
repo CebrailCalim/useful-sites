@@ -5,325 +5,325 @@
 <link href="https://cebrailcalim.github.io/useful-sites/feed.xml" rel="self"/>
 <link href="https://cebrailcalim.github.io/useful-sites/"/>
 <id>https://cebrailcalim.github.io/useful-sites/</id>
-<updated>2026-08-21T00:22:41Z</updated>
+<updated>2026-08-21T02:10:45Z</updated>
 <entry>
-  <title>Programcının Ziyaret Etmesi Gereken Siteler</title>
-  <link href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit"/>
-  <id>https://github.com/sdmg15/Best-websites-a-programmer-should-visit</id>
-  <updated>2026-08-19T23:41:12Z</updated>
-  <category term="Referans &amp; Koleksiyonlar"/>
-  <summary>Kullanım amacına göre gruplanmış geliştirici bağlantı derlemesi: alıştırma, haber, araç, kitap. 76 bin yıldıza rağmen 1 Kasım 2025’te arşivlendi — artık salt okunur, ölü bağlantılar temizlenmiyor. Tarihsel bir kesit olarak değerli, güncel kaynak olarak değil.</summary>
+  <title>Algorithm Visualizer</title>
+  <link href="https://algorithm-visualizer.org/"/>
+  <id>https://algorithm-visualizer.org/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>Algoritmanın kodunu yazarken adım adım görselleştiren platform; kendi kodunu da çalıştırabiliyorsun. Hazır animasyonlardan farkı bu — algoritmayı izlemekle kalmayıp değiştirip sonucu görebiliyorsun.</summary>
 </entry>
 <entry>
-  <title>Learn X in Y Minutes</title>
-  <link href="https://learnxinyminutes.com/"/>
-  <id>https://learnxinyminutes.com/</id>
-  <updated>2026-08-19T23:39:30Z</updated>
-  <category term="Referans &amp; Koleksiyonlar"/>
-  <summary>Bir dili tek yorumlu kod dosyasıyla tanıtıyor. Başka dil bilenler için en hızlı geçiş yolu: kavramları değil yalnızca sözdizimi farklarını okuyorsun.</summary>
+  <title>Everything Computer Science</title>
+  <link href="https://everythingcomputerscience.com/"/>
+  <id>https://everythingcomputerscience.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>Bilgisayar bilimi konularını derleyen kaynak portalı: algoritma, işletim sistemi, derleyici, yapay zeka. Üniversite müfredatlarından farkı her konuya ait ders, kitap ve alıştırmayı bir arada listelemesi — çalışma sırası kurmak için.</summary>
 </entry>
 <entry>
-  <title>Literate Programming</title>
-  <link href="http://literateprogramming.com/"/>
-  <id>http://literateprogramming.com/</id>
-  <updated>2026-08-19T23:38:44Z</updated>
-  <category term="Referans &amp; Koleksiyonlar"/>
-  <summary>Knuth’un kodu düzyazıyla iç içe yazma fikrinin arşivi. Jupyter not defterlerinin ve bugünkü “açıklanabilir kod” tartışmasının kökeni buraya çıkıyor.</summary>
+  <title>Teach Yourself CS</title>
+  <link href="https://teachyourselfcs.com/"/>
+  <id>https://teachyourselfcs.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>Bilgisayar bilimini kendi başına çalışmak için dokuz konu ve her konuda tek bir kitap ile tek bir ders önerisi. Diğer yol haritalarından farkı seçenek sunmaması: &quot;en iyi kaynak hangisi&quot; tartışmasını sizin yerinize kapatıp neden o kaynağı seçtiğini yazıyor.</summary>
 </entry>
 <entry>
-  <title>Free for Developers</title>
-  <link href="https://free-for.dev/#/"/>
-  <id>https://free-for.dev/#/</id>
-  <updated>2026-08-19T23:38:16Z</updated>
-  <category term="Referans &amp; Koleksiyonlar"/>
-  <summary>Ücretsiz katmanı olan geliştirici servislerinin listesi: barındırma, CI, izleme, e-posta. Yan projenin maliyetini sıfıra yakın tutmanın haritası.</summary>
-</entry>
-<entry>
-  <title>Compiler Explorer</title>
-  <link href="https://godbolt.org/"/>
-  <id>https://godbolt.org/</id>
-  <updated>2026-08-19T23:35:33Z</updated>
-  <category term="Araçlar &amp; Yardımcılar"/>
-  <summary>Kaynak kodun yanına ürettiği assembly’i koyuyor; optimizasyon seviyesini ve derleyici sürümünü değiştirip farkı anında görüyorsun. Performans tartışmalarını fikirden ölçüme taşıyor.</summary>
-</entry>
-<entry>
-  <title>cppreference</title>
-  <link href="https://cppreference.com/"/>
-  <id>https://cppreference.com/</id>
-  <updated>2026-08-19T23:34:19Z</updated>
+  <title>CIS 194 Haskell</title>
+  <link href="https://www.seas.upenn.edu/~cis1940/spring13/lectures.html"/>
+  <id>https://www.seas.upenn.edu/~cis1940/spring13/lectures.html</id>
+  <updated>2026-08-21T20:53:20Z</updated>
   <category term="Programlama Dilleri"/>
-  <summary>C ve C++ standart kütüphanesinin fiilî referansı; her özellikte hangi standartta (C++11/17/20/23) geldiği işaretli. Öğretici siteler bu sürüm ayrımını genelde atlıyor.</summary>
+  <summary>Pennsylvania Üniversitesi’nin Haskell dersi; ders notları ve ödevler açık. Kitaplardan farkı ödevlerin olması — Haskell’i okuyarak değil ancak yazarak öğrenebildiğin için bu ayrım önemli.</summary>
 </entry>
 <entry>
-  <title>regex101</title>
-  <link href="https://regex101.com/"/>
-  <id>https://regex101.com/</id>
-  <updated>2026-08-19T23:34:13Z</updated>
-  <category term="Araçlar &amp; Yardımcılar"/>
-  <summary>İfadeyi jeton jeton açıklıyor ve hata ayıklayıcısıyla eşleşmenin nerede koptuğunu gösteriyor. PCRE, JavaScript ve Python lehçeleri arasında geçiş yapabiliyorsun.</summary>
+  <title>Learn You a Haskell</title>
+  <link href="https://learnyouahaskell.github.io/chapters.html"/>
+  <id>https://learnyouahaskell.github.io/chapters.html</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Programlama Dilleri"/>
+  <summary>Haskell’in en bilinen giriş kitabının topluluk tarafından güncellenmiş çevrimiçi hâli. Akademik Haskell kaynaklarından farkı üslubu: monad’ı kategori teorisiyle değil, çizimlerle ve kademeli örneklerle anlatıyor.</summary>
 </entry>
 <entry>
-  <title>High Scalability</title>
-  <link href="https://highscalability.com/"/>
-  <id>https://highscalability.com/</id>
-  <updated>2026-08-19T23:34:09Z</updated>
+  <title>LearnByExample</title>
+  <link href="https://www.learnbyexample.org/"/>
+  <id>https://www.learnbyexample.org/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Programlama Dilleri"/>
+  <summary>Python, SQL ve R’ı çalıştırılabilir örneklerle öğreten site; her kavram tek bir küçük kod parçasıyla açılıyor. Belgelerden farkı sıra: önce çalışan örnek, sonra açıklama — sözdizimini hatırlamak için hızlı bir referans olarak da işe yarıyor.</summary>
+</entry>
+<entry>
+  <title>RubyGems Guides</title>
+  <link href="https://guides.rubygems.org/"/>
+  <id>https://guides.rubygems.org/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Programlama Dilleri"/>
+  <summary>RubyGems’in nasıl çalıştığını ve kendi gem’ini nasıl yayımlayacağını anlatan resmî rehber. API belgelerinden farkı sürüm numaralandırma, bağımlılık çözümleme ve yayımlama politikası gibi kararları da açıklaması.</summary>
+</entry>
+<entry>
+  <title>30 Seconds of Code</title>
+  <link href="https://www.30secondsofcode.org/"/>
+  <id>https://www.30secondsofcode.org/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Otuz saniyede okunup anlaşılacak uzunlukta kod parçacıkları; JavaScript, Python, React ve CSS için. Stack Overflow’dan farkı her parçacığın açıklamalı, test edilmiş ve konu başlığına göre düzenlenmiş olması — arama değil, gezinme.</summary>
+</entry>
+<entry>
+  <title>Can I Use</title>
+  <link href="https://caniuse.com/"/>
+  <id>https://caniuse.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Bir web özelliğinin hangi tarayıcının hangi sürümünde çalıştığını gösteren tablo; kullanım oranlarıyla birlikte. MDN’den farkı, &quot;destekleniyor mu&quot; sorusuna sürüm ve pazar payı düzeyinde cevap vermesi — polyfill gerekip gerekmediğine buradan karar veriyorsun.</summary>
+</entry>
+<entry>
+  <title>Checklist Design</title>
+  <link href="https://www.checklist.design/"/>
+  <id>https://www.checklist.design/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Buton, form, tablo gibi arayüz parçaları için tek tek kontrol listeleri: hangi durumlar çizilmeli, hangi erişilebilirlik ayrıntısı atlanır. Tasarım sistemi belgelerinden farkı bileşen kütüphanesi dayatmaması — kendi bileşenini denetlemek için liste veriyor.</summary>
+</entry>
+<entry>
+  <title>CodeToGo</title>
+  <link href="https://codetogo.io/"/>
+  <id>https://codetogo.io/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>&quot;Diziyi nasıl ters çeviririm&quot; gibi günlük JavaScript sorularına güncel tek satırlık cevaplar. Stack Overflow’dan farkı cevabın 2012’den kalma olmaması — modern söz dizimiyle güncel tutuluyor.</summary>
+</entry>
+<entry>
+  <title>CSS-Tricks Snippets</title>
+  <link href="https://css-tricks.com/snippets/"/>
+  <id>https://css-tricks.com/snippets/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>CSS, HTML, JavaScript ve .htaccess için yıllar içinde biriktirilmiş parçacık arşivi. Rastgele blog yazılarından farkı her parçacığın kendi sayfası ve tartışması olması — yorumlarda genelde daha iyi bir sürüm bulunuyor.</summary>
+</entry>
+<entry>
+  <title>Easing Wizard</title>
+  <link href="https://easingwizard.com/"/>
+  <id>https://easingwizard.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>CSS yumuşatma (easing) eğrilerini görsel olarak kuran araç; cubic-bezier’in yanında linear() ile yay ve sıçrama eğrilerini de üretiyor. cubic-bezier.com’dan farkı bu modern linear() desteği — CSS’te yay animasyonu artık kütüphane gerektirmiyor.</summary>
+</entry>
+<entry>
+  <title>Howler.js</title>
+  <link href="https://howlerjs.com/"/>
+  <id>https://howlerjs.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Tarayıcılar arası ses oynatma kütüphanesi; Web Audio API’yi kullanıyor, olmadığı yerde HTML5 Audio’ya düşüyor. Ham Web Audio ile uğraşmaktan farkı ses sprite’ları, havuzlama ve mobil otomatik oynatma kilidini kendisi çözmesi.</summary>
+</entry>
+<entry>
+  <title>Ladybird</title>
+  <link href="https://ladybird.org/"/>
+  <id>https://ladybird.org/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Sıfırdan yazılan bağımsız tarayıcı motoru; Chromium, WebKit ya da Gecko’dan türetilmemiş. Diğer &quot;alternatif&quot; tarayıcılardan farkı tam olarak bu — ötekiler Chromium kabuğu, bu kendi motorunu yazıyor. Henüz günlük kullanıma hazır değil.</summary>
+</entry>
+<entry>
+  <title>Land-book</title>
+  <link href="https://land-book.com/"/>
+  <id>https://land-book.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>İyi tasarlanmış web sitelerinin küratörlü galerisi; sektöre, üsluba ve renge göre süzülebiliyor. Awwwards gibi ödül sitelerinden farkı gösterişli deneysel işler yerine gerçekten yayında olan ürün sitelerini toplaması.</summary>
+</entry>
+<entry>
+  <title>Lucide</title>
+  <link href="https://lucide.dev/"/>
+  <id>https://lucide.dev/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>1600’den fazla SVG ikon içeren kütüphane; React, Vue, Svelte için hazır paketleri var. Feather’ın topluluk çatallaması olarak devam ediyor — farkı, Feather bakımsız kalırken bunun aktif olarak büyümesi ve tek tek ikon içe aktarmaya (tree-shaking) uygun olması.</summary>
+</entry>
+<entry>
+  <title>Splide</title>
+  <link href="https://splidejs.com/"/>
+  <id>https://splidejs.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Bağımlılığı olmayan, erişilebilirlik odaklı kaydırıcı/karusel kütüphanesi. Swiper’a göre çok daha küçük (sıkıştırılmış ~12 KB) ve klavye gezinme ile ARIA rollerini varsayılan olarak doğru kuruyor — karusel erişilebilirliğinin klasik zayıf noktası.</summary>
+</entry>
+<entry>
+  <title>TeleportHQ</title>
+  <link href="https://teleporthq.io/"/>
+  <id>https://teleporthq.io/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Görsel arayüz tasarımından temiz React, Vue ya da HTML kodu üreten düşük kodlu platform. Webflow’dan farkı çıktının dışa aktarılabilir ve okunabilir bileşen kodu olması — tasarımı devralıp elle geliştirmeye devam edebiliyorsun.</summary>
+</entry>
+<entry>
+  <title>Uiverse</title>
+  <link href="https://uiverse.io/"/>
+  <id>https://uiverse.io/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Topluluğun katkı verdiği açık kaynak arayüz bileşeni galerisi: buton, kart, yükleyici, anahtar. CodePen’den farkı her parçanın MIT lisanslı, kopyala-yapıştır hazır ve saf CSS/Tailwind olarak sunulması — çatı bağımlılığı yok.</summary>
+</entry>
+<entry>
+  <title>Wakamai Fondue</title>
+  <link href="https://wakamaifondue.com/"/>
+  <id>https://wakamaifondue.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Bir font dosyasını sürükleyince içindeki her şeyi döküyor: karakter kümesi, OpenType özellikleri, değişken eksenler ve bunları açan hazır CSS. Font önizleyicilerinden farkı çıktının doğrudan kullanılabilir CSS olması.</summary>
+</entry>
+<entry>
+  <title>WebAIM</title>
+  <link href="https://webaim.org/"/>
+  <id>https://webaim.org/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Utah State Üniversitesi bünyesindeki erişilebilirlik merkezi; kontrast denetleyicisi, WAVE aracı ve yıllık &quot;Million&quot; taraması buradan çıkıyor. WCAG belgesinin kendisinden farkı, kuralı değil kuralın pratikte nasıl uygulandığını anlatması.</summary>
+</entry>
+<entry>
+  <title>Convex</title>
+  <link href="https://www.convex.dev/"/>
+  <id>https://www.convex.dev/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
   <category term="Backend, API &amp; Sistem Tasarımı"/>
-  <summary>On beş yılı aşkın mimari yazısı arşivi. Eski yazılar teknoloji olarak eskimiş olsa da ölçekleme baskısının nasıl karşılandığını görmek için hâlâ okunuyor.</summary>
+  <summary>Veritabanı, sunucu işlevleri ve gerçek zamanlı abonelikleri tek üründe toplayan backend platformu. Firebase’den farkı sorguların TypeScript fonksiyonu olarak yazılması ve işlem (transaction) garantisi vermesi — döküman veritabanı esnekliğiyle ilişkisel tutarlılık.</summary>
 </entry>
 <entry>
-  <title>System Design One</title>
-  <link href="https://systemdesign.one/"/>
-  <id>https://systemdesign.one/</id>
-  <updated>2026-08-19T23:34:06Z</updated>
+  <title>Free Public APIs</title>
+  <link href="https://www.freepublicapis.com/"/>
+  <id>https://www.freepublicapis.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
   <category term="Backend, API &amp; Sistem Tasarımı"/>
-  <summary>Gerçek şirketlerin mimarisini vaka çalışması olarak çözümlüyor; sayısal büyüklükler ve yapılan takasları veriyor. Soyut anlatımlardan bu somutluk ayırıyor.</summary>
+  <summary>Üç yüzden fazla ücretsiz genel API’nin dizini; her biri için canlılık durumu ve son kontrol tarihi tutuluyor. Eski awesome-list derlemelerinden farkı bu: listedeki API’lerin hâlâ yanıt verip vermediğini düzenli olarak tarıyor.</summary>
 </entry>
 <entry>
-  <title>CSS-Tricks</title>
-  <link href="https://css-tricks.com/"/>
-  <id>https://css-tricks.com/</id>
-  <updated>2026-08-19T23:34:04Z</updated>
-  <category term="Web &amp; Frontend"/>
-  <summary>Yirmi yıllık CSS tekniği arşivi; Flexbox ve Grid rehberleri fiilî başvuru kaynağı hâline geldi. Belirli bir düzen problemi ararken spesifikasyondan hızlı sonuç veriyor.</summary>
+  <title>Porkbun</title>
+  <link href="https://porkbun.com/"/>
+  <id>https://porkbun.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Backend, API &amp; Sistem Tasarımı"/>
+  <summary>ICANN akreditasyonlu alan adı kayıt şirketi; WHOIS gizliliği, SSL ve e-posta yönlendirme ücretsiz geliyor. GoDaddy tarzı kayıtçılardan farkı yenileme fiyatının ilk yıl fiyatına yakın kalması — cazip giriş fiyatı sonra üç katına çıkmıyor.</summary>
 </entry>
 <entry>
-  <title>Flexbox Froggy</title>
-  <link href="https://flexboxfroggy.com/"/>
-  <id>https://flexboxfroggy.com/</id>
-  <updated>2026-08-19T23:34:03Z</updated>
-  <category term="Web &amp; Frontend"/>
-  <summary>Kurbağaları hizalayarak Flexbox öğreten oyun; Grid Garden’ın kardeşi. justify-content ile align-items karışıklığını yirmi dakikada bitiriyor.</summary>
+  <title>Android Weekly</title>
+  <link href="https://androidweekly.net/"/>
+  <id>https://androidweekly.net/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Mobil &amp; Masaüstü"/>
+  <summary>Android ve Kotlin geliştirme haberlerini haftalık derleyen bülten: makaleler, kütüphaneler, iş ilanları. Blog takip etmekten farkı seçilmiş olması — haftada bir e-posta, dağınık kaynak takibi yerine.</summary>
 </entry>
 <entry>
-  <title>Grid Garden</title>
-  <link href="https://cssgridgarden.com/"/>
-  <id>https://cssgridgarden.com/</id>
-  <updated>2026-08-19T23:34:00Z</updated>
-  <category term="Web &amp; Frontend"/>
-  <summary>Havuç sulayarak CSS Grid öğreten 28 bölümlük oyun. grid-column ve grid-area gibi özellikler yazarak öğrenildiğinde akılda kalıyor.</summary>
+  <title>Don't Kill My App</title>
+  <link href="https://dontkillmyapp.com/"/>
+  <id>https://dontkillmyapp.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Mobil &amp; Masaüstü"/>
+  <summary>Android üreticilerinin arka plan uygulamalarını nasıl öldürdüğünü marka marka belgeleyen site; her cihaz için çözüm adımları var. Genel Android belgelerinden farkı üretici bazında olması — alarm uygulamasının neden çalmadığının cevabı burada.</summary>
 </entry>
 <entry>
-  <title>W3C Markup Validation</title>
-  <link href="https://validator.w3.org/"/>
-  <id>https://validator.w3.org/</id>
-  <updated>2026-08-19T23:33:58Z</updated>
-  <category term="Web &amp; Frontend"/>
-  <summary>HTML’i spesifikasyona göre denetliyor; tarayıcının sessizce toparladığı kapatılmamış etiket ve geçersiz iç içe geçmeleri ortaya çıkarıyor. Erişilebilirlik sorunlarının bir kısmı buradan çıkar.</summary>
+  <title>Exodus Privacy</title>
+  <link href="https://reports.exodus-privacy.eu.org/en/"/>
+  <id>https://reports.exodus-privacy.eu.org/en/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Mobil &amp; Masaüstü"/>
+  <summary>Android uygulamalarının içindeki izleyicileri ve istedikleri izinleri raporlayan servis. Play Store’un gizlilik etiketlerinden farkı beyana değil APK’nın kendisine bakması — geliştiricinin ne söylediği değil, ne koyduğu.</summary>
 </entry>
 <entry>
-  <title>Python Tutor</title>
-  <link href="https://pythontutor.com/"/>
-  <id>https://pythontutor.com/</id>
-  <updated>2026-08-19T23:33:57Z</updated>
-  <category term="Pratik &amp; Alıştırma"/>
-  <summary>Kodu satır satır çalıştırıp yığın çerçevelerini ve heap’teki nesneleri çiziyor. Referans, kapsam ve değişebilir varsayılan argüman hatalarını anlatmakta eşi yok.</summary>
+  <title>Fossdroid</title>
+  <link href="https://fossdroid.com/"/>
+  <id>https://fossdroid.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Mobil &amp; Masaüstü"/>
+  <summary>F-Droid deposundaki özgür yazılım Android uygulamalarını gezilebilir hâlde sunan vitrin. F-Droid istemcisinden farkı web üzerinden popülerliğe göre keşif — hangi uygulamanın gerçekten kullanıldığını görüyorsun.</summary>
 </entry>
 <entry>
-  <title>HTML Reference</title>
-  <link href="https://htmlreference.io/"/>
-  <id>https://htmlreference.io/</id>
-  <updated>2026-08-19T23:33:57Z</updated>
-  <category term="Web &amp; Frontend"/>
-  <summary>Her HTML etiketi ve özniteliği görsel örnekle listelenmiş, tek sayfada göz gezdirilebiliyor. MDN’in derinliği yok ama “bu etiket ne yapıyordu” sorusuna daha hızlı cevap veriyor.</summary>
+  <title>Godot</title>
+  <link href="https://godotengine.org/"/>
+  <id>https://godotengine.org/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Mobil &amp; Masaüstü"/>
+  <summary>MIT lisanslı oyun motoru; 2B ve 3B için ayrı ayrı olgun boru hatları var. Unity ve Unreal’dan ayrıldığı yer lisans: gelir payı, koltuk ücreti ya da kurulum başına ücret yok, motorun tamamı senin.</summary>
 </entry>
 <entry>
-  <title>Kaggle</title>
-  <link href="https://www.kaggle.com/"/>
-  <id>https://www.kaggle.com/</id>
-  <updated>2026-08-19T23:33:55Z</updated>
-  <category term="Veri Bilimi &amp; Makine Öğrenmesi"/>
-  <summary>Yarışma, veri kümesi ve not defteri aynı platformda. Asıl değeri, kazanan çözümlerin yarışma bitince açıkça paylaşılması — uygulamalı ML’in en iyi açık arşivi.</summary>
+  <title>IzzyOnDroid</title>
+  <link href="https://apt.izzysoft.de/fdroid/index.php"/>
+  <id>https://apt.izzysoft.de/fdroid/index.php</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Mobil &amp; Masaüstü"/>
+  <summary>F-Droid’e ek depo; kaynağı açık olduğu hâlde resmî depoya girmemiş uygulamaları barındırıyor ve her birine gizlilik denetimi uyguluyor. Resmî depodan farkı daha hızlı güncelleme ve izleyici raporu.</summary>
 </entry>
 <entry>
-  <title>JS Exercises</title>
-  <link href="https://jsexercises.com/"/>
-  <id>https://jsexercises.com/</id>
-  <updated>2026-08-19T23:33:52Z</updated>
-  <category term="Programlama Dilleri"/>
-  <summary>Tarayıcıda çalıştırılabilir JavaScript alıştırmaları; okuma sonrası pekiştirme için.</summary>
+  <title>microStudio</title>
+  <link href="https://microstudio.dev/"/>
+  <id>https://microstudio.dev/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Mobil &amp; Masaüstü"/>
+  <summary>Tarayıcıda çalışan tam oyun geliştirme ortamı: kod editörü, sprite çizimi, harita editörü ve ses üretimi bir arada. Godot veya Unity’den farkı kurulum gerektirmemesi — Chromebook’ta bile oyun yazılabiliyor, öğretim için elverişli.</summary>
 </entry>
 <entry>
-  <title>Eloquent JavaScript</title>
-  <link href="https://eloquentjavascript.net/"/>
-  <id>https://eloquentjavascript.net/</id>
-  <updated>2026-08-19T23:33:25Z</updated>
-  <category term="Programlama Dilleri"/>
-  <summary>Ücretsiz ve çevrimiçi klasik. Sözdizimi öğretmekten çok programlama düşüncesi kuruyor; alıştırmaları kitabın içinde çalıştırılabiliyor.</summary>
+  <title>Open 3D Engine</title>
+  <link href="https://o3de.org/"/>
+  <id>https://o3de.org/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Mobil &amp; Masaüstü"/>
+  <summary>Amazon Lumberyard’ın Linux Foundation’a devredilmiş hâli; Apache 2.0 lisanslı, modüler 3B motor. Godot’ya göre daha ağır ama AAA ölçeğine yakın bir render hattı sunuyor; kurumsal destek arayan takımlar için açık kaynak seçeneği.</summary>
 </entry>
 <entry>
-  <title>Web Dev for Beginners</title>
-  <link href="https://github.com/microsoft/web-dev-for-beginners"/>
-  <id>https://github.com/microsoft/web-dev-for-beginners</id>
-  <updated>2026-08-19T23:19:56Z</updated>
-  <category term="Web &amp; Frontend"/>
-  <summary>24 derslik müfredat; her ders öncesi ve sonrası sınav, sonunda proje var. Kendi kendine çalışırken ilerlemeyi ölçebilmek için bu yapı işe yarıyor.</summary>
+  <title>Unity</title>
+  <link href="https://unity.com/"/>
+  <id>https://unity.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Mobil &amp; Masaüstü"/>
+  <summary>C# ile yazılan, mobilden konsola on beşten fazla platforma çıkış alan oyun motoru. Unreal’a göre daha hafif ve mobil tarafında baskın; bağımsız oyunların çoğunluğu buradan çıkıyor. Lisans koşulları 2023’te tartışma yarattı, sözleşmeyi okumakta fayda var.</summary>
 </entry>
 <entry>
-  <title>ResuMax</title>
-  <link href="https://github.com/resumax"/>
-  <id>https://github.com/resumax</id>
-  <updated>2026-08-19T23:18:51Z</updated>
-  <category term="YZ · Uygulama Araçları"/>
-  <summary>Özgeçmişi hedef ilana göre uyarlayan araç; ATS taramasından geçecek biçimlendirmeye dikkat ediyor. Genel yazım asistanlarının atladığı nokta bu eşleştirme.</summary>
+  <title>Unreal Engine</title>
+  <link href="https://www.unrealengine.com/en-US/"/>
+  <id>https://www.unrealengine.com/en-US/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Mobil &amp; Masaüstü"/>
+  <summary>AAA yapımların motoru; Nanite ve Lumen ile gerçek zamanlı yüksek çözünürlüklü geometri ve küresel aydınlatma sunuyor. Unity’den farkı görsel üst sınırı ve Blueprint görsel betikleme — karşılığında daha ağır bir proje ve daha dik bir öğrenme eğrisi.</summary>
 </entry>
 <entry>
-  <title>Raven</title>
-  <link href="https://github.com/evermind-ai/raven"/>
-  <id>https://github.com/evermind-ai/raven</id>
-  <updated>2026-08-19T23:17:28Z</updated>
-  <category term="YZ · Agent, RAG &amp; Altyapı"/>
-  <summary>Bellek öncelikli agent koşum takımı; oturumlar arası öğrenmeyi ve kendi yapılandırmasını iyileştirmeyi merkeze alıyor.</summary>
+  <title>Turso</title>
+  <link href="https://turso.tech/"/>
+  <id>https://turso.tech/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="Veritabanı"/>
+  <summary>SQLite çatallaması libSQL üzerine kurulu veritabanı platformu; veritabanını kullanıcının yakınındaki uç düğümlere kopyalıyor. Planetscale gibi merkezî hizmetlerden farkı, okuma gecikmesini ağ mesafesi yerine yerel dosya erişimine indirmesi.</summary>
 </entry>
 <entry>
-  <title>Can I Vibecode It?</title>
-  <link href="https://canivibecodeit.com/"/>
-  <id>https://canivibecodeit.com/</id>
-  <updated>2026-08-19T23:06:49Z</updated>
-  <category term="YZ · Modeller &amp; Asistanlar"/>
-  <summary>Bin küsur uygulamayı “yapay zeka bunu yeniden üretebilir mi” diye test edip sonucu yayımlayan tablo. Kullanılan istemi de veriyor, yani sonucu kendin doğrulayabiliyorsun.</summary>
-</entry>
-<entry>
-  <title>last30days</title>
-  <link href="https://github.com/mvanhorn/last30days-skill"/>
-  <id>https://github.com/mvanhorn/last30days-skill</id>
-  <updated>2026-08-19T22:59:37Z</updated>
-  <category term="YZ · Agent, RAG &amp; Altyapı"/>
-  <summary>Bir konuda son otuz günün Reddit, X ve YouTube içeriğini tarayan yetenek. Modelin eğitim kesim tarihiyle bugün arasındaki boşluğu kapatmak için.</summary>
-</entry>
-<entry>
-  <title>Kodluyoruz</title>
-  <link href="https://www.kodluyoruz.org/"/>
-  <id>https://www.kodluyoruz.org/</id>
-  <updated>2026-08-19T16:30:04Z</updated>
-  <category term="Öğrenme &amp; Yol Haritaları"/>
-  <summary>Türkiye’de ücretsiz yazılım eğitimi veren sosyal girişim; bootcamp’lerin ücret engelini kaldırmayı ve istihdama bağlamayı hedefliyor.</summary>
-</entry>
-<entry>
-  <title>Figma</title>
-  <link href="https://www.figma.com/"/>
-  <id>https://www.figma.com/</id>
-  <updated>2026-08-19T16:15:54Z</updated>
-  <category term="Araçlar &amp; Yardımcılar"/>
-  <summary>Arayüz tasarımının fiilî standardı; eşzamanlı düzenleme masaüstü araçların sonunu getirdi. Dev Mode ile geliştiriciye ölçü ve token aktarımı yapıyor.</summary>
-</entry>
-<entry>
-  <title>Onshape</title>
-  <link href="https://www.onshape.com/en/"/>
-  <id>https://www.onshape.com/en/</id>
-  <updated>2026-08-19T16:15:25Z</updated>
-  <category term="Donanım, CAD &amp; Gömülü"/>
-  <summary>Parametrik CAD, tamamen tarayıcıda. Dosya değil veritabanı üzerinde çalışıyor, bu yüzden dallanma ve birleştirme Git gibi işliyor — SolidWorks’te olmayan bir şey.</summary>
-</entry>
-<entry>
-  <title>McMaster-Carr</title>
-  <link href="https://www.mcmaster.com/"/>
-  <id>https://www.mcmaster.com/</id>
-  <updated>2026-08-19T16:15:13Z</updated>
-  <category term="Donanım, CAD &amp; Gömülü"/>
-  <summary>Endüstriyel parça kataloğu; neredeyse her ürünün CAD modelini indirebiliyorsun. Tasarımda gerçek bir cıvatanın ölçüsü lazım olduğunda referans kaynağa dönüşüyor.</summary>
-</entry>
-<entry>
-  <title>DevDocs</title>
-  <link href="https://devdocs.io/"/>
-  <id>https://devdocs.io/</id>
-  <updated>2026-08-19T16:12:43Z</updated>
-  <category term="Referans &amp; Koleksiyonlar"/>
-  <summary>Yüzlerce teknolojinin resmî dokümanını tek arayüzde topluyor; çevrimdışı indirilebiliyor ve anlık arama sunuyor. Sekme sekme doküman sitesi gezmenin sonu.</summary>
-</entry>
-<entry>
-  <title>Carbon</title>
-  <link href="https://carbon.now.sh/"/>
-  <id>https://carbon.now.sh/</id>
-  <updated>2026-08-19T16:12:33Z</updated>
-  <category term="Araçlar &amp; Yardımcılar"/>
-  <summary>Kod parçasından paylaşılabilir görsel üretiyor; tema, pencere süsü ve satır numarası ayarlanabiliyor. Ekran görüntüsünden farkı, sonucun tekrar edilebilir ve okunaklı olması.</summary>
-</entry>
-<entry>
-  <title>Excalidraw</title>
-  <link href="https://excalidraw.com/"/>
-  <id>https://excalidraw.com/</id>
-  <updated>2026-08-19T16:11:36Z</updated>
-  <category term="Araçlar &amp; Yardımcılar"/>
-  <summary>El çizimi görünümlü beyaz tahta. Kasıtlı olarak kaba durması bir üslup tercihi değil işlevsel: taslak aşamasındaki bir mimarinin bitmiş sanılmasını engelliyor.</summary>
-</entry>
-<entry>
-  <title>Njalla</title>
-  <link href="https://njal.la/"/>
-  <id>https://njal.la/</id>
-  <updated>2026-08-19T16:10:10Z</updated>
+  <title>Cronmaster</title>
+  <link href="https://github.com/fccview/cronmaster"/>
+  <id>https://github.com/fccview/cronmaster</id>
+  <updated>2026-08-21T20:53:20Z</updated>
   <category term="DevOps &amp; Altyapı"/>
-  <summary>Alan adını senin adına kendi üstüne kaydediyor, yani WHOIS kaydında sen görünmüyorsun. Vekil gizlilik hizmetinden farkı, mülkiyetin hukuken onlarda olması — bu bir güven meselesi.</summary>
+  <summary>Cron görevlerini web arayüzünden yöneten öz-barındırılan uygulama; ifadeleri okunur hâlde gösteriyor ve çalıştırma günlüğü tutuyor. crontab -e’den farkı bir sonraki çalışma zamanını ve son çıktıyı göstermesi — sessizce başarısız olan görevler görünür oluyor.</summary>
 </entry>
 <entry>
-  <title>AlexHost</title>
-  <link href="https://alexhost.com/"/>
-  <id>https://alexhost.com/</id>
-  <updated>2026-08-19T16:10:01Z</updated>
+  <title>Crontab Generator</title>
+  <link href="https://crontab-generator.org/"/>
+  <id>https://crontab-generator.org/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
   <category term="DevOps &amp; Altyapı"/>
-  <summary>Moldova merkezli barındırma. Farklı bir yargı bölgesi ve gevşek içerik politikası sunması sebebiyle tercih ediliyor; bu aynı zamanda komşuların kim olduğu sorusunu doğuruyor.</summary>
+  <summary>Cron ifadesini form üzerinden üreten ve ne zaman çalışacağını yazıyla söyleyen araç. crontab.guru’dan farkı ters yönde çalışması — ifadeyi çözmek yerine istediğin zamanlamadan ifade üretiyor.</summary>
 </entry>
 <entry>
-  <title>AvenaCloud</title>
-  <link href="https://avenacloud.com/"/>
-  <id>https://avenacloud.com/</id>
-  <updated>2026-08-19T16:09:22Z</updated>
+  <title>FromLatest</title>
+  <link href="https://www.fromlatest.io/"/>
+  <id>https://www.fromlatest.io/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
   <category term="DevOps &amp; Altyapı"/>
-  <summary>VPS ve fiziksel sunucu sağlayıcı; küçük ölçekli projeler için bütçe odaklı bir seçenek.</summary>
+  <summary>Dockerfile’ı çözümleyip katman katman ne olduğunu açıklayan ve iyileştirme öneren araç. hadolint’ten farkı görsel olması ve her kuralın neden var olduğunu anlatması — Dockerfile yazmayı öğrenmek için de kullanılabiliyor.</summary>
 </entry>
 <entry>
-  <title>1000 Projects</title>
-  <link href="https://github.com/vicky002/1000_Projects"/>
-  <id>https://github.com/vicky002/1000_Projects</id>
-  <updated>2026-08-17T20:53:20Z</updated>
-  <category term="Öğrenme &amp; Yol Haritaları"/>
-  <summary>Çok geniş proje fikri derlemesi; niceliği yüksek, ayıklaması sana kalıyor.</summary>
-</entry>
-<entry>
-  <title>App Ideas</title>
-  <link href="https://github.com/florinpop17/app-ideas"/>
-  <id>https://github.com/florinpop17/app-ideas</id>
-  <updated>2026-08-17T20:53:20Z</updated>
-  <category term="Öğrenme &amp; Yol Haritaları"/>
-  <summary>Zorluk seviyesine göre derecelendirilmiş uygulama fikirleri; her fikirde kullanıcı hikâyesi ve bonus özellikler yazılı. Proje listelerinden farkı bu şartname düzeyi.</summary>
-</entry>
-<entry>
-  <title>Awesome CS Courses</title>
-  <link href="https://github.com/prakhar1989/awesome-courses"/>
-  <id>https://github.com/prakhar1989/awesome-courses</id>
-  <updated>2026-08-17T20:53:20Z</updated>
-  <category term="Öğrenme &amp; Yol Haritaları"/>
-  <summary>Üniversitelerin çevrimiçi yayımladığı bilgisayar bilimi derslerinin listesi; ders notu ve ödevleri açık olanlara odaklanıyor.</summary>
-</entry>
-<entry>
-  <title>Boot.dev</title>
-  <link href="https://www.boot.dev/"/>
-  <id>https://www.boot.dev/</id>
-  <updated>2026-08-17T20:53:20Z</updated>
-  <category term="Öğrenme &amp; Yol Haritaları"/>
-  <summary>Backend geliştiriciliğine odaklı, tarayıcıda alıştırma yaptıran müfredat. Genel bootcamp’lerin aksine yalnızca sunucu tarafına bakıyor.</summary>
-</entry>
-<entry>
-  <title>Class Central</title>
-  <link href="https://www.class-central.com"/>
-  <id>https://www.class-central.com</id>
-  <updated>2026-08-17T20:53:20Z</updated>
-  <category term="Öğrenme &amp; Yol Haritaları"/>
-  <summary>Coursera, edX ve onlarca platformdaki kursları tek yerde arayan dizin. Aynı konunun farklı üniversitelerdeki sürümlerini yan yana koyup karşılaştırıyorsun.</summary>
-</entry>
-<entry>
-  <title>Kadenze · Yaratıcı Programlama</title>
-  <link href="https://www.kadenze.com/courses?subjects%5B%5D=7"/>
-  <id>https://www.kadenze.com/courses?subjects%5B%5D=7</id>
-  <updated>2026-08-17T20:53:20Z</updated>
-  <category term="Öğrenme &amp; Yol Haritaları"/>
-  <summary>Sanat ve yaratıcı kodlama odaklı kurs platformu; ses sentezi, görsel programlama ve makine öğrenmesinin sanatta kullanımı gibi konular.</summary>
-</entry>
-<entry>
-  <title>MIT EECS Dersleri</title>
-  <link href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/"/>
-  <id>https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/</id>
-  <updated>2026-08-17T20:53:20Z</updated>
-  <category term="Öğrenme &amp; Yol Haritaları"/>
-  <summary>MIT’nin elektrik mühendisliği ve bilgisayar bilimi bölümünün açık ders arşivi; algoritma, işletim sistemi ve derleyici derslerinin kaynağı.</summary>
+  <title>K8s YAML Generator</title>
+  <link href="https://k8syaml.com/"/>
+  <id>https://k8syaml.com/</id>
+  <updated>2026-08-21T20:53:20Z</updated>
+  <category term="DevOps &amp; Altyapı"/>
+  <summary>Kubernetes manifestolarını form doldurarak üreten araç; her alanın ne işe yaradığını yanında açıklıyor. Belgelerden kopyalamaktan farkı geçerli bir manifesto ile çıkman ve alanların anlamını okuyarak öğrenmen.</summary>
 </entry>
 </feed>

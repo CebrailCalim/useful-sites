@@ -19,7 +19,7 @@ years until it passed two thousand bookmarks — most of them never opened twice
 
 The descriptions and the site itself were written by an AI working from that
 archive and from each project's own documentation. I went over the result, but
-I did not write seven hundred descriptions by hand and I am not going to say I
+I did not write nine hundred descriptions by hand and I am not going to say I
 did.
 
 That is worth knowing before you read the comparisons. "X is lighter than Y" is
