@@ -8,9 +8,9 @@ Turkish and English.
 
 ## What an entry contains
 
-A bookmark reading conveys nothing until the site is opened.
-Every entry here therefore states two things: what the resource does, and where
-it parts ways with the tools that resemble it.
+A bookmark's name and URL convey nothing about what the resource actually is
+until the site is opened. Every entry here therefore states two things: what
+the resource does, and where it parts ways with the tools that resemble it.
 
 The second is the one that carries weight. When several tools address the same
 problem, what is needed is not a feature list but the line along which they
