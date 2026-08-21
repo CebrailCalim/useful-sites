@@ -3,6 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Site hicbir dis kaynaga baglanmıyor: font, betik ve gorsel kendi
+     alanindan geliyor, hicbir yere istek atilmiyor. CSP bunu bir
+     niyet beyani olmaktan cikarip tarayicinin uyguladigi bir kural
+     yapiyor -- ileride biri farkinda olmadan bir CDN eklerse patlar. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Kullanışlı Siteler</title>
 <meta name="description" content="Yazılım, yapay zeka, güvenlik ve donanım üzerine elle derlenmiş bağlantı dizini. Her kayıtta ne işe yaradığı ve benzerlerinden farkı yazılı.">
 <link rel="canonical" href="https://latifkedi.github.io/useful-sites/">
@@ -539,7 +545,7 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
 
 <button class="btn" id="top" type="button" title="Yukarı">↑</button>
 
-<script src="links.js?v=1ca3fa04"></script>
+<script src="links.js?v=9d4c2de5"></script>
 <script>
 (function(){
 "use strict";

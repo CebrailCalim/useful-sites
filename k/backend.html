@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Backend, API &amp; Sistem Tasarımı — Kullanışlı Siteler</title>
 <meta name="description" content="Çatı seçimi çoğunlukla “ne kadarı hazır gelsin” sorusudur: Django her şeyi getirir, Flask hiçbir şeyi. Sistem tasarımı kaynaklarını yalnızca mülakat için okuma — ölçekleme kararlar">
 <link rel="canonical" href="https://latifkedi.github.io/useful-sites/k/backend.html">
@@ -66,137 +68,137 @@ footer a{color:var(--dim)}</style>
 </header>
 <main>
 <article>
-<h2><a href="https://www.youtube.com/watch?v=XvFmUE-36Kc" rel="noopener nofollow">API Tasarımı ve Mimarisi</a></h2><span class="host">youtube.com</span>
+<h2><a href="https://www.youtube.com/watch?v=XvFmUE-36Kc" rel="noopener noreferrer nofollow">API Tasarımı ve Mimarisi</a></h2><span class="host">youtube.com</span>
 <p class="d">Bir saatlik backend giriş anlatımı; kaynak adlandırma, sürümleme ve hata biçimi kararlarını gerekçeleriyle işliyor.</p>
 <p class="t">Video, Ücretsiz, API</p>
 </article>
 <article>
-<h2><a href="https://www.convex.dev/" rel="noopener nofollow">Convex</a></h2><span class="host">convex.dev</span>
+<h2><a href="https://www.convex.dev/" rel="noopener noreferrer nofollow">Convex</a></h2><span class="host">convex.dev</span>
 <p class="d">Veritabanı, sunucu işlevleri ve gerçek zamanlı abonelikleri tek üründe toplayan backend platformu. Firebase’den farkı sorguların TypeScript fonksiyonu olarak yazılması ve işlem (transaction) garantisi vermesi — döküman veritabanı esnekliğiyle ilişkisel tutarlılık.</p>
 <p class="t">Backend, Veritabanı, Açık Kaynak</p>
 </article>
 <article>
-<h2><a href="https://docs.djangoproject.com/en/6.0/" rel="noopener nofollow">Django</a></h2><span class="host">docs.djangoproject.com</span>
+<h2><a href="https://docs.djangoproject.com/en/6.0/" rel="noopener noreferrer nofollow">Django</a></h2><span class="host">docs.djangoproject.com</span>
 <p class="d">ORM, göç sistemi, yönetim paneli ve kimlik doğrulama kutudan çıkıyor. İlk haftayı kazandırıyor; Django’nun kalıbı dışına çıkmak istediğinde direnç gösteriyor.</p>
 <p class="t">Açık Kaynak, Python, Backend</p>
 </article>
 <article>
-<h2><a href="https://expressjs.com/" rel="noopener nofollow">Express</a></h2><span class="host">expressjs.com</span>
+<h2><a href="https://expressjs.com/" rel="noopener noreferrer nofollow">Express</a></h2><span class="host">expressjs.com</span>
 <p class="d">Node.js’in minimal çatısı; ara katman (middleware) modelini standartlaştırdığı için ekosistemin ortak dili hâline geldi. Yıllardır neredeyse hiç değişmemesi hem güç hem zayıflık.</p>
 <p class="t">Açık Kaynak, JavaScript</p>
 </article>
 <article>
-<h2><a href="https://fastapi.tiangolo.com/" rel="noopener nofollow">FastAPI</a></h2><span class="host">fastapi.tiangolo.com</span>
+<h2><a href="https://fastapi.tiangolo.com/" rel="noopener noreferrer nofollow">FastAPI</a></h2><span class="host">fastapi.tiangolo.com</span>
 <p class="d">Tip ipuçlarından hem doğrulama hem OpenAPI şeması üretiyor; `/docs` adresinde çalışan bir test arayüzü kendiliğinden geliyor. Asenkron desteği ASGI üzerinden yerleşik.</p>
 <p class="t">Açık Kaynak, Python, API</p>
 </article>
 <article>
-<h2><a href="https://www.youtube.com/watch?v=iWS9ogMPOI0" rel="noopener nofollow">FastAPI ile 15 Dakikada REST API</a></h2><span class="host">youtube.com</span>
+<h2><a href="https://www.youtube.com/watch?v=iWS9ogMPOI0" rel="noopener noreferrer nofollow">FastAPI ile 15 Dakikada REST API</a></h2><span class="host">youtube.com</span>
 <p class="d">Yönlendirme, Pydantic modeli ve otomatik doküman üretimini uçtan uca gösteren kısa video. Dokümana dalmadan önce çatının şeklini görmek için.</p>
 <p class="t">Video, Python, API</p>
 </article>
 <article>
-<h2><a href="https://flask.palletsprojects.com/en/stable/" rel="noopener nofollow">Flask</a></h2><span class="host">flask.palletsprojects.com</span>
+<h2><a href="https://flask.palletsprojects.com/en/stable/" rel="noopener noreferrer nofollow">Flask</a></h2><span class="host">flask.palletsprojects.com</span>
 <p class="d">Çekirdek kasten küçük: yönlendirme ve şablon var, ORM ve kimlik doğrulama yok. Ne kullanacağına sen karar veriyorsun, bu da her projede yeniden karar vermek anlamına geliyor.</p>
 <p class="t">Açık Kaynak, Python, Backend</p>
 </article>
 <article>
-<h2><a href="https://www.freepublicapis.com/" rel="noopener nofollow">Free Public APIs</a></h2><span class="host">freepublicapis.com</span>
+<h2><a href="https://www.freepublicapis.com/" rel="noopener noreferrer nofollow">Free Public APIs</a></h2><span class="host">freepublicapis.com</span>
 <p class="d">Üç yüzden fazla ücretsiz genel API’nin dizini; her biri için canlılık durumu ve son kontrol tarihi tutuluyor. Eski awesome-list derlemelerinden farkı bu: listedeki API’lerin hâlâ yanıt verip vermediğini düzenli olarak tarıyor.</p>
 <p class="t">API, Referans, Ücretsiz</p>
 </article>
 <article>
-<h2><a href="https://graphql.org/" rel="noopener nofollow">GraphQL</a></h2><span class="host">graphql.org</span>
+<h2><a href="https://graphql.org/" rel="noopener noreferrer nofollow">GraphQL</a></h2><span class="host">graphql.org</span>
 <p class="d">İstemci hangi alanları istediğini kendi belirtiyor; fazla veri çekme ve az veri çekme sorunu şema düzeyinde çözülüyor. Bedeli önbellekleme ve hız sınırlamanın REST’ten zor olması.</p>
 <p class="t">Açık Kaynak, API, Sistem Tasarımı</p>
 </article>
 <article>
-<h2><a href="https://highscalability.com/" rel="noopener nofollow">High Scalability</a></h2><span class="host">highscalability.com</span>
+<h2><a href="https://highscalability.com/" rel="noopener noreferrer nofollow">High Scalability</a></h2><span class="host">highscalability.com</span>
 <p class="d">On beş yılı aşkın mimari yazısı arşivi. Eski yazılar teknoloji olarak eskimiş olsa da ölçekleme baskısının nasıl karşılandığını görmek için hâlâ okunuyor.</p>
 <p class="t">Ücretsiz, Sistem Tasarımı, Referans</p>
 </article>
 <article>
-<h2><a href="https://www.youtube.com/watch?v=7iHl71nt49o" rel="noopener nofollow">Kıdemli Mühendis Gibi API Tasarımı</a></h2><span class="host">youtube.com</span>
+<h2><a href="https://www.youtube.com/watch?v=7iHl71nt49o" rel="noopener noreferrer nofollow">Kıdemli Mühendis Gibi API Tasarımı</a></h2><span class="host">youtube.com</span>
 <p class="d">REST ile GraphQL’i, kimlik doğrulama ve güvenlik kararlarını tek videoda karşılaştırıyor. Hangisinin ne zaman doğru olduğu sorusuna cevap veriyor.</p>
 <p class="t">Video, Ücretsiz, API</p>
 </article>
 <article>
-<h2><a href="https://laracasts.com/" rel="noopener nofollow">Laracasts</a></h2><span class="host">laracasts.com</span>
+<h2><a href="https://laracasts.com/" rel="noopener noreferrer nofollow">Laracasts</a></h2><span class="host">laracasts.com</span>
 <p class="d">Laravel ekosisteminin ana video kaynağı; resmî dokümanın anlatmadığı mimari kararları işliyor. Ekosistem eğitimini tek bir sitenin taşıması alışılmadık bir durum.</p>
 <p class="t">Ücretli, PHP, Video</p>
 </article>
 <article>
-<h2><a href="https://laravel.com/docs/13.x" rel="noopener nofollow">Laravel</a></h2><span class="host">laravel.com</span>
+<h2><a href="https://laravel.com/docs/13.x" rel="noopener noreferrer nofollow">Laravel</a></h2><span class="host">laravel.com</span>
 <p class="d">Kuyruk, zamanlayıcı, olay yayını ve test araçları çekirdekte. PHP’nin “eski dil” imajının aksine burada kurulan geliştirici deneyimi çoğu modern çatının üstünde.</p>
 <p class="t">Açık Kaynak, PHP, Backend</p>
 </article>
 <article>
-<h2><a href="https://nodejs.org/learn" rel="noopener nofollow">Node.js Learn</a></h2><span class="host">nodejs.org</span>
+<h2><a href="https://nodejs.org/learn" rel="noopener noreferrer nofollow">Node.js Learn</a></h2><span class="host">nodejs.org</span>
 <p class="d">Çatı öğretmeden önce çalışma zamanının kendisini anlatıyor: olay döngüsü, akışlar, işçi iş parçacıkları. Express öğrenip Node bilmemek yaygın bir boşluk.</p>
 <p class="t">Ücretsiz, Dokümantasyon, JavaScript</p>
 </article>
 <article>
-<h2><a href="https://www.youtube.com/watch?v=bA0r0CBuj2Y" rel="noopener nofollow">Otel Rezervasyon Sistemi Tasarımı</a></h2><span class="host">youtube.com</span>
+<h2><a href="https://www.youtube.com/watch?v=bA0r0CBuj2Y" rel="noopener noreferrer nofollow">Otel Rezervasyon Sistemi Tasarımı</a></h2><span class="host">youtube.com</span>
 <p class="d">Uçtan uca vaka çalışması; eşzamanlı rezervasyon çakışması ve envanter kilitleme gibi gerçek problemleri mülakat formatında çözüyor.</p>
 <p class="t">Video, Sistem Tasarımı</p>
 </article>
 <article>
-<h2><a href="https://www.php.net/manual/tr/" rel="noopener nofollow">PHP El Kitabı (Türkçe)</a></h2><span class="host">php.net</span>
+<h2><a href="https://www.php.net/manual/tr/" rel="noopener noreferrer nofollow">PHP El Kitabı (Türkçe)</a></h2><span class="host">php.net</span>
 <p class="d">Fonksiyon referansı için birincil kaynak. Sayfa altındaki kullanıcı yorumları bazen dokümanın kendisinden faydalı, bazen on yıllık kötü tavsiye — tarihe bakmak gerekiyor.</p>
 <p class="t">Ücretsiz, Türkçe, PHP, Referans</p>
 </article>
 <article>
-<h2><a href="https://phptherightway.com/" rel="noopener nofollow">PHP: The Right Way</a></h2><span class="host">phptherightway.com</span>
+<h2><a href="https://phptherightway.com/" rel="noopener noreferrer nofollow">PHP: The Right Way</a></h2><span class="host">phptherightway.com</span>
 <p class="d">Güncel PHP pratiklerini derliyor: Composer, PSR standartları, hazırlanmış sorgular. İnternette dolaşan `mysql_*` fonksiyonlu eski örneklere karşı düzeltici bir metin.</p>
 <p class="t">Ücretsiz, PHP, Öğretici</p>
 </article>
 <article>
-<h2><a href="https://porkbun.com/" rel="noopener nofollow">Porkbun</a></h2><span class="host">porkbun.com</span>
+<h2><a href="https://porkbun.com/" rel="noopener noreferrer nofollow">Porkbun</a></h2><span class="host">porkbun.com</span>
 <p class="d">ICANN akreditasyonlu alan adı kayıt şirketi; WHOIS gizliliği, SSL ve e-posta yönlendirme ücretsiz geliyor. GoDaddy tarzı kayıtçılardan farkı yenileme fiyatının ilk yıl fiyatına yakın kalması — cazip giriş fiyatı sonra üç katına çıkmıyor.</p>
 <p class="t">Sunucu</p>
 </article>
 <article>
-<h2><a href="https://github.com/public-api-lists/public-api-lists" rel="noopener nofollow">Public API Lists</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/public-api-lists/public-api-lists" rel="noopener noreferrer nofollow">Public API Lists</a></h2><span class="host">github.com</span>
 <p class="d">Public APIs’in sürdürülen çatalı. Asıl depo bir dönem bakımsız kaldığında ortaya çıktı; bazı girdileri daha güncel.</p>
 <p class="t">GitHub, Awesome Liste, API</p>
 </article>
 <article>
-<h2><a href="https://github.com/public-apis/public-apis" rel="noopener nofollow">Public APIs</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/public-apis/public-apis" rel="noopener noreferrer nofollow">Public APIs</a></h2><span class="host">github.com</span>
 <p class="d">Kategorili ücretsiz API listesi; kimlik doğrulama türü, HTTPS ve CORS desteği tabloda işaretli. Prototipe veri lazım olduğunda ilk durak.</p>
 <p class="t">GitHub, Awesome Liste, API</p>
 </article>
 <article>
-<h2><a href="https://refactoring.guru/" rel="noopener nofollow">Refactoring Guru</a></h2><span class="host">refactoring.guru</span>
+<h2><a href="https://refactoring.guru/" rel="noopener noreferrer nofollow">Refactoring Guru</a></h2><span class="host">refactoring.guru</span>
 <p class="d">Her tasarım desenini şema, gerçekçi örnek ve kod olarak veriyor — üstelik altı ayrı dilde. Gang of Four kitabının okunması güç metnine karşı erişilebilir bir karşılık.</p>
 <p class="t">Freemium, Sistem Tasarımı</p>
 </article>
 <article>
-<h2><a href="https://www.youtube.com/watch?v=adOkTjIIDnk" rel="noopener nofollow">Sistem Tasarımı Anlatımı</a></h2><span class="host">youtube.com</span>
+<h2><a href="https://www.youtube.com/watch?v=adOkTjIIDnk" rel="noopener noreferrer nofollow">Sistem Tasarımı Anlatımı</a></h2><span class="host">youtube.com</span>
 <p class="d">API, veritabanı, önbellek, CDN ve yük dengeleyiciyi tek anlatımda birleştiren giriş. Parçaların birbirine nasıl bağlandığını görmek için.</p>
 <p class="t">Video, Sistem Tasarımı</p>
 </article>
 <article>
-<h2><a href="https://stripe.com/en-nl?utm_campaign=EMEA_NL_en_Google_Search_Brand_Stripe_EXA-20981195258&amp;utm_medium=cpc&amp;utm_source=google&amp;utm_content=689219303694&amp;utm_term=stripe&amp;utm_matchtype=e&amp;utm_adposition=&amp;utm_device=c" rel="noopener nofollow">Stripe</a></h2><span class="host">stripe.com</span>
+<h2><a href="https://stripe.com/en-nl?utm_campaign=EMEA_NL_en_Google_Search_Brand_Stripe_EXA-20981195258&amp;utm_medium=cpc&amp;utm_source=google&amp;utm_content=689219303694&amp;utm_term=stripe&amp;utm_matchtype=e&amp;utm_adposition=&amp;utm_device=c" rel="noopener noreferrer nofollow">Stripe</a></h2><span class="host">stripe.com</span>
 <p class="d">Ödeme altyapısı. Dokümantasyonu sektörde ölçüt kabul ediliyor — test kartları, webhook yeniden deneme mantığı ve idempotency anahtarları örneklerle anlatılmış.</p>
 <p class="t">Ücretli, Backend, API</p>
 </article>
 <article>
-<h2><a href="https://systemdesign.one/" rel="noopener nofollow">System Design One</a></h2><span class="host">systemdesign.one</span>
+<h2><a href="https://systemdesign.one/" rel="noopener noreferrer nofollow">System Design One</a></h2><span class="host">systemdesign.one</span>
 <p class="d">Gerçek şirketlerin mimarisini vaka çalışması olarak çözümlüyor; sayısal büyüklükler ve yapılan takasları veriyor. Soyut anlatımlardan bu somutluk ayırıyor.</p>
 <p class="t">Ücretsiz, Sistem Tasarımı, Öğretici</p>
 </article>
 <article>
-<h2><a href="https://github.com/donnemartin/system-design-primer" rel="noopener nofollow">System Design Primer</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/donnemartin/system-design-primer" rel="noopener noreferrer nofollow">System Design Primer</a></h2><span class="host">github.com</span>
 <p class="d">Ölçekleme kavramlarını (önbellek, parçalama, kuyruk, CAP) örnek mimarilerle birlikte veriyor. Alanın en çok yıldızlanan kaynağı; mülakat dışında da mimari sözlüğü olarak işe yarıyor.</p>
 <p class="t">GitHub, Sistem Tasarımı, Mülakat</p>
 </article>
 <article>
-<h2><a href="https://webhook.site/" rel="noopener nofollow">Webhook.site</a></h2><span class="host">webhook.site</span>
+<h2><a href="https://webhook.site/" rel="noopener noreferrer nofollow">Webhook.site</a></h2><span class="host">webhook.site</span>
 <p class="d">Anında bir URL veriyor ve o adrese gelen istekleri başlıklarıyla birlikte gösteriyor. Yerel sunucu açıp tünellemekten farkı sıfır kurulum — bir webhook’un gerçekten ne gönderdiğini görmek için en kısa yol.</p>
 <p class="t">API, Ücretsiz, Tarayıcıda</p>
 </article>
 <article>
-<h2><a href="https://developer.wordpress.org/" rel="noopener nofollow">WordPress Developer</a></h2><span class="host">developer.wordpress.org</span>
+<h2><a href="https://developer.wordpress.org/" rel="noopener noreferrer nofollow">WordPress Developer</a></h2><span class="host">developer.wordpress.org</span>
 <p class="d">Eklenti ve tema geliştirme referansı. Kanca (hook) sistemi WordPress’in tamamını açıklayan tek kavram; onu anlamadan hiçbir şey yerine oturmuyor.</p>
 <p class="t">Ücretsiz, PHP, Dokümantasyon</p>
 </article>

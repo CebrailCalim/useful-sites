@@ -29,6 +29,24 @@ UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
 HEADERS = {'User-Agent': UA, 'Accept-Language': 'tr,en;q=0.9'}
 
 # These codes mean bot blocking; the link itself may be perfectly fine.
+
+
+# TLS dogrulamasi aciktir. Ilk surumde her istek verify=False ile gidiyordu --
+# eski sertifikali birkac siteyi kurtarmak icin, ama bedeli buydu: aradaki biri
+# yaniti degistirebilir ve tarama "canli" ya da "temiz" diye rapor eder. Ozellikle
+# ci_fresh.py icerige bakip karar verdigi icin bu sessiz bir yanlis kaynagi.
+# Simdi once dogrulanarak deneniyor; yalnizca sertifika hatasinda, o kayda ozel
+# olarak dogrulamasiz bir kez daha bakiliyor.
+def get(url, **kw):
+    kw.setdefault('headers', HEADERS)
+    kw.setdefault('timeout', (6, 15))
+    kw.setdefault('allow_redirects', True)
+    try:
+        return requests.get(url, verify=True, **kw)
+    except requests.exceptions.SSLError:
+        return requests.get(url, verify=False, **kw)
+
+
 SOFT = {401, 403, 405, 406, 429, 500, 503}
 
 
@@ -41,9 +59,14 @@ def check(rec):
     out = {'name': rec['name'], 'url': url, 'cat': rec.get('cat_tr', '')}
     for method in ('head', 'get'):
         try:
-            r = requests.request(method, url, headers=HEADERS, timeout=(6, 14),
-                                 allow_redirects=True, verify=False,
-                                 stream=(method == 'get'))
+            try:
+                r = requests.request(method, url, headers=HEADERS,
+                                     timeout=(6, 14), allow_redirects=True,
+                                     verify=True, stream=(method == 'get'))
+            except requests.exceptions.SSLError:
+                r = requests.request(method, url, headers=HEADERS,
+                                     timeout=(6, 14), allow_redirects=True,
+                                     verify=False, stream=(method == 'get'))
             if method == 'get':
                 r.close()
             out['status'] = r.status_code

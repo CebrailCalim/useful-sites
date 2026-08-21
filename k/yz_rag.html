@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>YZ · RAG, Gömme &amp; Vektör — Kullanışlı Siteler</title>
 <meta name="description" content="Getirim (retrieval) tarafında asıl kararlar modelde değil hattın kendisinde: belgeyi nasıl parçalıyorsun, hangi gömme modelini kullanıyorsun, sonuçları yeniden sıralıyor musun. Vek">
 <link rel="canonical" href="https://latifkedi.github.io/useful-sites/k/yz_rag.html">
@@ -66,157 +68,157 @@ footer a{color:var(--dim)}</style>
 </header>
 <main>
 <article>
-<h2><a href="https://www.mongodb.com/products/platform/atlas-vector-search" rel="noopener nofollow">Atlas Vector Search</a></h2><span class="host">mongodb.com</span>
+<h2><a href="https://www.mongodb.com/products/platform/atlas-vector-search" rel="noopener noreferrer nofollow">Atlas Vector Search</a></h2><span class="host">mongodb.com</span>
 <p class="d">Vektör indeksi belgelerin yanında duruyor, ayrı bir depoya kopyalama ve senkron tutma derdi kalkıyor. Yalnızca Atlas’ta, kendi kurduğun MongoDB’de yok.</p>
 <p class="t">Ücretli, Vektör VT, Veritabanı</p>
 </article>
 <article>
-<h2><a href="https://huggingface.co/BAAI" rel="noopener nofollow">BGE Modelleri</a></h2><span class="host">huggingface.co</span>
+<h2><a href="https://huggingface.co/BAAI" rel="noopener noreferrer nofollow">BGE Modelleri</a></h2><span class="host">huggingface.co</span>
 <p class="d">Açık gömme modellerinin en yaygın ailesi. MTEB sıralamasında ücretli API’lere yakın duruyor ve çoğu sürüm MIT lisanslı, yani ticari kullanımda engel yok.</p>
 <p class="t">Açık Ağırlık, Embedding</p>
 </article>
 <article>
-<h2><a href="https://www.trychroma.com/" rel="noopener nofollow">Chroma</a></h2><span class="host">trychroma.com</span>
+<h2><a href="https://www.trychroma.com/" rel="noopener noreferrer nofollow">Chroma</a></h2><span class="host">trychroma.com</span>
 <p class="d">Uygulamanın içine gömülü çalışıyor, sunucu süreci yok — `pip install` sonrası kullanmaya başlıyorsun. Prototip için en hızlısı, üretim ölçeğinde başkasına devretmen gerekiyor.</p>
 <p class="t">Açık Kaynak, Python, Vektör VT, Gömülü</p>
 </article>
 <article>
-<h2><a href="https://cohere.com/embed" rel="noopener nofollow">Cohere Embed</a></h2><span class="host">cohere.com</span>
+<h2><a href="https://cohere.com/embed" rel="noopener noreferrer nofollow">Cohere Embed</a></h2><span class="host">cohere.com</span>
 <p class="d">100’den fazla dili tek vektör uzayında temsil ediyor; Türkçe sorguyla İngilizce belge bulmak mümkün. Sorgu ve belge için ayrı giriş tipi almasi eşleşme kalitesini artırıyor.</p>
 <p class="t">API, Ücretli, Embedding</p>
 </article>
 <article>
-<h2><a href="https://www.elastic.co/elasticsearch" rel="noopener nofollow">Elasticsearch</a></h2><span class="host">elastic.co</span>
+<h2><a href="https://www.elastic.co/elasticsearch" rel="noopener noreferrer nofollow">Elasticsearch</a></h2><span class="host">elastic.co</span>
 <p class="d">BM25 anahtar kelime aramasıyla vektör aramasını tek sorguda birleştirip (hibrit arama) sonuçları RRF ile harmanlayabiliyor. Saf vektör veritabanlarının eksiği tam olarak bu ilk yarı.</p>
 <p class="t">Freemium, RAG, Kuantum</p>
 </article>
 <article>
-<h2><a href="https://github.com/Graphify-Labs/graphify" rel="noopener nofollow">Graphify</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/Graphify-Labs/graphify" rel="noopener noreferrer nofollow">Graphify</a></h2><span class="host">github.com</span>
 <p class="d">Kod tabanını AST çözümlemesiyle gezip dokümanları, SQL şemalarını ve PDF’leri de katarak sorgulanabilir bir grafiğe çeviriyor. Kod asistanına bağlam beslemek için tasarlanmış.</p>
 <p class="t">Açık Kaynak, GitHub, Sistem Tasarımı, RAG</p>
 </article>
 <article>
-<h2><a href="https://microsoft.github.io/graphrag/" rel="noopener nofollow">GraphRAG</a></h2><span class="host">microsoft.github.io</span>
+<h2><a href="https://microsoft.github.io/graphrag/" rel="noopener noreferrer nofollow">GraphRAG</a></h2><span class="host">microsoft.github.io</span>
 <p class="d">Belgelerden varlık ve ilişki çıkarıp bilgi grafiği kuruyor, sonra topluluk özetleri üretiyor. “Bu külliyatın ana temaları neler” gibi bütüne dair sorular parça-getir yöntemiyle cevaplanamıyor; bu onun için var.</p>
 <p class="t">Açık Kaynak, Python, RAG</p>
 </article>
 <article>
-<h2><a href="https://haystack.deepset.ai/" rel="noopener nofollow">Haystack</a></h2><span class="host">haystack.deepset.ai</span>
+<h2><a href="https://haystack.deepset.ai/" rel="noopener noreferrer nofollow">Haystack</a></h2><span class="host">haystack.deepset.ai</span>
 <p class="d">Bileşenleri açıkça birbirine bağlıyorsun; hattın hangi adımda ne yaptığı okunabilir kalıyor. Hata ayıklarken bu şeffaflık LangChain’in örtük akışına karşı gözle görülür bir kazanç.</p>
 <p class="t">Açık Kaynak, Python, RAG, DevOps</p>
 </article>
 <article>
-<h2><a href="https://langchain-ai.github.io/langgraph/concepts/memory/" rel="noopener nofollow">LangGraph Memory</a></h2><span class="host">langchain-ai.github.io</span>
+<h2><a href="https://langchain-ai.github.io/langgraph/concepts/memory/" rel="noopener noreferrer nofollow">LangGraph Memory</a></h2><span class="host">langchain-ai.github.io</span>
 <p class="d">Kısa vadeli (thread içi durum) ve uzun vadeli (thread’ler arası store) belleğin ayrımını ve hangisinin ne zaman kullanılacağını anlatan kavram sayfası.</p>
 <p class="t">Dokümantasyon, Agent</p>
 </article>
 <article>
-<h2><a href="https://www.letta.com/" rel="noopener nofollow">Letta</a></h2><span class="host">letta.com</span>
+<h2><a href="https://www.letta.com/" rel="noopener noreferrer nofollow">Letta</a></h2><span class="host">letta.com</span>
 <p class="d">MemGPT araştırmasının ürünleşmiş hâli. Bağlam penceresini işletim sistemi gibi yönetiyor: sıcak bilgiyi pencerede tutup gerisini harici depoya sayfalıyor.</p>
 <p class="t">Açık Kaynak, Python, Agent</p>
 </article>
 <article>
-<h2><a href="https://www.llamaindex.ai/" rel="noopener nofollow">LlamaIndex</a></h2><span class="host">llamaindex.ai</span>
+<h2><a href="https://www.llamaindex.ai/" rel="noopener noreferrer nofollow">LlamaIndex</a></h2><span class="host">llamaindex.ai</span>
 <p class="d">Belge yükleme, parçalama, indeksleme ve sorgu aşamalarının her birini ayrı ayrı değiştirilebilir kılıyor. Genel amaçlı bir çatı değil; alma (retrieval) hattını ince ayarlamak isteyen için tasarlanmış.</p>
 <p class="t">Açık Kaynak, Python, RAG</p>
 </article>
 <article>
-<h2><a href="https://mem0.ai/" rel="noopener nofollow">Mem0</a></h2><span class="host">mem0.ai</span>
+<h2><a href="https://mem0.ai/" rel="noopener noreferrer nofollow">Mem0</a></h2><span class="host">mem0.ai</span>
 <p class="d">Konuşmadan çıkarılan olguları saklıyor, çelişenleri güncelliyor, alakasızları eliyor. Ham geçmişi biriktirmek yerine neyin hatırlanmaya değer olduğuna karar veren bir katman.</p>
 <p class="t">Ücretli, Freemium, Agent</p>
 </article>
 <article>
-<h2><a href="https://github.com/mem0ai/mem0" rel="noopener nofollow">Mem0 (kaynak)</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/mem0ai/mem0" rel="noopener noreferrer nofollow">Mem0 (kaynak)</a></h2><span class="host">github.com</span>
 <p class="d">Mem0’ın kendi altyapında çalıştırılabilen sürümü. Embedchain projesi de bu depoda birleşti, yani eski Embedchain bağlantıları buraya çıkıyor.</p>
 <p class="t">Açık Kaynak, GitHub, Python, Agent</p>
 </article>
 <article>
-<h2><a href="https://milvus.io/" rel="noopener nofollow">Milvus</a></h2><span class="host">milvus.io</span>
+<h2><a href="https://milvus.io/" rel="noopener noreferrer nofollow">Milvus</a></h2><span class="host">milvus.io</span>
 <p class="d">Depolama ve hesaplamayı ayıran dağıtık mimari; milyar ölçekli koleksiyonlar için tasarlanmış. Kubernetes gerektiriyor, küçük projelerde kurulum maliyeti kazancından büyük.</p>
 <p class="t">Açık Kaynak, Vektör VT, Docker, Sistem Tasarımı</p>
 </article>
 <article>
-<h2><a href="https://neo4j.com/" rel="noopener nofollow">Neo4j</a></h2><span class="host">neo4j.com</span>
+<h2><a href="https://neo4j.com/" rel="noopener noreferrer nofollow">Neo4j</a></h2><span class="host">neo4j.com</span>
 <p class="d">İlişkiler tabloda yabancı anahtar değil, birinci sınıf veri. Cypher sorgu diliyle çok adımlı ilişki gezinmeleri, SQL’de yazılacak iç içe JOIN’lere göre hem kısa hem hızlı.</p>
 <p class="t">Freemium, Veritabanı</p>
 </article>
 <article>
-<h2><a href="https://platform.openai.com/docs/guides/embeddings" rel="noopener nofollow">OpenAI Embeddings</a></h2><span class="host">platform.openai.com</span>
+<h2><a href="https://platform.openai.com/docs/guides/embeddings" rel="noopener noreferrer nofollow">OpenAI Embeddings</a></h2><span class="host">platform.openai.com</span>
 <p class="d">text-embedding-3 ailesinin boyut, fiyat ve kullanım referansı. Matryoshka desteği sayesinde vektör boyutunu isteğe göre kısaltıp depolama maliyetini düşürebiliyorsun.</p>
 <p class="t">Dokümantasyon, Embedding, API</p>
 </article>
 <article>
-<h2><a href="https://github.com/pgvector/pgvector" rel="noopener nofollow">pgvector</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/pgvector/pgvector" rel="noopener noreferrer nofollow">pgvector</a></h2><span class="host">github.com</span>
 <p class="d">PostgreSQL’e vektör tipi ve HNSW/IVFFlat indeksleri ekleyen uzantı. Vektörü ilişkisel veriyle aynı işlemde (transaction) tutabilmek ayrı bir sistem işletmeye bedel.</p>
 <p class="t">Açık Kaynak, GitHub, Veritabanı, Vektör VT</p>
 </article>
 <article>
-<h2><a href="https://www.pinecone.io/" rel="noopener nofollow">Pinecone</a></h2><span class="host">pinecone.io</span>
+<h2><a href="https://www.pinecone.io/" rel="noopener noreferrer nofollow">Pinecone</a></h2><span class="host">pinecone.io</span>
 <p class="d">Tam yönetilen vektör veritabanı; sunucusuz katmanında kapasite planlaması yapmıyorsun. İşletme yükü en düşük seçenek, buna karşılık verinin nerede durduğu üzerinde denetimin yok.</p>
 <p class="t">Ücretli, Vektör VT</p>
 </article>
 <article>
-<h2><a href="https://www.postgresql.org/" rel="noopener nofollow">PostgreSQL</a></h2><span class="host">postgresql.org</span>
+<h2><a href="https://www.postgresql.org/" rel="noopener noreferrer nofollow">PostgreSQL</a></h2><span class="host">postgresql.org</span>
 <p class="d">JSONB, tam metin arama ve pgvector ile birlikte tek bir veritabanının üç ayrı sistemin işini görebildiği noktaya gelmiş durumda. Erken aşamada mimariyi ciddi ölçüde sadeleştiriyor.</p>
 <p class="t">Açık Kaynak, Veritabanı</p>
 </article>
 <article>
-<h2><a href="https://qdrant.tech/" rel="noopener nofollow">Qdrant</a></h2><span class="host">qdrant.tech</span>
+<h2><a href="https://qdrant.tech/" rel="noopener noreferrer nofollow">Qdrant</a></h2><span class="host">qdrant.tech</span>
 <p class="d">Rust ile yazılmış; yüklü meta veri filtrelemesini vektör aramasıyla birlikte yürütüyor. Bellek ayak izi düşük olduğu için küçük bir VPS’te ciddi koleksiyon taşıyabiliyor.</p>
 <p class="t">Açık Kaynak, Rust, Vektör VT</p>
 </article>
 <article>
-<h2><a href="https://docs.ragas.io/" rel="noopener nofollow">Ragas</a></h2><span class="host">docs.ragas.io</span>
+<h2><a href="https://docs.ragas.io/" rel="noopener noreferrer nofollow">Ragas</a></h2><span class="host">docs.ragas.io</span>
 <p class="d">RAG hatları için ölçüt kütüphanesi; referans cevap olmadan da çalışabilen metrikleri var. Sentetik test kümesi üretip değerlendirmeyi CI’ya bağlayabiliyorsun.</p>
 <p class="t">Açık Kaynak, Python, Gözlemlenebilirlik, RAG</p>
 </article>
 <article>
-<h2><a href="https://ragflow.io/" rel="noopener nofollow">RAGFlow</a></h2><span class="host">ragflow.io</span>
+<h2><a href="https://ragflow.io/" rel="noopener noreferrer nofollow">RAGFlow</a></h2><span class="host">ragflow.io</span>
 <p class="d">Derin belge ayrıştırma üstüne kurulu: karmaşık PDF düzenlerini, tabloları ve şekilleri tanıyıp anlamlı parçalara ayırıyor. Kütüphane değil, Docker ile kurduğun tam bir servis.</p>
 <p class="t">Açık Kaynak, Kendi Sunucunda, RAG, Docker</p>
 </article>
 <article>
-<h2><a href="https://github.com/evermind-ai/raven" rel="noopener nofollow">Raven</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/evermind-ai/raven" rel="noopener noreferrer nofollow">Raven</a></h2><span class="host">github.com</span>
 <p class="d">Bellek öncelikli agent koşum takımı; oturumlar arası öğrenmeyi ve kendi yapılandırmasını iyileştirmeyi merkeze alıyor.</p>
 <p class="t">Açık Kaynak, GitHub, Agent</p>
 </article>
 <article>
-<h2><a href="https://redis.io/" rel="noopener nofollow">Redis</a></h2><span class="host">redis.io</span>
+<h2><a href="https://redis.io/" rel="noopener noreferrer nofollow">Redis</a></h2><span class="host">redis.io</span>
 <p class="d">Bellek içi veri yapısı deposu. YZ tarafında oturum durumu, hız sınırlama sayaçları ve yanıt önbelleği için kullanılıyor; vektör araması da modülle geliyor.</p>
 <p class="t">Açık Kaynak, Veritabanı</p>
 </article>
 <article>
-<h2><a href="https://sbert.net/" rel="noopener nofollow">Sentence Transformers</a></h2><span class="host">sbert.net</span>
+<h2><a href="https://sbert.net/" rel="noopener noreferrer nofollow">Sentence Transformers</a></h2><span class="host">sbert.net</span>
 <p class="d">Gömme üretiminin standart Python kütüphanesi. Model yerelde çalışır, veri makineden çıkmaz, API faturası olmaz; karşılığında GPU ve bellek yönetimi sana kalır.</p>
 <p class="t">Açık Kaynak, Python, Embedding, Kendi Sunucunda</p>
 </article>
 <article>
-<h2><a href="https://www.trulens.org/" rel="noopener nofollow">TruLens</a></h2><span class="host">trulens.org</span>
+<h2><a href="https://www.trulens.org/" rel="noopener noreferrer nofollow">TruLens</a></h2><span class="host">trulens.org</span>
 <p class="d">RAG üçlemesini ölçüyor: bağlam alaka düzeyi, cevabın bağlama sadakati, cevabın soruya uygunluğu. Bu üçü ayrı ölçüldüğü için hatanın alma tarafında mı üretim tarafında mı olduğu ayrışıyor.</p>
 <p class="t">Açık Kaynak, Python, Gözlemlenebilirlik, RAG</p>
 </article>
 <article>
-<h2><a href="https://unstructured.io/" rel="noopener nofollow">Unstructured</a></h2><span class="host">unstructured.io</span>
+<h2><a href="https://unstructured.io/" rel="noopener noreferrer nofollow">Unstructured</a></h2><span class="host">unstructured.io</span>
 <p class="d">PDF, DOCX, HTML, e-posta ve sunumları ortak bir belge öğesi modeline indiriyor. RAG hatlarında en çok vakit yiyen ve en sık bozulan ilk adım burasıdır.</p>
 <p class="t">Açık Kaynak, Python, RAG, Veri Bilimi</p>
 </article>
 <article>
-<h2><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings" rel="noopener nofollow">Vertex AI Embeddings</a></h2><span class="host">cloud.google.com</span>
+<h2><a href="https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings" rel="noopener noreferrer nofollow">Vertex AI Embeddings</a></h2><span class="host">cloud.google.com</span>
 <p class="d">GCP içindeki gömme servisi. Veriyi BigQuery’de tutuyorsan gömmeyi de aynı sınırlar içinde üretmek ağ maliyeti ve veri yerleşimi açısından anlamlı oluyor.</p>
 <p class="t">Dokümantasyon, Embedding, Sunucu</p>
 </article>
 <article>
-<h2><a href="https://www.voyageai.com/" rel="noopener nofollow">Voyage AI</a></h2><span class="host">voyageai.com</span>
+<h2><a href="https://www.voyageai.com/" rel="noopener noreferrer nofollow">Voyage AI</a></h2><span class="host">voyageai.com</span>
 <p class="d">Hukuk, kod ve finans için ayrı ayrı eğitilmiş gömme modelleri. Dar alanlarda genel amaçlı modelleri geçtiğini iddia ediyor; karşılaştırmayı kendi verinle yapmak gerekiyor.</p>
 <p class="t">API, Ücretli, Embedding</p>
 </article>
 <article>
-<h2><a href="https://weaviate.io/" rel="noopener nofollow">Weaviate</a></h2><span class="host">weaviate.io</span>
+<h2><a href="https://weaviate.io/" rel="noopener noreferrer nofollow">Weaviate</a></h2><span class="host">weaviate.io</span>
 <p class="d">Gömme üretimini modül olarak içinde barındırabiliyor, yani ayrı bir gömme adımı kurmadan ham metin yazabiliyorsun. Sorgu arayüzü GraphQL.</p>
 <p class="t">Açık Kaynak, Vektör VT, API</p>
 </article>
 <article>
-<h2><a href="https://www.getzep.com/" rel="noopener nofollow">Zep</a></h2><span class="host">getzep.com</span>
+<h2><a href="https://www.getzep.com/" rel="noopener noreferrer nofollow">Zep</a></h2><span class="host">getzep.com</span>
 <p class="d">Zamansal bilgi grafiği tutuyor: bir olgunun ne zaman doğru olduğunu ve ne zaman geçersizleştiğini kaydediyor. Düz vektör belleği bu ayrımı yapamıyor.</p>
 <p class="t">Açık Kaynak, Agent, RAG</p>
 </article>

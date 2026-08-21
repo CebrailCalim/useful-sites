@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>DevOps &amp; Altyapı — Kullanışlı Siteler</title>
 <meta name="description" content="Buradaki araçların çoğu tek başına anlamlı değil, bir yığının parçası. Sıra genelde şöyle kurulur: sürüm kontrolü, kapsayıcı, dağıtım, sonra izleme. Barındırma tarafında büyük bulu">
 <link rel="canonical" href="https://latifkedi.github.io/useful-sites/k/devops.html">
@@ -66,192 +68,192 @@ footer a{color:var(--dim)}</style>
 </header>
 <main>
 <article>
-<h2><a href="https://alexhost.com/" rel="noopener nofollow">AlexHost</a></h2><span class="host">alexhost.com</span>
+<h2><a href="https://alexhost.com/" rel="noopener noreferrer nofollow">AlexHost</a></h2><span class="host">alexhost.com</span>
 <p class="d">Moldova merkezli barındırma. Farklı bir yargı bölgesi ve gevşek içerik politikası sunması sebebiyle tercih ediliyor; bu aynı zamanda komşuların kim olduğu sorusunu doğuruyor.</p>
 <p class="t">Ücretli, Sunucu, Gizlilik</p>
 </article>
 <article>
-<h2><a href="https://aws.amazon.com/" rel="noopener nofollow">Amazon Web Services</a></h2><span class="host">aws.amazon.com</span>
+<h2><a href="https://aws.amazon.com/" rel="noopener noreferrer nofollow">Amazon Web Services</a></h2><span class="host">aws.amazon.com</span>
 <p class="d">Servis yelpazesi en geniş bulut. Genişlik avantaj ama maliyet takibi ayrı bir uzmanlık alanı; veri çıkış (egress) ücretleri özellikle sürpriz yapıyor.</p>
 <p class="t">Ücretli, Sunucu</p>
 </article>
 <article>
-<h2><a href="https://airflow.apache.org/" rel="noopener nofollow">Apache Airflow</a></h2><span class="host">airflow.apache.org</span>
+<h2><a href="https://airflow.apache.org/" rel="noopener noreferrer nofollow">Apache Airflow</a></h2><span class="host">airflow.apache.org</span>
 <p class="d">DAG’ları Python’da tanımlayıp zamanlıyorsun. Toplu veri hattında fiilî standart; olay güdümlü ve düşük gecikmeli işlerde hantal kalıyor.</p>
 <p class="t">Açık Kaynak, Python, Otomasyon, Veri Bilimi</p>
 </article>
 <article>
-<h2><a href="https://httpd.apache.org/docs/" rel="noopener nofollow">Apache HTTP Server</a></h2><span class="host">httpd.apache.org</span>
+<h2><a href="https://httpd.apache.org/docs/" rel="noopener noreferrer nofollow">Apache HTTP Server</a></h2><span class="host">httpd.apache.org</span>
 <p class="d">Modül mimarisi ve .htaccess ile dizin bazlı yapılandırma esnekliği. Paylaşımlı barındırmada hâlâ hâkim; nginx’e göre yüksek eşzamanlılıkta daha çok bellek yiyor.</p>
 <p class="t">Açık Kaynak, Sunucu, Dokümantasyon</p>
 </article>
 <article>
-<h2><a href="https://kafka.apache.org/42/getting-started/introduction/" rel="noopener nofollow">Apache Kafka</a></h2><span class="host">kafka.apache.org</span>
+<h2><a href="https://kafka.apache.org/42/getting-started/introduction/" rel="noopener noreferrer nofollow">Apache Kafka</a></h2><span class="host">kafka.apache.org</span>
 <p class="d">Mesajları tüketildikten sonra da saklıyor; tüketiciler kendi konumlarını (offset) taşıyıp geçmişi yeniden okuyabiliyor. Klasik kuyruklardan asıl ayrımı bu kalıcılık.</p>
 <p class="t">Açık Kaynak, Otomasyon</p>
 </article>
 <article>
-<h2><a href="https://avenacloud.com/" rel="noopener nofollow">AvenaCloud</a></h2><span class="host">avenacloud.com</span>
+<h2><a href="https://avenacloud.com/" rel="noopener noreferrer nofollow">AvenaCloud</a></h2><span class="host">avenacloud.com</span>
 <p class="d">VPS ve fiziksel sunucu sağlayıcı; küçük ölçekli projeler için bütçe odaklı bir seçenek.</p>
 <p class="t">Ücretli, Sunucu</p>
 </article>
 <article>
-<h2><a href="https://docs.celeryq.dev/en/stable/" rel="noopener nofollow">Celery</a></h2><span class="host">docs.celeryq.dev</span>
+<h2><a href="https://docs.celeryq.dev/en/stable/" rel="noopener noreferrer nofollow">Celery</a></h2><span class="host">docs.celeryq.dev</span>
 <p class="d">Python’da arka plan görevlerinin standardı; Redis ya da RabbitMQ’yu aracı olarak kullanıyor. Zamanlanmış görevler (beat) ve yeniden deneme mantığı da içinde.</p>
 <p class="t">Açık Kaynak, Python, Otomasyon</p>
 </article>
 <article>
-<h2><a href="https://coder.com" rel="noopener nofollow">Coder</a></h2><span class="host">coder.com</span>
+<h2><a href="https://coder.com" rel="noopener noreferrer nofollow">Coder</a></h2><span class="host">coder.com</span>
 <p class="d">Geliştirme ortamını kendi altyapında kapsayıcı olarak çalıştıran platform; VS Code ya da JetBrains istemcisiyle bağlanıyorsun. GitHub Codespaces’ten farkı bulut sağlayıcısına bağlı olmaması — kaynak da kod da sende kalıyor.</p>
 <p class="t">Açık Kaynak, Kendi Sunucunda, Sunucu, DevOps</p>
 </article>
 <article>
-<h2><a href="https://github.com/fccview/cronmaster" rel="noopener nofollow">Cronmaster</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/fccview/cronmaster" rel="noopener noreferrer nofollow">Cronmaster</a></h2><span class="host">github.com</span>
 <p class="d">Cron görevlerini web arayüzünden yöneten öz-barındırılan uygulama; ifadeleri okunur hâlde gösteriyor ve çalıştırma günlüğü tutuyor. crontab -e’den farkı bir sonraki çalışma zamanını ve son çıktıyı göstermesi — sessizce başarısız olan görevler görünür oluyor.</p>
 <p class="t">Açık Kaynak, Kendi Sunucunda, DevOps</p>
 </article>
 <article>
-<h2><a href="https://crontab-generator.org/" rel="noopener nofollow">Crontab Generator</a></h2><span class="host">crontab-generator.org</span>
+<h2><a href="https://crontab-generator.org/" rel="noopener noreferrer nofollow">Crontab Generator</a></h2><span class="host">crontab-generator.org</span>
 <p class="d">Cron ifadesini form üzerinden üreten ve ne zaman çalışacağını yazıyla söyleyen araç. crontab.guru’dan farkı ters yönde çalışması — ifadeyi çözmek yerine istediğin zamanlamadan ifade üretiyor.</p>
 <p class="t">Tarayıcıda, Ücretsiz, DevOps</p>
 </article>
 <article>
-<h2><a href="https://github.com/dokploy/dokploy" rel="noopener nofollow">Dokploy</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/dokploy/dokploy" rel="noopener noreferrer nofollow">Dokploy</a></h2><span class="host">github.com</span>
 <p class="d">Kendi VPS’inde Vercel benzeri dağıtım deneyimi kuruyor: git iterek yayına alma, veritabanı sağlama ve otomatik TLS. Heroku’nun ücretsiz katmanı kapandıktan sonra doğan boşluğu dolduruyor.</p>
 <p class="t">Açık Kaynak, GitHub, Kendi Sunucunda, Docker</p>
 </article>
 <article>
-<h2><a href="https://www.fromlatest.io/" rel="noopener nofollow">FromLatest</a></h2><span class="host">fromlatest.io</span>
+<h2><a href="https://www.fromlatest.io/" rel="noopener noreferrer nofollow">FromLatest</a></h2><span class="host">fromlatest.io</span>
 <p class="d">Dockerfile’ı çözümleyip katman katman ne olduğunu açıklayan ve iyileştirme öneren araç. hadolint’ten farkı görsel olması ve her kuralın neden var olduğunu anlatması — Dockerfile yazmayı öğrenmek için de kullanılabiliyor.</p>
 <p class="t">Docker, Tarayıcıda, DevOps</p>
 </article>
 <article>
-<h2><a href="https://gource.io/" rel="noopener nofollow">Gource</a></h2><span class="host">gource.io</span>
+<h2><a href="https://gource.io/" rel="noopener noreferrer nofollow">Gource</a></h2><span class="host">gource.io</span>
 <p class="d">Depo geçmişini büyüyen bir ağaç animasyonu olarak çiziyor; kimin nereye dokunduğu görünür oluyor. Teknik analiz aracı değil, proje tarihini anlatmak için.</p>
 <p class="t">Açık Kaynak, Git, İnteraktif</p>
 </article>
 <article>
-<h2><a href="https://grafana.com/" rel="noopener nofollow">Grafana</a></h2><span class="host">grafana.com</span>
+<h2><a href="https://grafana.com/" rel="noopener noreferrer nofollow">Grafana</a></h2><span class="host">grafana.com</span>
 <p class="d">Prometheus, Loki, PostgreSQL ve onlarca kaynağı aynı panoda birleştiriyor. Veri kaynağından bağımsız olması, izleme yığınının ortak yüzü hâline gelmesini sağladı.</p>
 <p class="t">Açık Kaynak, Gözlemlenebilirlik</p>
 </article>
 <article>
-<h2><a href="https://www.guzel.net.tr/" rel="noopener nofollow">Güzel Hosting</a></h2><span class="host">guzel.net.tr</span>
+<h2><a href="https://www.guzel.net.tr/" rel="noopener noreferrer nofollow">Güzel Hosting</a></h2><span class="host">guzel.net.tr</span>
 <p class="d">Türkiye merkezli barındırma ve alan adı; .tr uzantısı, yerel ödeme ve Türkçe destek sunuyor. Sunucunun Türkiye’de olması gereken projeler için pratik.</p>
 <p class="t">Ücretli, Türkçe, Sunucu</p>
 </article>
 <article>
-<h2><a href="https://www.hetzner.com/" rel="noopener nofollow">Hetzner</a></h2><span class="host">hetzner.com</span>
+<h2><a href="https://www.hetzner.com/" rel="noopener noreferrer nofollow">Hetzner</a></h2><span class="host">hetzner.com</span>
 <p class="d">Almanya ve Finlandiya’da fiziksel sunucu ve VPS; aynı çekirdek/RAM için büyük bulutların birkaç katı ucuz. Yönetilen servis yok, işletim tamamen sana kalıyor.</p>
 <p class="t">Ücretli, Sunucu</p>
 </article>
 <article>
-<h2><a href="https://k8syaml.com/" rel="noopener nofollow">K8s YAML Generator</a></h2><span class="host">k8syaml.com</span>
+<h2><a href="https://k8syaml.com/" rel="noopener noreferrer nofollow">K8s YAML Generator</a></h2><span class="host">k8syaml.com</span>
 <p class="d">Kubernetes manifestolarını form doldurarak üreten araç; her alanın ne işe yaradığını yanında açıklıyor. Belgelerden kopyalamaktan farkı geçerli bir manifesto ile çıkman ve alanların anlamını okuyarak öğrenmen.</p>
 <p class="t">DevOps, Tarayıcıda, Ücretsiz</p>
 </article>
 <article>
-<h2><a href="https://kestra.io/" rel="noopener nofollow">Kestra</a></h2><span class="host">kestra.io</span>
+<h2><a href="https://kestra.io/" rel="noopener noreferrer nofollow">Kestra</a></h2><span class="host">kestra.io</span>
 <p class="d">Akışlar YAML’de bildirimsel olarak tanımlanıyor; dil bağımsız olduğu için Python olmayan ekiplerde de çalışıyor. Sürüm kontrolüyle iyi geçiniyor.</p>
 <p class="t">Açık Kaynak, Otomasyon, DevOps</p>
 </article>
 <article>
-<h2><a href="https://www.litespeedtech.com/" rel="noopener nofollow">LiteSpeed</a></h2><span class="host">litespeedtech.com</span>
+<h2><a href="https://www.litespeedtech.com/" rel="noopener noreferrer nofollow">LiteSpeed</a></h2><span class="host">litespeedtech.com</span>
 <p class="d">Apache yapılandırmasını olduğu gibi okuyabilen ticari sunucu; olay güdümlü çekirdeği ile daha az kaynak tüketiyor. WordPress barındırmada önbellek eklentisiyle birlikte yaygın.</p>
 <p class="t">Ücretli, Sunucu</p>
 </article>
 <article>
-<h2><a href="https://docs.litespeedtech.com/" rel="noopener nofollow">LiteSpeed Dokümantasyonu</a></h2><span class="host">docs.litespeedtech.com</span>
+<h2><a href="https://docs.litespeedtech.com/" rel="noopener noreferrer nofollow">LiteSpeed Dokümantasyonu</a></h2><span class="host">docs.litespeedtech.com</span>
 <p class="d">Yapılandırma referansı; LSCache kurallarının nasıl yazılacağı burada. Önbellekleme ayarları performansın büyük kısmını belirliyor.</p>
 <p class="t">Dokümantasyon, Sunucu, Veritabanı</p>
 </article>
 <article>
-<h2><a href="https://www.make.com/" rel="noopener nofollow">Make</a></h2><span class="host">make.com</span>
+<h2><a href="https://www.make.com/" rel="noopener noreferrer nofollow">Make</a></h2><span class="host">make.com</span>
 <p class="d">Senaryolar dallanma, döngü ve hata işleme taşıyabiliyor; Zapier’in doğrusal adım modeline göre karmaşık akışlarda daha rahat. Öğrenme eğrisi de buna paralel olarak dik.</p>
 <p class="t">Ücretli, Freemium, Otomasyon</p>
 </article>
 <article>
-<h2><a href="https://n8n.io/" rel="noopener nofollow">n8n</a></h2><span class="host">n8n.io</span>
+<h2><a href="https://n8n.io/" rel="noopener noreferrer nofollow">n8n</a></h2><span class="host">n8n.io</span>
 <p class="d">Görsel düğüm editörü; kendi sunucunda çalıştırdığında çalıştırma sayısı sınırsız. Düğüm içine JavaScript yazabiliyorsun, yani no-code duvarına toslamıyorsun.</p>
 <p class="t">Açık Kaynak, Kendi Sunucunda, Otomasyon, Docker</p>
 </article>
 <article>
-<h2><a href="https://docs.n8n.io/" rel="noopener nofollow">n8n Dokümantasyonu</a></h2><span class="host">docs.n8n.io</span>
+<h2><a href="https://docs.n8n.io/" rel="noopener noreferrer nofollow">n8n Dokümantasyonu</a></h2><span class="host">docs.n8n.io</span>
 <p class="d">Düğüm referansı, kendi sunucuna kurulum ve kimlik bilgisi yönetimi. Kuyruk kipiyle ölçekleme bölümü üretimde çalıştıracaklar için önemli.</p>
 <p class="t">Dokümantasyon, Otomasyon</p>
 </article>
 <article>
-<h2><a href="https://github.com/m1k1o/neko" rel="noopener nofollow">Neko</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/m1k1o/neko" rel="noopener noreferrer nofollow">Neko</a></h2><span class="host">github.com</span>
 <p class="d">Kapsayıcı içinde tarayıcı çalıştırıp WebRTC ile paylaşıyor; birden çok kişi aynı oturumu kontrol edebiliyor. Birlikte izleme ve izole gezinme için kullanılıyor.</p>
 <p class="t">Açık Kaynak, GitHub, Docker, Ağ</p>
 </article>
 <article>
-<h2><a href="https://nginx.org/en/docs/" rel="noopener nofollow">nginx</a></h2><span class="host">nginx.org</span>
+<h2><a href="https://nginx.org/en/docs/" rel="noopener noreferrer nofollow">nginx</a></h2><span class="host">nginx.org</span>
 <p class="d">Olay güdümlü mimarisi sayesinde on binlerce eşzamanlı bağlantıyı düşük bellekle taşıyor. Ters vekil ve yük dengeleyici olarak kullanımı, web sunucusu olmasından daha yaygın.</p>
 <p class="t">Açık Kaynak, Sunucu</p>
 </article>
 <article>
-<h2><a href="https://njal.la/" rel="noopener nofollow">Njalla</a></h2><span class="host">njal.la</span>
+<h2><a href="https://njal.la/" rel="noopener noreferrer nofollow">Njalla</a></h2><span class="host">njal.la</span>
 <p class="d">Alan adını senin adına kendi üstüne kaydediyor, yani WHOIS kaydında sen görünmüyorsun. Vekil gizlilik hizmetinden farkı, mülkiyetin hukuken onlarda olması — bu bir güven meselesi.</p>
 <p class="t">Ücretli, Gizlilik</p>
 </article>
 <article>
-<h2><a href="https://pipedream.com/" rel="noopener nofollow">Pipedream</a></h2><span class="host">pipedream.com</span>
+<h2><a href="https://pipedream.com/" rel="noopener noreferrer nofollow">Pipedream</a></h2><span class="host">pipedream.com</span>
 <p class="d">Her adım Node.js ya da Python kodu olabiliyor ve npm/PyPI paketi çekebiliyor. Görsel otomasyonla gerçek kod arasındaki boşluğu kapatan seçenek.</p>
 <p class="t">Ücretli, Freemium, Otomasyon, Sistem Tasarımı</p>
 </article>
 <article>
-<h2><a href="https://www.microsoft.com/power-platform/products/power-automate" rel="noopener nofollow">Power Automate</a></h2><span class="host">microsoft.com</span>
+<h2><a href="https://www.microsoft.com/power-platform/products/power-automate" rel="noopener noreferrer nofollow">Power Automate</a></h2><span class="host">microsoft.com</span>
 <p class="d">SharePoint, Teams ve Dataverse bağlayıcıları yerleşik. Kurum zaten Microsoft 365’teyse lisans çoğu zaman ödenmiş oluyor — asıl tercih sebebi bu.</p>
 <p class="t">Ücretli, Otomasyon</p>
 </article>
 <article>
-<h2><a href="https://www.prefect.io/" rel="noopener nofollow">Prefect</a></h2><span class="host">prefect.io</span>
+<h2><a href="https://www.prefect.io/" rel="noopener noreferrer nofollow">Prefect</a></h2><span class="host">prefect.io</span>
 <p class="d">Akış sıradan bir Python fonksiyonu; dekoratör ekleyip orkestrasyona dahil ediyorsun. Airflow’un ayrı DSL’ini öğrenmeden yerel kodu üretime taşımak daha kısa.</p>
 <p class="t">Açık Kaynak, Python, Otomasyon</p>
 </article>
 <article>
-<h2><a href="https://git-scm.com/book/tr/v2" rel="noopener nofollow">Pro Git (Türkçe)</a></h2><span class="host">git-scm.com</span>
+<h2><a href="https://git-scm.com/book/tr/v2" rel="noopener noreferrer nofollow">Pro Git (Türkçe)</a></h2><span class="host">git-scm.com</span>
 <p class="d">Git’in resmî kitabının Türkçe çevirisi. İç mekanizma bölümü (nesne modeli, referanslar) komut ezberlemekten kurtarıyor — Git’i asıl anlaşılır kılan kısım orası.</p>
 <p class="t">Ücretsiz, Türkçe, Kitap, Git</p>
 </article>
 <article>
-<h2><a href="https://www.rabbitmq.com/tutorials" rel="noopener nofollow">RabbitMQ Öğreticileri</a></h2><span class="host">rabbitmq.com</span>
+<h2><a href="https://www.rabbitmq.com/tutorials" rel="noopener noreferrer nofollow">RabbitMQ Öğreticileri</a></h2><span class="host">rabbitmq.com</span>
 <p class="d">Altı adımda mesaj kuyruğu desenlerini öğreten resmî seri: iş kuyruğu, yayın-abone, yönlendirme, RPC. Kafka olay akışına, bu görev dağıtımına odaklı.</p>
 <p class="t">Açık Kaynak, Otomasyon</p>
 </article>
 <article>
-<h2><a href="https://redis.io/docs/latest/" rel="noopener nofollow">Redis Dokümantasyonu</a></h2><span class="host">redis.io</span>
+<h2><a href="https://redis.io/docs/latest/" rel="noopener noreferrer nofollow">Redis Dokümantasyonu</a></h2><span class="host">redis.io</span>
 <p class="d">Liste, küme, sıralı küme ve akış gibi veri yapılarının referansı. Redis’i basit bir anahtar-değer deposu sanmak, elindeki aracın çoğunu kullanmamak demek.</p>
 <p class="t">Dokümantasyon, Veritabanı</p>
 </article>
 <article>
-<h2><a href="https://sentry.io/welcome/" rel="noopener nofollow">Sentry</a></h2><span class="host">sentry.io</span>
+<h2><a href="https://sentry.io/welcome/" rel="noopener noreferrer nofollow">Sentry</a></h2><span class="host">sentry.io</span>
 <p class="d">Hataları yığın izi, kaynak haritası ve kullanıcı bağlamıyla topluyor ve benzerlerini grupluyor. Günlük dosyası okumaya karşı, aynı hatanın kaç kullanıcıyı etkilediğini gösteriyor.</p>
 <p class="t">Freemium, Açık Kaynak, Gözlemlenebilirlik</p>
 </article>
 <article>
-<h2><a href="https://www.shellcheck.net/" rel="noopener nofollow">ShellCheck</a></h2><span class="host">shellcheck.net</span>
+<h2><a href="https://www.shellcheck.net/" rel="noopener noreferrer nofollow">ShellCheck</a></h2><span class="host">shellcheck.net</span>
 <p class="d">Kabuk betiklerindeki hataları bulan statik çözümleyici; tırnaklanmamış değişken, yanlış test söz dizimi, taşınabilirlik sorunları. `bash -n`’den farkı sözdizimi değil anlam denetimi yapması — çalışan ama yanlış davranan betiği yakalıyor.</p>
 <p class="t">Açık Kaynak, CLI, Ücretsiz</p>
 </article>
 <article>
-<h2><a href="https://temporal.io/" rel="noopener nofollow">Temporal</a></h2><span class="host">temporal.io</span>
+<h2><a href="https://temporal.io/" rel="noopener noreferrer nofollow">Temporal</a></h2><span class="host">temporal.io</span>
 <p class="d">İş akışı durumunu olay geçmişi olarak kaydediyor; süreç çökerse aynı noktadan devam ediyor. Günlerce süren ve yeniden başlatılamayan işlemler için tasarlanmış.</p>
 <p class="t">Açık Kaynak, Otomasyon</p>
 </article>
 <article>
-<h2><a href="https://vercel.com/" rel="noopener nofollow">Vercel</a></h2><span class="host">vercel.com</span>
+<h2><a href="https://vercel.com/" rel="noopener noreferrer nofollow">Vercel</a></h2><span class="host">vercel.com</span>
 <p class="d">Ön yüz odaklı dağıtım; her PR için önizleme ortamı açması sektörde standart hâline geldi. Next.js’in arkasındaki şirket, dolayısıyla o çatıda en iyi entegrasyon burada.</p>
 <p class="t">Ücretli, Freemium, Sunucu, Gömülü</p>
 </article>
 <article>
-<h2><a href="https://www.yamllint.com/" rel="noopener nofollow">YAMLlint</a></h2><span class="host">yamllint.com</span>
+<h2><a href="https://www.yamllint.com/" rel="noopener noreferrer nofollow">YAMLlint</a></h2><span class="host">yamllint.com</span>
 <p class="d">YAML doğrulayıcı; girinti ve tırnak hatalarını gösterip belgeyi ayrıştırılmış hâliyle basıyor. JSON doğrulayıcılardan farkı YAML’ın asıl tuzağını yakalaması — girintinin sessizce yanlış yapıyı üretmesi.</p>
 <p class="t">Tarayıcıda, Ücretsiz, DevOps</p>
 </article>
 <article>
-<h2><a href="https://zapier.com/" rel="noopener nofollow">Zapier</a></h2><span class="host">zapier.com</span>
+<h2><a href="https://zapier.com/" rel="noopener noreferrer nofollow">Zapier</a></h2><span class="host">zapier.com</span>
 <p class="d">En geniş entegrasyon kataloğu — bağlanmak istediğin niş SaaS büyük ihtimalle burada var. Fiyatlandırma görev başına, yani hacim arttıkça hızla pahalılaşıyor.</p>
 <p class="t">Ücretli, Freemium, Otomasyon</p>
 </article>

@@ -84,6 +84,8 @@ PAGE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{title} — {site_name}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canon}">
@@ -151,7 +153,7 @@ def _item(d, taglbl, desc, li):
     tags = ', '.join(taglbl.get(t, [t, t])[li] for t in d.get('tags', [])[:6])
     return (
         '<article>\n'
-        '<h2><a href="%s" rel="noopener nofollow">%s</a></h2>'
+        '<h2><a href="%s" rel="noopener noreferrer nofollow">%s</a></h2>'
         '<span class="host">%s</span>\n'
         '<p class="d">%s</p>\n'
         '%s'

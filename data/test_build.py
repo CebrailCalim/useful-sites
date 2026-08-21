@@ -81,6 +81,16 @@ def main():
         seen.add(k)
     check(not dup, 'no duplicate URLs' + (' -- %s' % dup[:3] if dup else ''))
 
+    # javascript: ya da data: bir URL kayda girerse esc() onu durdurmaz --
+    # kacislar HTML icindir, sema icin degil. Uretimde asla olmadi; burada
+    # olmadigini soyleyen tek sey bu satir.
+    sema = [d['name'] for d in rows if not d['url'].startswith(('http://', 'https://'))]
+    check(not sema, 'every URL is http or https'
+          + (' -- %s' % sema[:3] if sema else ''))
+
+    duz = [d['name'] for d in rows if d['url'].startswith('http://')]
+    check(len(duz) <= 5, 'at most 5 plaintext http URLs (now %d)' % len(duz))
+
     kaynaksiz = sorted({d['src'] for d in rows} - set(SOURCES))
     check(not kaynaksiz, 'every record has a declared source'
           + (' -- unknown: %s' % kaynaksiz if kaynaksiz else ''))

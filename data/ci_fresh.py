@@ -45,6 +45,24 @@ UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
 HEADERS = {'User-Agent': UA, 'Accept-Language': 'tr,en;q=0.9'}
 
 # Wording that only appears on a page nobody is running any more.
+
+
+# TLS dogrulamasi aciktir. Ilk surumde her istek verify=False ile gidiyordu --
+# eski sertifikali birkac siteyi kurtarmak icin, ama bedeli buydu: aradaki biri
+# yaniti degistirebilir ve tarama "canli" ya da "temiz" diye rapor eder. Ozellikle
+# ci_fresh.py icerige bakip karar verdigi icin bu sessiz bir yanlis kaynagi.
+# Simdi once dogrulanarak deneniyor; yalnizca sertifika hatasinda, o kayda ozel
+# olarak dogrulamasiz bir kez daha bakiliyor.
+def get(url, **kw):
+    kw.setdefault('headers', HEADERS)
+    kw.setdefault('timeout', (6, 15))
+    kw.setdefault('allow_redirects', True)
+    try:
+        return requests.get(url, verify=True, **kw)
+    except requests.exceptions.SSLError:
+        return requests.get(url, verify=False, **kw)
+
+
 # Deliberately narrow. The first attempt matched "under construction" anywhere
 # in the body and flagged Stroustrup's C++11 FAQ, learn-c.org and njal.la --
 # all three merely contain the phrase somewhere. A parked page announces itself
@@ -75,8 +93,7 @@ def fetch(d):
     out = {'name': d['name'], 'url': d['url'], 'src': d['src'],
            'cat': d.get('cat_tr', ''), 'flags': [], 'note': ''}
     try:
-        r = requests.get(d['url'], headers=HEADERS, timeout=(6, 18),
-                         allow_redirects=True, verify=False)
+        r = get(d['url'], timeout=(6, 18))
     except requests.exceptions.RequestException as e:
         out['flags'].append('ulasilamadi')
         out['note'] = type(e).__name__

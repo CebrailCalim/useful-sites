@@ -102,7 +102,7 @@
  {
   "section": "Coding practice for beginners",
   "name": "Programming by Doing",
-  "url": "http://programmingbydoing.com",
+  "url": "https://programmingbydoing.com",
   "desc": "Teach yourself to code with a safety net.",
   "status": 200,
   "final": "http://programmingbydoing.com/",
@@ -112,7 +112,7 @@
  {
   "section": "Coding practice for beginners",
   "name": "CodeAbbey - a place where everyone can master programming",
-  "url": "http://www.codeabbey.com",
+  "url": "https://www.codeabbey.com",
   "desc": "",
   "status": 200,
   "final": "http://www.codeabbey.com/",
@@ -176,7 +176,7 @@
  {
   "section": "Coding practice for beginners",
   "name": "Learn Vimscript the Hard Way",
-  "url": "http://learnvimscriptthehardway.stevelosh.com",
+  "url": "https://learnvimscriptthehardway.stevelosh.com",
   "desc": "",
   "status": 200,
   "final": "https://learnvimscriptthehardway.stevelosh.com/",
@@ -832,7 +832,7 @@
  {
   "section": "General Tools",
   "name": "Devicons",
-  "url": "http://vorillaz.github.io/devicons/#/main",
+  "url": "https://vorillaz.github.io/devicons/#/main",
   "desc": "",
   "status": 200,
   "final": "http://vorillaz.github.io/devicons/#/main",
@@ -1032,7 +1032,7 @@
  {
   "section": "General Tools",
   "name": "Python Visualizer",
-  "url": "http://pythontutor.com/visualize.html",
+  "url": "https://pythontutor.com/visualize.html",
   "desc": "Python Tutor: Visualize Code and Get AI Help for Python, JavaScript, C, C++, and Java. This is the only tool that lets you debug code step-by-step and get personalized AI tutoring.",
   "status": 200,
   "final": "https://pythontutor.com/visualize.html",
@@ -1152,7 +1152,7 @@
  {
   "section": "Bash and Shell scripting",
   "name": "Advanced Bash-Scripting Guide",
-  "url": "http://tldp.org/LDP/abs/html/",
+  "url": "https://tldp.org/LDP/abs/html/",
   "desc": "",
   "status": 200,
   "final": "https://tldp.org/LDP/abs/html/",
@@ -1162,7 +1162,7 @@
  {
   "section": "Bash and Shell scripting",
   "name": "Bash Guide for Beginners",
-  "url": "http://www.tldp.org/LDP/Bash-Beginners-Guide/html/",
+  "url": "https://www.tldp.org/LDP/Bash-Beginners-Guide/html/",
   "desc": "",
   "status": 200,
   "final": "https://tldp.org/LDP/Bash-Beginners-Guide/html/",
@@ -1192,7 +1192,7 @@
  {
   "section": "Bash and Shell scripting",
   "name": "BashGuide",
-  "url": "http://mywiki.wooledge.org/BashGuide",
+  "url": "https://mywiki.wooledge.org/BashGuide",
   "desc": "",
   "status": 200,
   "final": "http://mywiki.wooledge.org/BashGuide",
@@ -1339,7 +1339,7 @@
  {
   "section": "Interview Preparation",
   "name": "Big-O Algorithm Complexity Cheat Sheet",
-  "url": "http://bigocheatsheet.com/#",
+  "url": "https://bigocheatsheet.com/#",
   "desc": "",
   "status": 200,
   "final": "https://www.bigocheatsheet.com/",
@@ -1349,7 +1349,7 @@
  {
   "section": "Interview Preparation",
   "name": "BIG O Misconceptions",
-  "url": "http://ssp.impulsetrain.com/big-o.html",
+  "url": "https://ssp.impulsetrain.com/big-o.html",
   "desc": "",
   "status": 200,
   "final": "https://ssp.impulsetrain.com/big-o.html",
@@ -1403,7 +1403,7 @@
  {
   "section": "Interview Preparation",
   "name": "CS9: Problem-Solving for the CS Technical Interview",
-  "url": "http://web.stanford.edu/class/cs9/",
+  "url": "https://web.stanford.edu/class/cs9/",
   "desc": "",
   "status": 200,
   "final": "http://web.stanford.edu/class/cs9/",
@@ -1473,7 +1473,7 @@
  {
   "section": "Interview Preparation",
   "name": "GeeksforGeeks/A computer science portal for geeks",
-  "url": "http://www.geeksforgeeks.org",
+  "url": "https://www.geeksforgeeks.org",
   "desc": "Your All-in-One Learning Portal. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.",
   "status": 200,
   "final": "https://www.geeksforgeeks.org/",
@@ -1913,7 +1913,7 @@
  {
   "section": "MOOCs for learning something new",
   "name": "MOOC.fi",
-  "url": "http://mooc.fi/english.html",
+  "url": "https://mooc.fi/english.html",
   "desc": "",
   "status": 200,
   "final": "https://www.mooc.fi/en/",
@@ -1962,7 +1962,7 @@
  {
   "section": "Sites related to your preferred programming language For me C",
   "name": "Bjarne Stroustrup's C++ Style and Technique FAQ",
-  "url": "http://www.stroustrup.com/bs_faq2.html",
+  "url": "https://www.stroustrup.com/bs_faq2.html",
   "desc": "",
   "status": 200,
   "final": "https://www.stroustrup.com/bs_faq2.html",
@@ -1982,7 +1982,7 @@
  {
   "section": "Sites related to your preferred programming language For me C",
   "name": "C++11 - the new ISO C++ standard",
-  "url": "http://www.stroustrup.com/C++11FAQ.html",
+  "url": "https://www.stroustrup.com/C++11FAQ.html",
   "desc": "",
   "status": 200,
   "final": "https://www.stroustrup.com/C++11FAQ.html",
@@ -2142,7 +2142,7 @@
  {
   "section": "Sites related to your preferred programming language For me C",
   "name": "The C++ Programming Language",
-  "url": "http://www.stroustrup.com/C++.html",
+  "url": "https://www.stroustrup.com/C++.html",
   "desc": "",
   "status": 200,
   "final": "https://www.stroustrup.com/C++.html",
@@ -2222,7 +2222,7 @@
  {
   "section": "Learn AI",
   "name": "aima",
-  "url": "http://aima.cs.berkeley.edu",
+  "url": "https://aima.cs.berkeley.edu",
   "desc": "",
   "status": 200,
   "final": "http://aima.cs.berkeley.edu/",
@@ -2232,7 +2232,7 @@
  {
   "section": "Learn AI",
   "name": "fast.ai",
-  "url": "http://course.fast.ai",
+  "url": "https://course.fast.ai",
   "desc": "A free course designed for people with some coding experience, who want to learn how to apply deep learning and machine learning to practical problems.",
   "status": 200,
   "final": "https://course.fast.ai/",
@@ -3023,7 +3023,7 @@
  {
   "section": "Building a Simple Compiler/Interpreter",
   "name": "Awesome Compilers",
-  "url": "http://aalhour.com/awesome-compilers/",
+  "url": "https://aalhour.com/awesome-compilers/",
   "desc": ":sunglasses: Curated list of awesome resources on Compilers, Interpreters and Runtimes",
   "status": 200,
   "final": "https://aalhour.com/awesome-compilers/",
@@ -3103,7 +3103,7 @@
  {
   "section": "Building a Simple Compiler/Interpreter",
   "name": "Crafting Interpreters",
-  "url": "http://craftinginterpreters.com/",
+  "url": "https://craftinginterpreters.com/",
   "desc": "",
   "status": 200,
   "final": "http://craftinginterpreters.com/",
@@ -3163,7 +3163,7 @@
  {
   "section": "Tutorials",
   "name": "Collecting all the cheat sheets",
-  "url": "http://overapi.com",
+  "url": "https://overapi.com",
   "desc": "OverAPI.com is a site collecting all the cheatsheets,all!",
   "status": 200,
   "final": "https://overapi.com/",
@@ -3273,7 +3273,7 @@
  {
   "section": "Tutorials",
   "name": "Learning the shell.",
-  "url": "http://linuxcommand.org",
+  "url": "https://linuxcommand.org",
   "desc": "LinuxCommand.org is a web site that helps users discover the power of the Linux command line.",
   "status": 200,
   "final": "http://linuxcommand.org/",
@@ -3323,7 +3323,7 @@
  {
   "section": "Tutorials",
   "name": "Open Data Structures",
-  "url": "http://opendatastructures.org",
+  "url": "https://opendatastructures.org",
   "desc": "",
   "status": 200,
   "final": "http://opendatastructures.org/",
@@ -3383,7 +3383,7 @@
  {
   "section": "Tutorials",
   "name": "The Bash Guide",
-  "url": "http://guide.bash.academy",
+  "url": "https://guide.bash.academy",
   "desc": "A complete guide for newcomers and advanced users to correct usage and deepen understanding of the bash shell language.",
   "status": 200,
   "final": "https://guide.bash.academy/",
@@ -3463,7 +3463,7 @@
  {
   "section": "Tutorials",
   "name": "Learn Shell Programming",
-  "url": "http://learnshell.org",
+  "url": "https://learnshell.org",
   "desc": "learnshell.org is a free interactive Shell tutorial for people who want to learn Shell, fast.",
   "status": 200,
   "final": "https://learnshell.org/",
@@ -3553,7 +3553,7 @@
  {
   "section": "Competitive programming",
   "name": "Codeforces",
-  "url": "http://codeforces.com",
+  "url": "https://codeforces.com",
   "desc": "Codeforces. Programming competitions and contests, programming community",
   "status": 200,
   "final": "https://codeforces.com/",
@@ -3623,7 +3623,7 @@
  {
   "section": "Competitive programming",
   "name": "Sphere Online Judge (SPOJ)",
-  "url": "http://www.spoj.com",
+  "url": "https://www.spoj.com",
   "desc": "",
   "status": 403,
   "final": "https://www.spoj.com/",
@@ -4263,7 +4263,7 @@
  {
   "section": "Open Source Websites",
   "name": "Up for Grabs",
-  "url": "http://up-for-grabs.net",
+  "url": "https://up-for-grabs.net",
   "desc": "Want to contribute to open source, but not sure where to start? This is a list of projects which have curated tasks specifically for new contributors. These are a great way to get started with a project, or to help share the load of working on open source projects.",
   "status": 200,
   "final": "https://up-for-grabs.net/",
@@ -4273,7 +4273,7 @@
  {
   "section": "Open Source Websites",
   "name": "First Timers Only",
-  "url": "http://www.firsttimersonly.com",
+  "url": "https://www.firsttimersonly.com",
   "desc": "",
   "status": 200,
   "final": "https://www.firsttimersonly.com/",

@@ -44,7 +44,7 @@ def load(add):
       'Genel bootcamp’lerin aksine yalnızca sunucu tarafına bakıyor.',
       'A backend-focused curriculum with in-browser exercises. Unlike general bootcamps '
       'it looks only at the server side.', O)
-    a('http://mooc.fi/english.html', 'MOOC.fi', ['ücretsiz', 'müfredat'],
+    a('https://mooc.fi/english.html', 'MOOC.fi', ['ücretsiz', 'müfredat'],
       'Helsinki Üniversitesi’nin açık kursları; Java ve Python programlama dersleri '
       'otomatik değerlendirmeli alıştırmalarla geliyor.',
       'The University of Helsinki’s open courses, with Java and Python programming taught through '
@@ -90,7 +90,7 @@ def load(add):
       'editöryal çözümleri yayımlanıyor.',
       'A competitive algorithm platform with monthly contests, difficulty-tagged problems and '
       'published editorial solutions.', P)
-    a('http://codeforces.com', 'Codeforces', ['ücretsiz', 'algoritma'],
+    a('https://codeforces.com', 'Codeforces', ['ücretsiz', 'algoritma'],
       'Yarışmacı programlamanın en yoğun platformu; düzenli turnuvalar ve derecelendirme sistemi. '
       'Sorular LeetCode’dan zor ve matematik ağırlığı yüksek.',
       'The busiest competitive programming platform, with regular rounds and a rating system. '
@@ -100,7 +100,7 @@ def load(add):
       'yeni başlayanlar için Codeforces’tan daha ulaşılabilir.',
       'A Japan-based contest platform whose beginner rounds (ABC) are more approachable for newcomers '
       'than Codeforces.', P)
-    a('http://www.spoj.com', 'SPOJ', ['ücretsiz', 'algoritma'],
+    a('https://www.spoj.com', 'SPOJ', ['ücretsiz', 'algoritma'],
       'Uzun süredir çalışan çevrimiçi yargıç; klasik algoritma problemlerinin geniş arşivi. '
       'Arayüzü eski ama soru havuzu hâlâ referans kabul ediliyor.',
       'A long-running online judge with a large archive of classic algorithm problems. '
@@ -126,12 +126,12 @@ def load(add):
       'Mülakat hazırlığını konu bağımlılığına göre sıralayıp oyunlaştıran platform; '
       'her konu bir öncekinin üstüne bina ediliyor.',
       'Gamified interview preparation ordered by topic dependency, each subject building on the last.', P)
-    a('http://www.codeabbey.com', 'CodeAbbey', ['ücretsiz', 'interaktif'],
+    a('https://www.codeabbey.com', 'CodeAbbey', ['ücretsiz', 'interaktif'],
       'En kolaydan başlayıp kademeli zorlaşan problem dizisi; mutlak sıfırdan başlayanlar için '
       'yarışma platformlarından çok daha nazik bir eğri.',
       'A problem sequence starting at the very easiest and climbing gradually — a far gentler curve than '
       'the contest platforms for absolute beginners.', P)
-    a('http://programmingbydoing.com', 'Programming by Doing', ['ücretsiz', 'öğretici'],
+    a('https://programmingbydoing.com', 'Programming by Doing', ['ücretsiz', 'öğretici'],
       'Küçük ve çok sayıda alıştırmayla programlamayı öğreten site; her adım bir öncekinin '
       'üstüne minik bir ekleme yapıyor. Lise düzeyi giriş için tasarlanmış.',
       'Teaches programming through many small exercises, each adding a little to the last. '
@@ -154,7 +154,7 @@ def load(add):
 
     # ============================================================ LANGUAGES & COMPILERS
     L = 'diller'
-    a('http://craftinginterpreters.com/', 'Crafting Interpreters', ['ücretsiz', 'kitap', 'c-ailesi'],
+    a('https://craftinginterpreters.com/', 'Crafting Interpreters', ['ücretsiz', 'kitap', 'c-ailesi'],
       'Bir dili iki kez sıfırdan yazdıran ücretsiz kitap: önce Java ile ağaç yürüyen yorumlayıcı, '
       'sonra C ile bayt kodu sanal makinesi. Alanın en iyi anlatımlarından.',
       'A free book that has you write a language twice — a tree-walking interpreter in Java, then a '
@@ -174,7 +174,7 @@ def load(add):
       'Derleyici aşamalarının tamamını tek oturumda okunabilir kılıyor.',
       'A tiny compiler of a few hundred heavily commented lines, making every compiler stage readable '
       'in a single sitting.', L)
-    a('http://aalhour.com/awesome-compilers/', 'Awesome Compilers', ['awesome-liste', 'referans'],
+    a('https://aalhour.com/awesome-compilers/', 'Awesome Compilers', ['awesome-liste', 'referans'],
       'Derleyici, yorumlayıcı ve çalışma zamanı kaynaklarının derlemesi; '
       'kitaplar, dersler ve açık kaynak derleyiciler ayrı ayrı listelenmiş.',
       'A collection of compiler, interpreter and runtime resources, with books, courses and open-source '
@@ -199,12 +199,12 @@ def load(add):
       'black ve ruff gibi araçların dayandığı metin.',
       'Python’s official style guide, the rules used for the standard library itself — '
       'the text tools like black and ruff are built on.', L)
-    a('http://www.stroustrup.com/C++11FAQ.html', 'C++11 SSS (Stroustrup)', ['ücretsiz', 'c-ailesi', 'referans'],
+    a('https://www.stroustrup.com/C++11FAQ.html', 'C++11 SSS (Stroustrup)', ['ücretsiz', 'c-ailesi', 'referans'],
       'Dilin yaratıcısının C++11 ile gelen her özelliği neden eklediğini anlattığı SSS. '
       'Özellik listesinden farkı, tasarım gerekçesini vermesi.',
       'The language’s creator explaining why each C++11 feature was added. Unlike a feature list, '
       'it gives the design rationale.', L)
-    a('http://www.stroustrup.com/bs_faq2.html', 'C++ Üslup ve Teknik SSS', ['ücretsiz', 'c-ailesi', 'referans'],
+    a('https://www.stroustrup.com/bs_faq2.html', 'C++ Üslup ve Teknik SSS', ['ücretsiz', 'c-ailesi', 'referans'],
       'Stroustrup’un C++ üslubu ve sık yapılan hatalar üzerine SSS’i; '
       '“bunu neden böyle yapmalıyım” sorularının doğrudan cevabı.',
       'Stroustrup’s FAQ on C++ style and common mistakes — direct answers to “why should I do it this way”.', L)
@@ -272,7 +272,7 @@ def load(add):
       'Tarayıcı açmadan, editörden çıkmadan cevap veriyor.',
       'Pulls a cheat sheet from the terminal with `curl cheat.sh/command` — an answer without opening '
       'a browser or leaving your editor.', R)
-    a('http://overapi.com', 'OverAPI', ['ücretsiz', 'kopya-kâğıdı'],
+    a('https://overapi.com', 'OverAPI', ['ücretsiz', 'kopya-kâğıdı'],
       'Dil ve çatı kopya kâğıtlarını tek sayfada toplayan dizin; '
       'görsel olarak yoğun ama aradığını hızlı buluyorsun.',
       'A directory gathering language and framework cheat sheets on one page — visually dense, '

@@ -100,7 +100,14 @@ def already_there(url):
 
 
 def py(s):
-    """A Python string literal. json.dumps gives valid, escaped output."""
+    """A Python string literal. json.dumps gives valid, escaped output.
+
+    Every value from the issue goes through here, which is what stops a
+    submission from breaking out of the string and into code. The first
+    version rendered the tag list by swapping double quotes for single ones,
+    which would have broken on a tag containing an apostrophe; each tag is now
+    quoted on its own.
+    """
     return json.dumps(s, ensure_ascii=False)
 
 
@@ -112,7 +119,7 @@ def render(rec, issue):
         % issue,
         '    # one language and one voice; both fields below carry the same text.',
         '    add(%s, %s,' % (py(rec['url']), py(rec['name'])),
-        '        %s,' % py(rec['tags']).replace('"', "'"),
+        '        [%s],' % ', '.join(py(t) for t in rec['tags']),
         '        %s,' % py(tr),
         '        %s%s' % (py(tr), ',' if rec['cat'] else ')'),
     ]

@@ -117,7 +117,7 @@ def load(add):
       'kurulu paketler birer tablo. Uç nokta izlemede yaygın.',
       'Turns the operating system into something you query with SQL — running processes, open ports and '
       'installed packages become tables. Common in endpoint monitoring.', T)
-    a('http://vorillaz.github.io/devicons/#/main', 'Devicons', ['ücretsiz', 'görsel-üretim'],
+    a('https://vorillaz.github.io/devicons/#/main', 'Devicons', ['ücretsiz', 'görsel-üretim'],
       'Programlama dili ve araç logolarının ikon fontu; '
       'özgeçmiş, sunum ve README’lerde teknoloji rozeti olarak kullanılıyor.',
       'An icon font of programming language and tool logos, used as technology badges in CVs, slides '
@@ -140,12 +140,12 @@ def load(add):
 
     # ============================================================ SYSTEM & SHELL
     A = 'ag'
-    a('http://tldp.org/LDP/abs/html/', 'Advanced Bash-Scripting Guide', ['ücretsiz', 'kitap'],
+    a('https://tldp.org/LDP/abs/html/', 'Advanced Bash-Scripting Guide', ['ücretsiz', 'kitap'],
       'Bash betiklemenin en kapsamlı ücretsiz referansı; her konu çalıştırılabilir örnekle. '
       'Üslubu eski ama kapsamı hâlâ eşsiz.',
       'The most comprehensive free reference on Bash scripting, every topic with a runnable example. '
       'Dated in style, still unmatched in coverage.', A)
-    a('http://www.tldp.org/LDP/Bash-Beginners-Guide/html/', 'Bash Guide for Beginners', ['ücretsiz', 'öğretici'],
+    a('https://www.tldp.org/LDP/Bash-Beginners-Guide/html/', 'Bash Guide for Beginners', ['ücretsiz', 'öğretici'],
       'Kabuk betiklerine giriş; Advanced rehberin ağırlığına girmeden temelleri kuruyor.',
       'An introduction to shell scripting that lays the groundwork without the weight of the advanced guide.', A)
     a('https://www.gnu.org/software/bash/manual/bashref.html', 'Bash Referans Kılavuzu', ['ücretsiz', 'dokümantasyon'],
@@ -153,7 +153,7 @@ def load(add):
       'tartışmalı konularda son söz burada.',
       'Bash’s official manual — the final word on contested topics like expansion rules and parameter '
       'substitution.', A)
-    a('http://mywiki.wooledge.org/BashGuide', 'BashGuide (Wooledge)', ['ücretsiz', 'öğretici'],
+    a('https://mywiki.wooledge.org/BashGuide', 'BashGuide (Wooledge)', ['ücretsiz', 'öğretici'],
       'İnternetteki kötü Bash örneklerine karşı düzeltici bir rehber; '
       'tırnaklama ve sözcük bölme gibi en sık yapılan hataları merkeze alıyor.',
       'A corrective to the bad Bash examples circulating online, centred on the most common mistakes '
@@ -171,7 +171,7 @@ def load(add):
 
     # ============================================================ AI & DATA
     V = 'veri'
-    a('http://course.fast.ai', 'fast.ai', ['ücretsiz', 'müfredat', 'veri-bilimi'],
+    a('https://course.fast.ai', 'fast.ai', ['ücretsiz', 'müfredat', 'veri-bilimi'],
       'Derin öğrenmeyi tepeden aşağı öğreten kurs: önce çalışan model, sonra teori. '
       'Matematikle başlayan akademik derslerin tam tersi bir sıra izliyor.',
       'Teaches deep learning top-down — a working model first, theory after. The exact inverse of the '
@@ -201,7 +201,7 @@ def load(add):
       'Teoriden çok “bunu nasıl yaparım” sorusuna cevap veriyor.',
       'Application-focused ML tutorials, each ending in working code — answering “how do I do this” '
       'rather than the theory.', V)
-    a('http://aima.cs.berkeley.edu', 'AIMA', ['ücretsiz', 'kitap', 'akademik'],
+    a('https://aima.cs.berkeley.edu', 'AIMA', ['ücretsiz', 'kitap', 'akademik'],
       'Yapay Zeka: Modern Yaklaşım kitabının kaynak sayfası; ders kodu ve '
       'algoritma uygulamaları birden çok dilde yayımlanmış.',
       'The companion site for Artificial Intelligence: A Modern Approach, publishing course code and '
@@ -214,12 +214,12 @@ def load(add):
 
     # ============================================================ INTERVIEWS
     P = 'pratik'
-    a('http://bigocheatsheet.com/#', 'Big-O Cheat Sheet', ['ücretsiz', 'kopya-kâğıdı', 'algoritma', 'mülakat'],
+    a('https://bigocheatsheet.com/#', 'Big-O Cheat Sheet', ['ücretsiz', 'kopya-kâğıdı', 'algoritma', 'mülakat'],
       'Veri yapıları ve sıralama algoritmalarının zaman ve alan karmaşıklıklarını tek tabloda '
       'renk kodlu gösteriyor. Mülakat öncesi son bakış için.',
       'A single colour-coded table of time and space complexity for data structures and sorting '
       'algorithms — the last look before an interview.', P)
-    a('http://ssp.impulsetrain.com/big-o.html', 'Big-O Yanılgıları', ['ücretsiz', 'algoritma'],
+    a('https://ssp.impulsetrain.com/big-o.html', 'Big-O Yanılgıları', ['ücretsiz', 'algoritma'],
       'Büyük-O gösterimi üzerine yaygın yanlış anlamaları düzelten yazı; '
       'en kötü durum ile ortalama durumun karıştırılması gibi.',
       'A piece correcting common misunderstandings of big-O notation, such as conflating worst case '
@@ -229,7 +229,7 @@ def load(add):
       'kaba kuvvet, iyileştirme, test. Panik yerine yöntem sunuyor.',
       'A stepwise framework for approaching an interview algorithm problem — constraints, examples, '
       'brute force, optimise, test. Method instead of panic.', P)
-    a('http://web.stanford.edu/class/cs9/', 'Stanford CS9', ['ücretsiz', 'mülakat', 'algoritma'],
+    a('https://web.stanford.edu/class/cs9/', 'Stanford CS9', ['ücretsiz', 'mülakat', 'algoritma'],
       'Teknik mülakat için problem çözme dersi; Stanford’un ders materyali açık. '
       'Soru bankası değil, düşünme biçimi öğretiyor.',
       'Stanford’s problem-solving course for technical interviews with open materials — it teaches a '

@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>DevOps &amp; Infrastructure — Useful Sites</title>
 <meta name="description" content="Most of these tools mean little alone — they are parts of a stack, usually assembled in this order: version control, containers, deployment, then monitoring. On hosting, the gap be">
 <link rel="canonical" href="https://latifkedi.github.io/useful-sites/k/en/devops.html">
@@ -66,192 +68,192 @@ footer a{color:var(--dim)}</style>
 </header>
 <main>
 <article>
-<h2><a href="https://alexhost.com/" rel="noopener nofollow">AlexHost</a></h2><span class="host">alexhost.com</span>
+<h2><a href="https://alexhost.com/" rel="noopener noreferrer nofollow">AlexHost</a></h2><span class="host">alexhost.com</span>
 <p class="d">Moldova-based hosting chosen for a different jurisdiction and looser content policy — which also raises the question of who your neighbours are.</p>
 <p class="t">Paid, Server, Privacy</p>
 </article>
 <article>
-<h2><a href="https://aws.amazon.com/" rel="noopener nofollow">Amazon Web Services</a></h2><span class="host">aws.amazon.com</span>
+<h2><a href="https://aws.amazon.com/" rel="noopener noreferrer nofollow">Amazon Web Services</a></h2><span class="host">aws.amazon.com</span>
 <p class="d">The cloud with the widest service range. The breadth is an advantage, while cost tracking is its own discipline — egress charges in particular catch people out.</p>
 <p class="t">Paid, Server</p>
 </article>
 <article>
-<h2><a href="https://airflow.apache.org/" rel="noopener nofollow">Apache Airflow</a></h2><span class="host">airflow.apache.org</span>
+<h2><a href="https://airflow.apache.org/" rel="noopener noreferrer nofollow">Apache Airflow</a></h2><span class="host">airflow.apache.org</span>
 <p class="d">You define DAGs in Python and schedule them. The de facto standard for batch data pipelines, and clumsy for event-driven, low-latency work.</p>
 <p class="t">Open Source, Python, Automation, Data Science</p>
 </article>
 <article>
-<h2><a href="https://httpd.apache.org/docs/" rel="noopener nofollow">Apache HTTP Server</a></h2><span class="host">httpd.apache.org</span>
+<h2><a href="https://httpd.apache.org/docs/" rel="noopener noreferrer nofollow">Apache HTTP Server</a></h2><span class="host">httpd.apache.org</span>
 <p class="d">A module architecture plus per-directory configuration through .htaccess. Still dominant in shared hosting, and hungrier for memory than nginx under high concurrency.</p>
 <p class="t">Open Source, Server, Docs</p>
 </article>
 <article>
-<h2><a href="https://kafka.apache.org/42/getting-started/introduction/" rel="noopener nofollow">Apache Kafka</a></h2><span class="host">kafka.apache.org</span>
+<h2><a href="https://kafka.apache.org/42/getting-started/introduction/" rel="noopener noreferrer nofollow">Apache Kafka</a></h2><span class="host">kafka.apache.org</span>
 <p class="d">Retains messages after consumption, with consumers carrying their own offsets so they can replay history. That durability is the real split from classic queues.</p>
 <p class="t">Open Source, Automation</p>
 </article>
 <article>
-<h2><a href="https://avenacloud.com/" rel="noopener nofollow">AvenaCloud</a></h2><span class="host">avenacloud.com</span>
+<h2><a href="https://avenacloud.com/" rel="noopener noreferrer nofollow">AvenaCloud</a></h2><span class="host">avenacloud.com</span>
 <p class="d">A VPS and dedicated server provider positioned on budget for small-scale projects.</p>
 <p class="t">Paid, Server</p>
 </article>
 <article>
-<h2><a href="https://docs.celeryq.dev/en/stable/" rel="noopener nofollow">Celery</a></h2><span class="host">docs.celeryq.dev</span>
+<h2><a href="https://docs.celeryq.dev/en/stable/" rel="noopener noreferrer nofollow">Celery</a></h2><span class="host">docs.celeryq.dev</span>
 <p class="d">The standard for background tasks in Python, using Redis or RabbitMQ as a broker, with scheduled tasks (beat) and retry logic included.</p>
 <p class="t">Open Source, Python, Automation</p>
 </article>
 <article>
-<h2><a href="https://coder.com" rel="noopener nofollow">Coder</a></h2><span class="host">coder.com</span>
+<h2><a href="https://coder.com" rel="noopener noreferrer nofollow">Coder</a></h2><span class="host">coder.com</span>
 <p class="d">Runs development environments as containers on your own infrastructure, reached from a VS Code or JetBrains client. Against GitHub Codespaces it is not tied to a cloud provider — both the compute and the code stay with you.</p>
 <p class="t">Open Source, Self-Hosted, Server, DevOps</p>
 </article>
 <article>
-<h2><a href="https://github.com/fccview/cronmaster" rel="noopener nofollow">Cronmaster</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/fccview/cronmaster" rel="noopener noreferrer nofollow">Cronmaster</a></h2><span class="host">github.com</span>
 <p class="d">A self-hosted web interface for cron jobs that renders expressions in readable form and keeps a run log. Against `crontab -e` it shows the next run time and the last output, which makes silently failing jobs visible.</p>
 <p class="t">Open Source, Self-Hosted, DevOps</p>
 </article>
 <article>
-<h2><a href="https://crontab-generator.org/" rel="noopener nofollow">Crontab Generator</a></h2><span class="host">crontab-generator.org</span>
+<h2><a href="https://crontab-generator.org/" rel="noopener noreferrer nofollow">Crontab Generator</a></h2><span class="host">crontab-generator.org</span>
 <p class="d">Builds a cron expression from a form and states in words when it will fire. Against crontab.guru it runs the other way: instead of decoding an expression, it produces one from the schedule you describe.</p>
 <p class="t">In Browser, Free, DevOps</p>
 </article>
 <article>
-<h2><a href="https://github.com/dokploy/dokploy" rel="noopener nofollow">Dokploy</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/dokploy/dokploy" rel="noopener noreferrer nofollow">Dokploy</a></h2><span class="host">github.com</span>
 <p class="d">Brings a Vercel-like deploy experience to your own VPS — git-push deploys, database provisioning, automatic TLS. It fills the hole left when Heroku’s free tier closed.</p>
 <p class="t">Open Source, GitHub, Self-Hosted, Docker</p>
 </article>
 <article>
-<h2><a href="https://www.fromlatest.io/" rel="noopener nofollow">FromLatest</a></h2><span class="host">fromlatest.io</span>
+<h2><a href="https://www.fromlatest.io/" rel="noopener noreferrer nofollow">FromLatest</a></h2><span class="host">fromlatest.io</span>
 <p class="d">Analyses a Dockerfile, explains what happens layer by layer and suggests improvements. Against hadolint it is visual and states why each rule exists, which makes it usable for learning to write Dockerfiles rather than only linting them.</p>
 <p class="t">Docker, In Browser, DevOps</p>
 </article>
 <article>
-<h2><a href="https://gource.io/" rel="noopener nofollow">Gource</a></h2><span class="host">gource.io</span>
+<h2><a href="https://gource.io/" rel="noopener noreferrer nofollow">Gource</a></h2><span class="host">gource.io</span>
 <p class="d">Renders repository history as a growing animated tree where you see who touched what. Not an analysis tool — a way to narrate a project’s history.</p>
 <p class="t">Open Source, Git, Interactive</p>
 </article>
 <article>
-<h2><a href="https://grafana.com/" rel="noopener nofollow">Grafana</a></h2><span class="host">grafana.com</span>
+<h2><a href="https://grafana.com/" rel="noopener noreferrer nofollow">Grafana</a></h2><span class="host">grafana.com</span>
 <p class="d">Unifies Prometheus, Loki, PostgreSQL and dozens of sources on one dashboard. Being data-source agnostic is how it became the shared face of monitoring stacks.</p>
 <p class="t">Open Source, Observability</p>
 </article>
 <article>
-<h2><a href="https://www.guzel.net.tr/" rel="noopener nofollow">Güzel Hosting</a></h2><span class="host">guzel.net.tr</span>
+<h2><a href="https://www.guzel.net.tr/" rel="noopener noreferrer nofollow">Güzel Hosting</a></h2><span class="host">guzel.net.tr</span>
 <p class="d">Turkey-based hosting and domains with .tr registration, local payment and Turkish support — practical when the server has to sit in Turkey.</p>
 <p class="t">Paid, Turkish, Server</p>
 </article>
 <article>
-<h2><a href="https://www.hetzner.com/" rel="noopener nofollow">Hetzner</a></h2><span class="host">hetzner.com</span>
+<h2><a href="https://www.hetzner.com/" rel="noopener noreferrer nofollow">Hetzner</a></h2><span class="host">hetzner.com</span>
 <p class="d">Dedicated servers and VPS in Germany and Finland at a fraction of the big clouds’ price for the same cores and RAM. No managed services — operations are entirely yours.</p>
 <p class="t">Paid, Server</p>
 </article>
 <article>
-<h2><a href="https://k8syaml.com/" rel="noopener nofollow">K8s YAML Generator</a></h2><span class="host">k8syaml.com</span>
+<h2><a href="https://k8syaml.com/" rel="noopener noreferrer nofollow">K8s YAML Generator</a></h2><span class="host">k8syaml.com</span>
 <p class="d">Generates Kubernetes manifests from a form, explaining each field beside it. Against copying from the docs you leave with a valid manifest and pick up what the fields mean on the way.</p>
 <p class="t">DevOps, In Browser, Free</p>
 </article>
 <article>
-<h2><a href="https://kestra.io/" rel="noopener nofollow">Kestra</a></h2><span class="host">kestra.io</span>
+<h2><a href="https://kestra.io/" rel="noopener noreferrer nofollow">Kestra</a></h2><span class="host">kestra.io</span>
 <p class="d">Flows are declared in YAML, and being language-agnostic it works for teams that are not on Python. It sits well in version control.</p>
 <p class="t">Open Source, Automation, DevOps</p>
 </article>
 <article>
-<h2><a href="https://www.litespeedtech.com/" rel="noopener nofollow">LiteSpeed</a></h2><span class="host">litespeedtech.com</span>
+<h2><a href="https://www.litespeedtech.com/" rel="noopener noreferrer nofollow">LiteSpeed</a></h2><span class="host">litespeedtech.com</span>
 <p class="d">A commercial server that reads Apache configuration as-is while using an event-driven core and fewer resources. Common in WordPress hosting alongside its cache plugin.</p>
 <p class="t">Paid, Server</p>
 </article>
 <article>
-<h2><a href="https://docs.litespeedtech.com/" rel="noopener nofollow">LiteSpeed Dokümantasyonu</a></h2><span class="host">docs.litespeedtech.com</span>
+<h2><a href="https://docs.litespeedtech.com/" rel="noopener noreferrer nofollow">LiteSpeed Dokümantasyonu</a></h2><span class="host">docs.litespeedtech.com</span>
 <p class="d">The configuration reference, including how LSCache rules are written — cache settings account for most of the performance you get.</p>
 <p class="t">Docs, Server, Database</p>
 </article>
 <article>
-<h2><a href="https://www.make.com/" rel="noopener nofollow">Make</a></h2><span class="host">make.com</span>
+<h2><a href="https://www.make.com/" rel="noopener noreferrer nofollow">Make</a></h2><span class="host">make.com</span>
 <p class="d">Scenarios carry branching, loops and error handling, which makes complex flows easier than Zapier’s linear steps. The learning curve is correspondingly steeper.</p>
 <p class="t">Paid, Freemium, Automation</p>
 </article>
 <article>
-<h2><a href="https://n8n.io/" rel="noopener nofollow">n8n</a></h2><span class="host">n8n.io</span>
+<h2><a href="https://n8n.io/" rel="noopener noreferrer nofollow">n8n</a></h2><span class="host">n8n.io</span>
 <p class="d">A visual node editor with unmetered executions when self-hosted. You can drop JavaScript into a node, so you do not hit the usual no-code wall.</p>
 <p class="t">Open Source, Self-Hosted, Automation, Docker</p>
 </article>
 <article>
-<h2><a href="https://docs.n8n.io/" rel="noopener nofollow">n8n Dokümantasyonu</a></h2><span class="host">docs.n8n.io</span>
+<h2><a href="https://docs.n8n.io/" rel="noopener noreferrer nofollow">n8n Dokümantasyonu</a></h2><span class="host">docs.n8n.io</span>
 <p class="d">Node reference, self-hosting and credential management. The queue-mode scaling section matters for anyone running it in production.</p>
 <p class="t">Docs, Automation</p>
 </article>
 <article>
-<h2><a href="https://github.com/m1k1o/neko" rel="noopener nofollow">Neko</a></h2><span class="host">github.com</span>
+<h2><a href="https://github.com/m1k1o/neko" rel="noopener noreferrer nofollow">Neko</a></h2><span class="host">github.com</span>
 <p class="d">Runs a browser in a container and shares it over WebRTC, with several people able to control one session. Used for watch-together and for isolated browsing.</p>
 <p class="t">Open Source, GitHub, Docker, Networking</p>
 </article>
 <article>
-<h2><a href="https://nginx.org/en/docs/" rel="noopener nofollow">nginx</a></h2><span class="host">nginx.org</span>
+<h2><a href="https://nginx.org/en/docs/" rel="noopener noreferrer nofollow">nginx</a></h2><span class="host">nginx.org</span>
 <p class="d">Its event-driven architecture carries tens of thousands of concurrent connections on little memory. It is used as a reverse proxy and load balancer more often than as a web server.</p>
 <p class="t">Open Source, Server</p>
 </article>
 <article>
-<h2><a href="https://njal.la/" rel="noopener nofollow">Njalla</a></h2><span class="host">njal.la</span>
+<h2><a href="https://njal.la/" rel="noopener noreferrer nofollow">Njalla</a></h2><span class="host">njal.la</span>
 <p class="d">Registers the domain in its own name on your behalf, so you do not appear in WHOIS. Unlike a privacy proxy the legal ownership sits with them, which makes it a question of trust.</p>
 <p class="t">Paid, Privacy</p>
 </article>
 <article>
-<h2><a href="https://pipedream.com/" rel="noopener nofollow">Pipedream</a></h2><span class="host">pipedream.com</span>
+<h2><a href="https://pipedream.com/" rel="noopener noreferrer nofollow">Pipedream</a></h2><span class="host">pipedream.com</span>
 <p class="d">Any step can be Node.js or Python and can pull an npm or PyPI package. The option that closes the gap between visual automation and real code.</p>
 <p class="t">Paid, Freemium, Automation, System Design</p>
 </article>
 <article>
-<h2><a href="https://www.microsoft.com/power-platform/products/power-automate" rel="noopener nofollow">Power Automate</a></h2><span class="host">microsoft.com</span>
+<h2><a href="https://www.microsoft.com/power-platform/products/power-automate" rel="noopener noreferrer nofollow">Power Automate</a></h2><span class="host">microsoft.com</span>
 <p class="d">SharePoint, Teams and Dataverse connectors are native. If the organisation is already on Microsoft 365 the licence is usually paid for — which is the real reason it gets chosen.</p>
 <p class="t">Paid, Automation</p>
 </article>
 <article>
-<h2><a href="https://www.prefect.io/" rel="noopener nofollow">Prefect</a></h2><span class="host">prefect.io</span>
+<h2><a href="https://www.prefect.io/" rel="noopener noreferrer nofollow">Prefect</a></h2><span class="host">prefect.io</span>
 <p class="d">A flow is an ordinary Python function you decorate into orchestration. Moving local code to production is shorter than learning Airflow’s separate DSL.</p>
 <p class="t">Open Source, Python, Automation</p>
 </article>
 <article>
-<h2><a href="https://git-scm.com/book/tr/v2" rel="noopener nofollow">Pro Git (Türkçe)</a></h2><span class="host">git-scm.com</span>
+<h2><a href="https://git-scm.com/book/tr/v2" rel="noopener noreferrer nofollow">Pro Git (Türkçe)</a></h2><span class="host">git-scm.com</span>
 <p class="d">The Turkish translation of Git’s official book. The internals chapter — object model, refs — is what frees you from memorising commands and actually makes Git make sense.</p>
 <p class="t">Free, Turkish, Book, Git</p>
 </article>
 <article>
-<h2><a href="https://www.rabbitmq.com/tutorials" rel="noopener nofollow">RabbitMQ Öğreticileri</a></h2><span class="host">rabbitmq.com</span>
+<h2><a href="https://www.rabbitmq.com/tutorials" rel="noopener noreferrer nofollow">RabbitMQ Öğreticileri</a></h2><span class="host">rabbitmq.com</span>
 <p class="d">The official six-step series on queue patterns — work queues, pub/sub, routing, RPC. Kafka is for event streaming; this is for task distribution.</p>
 <p class="t">Open Source, Automation</p>
 </article>
 <article>
-<h2><a href="https://redis.io/docs/latest/" rel="noopener nofollow">Redis Dokümantasyonu</a></h2><span class="host">redis.io</span>
+<h2><a href="https://redis.io/docs/latest/" rel="noopener noreferrer nofollow">Redis Dokümantasyonu</a></h2><span class="host">redis.io</span>
 <p class="d">The reference for its data structures — lists, sets, sorted sets, streams. Treating Redis as a plain key-value store means leaving most of the tool unused.</p>
 <p class="t">Docs, Database</p>
 </article>
 <article>
-<h2><a href="https://sentry.io/welcome/" rel="noopener nofollow">Sentry</a></h2><span class="host">sentry.io</span>
+<h2><a href="https://sentry.io/welcome/" rel="noopener noreferrer nofollow">Sentry</a></h2><span class="host">sentry.io</span>
 <p class="d">Collects errors with stack traces, source maps and user context, grouping duplicates. Against reading log files, it tells you how many users a given error actually hit.</p>
 <p class="t">Freemium, Open Source, Observability</p>
 </article>
 <article>
-<h2><a href="https://www.shellcheck.net/" rel="noopener nofollow">ShellCheck</a></h2><span class="host">shellcheck.net</span>
+<h2><a href="https://www.shellcheck.net/" rel="noopener noreferrer nofollow">ShellCheck</a></h2><span class="host">shellcheck.net</span>
 <p class="d">A static analyser for shell scripts that finds unquoted variables, wrong test syntax and portability traps. Against `bash -n` it checks meaning rather than syntax, so it catches the script that runs and misbehaves.</p>
 <p class="t">Open Source, CLI, Free</p>
 </article>
 <article>
-<h2><a href="https://temporal.io/" rel="noopener nofollow">Temporal</a></h2><span class="host">temporal.io</span>
+<h2><a href="https://temporal.io/" rel="noopener noreferrer nofollow">Temporal</a></h2><span class="host">temporal.io</span>
 <p class="d">Records workflow state as an event history, so a crashed process resumes at the same point. Built for multi-day operations that cannot simply be restarted.</p>
 <p class="t">Open Source, Automation</p>
 </article>
 <article>
-<h2><a href="https://vercel.com/" rel="noopener nofollow">Vercel</a></h2><span class="host">vercel.com</span>
+<h2><a href="https://vercel.com/" rel="noopener noreferrer nofollow">Vercel</a></h2><span class="host">vercel.com</span>
 <p class="d">Frontend-focused deployment whose per-PR preview environments became an industry standard. It is the company behind Next.js, so integration with that framework is tightest here.</p>
 <p class="t">Paid, Freemium, Server, Embedded</p>
 </article>
 <article>
-<h2><a href="https://www.yamllint.com/" rel="noopener nofollow">YAMLlint</a></h2><span class="host">yamllint.com</span>
+<h2><a href="https://www.yamllint.com/" rel="noopener noreferrer nofollow">YAMLlint</a></h2><span class="host">yamllint.com</span>
 <p class="d">A YAML validator that surfaces indentation and quoting errors and prints the parsed document back. Against a JSON validator it catches YAML’s actual trap: indentation that silently produces the wrong structure.</p>
 <p class="t">In Browser, Free, DevOps</p>
 </article>
 <article>
-<h2><a href="https://zapier.com/" rel="noopener nofollow">Zapier</a></h2><span class="host">zapier.com</span>
+<h2><a href="https://zapier.com/" rel="noopener noreferrer nofollow">Zapier</a></h2><span class="host">zapier.com</span>
 <p class="d">The widest integration catalogue — the niche SaaS you want is probably already there. Pricing is per task, so it gets expensive quickly as volume grows.</p>
 <p class="t">Paid, Freemium, Automation</p>
 </article>
