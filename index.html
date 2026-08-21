@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kullanışlı Siteler</title>
 <meta name="description" content="Yazılım, yapay zeka, güvenlik ve donanım üzerine elle derlenmiş bağlantı dizini. Her kayıtta ne işe yaradığı ve benzerlerinden farkı yazılı.">
+<link rel="canonical" href="https://cebrailcalim.github.io/useful-sites/">
+<link rel="alternate" type="application/atom+xml" title="Kullanışlı Siteler" href="feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kullanışlı Siteler">
+<meta property="og:title" content="Kullanışlı Siteler">
+<meta property="og:description" content="717 bağlantı. Her kayıtta ne işe yaradığı ve benzerlerinden nerede ayrıldığı yazılı.">
+<meta property="og:url" content="https://cebrailcalim.github.io/useful-sites/">
+<meta property="og:image" content="https://cebrailcalim.github.io/useful-sites/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>▤</text></svg>">
 <style>
 /* ---------------------------------------------------------------- jeton */
@@ -169,6 +182,12 @@ h2 .n{font-variant-numeric:tabular-nums}
 /* kaynak ve doğrulama rozetleri */
 .badge{font:11.5px/1 var(--mono);color:var(--faint);white-space:nowrap}
 .badge.ext{color:var(--accent);opacity:.8}
+.badge.dead{color:#fff;background:var(--accent);border-color:var(--accent);opacity:1}
+.arch{
+  font:11.5px/1 var(--mono);color:var(--faint);text-decoration:none;
+  border-bottom:1px dotted var(--rule);padding-bottom:1px;
+}
+.arch:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .srcbar{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;align-items:center}
 .srcbar .lbl{font:12px/1 var(--mono);color:var(--faint);margin-right:2px}
 mark{background:var(--mark);color:inherit;padding:0 2px;border-radius:2px}
@@ -203,6 +222,13 @@ footer{
 }
 footer kbd{font:12px var(--mono);border:1px solid var(--rule);border-radius:3px;padding:2px 5px;color:var(--dim)}
 footer a{color:var(--dim)}
+/* Klavyeyle gezen biri her seferinde 63 etiketin arasindan gecmesin. */
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:40;
+  font:13px/1 var(--mono);color:var(--bg);background:var(--accent);
+  padding:12px 18px;border-radius:0 0 3px 0;text-decoration:none;
+}
+.skip:focus{left:0}
 
 /* ---------------------------------------------------------------- gönderme */
 dialog#sub{
@@ -317,6 +343,7 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
 </style>
 </head>
 <body>
+<a class="skip" id="skip" href="#list"></a>
 <div class="wrap">
 
 <header>
@@ -352,26 +379,28 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
     <button class="btn navback" id="back" type="button"></button>
     <ol id="nav"></ol>
   </nav>
-  <main id="list"></main>
+  <main id="list" tabindex="-1"></main>
 </div>
 
 <footer id="foot"></footer>
 </div>
 
-<dialog id="sub">
+<dialog id="sub" aria-labelledby="s-title">
   <div class="sub-h">
     <h2 id="s-title"></h2>
     <button class="btn" id="s-close" type="button" aria-label="Kapat">✕</button>
   </div>
   <div class="sub-tabs" role="tablist">
-    <button type="button" id="s-t1" role="tab" aria-selected="true"></button>
-    <button type="button" id="s-t2" role="tab" aria-selected="false"></button>
+    <button type="button" id="s-t1" role="tab" aria-selected="true"
+            aria-controls="s-one" tabindex="0"></button>
+    <button type="button" id="s-t2" role="tab" aria-selected="false"
+            aria-controls="s-bulk" tabindex="-1"></button>
   </div>
 
   <div class="sub-body">
     <p class="sub-note" id="s-note"></p>
 
-    <div id="s-one">
+    <div id="s-one" role="tabpanel" aria-labelledby="s-t1">
       <div class="fld"><label for="f-url">URL</label>
         <input id="f-url" type="url" inputmode="url" placeholder="https://…"></div>
       <div class="fld"><label for="f-name" id="l-name"></label>
@@ -385,7 +414,7 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
       <p class="sub-warn" id="s-warn"></p>
     </div>
 
-    <div id="s-bulk" hidden>
+    <div id="s-bulk" role="tabpanel" aria-labelledby="s-t2" hidden>
       <div class="drop" id="s-drop" tabindex="0" role="button"></div>
       <input id="s-file" type="file" accept=".html,.htm,.json,.csv,.txt" hidden>
       <div id="s-res" hidden>
@@ -408,6 +437,9 @@ dialog#sub::backdrop{background:rgba(0,0,0,.45)}
 var PER_PAGE = 20;
 var CHECKED  = "20.08.2026";
 var REPO     = "https://github.com/CebrailCalim/useful-sites";
+/* Baglanti dizinlerinin ortak kaderi curumek. Her kayda arsiv cikisi
+   koymak, site oldugunde kaydin butun degerini kaybetmesini onluyor. */
+var ARCHIVE  = "https://web.archive.org/web/2024/";
 
 var T = {
   tr:{
@@ -434,6 +466,9 @@ var T = {
          'Açıklamalar projelerin kendi belgelerine bakılarak yazıldı; karşılaştırmalı yargılar derleyene ait. '+
          'Ölü ya da hatalı bir kayıt görürsen <a href="'+REPO+'/issues/new/choose">bildir</a> — '+
          'yeni bağlantı önerileri de aynı yerden.',
+    skip:"İçeriğe Atla",
+    dead:"Ölü", deadTip:"Son taramada yanıt vermedi — arşivden bak",
+    arch:"arşiv", archTip:"Sayfanın Wayback Machine'deki kopyası",
     add:"Bağlantı Gönder",
     sTitle:"Bağlantı Gönder",
     sTab1:"Tek Bağlantı", sTab2:"Dosyadan Toplu",
@@ -481,6 +516,9 @@ var T = {
          "Descriptions are written from each project's own documentation; comparative judgements are the curator's. "+
          'Spotted a dead or wrong entry? <a href="'+REPO+'/issues/new/choose">Tell me</a> — '+
          'link suggestions go to the same place.',
+    skip:"Skip To Content",
+    dead:"Dead", deadTip:"No response in the last scan — try the archive",
+    arch:"archive", archTip:"The page as kept by the Wayback Machine",
     add:"Submit a Link",
     sTitle:"Submit a Link",
     sTab1:"Single Link", sTab2:"Bulk From File",
@@ -659,6 +697,10 @@ function itemHTML(d, showYear){
     '<span class="badge'+(d.src!=="kedi"?' ext':'')+'" title="'+esc(srcNote(d))+'">'+
       esc(srcLabel(d))+'</span>'+
     (showYear ? '<span class="age">'+whenOf(d)+'</span>' : '')+
+    (d.dead ? '<span class="badge dead" title="'+esc(T[lang].deadTip)+'">'+
+              esc(T[lang].dead)+'</span>' : '')+
+    '<a class="arch" href="'+esc(ARCHIVE+d.url)+'" target="_blank" '+
+      'rel="noopener noreferrer" title="'+esc(T[lang].archTip)+'">'+esc(T[lang].arch)+'</a>'+
     '</div><p class="desc">'+hl(descOf(d))+'</p>'+
     ((d.tags||[]).length
       ? '<p class="itags">'+d.tags.map(function(t){
@@ -712,6 +754,7 @@ function render(){
   $("#q").placeholder       = L.ph;
   if($("#q").value !== q) $("#q").value = q;
   $("#rand").textContent    = L.rand;
+  $("#skip").textContent    = L.skip;
   $("#back").textContent    = L.back;
   $("#foot").innerHTML      = L.foot + "<br>" + L.kb;
   $("#back").classList.toggle("show", !!activeCat);
@@ -1232,10 +1275,15 @@ function paintSub(){
   paintFoot();
 }
 
-function setTab(t){
+function setTab(t, focus){
   subTab = t;
   $("#s-t1").setAttribute("aria-selected", t === "one");
   $("#s-t2").setAttribute("aria-selected", t === "bulk");
+  /* role="tablist" ok tuslariyla gezilmeyi vaat ediyor; sadece secili sekme
+     Tab sirasinda kalir, digerine ok tuslariyla geciliyor. */
+  $("#s-t1").tabIndex = t === "one"  ? 0 : -1;
+  $("#s-t2").tabIndex = t === "bulk" ? 0 : -1;
+  if(focus) $(t === "one" ? "#s-t1" : "#s-t2").focus();
   $("#s-one").hidden  = t !== "one";
   $("#s-bulk").hidden = t === "one";
   $("#s-note").innerHTML = T[lang][t === "one" ? "sNote" : "sNoteB"];
@@ -1246,6 +1294,12 @@ $("#addbtn").addEventListener("click", function(){ paintSub(); dlg.showModal() }
 $("#s-close").addEventListener("click", function(){ dlg.close() });
 $("#s-t1").addEventListener("click", function(){ setTab("one") });
 $("#s-t2").addEventListener("click", function(){ setTab("bulk") });
+$(".sub-tabs").addEventListener("keydown", function(e){
+  if(e.key === "ArrowRight" || e.key === "ArrowLeft"){
+    e.preventDefault();
+    setTab(subTab === "one" ? "bulk" : "one", true);
+  }
+});
 
 /* Panelin dışına tıklayınca kapansın — <dialog> bunu kendiliğinden yapmıyor. */
 dlg.addEventListener("click", function(e){

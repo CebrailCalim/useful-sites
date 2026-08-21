@@ -19,6 +19,9 @@ import urllib3
 
 urllib3.disable_warnings()
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import readlinks  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36')
@@ -29,8 +32,7 @@ SOFT = {401, 403, 405, 406, 429, 500, 503}
 
 
 def load_links():
-    src = io.open(os.path.join(ROOT, 'links.js'), encoding='utf-8').read()
-    return json.loads(src[src.index('['):src.rindex(';')])
+    return readlinks.read(ROOT)
 
 
 def check(rec):
@@ -72,7 +74,12 @@ def write_verified(links, bad_by_url):
             ver[k] = {'d': today, 's': 'ok'}
         elif b['status'] in SOFT:
             ver[k] = {'d': today, 's': 'engel'}
-        # gercekten olu olanin tarihini tazelemiyoruz: eski tarih uyari degeri tasiyor
+        else:
+            # Gercekten olu. Tarihi tazelemiyoruz -- eski tarih uyari degeri
+            # tasiyor -- ama durumu isaretliyoruz: site bu kayitta okuyucuyu
+            # uyarip arsive yonlendirebilsin. Issue'da kalan bir bilgi
+            # ziyaretciye ulasmiyor.
+            ver[k] = {'d': ver.get(k, {}).get('d', today), 's': 'olu'}
     json.dump(ver, io.open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print('verified.json guncellendi:', len(ver))
 

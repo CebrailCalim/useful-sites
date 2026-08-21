@@ -18,6 +18,9 @@ import concurrent.futures as cf
 
 import requests
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import readlinks  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOKEN = os.environ.get('GITHUB_TOKEN') or os.environ.get('GH_TOKEN')
 
@@ -31,8 +34,7 @@ SKIP_OWNERS = {'topics', 'features', 'education', 'sponsors', 'orgs', 'collectio
 
 
 def repos():
-    src = io.open(os.path.join(ROOT, 'links.js'), encoding='utf-8').read()
-    rows = json.loads(src[src.index('['):src.rindex(';')])
+    rows = readlinks.read(ROOT)
     out = []
     for r in rows:
         m = re.match(r'https://github\.com/([^/]+)/([^/#?]+)', r['url'])

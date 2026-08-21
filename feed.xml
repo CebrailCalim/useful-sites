@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Kullanışlı Siteler</title>
+<subtitle>Yazılım, yapay zeka, güvenlik ve bilim üzerine açıklamalı bağlantı dizini</subtitle>
+<link href="https://cebrailcalim.github.io/useful-sites/feed.xml" rel="self"/>
+<link href="https://cebrailcalim.github.io/useful-sites/"/>
+<id>https://cebrailcalim.github.io/useful-sites/</id>
+<updated>2026-08-21T00:08:13Z</updated>
+<entry>
+  <title>Programcının Ziyaret Etmesi Gereken Siteler</title>
+  <link href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit"/>
+  <id>https://github.com/sdmg15/Best-websites-a-programmer-should-visit</id>
+  <updated>2026-08-19T23:41:12Z</updated>
+  <category term="Referans &amp; Koleksiyonlar"/>
+  <summary>Kullanım amacına göre gruplanmış geliştirici bağlantı derlemesi: alıştırma, haber, araç, kitap. 76 bin yıldıza rağmen 1 Kasım 2025’te arşivlendi — artık salt okunur, ölü bağlantılar temizlenmiyor. Tarihsel bir kesit olarak değerli, güncel kaynak olarak değil.</summary>
+</entry>
+<entry>
+  <title>Learn X in Y Minutes</title>
+  <link href="https://learnxinyminutes.com/"/>
+  <id>https://learnxinyminutes.com/</id>
+  <updated>2026-08-19T23:39:30Z</updated>
+  <category term="Referans &amp; Koleksiyonlar"/>
+  <summary>Bir dili tek yorumlu kod dosyasıyla tanıtıyor. Başka dil bilenler için en hızlı geçiş yolu: kavramları değil yalnızca sözdizimi farklarını okuyorsun.</summary>
+</entry>
+<entry>
+  <title>Literate Programming</title>
+  <link href="http://literateprogramming.com/"/>
+  <id>http://literateprogramming.com/</id>
+  <updated>2026-08-19T23:38:44Z</updated>
+  <category term="Referans &amp; Koleksiyonlar"/>
+  <summary>Knuth’un kodu düzyazıyla iç içe yazma fikrinin arşivi. Jupyter not defterlerinin ve bugünkü “açıklanabilir kod” tartışmasının kökeni buraya çıkıyor.</summary>
+</entry>
+<entry>
+  <title>Free for Developers</title>
+  <link href="https://free-for.dev/#/"/>
+  <id>https://free-for.dev/#/</id>
+  <updated>2026-08-19T23:38:16Z</updated>
+  <category term="Referans &amp; Koleksiyonlar"/>
+  <summary>Ücretsiz katmanı olan geliştirici servislerinin listesi: barındırma, CI, izleme, e-posta. Yan projenin maliyetini sıfıra yakın tutmanın haritası.</summary>
+</entry>
+<entry>
+  <title>Compiler Explorer</title>
+  <link href="https://godbolt.org/"/>
+  <id>https://godbolt.org/</id>
+  <updated>2026-08-19T23:35:33Z</updated>
+  <category term="Araçlar &amp; Yardımcılar"/>
+  <summary>Kaynak kodun yanına ürettiği assembly’i koyuyor; optimizasyon seviyesini ve derleyici sürümünü değiştirip farkı anında görüyorsun. Performans tartışmalarını fikirden ölçüme taşıyor.</summary>
+</entry>
+<entry>
+  <title>cppreference</title>
+  <link href="https://cppreference.com/"/>
+  <id>https://cppreference.com/</id>
+  <updated>2026-08-19T23:34:19Z</updated>
+  <category term="Programlama Dilleri"/>
+  <summary>C ve C++ standart kütüphanesinin fiilî referansı; her özellikte hangi standartta (C++11/17/20/23) geldiği işaretli. Öğretici siteler bu sürüm ayrımını genelde atlıyor.</summary>
+</entry>
+<entry>
+  <title>regex101</title>
+  <link href="https://regex101.com/"/>
+  <id>https://regex101.com/</id>
+  <updated>2026-08-19T23:34:13Z</updated>
+  <category term="Araçlar &amp; Yardımcılar"/>
+  <summary>İfadeyi jeton jeton açıklıyor ve hata ayıklayıcısıyla eşleşmenin nerede koptuğunu gösteriyor. PCRE, JavaScript ve Python lehçeleri arasında geçiş yapabiliyorsun.</summary>
+</entry>
+<entry>
+  <title>High Scalability</title>
+  <link href="https://highscalability.com/"/>
+  <id>https://highscalability.com/</id>
+  <updated>2026-08-19T23:34:09Z</updated>
+  <category term="Backend, API &amp; Sistem Tasarımı"/>
+  <summary>On beş yılı aşkın mimari yazısı arşivi. Eski yazılar teknoloji olarak eskimiş olsa da ölçekleme baskısının nasıl karşılandığını görmek için hâlâ okunuyor.</summary>
+</entry>
+<entry>
+  <title>System Design One</title>
+  <link href="https://systemdesign.one/"/>
+  <id>https://systemdesign.one/</id>
+  <updated>2026-08-19T23:34:06Z</updated>
+  <category term="Backend, API &amp; Sistem Tasarımı"/>
+  <summary>Gerçek şirketlerin mimarisini vaka çalışması olarak çözümlüyor; sayısal büyüklükler ve yapılan takasları veriyor. Soyut anlatımlardan bu somutluk ayırıyor.</summary>
+</entry>
+<entry>
+  <title>CSS-Tricks</title>
+  <link href="https://css-tricks.com/"/>
+  <id>https://css-tricks.com/</id>
+  <updated>2026-08-19T23:34:04Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Yirmi yıllık CSS tekniği arşivi; Flexbox ve Grid rehberleri fiilî başvuru kaynağı hâline geldi. Belirli bir düzen problemi ararken spesifikasyondan hızlı sonuç veriyor.</summary>
+</entry>
+<entry>
+  <title>Flexbox Froggy</title>
+  <link href="https://flexboxfroggy.com/"/>
+  <id>https://flexboxfroggy.com/</id>
+  <updated>2026-08-19T23:34:03Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Kurbağaları hizalayarak Flexbox öğreten oyun; Grid Garden’ın kardeşi. justify-content ile align-items karışıklığını yirmi dakikada bitiriyor.</summary>
+</entry>
+<entry>
+  <title>Grid Garden</title>
+  <link href="https://cssgridgarden.com/"/>
+  <id>https://cssgridgarden.com/</id>
+  <updated>2026-08-19T23:34:00Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Havuç sulayarak CSS Grid öğreten 28 bölümlük oyun. grid-column ve grid-area gibi özellikler yazarak öğrenildiğinde akılda kalıyor.</summary>
+</entry>
+<entry>
+  <title>W3C Markup Validation</title>
+  <link href="https://validator.w3.org/"/>
+  <id>https://validator.w3.org/</id>
+  <updated>2026-08-19T23:33:58Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>HTML’i spesifikasyona göre denetliyor; tarayıcının sessizce toparladığı kapatılmamış etiket ve geçersiz iç içe geçmeleri ortaya çıkarıyor. Erişilebilirlik sorunlarının bir kısmı buradan çıkar.</summary>
+</entry>
+<entry>
+  <title>Python Tutor</title>
+  <link href="https://pythontutor.com/"/>
+  <id>https://pythontutor.com/</id>
+  <updated>2026-08-19T23:33:57Z</updated>
+  <category term="Pratik &amp; Alıştırma"/>
+  <summary>Kodu satır satır çalıştırıp yığın çerçevelerini ve heap’teki nesneleri çiziyor. Referans, kapsam ve değişebilir varsayılan argüman hatalarını anlatmakta eşi yok.</summary>
+</entry>
+<entry>
+  <title>HTML Reference</title>
+  <link href="https://htmlreference.io/"/>
+  <id>https://htmlreference.io/</id>
+  <updated>2026-08-19T23:33:57Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>Her HTML etiketi ve özniteliği görsel örnekle listelenmiş, tek sayfada göz gezdirilebiliyor. MDN’in derinliği yok ama “bu etiket ne yapıyordu” sorusuna daha hızlı cevap veriyor.</summary>
+</entry>
+<entry>
+  <title>Kaggle</title>
+  <link href="https://www.kaggle.com/"/>
+  <id>https://www.kaggle.com/</id>
+  <updated>2026-08-19T23:33:55Z</updated>
+  <category term="Veri Bilimi &amp; Makine Öğrenmesi"/>
+  <summary>Yarışma, veri kümesi ve not defteri aynı platformda. Asıl değeri, kazanan çözümlerin yarışma bitince açıkça paylaşılması — uygulamalı ML’in en iyi açık arşivi.</summary>
+</entry>
+<entry>
+  <title>JS Exercises</title>
+  <link href="https://jsexercises.com/"/>
+  <id>https://jsexercises.com/</id>
+  <updated>2026-08-19T23:33:52Z</updated>
+  <category term="Programlama Dilleri"/>
+  <summary>Tarayıcıda çalıştırılabilir JavaScript alıştırmaları; okuma sonrası pekiştirme için.</summary>
+</entry>
+<entry>
+  <title>Eloquent JavaScript</title>
+  <link href="https://eloquentjavascript.net/"/>
+  <id>https://eloquentjavascript.net/</id>
+  <updated>2026-08-19T23:33:25Z</updated>
+  <category term="Programlama Dilleri"/>
+  <summary>Ücretsiz ve çevrimiçi klasik. Sözdizimi öğretmekten çok programlama düşüncesi kuruyor; alıştırmaları kitabın içinde çalıştırılabiliyor.</summary>
+</entry>
+<entry>
+  <title>Web Dev for Beginners</title>
+  <link href="https://github.com/microsoft/web-dev-for-beginners"/>
+  <id>https://github.com/microsoft/web-dev-for-beginners</id>
+  <updated>2026-08-19T23:19:56Z</updated>
+  <category term="Web &amp; Frontend"/>
+  <summary>24 derslik müfredat; her ders öncesi ve sonrası sınav, sonunda proje var. Kendi kendine çalışırken ilerlemeyi ölçebilmek için bu yapı işe yarıyor.</summary>
+</entry>
+<entry>
+  <title>ResuMax</title>
+  <link href="https://github.com/resumax"/>
+  <id>https://github.com/resumax</id>
+  <updated>2026-08-19T23:18:51Z</updated>
+  <category term="YZ · Uygulama Araçları"/>
+  <summary>Özgeçmişi hedef ilana göre uyarlayan araç; ATS taramasından geçecek biçimlendirmeye dikkat ediyor. Genel yazım asistanlarının atladığı nokta bu eşleştirme.</summary>
+</entry>
+<entry>
+  <title>Raven</title>
+  <link href="https://github.com/evermind-ai/raven"/>
+  <id>https://github.com/evermind-ai/raven</id>
+  <updated>2026-08-19T23:17:28Z</updated>
+  <category term="YZ · Agent, RAG &amp; Altyapı"/>
+  <summary>Bellek öncelikli agent koşum takımı; oturumlar arası öğrenmeyi ve kendi yapılandırmasını iyileştirmeyi merkeze alıyor.</summary>
+</entry>
+<entry>
+  <title>Can I Vibecode It?</title>
+  <link href="https://canivibecodeit.com/"/>
+  <id>https://canivibecodeit.com/</id>
+  <updated>2026-08-19T23:06:49Z</updated>
+  <category term="YZ · Modeller &amp; Asistanlar"/>
+  <summary>Bin küsur uygulamayı “yapay zeka bunu yeniden üretebilir mi” diye test edip sonucu yayımlayan tablo. Kullanılan istemi de veriyor, yani sonucu kendin doğrulayabiliyorsun.</summary>
+</entry>
+<entry>
+  <title>last30days</title>
+  <link href="https://github.com/mvanhorn/last30days-skill"/>
+  <id>https://github.com/mvanhorn/last30days-skill</id>
+  <updated>2026-08-19T22:59:37Z</updated>
+  <category term="YZ · Agent, RAG &amp; Altyapı"/>
+  <summary>Bir konuda son otuz günün Reddit, X ve YouTube içeriğini tarayan yetenek. Modelin eğitim kesim tarihiyle bugün arasındaki boşluğu kapatmak için.</summary>
+</entry>
+<entry>
+  <title>Kodluyoruz</title>
+  <link href="https://www.kodluyoruz.org/"/>
+  <id>https://www.kodluyoruz.org/</id>
+  <updated>2026-08-19T16:30:04Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>Türkiye’de ücretsiz yazılım eğitimi veren sosyal girişim; bootcamp’lerin ücret engelini kaldırmayı ve istihdama bağlamayı hedefliyor.</summary>
+</entry>
+<entry>
+  <title>Figma</title>
+  <link href="https://www.figma.com/"/>
+  <id>https://www.figma.com/</id>
+  <updated>2026-08-19T16:15:54Z</updated>
+  <category term="Araçlar &amp; Yardımcılar"/>
+  <summary>Arayüz tasarımının fiilî standardı; eşzamanlı düzenleme masaüstü araçların sonunu getirdi. Dev Mode ile geliştiriciye ölçü ve token aktarımı yapıyor.</summary>
+</entry>
+<entry>
+  <title>Onshape</title>
+  <link href="https://www.onshape.com/en/"/>
+  <id>https://www.onshape.com/en/</id>
+  <updated>2026-08-19T16:15:25Z</updated>
+  <category term="Donanım, CAD &amp; Gömülü"/>
+  <summary>Parametrik CAD, tamamen tarayıcıda. Dosya değil veritabanı üzerinde çalışıyor, bu yüzden dallanma ve birleştirme Git gibi işliyor — SolidWorks’te olmayan bir şey.</summary>
+</entry>
+<entry>
+  <title>McMaster-Carr</title>
+  <link href="https://www.mcmaster.com/"/>
+  <id>https://www.mcmaster.com/</id>
+  <updated>2026-08-19T16:15:13Z</updated>
+  <category term="Donanım, CAD &amp; Gömülü"/>
+  <summary>Endüstriyel parça kataloğu; neredeyse her ürünün CAD modelini indirebiliyorsun. Tasarımda gerçek bir cıvatanın ölçüsü lazım olduğunda referans kaynağa dönüşüyor.</summary>
+</entry>
+<entry>
+  <title>DevDocs</title>
+  <link href="https://devdocs.io/"/>
+  <id>https://devdocs.io/</id>
+  <updated>2026-08-19T16:12:43Z</updated>
+  <category term="Referans &amp; Koleksiyonlar"/>
+  <summary>Yüzlerce teknolojinin resmî dokümanını tek arayüzde topluyor; çevrimdışı indirilebiliyor ve anlık arama sunuyor. Sekme sekme doküman sitesi gezmenin sonu.</summary>
+</entry>
+<entry>
+  <title>Carbon</title>
+  <link href="https://carbon.now.sh/"/>
+  <id>https://carbon.now.sh/</id>
+  <updated>2026-08-19T16:12:33Z</updated>
+  <category term="Araçlar &amp; Yardımcılar"/>
+  <summary>Kod parçasından paylaşılabilir görsel üretiyor; tema, pencere süsü ve satır numarası ayarlanabiliyor. Ekran görüntüsünden farkı, sonucun tekrar edilebilir ve okunaklı olması.</summary>
+</entry>
+<entry>
+  <title>Excalidraw</title>
+  <link href="https://excalidraw.com/"/>
+  <id>https://excalidraw.com/</id>
+  <updated>2026-08-19T16:11:36Z</updated>
+  <category term="Araçlar &amp; Yardımcılar"/>
+  <summary>El çizimi görünümlü beyaz tahta. Kasıtlı olarak kaba durması bir üslup tercihi değil işlevsel: taslak aşamasındaki bir mimarinin bitmiş sanılmasını engelliyor.</summary>
+</entry>
+<entry>
+  <title>Njalla</title>
+  <link href="https://njal.la/"/>
+  <id>https://njal.la/</id>
+  <updated>2026-08-19T16:10:10Z</updated>
+  <category term="DevOps &amp; Altyapı"/>
+  <summary>Alan adını senin adına kendi üstüne kaydediyor, yani WHOIS kaydında sen görünmüyorsun. Vekil gizlilik hizmetinden farkı, mülkiyetin hukuken onlarda olması — bu bir güven meselesi.</summary>
+</entry>
+<entry>
+  <title>AlexHost</title>
+  <link href="https://alexhost.com/"/>
+  <id>https://alexhost.com/</id>
+  <updated>2026-08-19T16:10:01Z</updated>
+  <category term="DevOps &amp; Altyapı"/>
+  <summary>Moldova merkezli barındırma. Farklı bir yargı bölgesi ve gevşek içerik politikası sunması sebebiyle tercih ediliyor; bu aynı zamanda komşuların kim olduğu sorusunu doğuruyor.</summary>
+</entry>
+<entry>
+  <title>AvenaCloud</title>
+  <link href="https://avenacloud.com/"/>
+  <id>https://avenacloud.com/</id>
+  <updated>2026-08-19T16:09:22Z</updated>
+  <category term="DevOps &amp; Altyapı"/>
+  <summary>VPS ve fiziksel sunucu sağlayıcı; küçük ölçekli projeler için bütçe odaklı bir seçenek.</summary>
+</entry>
+<entry>
+  <title>1000 Projects</title>
+  <link href="https://github.com/vicky002/1000_Projects"/>
+  <id>https://github.com/vicky002/1000_Projects</id>
+  <updated>2026-08-17T20:53:20Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>Çok geniş proje fikri derlemesi; niceliği yüksek, ayıklaması sana kalıyor.</summary>
+</entry>
+<entry>
+  <title>App Ideas</title>
+  <link href="https://github.com/florinpop17/app-ideas"/>
+  <id>https://github.com/florinpop17/app-ideas</id>
+  <updated>2026-08-17T20:53:20Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>Zorluk seviyesine göre derecelendirilmiş uygulama fikirleri; her fikirde kullanıcı hikâyesi ve bonus özellikler yazılı. Proje listelerinden farkı bu şartname düzeyi.</summary>
+</entry>
+<entry>
+  <title>Awesome CS Courses</title>
+  <link href="https://github.com/prakhar1989/awesome-courses"/>
+  <id>https://github.com/prakhar1989/awesome-courses</id>
+  <updated>2026-08-17T20:53:20Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>Üniversitelerin çevrimiçi yayımladığı bilgisayar bilimi derslerinin listesi; ders notu ve ödevleri açık olanlara odaklanıyor.</summary>
+</entry>
+<entry>
+  <title>Boot.dev</title>
+  <link href="https://www.boot.dev/"/>
+  <id>https://www.boot.dev/</id>
+  <updated>2026-08-17T20:53:20Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>Backend geliştiriciliğine odaklı, tarayıcıda alıştırma yaptıran müfredat. Genel bootcamp’lerin aksine yalnızca sunucu tarafına bakıyor.</summary>
+</entry>
+<entry>
+  <title>Class Central</title>
+  <link href="https://www.class-central.com"/>
+  <id>https://www.class-central.com</id>
+  <updated>2026-08-17T20:53:20Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>Coursera, edX ve onlarca platformdaki kursları tek yerde arayan dizin. Aynı konunun farklı üniversitelerdeki sürümlerini yan yana koyup karşılaştırıyorsun.</summary>
+</entry>
+<entry>
+  <title>Kadenze · Yaratıcı Programlama</title>
+  <link href="https://www.kadenze.com/courses?subjects%5B%5D=7"/>
+  <id>https://www.kadenze.com/courses?subjects%5B%5D=7</id>
+  <updated>2026-08-17T20:53:20Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>Sanat ve yaratıcı kodlama odaklı kurs platformu; ses sentezi, görsel programlama ve makine öğrenmesinin sanatta kullanımı gibi konular.</summary>
+</entry>
+<entry>
+  <title>MIT EECS Dersleri</title>
+  <link href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/"/>
+  <id>https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/</id>
+  <updated>2026-08-17T20:53:20Z</updated>
+  <category term="Öğrenme &amp; Yol Haritaları"/>
+  <summary>MIT’nin elektrik mühendisliği ve bilgisayar bilimi bölümünün açık ders arşivi; algoritma, işletim sistemi ve derleyici derslerinin kaynağı.</summary>
+</entry>
+</feed>

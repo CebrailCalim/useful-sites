@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cebrailcalim.github.io/useful-sites/sitemap.xml

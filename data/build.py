@@ -23,6 +23,7 @@ from tags import normalise, LABELS    # noqa: E402
 from picks import PICKS               # noqa: E402
 from sources import SOURCES, DEFAULT  # noqa: E402
 from intros import INTROS             # noqa: E402
+import emit                           # noqa: E402
 
 BOOKMARKS = r'C:\Users\Cebrail\Documents\code\duzen\bookmarks_duzenli.html'
 def _load(name):
@@ -62,8 +63,20 @@ def key(u):
 
 # ------------------------------------------------------------------ ekleme tarihleri
 # Yer imi dosyasindaki ADD_DATE alani, baglantinin ne zaman toplandigini veriyor.
+# Bir kez cikarilip added.json'a donduruldu. Sebep: derleme artik yerel bir
+# dosyaya bagli degil, CI'da da ayni ciktiyi uretiyor. Tazelemek icin
+# refresh_added() -- yer imi dosyasi elde oldugunda.
 ADDED = {}
-if os.path.exists(BOOKMARKS):
+_ap = os.path.join(D, 'added.json')
+if os.path.exists(_ap):
+    ADDED = dict((k, int(v)) for k, v in
+                 json.load(io.open(_ap, encoding='utf-8')).items())
+
+
+def refresh_added():
+    if not os.path.exists(BOOKMARKS):
+        print('yer imi dosyasi bulunamadi, added.json oldugu gibi kaldi')
+        return
     for ln in io.open(BOOKMARKS, encoding='utf-8'):
         m = re.search(r'<DT><A HREF="([^"]*)"[^>]*ADD_DATE="(\d+)"', ln.strip())
         if m:
@@ -71,6 +84,9 @@ if os.path.exists(BOOKMARKS):
             ts = int(m.group(2))
             if 946684800 < ts < 2200000000:        # 2000-2039 arasi makul
                 ADDED[k] = max(ADDED.get(k, 0), ts)
+    json.dump(ADDED, io.open(_ap, 'w', encoding='utf-8'),
+              ensure_ascii=False, indent=0, sort_keys=True)
+    print('added.json tazelendi:', len(ADDED))
 
 PATHMAP = [
     ('Bilişim/Yol Haritaları', 'ogrenme'), ('Bilişim/Eğitim Platformları', 'ogrenme'),
@@ -140,8 +156,10 @@ for m in meta:
     v = VERIFIED.get(k) or VERIFIED.get(re.split(r'[?#]', k)[0].rstrip('/'))
     if v:
         rec['ver'] = v['d']
-        if v['s'] != 'ok':
+        if v['s'] == 'engel':
             rec['verw'] = 1          # bot engeli - elle dogrulanmali
+        elif v['s'] == 'olu':
+            rec['dead'] = 1          # son taramada yanit yok - arsive yonlendir
     out.append(rec)
 
 FALLBACK = 1787000000          # derleme sirasinda eklenen YZ araclari
@@ -166,6 +184,8 @@ for r in out:
         core[-1]['ver'] = r['ver']
     if r.get('verw'):
         core[-1]['verw'] = 1
+    if r.get('dead'):
+        core[-1]['dead'] = 1
     if r.get('pick'):
         core[-1]['pick'] = 1
     en.append(r['en'])
@@ -204,6 +224,10 @@ io.open(os.path.join(D, '..', 'links.js'), 'w', encoding='utf-8').write(
 io.open(os.path.join(D, '..', 'links.en.js'), 'w', encoding='utf-8').write(
     '/* Otomatik uretildi - data/build.py */\nwindow.LINKS_EN=' + json.dumps(en, **J) + ';\n')
 
+# Bot ve JS'siz ziyaretci icin metin hali: kategori sayfalari, site haritasi,
+# robots ve Atom akisi. Uygulamanin kendisi degismiyor.
+_pages = emit.write_all(core, CATS, INTROS, LABELS, os.path.join(D, '..'))
+
 tc = collections.Counter(t for r in out for t in r['tags'])
 print('kayit          :', len(out))
 print('etiket cesidi  :', len(tc))
@@ -215,6 +239,7 @@ _sc = collections.Counter(r['src'] for r in out)
 print('kaynak         :', dict(_sc))
 print('dogrulanmis    :', sum(1 for r in core if r.get('ver')))
 print('ilgili baglanti:', sum(1 for r in core if r.get('rel')))
+print('statik sayfa   :', len(_pages), '+ sitemap, robots, feed')
 if missing:
     io.open(os.path.join(D, 'missing.txt'), 'w', encoding='utf-8').write(
         '\n'.join('%s\t%s' % t for t in missing))
